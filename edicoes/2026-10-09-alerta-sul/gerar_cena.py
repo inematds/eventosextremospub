@@ -7,7 +7,8 @@ from pathlib import Path
 AQUI = Path(__file__).resolve().parent
 REPO = AQUI.parents[1]
 import sys
-AVATAR = "--avatar" in sys.argv
+CANTO = "--canto" in sys.argv
+AVATAR = "--avatar" in sys.argv or CANTO
 T = json.loads((AQUI / ("avatar/tempos.json" if AVATAR else "tempos.json")).read_text())
 AL = json.loads((AQUI / "fonte/alertas_sul.json").read_text())
 GEO = json.loads((REPO / "motor/geo.js").read_text()[len("window.GEO="):-1])
@@ -238,7 +239,7 @@ for a, b in zip(legenda, legenda[1:]):
 
 rios = [{"nome": "Uruguay", "ini": em("f4", "Uruguai"), "fim": ini("f5") + .3, "dur": 2.2, "largura": 8}]
 
-C = {"layout": "avatar" if AVATAR else "cheio", "padding_baixo": 820, "duracao": DUR, "selo": "INMET · METSUL · SEX 09/10", "camera": camera, "alertas": alertas, "colunas": colunas,
+C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR, "selo": "INMET · METSUL · SEX 09/10", "camera": camera, "alertas": alertas, "colunas": colunas,
      "rios": rios, "pontos": [], "sat": sat, "vento": vento, "pinos": pinos, "hero": hero, "paineis": paineis, "cta": cta, "club": club,
      "fontes": fontes, "legenda": legenda}
 (AQUI / "cena.js").write_text("window.CENA=" + json.dumps(C, ensure_ascii=False) + ";")
