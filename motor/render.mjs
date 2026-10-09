@@ -1,4 +1,4 @@
-// node render.mjs <pasta-com-cena.js> <saida.mp4|--quadros t1,t2,...> [--fps 30] [--dur N]
+// [GEO=geo-nne.js] node render.mjs <pasta-com-cena.js> <saida.mp4|--quadros t1,t2,...> [--fps 30] [--dur N]
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
@@ -12,7 +12,7 @@ const fps = Number(opt('--fps') || 30);
 
 // página = mapa.html do motor, com cena.js da pasta
 const html = fs.readFileSync(path.join(aqui, 'mapa.html'), 'utf8')
-  .replace('src="geo.js"', `src="file://${path.join(aqui, 'geo.js')}"`)
+  .replace('src="geo.js"', `src="file://${path.resolve(aqui, process.env.GEO || 'geo.js')}"`)
   .replace('src="cena.js"', `src="file://${path.resolve(pasta, 'cena.js')}"`);
 const tmp = path.resolve(pasta, '.mapa.html');
 fs.writeFileSync(tmp, html);

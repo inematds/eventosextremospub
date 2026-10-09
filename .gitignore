@@ -3,6 +3,7 @@ geo/*.json
 geo/*.geojson
 geo/*.csv
 motor/geo.js
+motor/geo-*.js
 motor/node_modules
 edicoes/*/sat/ir/
 edicoes/*/sat/web/*.jpg
@@ -25,3 +26,5 @@ edicoes/*/avatar/*.mp4
 edicoes/*/avatar/*.wav
 edicoes/*/avatar/t/
 edicoes/*/avatar/*.log
+edicoes/*/fonte/focos/*.csv
+edicoes/*/fonte/ativos*.json

@@ -1,11 +1,24 @@
 #!/usr/bin/env python3
-"""Gera geo.js (window.GEO) com municípios de PR/SC/RS, estados, países vizinhos e rios,
-simplificados para caber leve no navegador."""
-import csv, json, pathlib
+"""Gera geo.js (window.GEO) com municípios de uma região, estados, países vizinhos e rios,
+simplificados para caber leve no navegador.
+uso: motor/prep_geo.py                      → Sul (PR/SC/RS) em motor/geo.js
+     motor/prep_geo.py --regiao nne         → Norte + Nordeste em motor/geo-nne.js"""
+import argparse, csv, json, pathlib
 
 G = pathlib.Path(__file__).resolve().parent.parent / "geo"
-OUT = pathlib.Path(__file__).resolve().parent / "geo.js"
-BBOX = (-62.0, -36.5, -44.0, -19.5)  # lon_min, lat_min, lon_max, lat_max
+REGIOES = {  # bbox lon_min, lat_min, lon_max, lat_max · casas decimais dos municípios · arquivo
+    "sul": {"bbox": (-62.0, -36.5, -44.0, -19.5), "nd": 3, "out": "geo.js",
+            "ufs": (("PR", "41"), ("SC", "42"), ("RS", "43"))},
+    "nne": {"bbox": (-74.5, -18.6, -34.0, 5.6), "nd": 2, "out": "geo-nne.js",
+            "ufs": (("RO", "11"), ("AC", "12"), ("AM", "13"), ("RR", "14"), ("PA", "15"), ("AP", "16"), ("TO", "17"),
+                    ("MA", "21"), ("PI", "22"), ("CE", "23"), ("RN", "24"), ("PB", "25"), ("PE", "26"), ("AL", "27"),
+                    ("SE", "28"), ("BA", "29"))},
+}
+ap = argparse.ArgumentParser()
+ap.add_argument("--regiao", default="sul", choices=REGIOES)
+R = REGIOES[ap.parse_args().regiao]
+OUT = pathlib.Path(__file__).resolve().parent / R["out"]
+BBOX = R["bbox"]
 
 
 def arred(c, nd=3):
@@ -42,12 +55,12 @@ with open(G / "municipios.csv", encoding="utf-8") as f:
         cent[r["codigo_ibge"]] = (float(r["longitude"]), float(r["latitude"]))
 
 mun = []
-for uf, cod in (("PR", "41"), ("SC", "42"), ("RS", "43")):
+for uf, cod in R["ufs"]:
     for ft in json.load(open(G / f"mun{cod}.json"))["features"]:
         i = ft["properties"]["id"]
         mun.append({"type": "Feature", "properties": {"id": i, "nome": ft["properties"]["name"], "uf": uf,
                                                       "c": cent.get(i)},
-                    "geometry": {"type": ft["geometry"]["type"], "coordinates": arred(ft["geometry"]["coordinates"])}})
+                    "geometry": {"type": ft["geometry"]["type"], "coordinates": arred(ft["geometry"]["coordinates"], R["nd"])}})
 
 ufs = []
 for ft in json.load(open(G / "uf.json"))["features"]:
@@ -73,4 +86,4 @@ geo = {"mun": {"type": "FeatureCollection", "features": mun},
        "rios": {"type": "FeatureCollection", "features": rios}}
 OUT.write_text("window.GEO=" + json.dumps(geo, separators=(",", ":")) + ";")
 print(f"mun {len(mun)} uf {len(ufs)} paises {len(paises)} rios {len(rios)} -> {OUT} {OUT.stat().st_size//1024} KB")
-print("rios:", sorted({r['properties']['nome'] for r in rios})[:40])
+print("rios:", sorted({r['properties']['nome'] for r in rios}))

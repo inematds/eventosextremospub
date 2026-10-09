@@ -57,5 +57,6 @@ The voice uses the [cardshorts](https://github.com/inematds/cardshorts) engine (
 | Date | Edition | What it shows |
 |---|---|---|
 | Oct 9, 2026 | `edicoes/2026-10-09-alerta-sul` | 529 cities in red (INMET), 109 km/h gust, 113 mm in São Borja, weekend map, up to 204 mm in 7 days (Open-Meteo) |
+| Oct 9, 2026 | `edicoes/2026-10-09-alerta-norte-nordeste` (dynamic voice; `GEO=geo-nne.js`) | 1,210 cities under dry-air alert (474 orange, down to 12%), up to 41.7 °C in Piauí (Open-Meteo), 1,731 fire hotspots in one day (INPE), Rio Negro −5.21 m, storms in AC/RO/AM, peak through December (El Niño), comment prompt |
 
 MIT License. Third-party data follows the licenses of the sources (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).

@@ -50,6 +50,8 @@ node motor/render.mjs $E --quadros 0,10,30                        # prévia de q
 motor/montar.sh $E $E/video.mp4                                   # vídeo final
 ```
 
+Outra região: `python3 motor/prep_geo.py --regiao nne` gera `motor/geo-nne.js` (Norte + Nordeste); a coleta usa `inmet_avisos.py --ufs ... --nome alertas_nne.json`, `satelite_gibs.py --bbox ...` (sem `--de/--ate` baixa só a base) e `openmeteo_calor.py` (máxima, umidade e chuva); o render recebe `GEO=geo-nne.js`.
+
 A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatterbox + Whisper locais).
 
 ## Edições
@@ -57,5 +59,6 @@ A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatt
 | Data | Edição | O que mostra |
 |---|---|---|
 | 09/10/2026 | `edicoes/2026-10-09-alerta-sul` (com e sem avatar; YouTube lives10) | 529 cidades em vermelho (INMET), rajada de 109 km/h, 113 mm em São Borja, mapa do fim de semana, até 204 mm em 7 dias (Open-Meteo) |
+| 09/10/2026 | `edicoes/2026-10-09-alerta-norte-nordeste` (voz dinâmica; `GEO=geo-nne.js`) | 1.210 cidades em alerta de ar seco (474 em laranja, até 12%), até 41,7 °C no PI (Open-Meteo), 1.731 focos num dia (INPE), Rio Negro −5,21 m, tempestade em AC/RO/AM, pico até dezembro (El Niño), gatilho de comentário |
 
 Licença MIT. Dados de terceiros seguem as licenças das fontes (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).

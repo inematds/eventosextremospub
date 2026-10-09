@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Avisos ativos do INMET (JSON público) → lista de municípios por aviso, só dos estados pedidos.
-uso: coleta/inmet_avisos.py <pasta-da-edicao> [--ufs 41,42,43]"""
+uso: coleta/inmet_avisos.py <pasta-da-edicao> [--ufs 41,42,43] [--nome alertas_sul.json]"""
 import argparse, json, urllib.request
 from pathlib import Path
 
@@ -10,6 +10,7 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.3
 ap = argparse.ArgumentParser()
 ap.add_argument("pasta")
 ap.add_argument("--ufs", default="41,42,43", help="prefixo IBGE dos estados (41 PR, 42 SC, 43 RS)")
+ap.add_argument("--nome", default="alertas_sul.json")
 a = ap.parse_args()
 ufs = a.ufs.split(",")
 
@@ -29,5 +30,5 @@ for grupo in ("hoje", "futuro"):
                          "desc": av["descricao"], "geocodes": g, "riscos": av["riscos"]}
         por_uf = {u: sum(x[:2] == u for x in g) for u in ufs}
         print(f'{av["id"]} {av["descricao"]:<12} {av["severidade"]:<17} {av["inicio"]} → {av["fim"]}  {len(g):>4} municípios {por_uf}')
-(dst / "alertas_sul.json").write_text(json.dumps(out, ensure_ascii=False))
-print("→", dst / "alertas_sul.json")
+(dst / a.nome).write_text(json.dumps(out, ensure_ascii=False))
+print("→", dst / a.nome)

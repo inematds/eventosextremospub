@@ -103,6 +103,7 @@ function prog(t,a,dur){ return ease(clamp((t-a)/dur)); }
 function rnd(i){ const x=Math.sin(i*9301+49297)*233280; return x-Math.floor(x); }
 
 document.getElementById('selo').textContent=C.selo;
+if(C.marca) document.getElementById('marca').textContent=C.marca;
 if(C.layout==='avatar') document.body.classList.add('av');
 if(C.layout==='canto') document.body.classList.add('cn');
 const IMG={};
