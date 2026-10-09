@@ -27,7 +27,7 @@ O projeto tem três partes:
    - rios desenhados aos poucos;
    - pinos de cidade;
    - contadores e legenda palavra a palavra.
-3. **Avatar** (a fazer): HeyGen com os dados do explicavideo.
+3. **Avatar**: Nei pelo estúdio do HeyGen (sem API de geração), no formato 9:16 do explicavideos. `avatar/retempo.py` alinha o mapa à fala do avatar e `motor/compor_avatar.sh` monta.
 
 ## Regras de cada vídeo
 
@@ -56,6 +56,6 @@ A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatt
 
 | Data | Edição | O que mostra |
 |---|---|---|
-| 09/10/2026 | `edicoes/2026-10-09-alerta-sul` | 529 cidades em vermelho (INMET), rajada de 109 km/h, 113 mm em São Borja, mapa do fim de semana, até 204 mm em 7 dias (Open-Meteo) |
+| 09/10/2026 | `edicoes/2026-10-09-alerta-sul` (com e sem avatar; YouTube lives10) | 529 cidades em vermelho (INMET), rajada de 109 km/h, 113 mm em São Borja, mapa do fim de semana, até 204 mm em 7 dias (Open-Meteo) |
 
 Licença MIT. Dados de terceiros seguem as licenças das fontes (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).
