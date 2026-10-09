@@ -1,0 +1,20 @@
+# gerados / pesados (refazer com geo/baixar.sh, motor/prep_geo.py e coleta/*)
+geo/*.json
+geo/*.geojson
+geo/*.csv
+motor/geo.js
+motor/node_modules
+edicoes/*/sat/ir/
+edicoes/*/sat/web/*.jpg
+edicoes/*/sat/*.jpg
+edicoes/*/build/
+edicoes/*/.obra/
+edicoes/*/ref/
+edicoes/*/fonte/ativos.json
+edicoes/*/cena.js
+edicoes/*/.mapa.html
+edicoes/*/q_*.jpg
+edicoes/*/*.mp4
+edicoes/*/*.wav
+*.log
+__pycache__/
