@@ -18,3 +18,10 @@ edicoes/*/*.mp4
 edicoes/*/*.wav
 *.log
 __pycache__/
+guia/assets/*.log
+guia/assets/bn.jpg
+edicoes/*/avprev.jpg
+edicoes/*/avatar/*.mp4
+edicoes/*/avatar/*.wav
+edicoes/*/avatar/t/
+edicoes/*/avatar/*.log

@@ -1,0 +1,4 @@
+Autorização do Nei (09/10/2026, chat): "faca agora com o o avatar do nei, vc tem, é o mesmo estilo e formato do explicavideos" + "o heygen usa estudio entao nao tem custo".
+O que: 1 bloco, avatar do Nei (TEMPLATE-AVATAR16, voz INEMATIME), fala = avatar/fala.txt (~1,3 min), título EVX-2026-10-09-alerta-sul.
+Como: estúdio do HeyGen pela assinatura (engine/heygen-studio.mjs do explicavideos), sem API de geração.
+Depois: baixar o MP4, retemporizar o mapa pela fala do avatar e compor no formato 9:16 do explicavideos v2 (faixa do avatar embaixo).

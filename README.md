@@ -1,6 +1,20 @@
 # eventosextremospub
 
-Vídeos curtos 9:16 sobre **eventos extremos do clima** no estilo "sala de crise": mapa animado com dados reais (alertas por município, satélite, vento, chuva prevista), cada número aparecendo no instante em que é dito, narração com a voz do Nei e, depois, avatar.
+[![Eventos Extremos](guia/assets/banner.jpg)](https://inematds.github.io/eventosextremospub/guia/)
+
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
+## O que é
+
+O eventosextremospub é um conjunto de scripts que transforma um alerta de tempo severo num vídeo curto vertical (Reels, Shorts, TikTok). Ele baixa os dados de fontes públicas: alertas do INMET com a lista de municípios, imagens do satélite GOES-19 pela NASA e previsão de chuva e vento do Open-Meteo. Depois anima tudo num mapa 3D do Sul do Brasil, com narração e legenda palavra a palavra. É para quem produz conteúdo sobre clima e quer números conferidos, com a fonte na tela, em vez de repostar print de site. Precisa de um computador com placa de vídeo, Node com Playwright, Python, ffmpeg e, para a voz, o projeto cardshorts.
+
+## 📖 Guia de uso
+
+Guia completo (landing + passo a passo): **https://inematds.github.io/eventosextremospub/guia/**
+
+## Detalhes
+
+Vídeos curtos 9:16 sobre **eventos extremos do clima** no estilo "sala de crise": mapa animado com dados reais (alertas por município, satélite, vento, chuva prevista), cada número aparecendo no instante em que é dito, narração com a voz do Nei e avatar.
 
 O projeto tem três partes:
 

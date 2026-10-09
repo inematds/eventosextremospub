@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eventosextremospub — alertas del clima en video con datos reales</title>
+<meta name="description" content="Scripts que convierten alertas del INMET, satélite de la NASA y pronóstico de Open-Meteo en video 9:16 con mapa 3D animado, narración y fuente en pantalla.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/eventosextremospub/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/eventosextremospub/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/eventosextremospub/guia/es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:760px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .ex{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.ex{grid-template-columns:1fr}}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
+  .estilos{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  @media(max-width:900px){.estilos{grid-template-columns:repeat(2,1fr)}}
+  .estilos figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+  .estilos img{width:100%;display:block}
+  .estilos figcaption{padding:10px 12px;font-size:.84rem;color:var(--mut)}
+  .estilos figcaption b{color:var(--txt);font-family:Sora;display:block}
+  .demo{display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start}
+  @media(max-width:760px){.demo{grid-template-columns:1fr}}
+  .demo>*{min-width:0}
+  .demo video{width:100%;border-radius:14px;border:1px solid var(--line);background:#000}
+  table{border-collapse:collapse;width:100%;font-size:.9rem}
+  td,th{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{font-family:Sora;color:var(--amb)}
+  .tbl{overflow-x:auto}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">⛈️</span> eventosextremospub</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">Qué es</a>
+    <a class="sec" href="#fluxo">Cómo funciona</a>
+    <a class="sec" href="#guia">Guía de uso</a>
+    <a class="sec" href="#exemplo">Ejemplo</a>
+    <a class="sec" href="#roadmap">Roadmap</a>
+    <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/eventosextremospub" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Clima extremo · video 9:16 con datos reales</span>
+      <h1>La alerta oficial se convierte en un <span class="amb">video</span> que atrapa</h1>
+      <p class="lead">Satélite de la NASA, alertas del INMET por municipio y pronóstico en cuadrícula, animados en un mapa 3D, con cada número apareciendo en el momento en que se dice.</p>
+      <div class="cta">
+        <a class="btn" href="#guia">Empezar la guía</a>
+        <a class="btn ghost" href="https://github.com/inematds/eventosextremospub" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+    </div>
+    <figure><img src="../assets/banner-es.jpg" alt="Banner de eventosextremospub: alertas del clima en video con datos reales"></figure>
+  </div>
+</header>
+
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">En resumen</span>
+  <p>eventosextremospub es un conjunto de scripts que convierte una alerta de tiempo severo en un video corto vertical (Reels, Shorts, TikTok). Descarga los datos de fuentes públicas: alertas del INMET con la lista de municipios, imágenes del satélite GOES-19 a través de la NASA y pronóstico de lluvia y viento de Open-Meteo. Después lo anima todo en un mapa 3D del sur de Brasil, con narración y subtítulos palabra por palabra. Es para quien produce contenido sobre clima y quiere números verificados, con la fuente en pantalla, en lugar de volver a publicar capturas de sitios web. Requiere una computadora con tarjeta de video, Node con Playwright, Python, ffmpeg y, para la voz, el proyecto cardshorts.</p>
+</div></section>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">Qué es</span>
+  <h2>Tres partes: noticia, animación y avatar</h2>
+  <p class="sub">Nació de un video de alerta roja en el sur de Brasil (09/10/2026). La investigación, el motor del mapa y el montaje se convirtieron en scripts para repetirlo en cualquier evento.</p>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-es.jpg" alt="Partes de eventosextremospub: alertas del INMET, satélite, lluvia de 7 días, viento, columnas 3D y avatar" loading="lazy" style="width:100%;display:block"></figure>
+  <div class="grid g3">
+    <div class="card"><h3>📡 Noticia con fuente</h3><p>Recolección automática del INMET, la NASA y Open-Meteo, más una lista de fuentes verificadas. Lo que ya ocurrió queda separado de lo que es pronóstico.</p></div>
+    <div class="card"><h3>🗺️ Animación que atrapa</h3><p>Municipios coloreados según el nivel de alerta, timelapse de la tormenta en infrarrojo, viento en movimiento, columnas 3D de lluvia y ráfagas, contadores.</p></div>
+    <div class="card"><h3>🧑‍💼 Avatar</h3><p>El presentador entra desde el estudio de HeyGen, en el mismo formato 9:16 de explicavideos, y el mapa acompaña lo que dice.</p></div>
+  </div>
+</div></section>
+
+<section id="fluxo"><div class="wrap">
+  <span class="chip">Cómo funciona</span>
+  <h2>De la alerta al MP4</h2>
+  <p class="sub">El mapa es una página HTML con deck.gl. Chrome sin ventana captura un cuadro a la vez con la GPU (cerca de 0,1 s por cuadro), y ffmpeg lo une con la voz y la música.</p>
+  <div class="flow">
+    <span>INMET · NASA · Open-Meteo</span><span class="arr">→</span>
+    <span>base.md (investigación)</span><span class="arr">→</span>
+    <span>falas.json</span><span class="arr">→</span>
+    <span>Voz verificada</span><span class="arr">→</span>
+    <span>cena.js (línea de tiempo)</span><span class="arr">→</span>
+    <span>Mapa 3D cuadro a cuadro</span><span class="arr">→</span>
+    <span>MP4 9:16</span>
+  </div>
+  <div class="grid g4" style="margin-top:24px">
+    <div class="card"><h3>Alertas</h3><p>Cada municipio coloreado según el aviso del INMET (amarillo, naranja, rojo), día a día.</p></div>
+    <div class="card"><h3>Satélite</h3><p>GOES-19 en color real como fondo y el infrarrojo de la cima de las nubes en timelapse, con reloj.</p></div>
+    <div class="card"><h3>Pronóstico</h3><p>Lluvia acumulada de 7 días en columnas y viento pronosticado en partículas animadas.</p></div>
+    <div class="card"><h3>Texto</h3><p>Apertura con fecha y el número más fuerte, panel con contador, fuente en pantalla y subtítulos de colores.</p></div>
+  </div>
+</div></section>
+
+<section id="pre"><div class="wrap">
+  <span class="chip">Requisitos previos</span>
+  <h2>Lo que necesitas tener instalado</h2>
+  <p class="sub">Las fuentes de datos son gratuitas y no piden clave. La versión gratuita de Open-Meteo limita las llamadas por minuto, y el script ya espera cuando eso ocurre.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Mapa y render</h3><p>Node con Playwright, Chrome con Vulkan (tarjeta de video) y ffmpeg.</p><pre><span class="k">npm</span> i -g playwright
+<span class="k">npx</span> playwright install chromium</pre></div>
+    <div class="card"><h3>Base geográfica</h3><p>Municipios del IBGE, estados, países y ríos (Natural Earth), descargados una sola vez.</p><pre><span class="k">geo/baixar.sh</span>
+<span class="k">python3</span> motor/prep_geo.py</pre></div>
+    <div class="card"><h3>Voz</h3><p>Narración con voz clonada mediante <a href="https://github.com/inematds/cardshorts">cardshorts</a> (Chatterbox y Whisper locales) o con el avatar de HeyGen.</p><pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/cardshorts</span></pre></div>
+  </div>
+</div></section>
+
+<section id="guia"><div class="wrap">
+  <span class="chip">Guía de uso · paso a paso</span>
+  <h2>Una edición, del dato al video</h2>
+  <p class="sub">Cada video es una carpeta en <code>edicoes/</code>, con la investigación, los textos hablados y los datos de ese día.</p>
+
+  <div class="step"><div class="b">1</div><div>
+    <h3>Crea la edición y descarga las alertas</h3>
+    <p>Lista cada aviso activo del INMET con cuántos municipios abarca en cada estado.</p>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/eventosextremospub</span> && cd eventosextremospub
+E=edicoes/2026-10-09-alerta-sul
+<span class="k">python3</span> coleta/inmet_avisos.py $E
+<span class="c"># 56007 Tempestade Grande Perigo 2026-10-09 00:01 → 23:59  529 municípios</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">2</div><div>
+    <h3>Descarga el satélite</h3>
+    <p>La base en color real y la secuencia del infrarrojo para el timelapse. Horas en UTC.</p>
+<pre><span class="k">python3</span> coleta/satelite_gibs.py $E --base 2026-10-08T18:00 \
+  --de 2026-10-08T12:00 --ate 2026-10-09T05:00 --passo 20</pre>
+  </div></div>
+
+  <div class="step"><div class="b">3</div><div>
+    <h3>Descarga el pronóstico</h3>
+    <p>Lluvia de 7 días en una cuadrícula de 0,5° y viento hora por hora del día elegido.</p>
+<pre><span class="k">python3</span> coleta/openmeteo.py $E --dia 2026-10-09
+<span class="c"># prev7: 204 pontos · máx (204, [-53.5, -25.5]) · >100 mm em 78</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">4</div><div>
+    <h3>Escribe la investigación y los textos hablados</h3>
+    <p>En <code>base.md</code>, cada número con fuente y horario, separando lo que ocurrió de lo que es pronóstico. En <code>falas.json</code>, el texto hablado, corto y directo. La apertura lleva la fecha y el número más fuerte que tenga fuente.</p>
+<pre>[{<span class="s">"id"</span>: <span class="s">"f1"</span>, <span class="s">"fala"</span>: <span class="s">"Alerta vermelho no Sul. Hoje, sexta, quinhentas e vinte e nove cidades..."</span>},
+ {<span class="s">"id"</span>: <span class="s">"f2"</span>, <span class="s">"fala"</span>: <span class="s">"Rio Grande do Sul, trezentas e quinze..."</span>}]</pre>
+  </div></div>
+
+  <div class="step"><div class="b">5</div><div>
+    <h3>Graba la voz y arma la línea de tiempo</h3>
+    <p>La narración se verifica por transcripción. <code>gerar_cena.py</code> ata cada animación a la palabra dicha (el contador sube cuando se pronuncia el número).</p>
+<pre><span class="k">python3</span> $E/narrar.py        <span class="c"># → narracao.wav + tempos.json</span>
+<span class="k">python3</span> $E/gerar_cena.py    <span class="c"># → cena.js</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">6</div><div>
+    <h3>Revisa los cuadros y monta</h3>
+    <p>Mira algunos cuadros antes del render completo. El cuadro 0 tiene que abrir lleno.</p>
+<pre><span class="k">node</span> motor/render.mjs $E --quadros 0,18,30,47
+<span class="k">motor/montar.sh</span> $E $E/video.mp4</pre>
+  </div></div>
+</div></section>
+
+<section id="exemplo"><div class="wrap">
+  <span class="chip">Ejemplo</span>
+  <h2>Alerta Sur · 09/10/2026</h2>
+  <p class="sub">Primera edición: 529 ciudades en alerta roja en RS, SC y PR, sin avatar. Los primeros 32 segundos:</p>
+  <div class="demo">
+    <video src="../assets/demo.mp4" controls playsinline preload="metadata" poster="../assets/quadro-1.jpg"></video>
+    <div>
+      <div class="tbl"><table>
+        <tr><th>En pantalla</th><th>Fuente</th></tr>
+        <tr><td>529 ciudades en rojo (RS 315, SC 128, PR 86)</td><td>INMET, aviso 56007</td></tr>
+        <tr><td>Ráfaga de 109 km/h en Maçambará, 16 casas sin techo en Chapecó</td><td>MetSul, Epagri/Ciram, 08/10</td></tr>
+        <tr><td>113 mm en São Borja en un día</td><td>MetSul, 08/10</td></tr>
+        <tr><td>Tormenta avanzando del jueves 9h al viernes 1h40</td><td>GOES-19 (NOAA) vía NASA GIBS</td></tr>
+        <tr><td>Mapa de viernes a lunes</td><td>INMET, avisos 56004, 55993, 55997</td></tr>
+        <tr><td>Hasta 204 mm en 7 días en el suroeste de PR</td><td>Open-Meteo</td></tr>
+      </table></div>
+      <div class="grid g4" style="margin-top:18px">
+        <img src="../assets/quadro-1.jpg" alt="Apertura con fecha y titular" loading="lazy" style="width:100%;border-radius:10px;border:1px solid var(--line)">
+        <img src="../assets/quadro-18.jpg" alt="Ráfagas sobre el infrarrojo" loading="lazy" style="width:100%;border-radius:10px;border:1px solid var(--line)">
+        <img src="../assets/quadro-29.jpg" alt="Lluvia en São Borja" loading="lazy" style="width:100%;border-radius:10px;border:1px solid var(--line)">
+        <img src="../assets/quadro-48.jpg" alt="Lluvia pronosticada en 7 días" loading="lazy" style="width:100%;border-radius:10px;border:1px solid var(--line)">
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <span class="chip">Roadmap</span>
+  <h2>Lo que viene después</h2>
+  <p class="sub">La primera edición validó el motor y la recolección. Próximos pasos:</p>
+  <div class="phase"><div class="tag">Ahora</div><div class="d"><strong>Recolección, motor del mapa y primera edición</strong><span>Alertas por municipio, satélite, timelapse, viento, lluvia de 7 días, voz verificada.</span></div></div>
+  <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Avatar en el formato de explicavideos</strong><span>Presentador desde el estudio de HeyGen en una franja debajo del mapa, con el mapa sincronizado con lo que dice.</span></div></div>
+  <div class="phase"><div class="tag">Después</div><div class="d"><strong>Más eventos y más regiones</strong><span>Ciclones, olas de calor y frío, rayos y niveles de ríos (CEMADEN, SGB), además de otros estados.</span></div></div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">deck.gl</div><div class="pill">Playwright</div><div class="pill">NASA GIBS</div><div class="pill">INMET</div><div class="pill">Open-Meteo</div><div class="pill">ffmpeg</div>
+    <p style="margin-top:18px">eventosextremospub · MIT ·
+      <a href="https://github.com/inematds/eventosextremospub">inematds/eventosextremospub</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='eventosextremospub-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    var s=null;try{s=localStorage.getItem(KEY)}catch(e){}
+    if(s==='light'){ b.classList.add('light'); t.textContent='☀️'; }
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{localStorage.setItem(KEY, light?'light':'dark')}catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>
