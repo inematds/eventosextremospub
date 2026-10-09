@@ -2,13 +2,16 @@
 """Monta cena.js (linha do tempo do mapa) a partir de tempos.json (palavras da narração),
 dos alertas do INMET (fonte/alertas_nne.json), dos focos do INPE (fonte/focos/), da grade do
 Open-Meteo (om/calor7.json) e da base pesquisada (base.md).
-Render: GEO=geo-nne.js motor/montar.sh <esta pasta>"""
-import csv, json, re, unicodedata
+Render: GEO=geo-nne.js motor/montar.sh <esta pasta>
+Com avatar: gerar_cena.py --canto (ou --avatar) usa avatar/tempos.json; depois GEO=geo-nne.js LAYOUT=canto motor/compor_avatar.sh <esta pasta>"""
+import csv, json, re, sys, unicodedata
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
 REPO = AQUI.parents[1]
-T = json.loads((AQUI / "tempos.json").read_text())
+CANTO = "--canto" in sys.argv
+AVATAR = "--avatar" in sys.argv or CANTO
+T = json.loads((AQUI / ("avatar/tempos.json" if AVATAR else "tempos.json")).read_text())
 AL = json.loads((AQUI / "fonte/alertas_nne.json").read_text())
 GEO = json.loads((REPO / "motor/geo-nne.js").read_text()[len("window.GEO="):-1])
 UFS = ("11", "12", "13", "14", "15", "16", "17", "21", "22", "23", "24", "25", "26", "27", "28", "29")
@@ -222,7 +225,7 @@ for t in T:
         w = re.sub(r"^Ni[nñ]h?o", "Niño", w)
         if t["id"] == "f5" and w.startswith("2020"):  # a fala diz 2024 (conferido no áudio original); o Whisper cortou
             w = w.replace("2020", "2024")
-        if w[:1] in ".-" and bloco:  # ".club", ".210" e "-dia" grudam na palavra anterior
+        if w[:1] in ".-," and bloco:  # ".club", ".210", ",21" e "-dia" grudam na palavra anterior
             bloco[-1]["w"] += w.rstrip(".,")
             continue
         k = n(w)
@@ -238,7 +241,7 @@ for a, b in zip(legenda, legenda[1:]):
 rios = [{"nome": "Negro", "ini": ini("f5") + .2, "fim": ini("f6") + .3, "dur": 2.4, "largura": 8},
         {"nome": "Amazonas", "ini": ini("f5") + .8, "fim": ini("f6") + .3, "dur": 2.4, "largura": 6}]
 
-C = {"layout": "cheio", "duracao": DUR, "marca": "INEMA · ALERTA N/NE", "selo": "INMET · INPE · SEX 09/10",
+C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR, "marca": "INEMA · ALERTA N/NE", "selo": "INMET · INPE · SEX 09/10",
      "camera": camera, "alertas": alertas, "colunas": colunas, "rios": rios, "pontos": pontos, "sat": SAT,
      "pinos": pinos, "hero": hero, "paineis": paineis, "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}
 (AQUI / "cena.js").write_text("window.CENA=" + json.dumps(C, ensure_ascii=False) + ";")
