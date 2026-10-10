@@ -94,7 +94,6 @@ pinos = [
     {"nome": "Costa do Peru", "sub": "mar +5,3 °C acima do normal", "lon": -81.0, "lat": -3.0, "ini": em("f5", "Peru"), "fim": ini("f6"), "h": 160},
     {"nome": "Santa Catarina · 1983", "sub": "49 mortos · ~200 mil sem casa", "lon": -49.07, "lat": -26.92, "ini": em("f6", "Catarina"), "fim": ini("f7"), "h": 140},
     {"nome": "Roraima · 1998", "sub": "~40 mil km² queimados", "lon": -61.0, "lat": 2.5, "ini": em("f6", "Roraima"), "fim": ini("f7"), "h": 120},
-    {"nome": "Manaus · 2024", "sub": "Rio Negro: 12,11 m, menor desde 1902", "lon": -60.02, "lat": -3.1, "ini": em("f7", "Negro"), "fim": ini("f8"), "h": 170},
     {"nome": "Rio Grande do Sul · 2024", "sub": "185 mortos na enchente", "lon": -51.2, "lat": -30.03, "ini": em("f7", "Grande"), "fim": ini("f8"), "h": 130},
     {"nome": "Manaus", "sub": "pior ar do país nesta semana", "lon": -60.02, "lat": -3.1, "ini": em("f8", "Manaus"), "fim": ini("f9"), "h": 160},
     {"nome": "Rio Uruguai", "sub": "acima da cota de inundação", "lon": -56.55, "lat": -29.13, "ini": em("f9", "Uruguai"), "fim": ini("f10"), "h": 150},
@@ -175,7 +174,7 @@ fontes = [
     {"ini": ini("f11"), "fim": ini("f12"), "html": "<b>OPAS/OMS</b>, 18/09/2026 · dengue 2024: <b>Ministério da Saúde</b>, 6,59 milhões de casos prováveis (Painel de Arboviroses)"},
     {"ini": ini("f12"), "fim": ini("f13"), "html": "<b>Copernicus</b>: 2024 a +1,60 °C acima do pré-industrial · <b>OMM</b>: ~+1,55 °C"},
     {"ini": ini("f13"), "fim": ini("f15"), "html": "<b>NOAA</b>/CPC: El Niño com 100% de chance até jan–mar/2027 · <b>OMM</b>: pico por volta de dezembro de 2026"},
-    {"ini": ini("f15"), "fim": DUR, "html": "<b>Defesa Civil</b>: alertas por mensagem de texto (SMS), envie o CEP para 40199 · emergência 199 · Bombeiros 193"},
+    {"ini": ini("f15"), "fim": DUR, "html": "<b>Defesa Civil</b>: alertas por mensagem de texto: envie o CEP para 40199 · emergência 199 · Bombeiros 193"},
 ]
 
 CORES = {"elnino": "#ff2a1f", "nino": "#ff2a1f", "mar": "#5ec8ff", "quente": "#ff2a1f", "vento": "#5ec8ff", "chuva": "#5ec8ff",
