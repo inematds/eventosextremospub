@@ -1,0 +1,1 @@
+# datas AAAA-MM-DD a pular, uma por linha

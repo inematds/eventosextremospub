@@ -4,6 +4,7 @@ Conta/autor: `inematds <inematds@gmail.com>`.
 
 - Fluxo e regras: README.md. Fontes de clima: fontes-clima.md. APIs de clima gratuitas liberadas pelo Nei em 09/10/2026 (GIBS, Open-Meteo, INMET, CPTEC, CEMADEN, NOAA); qualquer outra API (modelos de IA, serviços pagos) precisa de autorização.
 - HeyGen (avatar) gasta crédito: confirmar o custo com o Nei antes de cada render. Exceção (Nei, 10/10/2026): o clima 24h diário sai pronto sem aprovação (avatar incluso), vai ao bot v3 e é publicado no lives10.
+- Clima 24h diário automático: timer `clima24h-diario.timer` (05:30) → `auto/rodar.sh` (coleta → `claude -p` com `auto/roteiro.md` → `auto/avatar.sh` → lives10 + bot v3 → git). Log em `edicoes/<dia>-ultimas-24h/rodada.log`; pular dia em `auto/pular.txt`; teste isolado: `ED=<pasta> SEM_AVATAR=1 SEM_YT=1 SEM_BOT=1 SEM_GIT=1 auto/rodar.sh`.
 - Render: `GL` padrão é Vulkan; swiftshader é 30× mais lento (3 s/quadro).
 - O GIBS repete o último quadro quando a hora pedida ainda não existe: `satelite_gibs.py` tira repetidos.
 - Open-Meteo grátis devolve 429 se mandar muitos pontos por minuto: lotes de 40 com pausa.
