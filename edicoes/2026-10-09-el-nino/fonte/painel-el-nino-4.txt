@@ -1,0 +1,887 @@
+nor
+         PAINEL EL NIÑO 2026-2027
+       Boletim Mensal N° 04 - setembro de 2026
+         Este boletim é o resultado de ação conjunta entre o Instituto Nacional de
+Meteorologia (INMET), o Instituto Nacional de Pesquisas Espaciais (INPE), a Agência Nacional
+de Águas e Saneamento Básico (ANA), o Centro Nacional de Monitoramento e Alerta de
+Desastres Naturais (CEMADEN), o Serviço Geológico do Brasil (SGB), a Secretaria Nacional de
+Proteção e Defesa Civil (SEDEC) e o Centro Gestor e Operacional do Sistema de Proteção da
+Amazônia (CENSIPAM), e apresenta informações sobre o monitoramento e as previsões
+relacionadas ao fenômeno El Niño para o período de 2026 e 2027, bem como os possíveis
+impactos associados.
+
+         Em junho de 2026 foram confirmadas condições compatíveis com o El Niño. Os
+modelos indicam probabilidade de 100% de permanência destas características até, pelo
+menos o início de 2027, com alta probabilidade de ocorrência de um El Niño muito forte,
+quando a temperatura do Oceano Pacífico Equatorial poderá ficar 2,0°C acima da média,
+entre a primavera e o verão de 2026.
+
+          Com isso, a previsão para o trimestre outubro-novembro-dezembro (OND) de 2026
+indica, de forma geral, chuvas acima da média em áreas da Região Sul e chuvas abaixo da
+média no centro-norte do País.
+
+         Diante desse cenário, a combinação de chuvas abaixo da média e temperaturas
+elevadas deverá intensificar o déficit hídrico no centro-norte do País, com possíveis impactos
+sobre culturas de sequeiro, pastagens e a implantação da safra 2026/27. Nessas áreas,
+poderá haver risco de falhas na germinação, redução do estande e necessidade de replantio
+das lavouras de soja semeadas precocemente, além de possíveis prejuízos à florada do café
+ao desenvolvimento do café conilon e à disponibilidade de forragem e de água para os
+rebanhos no semiárido. Na Região Norte, a persistência de condições quentes e secas deverá
+manter elevado o risco de incêndios em áreas agrícolas e pastagens.
+
+         Na Região Sul, a boa disponibilidade hídrica tende a favorecer o desenvolvimento
+do milho de primeira safra. Por outro lado, o excesso de chuvas e de umidade no solo poderá
+aumentar a incidência de doenças fúngicas no trigo, como a giberela, atrasar a colheita e
+reduzir a qualidade dos grãos, além de dificultar a semeadura da soja e do arroz irrigado,
+com possíveis reflexos sobre o planejamento do milho de segunda safra.
+
+          Por isso, o INMET, o INPE, o CEMADEN, a ANA, o SGB, a SEDEC e o CENSIPAM
+reforçam a necessidade do acompanhamento contínuo das condições meteorológicas e
+hidrológicas para o monitoramento de possíveis impactos em diversas áreas da economia
+brasileira. Reforça-se também o acompanhamento das recomendações e ações de
+autoproteção da Secretaria Nacional de Proteção e Defesa Civil.
+
+
+
+                                                                                            2
+Sumário
+1. Análise da situação atual do El Niño ............................................................ 4
+2. Perspectivas do El Niño ................................................................................ 5
+3. Situação Atual no Brasil – Dados Observados .............................................. 6
+  3.1 Análise do último trimestre .................................................................... 6
+  3.2 Hidrologia ................................................................................................ 6
+     Monitor de Secas ....................................................................................... 6
+     Nível dos rios .............................................................................................. 8
+     Reservatórios e Sistemas Hídricos ........................................................... 10
+  3.3 Eventos de Fogo .................................................................................... 12
+4. Previsão e potenciais impactos associados ao El Niño .............................. 13
+  4.1 Previsão Climática Sazonal .................................................................... 13
+     Amazônia Legal e Pantanal ...................................................................... 14
+  4.2 Agropecuária ......................................................................................... 15
+     Previsão Agrometeorológica ................................................................... 15
+     Agricultura familiar e territórios .............................................................. 16
+  4.3 Hidrologia .............................................................................................. 17
+     Previsão Sazonal ...................................................................................... 17
+  4.4 Risco de Fogo......................................................................................... 19
+5. Monitoramento e Coordenação Operacional ............................................ 19
+  5.1 Monitoramento Meteorológico e Previsão do tempo ......................... 19
+  5.2 Alertas ................................................................................................... 20
+  5.3 Salas de Avaliação, de Acompanhamento e de Crise da ANA .............. 22
+  5.4 Acompanhamento da Restrição Logística ............................................. 23
+6. Recomendações e Orientações .................................................................. 24
+7. Considerações Finais .................................................................................. 25
+
+
+
+
+                                                                                                                 3
+1. Análise da situação atual do El Niño
+       No dia 11 de junho de 2026, a agência norte-americana NOAA declarou o
+estabelecimento das condições de El Niño no oceano Pacífico Equatorial. Ao longo de 2026,
+observou-se o aquecimento na parte central e leste do Oceano Pacífico Equatorial, e,
+segundo boletim da NOAA do dia 28 de setembro, foram observadas anomalias positivas
+superiores a 2°C nas áreas de referência do Pacífico Central e Leste (Figura 1). As condições
+atuais dos oceanos e da atmosfera, com valores negativos do Índice de Oscilação Sul, são
+consistentes com a presença de El Niño. Durante episódios de El Niño, a pressão atmosférica
+tende a ser mais baixa do que o normal em Taiti e mais alta em Darwin, resultando em um
+valor negativo do gradiente zonal de pressão e do Índice de Oscilação Sul.
+
+
+
+
+Figura 1: Evolução das anomalias de temperatura da superfície do mar no Oceano Pacífico nas diferentes
+áreas do Niño. Fonte: National Centers for Environmental Prediction (NCEP).
+
+
+
+
+                                                                                                         4
+2. Perspectivas do El Niño
+          As previsões dos centros mundiais de meteorologia indicam a continuidade e a
+intensificação do aquecimento sobre o Pacífico Equatorial nos próximos meses até, pelo
+menos, o primeiro trimestre de 2027. Para o trimestre outubro-novembro-dezembro (OND),
+a previsão do Climate Prediction Center, da National Oceanic and Atmospheric
+Administration (CPC/NOAA), na Figura 2, aponta elevada probabilidade, superior a 95%, de
+ocorrência de um evento El Niño muito forte.
+         A NOAA também aponta que há probabilidade deste evento El Niño 2026/27 ser o
+mais forte desde 1950, com temperatura podendo superar 2,5 °C da média histórica.
+
+
+
+
+Figura 2: Previsão probabilística de El Niño/La Niña da NOAA.
+
+
+
+
+                                                                                      5
+3. Situação Atual no Brasil – Dados Observados
+3.1 Análise do último trimestre
+          As chuvas do último trimestre, junho-julho-agosto de 2026, são apresentadas na
+Figura 3. No balanço para todo o período, observaram-se chuvas abaixo da média histórica
+na maior parte das Regiões Norte e Nordeste, e chuvas acima da média em parte da faixa
+central e sul do país. O padrão de chuvas acima da média em parte da faixa central reflete o
+comportamento de junho, quando ocorreram chuvas com acumulados que superaram a
+média climatológica. Na Região Sul, as chuvas acima da média histórica no trimestre junho-
+julho-agosto refletem principalmente o padrão de julho e agosto, quando os volumes de
+chuva foram mais expressivos. A distribuição espacial das anomalias observadas é
+consistente com o padrão de precipitação observado em outros eventos de El Niño e,
+portanto, é compatível com as condições de El Niño observadas no período.
+
+
+
+
+Figura 3: Precipitação e anomalia de precipitação para os meses de junho, julho e agosto de 2026
+individualmente e para o trimestre (JJA/2026). Fonte: MERGE/CPTEC-INPE.
+
+
+
+
+3.2 Hidrologia
+Monitor de Secas
+       Considerando que 2023 também esteve sob atuação do El Niño, a Figura 4 traz a
+comparação das condições de seca do mês de agosto de 2023 e 2026.
+
+
+
+                                                                                              6
+Figura 4: Mapas do Monitor de Secas do mês de agosto (2023 à esquerda e 2026 à direita). Fonte:
+https://monitordesecas.ana.gov.br
+
+         Comparar as condições observadas em agosto de 2026 com aquelas registradas no
+mesmo período de 2023 pode, em algum grau, fornecer subsídios para antecipar a
+ocorrência de impactos nas Regiões historicamente mais afetadas.
+
+Nordeste e Norte
+
+          No Nordeste, o maior destaque em 2026 é o registro de seca grave (S2) em 16% da
+Região, evidenciando o quadro mais severo no País. Além disso, a seca atual já apresenta
+impactos de curto e longo prazo (CL), indicando uma duração mais prolongada. Esse cenário
+pode acelerar os impactos da seca, especialmente sobre a segurança hídrica e o
+abastecimento, já que, em muitos locais, as reservas de água não se recuperaram antes da
+chegada do El Niño. Somado a isso, a previsão de aumento das temperaturas do ar tende a
+agravar a seca mais rapidamente, elevando a demanda evaporativa atmosférica e
+intensificando a perda de umidade do solo.
+
+         Na Região Norte, a comparação entre os meses de agosto fica comprometida, uma
+vez que Roraima e Amapá ainda não faziam parte do Programa em 2023. O destaque para o
+Norte, em agosto de 2026, foi o rápido agravamento das condições de seca nos estados de
+Roraima, Acre e Amazonas, que chegaram a registrar aumento de até 2 categorias de
+severidade no intervalo de 1 mês. Nesses locais, já há relatos de municípios com dificuldades
+na captação de água e comprometimento da navegação.
+
+Centro-Oeste e Sudeste
+
+         No Centro-Oeste, na comparação entre os dois anos, Mato Grosso, que responde
+por quase 60% do território regional, se destaca pelo cenário completamente oposto: em
+2023, registro de seca grave (S2) e até extrema (S3). Em 2026, predominância de áreas sem
+seca. Assim, apesar do El Niño de forte intensidade, a Região apresenta condição de seca
+mais amena que a de 2023.
+
+                                                                                                  7
+         No Sudeste, agosto de 2026 tem registro de seca fraca e moderada, tal qual em
+2023. Contudo, a abrangência dessa vez é maior, com 84% da Região afetada pela seca.
+Segundo as previsões, as temperaturas nos próximos meses devem ficar acima da média,
+favorecendo o aumento da demanda evaporativa e, consequentemente, a perda de umidade
+do solo. Caso a próxima estação chuvosa apresente acumulados de precipitação abaixo do
+esperado, a situação poderá se agravar rapidamente entre a primavera e o verão.
+
+Sul
+
+        No Sul, o principal risco é a ocorrência de grandes inundações. Em agosto de 2023,
+29% da área da Região Sul estava sob condição de seca, com o Rio Grande do Sul
+apresentando, inclusive, seca grave (S2). Em agosto de 2026, os 3 estados da Região
+aparecem livres do fenômeno.
+
+
+
+Nível dos rios
+         A Figura 5 apresenta a condição atual dos níveis dos rios no Brasil em relação às
+médias históricas por meio de percentis: cores quentes (ou frias) representam quanto o rio
+está abaixo (ou acima) da média para esta época do ano. Conforme o mapa, as condições
+das regiões mais sensíveis ao El Niño podem ser resumidas a seguir:
+
+
+
+
+Figura 5: Níveis dos rios em setembro: a calha do rio Negro/Branco, ao norte da Amazônia são o destaque das
+secas; níveis elevados ao sul do Brasil são o destaque das cheias. O resto do país apresenta condição
+heterogênea. Fonte: Serviço Geológico Brasileiro (SGB).
+
+
+
+                                                                                                         8
+Amazônia
+
+         Os dados observados indicam condições hidrológicas heterogêneas na Região
+Amazônica no último mês. Não há, neste momento, uma condição hidrológica
+excepcionalmente baixa e generalizada na Amazônia, como nos anos de 2023 e 2024, mas
+existem áreas específicas, onde a combinação entre condições atuais desfavoráveis e
+perspectivas de chuva abaixo da média justifica atenção especial.
+
+          As bacias dos rios Branco e Negro concentram o cenário de maior atenção, devido
+à combinação de níveis atualmente baixos, déficits de precipitação observados e previsão
+sazonal indicando precipitação abaixo da média, aumentando o risco de agravamento das
+condições de seca, especialmente em Roraima. Nos principais trechos dos rios
+Amazonas/Solimões e Tapajós, as projeções indicam, de modo geral, continuidade da
+vazante dentro da faixa histórica, porém com possibilidade de manutenção dos níveis atuais
+caso a recuperação das chuvas no início da estação chuvosa seja inferior ao esperado. No rio
+Madeira, as condições atuais são relativamente mais favoráveis, embora a recuperação dos
+níveis também dependa da evolução das chuvas nos próximos meses.
+
+Sul
+
+       Na Região Sul do Brasil, o cenário hidrológico tem sido marcado por expressivos
+acumulados de chuva, que vêm provocando recorrentes elevações dos níveis dos rios e a
+ocorrência de inundações em diferentes pontos da região.
+
+        Na Região Hidrográfica do rio Uruguai, os níveis dos rios encontram-se elevados. Na
+calha principal do rio Uruguai, foram ultrapassadas as cotas de alerta no Médio Uruguai, nas
+estações de Iraí e Itapiranga, e as cotas de atenção no Baixo Uruguai, nas estações de São
+Borja, Itaqui e Uruguaiana. No Alto Uruguai, em Santa Catarina, também foram registradas
+elevações nos rios Canoas e do Peixe, com ocorrência de inundação nos municípios de
+Otacílio Costa e Joaçaba. Na Fronteira Oeste do Rio Grande do Sul, os rios Quaraí, Ibirapuitã,
+Santa Maria e Ibicuí apresentaram elevação em resposta aos elevados acumulados de chuva
+registrados no final de setembro.
+
+       Nas bacias contribuintes do Guaíba, a previsão indica manutenção de níveis elevados.
+As bacias dos rios Caí e Taquari registraram uma sequência de episódios de elevação ao longo
+do mês de setembro, com ocorrência de inundações em diversos pontos monitorados,
+principalmente ao longo das calhas principais. No rio Taquari, foram observados episódios
+de inundação nos municípios de Santa Tereza, Muçum, Encantado, Estrela, Lajeado, Bom
+Retiro do Sul, Porto Mariante e Taquari. No rio Caí, os principais pontos afetados foram São
+Sebastião do Caí, Montenegro e Capela de Santana. Os rios Jacuí, Sinos e Gravataí também
+apresentaram níveis elevados ao longo do último mês. No Guaíba, na estação Usina do
+Gasômetro, os níveis chegaram próximo à cota de atenção.
+
+         Em decorrência das chuvas já observadas em 2026, o SGB já emitiu mais de 190
+boletins de alerta hidrológico, com prognósticos de níveis e monitoramento para os quatro
+Sistemas de Alerta Hidrológico operados pelo SGB na Região Sul. O SGB tem
+                                                                                            9
+acompanhamento contínuo do cenário hidrológico, permitindo pronta resposta a possíveis
+mudanças abruptas decorrentes da instabilidade climática observada na região.
+
+Nordeste
+
+         O Nordeste apresenta condições de seca grave em 16% da Região, conforme o
+Monitor de Secas. Os impactos sobre os rios ainda são localizados e a situação permanece
+heterogênea: enquanto alguns trechos da bacia do rio São Francisco apresentam níveis
+elevados para esta época do ano, trechos da bacia do rio Parnaíba registram níveis baixos.
+De forma geral, ainda não há consolidação de anomalias negativas nos volumes de água dos
+rios em toda a Região Nordeste.
+
+Reservatórios e Sistemas Hídricos
+         Em 23/09/2026, o volume equivalente dos reservatórios do Sistema Interligado
+Nacional (SIN) atingiu 65,9% do volume útil, permanecendo como o segundo maior valor
+para a data desde 2015. Nessa mesma data, na Região Sul, onde tem sido registrados
+volumes expressivos de precipitação, os reservatórios de regularização do SIN armazenavam
+81,4% do volume útil. Dos reservatórios com previsão de volume de espera para controle de
+cheias na Região Sul, Salto Santiago e Passo Real, apenas Passo Real está em período de
+controle de cheias, mas ainda sem ocupação do volume de espera.
+
+         Todos os Sistemas Hídricos com reservatórios do SIN que têm faixas operativas
+estabelecidas pela ANA encontram-se na Faixa de Operação Normal. No Paranapanema, as
+afluências excepcionalmente elevadas em setembro, três vezes superiores à vazão média de
+longo termo (MLT) do mês, elevaram os armazenamentos de Jurumirim (73,2%), Chavantes
+(81,4%) e Capivara (90,3%). No rio São Francisco, operam na Faixa de Operação Normal os
+reservatórios de Três Marias (80,5%) e Sobradinho (66,6%), a mesma faixa de operação de
+Serra da Mesa (48,9%), no rio Tocantins.
+
+
+
+
+Figura 6: Volume Equivalente do SIN (%). Fonte: Sistema de Acompanhamento de Reservatórios (SAR)/ANA.
+
+
+
+                                                                                                    10
+        Na Região Norte, as vazões estão em período de recessão e as defluências das UHEs
+Jirau e Santo Antônio atendem aos requisitos mínimos para navegabilidade da hidrovia. No
+rio Xingu, as vazões também estão em recessão. A Resolução ANA nº 299/2026 flexibilizou,
+até 30 de novembro, a vazão mínima garantida ao Reservatório Intermediário de Belo Monte
+de 300 para 100 m³/s com vistas a preservar o sistema de transposição de peixes, a segurança
+eletroenergética      e   a    navegabilidade       na    Volta    Grande      do     Xingu.
+
+       Em 24/09/2026, o armazenamento do reservatório equivalente da Região Nordeste
+correspondia a 47,2% da capacidade total, com pequena redução em relação a agosto (50%)
+e condição ligeiramente superior à observada no mesmo período de 2025. Mesmo com a
+situação regional adequada, 96 açudes monitorados pela ANA estão abaixo de 20% do
+volume e podem demandar atenção local. Além disso 12 Sistemas Hídricos Locais estão em
+Estado Hidrológico Vermelho.
+
+         Principal manancial da Região Metropolitana de São Paulo, o Sistema Cantareira
+apresentava 41,3% de seu volume útil em 25/09. Em outubro de 2026, o Sistema Cantareira
+irá operar na Faixa de Atenção.
+
+         Informações complementares estão disponíveis nos boletins da Sala de Situação da
+ANA: SIN; Iguaçu/Uruguai; Paranapanema; São Francisco; Tocantins; Madeira; Sistema
+Cantareira; Açudes do Semiárido (mensal).
+
+
+
+
+Figura 7: Reservatório Equivalente do Nordeste. Fonte: SAR/ANA.
+
+
+
+
+                                                                                         11
+3.3 Eventos de Fogo
+        Dados atualizados do Painel do Fogo do CENSIPAM indicam que, em julho e agosto,
+os eventos de fogo ficaram cerca de 44% e 37% abaixo das respectivas médias mensais,
+considerando o período de 2020 a Dados atualizados do Painel do Fogo do CENSIPAM
+indicam que, em julho e agosto, o número de eventos de fogo ficou cerca de 44% e 37%
+abaixo, respectivamente, das médias registradas para esses meses no período de 2020 a
+2025. Ainda assim, observou-se intensificação progressiva da atividade em 2026, com
+aumento de 146% entre julho e agosto e continuidade desse crescimento em setembro
+(superando em 66% o valor registrado em agosto). Esse comportamento reforça a
+necessidade de acompanhamento ao longo da transição para a estação chuvosa, diante da
+previsão de condições mais secas e temperaturas acima da média em parte da Amazônia
+Legal. Nesse contexto, a Figura 8 destaca o Amapá, onde a atividade de fogo apresenta, em
+2026, sinais de antecipação em relação à sua sazonalidade habitual, observados tanto no
+aumento do número de eventos quanto na elevação da potência radiativa do fogo (FRP)
+utilizada como indicador da intensidade energética do fogo detectado pelos sensores. Como
+o estado já figura em áreas de alerta no mapa de risco de fogo, essa evolução reforça a
+necessidade de atenção nas próximas semanas, considerando o cenário de El Niño e as
+condições climáticas previstas para o norte da Amazônia.
+
+
+
+
+Figura 8: Potência radiativa do fogo (FRP) acumulada dos eventos de fogo no Amapá entre 2014 e 2026. A linha
+de 2026 (em vermelho) corresponde aos dados disponíveis até 25 de setembro. Fonte: CENSIPAM, disponível
+em https://panorama.sipam.gov.br/painel-do-fogo/index.html
+
+
+
+
+                                                                                                        12
+4. Previsão e potenciais impactos associados ao
+El Niño
+4.1 Previsão Climática Sazonal
+          A previsão elaborada pelo Centro de Previsão de Tempo e Estudos Climáticos do
+Instituto Nacional de Pesquisas Espaciais (CPTEC/INPE), pelo Instituto Nacional de
+Meteorologia (INMET) e pela Fundação Cearense de Meteorologia e Recursos Hídricos
+(FUNCEME) para o trimestre outubro-novembro-dezembro (OND) de 2026, apresentada na
+Figura 9, indica um padrão consistente com condições de El Niño, com maior probabilidade
+de chuva acima da faixa normal nas áreas em azul, na Região Sul, em parte da Região Sudeste
+e áreas do leste da região Nordeste. Nas áreas em amarelo e vermelho, incluindo grande
+parte da Região Norte, e parte das regiões Nordeste e Centro Oeste, há maior probabilidade
+de chuvas abaixo da faixa normal. Nas áreas em branco, há iguais chances de ocorrência de
+chuvas dentro, acima ou abaixo da faixa normal climatológica. As previsões indicam o
+possível início da estação chuvosa na porção central do país entre o final de outubro e
+meados de novembro.
+
+         Quanto a previsão de temperatura do ar, o conjunto multimodelo brasileiro indica
+maior probabilidade de ocorrência de valores acima da faixa normal em quase todo o país,
+com exceção para o extremo sul do Rio Grande do Sul que apresenta maior probabilidade de
+valores abaixo da faixa normal.
+
+         Vale ressaltar que a tendência de precipitações abaixo da faixa normal, associada a
+previsão de temperaturas acima da faixa normal, principalmente na Região Norte,
+aumentam o potencial de propagação de queimadas, exigindo atenção especial aos possíveis
+impactos.
+
+
+
+
+                                  (a)                                         (b)
+Figura 9: Previsão climática sazonal por tercil (categorias abaixo da faixa normal, dentro da faixa normal e acima
+da faixa normal), gerada pelo método objetivo (CPTEC/INPE, INMET e FUNCEME). As áreas em branco indicam
+igual probabilidade para as três categorias. (a) precipitação; (b) temperatura.
+
+                                                                                                              13
+Amazônia Legal e Pantanal
+         A previsão climática do CENSIPAM para OND de 2026 indica precipitação abaixo da
+média em grande parte da Amazônia Legal, especialmente em Roraima, Amapá, grande
+parte do Amazonas e Pará, Maranhão, norte do Tocantins, oeste do Acre, norte de Rondônia
+e norte do Mato Grosso, assim como volumes acima da média no centro e sul de Mato Grosso
+do Sul e condições próximas à média nas demais áreas da Amazônia Legal e do Pantanal
+(Figura 10a). As temperaturas devem permanecer acima da média na região durante o
+trimestre (Figura 10b).
+
+          A previsão de precipitação abaixo da média para a faixa centro-norte da Amazônia
+Legal terá impactos distintos, condicionados pelas diferentes sazonalidades locais. No centro
+e sul da região, abrangendo o centro do Amazonas, sul do Pará, norte do Tocantins e centro
+do Maranhão, a estação chuvosa tende a se consolidar, porém com acumulados inferiores à
+média histórica. A combinação de altas temperaturas e disponibilidade de umidade ainda
+poderá favorecer a ocorrência de tempestades isoladas. Em contrapartida, a porção norte
+(Amapá e o norte dos estados do Amazonas, Pará e Maranhão) se encontrarão ainda no
+período menos chuvoso em outubro e novembro, onde serão mantidas condições mais
+secas, com perspectivas de retardar o início do período chuvoso, habitualmente iniciado em
+dezembro. Esse déficit hídrico pode aumentar o risco de incêndios florestais e agravar o
+estresse hídrico, favorecendo o ressecamento da vegetação e limitando a recuperação dos
+níveis dos rios e da umidade do solo.
+
+
+
+
+                            (a)                                              (b)
+
+Figura 10: Previsão Climática do CENSIPAM para a Amazônia Legal e Pantanal no trimestre outubro, novembro
+e dezembro de 2026. (a) Precipitação e (b) Temperatura média. Fonte: CENSIPAM, disponível em
+https://panorama.sipam.gov.br/painel/meteorologia/boletimclimatico.
+
+
+
+
+                                                                                                     14
+4.2 Agropecuária
+Previsão Agrometeorológica
+         As previsões climáticas para OND de 2026 apontam para a persistência da fase
+quente do ENOS, com intensidade muito forte durante o período, e impactos distintos sobre
+as regiões produtoras do Brasil:
+
+Região Norte
+
+         A previsão de chuvas abaixo da média e de temperaturas acima da média ao longo
+do trimestre indica que a restrição hídrica poderá persistir em Roraima, no Amapá, no Baixo
+Amazonas e no nordeste do Pará, dificultando a semeadura da soja e elevando o risco de
+incêndios em áreas agrícolas e pastagens. Por outro lado, a umidade remanescente no solo
+deverá beneficiar o açaí e a agricultura familiar no norte e sudoeste do Amazonas e, a partir
+de novembro, a recuperação hídrica deverá favorecer a implantação da safra de verão em
+Rondônia e no sul do Pará.
+
+Região Nordeste
+
+          A previsão de chuvas abaixo da média e de temperaturas acima da média deverá
+manter a restrição hídrica em grande parte da região, elevando o risco de falhas no
+estabelecimento da soja no MATOPIBA e reduzindo a disponibilidade de forragem e de água
+para os rebanhos no semiárido. Em dezembro, a recuperação do armazenamento de água
+no solo no oeste da Bahia poderá favorecer o desenvolvimento das lavouras. Nos perímetros
+irrigados, especialmente nas áreas em que as chuvas permanecerem irregulares, a
+temperaturas elevadas tendem a aumentar a demanda por irrigação.
+
+Região Centro-Oeste
+
+         As chuvas abaixo da média no centro-norte de Mato Grosso, no norte de Goiás e
+no Distrito Federal, associadas a temperaturas acima da média, deverão reduzir o
+armazenamento de água no solo, comprometendo a semeadura e o estabelecimento da soja,
+do milho e do feijão de primeira safra. A partir de novembro, a recuperação dos níveis de
+armazenamento de água no solo deverá favorecer o desenvolvimento das lavouras e das
+pastagens. Em dezembro, o excesso de umidade em algumas áreas poderá aumentar o risco
+de doenças fúngicas e limitar as operações pulverizações.
+
+Região Sudeste
+
+         As chuvas acima da média previstas para São Paulo, Rio de Janeiro e centro-sul de
+Minas Gerais deverão favorecer a semeadura e o estabelecimento inicial das lavouras de soja
+e milho de primeira safra, o pegamento dos frutos do café e a brotação da cana-de-açúcar.
+Entretanto, em áreas de Minas Gerais e no norte do Espírito Santo, as temperaturas elevadas
+e a persistência da restrição hídrica poderão prejudicar a florada do café arábica, o
+desenvolvimento do café conilon e o e o estabelecimento das lavouras de grãos. Nas áreas
+
+                                                                                          15
+com excesso de chuva, poderão ocorrer interrupções pontuais na colheita da cana-de-
+açúcar.
+
+Região Sul
+
+         A previsão de chuvas e temperaturas acima da média na maior parte da região,
+associada aos elevados níveis de armazenamento de água no solo, poderá favorecer o
+desenvolvimento do milho de primeira safra. Entretanto, o excesso de umidade poderá
+aumentar a incidência de doenças fúngicas no trigo, atrasar a colheita e reduzir a qualidade
+dos grãos no Paraná. Também poderá dificultar a semeadura da soja, com reflexos no
+planejamento do milho de segunda safra.
+
+
+Agricultura familiar e territórios
+          Segundo o Índice Integrado de Seca (IIS-3) do Cemaden, referente a setembro de
+2026 (dados parciais), 197 municípios foram classificados em Seca Severa, 44 a mais que os
+153 registrados em agosto. Também foram identificados 24 municípios em Seca Extrema,
+frente a 4 em agosto, evidenciando a intensificação da seca. O aumento ocorreu
+principalmente nos estados do Amazonas, Bahia, Amapá, Alagoas e Sergipe.
+
+
+
+
+Figura 11: Índice Integrado de Seca (IIS-3) do Cemaden referente a setembro de 2026.
+
+Risco de Seca na Agricultura Familiar
+
+        O risco considera o cultivo de feijão e/ou milho não irrigados, a exposição ao déficit
+hídrico nos meses de agosto e setembro e as vulnerabilidades e capacidades adaptativas dos
+municípios. Para os plantios de agosto de 2026, foram identificados 1 município com risco
+muito alto, 38 com risco alto e 29 com risco moderado, totalizando 68 municípios com algum
+nível de risco. A maior concentração ocorreu no Amazonas, onde a seca observada em
+
+
+                                                                                           16
+agosto, associada à previsão de persistência em setembro, merece atenção, especialmente
+considerando o calendário de plantio de milho vigente no período.
+
+Os resultados completos podem ser consultados no boletim RiSAF – Risco da Seca na
+Agricultura Familiar, disponível no Cemaden: https://www.gov.br/cemaden/pt-
+br/assuntos/monitoramento/impactos-seca/RiSAF-Risco-da-seca-na-agricultura-familiar
+
+Áreas Indígenas
+
+        Em setembro de 2026, 25 polos foram classificados em Seca Severa, frente a 11 em
+agosto. Os polos são subdivisões territoriais dos Distritos Sanitários Especiais Indígenas
+(DSEI) e funcionam como referência de atendimento à saúde das comunidades indígenas. Os
+polos em Seca Severa concentram-se no Amazonas (18) e em Roraima (7), com destaque
+para a porção norte do Amazonas. O resultado merece atenção por evidenciar seca em
+escala local nas áreas indígenas, concomitantemente ao cenário de maior atenção
+hidrológica na região. Conforme mencionado anteriormente, as bacias dos rios Branco e
+Negro apresentam níveis baixos, déficits de precipitação e sinal predominantemente
+negativo nas previsões sazonais, indicando a ocorrência simultânea de seca local e
+hidrológica, especialmente em Roraima.
+
+Assentamentos rurais
+
+        Em setembro de 2026 (dados parciais), observou-se intensificação das condições de
+seca. Os assentamentos em Seca Extrema passaram de 32 em agosto para 90 em setembro,
+enquanto os em Seca Severa aumentaram de 216 para 244. As condições mais críticas
+concentram-se principalmente em Alagoas e Sergipe, evidenciando a intensificação do
+déficit hídrico na região.
+
+Unidades de Conservação (UCs)
+
+        Em setembro de 2026 (dados parciais), 16 UCs foram classificadas em Seca Severa,
+frente a 15 em agosto. Os registros concentram-se na porção norte do Amazonas e em
+Roraima, reforçando a atenção para a persistência da seca e seus possíveis reflexos sobre o
+risco de propagação de fogo na região.
+
+Para acompanhamento da situação de seca nos territórios e dos riscos na agricultura familiar,
+consulte a Plataforma Alerta-Secas do Cemaden: https://alertasecas.cemaden.gov.br/
+
+
+
+
+4.3 Hidrologia
+Previsão Sazonal
+          Nas regiões Centro-Oeste, Norte e parte do Sudeste, embora seja normal estiagem
+neste período, as vazões estão abaixo da média. Gradativamente, a estiagem perde força
+nessas áreas até dezembro, mas mantendo vazões abaixo da média em grande parte do
+Brasil, notadamente no norte da bacia do rio Paraná, bacias do Nordeste, incluindo rio São
+                                                                                          17
+Francisco e Parnaíba e na maioria dos afluentes da margem direita do rio Amazonas. Nos
+afluentes da margem esquerda do rio Amazonas (incluindo o rio Negro), na bacia do rio
+Xingu (margem direita) e na parte ao norte da região Nordeste, a previsão é que as vazões
+se mantenham abaixo da média, inclusive com o risco de estiagem permanecendo até
+dezembro. Algumas cabeceiras de bacias do Centro-Oeste também mantêm risco de
+estiagem até dezembro.
+          As previsões apontam para vazões acima da média e maior risco de cheias em
+toda a região Sul, parte da região Sudeste e do alto rio Paraguai, com esse risco diminuindo
+até dezembro. Detalhes da condição atual (https://www.ufrgs.br/sardim/) e das previsões
+(https://www.ufrgs.br/sardim/previsao.html) podem ser acessadas nos links da plataforma
+SARDIM.
+
+
+
+
+Figura 12: Previsões sazonais da condição hídrica (à esquerda), dos riscos de cheias (ao centro) e de estiagens
+(à direita), para os meses de outubro, novembro e dezembro.
+
+
+
+
+                                                                                                           18
+4.4 Risco de Fogo
+
+          De acordo com a previsão de risco de fogo do Cemaden para o trimestre outubro–
+novembro–dezembro (OND) de 2026, permanecem áreas críticas principalmente na
+Amazônia, Centro-Oeste e em setores do interior do país. O modelo de probabilidade de
+risco de fogo classifica 395 municípios em Alerta Alto e 533 em Alerta, abrangendo
+conjuntamente aproximadamente 4,76 milhões de km². A classe Atenção apresenta ampla
+distribuição territorial, envolvendo 2.135 municípios e cerca de 2,33 milhões de km². Os
+níveis mais elevados permanecem concentrados sobretudo no centro-norte do país,
+enquanto o Sul apresenta condições predominantemente menos críticas. O padrão espacial
+indica a persistência do risco elevado em parte do território nacional, porém com redução
+das áreas mais críticas em relação ao trimestre anterior, compatível com a transição para o
+período chuvoso em parte do Brasil.
+
+
+
+
+Figura 13: Previsão do risco de fogo por município para o trimestre outubro–dezembro, elaborada pelo
+Cemaden com base na atividade humana e na previsão climática sazonal do INPE, INMET e FUNCEME.
+
+
+5. Monitoramento e Coordenação Operacional
+5.1 Monitoramento Meteorológico e Previsão do
+tempo
+         O Instituto Nacional de Meteorologia (INMET) disponibiliza previsões do tempo e
+avisos meteorológicos para todo o território nacional, com informações atualizadas sobre as
+condições atmosféricas previstas e a possibilidade de ocorrência de fenômenos
+meteorológicos que possam representar riscos à população.
+
+
+
+                                                                                                 19
+         As previsões do tempo apresentam informações sobre variáveis meteorológicas,
+como chuva, temperatura do ar, umidade relativa, vento e outras condições previstas para
+os próximos dias. Já os avisos meteorológicos são emitidos quando há previsão de ocorrência
+de fenômenos potencialmente perigosos, classificados conforme o nível de severidade, e
+informam a área de abrangência, o período de validade, a descrição do fenômeno e os riscos
+associados.
+
+         As informações podem ser consultadas por qualquer cidadão no portal oficial do
+INMET e em seus canais digitais. A atualização das previsões e dos avisos ocorre de forma
+contínua, de acordo com a evolução das condições meteorológicas observadas e previstas.
+
+
+         Avisos Meteorológicos         https://avisos.inmet.gov.br/
+
+
+
+         Previsão do Tempo             https://previsao.inmet.gov.br/5300108
+
+
+
+Briefing Diário da Defesa Civil Nacional
+
+         A Defesa Civil Nacional realiza diariamente um Briefing reunindo as defesas civis
+estaduais e municipais e instituições federais parceiras para apresentar o panorama
+meteorológico, hidrológico, geológico e climático. Esses encontros subsidiam a tomada de
+decisão pelos gestores públicos, permitindo a adoção antecipada de medidas de prevenção,
+preparação e resposta, além de fortalecer a coordenação entre os diferentes órgãos
+envolvidos na gestão de riscos e desastres.
+
+
+
+5.2 Alertas
+Alertas da Defesa Civil
+
+          Os alertas da Defesa Civil têm como finalidade informar a população sobre a
+possibilidade de ocorrência de eventos adversos, permitindo a adoção antecipada de
+medidas de autoproteção e contribuindo para a redução de riscos à vida e ao patrimônio.
+
+         A Secretaria Nacional de Proteção e Defesa Civil (SEDEC) é responsável pela gestão
+do serviço nacional de difusão de alertas de desastres, que utiliza diferentes meios para
+comunicar situações de risco à população.
+
+          Entre as ferramentas disponíveis está o Defesa Civil Alerta (DCA), serviço gratuito
+que utiliza a tecnologia Cell Broadcast para o envio de mensagens de emergência aos
+aparelhos celulares localizados em áreas potencialmente afetadas. Os alertas podem ser
+classificados como severos ou extremos, de acordo com o nível de risco, e apresentam
+orientações sobre as medidas de autoproteção recomendadas para cada situação.
+
+                                                                                          20
+Figura 14: Fluxo da ferramenta Defesa Civil Alerta (DCA). Fonte: SEDEC.
+
+
+
+
+Alertas do CEMADEN
+
+          O CEMADEN realiza o monitoramento contínuo das condições meteorológicas,
+hidrológicas e geológicas em municípios suscetíveis a desastres, utilizando dados de radares,
+satélites, pluviômetros, estações hidrológicas e previsões meteorológicas. Quando são
+identificadas condições de risco, especialistas avaliam a possibilidade de ocorrência e os
+impactos potenciais, emitindo alertas ao Cenad e às Defesas Civis. Essa atuação ocorre no
+âmbito do Sistema Nacional de Proteção e Defesa Civil (SINPDEC), que articula órgãos
+federais, estaduais e municipais nas ações de prevenção, preparação, resposta e
+recuperação diante de desastres.
+
+         Os alertas do CEMADEN podem ser acompanhados em tempo real no link:
+https://painelalertas.cemaden.gov.br/.
+
+       As previsões diárias de risco geo-hidrológico podem ser consultadas no site do
+Cemaden: https://www.gov.br/cemaden/pt-br/assuntos/riscos-geo-hidrologicos/.
+
+
+
+Alertas Hidrológicos do Serviço Geológico do Brasil
+
+         Os Sistemas de Alerta Hidrológicos (SAHs) do Serviço Geológico do Brasil (SGB)
+monitoram e preveem a evolução dos níveis dos rios em 19 bacias hidrográficas do país. Com
+base em dados em tempo real da Rede Hidrometeorológica Nacional e em modelos
+hidrológicos desenvolvidos pelo próprio SGB, os sistemas emitem boletins e alertas que
+indicam a possibilidade de inundações, o tempo previsto para sua ocorrência e, em alguns
+casos, as áreas potencialmente afetadas. Essas informações subsidiam a atuação da
+
+
+                                                                                          21
+ população e dos órgãos de proteção e defesa civil na prevenção e mitigação dos impactos de
+ eventos hidrológicos extremos.
+
+          Os alertas, boletins de monitoramento, previsões dos níveis dos rios e dados das
+ estações hidrometeorológicas podem ser consultados na plataforma SACE (Sistema de
+ Alerta de Eventos Críticos), disponível no portal do Serviço Geológico do Brasil. A plataforma
+ reúne informações em tempo real sobre as bacias monitoradas, incluindo níveis dos rios,
+ chuvas, mapas de risco e boletins hidrológicos. Acesse em: SACE – Sistema de Alerta de
+ Eventos Críticos.
+
+
+ 5.3 Salas de Avaliação, de Acompanhamento e de
+ Crise da ANA
+          As Salas de Avaliação, Acompanhamento e de Crise da ANA contam com
+ informações técnicas produzidas por instituições nas áreas de meteorologia, climatologia,
+ hidrologia, geologia e monitoramento de desastres, entre elas o Instituto Nacional de
+ Pesquisas Espaciais (INPE), o Instituto Nacional de Meteorologia (INMET), o Centro Nacional
+ de Monitoramento e Alerta de Desastres Naturais (CEMADEN), o Serviço Geológico do Brasil
+ (SGB) e o Operador Nacional do Sistema Elétrico (ONS).
+
+         As reuniões são realizadas de forma virtual e transmitidas ao vivo, permanecendo
+disponíveis no canal oficial da ANA no YouTube. A tabela abaixo apresenta as datas das
+próximas reuniões:
+ Tabela 1 - Próximas reuniões das Salas de Avaliação, Acompanhamento e Crise coordenadas pela ANA.
+
+
+                      REUNIÕES                           DATA                 ▶LINK DO YOUTUBE
+
+  10ª Reunião em 2026 da Sala de Acompanhamento do     06/10/2026
+                                                                      https://www.youtube.com/live/X9Qo3RorRvk
+  Sistema Hídrico do Rio São Francisco                   às 10h
+
+  115ª Reunião do Grupo Assessoramento à Operação     13/10/2026às
+                                                                     https://www.youtube.com/live/mm_MZasi2hA
+  do Sistema Hidráulico Paraíba do Sul - GAOPS            15h
+
+  13ª Reunião de Avaliação das Condições
+                                                      21/10/2026às
+  Hidrometeorológicas da Bacia do Alto Paraguai                      https://www.youtube.com/live/34NK93DQ2KE
+                                                          15h
+  (Pantanal)
+
+  10ª Reunião em 2026 da Sala de Acompanhamento do    22/10/2026às
+                                                                     https://www.youtube.com/live/-P8781ToU9U
+  Sistema Hídrico do Rio Paranapanema                     15h
+
+  4ª Reunião de Avaliação das Condições               23/10/2026às
+                                                                     https://www.youtube.com/live/dhK1DFVyCso
+  Hidrometeorológicas da Região Norte                     15h
+
+                                                      27/10/2026às
+  9ª Reunião em 2026 da Sala de Crise da Região Sul                  https://www.youtube.com/live/qNKMweMLYys
+                                                          10h
+
+  10ª Reunião em 2026 da Sala de Acompanhamento do    28/10/2026às
+                                                                     https://www.youtube.com/live/JzYqPehvjQU
+  Sistema Hídrico do Rio Tocantins                        10h
+
+  10ª Reunião em 2026 da Sala de Acompanhamento do    29/10/2026às
+                                                                     https://www.youtube.com/live/g5bWw2rDk8I
+  Sistema Hídrico da Região Hidrográfica do Paraná        10h
+
+
+
+                                                                                                             22
+5.4 Acompanhamento da Restrição Logística
+          Considerando a base operacional de 26/09/2026, foram identificadas 564
+localidades virtuais (*) com Índice de Prioridade Logística — IPO nas classes ALTA ou MUITO
+ALTA, equivalentes a 8,4% dos 6.736 alertas ativos. Esse conjunto reúne potencialmente
+903.996 pessoas prioritárias. Predomina a classe ALTA, com 561 localidades virtuais,
+enquanto três localidades estão em MUITO ALTA. Ressalta-se que a classe do IPO expressa a
+posição relativa no ranking e não corresponde diretamente à prioridade logística de
+resposta.
+
+         A maior concentração ocorre em Roraima, com 264 localidades virtuais (46,8%),
+seguido por Goiás, com 136 (24,1%), Acre, com 71 (12,6%), Amazonas, com 41 (7,3%), Pará,
+com 24 (4,3%), e Mato Grosso, com 21 (3,7%). As três localidades virtuais em MUITO ALTA
+estão em Roraima, ocupam as primeiras posições do ranking e apresentam prioridade
+EXTREMA, restrição hidrológica severa, anomalia severa e dependência do modal fluvial.
+Suas rotas até o município de apoio de Amajari variam de aproximadamente 644 km a 652
+km, com tempo estimado próximo de 49 horas, indicando necessidade de mobilização
+antecipada. A representação do Pantanal é parcial, pois ainda não foram incluídos no
+SipamHidro todas as localidades virtuais de Mato Grosso do Sul nos dados analisados.
+
+          No recorte selecionado, 149 localidades virtuais (26,4%) estão em prioridade
+EXTREMA, 282 (50,0%) em SEVERA e 133 (23,6%) em ATENÇÃO. A coexistência de IPO
+elevado com prioridade ATENÇÃO não constitui inconsistência: o IPO organiza a criticidade
+relativa, enquanto a prioridade logística define o prazo e a necessidade de mobilização. As
+condições logísticas são classificadas como difíceis ou críticas em 478 localidades (84,8%). O
+modal fluvial predomina em número de localidades virtuais, 317 registros (56,2%), seguido
+do rodoviário, com 241 (42,7%), e do aéreo, com seis (1,1%). Entretanto, o modal rodoviário
+concentra a maior população prioritária, evidenciando demandas operacionais distintas
+entre capilaridade territorial e contingente populacional.
+
+         A condição hidrológica reforça a criticidade: 381 localidades apresentam restrição
+severa e 136, restrição, totalizando 517 localidades virtuais (91,7%). Além disso, 534 (94,7%)
+estão associadas a alguma anomalia negativa, das quais 389 possuem anomalia severa ou
+extrema. O mapa do ICOE indica criticidade predominantemente moderada no domínio
+regional, sem áreas severas ou extremas visíveis; essa condição regional não elimina
+restrições localizadas captadas pelo IPO e pelos indicadores hidrológicos.
+(*) Localidade virtual: unidade espacial de referência utilizada pelo SipamHidro para representar uma
+
+comunidade ou núcleo populacional no modelo operacional, associando população prioritária, modais,
+rotas de acesso, município de apoio e condição hidrológica. Não constitui divisão administrativa nem
+implica reconhecimento oficial da localidade.
+
+
+
+
+                                                                                                  23
+Figura 15: Distribuição dos alertas ativos segundo o Índice de Prioridade Logística — IPO (à esquerda) e Índice
+de Criticidade Operacional — ICOE por sub-bacia (à direita), na Amazônia e no Pantanal, em 27 de setembro de
+2026.
+
+A resposta deve priorizar a mobilização imediata das localidades EXTREMAS, o pré-
+posicionamento para as SEVERAS e a confirmação de calado, navegabilidade, combustível e
+pontos de apoio. Entre as 401 rotas com tempo calculado, 165 superam 24 horas,
+envolvendo potencialmente 23.415 pessoas.
+
+
+
+6. Recomendações e Orientações
+Estados e Municípios
+
+         Recomenda-se aos estados e municípios revisar e atualizar os Planos de
+Contingência e demais instrumentos de planejamento equivalentes para cenários associados
+ao El Niño; fortalecer os processos de monitoramento, alerta e comunicação de riscos,
+assegurando a utilização integrada de previsões, avisos, alertas e demais produtos técnicos
+como subsídios à tomada de decisão; intensificar a articulação entre os órgãos integrantes
+do Sistema Nacional de Proteção e Defesa Civil (Sinpdec) e os demais sistemas setoriais
+relacionados à gestão de riscos e desastres, especialmente nas áreas de recursos hídricos,
+meio ambiente, saúde, assistência social e segurança pública; e identificar previamente as
+capacidades e os recursos disponíveis para pronta resposta, priorizando áreas e populações
+potencialmente mais vulneráveis aos impactos do fenômeno.
+
+
+População
+
+        A Defesa Civil Nacional recomenda à população cadastrar-se ou atualizar seus dados
+para receber alertas das defesas civis locais (Figura 16); acompanhar as previsões, os avisos
+e os alertas oficiais dos órgãos competentes; conhecer os potenciais riscos de desastres em
+sua cidade e em seu bairro; e informar-se sobre o plano de contingência local,
+                                                                                                           24
+especialmente sobre os locais seguros e as rotas de fuga a serem utilizados em situações de
+emergência.
+
+
+
+
+Figura 16: Orientações cadastrais para recebimento de alertas. Fonte: SEDEC.
+
+
+7. Considerações Finais
+          As projeções climáticas indicam a manutenção e a intensificação do fenômeno El
+Niño ao longo de 2026, com elevada probabilidade de que o evento atinja intensidade muito
+forte entre a primavera e o início do verão.
+
+         Para o trimestre de outubro a dezembro de 2026, a previsão indica maior
+probabilidade de chuvas acima da faixa normal no Sul e em partes do Sudeste e do leste do
+Nordeste, e abaixo da faixa normal em grande parte do Norte e em áreas do Nordeste e do
+Centro-Oeste. As temperaturas devem ficar acima da faixa normal em quase todo o País.
+Esses padrões representam tendências sazonais; os impactos em cada local dependem da
+evolução das condições meteorológicas.
+
+         A previsão aponta para vazões abaixo da média em grande parte do País até
+dezembro, com atenção especial às bacias dos rios Branco e Negro, a áreas do Norte e do
+Nordeste e a algumas cabeceiras do Centro-Oeste, onde há risco de persistência da estiagem.
+Em sentido oposto, o Sul, parte do Sudeste e o alto rio Paraguai apresentam maior
+probabilidade de vazões acima da média e risco de cheias, que tende a diminuir até
+dezembro. O monitoramento contínuo dos rios e reservatórios é necessário para orientar
+medidas de prevenção e resposta conforme a evolução de cada bacia.
+
+          A combinação de chuva abaixo da média e temperaturas elevadas pode intensificar
+a falta de água no solo em áreas do centro-norte do País, afetando o estabelecimento das
+lavouras de primeira safra, as pastagens e a disponibilidade de água para os rebanhos. No
+Sul, a maior disponibilidade de água tende a favorecer o milho, mas o excesso de chuva pode
+elevar a incidência de doenças no trigo, prejudicar a qualidade dos grãos e dificultar a
+colheita e a semeadura de outras culturas. O acompanhamento das condições locais será
+essencial para orientar o planejamento da safra 2026/27.
+
+         Diante desse cenário, recomenda-se o acompanhamento contínuo das condições
+meteorológicas, hidrológicas e geológicas, bem como das previsões, avisos e alertas emitidos
+pelos órgãos oficiais.
+
+         As instituições participantes deste boletim continuarão realizando o
+monitoramento das condições associadas ao El Niño e disponibilizando atualizações
+periódicas das informações técnicas e das previsões, de forma a subsidiar ações de
+prevenção, preparação e gestão de riscos.
+
+                                                                                         25
+26
+

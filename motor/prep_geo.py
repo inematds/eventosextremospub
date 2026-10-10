@@ -2,7 +2,8 @@
 """Gera geo.js (window.GEO) com municípios de uma região, estados, países vizinhos e rios,
 simplificados para caber leve no navegador.
 uso: motor/prep_geo.py                      → Sul (PR/SC/RS) em motor/geo.js
-     motor/prep_geo.py --regiao nne         → Norte + Nordeste em motor/geo-nne.js"""
+     motor/prep_geo.py --regiao nne         → Norte + Nordeste em motor/geo-nne.js
+     motor/prep_geo.py --regiao br          → Pacífico + Brasil (sem municípios) em motor/geo-br.js"""
 import argparse, csv, json, pathlib
 
 G = pathlib.Path(__file__).resolve().parent.parent / "geo"
@@ -13,6 +14,7 @@ REGIOES = {  # bbox lon_min, lat_min, lon_max, lat_max · casas decimais dos mun
             "ufs": (("RO", "11"), ("AC", "12"), ("AM", "13"), ("RR", "14"), ("PA", "15"), ("AP", "16"), ("TO", "17"),
                     ("MA", "21"), ("PI", "22"), ("CE", "23"), ("RN", "24"), ("PB", "25"), ("PE", "26"), ("AL", "27"),
                     ("SE", "28"), ("BA", "29"))},
+    "br": {"bbox": (-160.0, -56.0, -28.0, 22.0), "nd": 2, "out": "geo-br.js", "ufs": ()},  # Pacífico + Brasil, só estados
 }
 ap = argparse.ArgumentParser()
 ap.add_argument("--regiao", default="sul", choices=REGIOES)

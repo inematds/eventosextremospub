@@ -58,5 +58,6 @@ The voice uses the [cardshorts](https://github.com/inematds/cardshorts) engine (
 |---|---|---|
 | Oct 9, 2026 | `edicoes/2026-10-09-alerta-sul` | 529 cities in red (INMET), 109 km/h gust, 113 mm in São Borja, weekend map, up to 204 mm in 7 days (Open-Meteo) |
 | Oct 9, 2026 | `edicoes/2026-10-09-alerta-norte-nordeste` (dynamic voice; `GEO=geo-nne.js`) | 1,210 cities under dry-air alert (474 orange, down to 12%), up to 41.7 °C in Piauí (Open-Meteo), 1,731 fire hotspots in one day (INPE), Rio Negro −5.21 m, storms in AC/RO/AM, peak through December (El Niño), comment prompt |
+| Oct 9, 2026 | `edicoes/2026-10-09-el-nino` (explainer for lay viewers; `GEO=geo-br.js`, states only; NASA warm-sea map) | El Niño "is no joke": 83% chance of the strongest since 1950 (NOAA), sea near Peru +5.3 °C, drought in the North/Northeast and rain in the South (Painel El Niño no. 4), peak by December, what to do (text your ZIP code to 40199) | NOAA/CPC, NASA GIBS (GHRSST MUR), Painel El Niño (INMET, INPE, ANA, Cemaden, SGB, Sedec, Censipam) |
 
 MIT License. Third-party data follows the licenses of the sources (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).

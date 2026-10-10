@@ -58,5 +58,6 @@ La voz usa el motor de [cardshorts](https://github.com/inematds/cardshorts) (Cha
 |---|---|---|
 | 09/10/2026 | `edicoes/2026-10-09-alerta-sul` | 529 ciudades en rojo (INMET), ráfaga de 109 km/h, 113 mm en São Borja, mapa del fin de semana, hasta 204 mm en 7 días (Open-Meteo) |
 | 09/10/2026 | `edicoes/2026-10-09-alerta-norte-nordeste` (voz dinámica; `GEO=geo-nne.js`) | 1.210 ciudades en alerta de aire seco (474 en naranja, hasta 12%), hasta 41,7 °C en Piauí (Open-Meteo), 1.731 focos en un día (INPE), Río Negro −5,21 m, tormentas en AC/RO/AM, pico hasta diciembre (El Niño), llamada a comentar |
+| 09/10/2026 | `edicoes/2026-10-09-el-nino` (explicativo para legos; `GEO=geo-br.js`, solo estados; mar caliente de la NASA) | El Niño "no es broma": 83% de probabilidad de ser el más fuerte desde 1950 (NOAA), mar cerca de Perú +5,3 °C, sequía en el Norte/Nordeste y lluvia en el Sur (Painel El Niño nº 4), pico hasta diciembre, qué hacer (CEP por mensaje al 40199) | NOAA/CPC, NASA GIBS (GHRSST MUR), Painel El Niño (INMET, INPE, ANA, Cemaden, SGB, Sedec, Censipam) |
 
 Licencia MIT. Los datos de terceros siguen las licencias de sus fuentes (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).

@@ -50,7 +50,7 @@ node motor/render.mjs $E --quadros 0,10,30                        # prévia de q
 motor/montar.sh $E $E/video.mp4                                   # vídeo final
 ```
 
-Outra região: `python3 motor/prep_geo.py --regiao nne` gera `motor/geo-nne.js` (Norte + Nordeste); a coleta usa `inmet_avisos.py --ufs ... --nome alertas_nne.json`, `satelite_gibs.py --bbox ...` (sem `--de/--ate` baixa só a base) e `openmeteo_calor.py` (máxima, umidade e chuva); o render recebe `GEO=geo-nne.js`.
+Outra região: `python3 motor/prep_geo.py --regiao nne` gera `motor/geo-nne.js` (Norte + Nordeste) e `--regiao br` gera `motor/geo-br.js` (Pacífico + Brasil, só estados, pintados por `estados` na cena); qualquer camada do GIBS sai com `coleta/gibs_camada.py`; a coleta usa `inmet_avisos.py --ufs ... --nome alertas_nne.json`, `satelite_gibs.py --bbox ...` (sem `--de/--ate` baixa só a base) e `openmeteo_calor.py` (máxima, umidade e chuva); o render recebe `GEO=geo-nne.js`.
 
 A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatterbox + Whisper locais).
 
@@ -60,5 +60,6 @@ A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatt
 |---|---|---|
 | 09/10/2026 | `edicoes/2026-10-09-alerta-sul` (com e sem avatar; YouTube lives10) | 529 cidades em vermelho (INMET), rajada de 109 km/h, 113 mm em São Borja, mapa do fim de semana, até 204 mm em 7 dias (Open-Meteo) |
 | 09/10/2026 | `edicoes/2026-10-09-alerta-norte-nordeste` (voz dinâmica; `GEO=geo-nne.js`) | 1.210 cidades em alerta de ar seco (474 em laranja, até 12%), até 41,7 °C no PI (Open-Meteo), 1.731 focos num dia (INPE), Rio Negro −5,21 m, tempestade em AC/RO/AM, pico até dezembro (El Niño), gatilho de comentário |
+| 09/10/2026 | `edicoes/2026-10-09-el-nino` (explicativo para leigos; `GEO=geo-br.js`, só estados; mar quente da NASA) | El Niño "não é piada": 83% de chance de ser o mais forte desde 1950 (NOAA), mar perto do Peru +5,3 °C, seca no Norte/Nordeste e chuva no Sul (Painel El Niño nº 4), pico até dezembro, o que fazer (CEP por mensagem para 40199) | NOAA/CPC, NASA GIBS (GHRSST MUR), Painel El Niño (INMET, INPE, ANA, Cemaden, SGB, Sedec, Censipam) |
 
 Licença MIT. Dados de terceiros seguem as licenças das fontes (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).

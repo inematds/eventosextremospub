@@ -163,6 +163,14 @@ function camadas(t){
         return [...a.cor, Math.round(a.alfa*255*k*o)];},
       updateTriggers:{getFillColor:t,getLineColor:t}}));
   }
+  // camada por estado (geo sem municípios): pinta as UFs listadas
+  for(const e of C.estados||[]){
+    const o=vis(t,e.ini,e.fim,.5); if(!o) continue;
+    if(!e._dados){const s=new Set(e.ufs); e._dados=G.uf.features.filter(f=>s.has(f.properties.uf));}
+    const k=clamp((t-e.ini)/.6);
+    L.push(new deck.GeoJsonLayer({id:'es-'+e.id,data:e._dados,filled:true,stroked:false,
+      getFillColor:[...e.cor,Math.round(e.alfa*255*k*o)],updateTriggers:{getFillColor:t}}));
+  }
   L.push(new deck.GeoJsonLayer({id:'uf',data:G.uf,filled:false,stroked:true,getLineColor:[220,228,240,160],lineWidthMinPixels:2.5}));
   // rios com desenho progressivo
   for(const r of C.rios||[]){
