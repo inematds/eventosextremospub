@@ -16,3 +16,4 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 - Quadro 0 nunca pode entrar com fade: `vis()` não faz fade-in quando `ini <= 0`, e os alertas da abertura começam com `ini` negativo. A v2 de 09/10 começava com o mapa vazio. (09/10/2026)
 - Abertura de vídeo de clima: data dd/mm/aaaa + número viral com fonte (pedido do Nei, 09/10/2026).
+- A voz do HeyGen chega ~-26 dB: o compor_avatar.sh normaliza a -14 LUFS (loudnorm) antes de mixar. O Alerta NNE com avatar saiu a -20,8 LUFS (voz baixa). Medir com `ebur128` antes de enviar. (09/10/2026)
