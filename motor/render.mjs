@@ -18,7 +18,9 @@ const tmp = path.resolve(pasta, '.mapa.html');
 fs.writeFileSync(tmp, html);
 
 const browser = await chromium.launch({ args: (process.env.GL || '--use-angle=vulkan --enable-features=Vulkan').split(' ').concat(['--allow-file-access-from-files', '--ignore-gpu-blocklist']) });
-const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
+// layout "largo" (explicação longa no YouTube) = 1920x1080; o resto é 9:16
+const largo = fs.readFileSync(path.resolve(pasta, 'cena.js'), 'utf8').includes('"layout": "largo"');
+const page = await browser.newPage({ viewport: largo ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 } });
 page.on('pageerror', e => console.error('pageerror', e.message));
 await page.goto('file://' + tmp);
 await page.waitForFunction(() => window.pronto && window.render, null, { timeout: 60000 });
