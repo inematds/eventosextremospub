@@ -1,0 +1,11 @@
+[
+  {"id": "f1", "fala": "Domingo, onze de outubro. Em vinte e quatro horas, mais de cem milímetros de chuva no Paraná, trinta e oito graus em Manaus e ar de deserto em Brasília.", "legenda": "Domingo, 11 de outubro. Em 24 horas, mais de 100 milímetros de chuva no Paraná, 38 graus em Manaus e ar de deserto em Brasília."},
+  {"id": "f2", "fala": "No Paraná, Capitão Leônidas Marques teve cento e vinte e quatro milímetros em um dia. São Miguel do Iguaçu, quarenta e dois em três horas.", "legenda": "No Paraná, Capitão Leônidas Marques teve 124 milímetros em um dia. São Miguel do Iguaçu, 42 em 3 horas."},
+  {"id": "f3", "fala": "No Amazonas, o fogo não para. Ontem o satélite de referência contou mil cento e cinquenta e cinco focos no país. Quatrocentos e noventa e quatro só no Amazonas.", "legenda": "No Amazonas, o fogo não para. Ontem o satélite de referência contou 1.155 focos no país. 494 só no Amazonas."},
+  {"id": "f4", "fala": "Em Brasília, a umidade caiu pra catorze por cento. É ar de deserto. Beba água.", "legenda": "Em Brasília, a umidade caiu pra 14%. É ar de deserto. Beba água."},
+  {"id": "f5", "fala": "Em Belém, hoje é Círio. E o INMET avisa: a sensação de calor pode chegar a quarenta graus.", "legenda": "Em Belém, hoje é Círio. E o INMET avisa: a sensação de calor pode chegar a 40 graus."},
+  {"id": "f6", "fala": "E hoje? Alerta laranja de tempestade em mil trezentas e setenta e três cidades, do Sudeste ao Paraná, com vento de até cem quilômetros por hora.", "legenda": "E hoje? Alerta laranja de tempestade em 1.373 cidades, do Sudeste ao Paraná, com vento de até 100 km/h."},
+  {"id": "f7", "fala": "Amanhã, feriado, o alerta laranja vai pro Sul: quatrocentas e quarenta e nove cidades. E hoje Teresina pode chegar a trinta e nove graus.", "legenda": "Amanhã, feriado, o alerta laranja vai pro Sul: 449 cidades. E hoje Teresina pode chegar a 39 graus."},
+  {"id": "f8", "fala": "E aí, como tá aí agora? Chuva, calor ou fumaça? Comenta a sua cidade."},
+  {"id": "f9", "fala": "No inema ponto club tem curso gratuito pra você.", "legenda": "No inema.club tem curso gratuito pra você."}
+]

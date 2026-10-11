@@ -1,0 +1,8 @@
+Clima 24 h 11/10: 124 mm no Paraná, 38 °C em Manaus e umidade de 14% em Brasília
+Chuva: 124,7 mm em 24 h em Capitão Leônidas Marques (PR) e 42,8 mm em 3 h em São Miguel do Iguaçu (PR) — pluviômetros do CEMADEN, até 11/10 05h30.
+Fogo: 1.155 focos no Brasil em 10/10 pelo satélite de referência do INPE, 494 só no Amazonas (Autazes lidera com 109). Manaus marcou 38 °C (METAR do aeroporto, NOAA).
+Ar seco: umidade de 14% em Brasília em 10/10 às 16h (calculada do METAR do aeroporto, NOAA).
+Círio de Nazaré em Belém hoje: sensação de calor de até 40 °C, segundo meteorologista do INMET (entrevista ao IPAM, 06/10).
+Hoje (11/10): alerta laranja de tempestade do INMET em 1.373 cidades (SP, PR, MG, RJ, MS e GO), vento de 60 a 100 km/h e granizo; Teresina pode chegar a 39 °C (Open-Meteo).
+Amanhã, feriado de 12/10: alerta laranja de tempestade em 449 cidades do PR, SC, RS e MS (INMET).
+Fontes: INMET, INPE Queimadas, CEMADEN, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
