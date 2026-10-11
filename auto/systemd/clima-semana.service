@@ -1,0 +1,12 @@
+[Unit]
+Description=eventosextremospub — clima da semana + 15 dias, domingo à tarde (Short no lives10 + bot v3)
+After=network-online.target stack99.service
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:%h/.npm-global/bin:/usr/local/bin:/usr/bin:/bin
+Environment=DISPLAY=:99
+ExecStart=/bin/bash -c 'exec /bin/bash %h/projetos/eventosextremospub/auto/rodar.sh "$(date +%%F)" semana'
+TimeoutStartSec=9h
+MemoryMax=60G
+Nice=5
