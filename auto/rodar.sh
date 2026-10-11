@@ -53,6 +53,9 @@ fi
 for f in falas.json yt.txt video.mp4 tempos.json; do
   [ -s "$ED/$f" ] || avisar "faltou $f depois do claude -p ($(tail -c 300 "$ED/claude.log"))"
 done
+# portão de tom/CTA (Nei, 11/10/2026): "você", nunca "tu"; CTA só o inema.club, sem "segue o canal"
+TOM=$(grep -o -i -w -E "tu|teu|tua|teus|tuas|ti|contigo|segue o canal|se inscreve|inscreva-se" "$ED/falas.json" "$ED/gerar_cena.py" | sort -u | head -5 | tr '\n' ' ')
+[ -n "$TOM" ] && avisar "roteiro reprovado no tom/CTA (usar 'você'; CTA só inema.club): $TOM"
 
 # 3. avatar do Nei (estúdio HeyGen); se falhar, publica a versão mapa (voz do Nei pelo Chatterbox)
 V="$ED/video-avatar.mp4"; NOTA=""

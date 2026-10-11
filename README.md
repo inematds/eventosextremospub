@@ -33,7 +33,7 @@ O projeto tem três partes:
 
 - O quadro 0 já vem cheio: data **dd/mm/aaaa** e a manchete viral com o número mais forte que tenha fonte (ex.: "ATÉ 300 MM").
 - Só números com fonte, e a fonte aparece na tela.
-- A fala é no tom do Nei: direta, com "tu", pergunta ao espectador ("pra onde tu vai?"), preparação prática e o fecho no inema.club.
+- A fala é no tom do Nei: direta, tratando por "você", pergunta ao espectador ("pra onde você vai?"), preparação prática e o fecho só no inema.club (sem "segue o canal").
 
 ## Uso (uma edição)
 

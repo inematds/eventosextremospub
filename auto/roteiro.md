@@ -23,9 +23,9 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
    - f1 abre com o dia da semana e a data por extenso + os 2 ou 3 fatos mais fortes do dia (gancho).
    - falas do meio: um fato forte por região, com número e lugar; ordem do mais grave ao menos grave, ou geográfica se ajudar o mapa.
    - uma fala "E hoje?" com os alertas oficiais vigentes (INMET) e a previsão.
-   - penúltima: pergunta para comentar ("Comenta a tua cidade").
-   - última, sempre: "Segue o canal: todo dia tem o clima das últimas vinte e quatro horas. E no inema ponto club tem curso gratuito." com legenda "Segue o canal: todo dia tem o clima das últimas 24 horas. E no inema.club tem curso gratuito."
-   - no campo "fala" os números vão por extenso (a voz lê); no campo "legenda" com algarismos. Tom: Nei falando com o povo, frases curtas, "tu"/"teu".
+   - penúltima: pergunta para comentar ("Comenta a sua cidade").
+   - última, sempre: "No inema ponto club tem curso gratuito pra você." com legenda "No inema.club tem curso gratuito pra você." O CTA é SEMPRE só o inema.club: nunca "segue o canal", "se inscreva" nem canal do YouTube (Nei, 11/10/2026; as edições até 10/10 ainda dizem "Segue o canal": não copie).
+   - no campo "fala" os números vão por extenso (a voz lê); no campo "legenda" com algarismos. Tom: Nei falando com o povo, frases curtas, tratando por "você" (você, seu, sua), NUNCA "tu", "teu", "tua", "ti" — vale também para os textos na tela (ex.: "Sua cidade", não "Tua cidade"); as edições até 10/10 usam "tu": não copie.
 3. gerar_cena.py: já copiado do modelo. Adapte TUDO ao dia de hoje: DATA, câmeras por fala, IR (rótulo e janela), focos do INPE (arquivo do dia anterior em pesquisa/bruto e os asserts com a contagem nova), avisos do INMET (escolha os ids pelo tipo e severidade em inmet_avisos_ativos.json, não copie os ids do modelo; asserts com a contagem nova), estados pintados, pinos, hero, painéis, contadores, cta, fontes de cada trecho, cores da legenda, marca/selo. Mantenha o comportamento de --canto (usa avatar/tempos.json, layout canto). Cada `em(fid, palavra)` precisa achar a palavra na legenda daquela fala.
 4. Versão mapa (é também o plano B se o avatar falhar), na pasta da edição:
    `python3 narrar.py` → tempos.json e narração (voz do Nei, local)
