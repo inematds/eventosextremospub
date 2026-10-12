@@ -16,6 +16,7 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 ## Lessons
 
+- 16:9 "largo" SEM avatar: `"coluna": True` na cena (cards e manchete na coluna da direita, mapa livre à esquerda); sem isso a coluna do avatar fica vazia e todo card cai em cima do mapa. Reel 9:16 sem avatar: `padding_topo` ~560 desce o mapa para baixo dos cards. O Nei reprovou o Amazônia e o mundo (12/10/2026).
 - Fogo na Amazônia: 2024 NÃO é recorde de focos (140 mil; 2004 teve 218 mil) — é o "pior ano desde 2007"; antes de chamar um ano de recorde, contar a série sat_ref desde 2003. Mínima do Rio Negro em 2024 diverge (12,11 m Portal Amazônia × 12,26 m tabela SGB): dizer "pouco acima de 12 m". Quase saiu errado no Amazônia e o mundo (12/10/2026).
 - Tratar por "você" (nunca "tu/teu/ti/te prepara") e CTA SEMPRE só o inema.club — nada de "segue o canal", vídeo longo ou canal do YouTube; o portão (checar.py / rodar.sh) reprova. (Nei, 11/10/2026)
 - Quadro 0 nunca pode entrar com fade: `vis()` não faz fade-in quando `ini <= 0`, e os alertas da abertura começam com `ini` negativo. A v2 de 09/10 começava com o mapa vazio. (09/10/2026)

@@ -136,7 +136,7 @@ for t in T:
 for a, b in zip(legenda, legenda[1:]):
     a["fim"] = min(max(a["fim"], b["ini"]), b["ini"])
 
-C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR,
+C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR, "padding_topo": 0 if AVATAR else 560,
      "marca": "INEMA · AMAZÔNIA", "selo": "INPE · NOAA · SGB · " + DATA[:5],
      "camera": camera, "sat": SAT, "imagens": imagens, "pontos": pontos, "rios": rios, "pinos": pinos, "hero": hero,
      "paineis": paineis, "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}

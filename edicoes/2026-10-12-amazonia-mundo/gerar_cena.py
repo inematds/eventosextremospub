@@ -206,7 +206,7 @@ for t in T:
 for a, b in zip(legenda, legenda[1:]):
     a["fim"] = min(max(a["fim"], b["ini"]), b["ini"])
 
-C = {"layout": "largo", "padding_dir": 640, "duracao": DUR,
+C = {"layout": "largo", "padding_dir": 640, "coluna": not AVATAR, "duracao": DUR,
      "marca": "INEMA · AMAZÔNIA E O MUNDO", "selo": "INPE · NOAA · COPERNICUS · " + DATA[:5],
      "camera": camera, "sat": SAT, "imagens": imagens, "pontos": pontos, "rios": rios, "pinos": pinos, "hero": hero,
      "paineis": paineis, "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}

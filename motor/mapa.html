@@ -100,6 +100,19 @@ body.lg #cta{top:110px;left:48px;right:auto;width:760px;padding:24px 30px}
 body.lg #cta .a{font-size:54px}
 body.lg #cta .b{font-size:26px}
 body.lg #club{top:700px;left:48px;right:auto;width:640px;padding:16px 22px}
+/* largo SEM avatar (C.coluna): cards e manchete na coluna da direita, mapa livre à esquerda (12/10/2026) */
+body.lg.cd #vinheta{background:linear-gradient(90deg,rgba(5,8,12,0) 1200px,rgba(5,8,12,.9) 1290px),linear-gradient(180deg,rgba(5,8,12,.85) 0,rgba(5,8,12,0) 220px,rgba(5,8,12,0) 760px,rgba(5,8,12,.92) 1080px)}
+body.lg.cd .painel{top:110px;left:auto;right:36px;width:568px}
+body.lg.cd .painel .n{font-size:96px}
+body.lg.cd .painel .itens div{font-size:32px}
+body.lg.cd #hero{top:80px;left:auto;right:0;width:640px;padding:20px 36px 30px;background:none}
+body.lg.cd #hero>div:first-child[style*="Archivo"]{font-size:78px!important}
+body.lg.cd #hero .dt{font-size:30px}
+body.lg.cd #hero .t1,body.lg.cd #hero .t2{font-size:82px;line-height:1}
+body.lg.cd #hero .t4{font-size:28px;max-width:560px}
+body.lg.cd #cta{left:auto;right:36px;width:568px}
+body.lg.cd #cta .a{font-size:44px}
+body.lg.cd #club{top:760px;left:auto;right:36px;width:568px}
 body.lg #club .tx{font-size:34px}
 body.lg .pino .cx{font-size:26px}
 body.lg .pino .cx small{font-size:18px}
@@ -134,6 +147,7 @@ if(C.marca) document.getElementById('marca').textContent=C.marca;
 if(C.layout==='avatar') document.body.classList.add('av');
 if(C.layout==='canto') document.body.classList.add('cn');
 const LG=C.layout==='largo'; if(LG){document.documentElement.classList.add('lg'); document.body.classList.add('lg');}
+if(LG&&C.coluna) document.body.classList.add('cd');
 const W=LG?1920:1080, H=LG?1080:1920;
 const IMG={};
 function carregar(src){ if(IMG[src]) return IMG[src].p; const im=new Image(); im.src=src; IMG[src]={im,p:im.decode().then(()=>im)}; return IMG[src].p; }
@@ -162,7 +176,8 @@ function camera(t){
   return {longitude:lerp(a.lon,b.lon,p),latitude:lerp(a.lat,b.lat,p),zoom:lerp(a.zoom,b.zoom,p),
           pitch:lerp(a.pitch||0,b.pitch||0,p),bearing:lerp(a.bearing||0,b.bearing||0,p),
           ...(C.layout==='avatar'||C.layout==='canto'?{padding:{top:0,bottom:C.padding_baixo||820,left:0,right:0}}:{}),
-          ...(LG?{padding:{top:0,bottom:0,left:0,right:C.padding_dir??640}}:{})};
+          ...(LG?{padding:{top:0,bottom:0,left:0,right:C.padding_dir??640}}:{}),
+          ...(C.layout==='cheio'&&C.padding_topo?{padding:{top:C.padding_topo,bottom:0,left:0,right:0}}:{})};
 }
 const mapa = new deck.Deck({parent:document.getElementById('mapa'),width:W,height:H,controller:false,
   initialViewState:camera(0),useDevicePixels:false,_animate:false,
