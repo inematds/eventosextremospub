@@ -1,0 +1,8 @@
+Clima 24 h 12/10: 71 árvores no chão em SP, 38 °C em Teresina e umidade de 15%
+Temporal em SP no domingo (11/10): a Defesa Civil estadual emitiu 29 alertas; em Cesário Lange caíram 71 árvores e uma família de 4 pessoas ficou desalojada (Agência SP).
+Chuva e vento: 71,6 mm em 24 h em Estiva Gerbi (SP), pluviômetro do CEMADEN até 12/10 05h30; rajada de 59 km/h com trovoada em Ribeirão Preto (METAR do aeroporto, NOAA).
+Calor: 38 °C em Teresina (PI) e em Itaituba (PA) em 11/10 (METAR, NOAA).
+Ar seco: umidade de 15% em Juazeiro do Norte (CE) em 11/10 às 16h (calculada do METAR do aeroporto, NOAA).
+Hoje (12/10, feriado): alerta laranja de tempestade do INMET em 996 cidades (PR, SC, RS, MS, MG, SP e RJ), vento de 60 a 100 km/h e granizo.
+Amanhã (13/10): alerta laranja em 601 cidades, o Paraná inteiro (399) mais SP, MS e SC (INMET); Curitiba pode ter 44 mm de chuva (previsão Open-Meteo).
+Fontes: Defesa Civil de SP, INMET, CEMADEN, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
