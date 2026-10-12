@@ -3,6 +3,7 @@
 # o 16:9 normal e o reel como Short, só as versões COM avatar. Links + canal vão ao inemaytbot (o bot v3 recebe só arquivo).
 # uso: systemd-run --user --unit=amazonia-publica bash <este arquivo>
 set -uo pipefail
+export PATH="$HOME/.npm-global/bin:$PATH"   # systemd usa /usr/bin/codex antigo (12/10/2026)
 RAIZ="$HOME/projetos/eventosextremospub"
 M="$RAIZ/edicoes/2026-10-12-amazonia-mundo"; R="$RAIZ/edicoes/2026-10-12-amazonia-reel"
 ST="$M/AVATAR-STATUS.txt"; YT="$HOME/projetos/yt-pubx/yt-pubx"
