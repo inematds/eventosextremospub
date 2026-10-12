@@ -1,0 +1,37 @@
+
+### 2026 (sat ref AQUA_M-T, bioma Amazônia, 01/01 a 10/10)  colunas=
+total 35550 | set 12562 | out 1-10 5970
+por mes {'01': 2056, '02': 873, '03': 873, '04': 403, '05': 867, '06': 1366, '07': 1374, '08': 9206, '09': 12562, '10': 5970}
+estados [('PARÁ', 15051), ('AMAZONAS', 7583), ('MATO GROSSO', 5411), ('RORAIMA', 2107), ('ACRE', 1858), ('MARANHÃO', 1558), ('RONDÔNIA', 1215), ('AMAPÁ', 551), ('TOCANTINS', 216)]
+set por estado [('PARÁ', 5224), ('AMAZONAS', 3726), ('MATO GROSSO', 1231), ('ACRE', 877), ('RONDÔNIA', 515), ('MARANHÃO', 456)]
+out1-10 por estado [('PARÁ', 3333), ('AMAZONAS', 1326), ('ACRE', 397), ('MATO GROSSO', 191), ('AMAPÁ', 191), ('MARANHÃO', 183)]
+biomas BR ate 10/10 [('Amazônia', 35550), ('Cerrado', 30786), ('Caatinga', 7999), ('Mata Atlântica', 6352), ('Pantanal', 487), ('Pampa', 274)]
+dias com mais focos set-out [('2026-10-09', 1282), ('2026-09-21', 1208), ('2026-10-06', 979), ('2026-09-22', 785), ('2026-10-04', 775)]
+ultimos dias [('2026-09-30', 224), ('2026-10-01', 619), ('2026-10-02', 346), ('2026-10-03', 534), ('2026-10-04', 775), ('2026-10-05', 370), ('2026-10-06', 979), ('2026-10-07', 37), ('2026-10-08', 316), ('2026-10-09', 1282), ('2026-10-10', 712), ('2026-10-11', 150)]
+
+### 2023 (sat ref AQUA_M-T, bioma Amazônia, 01/01 a 10/10)  colunas=['id_bdq', 'foco_id', 'lat', 'lon', 'data_pas', 'pais']
+total 66166 | set 26449 | out 1-10 8229
+por mes {'01': 1056, '02': 734, '03': 1019, '04': 768, '05': 1692, '06': 3075, '07': 5772, '08': 17372, '09': 26449, '10': 8229}
+estados [('PARÁ', 22618), ('AMAZONAS', 17485), ('MATO GROSSO', 10493), ('ACRE', 5695), ('RONDÔNIA', 5625), ('RORAIMA', 1729), ('MARANHÃO', 1488), ('AMAPÁ', 823), ('TOCANTINS', 210)]
+set por estado [('PARÁ', 9504), ('AMAZONAS', 6991), ('ACRE', 3075), ('MATO GROSSO', 2896), ('RONDÔNIA', 2650), ('MARANHÃO', 638)]
+out1-10 por estado [('PARÁ', 2880), ('AMAZONAS', 2684), ('ACRE', 972), ('RONDÔNIA', 525), ('MATO GROSSO', 488), ('AMAPÁ', 290)]
+biomas BR ate 10/10 [('Amazônia', 66166), ('Cerrado', 39242), ('Caatinga', 9832), ('Mata Atlântica', 8369), ('Pantanal', 983), ('Pampa', 665)]
+dias com mais focos set-out [('2023-09-05', 2439), ('2023-10-26', 1945), ('2023-10-28', 1574), ('2023-09-04', 1305), ('2023-09-13', 1187)]
+
+### 2024 (sat ref AQUA_M-T, bioma Amazônia, 01/01 a 10/10)  colunas=['id_bdq', 'foco_id', 'lat', 'lon', 'data_pas', 'pais']
+total 109926 | set 41463 | out 1-10 5274
+por mes {'01': 2049, '02': 3157, '03': 2654, '04': 1117, '05': 1670, '06': 2842, '07': 11434, '08': 38266, '09': 41463, '10': 5274}
+estados [('PARÁ', 38224), ('MATO GROSSO', 24132), ('AMAZONAS', 23024), ('RONDÔNIA', 9986), ('ACRE', 7397), ('RORAIMA', 4764), ('MARANHÃO', 1547), ('TOCANTINS', 590), ('AMAPÁ', 262)]
+set por estado [('PARÁ', 17434), ('MATO GROSSO', 9464), ('AMAZONAS', 6879), ('ACRE', 3855), ('RONDÔNIA', 2739), ('MARANHÃO', 527)]
+out1-10 por estado [('PARÁ', 1818), ('AMAZONAS', 910), ('ACRE', 805), ('MATO GROSSO', 725), ('RONDÔNIA', 643), ('MARANHÃO', 257)]
+biomas BR ate 10/10 [('Amazônia', 109926), ('Cerrado', 72171), ('Mata Atlântica', 19733), ('Pantanal', 13441), ('Caatinga', 7612), ('Pampa', 371)]
+dias com mais focos set-out [('2024-09-02', 3445), ('2024-09-04', 2819), ('2024-09-06', 2536), ('2024-09-11', 2512), ('2024-09-01', 2478)]
+
+### 2025 (sat ref AQUA_M-T, bioma Amazônia, 01/01 a 10/10)  colunas=['id_bdq', 'foco_id', 'lat', 'lon', 'data_pas', 'pais']
+total 23119 | set 7211 | out 1-10 2462
+por mes {'01': 1219, '02': 399, '03': 772, '04': 293, '05': 836, '06': 1650, '07': 2183, '08': 6094, '09': 7211, '10': 2462}
+estados [('PARÁ', 7228), ('MATO GROSSO', 5963), ('AMAZONAS', 3589), ('ACRE', 1915), ('RONDÔNIA', 1588), ('MARANHÃO', 1319), ('RORAIMA', 1097), ('TOCANTINS', 266), ('AMAPÁ', 154)]
+set por estado [('PARÁ', 2967), ('MATO GROSSO', 1222), ('AMAZONAS', 942), ('ACRE', 840), ('MARANHÃO', 546), ('RONDÔNIA', 388)]
+out1-10 por estado [('PARÁ', 907), ('MATO GROSSO', 446), ('ACRE', 323), ('AMAZONAS', 307), ('RONDÔNIA', 201), ('MARANHÃO', 148)]
+biomas BR ate 10/10 [('Cerrado', 42747), ('Amazônia', 23119), ('Mata Atlântica', 10080), ('Caatinga', 9513), ('Pampa', 641), ('Pantanal', 521)]
+dias com mais focos set-out [('2025-10-30', 609), ('2025-10-25', 565), ('2025-09-30', 504), ('2025-10-28', 498), ('2025-09-02', 444)]

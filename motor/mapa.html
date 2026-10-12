@@ -138,6 +138,7 @@ const W=LG?1920:1080, H=LG?1080:1920;
 const IMG={};
 function carregar(src){ if(IMG[src]) return IMG[src].p; const im=new Image(); im.src=src; IMG[src]={im,p:im.decode().then(()=>im)}; return IMG[src].p; }
 const preload=[]; if(C.sat){ if(C.sat.base) preload.push(carregar(C.sat.base)); (C.sat.ir?.frames||[]).forEach(f=>preload.push(carregar(f))); }
+(C.imagens||[]).forEach(m=>preload.push(carregar(m.src)));  // imagens extras, cada uma com bbox e janela de tempo
 // ---- partículas de vento (estado sequencial; reconstruído se o tempo voltar)
 let PART=null, tPart=-1;
 function campo(x,y,h){ const V=C.vento; const g=V.grade; const i=(x-g.x0)/g.dx, j=(y-g.y0)/g.dy;
@@ -179,6 +180,8 @@ function camadas(t){
         const R=document.getElementById('relogio'); R.textContent=S.ir.rotulo+' · '+S.ir.tempos[Math.round(x)]; R.style.opacity=o; }
       else document.getElementById('relogio').style.opacity=0; }
   }
+  (C.imagens||[]).forEach((m,i)=>{ const o=vis(t,m.ini,m.fim,m.fade??.8); if(!o) return;
+    L.push(new deck.BitmapLayer({id:'img-'+i,image:IMG[m.src].im,bounds:m.bbox,tintColor:m.tint||[255,255,255],opacity:o*(m.alfa??1)})); });
   if(!comSat) L.push(new deck.GeoJsonLayer({id:'paises',data:G.paises,filled:true,stroked:true,getFillColor:[22,27,34],getLineColor:[70,80,95],lineWidthMinPixels:1.5}));
   if(!comSat) L.push(new deck.GeoJsonLayer({id:'ufbase',data:G.uf,filled:true,stroked:false,getFillColor:[30,36,46]}));
   else L.push(new deck.GeoJsonLayer({id:'paisesl',data:G.paises,filled:false,stroked:true,getLineColor:[255,255,255,90],lineWidthMinPixels:1.2}));
