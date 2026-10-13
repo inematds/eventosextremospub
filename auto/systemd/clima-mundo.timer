@@ -1,0 +1,9 @@
+[Unit]
+Description=eventosextremospub — Clima no Mundo, todo dia às 18:00 (aprovado pelo Nei em 13/10/2026)
+
+[Timer]
+OnCalendar=*-*-* 18:00:00
+Persistent=false
+
+[Install]
+WantedBy=timers.target

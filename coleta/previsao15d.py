@@ -5,7 +5,7 @@
   om/prev15_resumo.json — o que vira manchete: semana 1 (dias 1–7) e tendência (dias 8–15), por ponto e por UF
 uso: coleta/previsao15d.py <pasta-da-edicao> --dia 2026-10-11
 Dias 8–15 são TENDÊNCIA (o modelo erra mais longe): o roteiro tem de dizer isso."""
-import argparse, ast, json, re, time, urllib.error, urllib.request
+import argparse, ast, http.client, json, re, time, urllib.error, urllib.request
 from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
@@ -32,11 +32,13 @@ def lotes(pts, extra):
             try:
                 d = json.loads(urllib.request.urlopen(url, timeout=120).read()); break
             except urllib.error.HTTPError as e:
-                if e.code != 429:
+                if e.code not in (429, 502, 503, 504):
                     raise
                 time.sleep(20 * (tent + 1))
+            except (json.JSONDecodeError, http.client.IncompleteRead, TimeoutError):  # resposta cortada (13/10/2026)
+                time.sleep(20 * (tent + 1))
         else:
-            raise SystemExit("Open-Meteo recusou 5 vezes (429)")
+            raise SystemExit("Open-Meteo recusou ou cortou a resposta 5 vezes")
         out += list(zip(lote, d if isinstance(d, list) else [d]))
         time.sleep(8)
     return out
