@@ -1,0 +1,8 @@
+Clima 24 h 13/10: 104 mm em Foz do Iguaçu, vento de 77 km/h e 1.064 focos no PA
+Chuva no oeste do Paraná: 104,4 mm em 24 h em Foz do Iguaçu, 100,2 mm em Medianeira e 91,2 mm em Cascavel (pluviômetros do CEMADEN, até 13/10 às 5h).
+Vento: rajada de 77 km/h com tempestade forte em Presidente Prudente (SP) à 1h desta terça (METAR do aeroporto, NOAA).
+Fogo: 1.401 focos de queimada no Brasil em 12/10, 1.064 só no Pará (INPE, satélite de referência AQUA).
+Calor e ar seco: 39 °C em Teresina (PI) e Itaituba (PA); umidade de 16% em Juazeiro do Norte (CE) em 12/10 (METAR, NOAA).
+Hoje (13/10): alerta laranja de tempestade do INMET em 591 cidades, a maioria no PR (319) e em SC (213); Curitiba pode ter 54 mm (previsão Open-Meteo).
+Amanhã (14/10): alerta laranja em 687 cidades do PR, SP, MG, MS e RJ; alerta amarelo de baixa umidade em 1.012 cidades até 14/10 (INMET).
+Fontes: CEMADEN, INPE, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
