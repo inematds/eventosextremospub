@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-13 | O clima no mundo 16:9: `heygen-estudio-baixar` sai na hora com "ID não existe" enquanto o vídeo está na fila (Generate envia direto, sem modal); avatar-depois contava isso como tentativa falha e reenviaria o vídeo na tentativa 2 | com `video_id.txt` presente, só repetir o download de 10 em 10 min (avatar.sh já pula o reenvio); nunca apagar o id para "tentar de novo" | infra |
 | 2026-10-12 | publicar.sh do Amazônia e o mundo rodado por `systemd-run --user` usou `/usr/bin/codex` (0.116) → "unknown variant `default`" no config.toml, nada publicado e aviso "não publicado" no inemaytbot | serviço systemd com `--setenv=PATH=$PATH` (ou export PATH com ~/.npm-global/bin no script) | infra |
 | 11/10/2026 | fala com "tu/teu" ("Tua cidade") e CTA "Segue o canal" (o Nei quer só inema.club) | roteiro.md pede "você" e CTA só inema.club; rodar.sh reprova tu/segue o canal antes do avatar | prompt |
 | 10/10/2026 | voz do Chatterbox repetiu o fim da fala ("Medianeira, quase 90. Oco, quase 90.") e a conferência por transcrição do cardshorts aceitou; vista larga do Brasil (zoom 3,75) mostrava a borda do satélite | refazer só a fala com texto levemente mudado ("E Medianeira teve quase noventa"); conferir no narrar.log se a transcrição tem palavra a mais; BR com zoom ≥4,2 centrado em -54,5 e pitch 0 | infra (TTS) + prompt (câmera) |
