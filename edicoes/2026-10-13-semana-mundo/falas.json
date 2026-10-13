@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Um terremoto de magnitude sete vírgula sete. Um furacão que deixou novecentas mil casas sem luz. E uma enchente que já atingiu mais de três milhões de pessoas. Tudo isso numa semana só. Neste vídeo eu junto, no mapa, o que de mais grave aconteceu no mundo entre seis e treze de outubro, do pior para o menos pior.",
+  "legenda": "Um terremoto de magnitude 7,7. Um furacão que deixou 900 mil casas sem luz. E uma enchente que já atingiu mais de 3 milhões de pessoas. Tudo isso numa semana só. Neste vídeo eu junto, no mapa, o que de mais grave aconteceu no mundo entre 6 e 13 de outubro, do pior para o menos pior."
+ },
+ {
+  "id": "f2",
+  "fala": "Primeiro lugar: a Tailândia. A enchente começou em dezesseis de setembro e seguiu nesta semana. O governo conta quarenta e quatro mortos; a agência AFP já fala em sessenta. São mais de três milhões de pessoas atingidas, em vinte e uma províncias e em Bangkok.",
+  "legenda": "Primeiro lugar: a Tailândia. A enchente começou em 16 de setembro e seguiu nesta semana. O governo conta 44 mortos; a agência AFP já fala em 60. São mais de 3 milhões de pessoas atingidas, em 21 províncias e em Bangkok."
+ },
+ {
+  "id": "f3",
+  "fala": "Segundo: o furacão Isaias. Na noite de nove de outubro ele entrou na Flórida, perto de Destin, com rajadas de cento e oitenta e oito quilômetros por hora. Foi o primeiro furacão a tocar os Estados Unidos em dois anos. Quatro mortos, na Flórida e no Alabama, e cerca de novecentos mil clientes sem luz.",
+  "legenda": "Segundo: o furacão Isaias. Na noite de 9 de outubro ele entrou na Flórida, perto de Destin, com rajadas de 188 km/h. Foi o primeiro furacão a tocar os Estados Unidos em 2 anos. 4 mortos, na Flórida e no Alabama, e cerca de 900 mil clientes sem luz."
+ },
+ {
+  "id": "f4",
+  "fala": "Terceiro: no mesmo dia nove, a terra tremeu no Panamá. Magnitude sete vírgula sete, segundo a agência AP. Teve alerta de tsunami em seis países e estado de emergência. Vinte e sete feridos, cerca de quatrocentas casas e quatrocentas escolas danificadas, e uma igreja colonial desabou. Até agora, nenhuma morte confirmada.",
+  "legenda": "Terceiro: no mesmo dia 9, a terra tremeu no Panamá. Magnitude 7,7, segundo a agência AP. Teve alerta de tsunami em 6 países e estado de emergência. 27 feridos, cerca de 400 casas e 400 escolas danificadas, e uma igreja colonial desabou. Até agora, nenhuma morte confirmada."
+ },
+ {
+  "id": "f5",
+  "fala": "Quarto: Dacar, no Senegal, ficou debaixo d'água logo antes da semana começar. Cento e quarenta e dois milímetros em vinte e quatro horas em Rufisque. Houve mortes, a cidade parou e a volta às aulas foi adiada.",
+  "legenda": "Quarto: Dacar, no Senegal, ficou debaixo d'água logo antes da semana começar. 142 milímetros em 24 horas em Rufisque. Houve mortes, a cidade parou e a volta às aulas foi adiada."
+ },
+ {
+  "id": "f6",
+  "fala": "Quinto: no Pacífico do México, o furacão Simon chegou à categoria quatro, com ventos de duzentos e vinte quilômetros por hora, e passou colado à costa de Jalisco. Aeroporto de Puerto Vallarta fechado, aulas suspensas e milhares de pessoas retiradas. Desta vez os danos foram menores, sem mortes confirmadas.",
+  "legenda": "Quinto: no Pacífico do México, o furacão Simon chegou à categoria 4, com ventos de 220 km/h, e passou colado à costa de Jalisco. Aeroporto de Puerto Vallarta fechado, aulas suspensas e milhares de pessoas retiradas. Desta vez os danos foram menores, sem mortes confirmadas."
+ },
+ {
+  "id": "f7",
+  "fala": "Sexto, aqui no Brasil: a Amazônia. Foram quase seis mil focos de fogo nos dez primeiros dias de outubro, pela conta do satélite de referência do INPE. Só no dia nove, mil duzentos e oitenta e dois. E Manaus ficou no topo da lista de capitais com o ar mais poluído.",
+  "legenda": "Sexto, aqui no Brasil: a Amazônia. Foram quase 6 mil focos de fogo nos 10 primeiros dias de outubro, pela conta do satélite de referência do INPE. Só no dia 9, 1.282. E Manaus ficou no topo da lista de capitais com o ar mais poluído."
+ },
+ {
+  "id": "f8",
+  "fala": "E por trás de tudo isso está o mar. O Copernicus, o serviço europeu do clima, mostrou que setembro foi o segundo mais quente da história, um grau e sessenta e três acima da era pré-industrial. E a NOAA dá oitenta e três por cento de chance de o El Niño virar um evento histórico até dezembro.",
+  "legenda": "E por trás de tudo isso está o mar. O Copernicus, o serviço europeu do clima, mostrou que setembro foi o 2º mais quente da história, 1,63 °C acima da era pré-industrial. E a NOAA dá 83% de chance de o El Niño virar um evento histórico até dezembro."
+ },
+ {
+  "id": "f9",
+  "fala": "Por que isso importa? Para cada grau a mais, o ar segura uns sete por cento mais água. Então a chuva vem mais forte, e o mar quente faz o furacão crescer mais rápido. O terremoto não tem nada a ver com o clima, mas mostra a mesma coisa: quem recebe o alerta antes, se protege.",
+  "legenda": "Por que isso importa? Para cada grau a mais, o ar segura uns 7% mais água. Então a chuva vem mais forte, e o mar quente faz o furacão crescer mais rápido. O terremoto não tem nada a ver com o clima, mas mostra a mesma coisa: quem recebe o alerta antes, se protege."
+ },
+ {
+  "id": "f10",
+  "fala": "O que você faz? Cadastra o seu CEP para receber os alertas da Defesa Civil: manda o CEP por mensagem de texto para quatro zero um nove nove. E acompanha a chuva num painel em tempo real: no inema.club tem projetos gratuitos de clima.",
+  "legenda": "O que você faz? Cadastra o seu CEP para receber os alertas da Defesa Civil: manda o CEP por mensagem de texto para 40199. E acompanha a chuva num painel em tempo real: no inema.club tem projetos gratuitos de clima."
+ },
+ {
+  "id": "f11",
+  "fala": "Comenta aqui: qual desses eventos te assustou mais? E manda este vídeo para quem ainda acha que foi uma semana normal.",
+  "legenda": "Comenta aqui: qual desses eventos te assustou mais? E manda este vídeo para quem ainda acha que foi uma semana normal."
+ }
+]
