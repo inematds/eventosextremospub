@@ -25,6 +25,14 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 .painel .itens div.on{opacity:1}
 .painel .graf{margin-top:10px;width:100%;display:block}
 .painel .graf text{font-family:Inter,sans-serif;fill:#fff}
+.painel .rk{margin-top:10px}
+.painel .rk .r{display:flex;align-items:center;gap:10px;margin:7px 0;font:800 22px Inter}
+.painel .rk .r .nm{flex:0 0 46%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.painel .rk .r .bar{flex:1;height:26px;background:rgba(255,255,255,.08);border-radius:7px;overflow:hidden}
+.painel .rk .r .bar i{display:block;height:100%;border-radius:7px}
+.painel .rk .r .vl{flex:0 0 auto;min-width:84px;text-align:right;font:900 26px Inter}
+.painel .rk .r.top .nm{font-size:22px;color:#fff}.painel .rk .r.top .vl{font-size:38px}
+.painel .rk .r .bar{flex:1 1 0;min-width:40px}
 .painel .leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font:800 20px Inter}
 .painel .leg i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 #hero{position:absolute;left:0;right:0;top:130px;padding:50px 56px 60px;opacity:0;background:linear-gradient(180deg,rgba(5,8,12,.92) 70%,rgba(5,8,12,0))}
@@ -286,6 +294,14 @@ function grafico(g,t,p){
   return o;
 }
 
+// ranking: onde o volume é MAIOR (Nei, 13/10/2026: destacar o maior volume, não média). r={itens:[{nome,v,sub?}], cor, unid, ini, dur}
+function ranking(r,t,p){
+  const k=prog(t,r.ini??p.ini,r.dur||1.2), mx=Math.max(...r.itens.map(i=>i.v),1);
+  return '<div class="rk">'+r.itens.map((i,n)=>`<div class="r ${n==0?'top':''}"><span class="nm">${n==0?'▲ ':''}${i.nome}</span>`+
+    `<span class="bar"><i style="width:${(100*i.v/mx*k).toFixed(1)}%;background:${n==0?(r.cor_top||r.cor):r.cor}"></i></span>`+
+    `<span class="vl" style="color:${n==0?(r.cor_top||r.cor):'#fff'}">${Math.round(i.v*k).toLocaleString('pt-BR')} ${r.unid||''}</span></div>`).join('')+'</div>';
+}
+
 function html(t){
   const H=document.getElementById('hero'); const h=(C.hero||[]).find(x=>t>=x.ini&&t<=x.fim);
   if(h){H.innerHTML=h.html;H.style.opacity=h.ini<=0?clamp((h.fim-t)/.3):vis(t,h.ini,h.fim,.3);} else H.style.opacity=0;
@@ -297,9 +313,10 @@ function html(t){
       const s=v.toLocaleString('pt-BR',{minimumFractionDigits:c.dec||0,maximumFractionDigits:c.dec||0});
       corpo=`<div class="n" style="color:${c.cor||'#fff'}">${s}</div><div class="u">${c.unid||''}</div>`;}
     if(p.grafico) corpo+=grafico(p.grafico,t,p);
+    if(p.ranking) corpo+=ranking(p.ranking,t,p);
     if(p.itens) corpo+='<div class="itens">'+p.itens.map(i=>`<div class="${t>=i.t?'on':''}">${i.txt}</div>`).join('')+'</div>';
     P.innerHTML=`<div class="k">${p.k}</div>${corpo}${p.l?`<div class="l">${p.l}</div>`:''}`;
-    P.classList.toggle('g',!!p.grafico); P.style.opacity=vis(t,p.ini,p.fim,.3); P.style.borderColor=p.borda||'rgba(255,255,255,.12)';
+    P.classList.toggle('g',!!(p.grafico||p.ranking)); P.style.opacity=vis(t,p.ini,p.fim,.3); P.style.borderColor=p.borda||'rgba(255,255,255,.12)';
   } else P.style.opacity=0;
   const CT=document.getElementById('cta'); const c=C.cta;
   if(c){CT.innerHTML=`<div class="a">${c.a}</div><div class="b">${c.b}</div>`;CT.style.opacity=vis(t,c.ini,c.fim,.3);}
