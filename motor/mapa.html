@@ -23,6 +23,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 .painel .l{font:700 30px Inter;line-height:1.25;margin-top:10px;opacity:.95}
 .painel .itens div{font:900 52px Inter;line-height:1.25;opacity:.25}
 .painel .itens div.on{opacity:1}
+.painel .graf{margin-top:10px;width:100%;display:block}
+.painel .graf text{font-family:Inter,sans-serif;fill:#fff}
+.painel .leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px;font:800 20px Inter}
+.painel .leg i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 #hero{position:absolute;left:0;right:0;top:130px;padding:50px 56px 60px;opacity:0;background:linear-gradient(180deg,rgba(5,8,12,.92) 70%,rgba(5,8,12,0))}
 #hero .dt{display:inline-block;background:#fff;color:#0b0f14;font:900 44px Inter;padding:8px 22px;border-radius:12px;margin-bottom:18px;letter-spacing:1px}
 #hero .t1{font:400 150px/0.95 'Archivo Black';letter-spacing:-2px}
@@ -63,6 +67,8 @@ body.av #faixa{display:block}
 /* modo canto: mapa cheio, painel embaixo à esquerda, avatar pequeno embaixo à direita (x 640–1040, y 1290–1743) */
 body.cn #vinheta{background:linear-gradient(180deg,rgba(5,8,12,.9) 0,rgba(5,8,12,0) 300px,rgba(5,8,12,0) 1050px,rgba(5,8,12,.75) 1300px,rgba(5,8,12,.95) 1920px)}
 body.cn .painel{top:1290px;left:40px;right:470px;padding:18px 22px;min-height:453px}
+body.cn .painel.g{top:1215px;min-height:0}
+body.cn .painel.g .n{font-size:84px}
 body.cn .painel .k{font-size:18px}
 body.cn .painel .n{font-size:112px;letter-spacing:-2px}
 body.cn .painel .u{font-size:30px;margin-left:10px}
@@ -259,6 +265,27 @@ function camadas(t){
   return L;
 }
 
+// gráfico de previsão: barras empilhadas por série (ex.: regiões) por dia, sobe com prog; total em cima de cada coluna.
+// g = {rotulos:[..], series:[{nome,cor,v:[..]}], unid:'mm', ini, dur, previsto_a_partir: indice (colunas dali em diante hachuradas), linha:{nome,cor,v:[..],unid}}
+function grafico(g,t,p){
+  const W=620,H=270,L=40,R=10,T=26,B=46,n=g.rotulos.length,k=prog(t,g.ini??p.ini,g.dur||1.4);
+  const tot=g.rotulos.map((_,i)=>g.series.reduce((a,s)=>a+(s.v[i]||0),0)); const mx=Math.max(...tot,1)*1.12;
+  const bw=(W-L-R)/n, y=v=>H-B-(H-B-T)*v/mx; let o=`<svg class="graf" viewBox="0 0 ${W} ${H}">`;
+  for(let q=0;q<=3;q++){const v=mx*q/3; o+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,.14)"/><text x="${L-6}" y="${y(v)+5}" font-size="15" text-anchor="end" opacity=".7">${Math.round(v)}</text>`;}
+  g.rotulos.forEach((r,i)=>{
+    const x=L+i*bw+bw*.14, w=bw*.72, prev=g.previsto_a_partir!=null&&i>=g.previsto_a_partir; let base=0;
+    g.series.forEach(s=>{const v=(s.v[i]||0)*k; if(v<=0) return; const y0=y(base+v), h=y(base)-y0;
+      o+=`<rect x="${x}" y="${y0}" width="${w}" height="${h}" fill="${s.cor}" opacity="${prev?.78:1}" ${prev?'stroke="#fff" stroke-opacity=".5" stroke-dasharray="5 4"':''}/>`; base+=v;});
+    o+=`<text x="${x+w/2}" y="${y(base)-7}" font-size="19" font-weight="900" text-anchor="middle" opacity="${k}">${Math.round(tot[i])}</text>`;
+    o+=`<text x="${x+w/2}" y="${H-B+22}" font-size="18" font-weight="800" text-anchor="middle">${r}</text>`;
+  });
+  if(g.linha){const L2=g.linha, mn=Math.min(...L2.v)-2, M2=Math.max(...L2.v)+2, yy=v=>H-B-(H-B-T)*(v-mn)/(M2-mn);
+    const pts=L2.v.map((v,i)=>[L+i*bw+bw/2,yy(v)]).slice(0,Math.max(1,Math.ceil(k*L2.v.length)));
+    o+=`<polyline points="${pts.map(q=>q.join(',')).join(' ')}" fill="none" stroke="${L2.cor}" stroke-width="4"/>`+pts.map((q,i)=>`<circle cx="${q[0]}" cy="${q[1]}" r="5" fill="${L2.cor}"/><text x="${q[0]}" y="${q[1]-10}" font-size="16" font-weight="800" text-anchor="middle" fill="${L2.cor}" style="fill:${L2.cor}">${Math.round(L2.v[i])}°</text>`).join('');}
+  o+='</svg>'; o+='<div class="leg">'+g.series.map(s=>`<span><i style="background:${s.cor}"></i>${s.nome}</span>`).join('')+(g.linha?`<span><i style="background:${g.linha.cor}"></i>${g.linha.nome}</span>`:'')+'</div>';
+  return o;
+}
+
 function html(t){
   const H=document.getElementById('hero'); const h=(C.hero||[]).find(x=>t>=x.ini&&t<=x.fim);
   if(h){H.innerHTML=h.html;H.style.opacity=h.ini<=0?clamp((h.fim-t)/.3):vis(t,h.ini,h.fim,.3);} else H.style.opacity=0;
@@ -269,9 +296,10 @@ function html(t){
     if(p.contador){const c=p.contador; const k=prog(t,c.ini??p.ini,c.dur||2); const v=lerp(c.de,c.ate,k);
       const s=v.toLocaleString('pt-BR',{minimumFractionDigits:c.dec||0,maximumFractionDigits:c.dec||0});
       corpo=`<div class="n" style="color:${c.cor||'#fff'}">${s}</div><div class="u">${c.unid||''}</div>`;}
+    if(p.grafico) corpo+=grafico(p.grafico,t,p);
     if(p.itens) corpo+='<div class="itens">'+p.itens.map(i=>`<div class="${t>=i.t?'on':''}">${i.txt}</div>`).join('')+'</div>';
     P.innerHTML=`<div class="k">${p.k}</div>${corpo}${p.l?`<div class="l">${p.l}</div>`:''}`;
-    P.style.opacity=vis(t,p.ini,p.fim,.3); P.style.borderColor=p.borda||'rgba(255,255,255,.12)';
+    P.classList.toggle('g',!!p.grafico); P.style.opacity=vis(t,p.ini,p.fim,.3); P.style.borderColor=p.borda||'rgba(255,255,255,.12)';
   } else P.style.opacity=0;
   const CT=document.getElementById('cta'); const c=C.cta;
   if(c){CT.innerHTML=`<div class="a">${c.a}</div><div class="b">${c.b}</div>`;CT.style.opacity=vis(t,c.ini,c.fim,.3);}

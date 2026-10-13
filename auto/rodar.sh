@@ -67,7 +67,7 @@ for f in falas.json yt.txt video.mp4 tempos.json; do
   [ -s "$ED/$f" ] || avisar "faltou $f depois do claude -p ($(tail -c 300 "$ED/claude.log"))"
 done
 # portão de tom/CTA (Nei, 11/10/2026): "você", nunca "tu"; CTA só o inema.club, sem "segue o canal"
-TOM=$(grep -o -i -w -E "tu|teu|tua|teus|tuas|ti|contigo|segue o canal|se inscreve|inscreva-se" "$ED/falas.json" "$ED/gerar_cena.py" | sort -u | head -5 | tr '\n' ' ')
+TOM=$(grep -o -i -w -E "tu|teu|tua|teus|tuas|ti|contigo|segue o canal|se inscreve|inscreva-se|por sorte|felizmente|ainda bem|boa notícia|melhor" "$ED/falas.json" "$ED/gerar_cena.py" | sort -u | head -5 | tr '\n' ' ')
 [ -n "$TOM" ] && avisar "roteiro reprovado no tom/CTA (usar 'você'; CTA só inema.club): $TOM"
 
 # 3. avatar do Nei (estúdio HeyGen); se falhar, publica a versão mapa (voz do Nei pelo Chatterbox)
@@ -115,7 +115,7 @@ if [ "${SEM_GIT:-}" != 1 ] && [ -z "$DRY" ]; then
   cd "$RAIZ"
   ARQ=()
   for f in falas.json gerar_cena.py narrar.py tempos.json yt.txt youtube-lives10.txt avatar/fala.txt avatar/retempo.py avatar/tempos.json \
-           avatar/video_id.txt avatar/APROVADO_HEYGEN pesquisa/noticias.md pesquisa/dados.md pesquisa/proposta.md pesquisa/bruto/resumo.json om/prev15_resumo.json; do
+           avatar/video_id.txt avatar/APROVADO_HEYGEN pesquisa/noticias.md pesquisa/dados.md pesquisa/proposta.md pesquisa/bruto/resumo.json pesquisa/bruto/previsao7d.json om/prev15_resumo.json; do
     p="edicoes/$DIA-$SUF/$f"; [ -f "$p" ] && ! git check-ignore -q "$p" && ARQ+=("$p")
   done
   git add -- "${ARQ[@]}" && git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "$ROT $DATA_BR (rodada automática): $ST" \

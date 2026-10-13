@@ -112,8 +112,15 @@ def _():
     por_uf = defaultdict(float)
     for r in vivos:
         por_uf[r["uf"]] = max(por_uf[r["uf"]], r["acc24"])
+    soma_uf, n_uf = defaultdict(float), defaultdict(int)
+    for r in vivos:
+        soma_uf[r["uf"]] += r["acc24"]; n_uf[r["uf"]] += 1
     return {"estacoes_total": len(todos), "estacoes_recentes": len(vivos), "erros_uf": erros, "top": vivos[:25],
             "max_por_uf": dict(sorted(por_uf.items(), key=lambda k: -k[1])),
+            # volume somado: soma dos acc24 das estações vivas (mm·estação, NÃO é lâmina de área) e média por estação — rotular assim
+            "soma_mm_estacoes": round(sum(r["acc24"] for r in vivos), 1),
+            "soma_por_uf": {u: {"soma_mm": round(soma_uf[u], 1), "estacoes": n_uf[u], "media_mm": round(soma_uf[u] / n_uf[u], 1)}
+                            for u in sorted(soma_uf, key=lambda k: -soma_uf[k])},
             "n_ge_50": sum(r["acc24"] >= 50 for r in vivos), "n_ge_100": sum(r["acc24"] >= 100 for r in vivos)}
 
 
@@ -189,7 +196,7 @@ def _():
     url = ("https://api.open-meteo.com/v1/forecast?latitude=" + ",".join(str(CAP[n][1]) for n in nomes) +
            "&longitude=" + ",".join(str(CAP[n][2]) for n in nomes) + "&timezone=America%2FSao_Paulo"
            "&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_gusts_10m_max,relative_humidity_2m_min"
-           f"&start_date={d0}&end_date={d0 + timedelta(days=2)}")
+           f"&start_date={d0}&end_date={d0 + timedelta(days=6)}")  # 7 dias: hoje + 6 (gráfico de previsão do diário)
     for t in range(5):
         try:
             st, b = get(url, 120); break
@@ -208,7 +215,28 @@ def _():
             for k, cond in (("tmax", lambda v: v >= 38), ("chuva", lambda v: v >= 50), ("raj", lambda v: v >= 70), ("urmin", lambda v: v <= 20)):
                 if row[k] is not None and cond(row[k]):
                     ext.append([k, n, CAP[n][0], dia, row[k]])
-    return {"modelo": "Open-Meteo best_match", "linhas": res, "extremos": ext}
+    # previsão 7 dias + volumes somados (soma da chuva prevista nas 27 capitais, por dia, por região e acumulada)
+    REG = {"N": "RO AC AM RR PA AP TO", "NE": "MA PI CE RN PB PE AL SE BA", "CO": "MT MS GO DF", "SE": "MG ES RJ SP", "S": "PR SC RS"}
+    regiao = {u: r for r, us in REG.items() for u in us.split()}
+    dias = sorted({r["dia"] for r in res})
+    por_dia = []
+    for dia in dias:
+        rs = [r for r in res if r["dia"] == dia and r["chuva"] is not None]
+        reg = {k: round(sum(r["chuva"] for r in rs if regiao[r["uf"]] == k), 1) for k in REG}
+        por_dia.append({"dia": dia, "soma_chuva_mm": round(sum(r["chuva"] for r in rs), 1), "por_regiao_mm": reg,
+                        "capitais_ge_30mm": sorted(r["cap"] for r in rs if r["chuva"] >= 30),
+                        "tmax_media": round(sum(r["tmax"] for r in res if r["dia"] == dia and r["tmax"] is not None) / len(rs), 1),
+                        "tmax_pico": max(((r["tmax"], r["cap"]) for r in res if r["dia"] == dia and r["tmax"] is not None))})
+    acum = defaultdict(float)
+    for r in res:
+        acum[r["cap"]] += r["chuva"] or 0
+    prev7 = {"dias": dias, "por_dia": por_dia,
+             "soma_7d_mm": round(sum(d["soma_chuva_mm"] for d in por_dia), 1),
+             "soma_7d_por_regiao_mm": {k: round(sum(d["por_regiao_mm"][k] for d in por_dia), 1) for k in REG},
+             "acumulado_7d_top": sorted(([c, round(v, 1)] for c, v in acum.items()), key=lambda x: -x[1])[:8],
+             "rotulo": "soma da chuva prevista nas 27 capitais (mm somados), Open-Meteo best_match; não é lâmina média do país"}
+    (dst / "previsao7d.json").write_text(json.dumps(prev7, ensure_ascii=False, indent=1))
+    return {"modelo": "Open-Meteo best_match", "linhas": res, "extremos": ext, "previsao7d": prev7}
 
 
 (dst / "resumo.json").write_text(json.dumps(R, ensure_ascii=False, indent=1))
