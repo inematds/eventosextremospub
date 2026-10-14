@@ -12,8 +12,13 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 #vinheta{position:absolute;inset:0;pointer-events:none;
  background:linear-gradient(180deg,rgba(5,8,12,.95) 0,rgba(5,8,12,.0) 330px,rgba(5,8,12,0) 1300px,rgba(5,8,12,.92) 1650px,rgba(5,8,12,1) 1920px)}
 #topo{position:absolute;left:56px;right:56px;top:70px;display:flex;justify-content:space-between;align-items:center}
-#marca{font:900 28px Inter;letter-spacing:6px}
-#selo{background:var(--red);border-radius:40px;padding:10px 22px;font:900 22px Inter;letter-spacing:1px}
+#marca{font:900 28px Inter;letter-spacing:6px;white-space:nowrap;flex-shrink:0}
+#selo{background:var(--red);border-radius:40px;padding:10px 22px;font:900 22px Inter;letter-spacing:1px;white-space:nowrap}
+/* telas: foto cheia por cima do mapa (capa do quadro 0, ilustração de granizo); topo, painel e legenda ficam por cima (13/10/2026) */
+#telas{position:absolute;inset:0;pointer-events:none}
+#telas .tl{position:absolute;inset:0;overflow:hidden;opacity:0}
+#telas .tl img{width:100%;height:100%;object-fit:cover;transform-origin:50% 40%}
+#telas .tl .sl{position:absolute;right:40px;top:130px;background:rgba(11,15,20,.78);border-radius:8px;padding:6px 12px;font:800 20px Inter;letter-spacing:1px;color:#e6e9ee}
 #selo:before{content:"●  ";}
 .painel{position:absolute;left:56px;right:56px;top:170px;background:rgba(14,18,24,.86);border:2px solid rgba(255,255,255,.12);
  border-radius:22px;padding:26px 34px;opacity:0;backdrop-filter:blur(6px)}
@@ -134,6 +139,7 @@ body.lg .pino .cx small{font-size:18px}
 <body>
 <div id="mapa"></div>
 <div id="vinheta"></div>
+<div id="telas"></div>
 <div id="pinos"></div>
 <div id="topo"><div id="marca">INEMA · ALERTA SUL</div><div id="selo"></div></div>
 <div id="hero"></div>
@@ -165,8 +171,9 @@ if(LG&&C.coluna) document.body.classList.add('cd');
 const W=LG?1920:1080, H=LG?1080:1920;
 const IMG={};
 function carregar(src){ if(IMG[src]) return IMG[src].p; const im=new Image(); im.src=src; IMG[src]={im,p:im.decode().then(()=>im)}; return IMG[src].p; }
-const preload=[]; if(C.sat){ if(C.sat.base) preload.push(carregar(C.sat.base)); (C.sat.ir?.frames||[]).forEach(f=>preload.push(carregar(f))); }
+const preload=[]; if(C.sat){ if(C.sat.base) preload.push(carregar(C.sat.base)); if(C.sat.fundo) preload.push(carregar(C.sat.fundo.src)); (C.sat.ir?.frames||[]).forEach(f=>preload.push(carregar(f))); }
 (C.imagens||[]).forEach(m=>preload.push(carregar(m.src)));  // imagens extras, cada uma com bbox e janela de tempo
+(C.telas||[]).forEach(m=>preload.push(carregar(m.src)));    // fotos de tela cheia (sem isso o quadro 0 sai preto)
 // ---- partículas de vento (estado sequencial; reconstruído se o tempo voltar)
 let PART=null, tPart=-1;
 function campo(x,y,h){ const V=C.vento; const g=V.grade; const i=(x-g.x0)/g.dx, j=(y-g.y0)/g.dy;
@@ -201,6 +208,8 @@ function camadas(t){
   const L=[];
   const S=C.sat; const comSat=S&&S.base&&IMG[S.base];
   if(comSat){
+    // fundo opcional (ex.: Blue Marble do mundo) por baixo do satélite: sem ele a borda da imagem aparece com câmera inclinada (13/10/2026)
+    if(S.fundo&&IMG[S.fundo.src]) L.push(new deck.BitmapLayer({id:'satfundo',image:IMG[S.fundo.src].im,bounds:S.fundo.bbox,tintColor:S.fundo.tint||[200,200,200],opacity:1}));
     L.push(new deck.BitmapLayer({id:'satbase',image:IMG[S.base].im,bounds:S.bbox,tintColor:S.tint||[200,200,200],opacity:1}));
     if(S.ir){ const o=vis(t,S.ir.ini,S.ir.fim,.6);
       if(o){ const fr=S.ir.frames; const x=clamp((t-S.ir.ini)/S.ir.dur)*(fr.length-1); const a=Math.floor(x), b=Math.min(fr.length-1,a+1), k=x-a;
@@ -322,6 +331,12 @@ function html(t){
   if(c){CT.innerHTML=`<div class="a">${c.a}</div><div class="b">${c.b}</div>`;CT.style.opacity=vis(t,c.ini,c.fim,.3);}
   const CL=document.getElementById('club'); const cl=C.club;
   if(cl){CL.innerHTML=`<div class="ic">▶</div><div class="tx">${cl.a}<small>${cl.b}</small></div>`;CL.style.opacity=vis(t,cl.ini,cl.fim,.3);}
+  // telas: foto cheia com zoom lento; selo pequeno (ex.: "ilustração"). Os <img> são criados uma vez (sem piscar)
+  const TL=document.getElementById('telas');
+  if(!TL.childElementCount) (C.telas||[]).forEach(m=>{ const d=document.createElement('div'); d.className='tl'; const im=IMG[m.src].im; d.appendChild(im.parentNode?im.cloneNode():im);
+    if(m.selo){const s=document.createElement('div'); s.className='sl'; s.textContent=m.selo; d.appendChild(s);} TL.appendChild(d); });
+  (C.telas||[]).forEach((m,i)=>{ const d=TL.children[i], o=vis(t,m.ini,m.fim,m.fade??.3); d.style.opacity=o; if(!o) return;
+    d.firstChild.style.transform=`scale(${1+(m.zoom??.06)*clamp((t-m.ini)/Math.max(.1,m.fim-m.ini))})`; });
   const F=document.getElementById('fonte'); const f=(C.fontes||[]).find(x=>t>=x.ini&&t<=x.fim);
   if(f){F.innerHTML=f.html;F.style.opacity=vis(t,f.ini,f.fim,.3);} else F.style.opacity=0;
   // legenda: bloco de palavras ativo

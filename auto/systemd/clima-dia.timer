@@ -1,0 +1,9 @@
+[Unit]
+Description=eventosextremospub — Clima do DIA, diário 12:30
+
+[Timer]
+OnCalendar=*-*-* 12:30:00
+Persistent=false
+
+[Install]
+WantedBy=timers.target

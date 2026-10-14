@@ -1,5 +1,5 @@
 Você está rodando sozinho (sem ninguém para responder) a edição "Clima do DIA" do projeto eventosextremospub, de {DATA_BR}.
-Não faça perguntas: decida e siga. Depois o script faz a versão com foto, o avatar (HeyGen) e manda ao bot.
+Não faça perguntas: decida e siga. Depois o script auto/rodar.sh faz o avatar (HeyGen), publica no lives10 e manda ao bot.
 Você NÃO faz: git, publicação, HeyGen, bot, nada no Vercel. Só os arquivos desta edição.
 
 Pasta da edição: {ED}
@@ -25,6 +25,13 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
    - CTA só o inema.club. Tratar por "você", nunca "tu/teu/tua/ti". Nunca termo de alívio sobre tragédia ("por sorte", "felizmente", "ainda bem", "melhor", "boa notícia").
    - no campo "fala" números por extenso (ano também); no campo "legenda" com algarismos. Escreva "mensagem de texto", nunca "SMS".
 3. gerar_cena.py: copiado do modelo. Adapte TUDO ao boletim de hoje: DATA, marca/selo "CLIMA DO DIA", câmeras por fala indo às regiões citadas, estados pintados e pinos onde o boletim aponta risco, painéis e contadores com os números do boletim, IR (rótulo e janela), avisos do INMET (ids escolhidos em inmet_avisos_ativos.json, asserts com a contagem nova), fontes de cada trecho, cta. Tire o que for do Clima 24 h e não estiver no boletim (focos do INPE, volumes somados) se não ajudar. Mantenha o comportamento de --canto (avatar/tempos.json, layout canto). Cada `em(fid, palavra)` precisa achar a palavra na legenda daquela fala.
+3c. VISUAL OBRIGATÓRIO (Nei, 13/10/2026, revisão do 1º Clima do DIA):
+   - Quadro 0 = imagem CHEIA de impacto (1080x1920) com o gancho ESCRITO DENTRO, gerada pelo Codex pela assinatura (`echo "<pedido>" | codex exec -s workspace-write --skip-git-repo-check -C {ED}/capa-dia -`, salvar em capa-dia/abertura.png; sem logotipo nem marca; luz neutra). Confira o texto (Read). Sem fade no quadro 0; sai em ~2 s para o mapa.
+   - Falou de oceano (El Niño, Pacífico, Atlântico) → a câmera VAI até o oceano e mostra a anomalia real da temperatura do mar (NOAA/GIBS; exemplo em edicoes/2026-10-12-mundo-clima), com pino e número.
+   - Volume de chuva grande (chuva de um mês, acumulado) → colunas 3D (`C.colunas`, câmera com pitch 50–60 e bearing girando), altura = mm previstos, rotulado como previsão.
+   - Granizo, vendaval, enchente, fogo → imagem realista de impacto do Codex (selo "ilustração") no momento da palavra; nunca desenho SVG do fenômeno.
+   - Número de um estado → depois o TOTAL do Brasil com o mesmo destaque (ex.: focos do Pará e total do país).
+   - Cabeçalho "INEMA · CLIMA DO DIA" numa linha só (sem corte no topo). Contador chega ao número QUANDO a palavra é dita (confira em tempos.json e avatar/tempos.json). Uma troca visual por fala.
 4. Versão mapa, na pasta da edição:
    `python3 narrar.py` → tempos.json e narração (voz do Nei, local)
    `python3 gerar_cena.py`
