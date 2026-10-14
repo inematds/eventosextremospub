@@ -1,0 +1,8 @@
+Clima 24 h 14/10: 112 mm no Paraná, rajada de 70 km/h em Campo Grande e 39 °C
+Chuva no noroeste do Paraná: 112,4 mm em 24 h em Santa Cruz de Monte Castelo, 101,2 mm em Paranavaí e 76,8 mm em Londrina (pluviômetros do CEMADEN, até 14/10 às 5h).
+Vento: rajada de 70 km/h com tempestade forte em Campo Grande (MS) e de 68 km/h em Ribeirão Preto (SP), no começo da noite de 13/10 (METAR dos aeroportos, NOAA).
+Fogo: 1.050 focos de queimada no Brasil em 13/10, 283 na Bahia (INPE, satélite de referência AQUA). Calor: 39 °C em Teresina (umidade de 20%) e Itaituba (METAR, NOAA).
+Hoje (14/10): alerta laranja de tempestade do INMET em 1.342 cidades (SP, PR, MG, RJ, MS, ES), com vento de 60 a 100 km/h e granizo; alerta laranja de ar seco em 96 cidades da BA e de MG. Amanhã (15/10): alerta amarelo de tempestade em 2.074 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): quinta deve ser o dia mais chuvoso (148 mm somados), o Sudeste deve acumular mais e Teresina deve passar dos 39 °C até domingo; 539 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN no Paraná juntaram 4.317 mm em 24 h (153 estações); no Brasil, mais de 12 mil mm (soma dos pluviômetros, não chuva média).
+Fontes: CEMADEN, INPE, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo, Defesa Civil de SP.
