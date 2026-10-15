@@ -81,7 +81,7 @@ if [ "${REUSAR_ROTEIRO:-}" = 1 ] && [ -s "$ED/falas.json" ] && [ -s "$ED/video.m
 else
   rm -f "$ED/ERRO.txt" "$ED/falas.json" "$ED/yt.txt" "$ED/video.mp4"
   PROMPT=$(sed -e "s|{ED}|$ED|g" -e "s|{PREV}|$PREV|g" -e "s|{RAIZ}|$RAIZ|g" -e "s|{DATA_BR}|$DATA_BR|g" -e "s|{DIA}|$DIA|g" "$RAIZ/auto/$PROMPT_MD")
-  ( cd "$ED" && timeout 5400 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
+  ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
       --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
   [ -f "$ED/ERRO.txt" ] && avisar "o roteiro não saiu: $(head -c 400 "$ED/ERRO.txt")"
 fi

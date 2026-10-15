@@ -29,7 +29,7 @@ if [ -n "$MODO" ]; then
   [ -f "$E/gerar_cena.py" ] || cp "$PREV/gerar_cena.py" "$E/"
   cp --update=none "$PREV/narrar.py" "$E/"; cp --update=none "$RAIZ/edicoes/2026-10-13-ultimas-24h/avatar/retempo.py" "$E/avatar/"
   PROMPT=$(sed -e "s|{ED}|$E|g" -e "s|{PREV}|$PREV|g" -e "s|{RAIZ}|$RAIZ|g" -e "s|{DATA_BR}|$DATA_BR|g" -e "s|{DIA}|$DIA|g" "$RAIZ/auto/roteiro-$MODO.md")
-  ( cd "$E" && timeout 5400 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions --add-dir "$RAIZ" > "$E/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
+  ( cd "$E" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions --add-dir "$RAIZ" > "$E/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
   [ -f "$E/ERRO.txt" ] && { bot "$E/ERRO.txt" "$ROT · $DATA_BR · não saiu: $(head -c 300 "$E/ERRO.txt")"; exit 1; }
 fi
 for f in falas.json tempos.json narracao.wav yt.txt; do [ -s "$E/$f" ] || { echo "faltou $f"; exit 1; }; done

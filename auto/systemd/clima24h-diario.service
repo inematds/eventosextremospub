@@ -7,6 +7,6 @@ Type=oneshot
 Environment=PATH=%h/.local/bin:%h/.npm-global/bin:/usr/local/bin:/usr/bin:/bin
 Environment=DISPLAY=:99
 ExecStart=/bin/bash %h/projetos/eventosextremospub/auto/rodar.sh
-TimeoutStartSec=9h
+TimeoutStartSec=12h
 MemoryMax=60G
 Nice=5
