@@ -104,6 +104,9 @@ body.lg #marca{font-size:24px}
 body.lg #selo{font-size:18px;padding:8px 18px}
 body.lg .painel{top:110px;left:48px;right:auto;width:640px;padding:20px 26px}
 body.lg .painel .k{font-size:18px}
+/* gráfico/ranking no 16:9: painel largo até a coluna do avatar (15/10/2026, queimadas ano a ano) */
+body.lg .painel.g{width:1180px}
+body.lg .painel.g .k{font-size:24px}
 body.lg .painel .n{font-size:110px;letter-spacing:-2px}
 body.lg .painel .u{font-size:30px;margin-left:10px}
 body.lg .painel .l{font-size:24px}
@@ -285,16 +288,19 @@ function camadas(t){
 // gráfico de previsão: barras empilhadas por série (ex.: regiões) por dia, sobe com prog; total em cima de cada coluna.
 // g = {rotulos:[..], series:[{nome,cor,v:[..]}], unid:'mm', ini, dur, previsto_a_partir: indice (colunas dali em diante hachuradas), linha:{nome,cor,v:[..],unid}}
 function grafico(g,t,p){
-  const W=620,H=270,L=40,R=10,T=26,B=46,n=g.rotulos.length,k=prog(t,g.ini??p.ini,g.dur||1.4);
+  const W=620,H=270,L=58,R=10,T=26,B=46,n=g.rotulos.length,k=prog(t,g.ini??p.ini,g.dur||1.4);
   const tot=g.rotulos.map((_,i)=>g.series.reduce((a,s)=>a+(s.v[i]||0),0)); const mx=Math.max(...tot,1)*1.12;
   const bw=(W-L-R)/n, y=v=>H-B-(H-B-T)*v/mx; let o=`<svg class="graf" viewBox="0 0 ${W} ${H}">`;
-  for(let q=0;q<=3;q++){const v=mx*q/3; o+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,.14)"/><text x="${L-6}" y="${y(v)+5}" font-size="15" text-anchor="end" opacity=".7">${Math.round(v)}</text>`;}
+  for(let q=0;q<=3;q++){const v=mx*q/3; o+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,.14)"/><text x="${L-6}" y="${y(v)+5}" font-size="15" text-anchor="end" opacity=".7">${Math.round(v).toLocaleString('pt-BR')}</text>`;}
   g.rotulos.forEach((r,i)=>{
     const x=L+i*bw+bw*.14, w=bw*.72, prev=g.previsto_a_partir!=null&&i>=g.previsto_a_partir; let base=0;
     g.series.forEach(s=>{const v=(s.v[i]||0)*k; if(v<=0) return; const y0=y(base+v), h=y(base)-y0;
       o+=`<rect x="${x}" y="${y0}" width="${w}" height="${h}" fill="${s.cor}" opacity="${prev?.78:1}" ${prev?'stroke="#fff" stroke-opacity=".5" stroke-dasharray="5 4"':''}/>`; base+=v;});
-    o+=`<text x="${x+w/2}" y="${y(base)-7}" font-size="19" font-weight="900" text-anchor="middle" opacity="${k}">${Math.round(tot[i])}</text>`;
-    o+=`<text x="${x+w/2}" y="${H-B+22}" font-size="18" font-weight="800" text-anchor="middle">${r}</text>`;
+    // g.marcar = índices com rótulo (série longa: 24 barras não cabem rótulo em todas, 15/10/2026)
+    if(!g.marcar||g.marcar.includes(i)){
+    o+=`<text x="${x+w/2}" y="${y(base)-7}" font-size="19" font-weight="900" text-anchor="middle" opacity="${k}">${Math.round(tot[i]).toLocaleString('pt-BR')}</text>`;}
+    if(!(g.marcar_x||g.marcar)||(g.marcar_x||g.marcar).includes(i)){
+    o+=`<text x="${x+w/2}" y="${H-B+22}" font-size="18" font-weight="800" text-anchor="middle">${r}</text>`;}
   });
   if(g.linha){const L2=g.linha, mn=Math.min(...L2.v)-2, M2=Math.max(...L2.v)+2, yy=v=>H-B-(H-B-T)*(v-mn)/(M2-mn);
     const pts=L2.v.map((v,i)=>[L+i*bw+bw/2,yy(v)]).slice(0,Math.max(1,Math.ceil(k*L2.v.length)));

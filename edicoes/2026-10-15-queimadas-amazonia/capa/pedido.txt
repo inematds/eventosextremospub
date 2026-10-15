@@ -1,0 +1,10 @@
+Gere 6 imagens com a ferramenta de geração de imagem (image_gen) e salve nesta pasta, em PNG, formato paisagem 16:9 (1920x1080 ou maior na mesma proporção). Fotorrealistas, estilo fotojornalismo documental, luz NEUTRA (sem filtro amarelado/âmbar geral; o laranja só vem do próprio fogo), sem logotipo, sem marca d'água, sem pessoas reconhecíveis.
+
+1. abertura.png — capa de impacto: vista aérea ao entardecer de uma frente de fogo avançando sobre a floresta amazônica, coluna de fumaça enorme. Texto ESCRITO DENTRO da arte, grande, em português, fonte bold sem serifa, branco com destaque vermelho: no topo "15/10/2026"; no centro "AMAZÔNIA EM CHAMAS"; embaixo, em vermelho, "1.500 FOCOS EM UM SÓ DIA". Deixe o terço DIREITO da imagem sem texto (lá entra um apresentador). Confira a grafia exata.
+2. mata-chamas.png — floresta amazônica queimando à noite, chamas no sub-bosque entre árvores altas, vista de dentro da mata.
+3. manaus-fumaca.png — orla de uma cidade grande na beira de um rio largo da Amazônia coberta por fumaça cinza densa, sol como um disco apagado, barcos parados.
+4. brigadista.png — brigadista de costas, uniforme amarelo e capacete, combatendo fogo em mata com abafador, fumaça densa (rosto não visível).
+5. cinzas.png — área de floresta recém-queimada, troncos carbonizados, chão de cinzas fumegante, castanheira solitária ao fundo, manhã cinzenta.
+6. rio-seco.png — vista aérea de um rio amazônico muito baixo com bancos de areia expostos e fumaça no horizonte, embarcações encalhadas.
+
+Ao final, liste os arquivos salvos.

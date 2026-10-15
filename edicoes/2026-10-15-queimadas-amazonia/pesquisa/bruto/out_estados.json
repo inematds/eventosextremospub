@@ -1,0 +1,134 @@
+{
+ "2015": {
+  "PARÁ": 3030,
+  "MATO GROSSO": 1542,
+  "AMAZONAS": 1058,
+  "RONDÔNIA": 1043,
+  "MARANHÃO": 752,
+  "ACRE": 459,
+  "AMAPÁ": 212,
+  "RORAIMA": 73,
+  "TOCANTINS": 55
+ },
+ "2016": {
+  "PARÁ": 2359,
+  "RONDÔNIA": 994,
+  "AMAZONAS": 992,
+  "MATO GROSSO": 913,
+  "MARANHÃO": 320,
+  "ACRE": 216,
+  "AMAPÁ": 175,
+  "TOCANTINS": 115,
+  "RORAIMA": 51
+ },
+ "2017": {
+  "PARÁ": 2514,
+  "MATO GROSSO": 1266,
+  "RONDÔNIA": 1029,
+  "ACRE": 960,
+  "AMAZONAS": 853,
+  "MARANHÃO": 248,
+  "AMAPÁ": 108,
+  "TOCANTINS": 65,
+  "RORAIMA": 52
+ },
+ "2018": {
+  "PARÁ": 1670,
+  "AMAZONAS": 750,
+  "MATO GROSSO": 665,
+  "RONDÔNIA": 398,
+  "AMAPÁ": 208,
+  "ACRE": 189,
+  "RORAIMA": 77,
+  "MARANHÃO": 70,
+  "TOCANTINS": 23
+ },
+ "2019": {
+  "PARÁ": 1323,
+  "MATO GROSSO": 450,
+  "AMAZONAS": 295,
+  "ACRE": 280,
+  "RONDÔNIA": 262,
+  "AMAPÁ": 126,
+  "MARANHÃO": 104,
+  "TOCANTINS": 28,
+  "RORAIMA": 13
+ },
+ "2020": {
+  "PARÁ": 3445,
+  "RONDÔNIA": 2024,
+  "MATO GROSSO": 1817,
+  "ACRE": 1427,
+  "AMAZONAS": 945,
+  "MARANHÃO": 279,
+  "AMAPÁ": 136,
+  "TOCANTINS": 33,
+  "RORAIMA": 24
+ },
+ "2021": {
+  "PARÁ": 2508,
+  "AMAZONAS": 1176,
+  "RONDÔNIA": 1113,
+  "MATO GROSSO": 809,
+  "ACRE": 779,
+  "MARANHÃO": 302,
+  "AMAPÁ": 146,
+  "RORAIMA": 66,
+  "TOCANTINS": 50
+ },
+ "2022": {
+  "PARÁ": 3740,
+  "AMAZONAS": 1138,
+  "ACRE": 836,
+  "RONDÔNIA": 636,
+  "MATO GROSSO": 578,
+  "MARANHÃO": 442,
+  "AMAPÁ": 261,
+  "RORAIMA": 99,
+  "TOCANTINS": 35
+ },
+ "2023": {
+  "PARÁ": 4327,
+  "AMAZONAS": 2844,
+  "ACRE": 1121,
+  "RONDÔNIA": 655,
+  "MATO GROSSO": 630,
+  "AMAPÁ": 444,
+  "MARANHÃO": 267,
+  "RORAIMA": 235,
+  "TOCANTINS": 32
+ },
+ "2024": {
+  "PARÁ": 2623,
+  "AMAZONAS": 1433,
+  "MATO GROSSO": 1058,
+  "RONDÔNIA": 970,
+  "ACRE": 954,
+  "MARANHÃO": 330,
+  "AMAPÁ": 143,
+  "RORAIMA": 38,
+  "TOCANTINS": 23
+ },
+ "2025": {
+  "PARÁ": 1109,
+  "MATO GROSSO": 506,
+  "ACRE": 485,
+  "AMAZONAS": 385,
+  "RONDÔNIA": 258,
+  "MARANHÃO": 215,
+  "AMAPÁ": 95,
+  "RORAIMA": 50,
+  "TOCANTINS": 36
+ },
+ "2026": {
+  "PARÁ": 5549,
+  "AMAZONAS": 1639,
+  "ACRE": 575,
+  "AMAPÁ": 387,
+  "MARANHÃO": 286,
+  "MATO GROSSO": 255,
+  "RONDÔNIA": 215,
+  "RORAIMA": 174,
+  "TOCANTINS": 61
+ }
+}

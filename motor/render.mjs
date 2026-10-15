@@ -49,4 +49,4 @@ if (saida === '--quadros') {
   console.error(`\nok ${saida}`);
 }
 await browser.close();
-fs.unlinkSync(tmp);
+fs.rmSync(tmp, { force: true });   // outra prévia na mesma pasta pode ter apagado (15/10/2026)

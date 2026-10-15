@@ -1,0 +1,16 @@
+2026-10-15 06:14:21 início
+2026-10-15 06:24:05 reiniciado com DISPLAY=:99 (antes abria na tela do Nei, :10)
+2026-10-15 06:24:05 início
+2026-10-15 07:03:29 prévia conferida (tempos estimados); cena corrigida (capa abertura-v, milhar, rótulos, eixo)
+2026-10-15 07:53:35 avatar ok (848c8fac49a24c7e94e24cead546a114)
+2026-10-15 08:15:36 FALHOU compor
+2026-10-15 08:16:20 retomada: render ok (168,8 s); falha só na limpeza do .mapa.html (prévia paralela) → PULA_RENDER=1
+2026-10-15 08:16:20 início
+2026-10-15 08:42:20 retomada 2: sem refazer retempo (tempos.json das 07:53)
+2026-10-15 08:42:20 início
+2026-10-15 08:42:20 avatar ok (848c8fac49a24c7e94e24cead546a114)
+2026-10-15 08:43:23 video-avatar.mp4 pronto (167s, -14.1 LUFS)
+2026-10-15 08:44:48 publicado no lives10 https://www.youtube.com/watch?v=dHYmVqPTw44
+2026-10-15 08:44:49 link enviado ao inemaytbot
+2026-10-15 08:46:30 bot v3 msg 1292
+2026-10-15 08:46:30 fim

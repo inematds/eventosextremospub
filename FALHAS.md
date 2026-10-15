@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-15 | Queimadas: compor_avatar.sh falhou no fim do render (5.063 quadros prontos) porque uma prévia `render.mjs --quadros` rodada em paralelo na mesma pasta apagou o `.mapa.html` e o `unlinkSync` final quebrou | `fs.rmSync(tmp,{force:true})` no render.mjs + `PULA_RENDER=1` no compor para retomar sem re-renderizar | infra |
 | 2026-10-15 | Previsão do Dia (piloto): Whisper large-v3 cortado pelo `timeout 1800` em 48% nas 3 tentativas (1 h 36 min perdida, nada publicado) | teto da transcrição em `fonte-previsao.sh` de 30 para 90 min (`timeout 5400`) | infra |
 | 2026-10-15 | Queimadas: o `systemd-run --user` herdou DISPLAY=:10 da sessão do Nei e o download do estúdio HeyGen abria o navegador na tela dele a cada 2 min | relançar com `--setenv=DISPLAY=:99` (o avatar.sh só usa :99 se o DISPLAY estiver vazio) | infra |
 | 2026-10-14 | Clima 24 h: com a câmera no Nordeste (fogo na BA) a borda leste do geocolor (-33°) aparecia como faixa preta; o gerar_cena.py modelo do 24 h não tem `sat.fundo` | `SAT["fundo"]` com `sat/web/mundo.jpg` (copiado do clima-do-dia) na edição; falta a coleta baixar o mundo.jpg em toda edição 24 h | prompt |
