@@ -1,6 +1,7 @@
 Você está rodando sozinho (sem ninguém para responder) a edição diária "Clima no Mundo" (últimos 7 dias) do projeto eventosextremospub, de {DATA_BR}.
 Não faça perguntas: decida e siga. Depois o script auto/rodar.sh faz o avatar (HeyGen), publica no lives10 e manda ao bot.
 Você NÃO faz: git, publicação, HeyGen, bot, nada no Vercel. Só os arquivos desta edição.
+PALAVRA PROIBIDA (Nei, 15/10/2026): nunca "morte", "mortes", "morto(s)", "morreu", "óbito", "faleceu" — nem na fala, nem na legenda, nem na tela (pinos, painéis, unid de contador, hero), nem no yt.txt. Use "vítimas" (ex.: "71 vítimas na Tailândia"; "uma vítima no temporal"). Se a fonte (boletim, notícia) falar em mortes, reescreva com "vítimas". Os vídeos que falaram "mortos" tiveram pouca entrega no YouTube; o portão do rodar.sh reprova.
 
 Pasta da edição: {ED}
 Edição modelo (a última do Clima no Mundo, Short 9:16 com mapa do mundo, layout canto; aprovada pelo Nei em 13/10/2026): {PREV}
@@ -14,7 +15,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
 - Formato: Short 9:16 (nunca 16:9).
 
 ## Passos
-1. Pesquisa: o que de mais grave aconteceu no clima/tempo e desastres naturais NO MUNDO nos últimos 7 dias ({DATA_BR} e os 6 dias antes), com prioridade ao que é MAIS RECENTE (últimas 48 h) e ao que ainda está em andamento (tempestade ativa, enchente que continua, onda de calor, fogo, seca). Parta da pesquisa da edição modelo e confira se cada número mudou (mortos, atingidos, desabrigados); acrescente o que surgiu depois dela. Não repita o vídeo de ontem: a abertura (f1) traz o fato mais NOVO ou que mais mudou. Inclua o Brasil só se estiver entre os mais graves. Grave pesquisa/noticias.md (fato, número, fonte, URL, data/hora), pesquisa/proposta.md (os 5 a 7 eventos escolhidos, ordem e por quê).
+1. Pesquisa: o que de mais grave aconteceu no clima/tempo e desastres naturais NO MUNDO nos últimos 7 dias ({DATA_BR} e os 6 dias antes), com prioridade ao que é MAIS RECENTE (últimas 48 h) e ao que ainda está em andamento (tempestade ativa, enchente que continua, onda de calor, fogo, seca). Parta da pesquisa da edição modelo e confira se cada número mudou (vítimas, atingidos, desabrigados); acrescente o que surgiu depois dela. Não repita o vídeo de ontem: a abertura (f1) traz o fato mais NOVO ou que mais mudou. Inclua o Brasil só se estiver entre os mais graves. Grave pesquisa/noticias.md (fato, número, fonte, URL, data/hora), pesquisa/proposta.md (os 5 a 7 eventos escolhidos, ordem e por quê).
 2. Roteiro em falas.json (mesmo formato do modelo): 10 a 12 falas, 190 a 230 palavras no total (uns 80 s na voz do avatar).
    - f1 abre com a data por extenso + os 2 ou 3 fatos mais fortes da semana no mundo (gancho com número).
    - falas do meio: um evento por fala, com número, país e lugar, do mais grave ao menos grave; diga quando foi ("na quinta", "desde domingo").

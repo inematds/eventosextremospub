@@ -91,6 +91,9 @@ done
 # portão de tom/CTA (Nei, 11/10/2026): "você", nunca "tu"; CTA só o inema.club, sem "segue o canal"
 TOM=$(grep -o -i -w -E "tu|teu|tua|teus|tuas|ti|contigo|segue o canal|se inscreve|inscreva-se|por sorte|felizmente|ainda bem|boa notícia|melhor" "$ED/falas.json" "$ED/gerar_cena.py" | sort -u | head -5 | tr '\n' ' ')
 [ -n "$TOM" ] && avisar "roteiro reprovado no tom/CTA (usar 'você'; CTA só inema.club): $TOM"
+# portão da palavra morte (Nei, 15/10/2026: "não pode usar palavra morte", os vídeos que falaram tiveram pouca entrega): usar "vítimas"
+MORTE=$(grep -o -i -w -E "mort[eoa]s?|morreu|morreram|morrem|morrer|óbitos?|falecid[oa]s?|faleceu|faleceram" "$ED/falas.json" "$ED/gerar_cena.py" "$ED/yt.txt" 2>/dev/null | sort -u | head -5 | tr '\n' ' ')
+[ -n "$MORTE" ] && avisar "roteiro reprovado: palavra proibida (morte/morto/morreu; usar 'vítimas'): $MORTE"
 
 # 2b. PREVIA=1: manda ao bot a versão com FOTO do avatar enquanto o estúdio gera o avatar de verdade (Nei, 13/10/2026)
 if [ "${PREVIA:-}" = 1 ]; then

@@ -1,6 +1,7 @@
 Você está rodando sozinho (sem ninguém para responder) a edição "Clima do DIA" do projeto eventosextremospub, de {DATA_BR}.
 Não faça perguntas: decida e siga. Depois o script auto/rodar.sh faz o avatar (HeyGen), publica no lives10 e manda ao bot.
 Você NÃO faz: git, publicação, HeyGen, bot, nada no Vercel. Só os arquivos desta edição.
+PALAVRA PROIBIDA (Nei, 15/10/2026): nunca "morte", "mortes", "morto(s)", "morreu", "óbito", "faleceu" — nem na fala, nem na legenda, nem na tela (pinos, painéis, unid de contador, hero), nem no yt.txt. Use "vítimas" (ex.: "71 vítimas na Tailândia"; "uma vítima no temporal"). Se a fonte (boletim, notícia) falar em mortes, reescreva com "vítimas". Os vídeos que falaram "mortos" tiveram pouca entrega no YouTube; o portão do rodar.sh reprova.
 
 Pasta da edição: {ED}
 Edição modelo (Short 9:16 do Brasil, layout canto): {PREV}
