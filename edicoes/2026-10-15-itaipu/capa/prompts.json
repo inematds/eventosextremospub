@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen",
+  "images": [
+    {
+      "file": "abertura.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Capa de impacto: vista aérea dramática de barragem hidrelétrica gigante de concreto estilo Itaipu, longa e alta entre Brasil e Paraguai, estrutura intacta, vertedouro aberto com torrentes enormes de água barrenta e névoa, céu carregado de chuva. Inserir texto DENTRO da arte, grande, fonte bold sem serifa, legível com contraste. TODOS os textos inteiramente nos dois terços ESQUERDOS, com margens seguras; terço DIREITO totalmente sem texto, reservado para apresentador futuro, não desenhar apresentador. No topo esquerdo branco: \"15/10/2026\". No centro esquerdo branco enorme, podendo dividir em linhas: \"E SE ITAIPU ROMPESSE?\". Embaixo à esquerda vermelho vivo, podendo dividir em linhas: \"VERTEDOURO ABERTO HÁ 15 DIAS\". Grafia exatamente como fornecida; HÁ tem acento agudo em Á. Não incluir nenhum outro texto."
+    },
+    {
+      "file": "vertedouro.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Close de um vertedouro de hidrelétrica em escada/calha liberando volume enorme de água marrom, spray e névoa. Escala monumental, concreto molhado, perspectiva com profundidade, turbulência realista da água. Sem texto."
+    },
+    {
+      "file": "cataratas.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Cataratas do Iguaçu muito cheias, água marrom de cheia, volume enorme caindo por múltiplas quedas, floresta subtropical ao fundo, passarela metálica de visitantes vazia e interditada com barreira física em primeiro plano. Dia nublado, névoa realista. Sem texto nem visitantes."
+    },
+    {
+      "file": "alagado.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Bairro ribeirinho baixo de uma cidade de fronteira sul-americana alagado por um rio largo e marrom. Casas simples de alvenaria com água pela metade das portas, ruas inundadas conectadas ao rio ao fundo, dia nublado, enquadramento documental levemente elevado. Sem pessoas e sem texto."
+    },
+    {
+      "file": "chuva-oeste.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Temporal forte sobre lavouras planas do oeste do Paraná, nuvem escura cumulonimbus imponente, extensa cortina de chuva, estrada de terra vermelha alagada em primeiro plano atravessando lavouras verdes até o horizonte plano. Luz neutra de tempestade, texturas realistas. Sem texto."
+    },
+    {
+      "file": "ponte.png",
+      "prompt": "Use case: photorealistic-natural. Gere uma única imagem paisagem 16:9, preferencialmente 1920x1080 ou 2048x1152. Ilustração sintética fotorrealista com estética de fotojornalismo documental, detalhes naturais, luz diurna NEUTRA e balanço de branco neutro, sem filtro amarelado ou âmbar geral, sem aparência CGI, sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Ponte rodoviária longa de concreto em arco sobre um rio largo marrom e muito cheio, na fronteira entre duas cidades sul-americanas. Vista oblíqua desde a margem mostrando a estrutura completa e sua grande escala, edifícios distantes nas duas margens, dia chuvoso, água turbulenta e céu cinza neutro. Sem texto."
+    }
+  ]
+}

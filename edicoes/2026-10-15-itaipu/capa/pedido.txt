@@ -1,0 +1,10 @@
+Gere 6 imagens com a ferramenta de geração de imagem (image_gen) e salve nesta pasta, em PNG, formato paisagem 16:9 (1920x1080 ou maior na mesma proporção; se sair menor, amplie para 1920x1080). Fotorrealistas, estilo fotojornalismo documental, luz NEUTRA (sem filtro amarelado/âmbar geral), sem logotipo, sem marca d'água, sem pessoas reconhecíveis. Registre os prompts em prompts.json.
+
+1. abertura.png — capa de impacto: vista aérea dramática de uma barragem hidrelétrica gigante de concreto (estilo Itaipu: barragem longa e alta entre Brasil e Paraguai) com o vertedouro aberto, torrentes enormes de água barrenta e névoa, céu carregado de chuva. Texto ESCRITO DENTRO da arte, grande, em português, fonte bold sem serifa: no topo, branco, "15/10/2026"; no centro, branco e enorme, "E SE ITAIPU ROMPESSE?"; embaixo, em vermelho, "VERTEDOURO ABERTO HÁ 15 DIAS". Todo o texto no lado ESQUERDO (dois terços da esquerda); deixe o terço DIREITO sem texto (lá entra um apresentador). Confira a grafia exata, com acentos (HÁ).
+2. vertedouro.png — close de um vertedouro de hidrelétrica em escada/calha liberando volume enorme de água marrom com spray e névoa, escala monumental.
+3. cataratas.png — Cataratas do Iguaçu muito cheias, água marrom de cheia, volume enorme, passarela de visitantes vazia e interditada em primeiro plano.
+4. alagado.png — bairro ribeirinho baixo de uma cidade de fronteira alagado por um rio largo e marrom, casas simples com água pela metade das portas, dia nublado (sem pessoas reconhecíveis).
+5. chuva-oeste.png — temporal forte sobre lavouras planas do oeste do Paraná, nuvem escura cumulonimbus, cortina de chuva, estrada de terra vermelha alagada.
+6. ponte.png — ponte rodoviária longa de concreto em arco sobre um rio largo, marrom e muito cheio, na fronteira entre duas cidades, dia chuvoso.
+
+Ao final, liste os arquivos salvos.
