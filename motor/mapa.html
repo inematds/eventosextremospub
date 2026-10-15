@@ -205,7 +205,9 @@ function camera(t){
 }
 const mapa = new deck.Deck({parent:document.getElementById('mapa'),width:W,height:H,controller:false,
   initialViewState:camera(0),useDevicePixels:false,_animate:false,
-  parameters:{clearColor:[0.02,0.05,0.09,1]}});
+  parameters:{clearColor:C.ceu?[0,0,0,0]:[0.02,0.05,0.09,1]}});
+// céu opcional atrás do mapa (câmera muito inclinada mostra o horizonte): C.ceu = gradiente CSS (15/10/2026)
+if(C.ceu) document.getElementById('mapa').style.background=C.ceu;
 
 function camadas(t){
   const L=[];
@@ -245,7 +247,7 @@ function camadas(t){
     L.push(new deck.GeoJsonLayer({id:'es-'+e.id,data:e._dados,filled:true,stroked:false,
       getFillColor:[...e.cor,Math.round(e.alfa*255*k*o)],updateTriggers:{getFillColor:t}}));
   }
-  L.push(new deck.GeoJsonLayer({id:'uf',data:G.uf,filled:false,stroked:true,getLineColor:[220,228,240,160],lineWidthMinPixels:2.5}));
+  L.push(new deck.GeoJsonLayer({id:'uf',data:G.uf,filled:false,stroked:true,getLineColor:C.uf_cor||[220,228,240,160],lineWidthMinPixels:C.uf_largura||2.5}));
   // rios com desenho progressivo
   for(const r of C.rios||[]){
     const o=vis(t,r.ini,r.fim,.4); if(!o) continue;
@@ -262,6 +264,10 @@ function camadas(t){
   for(const c of C.colunas||[]){
     const o=vis(t,c.ini,c.fim,.5); if(!o) continue;
     const ordem=c.ordem||{};
+    // brilho opcional no chão de cada coluna (fogo): disco translúcido que cresce junto (15/10/2026)
+    if(c.brilho) L.push(new deck.ScatterplotLayer({id:'colb-'+c.id,data:c.dados,getPosition:d=>d.p,radiusUnits:'meters',
+      getRadius:d=>(c.raio||5500)*c.brilho*Math.sqrt(prog(t,c.ini+(ordem[d.id]||0)*c.varredura,1.2)),
+      getFillColor:d=>[...(d.cor||c.cor),Math.round(70*o)],updateTriggers:{getRadius:t,getFillColor:t}}));
     L.push(new deck.ColumnLayer({id:'col-'+c.id,data:c.dados,diskResolution:12,radius:c.raio||5500,extruded:true,
       elevationScale:1,getPosition:d=>d.p,
       getElevation:d=>{const k=prog(t,c.ini+(ordem[d.id]||0)*c.varredura,1.2);return d.v*c.escala*k;},
