@@ -1,0 +1,8 @@
+Clima do dia 15/10: frio chega e a Serra Catarinense pode ter -3 °C
+Frente fria avança e uma baixa pressão no litoral puxa o vento frio do sul.
+Hoje (15/10): alerta laranja de tempestade do INMET nas 645 cidades de São Paulo e em 2.163 no Brasil; chove forte em MT, GO, MG e SP, e à tarde no Vale do Ribeira e no leste do PR.
+Nordeste seco, com máximas de 35 a 40 °C no Piauí e na Bahia.
+Amanhã (16/10): previsão de chuva forte em SP, RJ e ES, com rajadas de 60 km/h na Grande São Paulo.
+Sábado: de 5 a 8 °C em Santa Catarina; domingo: 0 a 3 °C e geada nos Campos de Palmas, e o ar frio chega a Goiânia e Brasília.
+Segunda e terça: até -3 °C na Serra Catarinense e risco de danos aos pomares de maçã; outra massa de ar frio deve chegar no próximo fim de semana.
+Fontes: Meteorologia 15/10/2026, INMET, Open-Meteo, NOAA (GOES-19 via NASA GIBS).

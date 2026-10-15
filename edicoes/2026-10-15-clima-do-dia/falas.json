@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Quinta-feira, quinze de outubro. Uma massa de ar frio chega ao Sul, e a Serra Catarinense pode ter três graus abaixo de zero na segunda.", "legenda": "Quinta-feira, 15 de outubro. Uma massa de ar frio chega ao Sul, e a Serra Catarinense pode ter 3 graus abaixo de zero na segunda."},
+  {"id": "f2", "fala": "Uma frente fria avança, e uma baixa pressão no litoral puxa o vento frio do sul.", "legenda": "Uma frente fria avança, e uma baixa pressão no litoral puxa o vento frio do sul."},
+  {"id": "f3", "fala": "Hoje, o alerta laranja de tempestade cobre as seiscentas e quarenta e cinco cidades de São Paulo. No Brasil, são duas mil cento e sessenta e três.", "legenda": "Hoje, o alerta laranja de tempestade cobre as 645 cidades de São Paulo. No Brasil, são 2.163."},
+  {"id": "f4", "fala": "Chove forte em Mato Grosso, Goiás, Minas e São Paulo. À tarde, a chuva aumenta no Vale do Ribeira e no leste do Paraná.", "legenda": "Chove forte em Mato Grosso, Goiás, Minas e São Paulo. À tarde, a chuva aumenta no Vale do Ribeira e no leste do Paraná."},
+  {"id": "f5", "fala": "O Nordeste segue seco, com máximas de trinta e cinco a quarenta graus no Piauí e na Bahia.", "legenda": "O Nordeste segue seco, com máximas de 35 a 40 graus no Piauí e na Bahia."},
+  {"id": "f6", "fala": "Amanhã, a previsão é de chuva forte em São Paulo, no Rio e no Espírito Santo, com rajadas de sessenta quilômetros por hora.", "legenda": "Amanhã, a previsão é de chuva forte em São Paulo, no Rio e no Espírito Santo, com rajadas de 60 km/h."},
+  {"id": "f7", "fala": "No sábado, o frio chega de vez: de cinco a oito graus em Santa Catarina, e esfria em Campo Grande e São Paulo.", "legenda": "No sábado, o frio chega de vez: de 5 a 8 graus em Santa Catarina, e esfria em Campo Grande e São Paulo."},
+  {"id": "f8", "fala": "No domingo, de zero a três graus e geada nos Campos de Palmas. O ar frio chega até Goiânia e Brasília.", "legenda": "No domingo, de 0 a 3 graus e geada nos Campos de Palmas. O ar frio chega até Goiânia e Brasília."},
+  {"id": "f9", "fala": "Na segunda e na terça, a geada pode causar danos aos pomares de maçã da serra.", "legenda": "Na segunda e na terça, a geada pode causar danos aos pomares de maçã da serra."},
+  {"id": "f10", "fala": "E outra massa de ar frio deve chegar no próximo fim de semana.", "legenda": "E outra massa de ar frio deve chegar no próximo fim de semana."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
