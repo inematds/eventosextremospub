@@ -35,6 +35,9 @@ echo "fonte: $ID · $(echo "${L:-}" | grep -F -- "$ID|" | cut -d'|' -f2-)"
 [ "${SO_ESCOLHER:-}" = 1 ] && exit 0
 echo "$ID" > "$F/video_id.txt"
 timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$ID" > "$F/video_info.txt" 2>/dev/null
+# 1º a legenda automática do YouTube (segundos, 15/10/2026); sem ela, baixa e transcreve com o Whisper (≈45 min com a máquina cheia)
+if python3 "$(dirname "$0")/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
+echo "sem legenda do YouTube: Whisper"
 cd "$HOME/projetos/inemavox" || exit 1
 for k in 1 2 3; do
   rm -rf "$F/dl"; timeout 1800 python3 baixar_v1.py --url "https://www.youtube.com/watch?v=$ID" --outdir "$F/dl" --quality 720p > "$F/baixar.log" 2>&1

@@ -64,7 +64,9 @@ if [ "$MODO" = previsao ]; then
 fi
 
 # 1. coleta (só APIs gratuitas de clima liberadas: INMET, INPE, NOAA, CEMADEN, Open-Meteo, NASA GIBS); o Clima no Mundo não usa a coleta do Brasil
-if [ "$MODO" != mundo ]; then
+# REUSAR_ROTEIRO=1 com a cena pronta: não recoleta (refazer a coleta mudaria os números que a cena já usa e gasta até 50 min)
+if [ "${REUSAR_ROTEIRO:-}" = 1 ] && [ -s "$ED/video.mp4" ] && [ -s "$ED/sat/web/ir_tempos.json" ]; then echo "reusando coleta e satélite da edição"
+elif [ "$MODO" != mundo ]; then
 timeout 1200 python3 "$RAIZ/coleta/ultimas24h.py" "$ED/pesquisa/bruto" > "$ED/pesquisa/coleta.log" 2>&1 || echo "coleta com erro (ver pesquisa/coleta.log)"
 AGORA=$(date -u +%Y-%m-%dT%H:00); ONTEM=$(date -u -d "-24 hour" +%Y-%m-%dT%H:00); BASE=$(date -u -d "$DIA -1 day" +%Y-%m-%dT17:30)
 timeout 1800 python3 "$RAIZ/coleta/satelite_gibs.py" "$ED" --base "$BASE" --de "$ONTEM" --ate "$AGORA" --passo 30 --bbox=-76,-35,-33,7 > "$ED/pesquisa/sat.log" 2>&1 \
