@@ -20,6 +20,7 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 ## Lessons
 
+- Nunca `git add` da pasta `pesquisa/` inteira: `bruto/` tem CSV do INPE com mais de 100 MB e o GitHub recusa o push (refeito das queimadas, 15/10/2026); zip/csv de bruto estão no .gitignore. Render: dois `render.mjs` ao mesmo tempo deixam o mapa branco, usar `flock .render.lock`.
 - 16:9 COM avatar NÃO usa mais o `largo` (coluna fixa de 640 px à direita): segue o explicavideo viral (`~/projetos/explicavideos`, `profile_visual: viral`) — 1ª imagem impactante com título grande, imagens e gráficos em tela cheia, avatar em caixa no canto inferior direito. Queimadas e Itaipu refeitos assim. (Nei, 15/10/2026)
 - 16:9 "largo" SEM avatar: `"coluna": True` na cena (cards e manchete na coluna da direita, mapa livre à esquerda); sem isso a coluna do avatar fica vazia e todo card cai em cima do mapa. Reel 9:16 sem avatar: `padding_topo` ~560 desce o mapa para baixo dos cards. O Nei reprovou o Amazônia e o mundo (12/10/2026).
 - Fogo na Amazônia: 2024 NÃO é recorde de focos (140 mil; 2004 teve 218 mil) — é o "pior ano desde 2007"; antes de chamar um ano de recorde, contar a série sat_ref desde 2003. Mínima do Rio Negro em 2024 diverge (12,11 m Portal Amazônia × 12,26 m tabela SGB): dizer "pouco acima de 12 m". Quase saiu errado no Amazônia e o mundo (12/10/2026).

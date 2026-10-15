@@ -28,3 +28,6 @@ edicoes/*/avatar/t/
 edicoes/*/avatar/*.log
 edicoes/*/fonte/focos/*.csv
 edicoes/*/fonte/ativos*.json
+.render.lock
+edicoes/*/pesquisa/bruto/*.zip
+edicoes/*/pesquisa/bruto/*.csv
