@@ -1,3 +1,2 @@
-- `queimadas-amazonia` · handoffs/history/2026-10-15T114237Z-queimadas-amazonia.md · 15/10 08:42
 - `previsao-do-dia` · handoffs/history/2026-10-15T100300Z-previsao-do-dia.md · 15/10 07:03
 - `clima24h-2026-10-15` · handoffs/history/2026-10-15T095957Z-clima24h-2026-10-15.md · 15/10 06:59
