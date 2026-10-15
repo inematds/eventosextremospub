@@ -1,28 +1,28 @@
 [
  {
   "id": "f1",
-  "fala": "Catorze de outubro de dois mil e vinte e seis. Sete mortos em enchente no México, setenta e um na Tailândia e um novo furacão forte a caminho.",
-  "legenda": "14 de outubro de 2026. 7 mortos em enchente no México, 71 na Tailândia e um novo furacão forte a caminho."
+  "fala": "Catorze de outubro de dois mil e vinte e seis. Enchente no México, setenta e um na Tailândia e um novo furacão forte a caminho.",
+  "legenda": "14 de outubro de 2026. Enchente no México, 71 vítimas na Tailândia e um novo furacão forte a caminho."
  },
  {
   "id": "f2",
-  "fala": "Na Tailândia, a enchente começou em setembro e, na segunda, o governo contou setenta e um mortos. Na terça, quase dois milhões e meio de pessoas ainda estavam atingidas.",
-  "legenda": "Na Tailândia, a enchente começou em setembro e, na segunda, o governo contou 71 mortos. Na terça, quase 2,5 milhões de pessoas ainda estavam atingidas."
+  "fala": "Na Tailândia, a enchente começou em setembro e, na segunda, o governo contou setenta e um. Na terça, quase dois milhões e meio de pessoas ainda estavam atingidas.",
+  "legenda": "Na Tailândia, a enchente começou em setembro e, na segunda, o governo contou 71 vítimas. Na terça, quase 2,5 milhões de pessoas ainda estavam atingidas."
  },
  {
   "id": "f3",
-  "fala": "No México, a chuva da tempestade Rachel inundou Ensenada no fim de semana. Nesta quarta, o governo de Ensenada confirmou sete mortos e três desaparecidos.",
-  "legenda": "No México, a chuva da tempestade Rachel inundou Ensenada no fim de semana. Nesta quarta, o governo de Ensenada confirmou 7 mortos e 3 desaparecidos."
+  "fala": "No México, a chuva da tempestade Rachel inundou Ensenada no fim de semana. Nesta quarta, o governo de Ensenada confirmou os três desaparecidos.",
+  "legenda": "No México, a chuva da tempestade Rachel inundou Ensenada no fim de semana. Nesta quarta, o governo de Ensenada confirmou os 3 desaparecidos."
  },
  {
   "id": "f4",
-  "fala": "O furacão Isaias entrou na Flórida na sexta, com rajadas de cento e oitenta e oito quilômetros por hora. Quatro mortos e cerca de novecentos mil clientes sem luz.",
-  "legenda": "O furacão Isaias entrou na Flórida na sexta, com rajadas de 188 km/h. 4 mortos e cerca de 900 mil clientes sem luz."
+  "fala": "O furacão Isaias entrou na Flórida na sexta, com rajadas de cento e oitenta e oito quilômetros por hora. Cerca de novecentos mil clientes sem luz.",
+  "legenda": "O furacão Isaias entrou na Flórida na sexta, com rajadas de 188 km/h. Cerca de 900 mil clientes sem luz."
  },
  {
   "id": "f5",
-  "fala": "O furacão Simon chegou à categoria quatro, colado à costa de Jalisco, e deixou um morto em Guerrero. Nesta quarta, ainda é furacão, no mar.",
-  "legenda": "O furacão Simon chegou à categoria 4, colado à costa de Jalisco, e deixou 1 morto em Guerrero. Nesta quarta, ainda é furacão, no mar."
+  "fala": "O furacão Simon chegou à categoria quatro, colado à costa de Jalisco. Nesta quarta, ainda é furacão, no mar.",
+  "legenda": "O furacão Simon chegou à categoria 4, colado à costa de Jalisco. Nesta quarta, ainda é furacão, no mar."
  },
  {
   "id": "f6",

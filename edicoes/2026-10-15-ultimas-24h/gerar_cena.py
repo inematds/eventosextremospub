@@ -53,6 +53,8 @@ def em(fid, palavra, k=1):
 ini = lambda fid: FALA[fid]["ini"]
 fim = lambda fid: FALA[fid]["fim"]
 DUR = round(fim(T[-1]["id"]) + 1.6, 2)
+CAPA = 2.2  # quadro 0 = capa cheia do Codex (impacto) até aqui (Nei, 15/10/2026)
+telas = [{"src": "capa-dia/abertura.png", "ini": 0, "fim": CAPA, "fade": .5, "zoom": .05}]
 LAR, AMA, VERM = [255, 140, 26], [250, 204, 21], [255, 42, 31]
 
 # ---------------------------------------------------------------- câmera
@@ -177,7 +179,7 @@ assert max(P7["soma_7d_por_regiao_mm"], key=P7["soma_7d_por_regiao_mm"].get) == 
 assert sum(d["tmax_pico"][1] == "Teresina" and d["tmax_pico"][0] > 39 for d in P7["por_dia"]) == 3   # Teresina > 39 °C em 3 dias (até 39,6)
 
 pinos = [
-    {"nome": "Brasilândia", "sub": "1 morte em deslizamento", "lon": -46.69, "lat": -23.46, "ini": em("f2", "Brasilândia"), "fim": ini("f3"), "h": 180},
+    {"nome": "Brasilândia", "sub": "1 vítima em deslizamento", "lon": -46.69, "lat": -23.46, "ini": em("f2", "Brasilândia"), "fim": ini("f3"), "h": 180},
     {"nome": "Congonhas", "sub": "rajada de 88 km/h", "lon": -46.656, "lat": -23.627, "ini": em("f3", "Congonhas"), "fim": ini("f4"), "h": 210},
     {"nome": "Vila Clementino", "sub": "73 mm em 24 h", "lon": -46.645, "lat": -23.598, "ini": em("f3", "Clementino"), "fim": ini("f4"), "h": 110},
     {"nome": "Novo Gama (GO)", "sub": "104 mm em 24 h", "lon": -48.04, "lat": -16.06, "ini": em("f4", "Novo"), "fim": ini("f5"), "h": 200},
@@ -189,15 +191,15 @@ pinos = [
 ]
 
 # ---------------------------------------------------------------- textos
-hero = [{"ini": 0, "fim": ini("f2") - .05,
+hero = [{"ini": CAPA - .2, "fim": ini("f2") - .05,
          "html": f'<div style="font:400 132px/1 \'Archivo Black\';letter-spacing:-2px;margin-bottom:6px">{DATA}</div>'
                  '<div class="dt" style="background:#ff2a1f;color:#fff">O BRASIL EM</div>'
                  '<div class="t1">24 HORAS</div>'
-                 '<div class="t4" style="font-size:44px;line-height:1.35">⚠️ 1 morte · 💨 88 km/h · 🌧️ 104 mm</div>'}]
+                 '<div class="t4" style="font-size:44px;line-height:1.35">⚠️ 1 vítima · 💨 88 km/h · 🌧️ 104 mm</div>'}]
 
 paineis = [
     {"ini": ini("f2"), "fim": ini("f3"), "k": "SÃO PAULO · TEMPORAL DE QUARTA, 14/10",
-     "itens": [{"t": em("f2", "morreu"), "txt": "uma mulher morreu em deslizamento na Brasilândia (zona norte)"},
+     "itens": [{"t": em("f2", "Brasilândia"), "txt": "1 vítima em deslizamento na Brasilândia (zona norte)"},
                {"t": em("f2", "17"), "txt": "17 chamados de enchente das 15h às 18h"}],
      "borda": "rgba(255,42,31,.7)"},
     {"ini": ini("f3"), "fim": ini("f4"), "k": "CONGONHAS · RAJADA COM TROVOADA",
@@ -236,7 +238,7 @@ cta = {"ini": ini("f11"), "fim": DUR, "a": "APRENDA IA", "b": "inema.club"}
 club = {"ini": em("f11", "inema"), "fim": DUR, "a": "inema.club", "b": "aprenda sobre inteligência artificial"}
 
 fontes = [
-    {"ini": .5, "fim": ini("f2"), "html": "Satélite <b>GOES-19</b> (NOAA) via <b>NASA</b> GIBS, infravermelho de 14/10 05h a 15/10 05h · morte: <b>Governo de SP</b> · vento: METAR (<b>NOAA</b>) · chuva: <b>CEMADEN</b>"},
+    {"ini": CAPA, "fim": ini("f2"), "html": "Satélite <b>GOES-19</b> (NOAA) via <b>NASA</b> GIBS, infravermelho de 14/10 05h a 15/10 05h · deslizamento: <b>Governo de SP</b> · vento: METAR (<b>NOAA</b>) · chuva: <b>CEMADEN</b>"},
     {"ini": ini("f2"), "fim": ini("f3"), "html": "<b>Agência SP</b> (Governo do Estado) e <b>CNN Brasil</b>, 14/10: deslizamento na Brasilândia; Corpo de Bombeiros, chamados entre 15h e 18h"},
     {"ini": ini("f3"), "fim": ini("f4"), "html": "METAR de Congonhas (<b>NOAA</b>), 14/10 16h35: rajada de 48 nós (88,9 km/h) com trovoada · <b>CEMADEN</b> Vila Clementino 73,0 mm em 24 h até 15/10 05h"},
     {"ini": ini("f4"), "fim": ini("f5"), "html": "Pluviômetro do <b>CEMADEN</b> em Novo Gama (Lago Azul), 104,8 mm em 24 h até 15/10 05h · METAR de Uberlândia (<b>NOAA</b>), 14/10 22h: 38 nós (70,4 km/h)"},
@@ -251,7 +253,7 @@ fontes = [
 AM = "#FACC15"
 CORES = {"chuvoso": "#5ec8ff", "pluviometros": "#5ec8ff", "previsao": "#f472b6", "fogo": "#ff5a14", "focos": "#ff5a14", "chuva": "#5ec8ff",
          "milimetros": "#5ec8ff", "tempestade": "#ff8c1a", "rajada": "#5ec8ff", "vento": "#5ec8ff", "granizo": "#5ec8ff", "umidade": "#ff8c1a",
-         "graus": "#ff2a1f", "alerta": "#ff8c1a", "laranja": "#ff8c1a", "morte": "#ff2a1f", "morreu": "#ff2a1f", "deslizamento": "#ff2a1f",
+         "graus": "#ff2a1f", "alerta": "#ff8c1a", "laranja": "#ff8c1a", "vitima": "#ff2a1f", "vitimas": "#ff2a1f", "deslizamento": "#ff2a1f",
          "enchente": "#5ec8ff", "temporal": "#ff8c1a", "comenta": AM, "inteligencia": AM, "artificial": AM}
 LUGAR = {"sao", "paulo", "goias", "brasilandia", "congonhas", "vila", "clementino", "novo", "gama", "brasilia", "uberlandia", "brasil",
          "para", "teresina", "barra", "garcas", "juazeiro", "norte", "grande", "sudeste", "capitais", "hoje", "inemaclub", "cidade", "regiao"}
@@ -271,7 +273,7 @@ for a, b in zip(legenda, legenda[1:]):
 
 C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR,
      "marca": "INEMA · CLIMA 24 H", "selo": "CEMADEN · INPE · INMET · NOAA · " + DATA[:5],
-     "camera": camera, "sat": SAT, "estados": estados, "pontos": pontos, "pinos": pinos, "hero": hero, "paineis": paineis,
+     "camera": camera, "sat": SAT, "telas": telas, "estados": estados, "pontos": pontos, "pinos": pinos, "hero": hero, "paineis": paineis,
      "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}
 (AQUI / "cena.js").write_text("window.CENA=" + json.dumps(C, ensure_ascii=False) + ";")
 print(f"cena.js ok, duração {DUR} · {len(legenda)} blocos · IR {len(BONS)}/{len(TS)} quadros · {len(fogo)} pontos de fogo · "

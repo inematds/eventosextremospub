@@ -20,6 +20,7 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 ## Lessons
 
+- 16:9 COM avatar NÃO usa mais o `largo` (coluna fixa de 640 px à direita): segue o explicavideo viral (`~/projetos/explicavideos`, `profile_visual: viral`) — 1ª imagem impactante com título grande, imagens e gráficos em tela cheia, avatar em caixa no canto inferior direito. Queimadas e Itaipu refeitos assim. (Nei, 15/10/2026)
 - 16:9 "largo" SEM avatar: `"coluna": True` na cena (cards e manchete na coluna da direita, mapa livre à esquerda); sem isso a coluna do avatar fica vazia e todo card cai em cima do mapa. Reel 9:16 sem avatar: `padding_topo` ~560 desce o mapa para baixo dos cards. O Nei reprovou o Amazônia e o mundo (12/10/2026).
 - Fogo na Amazônia: 2024 NÃO é recorde de focos (140 mil; 2004 teve 218 mil) — é o "pior ano desde 2007"; antes de chamar um ano de recorde, contar a série sat_ref desde 2003. Mínima do Rio Negro em 2024 diverge (12,11 m Portal Amazônia × 12,26 m tabela SGB): dizer "pouco acima de 12 m". Quase saiu errado no Amazônia e o mundo (12/10/2026).
 - Tratar por "você" (nunca "tu/teu/ti/te prepara") e CTA SEMPRE só o inema.club — nada de "segue o canal", vídeo longo ou canal do YouTube; o portão (checar.py / rodar.sh) reprova. (Nei, 11/10/2026)
@@ -31,3 +32,4 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 - Contador de painel tem de CHEGAR ao número quando a palavra é dita: `ini = em(palavra) - 1.0`, `dur = 1.0` (nunca `ini = em(palavra)`); vale também para avatar/tempos.json. Número de um estado → em seguida o TOTAL do Brasil com o mesmo destaque. (Nei, Clima do DIA 13/10/2026)
 - Cena com câmera inclinada ou fora do Brasil: pôr `sat.fundo` (Blue Marble do mundo, `mundo.jpg`) por baixo do geocolor, senão aparece a borda preta da imagem; quadro 0 de impacto e granizo/enchente/fogo como foto cheia do Codex em `C.telas` (com selo "ilustração"). (13/10/2026)
 - PROIBIDA a palavra morte (morte/mortos/morreu/óbito/faleceu) na fala, legenda, tela e yt.txt: usar "vítimas". Os vídeos que falaram "mortos" (Mundo 13/10, Clima 24h 15/10) tiveram pouca entrega no lives10; portão no rodar.sh e regra em todos os auto/roteiro*.md. (Nei, 15/10/2026)
+- Cortar fala de avatar/narração (`motor/cortar_avatar.py`, `motor/cortar_narracao.py`): os tempos de palavra do Whisper erram ~0,3 s e o corte comia o número vizinho ("71" virou "setembro"/"70"). Testar cada corte transcrevendo o trecho e conferir com retempo.py antes de montar. (15/10/2026)

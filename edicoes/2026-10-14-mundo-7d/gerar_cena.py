@@ -51,6 +51,8 @@ def em(fid, palavra, k=1):
 ini = lambda fid: FALA[fid]["ini"]
 fim = lambda fid: FALA[fid]["fim"]
 DUR = round(fim(T[-1]["id"]) + 1.4, 2)
+CAPA = 2.2  # quadro 0 = capa cheia do Codex (impacto) até aqui (Nei, 15/10/2026)
+telas = [{"src": "capa-dia/abertura.png", "ini": 0, "fim": CAPA, "fade": .5, "zoom": .05}]
 M = "../2026-10-12-mundo-clima/"
 
 
@@ -85,12 +87,12 @@ pontos = []
 
 P = lambda nome, sub, lon, lat, a, b, h=150: {"nome": nome, "sub": sub, "lon": lon, "lat": lat, "ini": a, "fim": b, "h": h}
 pinos = [
-    P("México", "7 mortos", -116.6, 31.7, em("f1", "México"), ini("f2"), 110),
-    P("Tailândia", "71 mortos", 100.5, 13.75, em("f1", "Tailândia"), ini("f2"), 110),
+    P("México", "7 vítimas", -116.6, 31.7, em("f1", "México"), ini("f2"), 110),
+    P("Tailândia", "71 vítimas", 100.5, 13.75, em("f1", "Tailândia"), ini("f2"), 110),
     P("Trudy", "novo furacão", -100.0, 11.9, em("f1", "furacão"), ini("f2"), 110),
-    P("Bangkok · Tailândia", "71 mortos desde setembro", 100.5, 13.75, em("f2", "Tailândia"), ini("f3"), 170),
-    P("Ensenada · Baixa Califórnia", "7 mortos · 3 desaparecidos", -116.6, 31.75, em("f3", "Ensenada"), ini("f4"), 170),
-    P("Destin · Flórida · sexta 09/10", "rajadas de 188 km/h · 4 mortos", -86.5, 30.4, em("f4", "Flórida"), ini("f5"), 170),
+    P("Bangkok · Tailândia", "71 vítimas desde setembro", 100.5, 13.75, em("f2", "Tailândia"), ini("f3"), 170),
+    P("Ensenada · Baixa Califórnia", "7 vítimas · 3 desaparecidos", -116.6, 31.75, em("f3", "Ensenada"), ini("f4"), 170),
+    P("Destin · Flórida · sexta 09/10", "rajadas de 188 km/h · 4 vítimas", -86.5, 30.4, em("f4", "Flórida"), ini("f5"), 170),
     P("Furacão Simon · Jalisco", "categoria 4 · 220 km/h", -105.7, 20.4, em("f5", "Simon"), ini("f6"), 170),
     P("Simon · hoje", "120 km/h, no mar", -108.3, 19.3, em("f5", "quarta"), ini("f6"), 120),
     P("Herrera · Panamá · sexta 09/10", "magnitude 7,7", -80.5, 7.4, em("f6", "Panamá"), ini("f7"), 170),
@@ -99,26 +101,26 @@ pinos = [
     P("Simon · hoje", "no mar, sem alerta na costa", -108.3, 19.3, em("f8", "sexta"), ini("f9"), 120),
 ]
 
-hero = [{"ini": 0, "fim": ini("f2") - .05,
+hero = [{"ini": CAPA - .2, "fim": ini("f2") - .05,
          "html": f'<div style="font:400 132px/1 \'Archivo Black\';letter-spacing:-2px;margin-bottom:6px">{DATA}</div>'
                  '<div class="dt" style="background:#ff2a1f;color:#fff">O CLIMA NO MUNDO · 7 DIAS</div>'
-                 '<div class="t1">7 MORTOS</div><div class="t2">NO MÉXICO</div>'
-                 '<div class="t4" style="font-size:44px;line-height:1.35">🌊 enchente da tempestade Rachel · 🌎 71 mortos na Tailândia · Trudy deve virar furacão forte na sexta</div>'}]
+                 '<div class="t1">7 VÍTIMAS</div><div class="t2">NO MÉXICO</div>'
+                 '<div class="t4" style="font-size:44px;line-height:1.35">🌊 enchente da tempestade Rachel · 🌎 71 vítimas na Tailândia · Trudy deve virar furacão forte na sexta</div>'}]
 
 it = lambda fid, pal, txt, k=1: {"t": em(fid, pal, k), "txt": txt}
 cont = lambda fid, pal, ate, dec, cor, unid: {"de": 0, "ate": ate, "dec": dec, "ini": em(fid, pal) - 1.0, "dur": 1.0, "cor": cor, "unid": unid}
 paineis = [
     {"ini": em("f2", "71") - 1.0, "fim": ini("f3"), "k": "TAILÂNDIA · DESDE 16/09",
-     "contador": cont("f2", "71", 71, 0, "#ff2a1f", "MORTOS"),
+     "contador": cont("f2", "71", 71, 0, "#ff2a1f", "VÍTIMAS"),
      "l": "quase 2,5 milhões ainda atingidos na terça · 20 províncias e Bangkok", "borda": "rgba(94,200,255,.7)"},
-    {"ini": em("f3", "7") - 1.0, "fim": ini("f4"), "k": "TEMPESTADE RACHEL · ENSENADA · MÉXICO",
-     "contador": cont("f3", "7", 7, 0, "#ff2a1f", "MORTOS"),
+    {"ini": em("f3", "confirmou") - 1.0, "fim": ini("f4"), "k": "TEMPESTADE RACHEL · ENSENADA · MÉXICO",
+     "contador": cont("f3", "confirmou", 7, 0, "#ff2a1f", "VÍTIMAS"),
      "l": "3 desaparecidos · chuva no fim de semana · governo de Ensenada, 14/10", "borda": "rgba(94,200,255,.7)"},
     {"ini": ini("f4"), "fim": ini("f5"), "k": "FURACÃO ISAIAS · FLÓRIDA · SEXTA 09/10",
-     "itens": [it("f4", "188", "💨 rajadas de 188 km/h"), it("f4", "mortos", "⚠️ 4 mortos (Flórida e Alabama)"),
+     "itens": [it("f4", "188", "💨 rajadas de 188 km/h"), it("f4", "Cerca", "⚠️ 4 vítimas (Flórida e Alabama)"),
                it("f4", "900", "💡 ~900 mil clientes sem luz")], "borda": "rgba(255,140,26,.8)"},
     {"ini": ini("f5"), "fim": ini("f6"), "k": "FURACÃO SIMON · MÉXICO",
-     "itens": [it("f5", "categoria", "🌀 categoria 4 · 220 km/h"), it("f5", "Guerrero", "⚠️ 1 morto em Guerrero (governadora)"),
+     "itens": [it("f5", "categoria", "🌀 categoria 4 · 220 km/h"), it("f5", "Jalisco", "⚠️ 1 vítima em Guerrero (governadora)"),
                it("f5", "quarta", "📍 quarta: 120 km/h, no mar")], "borda": "rgba(255,140,26,.8)"},
     {"ini": em("f6", "7,7") - 1.0, "fim": ini("f7"), "k": "TERREMOTO · PANAMÁ · SEXTA 09/10",
      "contador": cont("f6", "7,7", 7.7, 1, "#ff2a1f", "MAGNITUDE"),
@@ -137,11 +139,11 @@ cta = {"ini": ini("f10"), "fim": DUR, "a": "APRENDA IA", "b": "inema.club"}
 club = {"ini": em("f10", "inema"), "fim": DUR, "a": "inema.club", "b": "aprenda sobre inteligência artificial"}
 
 fontes = [
-    {"ini": .5, "fim": ini("f2"), "html": "México: governo de Ensenada (via Milenio e Infobae), 14/10 · Tailândia: Ministério do Interior via Reuters, 12/10 · Trudy: <b>NOAA</b>/NHC, 14/10 · mapa: <b>NASA</b> Blue Marble"},
-    {"ini": ini("f2"), "fim": ini("f3"), "html": "Ministério do Interior da Tailândia via Reuters, 12/10/2026 (71 mortos desde 16/09) · DDPM via The Nation, 13/10 (2,45 milhões atingidos) · imagem: VIIRS NOAA-20"},
+    {"ini": CAPA, "fim": ini("f2"), "html": "México: governo de Ensenada (via Milenio e Infobae), 14/10 · Tailândia: Ministério do Interior via Reuters, 12/10 · Trudy: <b>NOAA</b>/NHC, 14/10 · mapa: <b>NASA</b> Blue Marble"},
+    {"ini": ini("f2"), "fim": ini("f3"), "html": "Ministério do Interior da Tailândia via Reuters, 12/10/2026 (71 vítimas desde 16/09) · DDPM via The Nation, 13/10 (2,45 milhões atingidos) · imagem: VIIRS NOAA-20"},
     {"ini": ini("f3"), "fim": ini("f4"), "html": "Governo de Ensenada, cartão informativo de 14/10/2026 (via Milenio, Infobae e El Vigía) · AFP e Euronews, 13/10"},
     {"ini": ini("f4"), "fim": ini("f5"), "html": "Isaias: Weather.com (12/10), AP e Al Jazeera, 10–11/10/2026 · imagem: VIIRS NOAA-20, 10/10"},
-    {"ini": ini("f5"), "fim": ini("f6"), "html": "Simon: AP via PBS (11/10) · AFP via France24 (13/10, morte em Guerrero) · <b>NOAA</b>/NHC, aviso 30, 14/10/2026 · imagem: VIIRS NOAA-20, 11/10"},
+    {"ini": ini("f5"), "fim": ini("f6"), "html": "Simon: AP via PBS (11/10) · AFP via France24 (13/10, vítima em Guerrero) · <b>NOAA</b>/NHC, aviso 30, 14/10/2026 · imagem: VIIRS NOAA-20, 11/10"},
     {"ini": ini("f6"), "fim": ini("f7"), "html": "Terremoto: USGS e GDACS (M7,7) · AP e Al Jazeera, 09–11/10/2026"},
     {"ini": ini("f7"), "fim": ini("f8"), "html": "Iguaçu: Al Jazeera, 13/10 (quase 8× a média) · DGABC, 12/10/2026 (11,8 milhões de L/s, maior do ano)"},
     {"ini": ini("f8"), "fim": DUR, "html": "Centro Nacional de Furacões (<b>NOAA</b>/NHC), 14/10/2026: Trudy nº 6 e Simon nº 30 · previsão, pode mudar"},
@@ -149,7 +151,7 @@ fontes = [
 
 AM = "#FACC15"
 CORES = {"chuva": "#5ec8ff", "agua": "#5ec8ff", "enchente": "#3c96ff", "furacao": "#ff8c1a", "tempestade": "#ff8c1a", "fogo": "#ff5a14",
-         "focos": "#ff5a14", "terremoto": "#ff2a1f", "tsunami": "#ff2a1f", "mortos": "#ff2a1f", "desaparecidos": "#ff2a1f",
+         "focos": "#ff5a14", "terremoto": "#ff2a1f", "tsunami": "#ff2a1f", "vitimas": "#ff2a1f", "desaparecidos": "#ff2a1f",
          "rajadas": "#5ec8ff", "comenta": AM, "inteligencia": AM, "artificial": AM}
 LUGAR = {"tailandia", "bangkok", "florida", "panama", "mexico", "jalisco", "guerrero", "brasil", "argentina", "iguacu", "ensenada",
          "rachel", "simon", "isaias", "trudy", "inemaclub", "regiao", "cidade"}
@@ -169,7 +171,7 @@ for a, b in zip(legenda, legenda[1:]):
 
 C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR, "padding_topo": 0 if AVATAR else 560,
      "marca": "INEMA · O CLIMA NO MUNDO", "selo": "NOAA · USGS · " + DATA[:5],
-     "camera": camera, "sat": SAT, "imagens": imagens, "pontos": pontos, "pinos": pinos, "hero": hero,
+     "camera": camera, "sat": SAT, "telas": telas, "imagens": imagens, "pontos": pontos, "pinos": pinos, "hero": hero,
      "paineis": paineis, "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}
 (AQUI / "cena.js").write_text("window.CENA=" + json.dumps(C, ensure_ascii=False) + ";")
 print(f"cena.js ok, duração {DUR} · {len(legenda)} blocos de legenda · {len(pinos)} pinos · 0 pontos")
