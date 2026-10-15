@@ -2,6 +2,9 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-15 | Previsão do Dia (piloto): Whisper large-v3 cortado pelo `timeout 1800` em 48% nas 3 tentativas (1 h 36 min perdida, nada publicado) | teto da transcrição em `fonte-previsao.sh` de 30 para 90 min (`timeout 5400`) | infra |
+| 2026-10-15 | Queimadas: o `systemd-run --user` herdou DISPLAY=:10 da sessão do Nei e o download do estúdio HeyGen abria o navegador na tela dele a cada 2 min | relançar com `--setenv=DISPLAY=:99` (o avatar.sh só usa :99 se o DISPLAY estiver vazio) | infra |
+| 2026-10-14 | Clima 24 h: com a câmera no Nordeste (fogo na BA) a borda leste do geocolor (-33°) aparecia como faixa preta; o gerar_cena.py modelo do 24 h não tem `sat.fundo` | `SAT["fundo"]` com `sat/web/mundo.jpg` (copiado do clima-do-dia) na edição; falta a coleta baixar o mundo.jpg em toda edição 24 h | prompt |
 | 2026-10-13 | Clima do DIA: contador começava NA palavra (no f4 mostrava 146 quando a fala dizia 499; no f8, 0 em vez de 1.064) e o selo longo quebrava o cabeçalho "INEMA · CLIMA DO DIA" | contador começa 1 s antes e termina na palavra (`conta()` no gerar_cena.py, com assert dentro do painel); `#marca`/`#selo` com nowrap e selo curto no motor (feito) | prompt |
 | 2026-10-13 | Semana + 15 dias (semana-foto): `previsao15d.py` caiu com JSON cortado (~28 KB) e depois com 503 do Open-Meteo; só o 429 tinha nova tentativa | `lotes()` tenta de novo também em JSON cortado, IncompleteRead, timeout e 502/503/504 (feito) | infra |
 | 2026-10-13 | O clima no mundo · 7 dias (mundo-7d): `narrar.py` caiu no `transcrever_v1.py` (CalledProcessError) com 3 narrações de outras edições disputando a GPU; o mesmo arquivo transcreveu sozinho depois | retry de 3 vezes em volta do `cs.transcrever` no narrar.py da edição (feito; levar ao modelo) | infra |
