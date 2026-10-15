@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-15 | yt.txt do Mundo 14/10 ficou vazio e o Short subiu com título só '#Shorts' | ler o arquivo antes de abrir para gravar (open(p,'w').write(f(open(p).read())) trunca antes); título corrigido com yt-pubx atualizar | prompt |
 | 2026-10-15 | corte de 'mortos' pelos tempos do Whisper comeu '71' no avatar | testar cada corte transcrevendo o trecho | infra |
 | 2026-10-15 | Queimadas reel 3D: render completo da prévia saiu com o mapa todo branco (render `--quadros` paralelo na GPU/Vulkan) e o MP4 crf 18 (72,8 MB) passou do limite de 49 MB do bot v3 | não rodar dois render.mjs ao mesmo tempo; guarda de quadro branco (brilho >200 → refaz) e recompressão >48 MB no avatar-e-manda.sh | infra |
 | 2026-10-15 | Queimadas: compor_avatar.sh falhou no fim do render (5.063 quadros prontos) porque uma prévia `render.mjs --quadros` rodada em paralelo na mesma pasta apagou o `.mapa.html` e o `unlinkSync` final quebrou | `fs.rmSync(tmp,{force:true})` no render.mjs + `PULA_RENDER=1` no compor para retomar sem re-renderizar | infra |
