@@ -4,7 +4,6 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 
 <!-- handoff-indice:inicio -->
 - `refaz-viral-queimadas-itaipu` · handoffs/history/2026-10-15T180928Z-refaz-viral-queimadas-itaipu.md · 15/10 15:09
-- `refazer-sem-morte` · handoffs/history/2026-10-15T180421Z-refazer-sem-morte.md · 15/10 15:04
 - `queimadas-reel-3d` · handoffs/history/2026-10-15T180233Z-queimadas-reel-3d.md · 15/10 15:02
 - `itaipu-ruptura` · handoffs/history/2026-10-15T120855Z-itaipu-ruptura.md · 15/10 09:08
 - `previsao-do-dia` · handoffs/history/2026-10-15T100300Z-previsao-do-dia.md · 15/10 07:03
