@@ -159,6 +159,6 @@ if [ "${SEM_GIT:-}" != 1 ] && [ -z "$DRY" ]; then
     p="edicoes/$DIA-$SUF/$f"; [ -f "$p" ] && ! git check-ignore -q "$p" && ARQ+=("$p")
   done
   git add -- "${ARQ[@]}" && git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "$ROT $DATA_BR (rodada automática): $ST" \
-    && { git pull -q --rebase && git push -q && echo "push ok"; } || echo "git falhou"
+    && { git pull -q --rebase --autostash && git push -q && echo "push ok"; } || echo "git falhou"
 fi
 echo "=== fim $(date '+%F %T')"

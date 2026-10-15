@@ -1,1 +1,7 @@
 2026-10-15 09:08:08 início
+2026-10-15 10:27:10 avatar ok (345405f0971d449cb49ed037cc5b12b8)
+2026-10-15 10:37:59 video-avatar.mp4 pronto (192s, -14.0 LUFS)
+2026-10-15 10:39:10 publicado no lives10 https://www.youtube.com/watch?v=QLoX7W8uEiY
+2026-10-15 10:39:11 link enviado ao inemaytbot
+2026-10-15 10:40:48 bot v3 msg 1301
+2026-10-15 10:40:48 fim
