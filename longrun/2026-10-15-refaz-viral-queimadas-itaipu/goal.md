@@ -10,17 +10,17 @@ Queimadas e Itaipu refeitos no formato explicavideo VIRAL 16:9 (capa com imagem 
 
 **Função**
 - [x] `ls ~/projetos/output/explica-{queimadas,itaipu}-viral/entrega/*-16x9.mp4` → 2 arquivos
-- [ ] `python3 -c "json.load(build-v2-pt-b01.json)['warnings']"` de cada → `[]` (build --strict viral)
-- [ ] `qa_viral.py` de cada → sem reprovação (liso ≤ 40%, nada parado > 2 s); folha `verification/sheet-viral-*.jpg` olhada
-- [ ] ffprobe duração de cada ≈ duração do avatar (167,1 s / 192,3 s ± 1 s); ebur128 ≈ −14 LUFS
-- [ ] bot v3 recebeu os 2 (message_id no `.envio-v3.json`)
+- [x] `python3 -c "json.load(build-v2-pt-b01.json)['warnings']"` de cada → `[]` (build --strict viral)
+- [x] `qa_viral.py` de cada → sem reprovação (liso ≤ 40%, nada parado > 2 s); folha `verification/sheet-viral-*.jpg` olhada
+- [x] ffprobe duração de cada ≈ duração do avatar (167,1 s / 192,3 s ± 1 s); ebur128 ≈ −14 LUFS
+- [x] bot v3 recebeu os 2 (message_id no `.envio-v3.json`)
 
 **Regressão**
-- [ ] `cd ~/projetos/explicavideos && python3 -m unittest discover -s tests` → OK (peça `colunas` e base `brasil-uf` novas não quebram)
+- [x] `cd ~/projetos/explicavideos && python3 -m unittest discover -s tests` → OK (peça `colunas` e base `brasil-uf` novas não quebram)
 
 **Limite**
-- [ ] `ls ~/projetos/output/explica-*-viral/v1/verification/submit*` → nenhum envio ao HeyGen (avatar copiado da edição)
-- [ ] vídeos atuais do lives10 (dHYmVqPTw44, QLoX7W8uEiY) intocados; nada publicado sem ok
+- [x] `ls ~/projetos/output/explica-*-viral/v1/verification/submit*` → nenhum envio ao HeyGen (avatar copiado da edição)
+- [x] vídeos atuais do lives10 (dHYmVqPTw44, QLoX7W8uEiY) intocados; nada publicado sem ok
 
 ## Escala
 nível 3 = comando + saída esperada cobrindo função, regressão e limite.
