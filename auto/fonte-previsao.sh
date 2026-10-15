@@ -6,6 +6,7 @@
 # uso: auto/fonte-previsao.sh <pasta da edição> <AAAA-MM-DD>   → 0 = fonte/transcript.txt pronto; 3 = sem vídeo novo
 # FONTE_ID=<id> força um vídeo; SO_ESCOLHER=1 só mostra o escolhido (teste, não baixa nem marca).
 set -uo pipefail
+AUTO="$(cd "$(dirname "$0")" && pwd)"
 ED="$1"; DIA="$2"; F="$ED/fonte"; mkdir -p "$F"
 RAIZ="$(cd "$(dirname "$0")/.." && pwd)"; USADOS="$RAIZ/auto/previsao-usados.txt"; touch "$USADOS"
 CANAL="https://www.youtube.com/channel/UCGEnQh_FXX9Qny0BqmUbZ2g/videos"
@@ -36,7 +37,7 @@ echo "fonte: $ID · $(echo "${L:-}" | grep -F -- "$ID|" | cut -d'|' -f2-)"
 echo "$ID" > "$F/video_id.txt"
 timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$ID" > "$F/video_info.txt" 2>/dev/null
 # 1º a legenda automática do YouTube (segundos, 15/10/2026); sem ela, baixa e transcreve com o Whisper (≈45 min com a máquina cheia)
-if python3 "$(dirname "$0")/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
+if python3 "$AUTO/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
 echo "sem legenda do YouTube: Whisper"
 cd "$HOME/projetos/inemavox" || exit 1
 for k in 1 2 3; do
@@ -45,6 +46,9 @@ for k in 1 2 3; do
 done
 [ -n "${M:-}" ] || { echo "download falhou: $(tail -1 "$F/baixar.log")"; exit 1; }
 mv "$M" "$F/video.mp4"; rm -rf "$F/dl"
+# máquina cheia → Groq (Nei, 15/10/2026: "o groq entra se temos muita coisa ao mesmo tempo"); livre ou falha → Whisper local
+python3 "$AUTO/groq_transcrever.py" "$F/video.mp4" "$F" > "$F/groq.log" 2>&1 && { echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (Groq)"; exit 0; }
+echo "Groq: $(tail -1 "$F/groq.log")"
 for k in 1 2 3; do  # GPU disputada por outras narrações: tenta de novo
   timeout 5400 python3 transcrever_v1.py --in "$F/video.mp4" --outdir "$F" --whisper-model large-v3 --src pt > "$F/transcrever.log" 2>&1 \
     && [ -s "$F/transcript.txt" ] && break; sleep 120
