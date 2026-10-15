@@ -6,6 +6,7 @@
 # uso: auto/rodar.sh [AAAA-MM-DD, padrão hoje] [24h|semana|ventos|mundo|dia|previsao]   (PREVIA=1 manda antes a versão com foto do avatar)
 #   semana = domingo à tarde: previsão da semana (dias 1–7) + tendência de 15 dias (Nei, 11/10/2026), roteiro em auto/roteiro-semana.md
 # Teste: SEM_AVATAR=1 pula o HeyGen (publica a versão mapa); SEM_YT=1 não publica; SEM_BOT=1 simula o bot; SEM_GIT=1 não commita.
+# SEM_TRAVA=1 não espera a trava de outra rodada (piloto a pedido).
 # Teste isolado: ED=<pasta> (não mexe na edição do dia).
 # Pular um dia: linha "AAAA-MM-DD" em auto/pular.txt.
 set -uo pipefail
@@ -22,7 +23,7 @@ case "$MODO" in
 esac
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
-exec 8>"$RAIZ/auto/.rodando"; if [ "$MODO" = semana ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
+exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
   flock -w "$([ "$MODO" = previsao ] && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
 else flock -n 8 || { echo "outra rodada em andamento"; exit 0; }; fi
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
