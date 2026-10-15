@@ -1,0 +1,9 @@
+[Unit]
+Description=eventosextremospub — Previsão do Dia, diário 10:00
+
+[Timer]
+OnCalendar=*-*-* 10:00:00
+Persistent=false
+
+[Install]
+WantedBy=timers.target
