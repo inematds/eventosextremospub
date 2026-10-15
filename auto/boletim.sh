@@ -27,7 +27,7 @@ done
 [ -n "${M:-}" ] || { echo "download falhou: $(tail -1 "$F/baixar.log")"; exit 1; }
 mv "$M" "$F/video.mp4"; rm -rf "$F/dl"
 for k in 1 2 3; do  # GPU disputada por outras narrações: tenta de novo
-  timeout 1800 python3 transcrever_v1.py --in "$F/video.mp4" --outdir "$F" --whisper-model large-v3 --src pt > "$F/transcrever.log" 2>&1 \
+  timeout 5400 python3 transcrever_v1.py --in "$F/video.mp4" --outdir "$F" --whisper-model large-v3 --src pt > "$F/transcrever.log" 2>&1 \
     && [ -s "$F/transcript.txt" ] && break; sleep 120
 done
 [ -s "$F/transcript.txt" ] || { echo "transcrição falhou: $(tail -1 "$F/transcrever.log")"; exit 1; }
