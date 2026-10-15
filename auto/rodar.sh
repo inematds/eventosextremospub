@@ -107,6 +107,7 @@ fi
 # 3. avatar do Nei (estúdio HeyGen); se falhar, publica a versão mapa (voz do Nei pelo Chatterbox)
 V="$ED/video-avatar.mp4"; NOTA=""
 if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF" > "$ED/avatar.log" 2>&1 \
+   && python3 "$RAIZ/motor/pausa_pergunta.py" "$ED" --avatar >> "$ED/avatar.log" 2>&1 \
    && ( cd "$ED" && python3 gerar_cena.py --canto ) \
    && ( cd "$RAIZ" && GEO=geo-br.js LAYOUT=canto motor/compor_avatar.sh "$ED" "$V" > "$ED/build-avatar.log" 2>&1 ); then
   echo "vídeo com avatar ok"

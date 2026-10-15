@@ -26,7 +26,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
    - no campo "fala" números por extenso (a voz lê, ano também por extenso); no campo "legenda" com algarismos.
 3. gerar_cena.py: copiado do modelo (mapa do mundo, 9:16). Adapte TUDO: DATA, câmeras por fala voando de país em país, pinos e rótulos de cada evento, painéis com contadores (o número certo de cada evento), fontes de cada trecho, cta. Mantenha o comportamento de --canto (usa avatar/tempos.json, layout canto). Cada `em(fid, palavra)` precisa achar a palavra na legenda daquela fala. Satélite: se usar imagem do GIBS de um evento, só a camada liberada, guardada em sat/.
 4. Versão mapa, na pasta da edição:
-   `python3 narrar.py` → tempos.json e narração (voz do Nei, local)
+   `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}` (1 s de pausa antes de "De que região...": Nei, 15/10/2026, a pergunta saía colada no assunto)
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada evento, cta) e OLHE as imagens (Read). Verifique: data grande na abertura, contadores no número certo, câmera no país certo, pino sem ficar atrás de painel, legenda legível. Corrija e renderize de novo se precisar.

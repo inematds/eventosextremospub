@@ -33,7 +33,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
    - Granizo, vendaval, enchente → imagem realista de impacto do Codex (selo "ilustração") no momento da palavra; nunca desenho SVG do fenômeno.
    - Contador chega ao número QUANDO a palavra é dita (`ini = em(palavra) - 1.0`, `dur = 1.0`; confira em tempos.json e avatar/tempos.json). Uma troca visual por fala.
 4. Versão mapa, na pasta da edição:
-   `python3 narrar.py` → tempos.json e narração (voz do Nei, local)
+   `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}` (1 s de pausa antes de "De que região...": Nei, 15/10/2026, a pergunta saía colada no assunto)
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada região, cta) e OLHE as imagens (Read). Verifique: data grande na abertura, contadores no número certo, pino sem ficar atrás de painel, borda do satélite não aparecendo, legenda legível. Corrija e renderize de novo se precisar.

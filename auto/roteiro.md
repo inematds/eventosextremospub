@@ -35,7 +35,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
                "previsto_a_partir":1, "ini":<t>, "dur":1.6, "linha":{"nome":"máx. °C (média)","cor":"#ff2a1f","v":[tmax_media de cada dia]}}, "l":"fonte e o que a soma significa"}
    Use os valores de previsao7d.json, os rótulos dos dias da semana de verdade (o primeiro dia é hoje), e confira nos asserts do gerar_cena.py que os totais batem. Um painel para a previsão (barras empilhadas por região + linha de temperatura) e outro para volumes somados 24 h (contador com soma_mm_estacoes ou por UF) + 7 dias. Confira nos quadros extraídos que o painel não cobre a legenda nem a fonte.
 4. Versão mapa (é também o plano B se o avatar falhar), na pasta da edição:
-   `python3 narrar.py` → tempos.json e narração (voz do Nei, local)
+   `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}` (1 s de pausa antes de "De que região...": Nei, 15/10/2026, a pergunta saía colada no assunto)
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), e extraia uns 8 quadros (abertura, cada painel, cta) com ffmpeg e OLHE as imagens (Read). Verifique: data grande na abertura, contadores terminando no número certo, pino sem ficar atrás de painel, borda da imagem de satélite não aparecendo, legenda legível. Corrija e renderize de novo se precisar.
