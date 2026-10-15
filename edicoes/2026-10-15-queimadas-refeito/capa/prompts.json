@@ -1,0 +1,26 @@
+[
+  {
+    "file": "abertura.png",
+    "prompt": "Create one photorealistic documentary photojournalism cover illustration. Landscape exactly 16:9, 2048x1152 or 1920x1080 minimum. Aerial view at dusk of a wildfire front advancing across Amazon rainforest, enormous gray smoke column, realistic detailed tropical canopy. Neutral white balance and natural gray-blue dusk; NO overall yellow/amber filter, orange only from actual fire. No logo, watermark, recognizable people. Integrate large bold sans-serif Portuguese typography INSIDE the artwork, confined ENTIRELY to LEFT TWO THIRDS; right third has background photograph only, reserved for presenter later (do not draw presenter). Top text white: \"15/10/2026\". Center huge white text: \"AMAZÔNIA EM CHAMAS\" (can wrap in two lines within left two thirds). Bottom red bold text: \"1.500 FOCOS EM UM SÓ DIA\" (can wrap). Exact spelling and diacritics required, AMAZÔNIA has Ô, SÓ has Ó. Strong legible contrast, red accents. No other text. All text inside safe margins. This is a generated illustration, not a real event photograph."
+  },
+  {
+    "file": "mata-chamas.png",
+    "prompt": "Generate a single image, landscape 16:9 at 2048x1152 pixels (minimum 1920x1080). Photorealistic documentary photojournalism illustration: Amazon rainforest burning at night, viewed from INSIDE the forest at eye level, flames spreading through understory between very tall tropical trees. Realistic tree bark, foliage, ground fire and gray smoke, believable exposure. Neutral white balance, deep natural dark greens and neutral charcoal shadows; orange ONLY from actual flames and their localized illumination. No overall amber/yellow filter, no stylized cinematic grading. No people, text, logos, watermark. Not a collage."
+  },
+  {
+    "file": "manaus-fumaca.png",
+    "prompt": "Single photorealistic documentary photojournalism illustration. Landscape 16:9, output 2048x1152 pixels or larger same ratio. Waterfront of a large Amazonian city reminiscent of Manaus on an immense wide river, completely covered in dense GRAY wildfire smoke. Sun visible only as a dim pale gray-white disk through smoke. Stationary moored regional riverboats in foreground, urban waterfront buildings fading in smoke behind. Natural realistic textures and subdued visibility. Strict NEUTRAL daylight and gray color balance, no yellow or amber filter, no orange sky, no cinematic teal-orange grade. No recognizable people, no text, logos or watermarks."
+  },
+  {
+    "file": "brigadista.png",
+    "prompt": "Single photorealistic documentary photojournalism illustration, landscape 16:9, 2048x1152 pixels or larger. Brazilian wildland firefighter seen strictly FROM BEHIND, wearing yellow protective uniform and safety helmet, fighting a ground fire in Amazon tropical woodland with a long-handled rubber fire beater (abafador), holding it plausibly with gloved hands, dense gray smoke between trees. Full or three-quarter body environmental framing showing tool contacting low burning vegetation. Face completely invisible, no recognizable people. Neutral diffuse daylight, neutral gray smoke and natural green vegetation, yellow confined to uniform, orange confined to fire. No overall warm amber filter, no cinematic grading, no logos, lettering, watermarks."
+  },
+  {
+    "file": "cinzas.png",
+    "prompt": "Single photorealistic documentary photojournalism illustration. Landscape exactly 16:9, 2048x1152 pixels or larger. A recently burned Amazon rainforest area, charred standing trunks and fallen blackened logs, ground covered in fine gray ash with thin wisps of smoke rising, a solitary tall Brazil nut tree (castanheira, emergent trunk and broad high crown) in the background. Gray overcast morning, sober realistic textures, wide ground-level view, natural perspective. Strict neutral white balance, gray smoke, black charcoal, no overall yellow/amber tint, no orange sunrise, no cinematic filter. No people, no text, no logos, no watermark."
+  },
+  {
+    "file": "rio-seco.png",
+    "prompt": "Single photorealistic documentary photojournalism illustration, landscape exactly 16:9, 2048x1152 pixels or larger. Oblique aerial view of a great Amazonian river at exceptionally low water, enormous exposed sandbanks and shallow residual winding water channels, several regional wooden boats visibly stranded on dry sand, dense tropical forest bordering the river, gray wildfire smoke along the distant horizon. Realistic geographical scale, detailed sand ripples and mud, natural river colors. Neutral overcast daylight, neutral white balance, no overall amber or yellow cast, no orange sky, no stylized cinematic filter. No recognizable people, no text, no logos, no watermarks."
+  }
+]
