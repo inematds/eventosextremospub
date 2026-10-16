@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `clima24h-2026-10-16` · handoffs/history/2026-10-16T210158Z-clima24h-2026-10-16.md · 16/10 18:01
 - `viral-916` · handoffs/history/2026-10-16T010020Z-viral-916.md · 15/10 22:00
 - `refaz-viral-queimadas-itaipu` · handoffs/history/2026-10-15T185758Z-refaz-viral-queimadas-itaipu.md · 15/10 15:57
 - `queimadas-reel-3d` · handoffs/history/2026-10-15T180233Z-queimadas-reel-3d.md · 15/10 15:02
@@ -13,63 +14,43 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 
 ---
 
-Cópia integral do snapshot mais recente (handoffs/history/2026-10-16T010020Z-viral-916.md):
+Cópia integral do snapshot mais recente (handoffs/history/2026-10-16T210158Z-clima24h-2026-10-16.md):
 
-# Handoff — 2026-10-15 — Itaipu e Queimadas em 9:16 com voos 3D (viral)
+# Handoff — Clima 24 h de 16/10/2026 (rodada automática, claude -p)
 
 ## Projeto e escopo
-eventosextremospub, raiz ~/projetos/eventosextremospub. O Nei pediu os 2 virais (Itaipu, Queimadas) em 9:16 com o mesmo avatar e conteúdo visual novo: mais imagens e gráficos, todo lugar falado localizado e um mapa 3D realista visto do alto. A entrega é só no bot v3; YouTube só com ok novo.
+eventosextremospub, edição `edicoes/2026-10-16-ultimas-24h` (Short 9:16). Só os arquivos da edição; avatar, YouTube, bot e git ficam com `auto/rodar.sh`.
 
 ## Objetivo atual
-longrun/2026-10-15-viral-916/goal.md: build --strict sem avisos, qa_viral sem reprovação, 1080x1920, duração do avatar ±1 s, cerca de −14 LUFS, os 2 no v3.
+Entregar falas.json, gerar_cena.py, tempos.json, video.mp4 (versão mapa / plano B) e yt.txt para o rodar.sh seguir com o HeyGen e a publicação.
 
 ## Estado aceito
-- [confirmed] Virais 16:9 publicados no lives10: FFVTl8BMzQM (Itaipu), 9ITphwr5ceI (Queimadas), depois que o Nei verificou o telefone. Itaipu 916b enviado ao v3 (msg 1346).
-- [confirmed] 9 voos 3D da Itaipu (~/projetos/output/explica-itaipu-viral/3d/) e 7 das Queimadas (~/projetos/output/explica-queimadas-viral/3d/, MODIS 08/10 com fumaça real + focos INPE 1–14/10).
-- [confirmed] Itaipu 9:16: build ok (85 shots), hyperframes check ok, render feito em ~/projetos/output/explica-itaipu-viral/entrega/itaipu-viral-9x16.mp4.
-- [confirmed] Queimadas 9:16: build ok (78 shots), check ok; render ainda não feito.
+- [confirmed] video.mp4 1080x1920, 95,7 s, renderizado com GEO=geo-br.js motor/montar.sh; 14 quadros conferidos (contadores 29/65/86,8/92,8/569/563/7.435; data na abertura; pino de Viracopos fora do painel).
+- [confirmed] falas.json com 11 falas e 225 palavras; inclui "Os próximos 7 dias" e "Volumes somados"; pergunta + CTA inema.club; pausa de 1 s antes da pergunta (pausa_pergunta.py).
+- [confirmed] Capa do Codex (assinatura) em capa-dia/abertura.png: "ENXURRADA EM SÃO PAULO · 29 CARROS ARRASTADOS".
+- [confirmed] gerar_cena.py --canto roda sem erro (testado com tempos.json copiado; cópia apagada e cena.js cheio refeito).
+- [confirmed] Portão de palavras (tu/melhor/morte/SMS) limpo em falas.json, gerar_cena.py e yt.txt; título com 77 caracteres.
+- [confirmed] pesquisa/noticias.md, dados.md e proposta.md gravados.
 
 ## Proposto / tentado, não confirmado
-- [confirmed] qa_viral da Itaipu REPROVOU por área lisa (165 de ~385 amostras, médio 0,40). O 916b anterior também reprovou (0,29) e foi enviado mesmo assim.
-- [unverified] Os voos agora entram em `mapas` (o QA não mede área lisa neles) e a capa foi trocada para capa-v-desce.png, mas o build e o QA ainda não foram rodados de novo.
+- [unverified] Avatar HeyGen, publicação no lives10 e envio ao bot v3: fase do rodar.sh, fora desta sessão.
 
 ## Decisões e restrições
-- Landsat WELD tem listras SLC-off: de perto, inpaint; nas vistas largas, preenchimento com MODIS Aqua de 21/08. HLS do GIBS vem vazio. Cataratas sem 3D (a emenda passa em cima delas).
-- Carimbo no topo sobre gráfico ou bignum dá content_overlap no 9:16: carimbo só sobre foto ou voo.
-- Critério das Queimadas (≥90 shots) caiu para 78; motivo em decisions.md.
-- Snapshot do hyperframes sempre com `--describe false` (sem isso chama o Gemini).
+- CEMADEN Mauá/Vila Magini (391,8) e Visconde do Rio Branco (275,8) descartados e fora das somas: SP 7.435,8 ("mais de 7.400", 414 estações); Brasil 20.638 ("mais de 20 mil").
+- Campo Grande 86,8 mm atribuído à Prefeitura (via A Crítica) e dito "temporal de quinta": pelo METAR SBCG, o grosso caiu em 15/10 à tarde, antes da janela.
+- Calor (Petrolina 39 °C) cortado para caber no tempo.
+- f9 reescrita para o número 788 não ficar na última palavra, porque a narração cortava "e oito".
 
 ## Arquivos alterados
-- `motor/mapa.html` — modo `limpo` (sem faixa do topo, pino maior); não commitado.
-- `longrun/2026-10-15-viral-916/` — goal, state, decisions, canal (commit d2d552f).
-- Fora do projeto: ~/projetos/explicavideos/engine/v2/build_block.py e runtime/viral.js (foto .mp4 vfull, vfull conta como movimento e como mapa); o repo já tinha mudanças não commitadas de outra sessão nesses arquivos; nada commitado.
-- Fora do projeto: ~/projetos/explicavideos/examples/{itaipu,queimadas}-viral-v2-916.json; ~/projetos/output/explica-eventos-viral/{pipe_viral916.sh,3d/gerar_3d.py,3d/limpa_sat.py,3d/tempo.py}; ~/projetos/output/explica-{itaipu,queimadas}-viral/{visual/gerar_visual_916.py,media916/,3d/}.
+- edicoes/2026-10-16-ultimas-24h/: falas.json, gerar_cena.py (+ gerar_cena-original.py), tempos.json, narracao.wav, cena.js, video.mp4, yt.txt, capa-dia/, sat/web/mundo.jpg (copiado de 15/10), pesquisa/*.md, build-*.log.
+- FALHAS.md: linha do corte da narração no número final.
+- Fora do projeto: ~/projetos/wifi/LIMITES.md, linha do HTTP 403 da Midiamax.
 
 ## Memória e regras duráveis tocadas
-- ~/projetos/wifi/LIMITES.md — linha do uploadLimitExceeded do lives10 (marcada como aceita).
+- Nenhuma memória nova. Regra candidata: número nunca como última palavra da fala.
 
 ## Verificação
-- Rodado: `SO_BUILD=1 pipe_viral916.sh itaipu-viral` → build ok, avisos 0. `queimadas-viral` → build ok, avisos 0.
-- Rodado: `hyperframes check` nos dois → Check passed.
-- Rodado: render da Itaipu + qa_viral → REPROVADO (área lisa).
-- Não rodado: ffprobe/ebur128 do 9:16, render das Queimadas, envio ao v3.
+- ffprobe → 1080,1920 · 95.71 s; gerar_cena.py e --canto → "cena.js ok"; quadros em /tmp/q1610/.
 
-## Estado em execução
-- Processos em segundo plano: nenhum (o render da Itaipu terminou).
-- Servidores / portas: nenhum. Worktrees: nenhum.
-
-## Perguntas abertas e adiados
-- Aberta: se o QA de área lisa continuar reprovando depois de trocar os fundos, perguntar ao Nei se manda assim ou se recalibra o QA para 9:16.
-- Adiado: commit das mudanças do explicavideos (há mudanças de outra sessão misturadas).
-
-## Próxima ação exata
-Seguir longrun/2026-10-15-viral-916/state.md, "Próximo" 1 a 5: rebuild da Itaipu, rerodar o QA no mp4 existente, medir o piso do layout, trocar fundos lisos, re-render, enviar ao v3 em 720p. Depois as Queimadas. YouTube só com ok do Nei.
-
-## Mapa de retomada
-- `longrun/2026-10-15-viral-916/state.md` — estado e próximos passos
-- `longrun/2026-10-15-viral-916/goal.md` — critérios
-- `longrun/2026-10-15-viral-916/decisions.md` — mudanças de critério
-- `longrun/2026-10-15-viral-916/canal.md` — armadilhas técnicas
-
-## Checagem de compartilhamento
-- Sem segredos, tokens, cookies, dados pessoais ou endpoints privados: sim.
+## Próxima ação
+Nenhuma pendente nesta sessão: o rodar.sh segue com avatar → lives10 → bot v3 → git. Se o avatar falhar, video.mp4 é o plano B.
