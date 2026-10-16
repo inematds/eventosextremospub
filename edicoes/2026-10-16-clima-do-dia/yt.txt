@@ -1,0 +1,8 @@
+Clima do dia 16/10: geada no domingo e -3 °C na Serra Catarinense na segunda
+Uma grande massa de ar frio chega ao Sul, empurrada por um ciclone; a frente fria avança pelo litoral do Sudeste.
+Hoje (16/10): alerta laranja de tempestade do INMET em 364 cidades de Minas e 563 no Brasil; chove em BH, São Paulo, Campinas, Rio, Espírito Santo e sul da Bahia.
+Até domingo: previsão de cerca de 50 mm no Rio, com chance de temporal forte; Nordeste seco, com máximas de 35 a 38 °C.
+Sábado: rajadas de 70 km/h na serra e no litoral do Sul, e 5 °C na campanha gaúcha.
+Domingo: geada na Serra Catarinense e nos Campos de Palmas, com 0 a 3 °C; segunda: abaixo de 10 °C no sul de MS, em SP e no sul de Minas.
+Quarta: a chuva volta ao Sul; outra massa de ar frio deve chegar no fim do mês.
+Fontes: Meteorologia 16/10/2026, INMET, Open-Meteo, NOAA (GOES-19 via NASA GIBS).
