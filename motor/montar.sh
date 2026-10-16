@@ -5,7 +5,7 @@ AQUI="$(cd "$(dirname "$0")" && pwd)"
 E="$(cd "$1" && pwd)"; SAIDA="${2:-$E/video.mp4}"
 MUSICA="${MUSICA:-$HOME/projetos/cardshorts/musicas/tensa.mp3}"
 mkdir -p "$E/build"
-node "$AQUI/render.mjs" "$E" "$E/build/mapa.mp4"
+flock "$AQUI/../.render.lock" node "$AQUI/render.mjs" "$E" "$E/build/mapa.mp4"
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$E/narracao.wav")
 FADE=$(python3 -c "print(max(0, $D - 1.4))")
 ffmpeg -v error -y -i "$E/build/mapa.mp4" -i "$E/narracao.wav" -stream_loop -1 -i "$MUSICA" -filter_complex \

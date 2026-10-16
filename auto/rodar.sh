@@ -25,7 +25,7 @@ ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
 exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
   flock -w "$([ "$MODO" = previsao ] && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
-else flock -n 8 || { echo "outra rodada em andamento"; exit 0; }; fi
+else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
 echo "=== $(date '+%F %T') $ROT $DIA"
 grep -qx "$DIA$(case "$MODO" in semana|mundo|dia|previsao) echo " $MODO";; esac)" "$RAIZ/auto/pular.txt" 2>/dev/null && { echo "pulado (auto/pular.txt)"; exit 0; }
@@ -108,6 +108,8 @@ fi
 
 # 3. avatar do Nei (estúdio HeyGen); se falhar, publica a versão mapa (voz do Nei pelo Chatterbox)
 V="$ED/video-avatar.mp4"; NOTA=""
+# solta a trava enquanto o HeyGen gera: a próxima rodada já começa; os renders fazem fila no .render.lock (Nei, 16/10/2026)
+[ "${SEM_TRAVA:-}" = 1 ] || flock -u 8
 if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF" > "$ED/avatar.log" 2>&1 \
    && python3 "$RAIZ/motor/pausa_pergunta.py" "$ED" --avatar >> "$ED/avatar.log" 2>&1 \
    && ( cd "$ED" && python3 gerar_cena.py --canto ) \

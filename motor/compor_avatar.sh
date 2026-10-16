@@ -10,7 +10,7 @@ A="$E/avatar/avatar.mp4"
 LAYOUT="${LAYOUT:-faixa}"   # faixa = 1080x608 em y=1110 (explicavideos) · canto = rosto 400x453 embaixo à direita · largo = 16:9, avatar 640x1080 à direita (cena com layout "largo")
 mkdir -p "$E/build"
 # PULA_RENDER=1 reaproveita build/mapa-avatar.mp4 já renderizado (retomada depois de falha na montagem, 15/10/2026)
-[ "${PULA_RENDER:-}" = 1 ] && [ -s "$E/build/mapa-avatar.mp4" ] || node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4"
+[ "${PULA_RENDER:-}" = 1 ] && [ -s "$E/build/mapa-avatar.mp4" ] || flock "$AQUI/../.render.lock" node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4"
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$A")
 # fade só na música: o HeyGen termina logo após a última palavra e o fade na mistura engolia o CTA
 FADE=$(python3 -c "print(max(0, $D - 1.4))")
