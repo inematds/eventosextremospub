@@ -10,6 +10,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
 ## A FONTE DA VERDADE (Nei, 15/10/2026)
 - fonte/transcript.txt (e transcript.srt com tempos) = a transcrição do último vídeo de previsão do tempo de um meteorologista; fonte/video_info.txt tem a data de envio (aaaammdd) e o título. É a fonte da verdade do vídeo: a PREVISÃO para hoje e os próximos dias no Brasil.
 - Confie nela: NÃO precisa conferir os números em outra fonte. NUNCA cite o canal, o meteorologista, o YouTube ou "um vídeo": o Nei fala como quem conhece a previsão. Na tela, a fonte dos números da previsão é "Meteorologia · {DATA_BR}"; números que vierem dos brutos da coleta levam a fonte própria (INMET, Open-Meteo, NOAA/GOES).
+- fonte/telas/tela-NN.jpg (12 telas espaçadas do vídeo de origem; tempos em fonte/telas/tempos.txt; Nei, 16/10/2026): OLHE todas (Read) antes de planejar, para entender como o meteorologista apresentou: que mapa mostrou, onde apontou, que área/frente/sistema destacou. Use isso para escolher as cenas: buscar imagem impactante do mesmo fenômeno ou refazer parecido no nosso motor (mapa 3D, câmera inclinada, áreas e setas). As telas são SÓ referência: nunca entram no vídeo, nem recortadas (têm marca d'água, logo e cara do canal). Sem telas (falhou o download), siga só a transcrição.
 - Se o vídeo é de ONTEM (data em video_info.txt), traduza as datas: o "amanhã" do vídeo é HOJE ({DATA_BR}); não fale do que já passou. Se a transcrição estiver vazia ou não for previsão do tempo, grave ERRO.txt e pare.
 
 ## Já coletado pelo script (para o mapa)

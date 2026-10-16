@@ -40,6 +40,7 @@ done
 echo "fonte: $ID · $(echo "${L:-}" | grep -F -- "$ID|" | cut -d'|' -f2-)"
 [ "${SO_ESCOLHER:-}" = 1 ] && exit 0
 echo "$ID" > "$F/video_id.txt"
+trap '[ -s "$F/transcript.txt" ] && bash "$AUTO/telas_fonte.sh" "$F" > "$F/telas.log" 2>&1' EXIT  # telas da fonte para o roteirista (Nei, 16/10/2026)
 case "$ID" in fb:*) URL="https://www.facebook.com/reel/${ID#fb:}";; *) URL="https://www.youtube.com/watch?v=$ID";; esac
 timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$URL" > "$F/video_info.txt" 2>/dev/null
 # 1º a legenda automática do YouTube (segundos, 15/10/2026); sem ela, baixa e transcreve com o Whisper (≈45 min com a máquina cheia)

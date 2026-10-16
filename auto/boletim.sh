@@ -20,6 +20,7 @@ while :; do
   echo "$(date +%T) boletim de $D1 ainda não saiu"; sleep 600
 done
 echo "boletim: $ID"; echo "$ID" > "$F/video_id.txt"
+trap '[ -s "$F/transcript.txt" ] && bash "$AUTO/telas_fonte.sh" "$F" > "$F/telas.log" 2>&1' EXIT  # telas da fonte para o roteirista (Nei, 16/10/2026)
 # 1º a legenda automática do YouTube (segundos, 15/10/2026); sem ela, baixa e transcreve com o Whisper (≈45 min com a máquina cheia)
 if python3 "$AUTO/legenda_yt.py" "$ID" "$F"; then echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
 echo "sem legenda do YouTube: Whisper"
