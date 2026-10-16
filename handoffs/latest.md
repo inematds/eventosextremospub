@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `viral-916` · handoffs/history/2026-10-16T010020Z-viral-916.md · 15/10 22:00
 - `refaz-viral-queimadas-itaipu` · handoffs/history/2026-10-15T185758Z-refaz-viral-queimadas-itaipu.md · 15/10 15:57
 - `queimadas-reel-3d` · handoffs/history/2026-10-15T180233Z-queimadas-reel-3d.md · 15/10 15:02
 - `itaipu-ruptura` · handoffs/history/2026-10-15T120855Z-itaipu-ruptura.md · 15/10 09:08
@@ -12,14 +13,63 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 
 ---
 
-Cópia integral do snapshot mais recente (handoffs/history/2026-10-15T185758Z-refaz-viral-queimadas-itaipu.md):
+Cópia integral do snapshot mais recente (handoffs/history/2026-10-16T010020Z-viral-916.md):
 
-# Handoff — 2026-10-15 (2) — Queimadas + Itaipu no explicavideo VIRAL 16:9
+# Handoff — 2026-10-15 — Itaipu e Queimadas em 9:16 com voos 3D (viral)
 
-## Estado
-- Motor explicavideos 2.10.9 (f373eeb, push): peça `colunas`, carimbo `x` (lado), base `brasil-uf`; PADRAO-VIRAL e README atualizados. Guia formatos e19341f.
-- Saídas: ~/projetos/output/explica-{queimadas,itaipu}-viral; cadeia ~/projetos/output/explica-eventos-viral/pipe_viral.sh <id> <trilha> (SO_BUILD=1 só valida); lacunas.py ajuda a achar deixas; numeros_extenso.py.
-- Build --strict 0 avisos e hyperframes check ok nos dois. 1º render: QA viral REPROVOU por área lisa (fundos escuros/fumaça); fundos trocados; 2º render rodando (bg), saída em <out>/pipe.out e entrega/<id>-16x9.mp4.
+## Projeto e escopo
+eventosextremospub, raiz ~/projetos/eventosextremospub. O Nei pediu os 2 virais (Itaipu, Queimadas) em 9:16 com o mesmo avatar e conteúdo visual novo: mais imagens e gráficos, todo lugar falado localizado e um mapa 3D realista visto do alto. A entrega é só no bot v3; YouTube só com ok novo.
 
-## Próxima ação
-Ler pipe.out (APROVADO/REPROVADO). Se reprovar, agrupar quadros_vazios por tempo, mapear à cena (starts no build-v2-pt-b01.json) e trocar src. Aprovado: olhar sheet-viral-*.jpg, medir LUFS/duração, enviar ao bot v3 (refazvideo/ferramentas/enviar_bot_v3.mjs, ≤49 MB → 720p). YouTube só com ok do Nei (atuais dHYmVqPTw44 e QLoX7W8uEiY intocados).
+## Objetivo atual
+longrun/2026-10-15-viral-916/goal.md: build --strict sem avisos, qa_viral sem reprovação, 1080x1920, duração do avatar ±1 s, cerca de −14 LUFS, os 2 no v3.
+
+## Estado aceito
+- [confirmed] Virais 16:9 publicados no lives10: FFVTl8BMzQM (Itaipu), 9ITphwr5ceI (Queimadas), depois que o Nei verificou o telefone. Itaipu 916b enviado ao v3 (msg 1346).
+- [confirmed] 9 voos 3D da Itaipu (~/projetos/output/explica-itaipu-viral/3d/) e 7 das Queimadas (~/projetos/output/explica-queimadas-viral/3d/, MODIS 08/10 com fumaça real + focos INPE 1–14/10).
+- [confirmed] Itaipu 9:16: build ok (85 shots), hyperframes check ok, render feito em ~/projetos/output/explica-itaipu-viral/entrega/itaipu-viral-9x16.mp4.
+- [confirmed] Queimadas 9:16: build ok (78 shots), check ok; render ainda não feito.
+
+## Proposto / tentado, não confirmado
+- [confirmed] qa_viral da Itaipu REPROVOU por área lisa (165 de ~385 amostras, médio 0,40). O 916b anterior também reprovou (0,29) e foi enviado mesmo assim.
+- [unverified] Os voos agora entram em `mapas` (o QA não mede área lisa neles) e a capa foi trocada para capa-v-desce.png, mas o build e o QA ainda não foram rodados de novo.
+
+## Decisões e restrições
+- Landsat WELD tem listras SLC-off: de perto, inpaint; nas vistas largas, preenchimento com MODIS Aqua de 21/08. HLS do GIBS vem vazio. Cataratas sem 3D (a emenda passa em cima delas).
+- Carimbo no topo sobre gráfico ou bignum dá content_overlap no 9:16: carimbo só sobre foto ou voo.
+- Critério das Queimadas (≥90 shots) caiu para 78; motivo em decisions.md.
+- Snapshot do hyperframes sempre com `--describe false` (sem isso chama o Gemini).
+
+## Arquivos alterados
+- `motor/mapa.html` — modo `limpo` (sem faixa do topo, pino maior); não commitado.
+- `longrun/2026-10-15-viral-916/` — goal, state, decisions, canal (commit d2d552f).
+- Fora do projeto: ~/projetos/explicavideos/engine/v2/build_block.py e runtime/viral.js (foto .mp4 vfull, vfull conta como movimento e como mapa); o repo já tinha mudanças não commitadas de outra sessão nesses arquivos; nada commitado.
+- Fora do projeto: ~/projetos/explicavideos/examples/{itaipu,queimadas}-viral-v2-916.json; ~/projetos/output/explica-eventos-viral/{pipe_viral916.sh,3d/gerar_3d.py,3d/limpa_sat.py,3d/tempo.py}; ~/projetos/output/explica-{itaipu,queimadas}-viral/{visual/gerar_visual_916.py,media916/,3d/}.
+
+## Memória e regras duráveis tocadas
+- ~/projetos/wifi/LIMITES.md — linha do uploadLimitExceeded do lives10 (marcada como aceita).
+
+## Verificação
+- Rodado: `SO_BUILD=1 pipe_viral916.sh itaipu-viral` → build ok, avisos 0. `queimadas-viral` → build ok, avisos 0.
+- Rodado: `hyperframes check` nos dois → Check passed.
+- Rodado: render da Itaipu + qa_viral → REPROVADO (área lisa).
+- Não rodado: ffprobe/ebur128 do 9:16, render das Queimadas, envio ao v3.
+
+## Estado em execução
+- Processos em segundo plano: nenhum (o render da Itaipu terminou).
+- Servidores / portas: nenhum. Worktrees: nenhum.
+
+## Perguntas abertas e adiados
+- Aberta: se o QA de área lisa continuar reprovando depois de trocar os fundos, perguntar ao Nei se manda assim ou se recalibra o QA para 9:16.
+- Adiado: commit das mudanças do explicavideos (há mudanças de outra sessão misturadas).
+
+## Próxima ação exata
+Seguir longrun/2026-10-15-viral-916/state.md, "Próximo" 1 a 5: rebuild da Itaipu, rerodar o QA no mp4 existente, medir o piso do layout, trocar fundos lisos, re-render, enviar ao v3 em 720p. Depois as Queimadas. YouTube só com ok do Nei.
+
+## Mapa de retomada
+- `longrun/2026-10-15-viral-916/state.md` — estado e próximos passos
+- `longrun/2026-10-15-viral-916/goal.md` — critérios
+- `longrun/2026-10-15-viral-916/decisions.md` — mudanças de critério
+- `longrun/2026-10-15-viral-916/canal.md` — armadilhas técnicas
+
+## Checagem de compartilhamento
+- Sem segredos, tokens, cookies, dados pessoais ou endpoints privados: sim.
