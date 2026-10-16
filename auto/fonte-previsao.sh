@@ -4,7 +4,8 @@
 # Prefere o vídeo de HOJE (o canal posta entre 08:30 e 09:45, às vezes ao meio-dia): procura de 10 em 10 min até ESPERA (padrão 12:00);
 # sem vídeo de hoje, usa o último ainda não usado de ONTEM; nada disso → sai 3. Vídeo já usado fica em auto/previsao-usados.txt.
 # uso: auto/fonte-previsao.sh <pasta da edição> <AAAA-MM-DD>   → 0 = fonte/transcript.txt pronto; 3 = sem vídeo novo
-# FONTE_ID=<id> força um vídeo; SO_ESCOLHER=1 só mostra o escolhido (teste, não baixa nem marca).
+# Sem vídeo de hoje no YouTube, vale o reel de HOJE da página do Facebook do mesmo meteorologista (auto/fb_reels.py; Nei, 16/10/2026).
+# FONTE_ID=<id> (ou fb:<id> para reel do Facebook) força um vídeo; SO_ESCOLHER=1 só mostra o escolhido (teste, não baixa nem marca).
 set -uo pipefail
 AUTO="$(cd "$(dirname "$0")" && pwd)"
 ED="$1"; DIA="$2"; F="$ED/fonte"; mkdir -p "$F"
@@ -25,6 +26,10 @@ while [ -z "$ID" ]; do
   L=$(lista)
   ID=$(echo "$L" | grep -F "|$HOJE|" | novo | head -1)
   [ -n "$ID" ] && break
+  LF=$(timeout 600 python3 "$AUTO/fb_reels.py" 4 2>/dev/null); L="$L
+$LF"
+  ID=$(echo "$LF" | grep -F "|$HOJE|" | novo | head -1)
+  [ -n "$ID" ] && { echo "sem vídeo de hoje no YouTube: uso o reel de hoje do Facebook"; break; }
   if [ "$(date +%s)" -ge "$FIM" ]; then
     ID=$(echo "$L" | grep -F "|$ONTEM|" | novo | head -1)
     [ -n "$ID" ] && { echo "sem vídeo de hoje até ${ESPERA:-12:00}: uso o de ontem"; break; }
@@ -35,13 +40,14 @@ done
 echo "fonte: $ID · $(echo "${L:-}" | grep -F -- "$ID|" | cut -d'|' -f2-)"
 [ "${SO_ESCOLHER:-}" = 1 ] && exit 0
 echo "$ID" > "$F/video_id.txt"
-timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$ID" > "$F/video_info.txt" 2>/dev/null
+case "$ID" in fb:*) URL="https://www.facebook.com/reel/${ID#fb:}";; *) URL="https://www.youtube.com/watch?v=$ID";; esac
+timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$URL" > "$F/video_info.txt" 2>/dev/null
 # 1º a legenda automática do YouTube (segundos, 15/10/2026); sem ela, baixa e transcreve com o Whisper (≈45 min com a máquina cheia)
-if python3 "$AUTO/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
+if [ "${ID#fb:}" = "$ID" ] && python3 "$AUTO/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
 echo "sem legenda do YouTube: Whisper"
 cd "$HOME/projetos/inemavox" || exit 1
 for k in 1 2 3; do
-  rm -rf "$F/dl"; timeout 1800 python3 baixar_v1.py --url "https://www.youtube.com/watch?v=$ID" --outdir "$F/dl" --quality 720p > "$F/baixar.log" 2>&1
+  rm -rf "$F/dl"; timeout 1800 python3 baixar_v1.py --url "$URL" --outdir "$F/dl" --quality 720p > "$F/baixar.log" 2>&1
   M=$(ls -S "$F"/dl/*.mp4 2>/dev/null | head -1); [ -n "$M" ] && break; sleep 120
 done
 [ -n "${M:-}" ] || { echo "download falhou: $(tail -1 "$F/baixar.log")"; exit 1; }
