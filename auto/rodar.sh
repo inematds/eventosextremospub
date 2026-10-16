@@ -126,6 +126,9 @@ fi
 LUFS=$(ffmpeg -nostats -i "$V" -af ebur128 -f null - 2>&1 | grep -A1 "Integrated" | grep -o -- '-\?[0-9.]* LUFS' | tail -1)
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V" | cut -d. -f1)
 echo "vídeo: $V · ${DUR}s · $LUFS"
+# portão de duração (Nei, 16/10/2026): reel 9:16 NUNCA chega a 3 min; plano ≤ 2:40 (160 s), tolera passar um pouco
+[ "${DUR:-0}" -ge 180 ] && avisar "vídeo reprovado: ${DUR}s (reel 9:16 não pode chegar a 3 min; plano ≤ 2:40)"
+[ "${DUR:-0}" -gt 160 ] && echo "atenção: ${DUR}s passou do plano de 2:40 (ainda < 3 min)"
 
 # 4. lives10 (Short: título com #Shorts, sem thumb) + bot v3 sempre
 TIT="$(head -1 "$ED/yt.txt" | cut -c1-88) #Shorts"

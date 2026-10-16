@@ -20,6 +20,7 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 
 ## Lessons
 
+- Reel/Short 9:16 NUNCA pode chegar a 3 min: planejar o roteiro para no máximo 2:40 (160 s); passar um pouco é tolerado, 3:00 não. Portão no rodar.sh reprova ≥ 180 s. (Nei, 16/10/2026)
 - Nunca `git add` da pasta `pesquisa/` inteira: `bruto/` tem CSV do INPE com mais de 100 MB e o GitHub recusa o push (refeito das queimadas, 15/10/2026); zip/csv de bruto estão no .gitignore. Render: dois `render.mjs` ao mesmo tempo deixam o mapa branco, usar `flock .render.lock`.
 - 16:9 COM avatar NÃO usa mais o `largo` (coluna fixa de 640 px à direita): segue o explicavideo viral (`~/projetos/explicavideos`, `profile_visual: viral`) — 1ª imagem impactante com título grande, imagens e gráficos em tela cheia, avatar em caixa no canto inferior direito. Queimadas e Itaipu refeitos assim. (Nei, 15/10/2026)
 - 16:9 "largo" SEM avatar: `"coluna": True` na cena (cards e manchete na coluna da direita, mapa livre à esquerda); sem isso a coluna do avatar fica vazia e todo card cai em cima do mapa. Reel 9:16 sem avatar: `padding_topo` ~560 desce o mapa para baixo dos cards. O Nei reprovou o Amazônia e o mundo (12/10/2026).
