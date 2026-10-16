@@ -1,0 +1,8 @@
+Clima 24 h 16/10: enxurrada arrasta 29 carros em SP e 92 mm em Angra dos Reis
+Enxurrada na madrugada de 16/10 na zona sul de São Paulo, no limite com Diadema: pelo menos 29 veículos atingidos pela água (Diário do Grande ABC); córregos extravasaram e um homem ficou ferido (CGE, Jornal de Brasília); a Defesa Civil de SP mandou 15 alertas no estado (CNN Brasil).
+Chuva e vento: 65 mm em 24 h em Diadema e 92,8 mm em Angra dos Reis (CEMADEN); rajada de 61 km/h em Viracopos, Campinas (METAR, NOAA). Campo Grande (MS): 86,8 mm no temporal de quinta e quase 30 chamados de alagamento (Prefeitura, via A Crítica).
+Fogo: 569 focos de queimada no Brasil em 15/10, 188 no Amazonas e 163 no Pará (INPE, satélite de referência AQUA).
+Hoje (16/10): alerta laranja de tempestade do INMET em 563 cidades de MG, RJ, SP e ES, com vento de 60 a 100 km/h e granizo; amanhã, alerta laranja de vento no litoral de SC e RS (115 cidades).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): a quinta, 22/10, deve ser a mais chuvosa (294 mm somados), o Sudeste deve acumular mais (349 mm) e Teresina deve passar dos 40 °C; 788 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN em São Paulo juntaram mais de 7.400 mm em 24 h (414 estações); no Brasil, mais de 20 mil mm (soma dos pluviômetros, não chuva média; 2 sensores com leitura fora do padrão descartados).
+Fontes: Diário do Grande ABC, CNN Brasil, Jornal de Brasília, CGE, Defesa Civil de SP, Prefeitura de Campo Grande, CEMADEN, INPE, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
