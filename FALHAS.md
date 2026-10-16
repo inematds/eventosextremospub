@@ -2,6 +2,8 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-16 | Clima 24h não saiu: máquina reiniciou 05:37, timer 05:30 com Persistent=false perdeu a rodada | Persistent=true nos 5 timers (clima24h, dia, mundo, semana, previsão) | infra |
+| 2026-10-16 | Clima do DIA travado até 17h: yt-dlp trouxe título traduzido e truncado ('Brazil | … (10/16/2…') e a data não casava | `--extractor-args youtube:lang=pt` no boletim.sh (título original) | infra |
 | 2026-10-15 | Previsão do Dia não saiu: Whisper recarregado a cada fala + transcrição da fonte (~45 min) com a máquina cheia estouraram as 3 h do claude -p no meio do render | legenda do YouTube (pt-orig) antes do Whisper + Whisper residente no cardshorts (1–4 s por fala); recuperada com REUSAR_ROTEIRO=1 | infra |
 | 2026-10-15 | yt.txt do Mundo 14/10 ficou vazio e o Short subiu com título só '#Shorts' | ler o arquivo antes de abrir para gravar (open(p,'w').write(f(open(p).read())) trunca antes); título corrigido com yt-pubx atualizar | prompt |
 | 2026-10-15 | corte de 'mortos' pelos tempos do Whisper comeu '71' no avatar | testar cada corte transcrevendo o trecho | infra |

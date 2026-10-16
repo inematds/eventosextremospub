@@ -13,7 +13,7 @@ D1=$(date -d "$DIA" +%d/%m/%Y); D2=$(date -d "$DIA" +%m/%d/%Y)   # o yt-dlp às 
 ID=""
 while :; do
   # boletim aberto do dia: título "Brasil | ... (dd/mm/aaaa)"; vídeo de membros fica de fora
-  ID=$(timeout 120 yt-dlp --flat-playlist --playlist-end 10 --print "%(id)s|%(title)s" "$CANAL" 2>/dev/null \
+  ID=$(timeout 120 yt-dlp --flat-playlist --playlist-end 10 --extractor-args "youtube:lang=pt" --print "%(id)s|%(title)s" "$CANAL" 2>/dev/null \
        | grep -E "^[^|]+\|(Brasil|Brazil) \|" | grep -v -i -E "membros|members" | grep -F -e "($D1)" -e "($D2)" | head -1 | cut -d'|' -f1)
   [ -n "$ID" ] && break
   [ "$(date +%s)" -ge "$FIM" ] && { echo "nenhum boletim de $D1 até ${LIMITE:-17:00}"; exit 3; }
