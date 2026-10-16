@@ -16,3 +16,8 @@
 3. Trocar fundos lisos (lago-imenso, v-chuva-oeste, r v-chuva, v-yacyreta, v-vertedouro em bignum/ranking/cinetica/capitulo) por texturizados (v-ciudad-del-este, v-galeria, v-foz-ponte, v-puerto-iguazu, v-encarnacion, barragem-aerea); idem Queimadas antes do render.
 4. Re-render Itaipu → se ainda reprovar, perguntar ao Nei (QA calibrado para 16:9) ship × calibrar.
 5. ffprobe/ebur128, 720p ≤49 MB, enviar_bot_v3.mjs; Queimadas depois (nunca em paralelo).
+
+## 15/10 22:25 — entregue no v3
+- Itaipu 9:16 e Queimadas 9:16 enviados (720p, ver entrega/*-9x16-720p.mp4.envio-v3.json). 1080×1920, 192,36 s / 167,17 s, −13,5 / −13,4 LUFS, check 0 erros.
+- qa_viral REPROVADO por área lisa: médio 0,30 / 0,31; piso medido do layout 9:16 = 0,29–0,33 em quadros texturizados (faixa topo + sombra da legenda + PiP). QA calibrado p/ 16:9 — decisão do Nei: aceitar ou recalibrar.
+- Pendente: commit do explicavideos (mudanças de outra sessão misturadas); YouTube só com ok.
