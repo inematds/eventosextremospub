@@ -1,0 +1,9 @@
+Clima 24 h 17/10: casa desaba em Niterói e o fogo dobra no Brasil
+Niterói (RJ): um imóvel de três andares desabou na manhã de 16/10 no Caramujo, em meio às chuvas; dois irmãos, de 16 e 25 anos, foram retirados dos escombros e levados ao hospital (g1, Bombeiros); a cidade está em estágio de atenção pelas chuvas.
+Rio de Janeiro: madrugada de 16/10 com raios e ruas alagadas; 49,6 mm no Centro e alerta da Defesa Civil por mensagem de texto (g1). Litoral de SP: 70,6 mm em Mongaguá e 69,8 mm em Cubatão em 24 h (CEMADEN).
+Curitiba: o temporal de sexta derrubou árvores sobre carros, casas e um prédio; rajada de 56 km/h (Defesa Civil de Curitiba, via Banda B).
+Fogo: 1.142 focos de queimada no Brasil em 16/10, o dobro da véspera (569); 336 no Maranhão, 210 no Pará e 204 na Bahia (INPE, satélite de referência AQUA).
+Hoje (17/10): alerta laranja de tempestade do INMET em 370 cidades de MG, ES, RJ e BA, com vento de 60 a 100 km/h; alerta laranja de ventos costeiros no litoral de SC e RS (115 cidades). Domingo: frio de até 2 °C em pontos altos do RS (previsão, g1/Climatempo).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): a sexta, 23/10, deve ser a mais chuvosa (122 mm somados), o Norte deve acumular mais (149 mm) e Teresina deve passar dos 40 °C; 438 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN em São Paulo juntaram mais de 7.300 mm em 24 h (408 estações); no Brasil, mais de 20 mil mm (soma dos pluviômetros, não chuva média; 3 sensores com leitura fora do padrão descartados).
+Fontes: g1, Banda B (Defesa Civil de Curitiba), CEMADEN, INPE, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
