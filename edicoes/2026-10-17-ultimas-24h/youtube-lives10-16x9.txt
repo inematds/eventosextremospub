@@ -1,0 +1,3 @@
+versão 16:9 (explicavideo viral, mesmo avatar) publicada no lives10 como vídeo normal em 17/10/2026: https://www.youtube.com/watch?v=wuY7yx4d7Ao
+arquivo: ~/projetos/output/explica-clima24h-1710-viral/entrega/clima24h-1710-viral-16x9.mp4 (73,6 s, −13,4 LUFS, QA viral aprovado); bot v3 msg 1516
+roteiro visual: ~/projetos/output/explica-clima24h-1710-viral/visual/gerar_visual.py; config explicavideos examples/clima24h-1710-viral(-v2).json
