@@ -1,0 +1,1149 @@
+{
+ "janela_utc": [
+  "2026-10-17T20:00:28.003511+00:00",
+  "2026-10-18T20:00:28.003511+00:00"
+ ],
+ "coletado_utc": "2026-10-18T20:00:28.003523+00:00",
+ "falhas": [
+  {
+   "fonte": "inmet_estacoes",
+   "erro": "RuntimeError(\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\")",
+   "trace": "Traceback (most recent call last):\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 42, in deco\n    R[nome] = f()\n              ^^^\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 85, in _\n    raise RuntimeError(f\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: {len(tent)} pedidos, todos sem dados \"\nRuntimeError: apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\n"
+  },
+  {
+   "fonte": "openmeteo_capitais",
+   "erro": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+   "trace": "r in zip(nomes, json.loads(b)):\n                           ^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n"
+  }
+ ],
+ "inmet_avisos": {
+  "hoje": {
+   "n": 4,
+   "por_tipo_sev": [
+    [
+     "Chuvas Intensas",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Ventos Costeiros",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Baixa Umidade",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Tempestade",
+     "Perigo Potencial",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AC",
+     "AL",
+     "AM",
+     "BA",
+     "CE",
+     "ES",
+     "GO",
+     "MA",
+     "MG",
+     "MT",
+     "PA",
+     "PB",
+     "PE",
+     "PI",
+     "PR",
+     "RJ",
+     "RN",
+     "RO",
+     "RR",
+     "RS",
+     "SC",
+     "TO"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56106,
+     "desc": "Chuvas Intensas",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 00:00",
+     "fim": "2026-10-20 10:00",
+     "municipios": 1345,
+     "ufs": {
+      "BA": 376,
+      "PA": 66,
+      "TO": 139,
+      "MA": 65,
+      "PI": 149,
+      "AC": 22,
+      "MG": 219,
+      "ES": 53,
+      "PE": 11,
+      "MT": 72,
+      "GO": 48,
+      "RO": 52,
+      "AM": 62,
+      "RR": 10,
+      "CE": 1
+     }
+    },
+    {
+     "id": 56104,
+     "desc": "Ventos Costeiros",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 08:10",
+     "fim": "2026-10-18 23:59",
+     "municipios": 86,
+     "ufs": {
+      "RS": 34,
+      "SC": 51,
+      "PR": 1
+     }
+    },
+    {
+     "id": 56105,
+     "desc": "Baixa Umidade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 09:00",
+     "fim": "2026-10-18 22:00",
+     "municipios": 445,
+     "ufs": {
+      "CE": 108,
+      "RN": 78,
+      "PE": 75,
+      "AL": 28,
+      "PB": 138,
+      "PI": 18
+     }
+    },
+    {
+     "id": 56107,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 15:00",
+     "fim": "2026-10-19 09:00",
+     "municipios": 272,
+     "ufs": {
+      "MG": 174,
+      "ES": 32,
+      "RJ": 66
+     }
+    }
+   ]
+  },
+  "futuro": {
+   "n": 2,
+   "por_tipo_sev": [
+    [
+     "Chuvas Intensas",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Tempestade",
+     "Perigo Potencial",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AC",
+     "AM",
+     "BA",
+     "CE",
+     "ES",
+     "GO",
+     "MA",
+     "MG",
+     "MT",
+     "PA",
+     "PE",
+     "PI",
+     "RJ",
+     "RO",
+     "RR",
+     "TO"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56106,
+     "desc": "Chuvas Intensas",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 00:00",
+     "fim": "2026-10-20 10:00",
+     "municipios": 1345,
+     "ufs": {
+      "BA": 376,
+      "PA": 66,
+      "TO": 139,
+      "MA": 65,
+      "PI": 149,
+      "AC": 22,
+      "MG": 219,
+      "ES": 53,
+      "PE": 11,
+      "MT": 72,
+      "GO": 48,
+      "RO": 52,
+      "AM": 62,
+      "RR": 10,
+      "CE": 1
+     }
+    },
+    {
+     "id": 56107,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-18 15:00",
+     "fim": "2026-10-19 09:00",
+     "municipios": 272,
+     "ufs": {
+      "MG": 174,
+      "ES": 32,
+      "RJ": 66
+     }
+    }
+   ]
+  }
+ },
+ "cemaden": {
+  "estacoes_total": 5652,
+  "estacoes_recentes": 1293,
+  "erros_uf": {},
+  "top": [
+   {
+    "cidade": "Ilhéus",
+    "uf": "BA",
+    "estacao": "Conquista",
+    "acc24": 127.71,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 2.39,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Braz Do Piauí",
+    "uf": "PI",
+    "estacao": "G2-220955901A",
+    "acc24": 97.6,
+    "acc1": "-",
+    "acc3": 0.4,
+    "acc6": 10.2,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Braz Do Piauí",
+    "uf": "PI",
+    "estacao": "G2-220955903A",
+    "acc24": 88.0,
+    "acc1": "-",
+    "acc3": 0.4,
+    "acc6": 9.8,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Ilhéus",
+    "uf": "BA",
+    "estacao": "Banco da Vitória",
+    "acc24": 80.58,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 0.4,
+    "ultimo": "18/10/26 19:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Cristino Castro",
+    "uf": "PI",
+    "estacao": "G2-220310702A",
+    "acc24": 73.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 1.8,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Uruçuca",
+    "uf": "BA",
+    "estacao": "G2-293270501A",
+    "acc24": 73.2,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 2.8,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Coari",
+    "uf": "AM",
+    "estacao": "G2-130120901A",
+    "acc24": 69.4,
+    "acc1": 69.4,
+    "acc3": 69.4,
+    "acc6": 69.4,
+    "ultimo": "18/10/26 20:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Goiatins",
+    "uf": "TO",
+    "estacao": "Belmiro",
+    "acc24": 69.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 0.2,
+    "ultimo": "18/10/26 20:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Macarani",
+    "uf": "BA",
+    "estacao": "G2-291970202A",
+    "acc24": 68.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Braz Do Piauí",
+    "uf": "PI",
+    "estacao": "G2-220955902A",
+    "acc24": 65.2,
+    "acc1": 0.2,
+    "acc3": 0.8,
+    "acc6": 10.8,
+    "ultimo": "18/10/26 19:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Itacaré",
+    "uf": "BA",
+    "estacao": "G2-291490102A",
+    "acc24": 64.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 9.4,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Pescador",
+    "uf": "MG",
+    "estacao": "Centro",
+    "acc24": 63.6,
+    "acc1": 35.4,
+    "acc3": 35.4,
+    "acc6": 35.4,
+    "ultimo": "18/10/26 19:20",
+    "tipo": 1
+   },
+   {
+    "cidade": "Macarani",
+    "uf": "BA",
+    "estacao": "G2-291970201A",
+    "acc24": 62.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Araci",
+    "uf": "BA",
+    "estacao": "G2-290210401A",
+    "acc24": 61.0,
+    "acc1": 2.2,
+    "acc3": 27.6,
+    "acc6": 61,
+    "ultimo": "18/10/26 20:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Itacaré",
+    "uf": "BA",
+    "estacao": "Passagem",
+    "acc24": 59.2,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 7.6,
+    "ultimo": "18/10/26 19:30",
+    "tipo": 1
+   },
+   {
+    "cidade": "Almenara",
+    "uf": "MG",
+    "estacao": "Centro",
+    "acc24": 58.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Nilo Peçanha",
+    "uf": "BA",
+    "estacao": "G2-292260701A",
+    "acc24": 52.8,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 5.4,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Santa Cruz Cabrália",
+    "uf": "BA",
+    "estacao": "BR367-km4",
+    "acc24": 52.18,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 20:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Itororó",
+    "uf": "BA",
+    "estacao": "ITORORÓ",
+    "acc24": 51.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:00",
+    "tipo": 5
+   },
+   {
+    "cidade": "Maiquinique",
+    "uf": "BA",
+    "estacao": "G2-292000701A",
+    "acc24": 50.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Itabuna",
+    "uf": "BA",
+    "estacao": "Nova Ferradas",
+    "acc24": 50.41,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 0.4,
+    "ultimo": "18/10/26 20:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Santa Cruz De Salinas",
+    "uf": "MG",
+    "estacao": "G2-315737701A",
+    "acc24": 50.0,
+    "acc1": 21.2,
+    "acc3": 35.4,
+    "acc6": 36.2,
+    "ultimo": "18/10/26 19:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Maiquinique",
+    "uf": "BA",
+    "estacao": "G2-292000702A",
+    "acc24": 49.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Nova Itarana",
+    "uf": "BA",
+    "estacao": "G2-292280502A",
+    "acc24": 49.4,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 0.2,
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Muquém De São Francisco",
+    "uf": "BA",
+    "estacao": "G2-292225002A",
+    "acc24": 49.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "18/10/26 19:10",
+    "tipo": 1
+   }
+  ],
+  "max_por_uf": {
+   "BA": 127.71,
+   "PI": 97.6,
+   "AM": 69.4,
+   "TO": 69.0,
+   "MG": 63.6,
+   "RJ": 43.05,
+   "ES": 37.8,
+   "SP": 34.91,
+   "RO": 33.2,
+   "MA": 30.2,
+   "DF": 18.6,
+   "AC": 18.0,
+   "PE": 18.0,
+   "PA": 14.2,
+   "RS": 13.6,
+   "SC": 13.0,
+   "GO": 9.6,
+   "RR": 9.0,
+   "MT": 6.0,
+   "AP": 2.2,
+   "PR": 2.2,
+   "MS": 1.4,
+   "RN": 0.99,
+   "PB": 0.2,
+   "SE": 0.2
+  },
+  "soma_mm_estacoes": 10000.5,
+  "soma_por_uf": {
+   "BA": {
+    "soma_mm": 3969.5,
+    "estacoes": 215,
+    "media_mm": 18.5
+   },
+   "MG": {
+    "soma_mm": 1974.2,
+    "estacoes": 333,
+    "media_mm": 5.9
+   },
+   "ES": {
+    "soma_mm": 742.8,
+    "estacoes": 74,
+    "media_mm": 10.0
+   },
+   "RJ": {
+    "soma_mm": 636.1,
+    "estacoes": 124,
+    "media_mm": 5.1
+   },
+   "AM": {
+    "soma_mm": 630.7,
+    "estacoes": 48,
+    "media_mm": 13.1
+   },
+   "RS": {
+    "soma_mm": 427.6,
+    "estacoes": 176,
+    "media_mm": 2.4
+   },
+   "PI": {
+    "soma_mm": 398.8,
+    "estacoes": 21,
+    "media_mm": 19.0
+   },
+   "SP": {
+    "soma_mm": 392.7,
+    "estacoes": 146,
+    "media_mm": 2.7
+   },
+   "MA": {
+    "soma_mm": 153.1,
+    "estacoes": 16,
+    "media_mm": 9.6
+   },
+   "RO": {
+    "soma_mm": 151.6,
+    "estacoes": 14,
+    "media_mm": 10.8
+   },
+   "TO": {
+    "soma_mm": 112.2,
+    "estacoes": 15,
+    "media_mm": 7.5
+   },
+   "PE": {
+    "soma_mm": 84.0,
+    "estacoes": 11,
+    "media_mm": 7.6
+   },
+   "GO": {
+    "soma_mm": 74.8,
+    "estacoes": 26,
+    "media_mm": 2.9
+   },
+   "PA": {
+    "soma_mm": 68.2,
+    "estacoes": 18,
+    "media_mm": 3.8
+   },
+   "SC": {
+    "soma_mm": 61.0,
+    "estacoes": 21,
+    "media_mm": 2.9
+   },
+   "DF": {
+    "soma_mm": 45.6,
+    "estacoes": 5,
+    "media_mm": 9.1
+   },
+   "AC": {
+    "soma_mm": 35.4,
+    "estacoes": 7,
+    "media_mm": 5.1
+   },
+   "RR": {
+    "soma_mm": 24.4,
+    "estacoes": 5,
+    "media_mm": 4.9
+   },
+   "MT": {
+    "soma_mm": 6.0,
+    "estacoes": 1,
+    "media_mm": 6.0
+   },
+   "PR": {
+    "soma_mm": 5.2,
+    "estacoes": 8,
+    "media_mm": 0.7
+   },
+   "AP": {
+    "soma_mm": 3.4,
+    "estacoes": 3,
+    "media_mm": 1.1
+   },
+   "MS": {
+    "soma_mm": 1.4,
+    "estacoes": 1,
+    "media_mm": 1.4
+   },
+   "RN": {
+    "soma_mm": 1.0,
+    "estacoes": 1,
+    "media_mm": 1.0
+   },
+   "PB": {
+    "soma_mm": 0.6,
+    "estacoes": 3,
+    "media_mm": 0.2
+   },
+   "SE": {
+    "soma_mm": 0.2,
+    "estacoes": 1,
+    "media_mm": 0.2
+   }
+  },
+  "n_ge_50": 22,
+  "n_ge_100": 1
+ },
+ "inpe_focos": {
+  "ultimo_foco_gmt": "2026-10-18 18:40:00",
+  "todos_sat": 9678,
+  "sat_ref_AQUA_M-T": 0,
+  "por_satelite": [
+   [
+    "GOES-19",
+    3303
+   ],
+   [
+    "NOAA-21",
+    3042
+   ],
+   [
+    "NPP-375D",
+    1502
+   ],
+   [
+    "NOAA-20",
+    1007
+   ],
+   [
+    "TERRA_M-T",
+    710
+   ],
+   [
+    "MSG-03",
+    64
+   ],
+   [
+    "AQUA_M-M",
+    50
+   ]
+  ],
+  "por_estado_todos": [
+   [
+    "Pará",
+    5395
+   ],
+   [
+    "Maranhão",
+    1279
+   ],
+   [
+    "Amazonas",
+    928
+   ],
+   [
+    "Mato Grosso",
+    414
+   ],
+   [
+    "Amapá",
+    396
+   ],
+   [
+    "Bahia",
+    193
+   ],
+   [
+    "Tocantins",
+    190
+   ],
+   [
+    "Piauí",
+    186
+   ],
+   [
+    "Ceará",
+    173
+   ],
+   [
+    "Goiás",
+    105
+   ],
+   [
+    "Roraima",
+    93
+   ],
+   [
+    "Minas Gerais",
+    82
+   ],
+   [
+    "Pernambuco",
+    70
+   ],
+   [
+    "Paraíba",
+    60
+   ],
+   [
+    "Alagoas",
+    59
+   ]
+  ],
+  "por_bioma_todos": [
+   [
+    "Amazônia",
+    7805
+   ],
+   [
+    "Cerrado",
+    1211
+   ],
+   [
+    "Caatinga",
+    548
+   ],
+   [
+    "Mata Atlântica",
+    112
+   ],
+   [
+    "Pampa",
+    1
+   ],
+   [
+    "Pantanal",
+    1
+   ]
+  ],
+  "por_estado_ref": [],
+  "por_bioma_ref": [],
+  "top_municipios_todos": [
+   [
+    "Uruará/Pará",
+    1171
+   ],
+   [
+    "São Félix Do Xingu/Pará",
+    592
+   ],
+   [
+    "Altamira/Pará",
+    504
+   ],
+   [
+    "Santarém/Pará",
+    462
+   ],
+   [
+    "Portel/Pará",
+    301
+   ],
+   [
+    "Pacajá/Pará",
+    241
+   ],
+   [
+    "Itacoatiara/Amazonas",
+    215
+   ],
+   [
+    "Prainha/Pará",
+    210
+   ],
+   [
+    "Anapu/Pará",
+    182
+   ],
+   [
+    "Placas/Pará",
+    157
+   ]
+  ]
+ },
+ "noaa_metar": {
+  "aeroportos": 105,
+  "obs": 2030,
+  "tmax_top": [
+   [
+    38,
+    "SBTE",
+    "Teresina Arpt, PI, BR",
+    "18/10 19:00Z"
+   ],
+   [
+    38,
+    "SBIH",
+    "Itaituba Arpt, PA, BR",
+    "17/10 21:00Z"
+   ],
+   [
+    37,
+    "SBPL",
+    "Petrolina Arpt, PE, BR",
+    "18/10 18:00Z"
+   ],
+   [
+    37,
+    "SBBV",
+    "Boa Vista Arpt, RR, BR",
+    "18/10 20:00Z"
+   ],
+   [
+    36,
+    "SBMN",
+    "Manaus/Ponta Peleda, AM, BR",
+    "17/10 21:00Z"
+   ],
+   [
+    36,
+    "SBMA",
+    "Marabá Arpt, PA, BR",
+    "18/10 18:00Z"
+   ],
+   [
+    36,
+    "SBEG",
+    "Manaus/Gomes Intl, AM, BR",
+    "17/10 21:00Z"
+   ],
+   [
+    35,
+    "SBSN",
+    "Santarem Intl, PA, BR",
+    "18/10 20:00Z"
+   ],
+   [
+    35,
+    "SBOI",
+    "Oiapoque Arpt, AP, BR",
+    "18/10 16:00Z"
+   ],
+   [
+    35,
+    "SBMO",
+    "Maceió/Palmares Arpt, AL, BR",
+    "18/10 16:00Z"
+   ],
+   [
+    35,
+    "SBMK",
+    "Montes Claros Arpt, MG, BR",
+    "18/10 18:00Z"
+   ],
+   [
+    35,
+    "SBJU",
+    "Juazeiro do Norte/Menezes Arpt, CE, BR",
+    "18/10 18:00Z"
+   ]
+  ],
+  "tmin_top": [
+   [
+    6,
+    "SBPF",
+    "Passo Fundo/Kurtz Arpt, RS, BR",
+    "18/10 09:00Z"
+   ],
+   [
+    8,
+    "SBCH",
+    "Chapecó Arpt, SC, BR",
+    "18/10 08:00Z"
+   ],
+   [
+    9,
+    "SBNM",
+    "Santo Ângelo Arpt, RS, BR",
+    "18/10 09:00Z"
+   ],
+   [
+    10,
+    "SBCT",
+    "Curitiba/Pena Intl, PR, BR",
+    "18/10 09:00Z"
+   ],
+   [
+    10,
+    "SBFI",
+    "Foz do Iguacu Arpt, PR, BR",
+    "18/10 09:00Z"
+   ],
+   [
+    10,
+    "SBPK",
+    "Pelotas Arpt, RS, BR",
+    "18/10 10:00Z"
+   ],
+   [
+    11,
+    "SBSM",
+    "Santa Maria Arpt, RS, BR",
+    "18/10 10:00Z"
+   ],
+   [
+    12,
+    "SBBI",
+    "Curitiba/Bacacheri Arpt, PR, BR",
+    "18/10 10:00Z"
+   ],
+   [
+    12,
+    "SBCA",
+    "Cascavel Arpt, PR, BR",
+    "18/10 11:00Z"
+   ],
+   [
+    13,
+    "SBCO",
+    "Porto Alegre/Canoas, RS, BR",
+    "18/10 10:00Z"
+   ]
+  ],
+  "rajada_kmh_top": [
+   [
+    54,
+    "SBNF",
+    "Navegantes Intl, SC, BR",
+    "18/10 17:00Z",
+    "METAR SBNF 181700Z 24017G29KT 9999 SCT040 25/05 Q1012"
+   ],
+   [
+    54,
+    "SBMG",
+    "Maringa Rgnl, PR, BR",
+    "18/10 16:00Z",
+    "METAR SBMG 181600Z 23011G29KT 170V260 9999 FEW030 24/09 Q1014"
+   ],
+   [
+    48,
+    "SBSL",
+    "São Luís/Machado Intl, MA, BR",
+    "18/10 13:00Z",
+    "METAR SBSL 181300Z 08014G26KT 040V110 9999 FEW030 31/21 Q1012"
+   ],
+   [
+    46,
+    "SBPJ",
+    "Palmas/Rodrigues Arpt, TP, BR",
+    "18/10 19:00Z",
+    "METAR SBPJ 181900Z 27015G25KT 3000 +TSRA SCT025 FEW035CB BKN040 BKN080 25/24 Q1011"
+   ],
+   [
+    46,
+    "SBAR",
+    "Aracaju/Santa Maria Intl, SP, BR",
+    "18/10 18:00Z",
+    "METAR SBAR 181800Z 11015G25KT CAVOK 29/24 Q1009"
+   ],
+   [
+    43,
+    "SBSG",
+    "Natal/Alves Intl, RN, BR",
+    "18/10 15:00Z",
+    "METAR SBSG 181500Z 06012G23KT 030V100 9999 SCT040 31/21 Q1013"
+   ],
+   [
+    43,
+    "SBPA",
+    "Porto Alegre/Filho Intl, RS, BR",
+    "18/10 13:00Z",
+    "METAR SBPA 181300Z 28013G23KT 240V310 9999 BKN025 16/09 Q1017"
+   ],
+   [
+    43,
+    "SBMO",
+    "Maceió/Palmares Arpt, AL, BR",
+    "18/10 15:00Z",
+    "METAR SBMO 181500Z 02012G23KT 9999 FEW027 33/20 Q1011"
+   ],
+   [
+    41,
+    "SBKG",
+    "Campina Grande Arpt, PB, BR",
+    "18/10 17:00Z",
+    "METAR SBKG 181700Z 06011G22KT 9999 SCT030 31/17 Q1013"
+   ],
+   [
+    39,
+    "SBSJ",
+    "Sao Jose dos Campos Arpt, SP, BR",
+    "17/10 22:00Z",
+    "METAR SBSJ 172200Z 13008G21KT 9999 BKN035 20/17 Q1012"
+   ],
+   [
+    39,
+    "SBBH",
+    "Belo Horizonte/Astra, MG, BR",
+    "18/10 17:00Z",
+    "METAR SBBH 181700Z 26011G21KT 9999 SCT040 28/16 Q1013"
+   ],
+   [
+    37,
+    "SBLO",
+    "Londrina Arpt, PR, BR",
+    "18/10 17:00Z",
+    "METAR SBLO 181700Z 21009G20KT 9999 FEW020 25/08 Q1014"
+   ]
+  ],
+  "ur_min_top": [
+   [
+    22,
+    "SBSR",
+    "Sao Jose do Rio Preto Arpt, SP, BR",
+    "18/10 17:00Z",
+    28
+   ],
+   [
+    25,
+    "SBRP",
+    "Ribeirão Preto/Lopes Arpt, SP, BR",
+    "18/10 19:00Z",
+    29
+   ],
+   [
+    26,
+    "SBNF",
+    "Navegantes Intl, SC, BR",
+    "18/10 18:00Z",
+    25
+   ],
+   [
+    28,
+    "SBCT",
+    "Curitiba/Pena Intl, PR, BR",
+    "18/10 20:00Z",
+    20
+   ],
+   [
+    28,
+    "SBMG",
+    "Maringa Rgnl, PR, BR",
+    "18/10 19:00Z",
+    25
+   ],
+   [
+    28,
+    "SBYS",
+    "Pirassununga/Fontenelle Arpt, SP, BR",
+    "18/10 19:00Z",
+    28
+   ],
+   [
+    30,
+    "SBBI",
+    "Curitiba/Bacacheri Arpt, PR, BR",
+    "18/10 19:00Z",
+    20
+   ],
+   [
+    30,
+    "SBCA",
+    "Cascavel Arpt, PR, BR",
+    "18/10 19:00Z",
+    20
+   ],
+   [
+    30,
+    "SBLO",
+    "Londrina Arpt, PR, BR",
+    "18/10 19:00Z",
+    25
+   ],
+   [
+    31,
+    "SBTE",
+    "Teresina Arpt, PI, BR",
+    "18/10 19:00Z",
+    38
+   ],
+   [
+    32,
+    "SBBU",
+    "Bauru Arpt, SP, BR",
+    "18/10 19:00Z",
+    28
+   ],
+   [
+    32,
+    "SBJU",
+    "Juazeiro do Norte/Menezes Arpt, CE, BR",
+    "17/10 21:00Z",
+    35
+   ]
+  ],
+  "trovoada": [
+   "SBAN Anapolis, GO, BR",
+   "SBBE Belém/Val de Cans Arpt, PA, BR",
+   "SBBR Brasília Intl, DF, BR",
+   "SBBV Boa Vista Arpt, RR, BR",
+   "SBCC Cachimbo Arpt, PA, BR",
+   "SBEG Manaus/Gomes Intl, AM, BR",
+   "SBGO Goiania/Genoveva Arpt, GO, BR",
+   "SBIL Ilheus/Amado Arpt, BA, BR",
+   "SBMN Manaus/Ponta Peleda, AM, BR",
+   "SBPJ Palmas/Rodrigues Arpt, TP, BR",
+   "SBPL Petrolina Arpt, PE, BR",
+   "SBPS Porto Seguro Arpt, BA, BR",
+   "SBTF Tefé Arpt, AM, BR"
+  ]
+ }
+}

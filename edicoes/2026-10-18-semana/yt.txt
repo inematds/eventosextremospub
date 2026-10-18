@@ -1,0 +1,8 @@
+Previsão da semana 18/10: até 158 mm no Paraná e 41 °C no Piauí
+Semana de 19 a 25/10 (previsto, Open-Meteo lido em 18/10/2026): no Sul, a semana começa fria, com mínima de 3,1 °C no planalto de Santa Catarina na segunda; a chuva entra na quarta e aperta no fim de semana.
+Até 158,4 mm no centro-sul do Paraná (57 mm só no sábado) e 151,9 mm perto de Pelotas (RS); Porto Alegre 105,2 mm, 78,3 só no domingo; Curitiba 85,6 mm.
+Vento: rajada de até 95 km/h no centro-sul do Paraná no domingo; Curitiba 81 km/h.
+Calor: 41,6 °C no interior do Piauí na quinta, sem chuva na semana; Teresina 40,4 °C; Cuiabá 40,1 °C e leste de Mato Grosso 41,2 °C no domingo.
+INMET: alerta amarelo de chuvas intensas até terça (20/10, 10h) em 1.345 cidades, 376 delas na Bahia.
+Dias 8 a 15 (26/10 a 02/11) são TENDÊNCIA e podem mudar: a chuva sai do Sul e vai para Minas, Goiás e Brasília; Belo Horizonte pode passar de 160 mm (163,3 mm no modelo).
+Fontes: Open-Meteo (previsão de 16 dias, grade de 1,5° e capitais), INMET (avisos), satélite GOES-19 (NOAA) via NASA GIBS no fundo do mapa.

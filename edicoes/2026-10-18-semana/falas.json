@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Domingo, dezoito de outubro. Previsão da semana: até cento e cinquenta e oito milímetros de chuva no Paraná. E quarenta e um graus no Piauí. A sua cidade está no caminho?",
+  "legenda": "Domingo, 18 de outubro. Previsão da semana: até 158 milímetros de chuva no Paraná. E 41 graus no Piauí. A sua cidade está no caminho?"
+ },
+ {
+  "id": "f2",
+  "fala": "No Sul, a semana começa fria. Na segunda, o planalto de Santa Catarina pode ter três graus.",
+  "legenda": "No Sul, a semana começa fria. Na segunda, o planalto de Santa Catarina pode ter 3 graus."
+ },
+ {
+  "id": "f3",
+  "fala": "Aí vem a chuva. Entra na quarta e aperta no fim de semana. No centro-sul do Paraná, até cento e cinquenta e oito milímetros.",
+  "legenda": "Aí vem a chuva. Entra na quarta e aperta no fim de semana. No centro-sul do Paraná, até 158 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "Perto de Pelotas, pode passar de cento e cinquenta milímetros. Porto Alegre, cento e cinco milímetros, setenta e oito só no domingo.",
+  "legenda": "Perto de Pelotas, pode passar de 150 milímetros. Porto Alegre, 105 milímetros, 78 só no domingo."
+ },
+ {
+  "id": "f5",
+  "fala": "E o vento. No domingo, a rajada pode chegar a noventa e cinco quilômetros por hora no Paraná. Curitiba pode somar oitenta e cinco milímetros.",
+  "legenda": "E o vento. No domingo, a rajada pode chegar a 95 km/h no Paraná. Curitiba pode somar 85 milímetros."
+ },
+ {
+  "id": "f6",
+  "fala": "No interior do Piauí, sem chuva na semana. Na quinta, pode chegar a quarenta e um graus. Teresina, quarenta graus.",
+  "legenda": "No interior do Piauí, sem chuva na semana. Na quinta, pode chegar a 41 graus. Teresina, 40 graus."
+ },
+ {
+  "id": "f7",
+  "fala": "No Mato Grosso, o calor cresce até o domingo. Cuiabá pode passar de quarenta graus.",
+  "legenda": "No Mato Grosso, o calor cresce até o domingo. Cuiabá pode passar de 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "O INMET tem alerta amarelo de chuvas intensas até terça de manhã. São mil trezentas e quarenta e cinco cidades, a maioria na Bahia.",
+  "legenda": "O INMET tem alerta amarelo de chuvas intensas até terça de manhã. São 1.345 cidades, a maioria na Bahia."
+ },
+ {
+  "id": "f9",
+  "fala": "E nos próximos quinze dias? A tendência é a chuva sair do Sul e ir pra Minas, Goiás e Brasília.",
+  "legenda": "E nos próximos 15 dias? A tendência é a chuva sair do Sul e ir pra Minas, Goiás e Brasília."
+ },
+ {
+  "id": "f10",
+  "fala": "Belo Horizonte pode passar de cento e sessenta milímetros. Mas é tendência: pode mudar.",
+  "legenda": "Belo Horizonte pode passar de 160 milímetros. Mas é tendência: pode mudar."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
