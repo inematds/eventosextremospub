@@ -1,0 +1,9 @@
+Clima 24 h 18/10: granizo e ventania no ES e o Pará com 3 de cada 4 focos
+Linhares (ES): temporal com granizo na tarde de 17/10; a ventania derrubou o portal da praia de Pontal do Ipiranga (A Gazeta, boletim da Defesa Civil de Linhares); 75,8 mm em 24 h no pluviômetro do Centro (CEMADEN).
+Varre-Sai (RJ): o vento destelhou ao menos 2 casas e derrubou árvores sobre a rede elétrica, com área rural sem luz (Rádio Natividade FM, Defesa Civil municipal); 46,8 mm em 24 h (CEMADEN).
+Sul: ciclone extratropical; rajada de 61 km/h em Pelotas (RS) em 17/10 e 8 °C em Chapecó (SC) às 5h de 18/10 (NOAA, METAR dos aeroportos).
+Fogo: 918 focos no Pará em 17/10, de 1.226 no Brasil — quase 3 de cada 4 (INPE, satélite de referência AQUA).
+Hoje (18/10): alerta amarelo de chuvas intensas do INMET em 1.345 cidades de 15 estados até segunda (19); previsão de geada no PR e no norte de SC, mínima perto de 3 °C (INMET).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): a sexta, 23/10, deve ser a mais chuvosa (160,8 mm somados), o Norte deve acumular mais (158,9 mm) e Teresina deve passar dos 40 °C; 546 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN em Minas Gerais juntaram mais de 3.700 mm em 24 h (467 estações); no Brasil, mais de 9.800 mm (soma dos pluviômetros, não chuva média; 2 sensores com leitura fora do padrão descartados).
+Fontes: A Gazeta, Rádio Natividade FM, CEMADEN, INPE, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
