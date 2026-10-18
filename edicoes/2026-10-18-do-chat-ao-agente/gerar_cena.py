@@ -63,18 +63,20 @@ def TELA(src, a, b, selo="ilustração", zoom=.07):
 
 
 PRINT = "eventos.inema.pro"
+PC = "-c" if CANTO else ""   # canto: legenda no meio da tela, print escurecido mais acima
 telas = [
+    {"src": "capa/preto.png", "ini": -1.0, "fim": DUR + 1, "fade": 0, "zoom": 0},   # fundo: o mapa nunca aparece nas trocas
     {"src": "capa/abertura-desce.png", "ini": -1.0, "fim": em("f1", "Pergunta") - .1, "fade": .3, "zoom": .02},
     TELA("capa/chat-copia.png", em("f1", "Pergunta") - .1, em("f1", "quando") - .1),
     TELA("capa/janela-fecha.png", em("f1", "quando") - .1, ini("f2")),
-    TELA("prints/pagina-hero.png", ini("f2") - .1, em("f2", "4") - .1, PRINT, .04),
-    TELA("prints/pagina-seq.png", em("f2", "4") - .1, ini("f3"), PRINT, .04),
+    TELA(f"prints/pagina-hero{PC}.png", ini("f2") - .1, em("f2", "4") - .1, PRINT, .04),
+    TELA(f"prints/pagina-seq{PC}.png", em("f2", "4") - .1, ini("f3"), PRINT, .04),
     TELA("capa/terminal.png", ini("f3") - .1, ini("f4")),
     TELA("capa/jarvis.png", ini("f4") - .1, ini("f5")),
     TELA("capa/fila.png", ini("f5") - .1, ini("f6")),
     TELA("capa/redes.png", ini("f6") - .1, ini("f7")),
     TELA("capa/degraus.png", ini("f7") - .1, ini("f8")),
-    TELA("prints/pagina-hero.png", ini("f8") - .1, DUR + 1, PRINT, .04),
+    TELA(f"prints/pagina-hero{PC}.png", ini("f8") - .1, DUR + 1, PRINT, .04),
 ]
 
 it = lambda fid, pal, txt, k=1: {"t": em(fid, pal, k), "txt": txt}

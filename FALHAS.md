@@ -2,6 +2,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-18 | Do chat ao agente: estúdio HeyGen "continuando" do rascunho de mesmo título → waitForURL timeout; e no layout canto a legenda (meio da tela) caía em cima do texto do print e o mapa aparecia nas trocas | título novo (`ev-b`); fundo preto fixo nas telas + print escurecido a partir de y 980 no canto | infra + prompt |
 | 2026-10-17 | Refaz 16:9 do Clima no Mundo: avatar refeito sem pedido (HeyGen reenviado, ~30 min esperando 0%); o certo era reaproveitar o conteúdo pronto | 16:9 de vídeo já publicado = mesmo áudio/números/mapas da edição (cópia com `layout: largo` + `coluna: True`, sem avatar se o Short não tinha); avatar novo só com pedido | prompt |
 | 2026-10-17 | Refaz 16:9 do Clima 24h (explicavideo viral): o Whisper da ponte v1 pulou "o dobro da véspera. O Maranhão teve 336" e repetiu "Cubatão, 69" — deixas do Maranhão sumiriam; e o CTA na deixa "você pode aprender" deixou ~1 s de tela escura (QA: área lisa) | trocar o trecho da transcrição v1 pelas palavras do `avatar/tempos.json` da edição (já retemporizado) antes do pipe; CTA na 1ª palavra da fala ("No Inema") | infra |
 | 2026-10-17 | Clima no Mundo 17/10: estúdio HeyGen clicou Submit, o modal fechou mas o card ficou Draft ("o Generate não enviou"); a rodada saiu só na versão mapa, sem avatar | `auto/avatar.sh` rodar o estúdio de novo 1× quando o erro for "ficou Draft" (reabrir o mesmo título enviou de primeira na 2ª vez) | infra |
