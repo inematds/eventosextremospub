@@ -1,0 +1,12 @@
+Gere 8 imagens com a ferramenta de geração de imagem (image_gen) e salve nesta pasta, em PNG, formato RETRATO 9:16 (1080x1920 ou maior na mesma proporção). Estilo foto cinematográfica realista, moderna, tons escuros (preto #0c0c10) com acentos de luz amarela (#FACC15) e branca; luz limpa, nítida, sem desfoque forte. Sem logotipo de empresa, sem marca d'água, sem pessoas reconhecíveis (rostos fora de quadro ou de costas). Nenhum texto nas imagens, EXCETO na abertura.png.
+
+1. abertura.png — capa de impacto: uma pessoa de costas, presa dentro de uma janela de chat gigante (balões de conversa ao redor dela, como uma cela), e atrás dela, fora da janela, vários agentes de IA (robôs luminosos estilizados) trabalhando sozinhos em mesas com telas. Texto ESCRITO DENTRO da arte, grande, em português, fonte bold sem serifa: no topo, branco, "AINDA PRESO NO CHAT?"; logo abaixo, em amarelo #FACC15, "4 PASSOS ATÉ O SEU AGENTE". Todo o texto na METADE DE CIMA da imagem; a metade de baixo sem texto. Confira a grafia exata, com acentos.
+2. chat-copia.png — close de mãos num teclado à noite, monitor com uma janela de chat e várias janelas abertas, setas de copiar e colar, cansaço, xícara de café; sensação de trabalho repetitivo.
+3. janela-fecha.png — notebook sendo fechado numa mesa escura, a luz da tela sumindo, tarefas inacabadas em post-its ao lado.
+4. terminal.png — monitor com terminal escuro, árvore de pastas e arquivos markdown, um agente de IA digitando comandos sozinho (texto do terminal ilegível, só formas), mesa organizada, luz amarela suave.
+5. jarvis.png — mão segurando um celular com um app de mensagens (estilo Telegram, sem logo) conversando com um assistente; um holograma sutil de rosto abstrato de IA saindo da tela.
+6. fila.png — quarto à noite: pessoa dormindo na cama ao fundo, desfocada; em primeiro plano, um monitor com uma lista de tarefas sendo concluídas uma a uma com marcas de check amarelas.
+7. redes.png — vários smartphones em pé numa mesa, cada um tocando um vídeo vertical curto diferente, ícones de curtida e gráfico subindo em luz amarela.
+8. degraus.png — escada de quatro degraus luminosos subindo no escuro, o primeiro degrau mais brilhante em amarelo, uma pessoa de costas prestes a subir o primeiro.
+
+Ao final, liste os arquivos salvos.

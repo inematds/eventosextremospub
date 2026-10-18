@@ -1,0 +1,42 @@
+[
+ {
+  "id": "f1",
+  "fala": "Você ainda usa a inteligência artificial só no chat? Pergunta, copia, cola, pergunta de novo. E quando fecha a janela, o trabalho para.",
+  "legenda": "Você ainda usa a IA só no chat? Pergunta, copia, cola, pergunta de novo. E quando fecha a janela, o trabalho para."
+ },
+ {
+  "id": "f2",
+  "fala": "Tem um caminho do chat ao criador de agentes: quatro sequências e vinte e três exercícios práticos, um degrau por vez.",
+  "legenda": "Tem um caminho do chat ao criador de agentes: 4 sequências e 23 exercícios práticos, um degrau por vez."
+ },
+ {
+  "id": "f3",
+  "fala": "Um: o terminal. Com o OSWork, o agente trabalha dentro da sua pasta e lê os seus arquivos.",
+  "legenda": "1: o terminal. Com o OSWork, o agente trabalha dentro da sua pasta e lê os seus arquivos."
+ },
+ {
+  "id": "f4",
+  "fala": "Dois: o seu Jarvis. Um assistente seu no Telegram, com memória e a personalidade que você definir.",
+  "legenda": "2: o seu Jarvis. Um assistente seu no Telegram, com memória e a personalidade que você definir."
+ },
+ {
+  "id": "f5",
+  "fala": "Três: as filas. Você manda dez tarefas e vai dormir. Se cair, o inema cê cê bot retoma sozinho.",
+  "legenda": "3: as filas. Você manda 10 tarefas e vai dormir. Se cair, o inemaccbot retoma sozinho."
+ },
+ {
+  "id": "f6",
+  "fala": "Quatro: as redes. O canal do seu nicho publicando no automático, com a fonte na tela.",
+  "legenda": "4: as redes. O canal do seu nicho publicando no automático, com a fonte na tela."
+ },
+ {
+  "id": "f7",
+  "fala": "Sem milagre: quem pula a sequência um empaca nas outras três. Comece pelo terminal.",
+  "legenda": "Sem milagre: quem pula a sequência 1 empaca nas outras três. Comece pelo terminal."
+ },
+ {
+  "id": "f8",
+  "fala": "Me conta nos comentários: em qual sequência você está? Está tudo aberto e gratuito no inema ponto club.",
+  "legenda": "Me conta nos comentários: em qual sequência você está? Está tudo aberto e gratuito no inema.club."
+ }
+]
