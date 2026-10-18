@@ -1,0 +1,179 @@
+{
+ "marca": "INEMA · GESTÃO 2027",
+ "selo": "ALERTA INEMA",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/tres.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/fila.png",
+   "de": "f3"
+  },
+  {
+   "src": "prints/emp27-c.png",
+   "de": "f4",
+   "selo": "inematds.github.io/empresas-2027-v62"
+  },
+  {
+   "src": "capa/aulas.png",
+   "de": "f5"
+  },
+  {
+   "src": "capa/comando.png",
+   "de": "f6"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "demissão"
+   ],
+   "k": "DEMISSÃO EM MASSA",
+   "borda": "red",
+   "itens": [
+    [
+     "f1",
+     "gerentes",
+     "👔 gerentes"
+    ],
+    [
+     "f1",
+     "executivos",
+     "💼 executivos"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "QUEM SAI",
+   "borda": "red",
+   "itens": [
+    [
+     "f2",
+     "pessoas",
+     "👥 não gere pessoas"
+    ],
+    [
+     "f2",
+     "processos",
+     "⚙️ nem processos"
+    ],
+    [
+     "f2",
+     "agentes",
+     "🤖 nem agentes"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "GENTE BOA NA FILA",
+   "borda": "red",
+   "itens": [
+    [
+     "f3",
+     "demore",
+     "🙏 espero que demore"
+    ],
+    [
+     "f3",
+     "agente",
+     "🤖 não sabe lidar com agente"
+    ],
+    [
+     "f3",
+     "fila",
+     "⏳ está na fila"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "EMPRESAS DE 2027",
+   "itens": [
+    [
+     "f4",
+     "formação",
+     "🎓 formação rápida"
+    ],
+    [
+     "f4",
+     "executivos",
+     "💼 para executivos"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "RÁPIDA DE VERDADE",
+   "borda": "vd",
+   "contador": {
+    "ate": 9,
+    "em": [
+     "f5",
+     "9"
+    ],
+    "cor": "#FACC15",
+    "unid": "AULAS DE 15 MIN"
+   },
+   "l": "sem instalar nada · no chat que você já usa"
+  },
+  {
+   "de": "f6",
+   "k": "VOCÊ NO COMANDO",
+   "borda": "vd",
+   "itens": [
+    [
+     "f6",
+     "regras",
+     "📜 escreve as regras do agente"
+    ],
+    [
+     "f6",
+     "medir",
+     "📊 mede o trabalho dele"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "VOCÊ JÁ GERENCIA AGENTES? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "formação Empresas de 2027"
+ },
+ "fonte": "<b>opinião do Nei Maldaner</b> · formação Empresas de 2027 no inema.club · imagens: ilustração",
+ "cores": {
+  "demissao": "#ff2a1f",
+  "massa": "#ff2a1f",
+  "gerentes": "#ff2a1f",
+  "executivos": "#ff2a1f",
+  "pessoas": "#FACC15",
+  "processos": "#FACC15",
+  "agentes": "#FACC15",
+  "fila": "#ff2a1f",
+  "regras": "#FACC15",
+  "medir": "#FACC15"
+ }
+}

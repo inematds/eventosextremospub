@@ -1,0 +1,195 @@
+{
+ "marca": "INEMA · O NOVO GESTOR",
+ "selo": "GESTÃO INEMA",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/funcoes.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/facil.png",
+   "de": "f3"
+  },
+  {
+   "src": "capa/time.png",
+   "de": "f4"
+  },
+  {
+   "src": "prints/diga-c.png",
+   "de": "f5",
+   "selo": "inematds.github.io/diga-o-que-importa"
+  },
+  {
+   "src": "prints/const-c.png",
+   "de": "f6",
+   "selo": "inematds.github.io/constituicao-agentes-v62"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "chefiar"
+   ],
+   "k": "FUNCIONÁRIO QUE NÃO É GENTE",
+   "borda": "red",
+   "itens": [
+    [
+     "f1",
+     "funcionário",
+     "🤖 funcionário que não é gente"
+    ],
+    [
+     "f1",
+     "chefiar",
+     "👔 alguém vai chefiar"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "NOVAS FUNÇÕES",
+   "itens": [
+    [
+     "f2",
+     "transformação",
+     "🔄 a transformação"
+    ],
+    [
+     "f2",
+     "funções",
+     "🧭 aprender as novas funções"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "PRA GESTOR É FÁCIL",
+   "borda": "vd",
+   "itens": [
+    [
+     "f3",
+     "processo",
+     "⚙️ o processo"
+    ],
+    [
+     "f3",
+     "cliente",
+     "🤝 o cliente"
+    ],
+    [
+     "f3",
+     "equipe",
+     "👥 a equipe"
+    ],
+    [
+     "f3",
+     "ajusta",
+     "🔧 só ajusta"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "UM TIME DE 3",
+   "itens": [
+    [
+     "f4",
+     "gestor",
+     "🧭 gestor: o quê e o porquê"
+    ],
+    [
+     "f4",
+     "técnico",
+     "🛠️ técnico: o como"
+    ],
+    [
+     "f4",
+     "executa",
+     "🤖 agente: executa"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "REGRA 5-4-3",
+   "itens": [
+    [
+     "f5",
+     "perguntas",
+     "5️⃣ perguntas"
+    ],
+    [
+     "f5",
+     "níveis",
+     "4️⃣ níveis de autonomia"
+    ],
+    [
+     "f5",
+     "casos",
+     "3️⃣ casos de teste"
+    ]
+   ]
+  },
+  {
+   "de": "f6",
+   "k": "A CONSTITUIÇÃO DO AGENTE",
+   "borda": "vd",
+   "itens": [
+    [
+     "f6",
+     "faz",
+     "✅ o que ele faz"
+    ],
+    [
+     "f6",
+     "nunca",
+     "⛔ o que nunca faz"
+    ],
+    [
+     "f6",
+     "chama",
+     "📞 quando chama você"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "VOCÊ JÁ CHEFIA UM AGENTE? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "guia grátis + Constituição dos Agentes"
+ },
+ "fonte": "<b>guia Diga o que importa</b> (grátis) · curso Constituição dos Agentes · inema.club · imagens: ilustração",
+ "cores": {
+  "funcionario": "#FACC15",
+  "gente": "#ff2a1f",
+  "chefiar": "#FACC15",
+  "transformacao": "#FACC15",
+  "facil": "#FACC15",
+  "ajusta": "#FACC15",
+  "gestor": "#FACC15",
+  "tecnico": "#FACC15",
+  "agente": "#FACC15",
+  "constituicao": "#FACC15"
+ }
+}

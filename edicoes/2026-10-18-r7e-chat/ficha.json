@@ -1,0 +1,179 @@
+{
+ "marca": "INEMA · DO CHAT AO AGENTE",
+ "selo": "EVENTOS INEMA",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/copiacola.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/terminal.png",
+   "de": "f3"
+  },
+  {
+   "src": "capa/colega.png",
+   "de": "f4"
+  },
+  {
+   "src": "prints/chat72-c.png",
+   "de": "f5",
+   "selo": "inematds.github.io/do-chat-ao-agente-v72"
+  },
+  {
+   "src": "capa/gratis.png",
+   "de": "f6"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "chat"
+   ],
+   "k": "SAI NA FRENTE",
+   "itens": [
+    [
+     "f1",
+     "chat",
+     "💬 continua usando o chat"
+    ],
+    [
+     "f1",
+     "agentes",
+     "🤖 e os agentes produzem"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "NO CHAT",
+   "borda": "red",
+   "itens": [
+    [
+     "f2",
+     "pergunta",
+     "❓ você pergunta"
+    ],
+    [
+     "f2",
+     "copia",
+     "📋 copia"
+    ],
+    [
+     "f2",
+     "cola",
+     "📌 cola"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "NO TERMINAL",
+   "borda": "vd",
+   "itens": [
+    [
+     "f3",
+     "arquivos",
+     "📁 abre os seus arquivos"
+    ],
+    [
+     "f3",
+     "executa",
+     "⚙️ executa"
+    ],
+    [
+     "f3",
+     "pronto",
+     "✅ entrega pronto"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "SÓ NO CHAT?",
+   "borda": "red",
+   "itens": [
+    [
+     "f4",
+     "colega",
+     "🏃 o colega entrega antes"
+    ],
+    [
+     "f4",
+     "dia",
+     "📆 todo dia"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "DO CHAT AO AGENTE",
+   "itens": [
+    [
+     "f5",
+     "curso",
+     "🎓 o curso"
+    ],
+    [
+     "f5",
+     "zero",
+     "0️⃣ passo a passo do zero"
+    ]
+   ]
+  },
+  {
+   "de": "f6",
+   "k": "GRÁTIS AGORA",
+   "borda": "vd",
+   "itens": [
+    [
+     "f6",
+     "grátis",
+     "🆓 grátis agora"
+    ],
+    [
+     "f6",
+     "PRO",
+     "🔒 depois só no PRO"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "VOCÊ AINDA COPIA E COLA? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "curso Do chat ao agente"
+ },
+ "fonte": "<b>inematds.github.io/do-chat-ao-agente-v72</b> · imagens: ilustração · print da página",
+ "cores": {
+  "chat": "#FACC15",
+  "agentes": "#FACC15",
+  "copia": "#ff2a1f",
+  "cola": "#ff2a1f",
+  "terminal": "#FACC15",
+  "pronto": "#FACC15",
+  "colega": "#ff2a1f",
+  "gratis": "#FACC15",
+  "pro": "#ff2a1f"
+ }
+}

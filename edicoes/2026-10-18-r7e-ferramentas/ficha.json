@@ -1,0 +1,184 @@
+{
+ "marca": "INEMA · A ERA DAS FERRAMENTAS",
+ "selo": "OPINIÃO · NEI",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/git.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/perdeu.png",
+   "de": "f3"
+  },
+  {
+   "src": "capa/aprende.png",
+   "de": "f4"
+  },
+  {
+   "src": "capa/tres.png",
+   "de": "f5"
+  },
+  {
+   "src": "capa/qualquer.png",
+   "de": "f6"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "Quem"
+   ],
+   "k": "CAÇADOR DE APP",
+   "borda": "red",
+   "itens": [
+    [
+     "f1",
+     "corre",
+     "🏃 corre atrás do app novo"
+    ],
+    [
+     "f1",
+     "superficial",
+     "🫥 fica no superficial"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "TÁ TUDO NO GIT",
+   "itens": [
+    [
+     "f2",
+     "código",
+     "📦 o código já existe"
+    ],
+    [
+     "f2",
+     "graça",
+     "🆓 de graça no GitHub"
+    ],
+    [
+     "f2",
+     "Codex",
+     "🤖 Claude e Codex fazem"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "NÃO SABE PEDIR?",
+   "borda": "red",
+   "itens": [
+    [
+     "f3",
+     "perdeu",
+     "❌ perdeu"
+    ],
+    [
+     "f3",
+     "testa",
+     "🧪 você testa o app da semana"
+    ],
+    [
+     "f3",
+     "inteiro",
+     "✅ o outro já entregou"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "SE APRENDE RÁPIDO",
+   "itens": [
+    [
+     "f4",
+     "aprende",
+     "⚡ aprende rápido"
+    ],
+    [
+     "f4",
+     "programador",
+     "✅ sem programar"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "PEDIR BEM = 3 COISAS",
+   "itens": [
+    [
+     "f5",
+     "quer",
+     "1️⃣ o que você quer"
+    ],
+    [
+     "f5",
+     "contexto",
+     "2️⃣ o contexto"
+    ],
+    [
+     "f5",
+     "conferir",
+     "3️⃣ como conferir"
+    ]
+   ]
+  },
+  {
+   "de": "f6",
+   "k": "QUALQUER FERRAMENTA",
+   "borda": "vd",
+   "itens": [
+    [
+     "f6",
+     "qualquer",
+     "🧰 qualquer ferramenta"
+    ],
+    [
+     "f6",
+     "saiu",
+     "🆕 até a que nem saiu"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "VOCÊ SABE PEDIR? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "aprenda a pedir pra IA"
+ },
+ "fonte": "<b>opinião do Nei Maldaner</b> · imagens: ilustração",
+ "cores": {
+  "ferramentas": "#FACC15",
+  "acabou": "#ff2a1f",
+  "superficial": "#ff2a1f",
+  "github": "#FACC15",
+  "claude": "#FACC15",
+  "codex": "#FACC15",
+  "perdeu": "#ff2a1f",
+  "aprende": "#FACC15",
+  "contexto": "#FACC15",
+  "conferir": "#FACC15",
+  "qualquer": "#FACC15"
+ }
+}

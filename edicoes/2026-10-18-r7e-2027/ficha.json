@@ -1,0 +1,200 @@
+{
+ "marca": "INEMA · QUEM FATURA EM 2027",
+ "selo": "OPINIÃO · NEI",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/perdidas.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/eras.png",
+   "de": "f3"
+  },
+  {
+   "src": "capa/papeis.png",
+   "de": "f4"
+  },
+  {
+   "src": "prints/prof2027-c.png",
+   "de": "f5",
+   "selo": "inematds.github.io/profissional2027x"
+  },
+  {
+   "src": "capa/primeiro.png",
+   "de": "f6"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "ajuda"
+   ],
+   "k": "QUEM FATURA EM 2027",
+   "itens": [
+    [
+     "f1",
+     "cria",
+     "❌ quem só cria software"
+    ],
+    [
+     "f1",
+     "ajuda",
+     "✅ quem ajuda os outros a criar"
+    ],
+    [
+     "f1",
+     "Acorda",
+     "⏰ acorda!"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "EMPRESAS PERDIDAS",
+   "borda": "red",
+   "itens": [
+    [
+     "f2",
+     "perdidas",
+     "😵 perdidas"
+    ],
+    [
+     "f2",
+     "opção",
+     "🔀 opção demais de IA"
+    ],
+    [
+     "f2",
+     "pagar",
+     "💰 vão pagar quem mostrar o caminho"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "JÁ ACONTECEU 3 VEZES",
+   "itens": [
+    [
+     "f3",
+     "internet",
+     "🌐 anos 90: internet"
+    ],
+    [
+     "f3",
+     "sites",
+     "🖥️ anos 2000: sites"
+    ],
+    [
+     "f3",
+     "celular",
+     "📱 2010: celular"
+    ],
+    [
+     "f3",
+     "ensinou",
+     "💰 faturou quem ensinou"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "SEJA O GUIA",
+   "itens": [
+    [
+     "f4",
+     "consultor",
+     "🧭 consultor"
+    ],
+    [
+     "f4",
+     "auditor",
+     "🔍 auditor"
+    ],
+    [
+     "f4",
+     "treinador",
+     "🎓 treinador de IA"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "PROFISSIONAL 2027",
+   "borda": "vd",
+   "itens": [
+    [
+     "f5",
+     "kits",
+     "🧰 kits prontos"
+    ],
+    [
+     "f5",
+     "rápido",
+     "⚡ aprende rápido"
+    ],
+    [
+     "f5",
+     "atender",
+     "🤝 começa a atender"
+    ]
+   ]
+  },
+  {
+   "de": "f6",
+   "k": "CHEGA PRIMEIRO",
+   "borda": "red",
+   "itens": [
+    [
+     "f6",
+     "agora",
+     "⏳ aprende agora"
+    ],
+    [
+     "f6",
+     "primeiro",
+     "🥇 chega antes dos outros"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "CONSULTOR, AUDITOR OU TREINADOR? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "formação gratuita Profissional 2027"
+ },
+ "fonte": "<b>opinião do Nei Maldaner</b> · formação Profissional 2027 no inema.club · imagens: ilustração",
+ "cores": {
+  "faturar": "#FACC15",
+  "software": "#ff2a1f",
+  "ajuda": "#FACC15",
+  "acorda": "#ff2a1f",
+  "perdidas": "#ff2a1f",
+  "caminho": "#FACC15",
+  "ensinou": "#FACC15",
+  "consultor": "#FACC15",
+  "auditor": "#FACC15",
+  "treinador": "#FACC15",
+  "primeiro": "#FACC15"
+ }
+}

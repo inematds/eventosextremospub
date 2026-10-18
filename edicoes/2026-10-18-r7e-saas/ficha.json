@@ -1,0 +1,184 @@
+{
+ "marca": "INEMA · O FIM DO SAAS",
+ "selo": "ALERTA INEMA",
+ "telas": [
+  {
+   "src": "capa/abertura-desce.png",
+   "de": null
+  },
+  {
+   "src": "capa/refaz.png",
+   "de": "f2"
+  },
+  {
+   "src": "capa/quebra.png",
+   "de": "f3"
+  },
+  {
+   "src": "capa/ciclos.png",
+   "de": "f4"
+  },
+  {
+   "src": "capa/dica.png",
+   "de": "f5"
+  },
+  {
+   "src": "prints/prof2030-c.png",
+   "de": "f6",
+   "selo": "inematds.github.io/prof2030"
+  },
+  {
+   "src": "prints/club-c.png",
+   "de": "f7",
+   "selo": "inema.club"
+  }
+ ],
+ "paineis": [
+  {
+   "de": [
+    "f1",
+    "apostando"
+   ],
+   "k": "MODELO DE ASSINATURA",
+   "borda": "red",
+   "itens": [
+    [
+     "f1",
+     "assina",
+     "💳 você assina todo mês"
+    ],
+    [
+     "f1",
+     "morrendo",
+     "📉 está morrendo"
+    ],
+    [
+     "f1",
+     "apostando",
+     "🎰 e tem gente apostando tudo"
+    ]
+   ]
+  },
+  {
+   "de": "f2",
+   "k": "A IA REFAZ",
+   "itens": [
+    [
+     "f2",
+     "programa",
+     "🧩 o programa da assinatura"
+    ],
+    [
+     "f2",
+     "medida",
+     "✂️ sob medida"
+    ],
+    [
+     "f2",
+     "semana",
+     "📅 num fim de semana"
+    ]
+   ]
+  },
+  {
+   "de": "f3",
+   "k": "FORMATO VELHO",
+   "borda": "red",
+   "itens": [
+    [
+     "f3",
+     "velho",
+     "🏚️ quem fica no velho"
+    ],
+    [
+     "f3",
+     "quebra",
+     "💥 quebra junto"
+    ]
+   ]
+  },
+  {
+   "de": "f4",
+   "k": "JÁ VI ISSO ANTES",
+   "itens": [
+    [
+     "f4",
+     "passei",
+     "🔁 várias vezes"
+    ],
+    [
+     "f4",
+     "igual",
+     "📌 sempre igual"
+    ]
+   ]
+  },
+  {
+   "de": "f5",
+   "k": "A DICA PARA 2027",
+   "borda": "vd",
+   "itens": [
+    [
+     "f5",
+     "dica",
+     "💡 a dica"
+    ],
+    [
+     "f5",
+     "novo",
+     "🆕 o formato novo"
+    ],
+    [
+     "f5",
+     "jeito",
+     "🏢 IA do jeito de cada empresa"
+    ]
+   ]
+  },
+  {
+   "de": "f6",
+   "k": "PROFISSIONAL 2030",
+   "borda": "vd",
+   "itens": [
+    [
+     "f6",
+     "formação",
+     "🎓 formação Profissional 2030"
+    ],
+    [
+     "f6",
+     "graça",
+     "🆓 de graça"
+    ]
+   ]
+  }
+ ],
+ "cta": {
+  "em": [
+   "f7",
+   "pede"
+  ],
+  "a": "VOCÊ AINDA PAGA QUAL ASSINATURA? 👇",
+  "b": "me pede o link aqui nos comentários"
+ },
+ "club": {
+  "em": [
+   "f7",
+   "inema.club"
+  ],
+  "a": "inema.club",
+  "b": "formação Profissional 2030, grátis"
+ },
+ "fonte": "<b>opinião do Nei Maldaner</b> · formação Profissional 2030 no inema.club · imagens: ilustração",
+ "cores": {
+  "saas": "#ff2a1f",
+  "morrendo": "#ff2a1f",
+  "apostando": "#ff2a1f",
+  "refaz": "#FACC15",
+  "velho": "#ff2a1f",
+  "quebra": "#ff2a1f",
+  "dica": "#FACC15",
+  "novo": "#FACC15",
+  "graca": "#FACC15"
+ }
+}

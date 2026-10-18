@@ -1,0 +1,9 @@
+Gere 5 imagens com a ferramenta de geração de imagem (image_gen) e salve nesta pasta, em PNG, formato RETRATO 9:16 (o maior tamanho vertical disponível). Estilo foto cinematográfica realista, moderna, tons escuros (preto #0c0c10) com acentos de luz amarela (#FACC15), vermelha de alerta (#ff2a1f) só onde houver perigo, e branca; luz limpa e nítida, contraste alto, sem desfoque forte. Sem logotipo de empresa, sem marca d'água, sem pessoas reconhecíveis (rostos de lado, na sombra ou de costas). Robô, quando houver: humanoide industrial estilo Tesla Optimus, com visor preto na frente, nunca fofo ou cartoon. Nenhum texto nas imagens, EXCETO na abertura.png.
+
+1. abertura.png — capa de impacto: corredor de escritório corporativo escuro, vários executivos de terno de costas saindo em fila, cada um carregando uma caixa de papelão com seus objetos; luz fria e uma faixa de luz vermelha no fim do corredor. Texto ESCRITO DENTRO da arte, grande, em português, fonte bold sem serifa: no topo, branco, "DEMISSÃO EM MASSA"; logo abaixo, maior, em vermelho #ff2a1f, "DE GERENTES E EXECUTIVOS". Todo o texto na METADE DE CIMA da imagem; a metade de baixo sem texto. Confira a grafia exata, com acentos.
+2. tres.png — três pilares de luz numa sala escura, cada um com um símbolo flutuando em dourado: um grupo de pessoas, um conjunto de engrenagens e a cabeça de um robô de visor preto.
+3. fila.png — fila de executivos de terno, de costas, esperando num corredor escuro diante de uma porta com luz vermelha; um deles olha um celular com uma janela de IA aberta, perdido.
+4. aulas.png — um cronômetro dourado luminoso marcando um quarto de volta sobre uma mesa preta, ao lado de um celular com uma conversa de IA aberta; luz amarela limpa.
+5. comando.png — uma executiva de costas, confiante, diante de um painel gigante luminoso com quadros amarelos de tarefas e indicadores, comandando com um gesto dois robôs humanoides de visor preto.
+
+Ao final, liste os arquivos salvos.
