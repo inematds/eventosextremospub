@@ -4,7 +4,7 @@ Baixa a base em cor real (GeoColor) e a sequência do infravermelho colorido (to
 uso: coleta/satelite_gibs.py <pasta-da-edicao> --base 2026-10-08T18:00 --de 2026-10-08T12:00 --ate 2026-10-09T05:00 [--passo 20]
      [--bbox -74.5,-18.6,-34,5.6]   (sem --de/--ate baixa só a base GeoColor)
 (horas em UTC; o motor mostra em horário de Brasília)"""
-import argparse, concurrent.futures as cf, hashlib, json, math, subprocess, urllib.request
+import argparse, concurrent.futures as cf, hashlib, json, math, subprocess, time, urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -42,8 +42,15 @@ for p in (bruto, web):
 
 
 def baixa(camada, quando, dst):
-    if not dst.exists():
-        dst.write_bytes(urllib.request.urlopen(url(camada, quando), timeout=120).read())
+    for tentativa in range(4):  # o GIBS às vezes demora num quadro (timeout 19/10/2026)
+        if dst.exists():
+            break
+        try:
+            dst.write_bytes(urllib.request.urlopen(url(camada, quando), timeout=180).read())
+        except (TimeoutError, OSError):
+            if tentativa == 3:
+                raise
+            time.sleep(10)
     return dst
 
 
