@@ -1,0 +1,8 @@
+Clima 24 h 19/10: -1,2 °C no RS, temporal no sul da Bahia e 96 mm em Minas
+Frio: Soledade (RS) marcou -1,2 °C no começo de 19/10; 3 cidades gaúchas abaixo de zero, 54º dia do ano com marca negativa no estado (MetSul Meteorologia).
+Extremo sul da Bahia (17 e 18/10): árvore caiu sobre barraca em Trancoso (Porto Seguro), 2 pessoas feridas; 6 desalojados em Itamaraju; casas destelhadas em Medeiros Neto (g1, prefeituras e Defesa Civil).
+Minas: 96,8 mm em 24 h em Caparaó e 92,2 mm em Divino (pluviômetros do CEMADEN). Nordeste: Teresina com 38 °C no domingo (NOAA, METAR).
+Hoje (19/10): alerta amarelo de chuvas intensas do INMET em 1.144 cidades de 14 estados até terça; baixa umidade em 296 cidades do Nordeste; terça (20), alerta laranja de acumulado de chuva em 38 cidades da BA e de MG.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o domingo, 25/10, deve ser o mais chuvoso (229,2 mm somados), o Sul deve acumular mais (313,1 mm), Curitiba passa dos 150 mm e Teresina deve passar dos 40 °C; 674,8 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN em Minas juntaram mais de 2.400 mm em 24 h; no Brasil, quase 9.000 mm (soma dos pluviômetros, não chuva média; 2 sensores fora do padrão descartados).
+Fontes: MetSul, g1, CEMADEN, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.

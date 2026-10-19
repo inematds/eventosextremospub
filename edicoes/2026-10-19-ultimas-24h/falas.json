@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Segunda, dezenove de outubro. Frio abaixo de zero no Rio Grande do Sul. Temporal no extremo sul da Bahia. E noventa e seis milímetros no Caparaó, em Minas.",
+  "legenda": "Segunda, 19 de outubro. Frio abaixo de zero no Rio Grande do Sul. Temporal no extremo sul da Bahia. E 96 milímetros no Caparaó, em Minas."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Soledade, a mínima foi de um vírgula dois grau abaixo de zero. Três cidades gaúchas ficaram abaixo de zero, em plena primavera.",
+  "legenda": "Em Soledade, a mínima foi de 1,2 grau abaixo de zero. 3 cidades gaúchas ficaram abaixo de zero, em plena primavera."
+ },
+ {
+  "id": "f3",
+  "fala": "No extremo sul da Bahia, uma árvore caiu sobre uma barraca em Trancoso. Duas pessoas ficaram feridas. Em Itamaraju, seis pessoas deixaram suas casas.",
+  "legenda": "No extremo sul da Bahia, uma árvore caiu sobre uma barraca em Trancoso. 2 pessoas ficaram feridas. Em Itamaraju, 6 pessoas deixaram suas casas."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Minas, Caparaó marcou noventa e seis milímetros em vinte e quatro horas. Divino, noventa e dois milímetros.",
+  "legenda": "Em Minas, Caparaó marcou 96 milímetros em 24 horas. Divino, 92 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No Nordeste, calor e ar seco. Teresina marcou trinta e oito graus no domingo.",
+  "legenda": "No Nordeste, calor e ar seco. Teresina marcou 38 graus no domingo."
+ },
+ {
+  "id": "f6",
+  "fala": "E hoje? Alerta amarelo de chuva intensa em mil cento e quarenta e quatro cidades de catorze estados, até terça. Na terça, alerta laranja em trinta e oito cidades da Bahia e de Minas.",
+  "legenda": "E hoje? Alerta amarelo de chuva intensa em 1.144 cidades de 14 estados, até terça. Na terça, alerta laranja em 38 cidades da Bahia e de Minas."
+ },
+ {
+  "id": "f7",
+  "fala": "Os próximos sete dias: o domingo, dia vinte e cinco, deve ser o mais chuvoso nas capitais. O Sul deve acumular mais, e Curitiba passar dos cento e cinquenta milímetros. Teresina deve passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: o domingo, dia 25, deve ser o mais chuvoso nas capitais. O Sul deve acumular mais, e Curitiba passar dos 150 milímetros. Teresina deve passar dos 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Volumes somados: os pluviômetros de Minas juntaram mais de dois mil e quatrocentos milímetros. No Brasil, quase nove mil. Em sete dias, as capitais devem somar seiscentos e setenta e quatro milímetros.",
+  "legenda": "Volumes somados: os pluviômetros de Minas juntaram mais de 2.400 milímetros. No Brasil, quase 9.000. Em 7 dias, as capitais devem somar 674 milímetros."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
