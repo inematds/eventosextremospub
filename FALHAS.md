@@ -1,7 +1,12 @@
+| 2026-10-18 | Geração de copiacola sem close e gratis com personagens extras | Regenerar com enquadramento e exclusões explícitas | prompt |
 # Falhas
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-19 | O reenvio `-b` do Draft (linha abaixo) brigaria com o Nei gerando o rascunho à mão (2 avatares) | Draft → alerta vermelho no v3 com o nome (heygen-studio.mjs + wifi/heygen-aviso/rascunho.py) e o avatar.sh espera o MESMO id sair do Draft (até 3 h) | infra |
+| 2026-10-19 | Clima 24h (refeito 12:20): card do estúdio HeyGen ficou Draft de novo e saiu só a versão mapa — a correção anotada em 17/10 nunca tinha entrado no avatar.sh | `auto/avatar.sh`: com "ficou Draft", reenvia 1× com título `<título>-b` | infra |
+| 2026-10-19 | Refazendo o Clima 24h às 12:16, um quadro do GIBS passou de 120 s (TimeoutError) e derrubou a coleta inteira | `satelite_gibs.py`: até 4 tentativas por quadro, timeout 180 s, pausa de 10 s (no Clima do DIA, 3×120 s ainda não bastou: GIBS a ~60 s por quadro) | infra |
+| 2026-10-19 | Clima 24h das 05:30 não saiu: `claude -p` bateu o limite de sessão da assinatura (reset 06:10); só o aviso foi ao bot, e ninguém refez até 12:16 | relançar `systemctl --user start clima24h-diario.service`; proteção a fazer: no rodar.sh, se o erro for "session limit", esperar o horário do reset e tentar o `claude -p` de novo uma vez | infra |
 | 2026-10-18 | Do chat ao agente: estúdio HeyGen "continuando" do rascunho de mesmo título → waitForURL timeout; e no layout canto a legenda (meio da tela) caía em cima do texto do print e o mapa aparecia nas trocas | título novo (`ev-b`); fundo preto fixo nas telas + print escurecido a partir de y 980 no canto | infra + prompt |
 | 2026-10-17 | Refaz 16:9 do Clima no Mundo: avatar refeito sem pedido (HeyGen reenviado, ~30 min esperando 0%); o certo era reaproveitar o conteúdo pronto | 16:9 de vídeo já publicado = mesmo áudio/números/mapas da edição (cópia com `layout: largo` + `coluna: True`, sem avatar se o Short não tinha); avatar novo só com pedido | prompt |
 | 2026-10-17 | Refaz 16:9 do Clima 24h (explicavideo viral): o Whisper da ponte v1 pulou "o dobro da véspera. O Maranhão teve 336" e repetiu "Cubatão, 69" — deixas do Maranhão sumiriam; e o CTA na deixa "você pode aprender" deixou ~1 s de tela escura (QA: área lisa) | trocar o trecho da transcrição v1 pelas palavras do `avatar/tempos.json` da edição (já retemporizado) antes do pipe; CTA na 1ª palavra da fala ("No Inema") | infra |
