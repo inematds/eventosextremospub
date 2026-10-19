@@ -24,11 +24,27 @@ tenta(){ local log="$1" k; shift
   cd "$HOME/projetos/explicavideos"
   if [ -s "$A/video_id.txt" ] && [ "${REFAZER_HEYGEN:-}" != 1 ]; then echo "já enviado: $(cat "$A/video_id.txt")"
   else
-    tenta "$A/studio.log" timeout 12000 node "$ENG/heygen-studio.mjs" --titulo "$TITULO" --fala-arquivo "$A/fala.txt" --perfil "$PERFIL" --template TEMPLATE-AVATAR16 \
-      || { echo "ERRO no estúdio: $(grep -h ERRO "$A/studio.log" | tail -1)"; exit 3; }
+    # card ficou Draft ("o Generate não enviou"): o heygen-studio.mjs manda alerta vermelho ao v3 com o nome,
+    # o Nei gera o rascunho à mão no estúdio e aqui se espera o MESMO id sair do Draft (Nei, 19/10/2026).
+    # Não reenviar com outro título: sairiam dois avatares.
+    DRAFT=0
+    if ! tenta "$A/studio.log" timeout 12000 node "$ENG/heygen-studio.mjs" --titulo "$TITULO" --fala-arquivo "$A/fala.txt" --perfil "$PERFIL" --template TEMPLATE-AVATAR16; then
+      grep -q "ficou Draft" "$A/studio.log" || { echo "ERRO no estúdio: $(grep -h ERRO "$A/studio.log" | tail -1)"; exit 3; }
+      DRAFT=1
+    fi
     ID=$(grep -o 'create-v4/[0-9a-f]\{32\}' "$A/studio.log" | tail -1 | cut -d/ -f2)
     [ -n "$ID" ] || { echo "ERRO: id do vídeo não achado no studio.log"; exit 3; }
-    echo "$ID" > "$A/video_id.txt"; sleep 60
+    echo "$ID" > "$A/video_id.txt"
+    if [ "$DRAFT" = 1 ]; then
+      echo "card $TITULO ficou Draft (alerta no v3); esperando o Nei gerar no estúdio (até 3 h)"
+      for k in $(seq 1 36); do
+        ST=$(cd "$ENG" && python3 -c "import heygen_read as h,sys; print((h.get('/v1/video_status.get?video_id='+sys.argv[1]).get('data') or {}).get('status','?'))" "$ID" 2>/dev/null || echo '?')
+        [ "$ST" != draft ] && [ "$ST" != '?' ] && { echo "rascunho saiu do Draft: $ST"; break; }
+        [ "$k" = 36 ] && { echo "ERRO no estúdio: card $TITULO ficou Draft e ninguém gerou em 3 h"; exit 3; }
+        sleep 300
+      done
+    fi
+    sleep 60
   fi
   [ -s "$A/avatar.mp4" ] || tenta "$A/baixar.log" timeout 18000 node "$ENG/heygen-estudio-baixar.mjs" --id "$(cat "$A/video_id.txt")" --saida "$A/avatar.mp4" \
       --perfil "$PERFIL" --minutos 290 --intervalo 120 || { echo "ERRO ao baixar: $(tail -1 "$A/baixar.log")"; exit 4; }
