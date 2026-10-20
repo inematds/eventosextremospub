@@ -1,0 +1,8 @@
+Clima 24 h 20/10: frio de décadas no Sul, fogo no Pará e alerta de tempestade
+Frio: Urupema (SC) marcou -2,0 °C na madrugada de segunda (19), com geada em São Joaquim (-1,3 °C); no Paraná, Guarapuava (3 °C) e União da Vitória (4,7 °C) tiveram a menor temperatura de outubro desde 1997, quando as estações foram instaladas (MetSul, dados do Simepar).
+Fogo: 1.011 focos no Brasil em 19/10 no satélite de referência do INPE (AQUA); 465 no Pará, quase metade, com Portel (68) e Uruará (45) na frente (INPE Queimadas).
+Chuva em 24 h: Tapauá (AM) 72,4 mm, Canutama (AM) 67,3 mm e Macarani (BA) 66,0 mm (pluviômetros do CEMADEN).
+Hoje (20/10): alerta laranja de acumulado de chuva do INMET em 38 cidades da BA e de MG (50 a 100 mm no dia) e amarelo de chuvas intensas em 1.144 cidades de 14 estados; quarta (21), tempestade com granizo em 407 cidades do PR, RS, SC e MS; quinta (22), alerta de tempestade em 2.745 cidades de 14 estados.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o domingo, 25/10, deve ser o mais chuvoso (142,1 mm somados), o Sul deve acumular mais (195 mm), Curitiba 113,5 mm, e Teresina e Cuiabá devem passar dos 40 °C; 593,4 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN em Minas juntaram mais de 840 mm em 24 h; no Brasil, mais de 3.600 mm (soma dos pluviômetros, não chuva média; 2 sensores fora do padrão descartados).
+Fontes: MetSul, Simepar, INPE, CEMADEN, INMET, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
