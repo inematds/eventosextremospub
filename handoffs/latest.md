@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `clima24h-2026-10-20` · handoffs/history/2026-10-20T094646Z-clima24h-2026-10-20.md · 20/10 06:46
 - `mundo-2026-10-18` · handoffs/history/2026-10-18T221922Z-mundo-2026-10-18.md · 18/10 19:19
 - `clima24h-2026-10-16` · handoffs/history/2026-10-16T210158Z-clima24h-2026-10-16.md · 16/10 18:01
 - `viral-916` · handoffs/history/2026-10-16T010020Z-viral-916.md · 15/10 22:00
@@ -15,40 +16,35 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 
 ---
 
-Cópia integral do snapshot mais recente (handoffs/history/2026-10-18T221922Z-mundo-2026-10-18.md):
+Cópia integral do snapshot mais recente (handoffs/history/2026-10-20T094646Z-clima24h-2026-10-20.md):
 
-# Handoff — Clima no Mundo de 18/10/2026 (rodada automática, claude -p)
+# Handoff — Clima 24 h de 20/10/2026 (rodada automática, claude -p)
 
 ## Projeto e escopo
-eventosextremospub, edição `edicoes/2026-10-18-mundo-7d` (Short 9:16, layout canto com avatar depois). Só os arquivos da edição; avatar, YouTube, bot e git ficam com `auto/rodar.sh`.
+eventosextremospub, edição `edicoes/2026-10-20-ultimas-24h` (Short 9:16). Só os arquivos da edição; avatar HeyGen, lives10, bot v3 e git ficam com `auto/rodar.sh`.
 
 ## Objetivo atual
-Entregar falas.json, gerar_cena.py, tempos.json, video.mp4 (versão mapa / plano B) e yt.txt para o rodar.sh seguir com o HeyGen e a publicação.
+Entregar falas.json, gerar_cena.py, tempos.json, video.mp4 (versão mapa / plano B) e yt.txt para o rodar.sh seguir.
 
 ## Estado aceito
-- [confirmed] video.mp4 1080x1920, 95,8 s (GEO=geo-br.js motor/montar.sh), renderizado 4 vezes; quadros conferidos: data 18/10/2026 na abertura, contadores 71/4/240/225/300, câmera em cada país, rótulos de pino sem sobreposição (ajustes: câmera do f1 em lon 66–72; pino Ibiza fundido em "Valência, Alicante e Ibiza"; alturas Champi/Guam/Tailândia).
-- [confirmed] falas.json: 11 falas, 229 palavras; ordem Tailândia → Istambul → Espanha (DANA Adam) → Champi → Trudy → incêndio Norte → E agora (Champi cat. 5 / AEMET 300 mm) → pergunta → CTA inema.club. Pausa de 1 s antes da pergunta (pausa_pergunta.py).
-- [confirmed] Capa do Codex (assinatura) em capa-dia/abertura.png: "SUPER TUFÃO / PASSOU POR GUAM / 240 KM/H".
-- [confirmed] Portões de tom e palavra proibida limpos em falas.json, gerar_cena.py e yt.txt; título do yt.txt com 76 caracteres.
-- [confirmed] pesquisa/noticias.md e proposta.md gravados, brutos em pesquisa/bruto (NWS Guam, NHC, GDACS, AP/WRAL, EFE/Infobae).
-- [confirmed] LIMITES.md (wifi): linha sobre CAL FIRE 403 no urllib e WebFetch bloqueado pelo hook.
+- [confirmed] video.mp4 1080x1920, 102,5 s (GEO=geo-br.js motor/montar.sh), renderizado 3 vezes; quadros conferidos (abertura com capa, pinos visíveis após ajuste de câmera SUL lat -24,9 e PA lat -0,6, painel f6 dividido em quarta 407 / quinta 2.745, CTA). Loudness -17,7 LUFS (ontem -17,5, padrão do montar.sh).
+- [confirmed] falas.json: 10 falas (frio de décadas SC/PR → fogo 1.011 focos, PA 465 → chuva Tapauá 72 / Macarani 66 → E hoje laranja 38 / amarelo 1.144 → quarta 407 / quinta 2.745 tempestade → 7 dias → volumes MG 840+, Brasil 3.600+, capitais 593 → pergunta → CTA inema.club). f2 corrigida para não terminar em número ("…desde 1997, quando a estação foi instalada"). Pausa de 1 s antes da pergunta aplicada.
+- [confirmed] Capa Codex (assinatura) capa-dia/abertura.png "FRIO DE DÉCADAS / EM PLENO OUTUBRO / -2 °C NA SERRA CATARINENSE" (termômetro com "30" repetido, aceito: selo ilustração, 2 s).
+- [confirmed] pesquisa/noticias.md, dados.md, proposta.md; geocoding_openmeteo.txt em pesquisa/bruto; mundo.jpg copiado de 2026-10-19.
+- [confirmed] Portões tom/CTA/morte limpos; título yt.txt 77 caracteres.
+- [confirmed] LIMITES.md (wifi): linha sobre WebFetch e curl bloqueados pelo hook context-mode.
 
 ## Proposto / tentado, não confirmado
-- [unverified] gerar_cena.py --canto não testado (avatar/tempos.json ainda não existia).
-- [unverified] Avatar HeyGen, lives10 e bot v3: fase do rodar.sh, fora desta sessão.
+- [unverified] gerar_cena.py --canto não testado (avatar/tempos.json ainda não existe).
+- [unverified] Avatar, publicação e bot: fase do rodar.sh, fora desta sessão.
 
 ## Decisões e restrições
-- Janela 12–18/10: Rachel/Ensenada (11/10) saiu.
-- Espanha: vítima via Bombers de la Generalitat (EFE) e avisos da AEMET; EFE não está nominalmente na lista; Reuters/AP/BBC não tinham nada. Mulher de Sagunt fora (não confirmada).
-- Champi 240 km/h = 150 mph do aviso 14 do NWS (não o 269 do JTWC via Watchers); "metade de Guam sem luz" fora (fonte fora da lista).
-- Istambul 4 vítimas (AP), não 5 (Bianet). Trudy: "castigou a costa" (AP), avisos cancelados (NHC aviso 22); "saldo blanco" (La Razón) fora.
-- Incêndio Norte: 50% contido (CAL FIRE 18/10); "16 mil na zona de retirada" velho, fora.
+- Fogo sem comparação com 18/10 (AQUA 222 suspeito); somas CEMADEN sem comparação com ontem (784 × 1.054 estações); sensores Rio Xopoto e Colégio Naval fora das somas.
+- SP descartado (alagamentos eram de 16/10, fonte fora da lista). Calor do NE só na previsão.
+- Fala com 243 palavras (acima de 230), narração 102,5 s, aceito.
 
 ## Próxima ação
-Nenhuma nesta sessão. Se refizer: conferir o avatar (gerar_cena.py --canto) e se a contagem de Istambul/Tailândia mudou.
-
-## Arquivos
-edicoes/2026-10-18-mundo-7d/{falas.json,gerar_cena.py,tempos.json,video.mp4,yt.txt,cena.js,capa-dia/abertura.png,pesquisa/noticias.md,pesquisa/proposta.md}
+Nenhuma nesta sessão; o rodar.sh segue com avatar → lives10 → bot v3 → git.
 
 
 <!-- handoff-estado:inicio -->
@@ -56,10 +52,10 @@ edicoes/2026-10-18-mundo-7d/{falas.json,gerar_cena.py,tempos.json,video.mp4,yt.t
 
 Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o projeto agora.
 
-- commit: 984c252de4a1c426f300ebbc554d6d3c91f5b077 · branch: main
-- arquivos sujos fora de handoffs/: 719 (lista cortada)
+- commit: 74bbe35e12974df4e89ecebc713ba8553907fea7 · branch: main
+- arquivos sujos fora de handoffs/: 943 (lista cortada)
 - `CLAUDE.md` · sha256:71ffe0603e53 · sujo
-- `auto/previsao-usados.txt` · sha256:58365ecb131a · sujo
+- `auto/previsao-usados.txt` · sha256:183ced262218 · sujo
 - `edicoes/2026-10-09-alerta-norte-nordeste/video-avatar.mp4.envio-v3.json` · sha256:d3fec43b751f · sujo
 - `edicoes/2026-10-09-alerta-norte-nordeste/video.mp4.envio-v3.json` · sha256:356bde79342d · sujo
 - `edicoes/2026-10-09-el-nino/avatar/foto.jpg` · sha256:4a387696d84d · sujo
