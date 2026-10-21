@@ -1,0 +1,9 @@
+Clima 24 h 21/10: geada no Sul, tempestade em 2.853 cidades e até 300 mm no PR
+Frio: geada nas cidades mais altas do Sul na terça (20); São Joaquim (SC) marcou 0,3 °C, Urupema (SC) 1,2 °C e Soledade (RS) 2,0 °C (MetSul).
+Fogo: 399 focos no Brasil em 20/10 no satélite de referência do INPE (AQUA); 106 no Pará, com Óbidos (11) na frente (INPE Queimadas).
+Chuva em 24 h: Santana do Araguaia (PA) 69,4 mm e Santa Maria da Vitória (BA) 56,0 mm (pluviômetros do CEMADEN).
+Hoje (21/10): alerta amarelo de tempestade com granizo do INMET em 623 cidades do PR, RS, SC, MS e SP a partir das 15h, e de chuvas intensas em 179 cidades do Norte e de MT; quinta (22), tempestade em 2.853 cidades de 15 estados.
+MetSul: período prolongado de chuva no Sul a partir de hoje, com 200 a 300 mm previstos em locais do Paraná até 27/10 e risco de enchente.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o domingo, 25/10, deve ser o mais chuvoso (187,5 mm somados), o Sul deve acumular mais (189,8 mm), Curitiba 141,6 mm, e Teresina deve passar dos 40 °C; 671,8 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN na Bahia juntaram mais de 570 mm em 24 h; no Brasil, mais de 2.300 mm (soma dos pluviômetros, não chuva média; 3 sensores fora do padrão descartados).
+Fontes: MetSul, INPE, CEMADEN, INMET, NOAA (GOES-19 via NASA GIBS), Open-Meteo.

@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quarta, vinte e um de outubro. Geada no Sul, alerta de tempestade em mais de duas mil e oitocentas cidades amanhã e até trezentos milímetros de chuva previstos no Paraná.",
+  "legenda": "Quarta, 21 de outubro. Geada no Sul, alerta de tempestade em mais de 2.800 cidades amanhã e até 300 milímetros de chuva previstos no Paraná."
+ },
+ {
+  "id": "f2",
+  "fala": "Na terça, teve geada nas cidades mais altas. São Joaquim, em Santa Catarina, marcou zero vírgula três grau. Soledade, no Rio Grande do Sul, dois graus.",
+  "legenda": "Na terça, teve geada nas cidades mais altas. São Joaquim, em Santa Catarina, marcou 0,3 grau. Soledade, no Rio Grande do Sul, 2 graus."
+ },
+ {
+  "id": "f3",
+  "fala": "O satélite de referência do INPE contou trezentos e noventa e nove focos de fogo no Brasil na terça. Cento e seis no Pará.",
+  "legenda": "O satélite de referência do INPE contou 399 focos de fogo no Brasil na terça. 106 no Pará."
+ },
+ {
+  "id": "f4",
+  "fala": "Em vinte e quatro horas, Santana do Araguaia, no Pará, marcou sessenta e nove milímetros. Santa Maria da Vitória, na Bahia, cinquenta e seis milímetros.",
+  "legenda": "Em 24 horas, Santana do Araguaia, no Pará, marcou 69 milímetros. Santa Maria da Vitória, na Bahia, 56 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "E hoje? Alerta amarelo de tempestade com granizo em seiscentas e vinte e três cidades do Sul, de Mato Grosso do Sul e de São Paulo.",
+  "legenda": "E hoje? Alerta amarelo de tempestade com granizo em 623 cidades do Sul, de Mato Grosso do Sul e de São Paulo."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã, o alerta chega a duas mil oitocentas e cinquenta e três cidades. E a MetSul avisa: o Paraná pode ter até trezentos milímetros nos próximos dias, com risco de enchente.",
+  "legenda": "Amanhã, o alerta chega a 2.853 cidades. E a MetSul avisa: o Paraná pode ter até 300 milímetros nos próximos dias, com risco de enchente."
+ },
+ {
+  "id": "f7",
+  "fala": "Os próximos sete dias: o domingo, dia vinte e cinco, deve ser o mais chuvoso nas capitais. O Sul deve acumular mais; Curitiba, mais de cento e quarenta milímetros. Teresina deve passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: o domingo, dia 25, deve ser o mais chuvoso nas capitais. O Sul deve acumular mais; Curitiba, mais de 140 milímetros. Teresina deve passar dos 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Volumes somados: os pluviômetros da Bahia juntaram mais de quinhentos e setenta milímetros; o Brasil, mais de dois mil e trezentos. Em sete dias, as capitais devem somar mais de seiscentos e setenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros da Bahia juntaram mais de 570 milímetros; o Brasil, mais de 2.300. Em 7 dias, as capitais devem somar mais de 670 milímetros."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
