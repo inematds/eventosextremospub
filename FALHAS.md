@@ -1,8 +1,10 @@
+| 2026-10-21 | fim-mundo-1960: build --strict reprovou 17 trechos >2 s parados (capítulos abriam 3–4 s sem troca) | sub_at do capítulo em ~1 s + 1 cinética/ponto por trecho; rodar build --strict ANTES de soltar a cadeia | prompt |
 | 2026-10-18 | Geração de copiacola sem close e gratis com personagens extras | Regenerar com enquadramento e exclusões explícitas | prompt |
 # Falhas
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-10-20 | Previsão do Dia: `sat/web/mundo.jpg` (fundo Blue Marble que o gerar_cena do modelo usa) não vem na coleta; copiado à mão da edição de 19/10 | a coleta do satélite (ou o rodar.sh ao copiar o modelo) copiar `sat/web/mundo.jpg` da edição modelo quando faltar | infra |
 | 2026-10-19 | O reenvio `-b` do Draft (linha abaixo) brigaria com o Nei gerando o rascunho à mão (2 avatares) | Draft → alerta vermelho no v3 com o nome (heygen-studio.mjs + wifi/heygen-aviso/rascunho.py) e o avatar.sh espera o MESMO id sair do Draft (até 3 h) | infra |
 | 2026-10-19 | Clima 24h (refeito 12:20): card do estúdio HeyGen ficou Draft de novo e saiu só a versão mapa — a correção anotada em 17/10 nunca tinha entrado no avatar.sh | `auto/avatar.sh`: com "ficou Draft", reenvia 1× com título `<título>-b` | infra |
 | 2026-10-19 | Refazendo o Clima 24h às 12:16, um quadro do GIBS passou de 120 s (TimeoutError) e derrubou a coleta inteira | `satelite_gibs.py`: até 4 tentativas por quadro, timeout 180 s, pausa de 10 s (no Clima do DIA, 3×120 s ainda não bastou: GIBS a ~60 s por quadro) | infra |

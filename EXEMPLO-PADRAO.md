@@ -29,6 +29,9 @@ Caso real completo: `~/projetos/output/explica-fim-mundo-1960/` (21/10/2026; `ES
 ## 4. Visual, montagem, QA
 - `visual/gerar_visual.py` (16:9) e `… v` (9:16): cada tópico abre com `capitulo` (imagem + "PARTE n"), todo número vira
   `bignum`/`colunas`/`ranking`/`barra`, cinética nas frases fortes. `refazvideo/ferramentas/validar_visual.py` → OK.
+- Viral = nunca > 2 s sem troca: o `capitulo` só tem `sub_at` (pôr em ~1 s) e a próxima peça ≤ 2 s depois; cada frase longa
+  ganha ponto/palavra nova. **Rodar `build_block.py 1 --strict` nos dois formatos ANTES de soltar a cadeia** (21/10: reprovou 17 trechos
+  só depois de 2 h esperando o avatar).
 - `cadeia.sh` (systemd-run): baixa avatar → v1 → v2 16:9 e 9:16 `--strict` → `som_viral.py --sem-efeitos` → `qa_viral.py` → 720p.
 - Olhar `v2*/verification/sheet-viral-*.jpg` antes de publicar.
 
