@@ -22,7 +22,7 @@ const browser = await chromium.launch({ args: (process.env.GL || '--use-angle=vu
 const largo = fs.readFileSync(path.resolve(pasta, 'cena.js'), 'utf8').includes('"layout": "largo"');
 const page = await browser.newPage({ viewport: largo ? { width: 1920, height: 1080 } : { width: 1080, height: 1920 } });
 page.on('pageerror', e => console.error('pageerror', e.message));
-await page.goto('file://' + tmp);
+await page.goto('file://' + tmp, { timeout: 180000 });  // 30 s padrão estourou com a máquina cheia (21/10/2026)
 await page.waitForFunction(() => window.pronto && window.render, null, { timeout: 60000 });
 await page.evaluate(() => window.pronto);
 const dur = Number(opt('--dur') || await page.evaluate(() => window.CENA.duracao));

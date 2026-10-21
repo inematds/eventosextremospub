@@ -1,3 +1,4 @@
+| 2026-10-21 | Previsão do dia saiu sem avatar: o avatar veio do HeyGen, mas o render do mapa estourou page.goto 30 s (máquina cheia) e caiu na versão mapa | timeout do page.goto 180 s em motor/render.mjs | infra |
 | 2026-10-21 | fim-mundo-1960: render reprovou no hyperframes check (título longo sobre a legenda; % da barra sobre o rótulo "parte") | título de foto ≤ 4 palavras; barra sem "parte"; rodar `npx hyperframes check` em final/pt-b01 antes da cadeia | prompt |
 | 2026-10-21 | fim-mundo-1960: build --strict reprovou 17 trechos >2 s parados (capítulos abriam 3–4 s sem troca) | sub_at do capítulo em ~1 s + 1 cinética/ponto por trecho; rodar build --strict ANTES de soltar a cadeia | prompt |
 | 2026-10-18 | Geração de copiacola sem close e gratis com personagens extras | Regenerar com enquadramento e exclusões explícitas | prompt |
