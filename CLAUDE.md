@@ -2,6 +2,8 @@
 
 Conta/autor: `inematds <inematds@gmail.com>`.
 
+- **Vídeo avulso (16:9 explicativo + 9:16) → siga [EXEMPLO-PADRAO.md](EXEMPLO-PADRAO.md)** antes de começar (motor, imagens Codex primeiro, publicação). Pedido do Nei, 21/10/2026: "tem ter exemplo default em cada projeto para não dar estes erros".
+
 - Fluxo e regras: README.md. Fontes de clima: fontes-clima.md. APIs de clima gratuitas liberadas pelo Nei em 09/10/2026 (GIBS, Open-Meteo, INMET, CPTEC, CEMADEN, NOAA); qualquer outra API (modelos de IA, serviços pagos) precisa de autorização.
 - Avatar do Nei pelo ESTÚDIO HeyGen (assinatura) está SEMPRE liberado, sem pedir ok (Nei, 12/10/2026: "avatar no estudio nao gasta assinatura entao ta liberado sempre"); nunca pela API. O clima 24h diário sai pronto sem aprovação (avatar incluso), vai ao bot v3 e é publicado no lives10 (10/10/2026).
 - Clima 24h diário automático: timer `clima24h-diario.timer` (05:30) → `auto/rodar.sh` (coleta → `claude -p` com `auto/roteiro.md` → `auto/avatar.sh` → lives10 + bot v3 → git). Log em `edicoes/<dia>-ultimas-24h/rodada.log`; pular dia em `auto/pular.txt`; teste isolado: `ED=<pasta> SEM_AVATAR=1 SEM_YT=1 SEM_BOT=1 SEM_GIT=1 auto/rodar.sh`.
@@ -37,4 +39,5 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 - Cena com câmera inclinada ou fora do Brasil: pôr `sat.fundo` (Blue Marble do mundo, `mundo.jpg`) por baixo do geocolor, senão aparece a borda preta da imagem; quadro 0 de impacto e granizo/enchente/fogo como foto cheia do Codex em `C.telas` (com selo "ilustração"). (13/10/2026)
 - PROIBIDA a palavra morte (morte/mortos/morreu/óbito/faleceu) na fala, legenda, tela e yt.txt: usar "vítimas". Os vídeos que falaram "mortos" (Mundo 13/10, Clima 24h 15/10) tiveram pouca entrega no lives10; portão no rodar.sh e regra em todos os auto/roteiro*.md. (Nei, 15/10/2026)
 - Cortar fala de avatar/narração (`motor/cortar_avatar.py`, `motor/cortar_narracao.py`): os tempos de palavra do Whisper erram ~0,3 s e o corte comia o número vizinho ("71" virou "setembro"/"70"). Testar cada corte transcrevendo o trecho e conferir com retempo.py antes de montar. (15/10/2026)
+- Fala de narração/avatar NUNCA termina num número solto ("…somar quatrocentos e trinta e oito."): a trilha montada corta a última sílaba (saiu "780" em 16/10 e "431" em 17/10). Pôr a unidade depois ("438 milímetros") e conferir o último número de cada fala na trilha final. (17/10/2026)
 - Pausa de 1 s antes da pergunta "De que região/cidade você é?" (a pergunta saía colada no assunto): `motor/pausa_pergunta.py` roda no rodar.sh depois do avatar (`--avatar`) e nos roteiros depois do narrar.py. Vídeo montado à mão também passa por ele. (Nei, 15/10/2026)
