@@ -1,0 +1,9 @@
+Clima 24 h 22/10: alerta laranja em 678 cidades do Sul e risco de enchente no PR
+Chuva em 24 h: Manfrinópolis (PR) 38,4 mm, 20,2 mm em uma hora; Jaru (RO) 66,6 mm e Humaitá (AM) 57,2 mm (pluviômetros do CEMADEN).
+Fogo: 1.237 focos no Brasil em 21/10 no satélite de referência do INPE (AQUA); 559 no Maranhão (INPE Queimadas).
+Hoje (22/10): alerta amarelo de tempestade com granizo do INMET em 2.883 cidades de 15 estados e de baixa umidade (20% a 30%) em 684 cidades do Nordeste e do Centro.
+Sexta (23/10): alerta laranja de tempestade do INMET em 678 cidades do PR, RS, SC, MS e SP, com vento de 60 a 100 km/h e 50 a 100 mm no dia.
+MetSul (21/10): alto risco de enchente no PR, SC e SP, com 200 a 300 mm previstos em locais do Paraná nos próximos dias.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o domingo, 25/10, deve ser o mais chuvoso (191,4 mm somados), o Sudeste deve acumular mais (258,4 mm), Curitiba 122,7 mm, e Cuiabá deve chegar aos 40 °C; 792,0 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN no Paraná juntaram mais de 1.790 mm em 24 h; no Brasil, mais de 6.100 mm (soma dos pluviômetros, não chuva média; 6 sensores isolados descartados).
+Fontes: CEMADEN, INPE, INMET, MetSul, NOAA (GOES-19 via NASA GIBS), Open-Meteo.

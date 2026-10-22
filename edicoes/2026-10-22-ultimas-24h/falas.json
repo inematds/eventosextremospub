@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quinta, vinte e dois de outubro. Alerta laranja de tempestade amanhã em seiscentas e setenta e oito cidades do Sul e risco de enchente no Paraná.",
+  "legenda": "Quinta, 22 de outubro. Alerta laranja de tempestade amanhã em 678 cidades do Sul e risco de enchente no Paraná."
+ },
+ {
+  "id": "f2",
+  "fala": "A chuva voltou ao Paraná. Em Manfrinópolis, o pluviômetro marcou trinta e oito milímetros, vinte deles em uma hora.",
+  "legenda": "A chuva voltou ao Paraná. Em Manfrinópolis, o pluviômetro marcou 38 milímetros, 20 deles em uma hora."
+ },
+ {
+  "id": "f3",
+  "fala": "Jaru, em Rondônia, marcou sessenta e seis milímetros em vinte e quatro horas. Humaitá, no Amazonas, cinquenta e sete milímetros.",
+  "legenda": "Jaru, em Rondônia, marcou 66 milímetros em 24 horas. Humaitá, no Amazonas, 57 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "O satélite de referência do INPE contou mil duzentos e trinta e sete focos de fogo na quarta. Quinhentos e cinquenta e nove no Maranhão.",
+  "legenda": "O satélite de referência do INPE contou 1.237 focos de fogo na quarta. 559 no Maranhão."
+ },
+ {
+  "id": "f5",
+  "fala": "E hoje? Alerta amarelo de tempestade com granizo em duas mil oitocentas e oitenta e três cidades de quinze estados.",
+  "legenda": "E hoje? Alerta amarelo de tempestade com granizo em 2.883 cidades de 15 estados."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã, o alerta sobe para laranja no Sul, com vento de até cem quilômetros por hora. A MetSul avisa: o Paraná pode ter até trezentos milímetros, com risco de enchente.",
+  "legenda": "Amanhã, o alerta sobe para laranja no Sul, com vento de até 100 km/h. A MetSul avisa: o Paraná pode ter até 300 milímetros, com risco de enchente."
+ },
+ {
+  "id": "f7",
+  "fala": "Os próximos sete dias: o domingo, vinte e cinco, deve ser o mais chuvoso nas capitais. O Sudeste deve acumular mais; Curitiba, mais de cento e vinte milímetros. Cuiabá deve chegar aos quarenta graus.",
+  "legenda": "Os próximos 7 dias: o domingo, 25, deve ser o mais chuvoso nas capitais. O Sudeste deve acumular mais; Curitiba, mais de 120 milímetros. Cuiabá deve chegar aos 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Volumes somados: os pluviômetros do Paraná juntaram mais de mil setecentos e noventa milímetros; o Brasil, mais de seis mil e cem. Em sete dias, as capitais devem somar mais de setecentos e noventa milímetros.",
+  "legenda": "Volumes somados: os pluviômetros do Paraná juntaram mais de 1.790 milímetros; o Brasil, mais de 6.100. Em 7 dias, as capitais devem somar mais de 790 milímetros."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
