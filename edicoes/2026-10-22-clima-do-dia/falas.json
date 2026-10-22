@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Quinta-feira, vinte e dois de outubro. Já caiu granizo no Paraná e em Santa Catarina, e até domingo pode chover duzentos milímetros no Sul.", "legenda": "Quinta-feira, 22 de outubro. Já caiu granizo no Paraná e em Santa Catarina, e até domingo pode chover 200 milímetros no Sul."},
+  {"id": "f2", "fala": "A chuva com trovoada vem do Paraguai e da Argentina e cobre o Sul, São Paulo, o sul de Minas e o Rio.", "legenda": "A chuva com trovoada vem do Paraguai e da Argentina e cobre o Sul, São Paulo, o sul de Minas e o Rio."},
+  {"id": "f3", "fala": "O INMET tem aviso de tempestade hoje nas seiscentas e quarenta e cinco cidades de São Paulo, e em duas mil setecentas e sessenta e duas no país.", "legenda": "O INMET tem aviso de tempestade hoje nas 645 cidades de São Paulo, e em 2.762 no país."},
+  {"id": "f4", "fala": "No oeste do Amazonas e no Acre a chuva é forte, mas quase todo o Nordeste segue seco.", "legenda": "No oeste do Amazonas e no Acre a chuva é forte, mas quase todo o Nordeste segue seco."},
+  {"id": "f5", "fala": "O calor pode chegar a quarenta graus em Teresina hoje, e na sexta-feira passar de quarenta e dois graus no Piauí.", "legenda": "O calor pode chegar a 40 graus em Teresina hoje, e na sexta-feira passar de 42 graus no Piauí."},
+  {"id": "f6", "fala": "Na sexta, a chuva forte pega Curitiba, Joinville, Chapecó e Passo Fundo, com risco de granizo.", "legenda": "Na sexta, a chuva forte pega Curitiba, Joinville, Chapecó e Passo Fundo, com risco de granizo."},
+  {"id": "f7", "fala": "No sábado, pontos do Paraná e de Santa Catarina podem passar de cem milímetros, e o aviso laranja pega oitocentas e trinta e cinco cidades.", "legenda": "No sábado, pontos do Paraná e de Santa Catarina podem passar de 100 milímetros, e o aviso laranja pega 835 cidades."},
+  {"id": "f8", "fala": "Até domingo, Guarapuava deve receber cento e cinquenta milímetros, e Chapecó e Joinville, mais de cem milímetros.", "legenda": "Até domingo, Guarapuava deve receber 150 milímetros, e Chapecó e Joinville, mais de 100 milímetros."},
+  {"id": "f9", "fala": "No domingo, dia de eleição, pode chover forte na Grande São Paulo e no litoral paulista.", "legenda": "No domingo, dia de eleição, pode chover forte na Grande São Paulo e no litoral paulista."},
+  {"id": "f10", "fala": "Depois esfria: na terça-feira, São Paulo pode amanhecer com onze graus, e pode gear na Serra Catarinense.", "legenda": "Depois esfria: na terça-feira, São Paulo pode amanhecer com 11 graus, e pode gear na Serra Catarinense."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
