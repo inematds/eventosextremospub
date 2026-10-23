@@ -1,0 +1,8 @@
+Clima 24 h 23/10: alerta laranja em 590 cidades do Sul e 1.260 focos no Pará
+Chuva em 24 h: Guarapuava (PR) 59,6 mm; Coronel Vivida (PR) 54,4 mm, 16,8 mm em uma hora; Senador Canedo (GO) 49,2 mm (pluviômetros do CEMADEN).
+Fogo: 1.933 focos no Brasil em 22/10 no satélite de referência do INPE (AQUA); 1.260 no Pará, 149 só em Portel (INPE Queimadas).
+Hoje (23/10): alerta laranja de tempestade do INMET em 590 cidades do PR, RS, SC, MS e SP, com vento de 60 a 100 km/h, 50 a 100 mm no dia e granizo; amarelo em 2.746 cidades de 10 estados.
+Sábado (24/10): o laranja sobe para 835 cidades (PR, SP, SC, RS, RJ e MG); o INMET prevê um ciclone extratropical entre o litoral do RS e o Uruguai, com frente fria.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o domingo, 25/10, deve ser o mais chuvoso (176,7 mm somados), o Sudeste deve acumular mais (189,0 mm), Florianópolis 81,7 mm, e Teresina deve chegar perto dos 40 °C; 757,8 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN no Paraná juntaram mais de 3.480 mm em 24 h; no Brasil, mais de 12.600 mm (soma dos pluviômetros, não chuva média; 5 sensores isolados descartados).
+Fontes: CEMADEN, INPE, INMET, NOAA (GOES-19 via NASA GIBS), Open-Meteo.

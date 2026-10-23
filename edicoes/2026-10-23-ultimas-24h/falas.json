@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sexta, vinte e três de outubro. Alerta laranja de tempestade hoje em quinhentas e noventa cidades do Sul, e o Pará com mil duzentos e sessenta focos de fogo.",
+  "legenda": "Sexta, 23 de outubro. Alerta laranja de tempestade hoje em 590 cidades do Sul, e o Pará com 1.260 focos de fogo."
+ },
+ {
+  "id": "f2",
+  "fala": "Chuva forte no Paraná: Guarapuava marcou cinquenta e nove milímetros; Coronel Vivida, cinquenta e quatro, dezesseis em uma hora.",
+  "legenda": "Chuva forte no Paraná: Guarapuava marcou 59 milímetros; Coronel Vivida, 54, 16 em uma hora."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Goiás, Senador Canedo, na Grande Goiânia, marcou quarenta e nove milímetros.",
+  "legenda": "Em Goiás, Senador Canedo, na Grande Goiânia, marcou 49 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "O satélite de referência do INPE contou mil novecentos e trinta e três focos na quinta. Só Portel, no Pará, teve cento e quarenta e nove focos.",
+  "legenda": "O satélite de referência do INPE contou 1.933 focos na quinta. Só Portel, no Pará, teve 149 focos."
+ },
+ {
+  "id": "f5",
+  "fala": "E hoje? Laranja de tempestade em quinhentas e noventa cidades, com vento de até cem quilômetros por hora e granizo.",
+  "legenda": "E hoje? Laranja de tempestade em 590 cidades, com vento de até 100 km/h e granizo."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã, o laranja sobe para oitocentas e trinta e cinco cidades e chega a São Paulo. O INMET prevê um ciclone entre o Rio Grande do Sul e o Uruguai, com frente fria.",
+  "legenda": "Amanhã, o laranja sobe para 835 cidades e chega a São Paulo. O INMET prevê um ciclone entre o Rio Grande do Sul e o Uruguai, com frente fria."
+ },
+ {
+  "id": "f7",
+  "fala": "Os próximos sete dias: o domingo deve ser o mais chuvoso nas capitais, e o Sudeste deve acumular mais. Teresina deve chegar perto dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: o domingo deve ser o mais chuvoso nas capitais, e o Sudeste deve acumular mais. Teresina deve chegar perto dos 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Volumes somados: os pluviômetros do Paraná juntaram mais de três mil e quatrocentos milímetros; o Brasil, mais de doze mil e seiscentos. Em sete dias, as capitais devem somar mais de setecentos e cinquenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros do Paraná juntaram mais de 3.400 milímetros; o Brasil, mais de 12.600. Em 7 dias, as capitais devem somar mais de 750 milímetros."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
