@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Sexta-feira, vinte e três de outubro. O INMET colocou aviso vermelho de tempestade para sábado em trezentas e vinte e cinco cidades do Sul.", "legenda": "Sexta-feira, 23 de outubro. O INMET colocou aviso vermelho de tempestade para sábado em 325 cidades do Sul."},
+  {"id": "f2", "fala": "Hoje cedo já caiu granizo no sudoeste do Paraná, e alguns pontos do Sul já somam cinquenta milímetros de chuva.", "legenda": "Hoje cedo já caiu granizo no sudoeste do Paraná, e alguns pontos do Sul já somam 50 milímetros de chuva."},
+  {"id": "f3", "fala": "Uma linha forte de instabilidade vai do Paraguai até São Paulo, com trovoada, granizo e vento.", "legenda": "Uma linha forte de instabilidade vai do Paraguai até São Paulo, com trovoada, granizo e vento."},
+  {"id": "f4", "fala": "O aviso de tempestade de hoje pega setecentas e quarenta e uma cidades de Minas, e duas mil novecentas e onze no país.", "legenda": "O aviso de tempestade de hoje pega 741 cidades de Minas, e 2.911 no país."},
+  {"id": "f5", "fala": "No Norte e no Nordeste quase não chove, só pancadas no Amazonas, em Rondônia e no litoral nordestino.", "legenda": "No Norte e no Nordeste quase não chove, só pancadas no Amazonas, em Rondônia e no litoral nordestino."},
+  {"id": "f6", "fala": "O calor fica entre trinta e quatro e trinta e oito graus no Centro-Oeste, e Teresina pode chegar a quarenta graus hoje.", "legenda": "O calor fica entre 34 e 38 graus no Centro-Oeste, e Teresina pode chegar a 40 graus hoje."},
+  {"id": "f7", "fala": "No sábado a chuva aumenta no Sul: de cinquenta a cem milímetros no Paraná, em Santa Catarina e no norte do Rio Grande do Sul.", "legenda": "No sábado a chuva aumenta no Sul: de 50 a 100 milímetros no Paraná, em Santa Catarina e no norte do Rio Grande do Sul."},
+  {"id": "f8", "fala": "Atenção nos vales do Iguaçu, do Itajaí, do Rio do Peixe e do Uruguai: há risco de alagamento, granizo e vento.", "legenda": "Atenção nos vales do Iguaçu, do Itajaí, do Rio do Peixe e do Uruguai: há risco de alagamento, granizo e vento."},
+  {"id": "f9", "fala": "No domingo, dia de eleição, a chuva diminui no Sul, mas pode chover forte em São Paulo, incluindo a capital.", "legenda": "No domingo, dia de eleição, a chuva diminui no Sul, mas pode chover forte em São Paulo, incluindo a capital."},
+  {"id": "f10", "fala": "Na segunda entra uma massa de ar frio: São Joaquim pode ter quatro graus, e na terça pode gear na serra.", "legenda": "Na segunda entra uma massa de ar frio: São Joaquim pode ter 4 graus, e na terça pode gear na serra."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
