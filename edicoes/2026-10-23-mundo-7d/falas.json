@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Vinte e três de outubro de dois mil e vinte e seis. O tufão Champi atinge Taiwan com trezentos e cinquenta feridos, e a tempestade Austen deixa quase trezentas mil casas sem luz na França.",
+  "legenda": "23 de outubro de 2026. O tufão Champi atinge Taiwan com 350 feridos, e a tempestade Austen deixa quase 300 mil casas sem luz na França."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Taiwan, nesta sexta, o Champi deixou uma vítima e trezentos e cinquenta feridos; novecentos e setenta e sete voos cancelados, e ondas de seis metros jogaram um guindaste no mar.",
+  "legenda": "Em Taiwan, nesta sexta, o Champi deixou 1 vítima e 350 feridos; 977 voos cancelados, e ondas de 6 metros jogaram um guindaste no mar."
+ },
+ {
+  "id": "f3",
+  "fala": "Na China, o terremoto de magnitude sete no Tibete, na quinta à noite, deixou dezesseis vítimas e setenta e seis feridos; trezentas e trinta e nove casas desabaram.",
+  "legenda": "Na China, o terremoto de magnitude 7 no Tibete, na quinta à noite, deixou 16 vítimas e 76 feridos; 339 casas desabaram."
+ },
+ {
+  "id": "f4",
+  "fala": "Na França, nesta sexta, a tempestade Austen cortou a luz de quase trezentas mil casas, a maioria na Bretanha e na Normandia, onde os trens pararam.",
+  "legenda": "Na França, nesta sexta, a tempestade Austen cortou a luz de quase 300 mil casas, a maioria na Bretanha e na Normandia, onde os trens pararam."
+ },
+ {
+  "id": "f5",
+  "fala": "No sul, a tempestade Adam, desde terça, soma pelo menos quatro vítimas, com água em níveis nunca vistos perto de Marselha.",
+  "legenda": "No sul, a tempestade Adam, desde terça, soma pelo menos 4 vítimas, com água em níveis nunca vistos perto de Marselha."
+ },
+ {
+  "id": "f6",
+  "fala": "Na Tailândia, a enchente desde setembro ainda atinge mais de um milhão e cem mil pessoas, em dezesseis províncias e em Bangkok.",
+  "legenda": "Na Tailândia, a enchente desde setembro ainda atinge mais de 1,1 milhão de pessoas, em 16 províncias e em Bangkok."
+ },
+ {
+  "id": "f7",
+  "fala": "E agora? O Champi segue para o sul do Japão neste sábado, com até novecentos milímetros de chuva somada nas montanhas do norte de Taiwan.",
+  "legenda": "E agora? O Champi segue para o sul do Japão neste sábado, com até 900 milímetros de chuva somada nas montanhas do norte de Taiwan."
+ },
+ {
+  "id": "f8",
+  "fala": "No Pacífico, o Vance pode virar grande furacão nesta noite, e o México deve ter ondas perigosas no fim de semana.",
+  "legenda": "No Pacífico, o Vance pode virar grande furacão nesta noite, e o México deve ter ondas perigosas no fim de semana."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
