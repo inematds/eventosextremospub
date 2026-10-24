@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sábado, vinte e quatro de outubro. Alerta vermelho de tempestade hoje em trezentas e vinte e cinco cidades do Sul, e Barracão, no Paraná, com mais de cem milímetros.",
+  "legenda": "Sábado, 24 de outubro. Alerta vermelho de tempestade hoje em 325 cidades do Sul, e Barracão, no Paraná, com mais de 100 milímetros."
+ },
+ {
+  "id": "f2",
+  "fala": "No sudoeste do Paraná, Barracão marcou cento e três milímetros, vinte e cinco numa só hora.",
+  "legenda": "No sudoeste do Paraná, Barracão marcou 103 milímetros, 25 numa só hora."
+ },
+ {
+  "id": "f3",
+  "fala": "Foz do Iguaçu teve rajada de mais de sessenta e seis quilômetros por hora.",
+  "legenda": "Foz do Iguaçu teve rajada de mais de 66 km/h."
+ },
+ {
+  "id": "f4",
+  "fala": "No Nordeste, Teresina chegou a trinta e nove graus, com umidade de vinte e três por cento.",
+  "legenda": "No Nordeste, Teresina chegou a 39 graus, com umidade de 23%."
+ },
+ {
+  "id": "f5",
+  "fala": "E hoje? O vermelho vai até as nove da noite em Santa Catarina, Paraná e Rio Grande do Sul, com vento acima de cem quilômetros por hora.",
+  "legenda": "E hoje? O vermelho vai até as 21h em Santa Catarina, Paraná e Rio Grande do Sul, com vento acima de 100 km/h."
+ },
+ {
+  "id": "f6",
+  "fala": "O laranja cobre mais novecentas e trinta e quatro cidades. O INMET prevê um novo ciclone na costa, com frente fria.",
+  "legenda": "O laranja cobre mais 934 cidades. O INMET prevê um novo ciclone na costa, com frente fria."
+ },
+ {
+  "id": "f7",
+  "fala": "Amanhã, domingo de eleição, São Paulo não deve passar dos vinte e um graus.",
+  "legenda": "Amanhã, domingo de eleição, São Paulo não deve passar dos 21 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: domingo e a próxima sexta devem ser os mais chuvosos, e o Sudeste deve acumular mais. Cuiabá deve passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: domingo e a próxima sexta devem ser os mais chuvosos, e o Sudeste deve acumular mais. Cuiabá deve passar dos 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros do Paraná juntaram mais de dois mil e setecentos milímetros; o Brasil, mais de catorze mil e quinhentos. Em sete dias, as capitais devem somar mais de novecentos e cinquenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros do Paraná juntaram mais de 2.700 milímetros; o Brasil, mais de 14.500. Em 7 dias, as capitais devem somar mais de 950 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

@@ -1,0 +1,8 @@
+Clima 24 h 24/10: alerta vermelho em 325 cidades do Sul e 103 mm no Paraná
+Hoje (24/10): aviso VERMELHO de tempestade do INMET (grande perigo) das 6h às 21h em 325 cidades de SC, PR e RS, com vento acima de 100 km/h, mais de 100 mm no dia e granizo; laranja em mais 934 cidades (PR, SC, SP e RS).
+Chuva em 24 h: Barracão (PR) 103,6 mm, 25,6 mm em uma hora; Santo Antônio do Sudoeste (PR) 94,6 mm (pluviômetros do CEMADEN).
+Vento e calor: rajada de 66,7 km/h no aeroporto de Foz do Iguaçu; Teresina chegou a 39 °C com umidade de 23% (METAR, NOAA); alerta de baixa umidade em 600 cidades do Nordeste.
+Previsão do INMET: novo ciclone extratropical na costa do Sul com frente fria; no domingo de eleição (25/10), chuva no Sudeste, amarelo de tempestade em 2.383 cidades e máxima de 21 °C em São Paulo.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): domingo 25/10 e sexta 30/10 devem ser os mais chuvosos, o Sudeste deve acumular mais (318,0 mm) e Cuiabá deve passar dos 40 °C; 959,8 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN no Paraná juntaram mais de 2.700 mm em 24 h; no Brasil, mais de 14.500 mm (soma dos pluviômetros, não chuva média; 4 sensores isolados descartados).
+Fontes: INMET, CEMADEN, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
