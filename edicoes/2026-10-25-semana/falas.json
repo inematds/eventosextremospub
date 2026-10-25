@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Domingo, vinte e cinco de outubro. Previsão da semana: a chuva volta forte. Até cento e vinte e cinco milímetros em Mato Grosso. E quarenta graus no Piauí. A chuva vai chegar na sua cidade?",
+  "legenda": "Domingo, 25 de outubro. Previsão da semana: a chuva volta forte. Até 125 milímetros em Mato Grosso. E 40 graus no Piauí. A chuva vai chegar na sua cidade?"
+ },
+ {
+  "id": "f2",
+  "fala": "No oeste de Mato Grosso, a chuva entra na terça. Na quarta, sessenta e cinco milímetros. Cuiabá pode somar cinquenta e três milímetros.",
+  "legenda": "No oeste de Mato Grosso, a chuva entra na terça. Na quarta, 65 milímetros. Cuiabá pode somar 53 milímetros."
+ },
+ {
+  "id": "f3",
+  "fala": "No Sudeste, a chuva aperta na sexta e no sábado. No norte do Rio de Janeiro, até cento e vinte e quatro milímetros.",
+  "legenda": "No Sudeste, a chuva aperta na sexta e no sábado. No norte do Rio de Janeiro, até 124 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "Na Zona da Mata de Minas, cento e onze milímetros, cinquenta só na sexta. Belo Horizonte pode somar oitenta e dois milímetros.",
+  "legenda": "Na Zona da Mata de Minas, 111 milímetros, 50 só na sexta. Belo Horizonte pode somar 82 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "E o vento. Na segunda, a rajada pode chegar a setenta e dois quilômetros por hora no Rio de Janeiro.",
+  "legenda": "E o vento. Na segunda, a rajada pode chegar a 72 km/h no Rio de Janeiro."
+ },
+ {
+  "id": "f6",
+  "fala": "No interior do Piauí, quase sem chuva. Na terça e na quarta, pode chegar a quarenta graus.",
+  "legenda": "No interior do Piauí, quase sem chuva. Na terça e na quarta, pode chegar a 40 graus."
+ },
+ {
+  "id": "f7",
+  "fala": "No Sul, a semana começa fresca e seca. Na terça, o oeste de Santa Catarina pode ter seis graus.",
+  "legenda": "No Sul, a semana começa fresca e seca. Na terça, o oeste de Santa Catarina pode ter 6 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "O INMET tem alerta laranja de tempestade nesta segunda. São oitocentas e noventa cidades, a maioria em São Paulo.",
+  "legenda": "O INMET tem alerta laranja de tempestade nesta segunda. São 890 cidades, a maioria em São Paulo."
+ },
+ {
+  "id": "f9",
+  "fala": "E nos próximos quinze dias? A tendência é a chuva voltar ao Sul e crescer em São Paulo e Mato Grosso do Sul.",
+  "legenda": "E nos próximos 15 dias? A tendência é a chuva voltar ao Sul e crescer em São Paulo e Mato Grosso do Sul."
+ },
+ {
+  "id": "f10",
+  "fala": "No norte de São Paulo, pode passar de cento e setenta milímetros. Curitiba, setenta e cinco milímetros. Mas é tendência: pode mudar.",
+  "legenda": "No norte de São Paulo, pode passar de 170 milímetros. Curitiba, 75 milímetros. Mas é tendência: pode mudar."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

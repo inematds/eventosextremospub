@@ -1,0 +1,8 @@
+Previsão da semana 25/10: até 125 mm em Mato Grosso e 40 °C no Piauí
+Semana de 26/10 a 01/11 (previsto, Open-Meteo lido em 25/10/2026): a chuva volta forte no Centro-Oeste e no Sudeste.
+Oeste de Mato Grosso: até 125 mm na semana, 65,7 mm só na quarta; Cuiabá 53 mm. Norte do Rio de Janeiro: 124,7 mm, com 41 mm na sexta e 41 no sábado.
+Zona da Mata mineira: 111,1 mm (50,7 na sexta); Belo Horizonte 82,6 mm. Rajada de 72 km/h no Rio de Janeiro na segunda.
+Calor: 40,8 °C no interior do Piauí na terça e na quarta, quase sem chuva. Frio: mínima de 6,3 °C no oeste de Santa Catarina na terça.
+INMET: alerta laranja de tempestade na segunda (26/10) até 12h em 890 cidades, 453 delas em São Paulo.
+Dias 8 a 15 (02 a 09/11) são TENDÊNCIA e podem mudar: a chuva volta ao Sul e cresce em São Paulo e Mato Grosso do Sul; norte de SP pode passar de 170 mm (171,1 no modelo), Curitiba 75,8 mm.
+Fontes: Open-Meteo (previsão de 16 dias, grade de 1,5° e capitais), INMET (avisos), satélite GOES-19 (NOAA) via NASA GIBS no fundo do mapa.
