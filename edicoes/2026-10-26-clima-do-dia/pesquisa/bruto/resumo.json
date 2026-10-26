@@ -1,0 +1,3068 @@
+{
+ "janela_utc": [
+  "2026-10-25T15:30:24.606545+00:00",
+  "2026-10-26T15:30:24.606545+00:00"
+ ],
+ "coletado_utc": "2026-10-26T15:30:24.606557+00:00",
+ "falhas": [
+  {
+   "fonte": "inmet_estacoes",
+   "erro": "RuntimeError(\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\")",
+   "trace": "Traceback (most recent call last):\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 42, in deco\n    R[nome] = f()\n              ^^^\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 85, in _\n    raise RuntimeError(f\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: {len(tent)} pedidos, todos sem dados \"\nRuntimeError: apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\n"
+  },
+  {
+   "fonte": "noaa_metar",
+   "erro": "<HTTPError 504: 'Gateway Time-out'>",
+   "trace": "^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 630, in http_response\n    response = self.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 559, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 639, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 504: Gateway Time-out\n"
+  }
+ ],
+ "inmet_avisos": {
+  "hoje": {
+   "n": 2,
+   "por_tipo_sev": [
+    [
+     "Tempestade",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Baixa Umidade",
+     "Perigo Potencial",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AL",
+     "AM",
+     "BA",
+     "CE",
+     "DF",
+     "ES",
+     "GO",
+     "MA",
+     "MG",
+     "MT",
+     "PA",
+     "PB",
+     "PE",
+     "PI",
+     "RJ",
+     "RN",
+     "RO",
+     "RR",
+     "SE",
+     "TO"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56192,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-26 08:33",
+     "fim": "2026-10-26 23:59",
+     "municipios": 1608,
+     "ufs": {
+      "GO": 193,
+      "MG": 608,
+      "BA": 263,
+      "PA": 50,
+      "TO": 139,
+      "MA": 47,
+      "ES": 78,
+      "MT": 69,
+      "RR": 6,
+      "AM": 51,
+      "PI": 64,
+      "RJ": 33,
+      "DF": 1,
+      "RO": 6
+     }
+    },
+    {
+     "id": 56176,
+     "desc": "Baixa Umidade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-26 10:00",
+     "fim": "2026-10-26 17:00",
+     "municipios": 355,
+     "ufs": {
+      "CE": 69,
+      "BA": 13,
+      "PI": 30,
+      "PE": 67,
+      "AL": 20,
+      "PB": 109,
+      "RN": 44,
+      "SE": 3
+     }
+    }
+   ]
+  },
+  "futuro": {
+   "n": 5,
+   "por_tipo_sev": [
+    [
+     "Tempestade",
+     "Perigo Potencial",
+     4
+    ],
+    [
+     "Acumulado de Chuva",
+     "Perigo Potencial",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AC",
+     "AM",
+     "BA",
+     "DF",
+     "ES",
+     "GO",
+     "MA",
+     "MG",
+     "MS",
+     "MT",
+     "PA",
+     "PE",
+     "PI",
+     "PR",
+     "RJ",
+     "RO",
+     "RS",
+     "SC",
+     "SP",
+     "TO"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56191,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-27 00:01",
+     "fim": "2026-10-27 23:59",
+     "municipios": 36,
+     "ufs": {
+      "AC": 22,
+      "AM": 13,
+      "RO": 1
+     }
+    },
+    {
+     "id": 56194,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-28 00:01",
+     "fim": "2026-10-28 23:59",
+     "municipios": 1246,
+     "ufs": {
+      "GO": 246,
+      "MG": 89,
+      "TO": 131,
+      "MT": 141,
+      "AC": 14,
+      "SP": 334,
+      "PE": 1,
+      "PA": 29,
+      "MS": 30,
+      "RO": 52,
+      "MA": 32,
+      "PI": 74,
+      "BA": 64,
+      "AM": 8,
+      "DF": 1
+     }
+    },
+    {
+     "id": 56190,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-27 00:01",
+     "fim": "2026-10-27 23:59",
+     "municipios": 1022,
+     "ufs": {
+      "GO": 145,
+      "BA": 349,
+      "TO": 105,
+      "MG": 308,
+      "ES": 47,
+      "MT": 28,
+      "PA": 13,
+      "MA": 5,
+      "PI": 21,
+      "DF": 1
+     }
+    },
+    {
+     "id": 56195,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-29 00:00",
+     "fim": "2026-10-29 23:59",
+     "municipios": 2777,
+     "ufs": {
+      "GO": 246,
+      "MG": 536,
+      "PR": 399,
+      "SC": 295,
+      "TO": 99,
+      "MT": 141,
+      "AC": 22,
+      "SP": 645,
+      "MS": 79,
+      "RS": 107,
+      "RO": 52,
+      "PA": 15,
+      "AM": 37,
+      "RJ": 92,
+      "ES": 4,
+      "BA": 7,
+      "DF": 1
+     }
+    },
+    {
+     "id": 56196,
+     "desc": "Acumulado de Chuva",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-10-28 00:01",
+     "fim": "2026-10-29 23:59",
+     "municipios": 116,
+     "ufs": {
+      "BA": 116
+     }
+    }
+   ]
+  }
+ },
+ "cemaden": {
+  "estacoes_total": 5711,
+  "estacoes_recentes": 2011,
+  "erros_uf": {},
+  "top": [
+   {
+    "cidade": "Visconde Do Rio Branco",
+    "uf": "MG",
+    "estacao": "Rio Xopoto",
+    "acc24": 217.0,
+    "acc1": 9,
+    "acc3": 72,
+    "acc6": 114,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 3
+   },
+   {
+    "cidade": "Salvador",
+    "uf": "BA",
+    "estacao": "Doron",
+    "acc24": 124.8,
+    "acc1": 8.2,
+    "acc3": 24.8,
+    "acc6": 31.2,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 10
+   },
+   {
+    "cidade": "Carinhanha",
+    "uf": "BA",
+    "estacao": "G2-290710303A",
+    "acc24": 91.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Caseara",
+    "uf": "TO",
+    "estacao": "G2-170390902A",
+    "acc24": 89.2,
+    "acc1": "-",
+    "acc3": 4.6,
+    "acc6": 4.6,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Caseara",
+    "uf": "TO",
+    "estacao": "G2-170390901A",
+    "acc24": 85.2,
+    "acc1": "-",
+    "acc3": 2,
+    "acc6": 2,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Malhada",
+    "uf": "BA",
+    "estacao": "G2-292020501A",
+    "acc24": 71.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Carinhanha",
+    "uf": "BA",
+    "estacao": "G2-290710302A",
+    "acc24": 68.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Braz Do Piauí",
+    "uf": "PI",
+    "estacao": "G2-220955901A",
+    "acc24": 65.2,
+    "acc1": "-",
+    "acc3": 0.2,
+    "acc6": 4,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Petrópolis",
+    "uf": "RJ",
+    "estacao": "LNCC - Geo 2",
+    "acc24": 63.6,
+    "acc1": 6.4,
+    "acc3": 18,
+    "acc6": 38.2,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 10
+   },
+   {
+    "cidade": "Patos",
+    "uf": "PB",
+    "estacao": "Belo Horizonte",
+    "acc24": 62.6,
+    "acc1": "-",
+    "acc3": 62.6,
+    "acc6": 62.6,
+    "ultimo": "26/10/26 15:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Cristino Castro",
+    "uf": "PI",
+    "estacao": "G2-220310702A",
+    "acc24": 59.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 59.6,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Rio De Janeiro",
+    "uf": "RJ",
+    "estacao": "Alto da Boa Vista",
+    "acc24": 57.0,
+    "acc1": 2.2,
+    "acc3": 5.8,
+    "acc6": 28.8,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 1
+   },
+   {
+    "cidade": "Águas Da Prata",
+    "uf": "SP",
+    "estacao": "G2-350040202A",
+    "acc24": 56.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Engenheiro Coelho",
+    "uf": "SP",
+    "estacao": "Vila São Pedro",
+    "acc24": 54.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 3.2,
+    "ultimo": "26/10/26 15:40",
+    "tipo": 1
+   },
+   {
+    "cidade": "Carlos Chagas",
+    "uf": "MG",
+    "estacao": "Rio Urucu",
+    "acc24": 53.0,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 0.2,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 3
+   },
+   {
+    "cidade": "Petrópolis",
+    "uf": "RJ",
+    "estacao": "LNCC - Geo",
+    "acc24": 51.2,
+    "acc1": 5,
+    "acc3": 14.4,
+    "acc6": 30.8,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 10
+   },
+   {
+    "cidade": "Wanderley",
+    "uf": "BA",
+    "estacao": "G2-293345501A",
+    "acc24": 50.6,
+    "acc1": "-",
+    "acc3": 3.2,
+    "acc6": 50.6,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Parobé",
+    "uf": "RS",
+    "estacao": "G2-Laranjeiras",
+    "acc24": 49.8,
+    "acc1": 1,
+    "acc3": 5.6,
+    "acc6": 8.2,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 1
+   },
+   {
+    "cidade": "Mairiporã",
+    "uf": "SP",
+    "estacao": "Apolinário",
+    "acc24": 46.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 0.2,
+    "ultimo": "26/10/26 15:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Igrejinha",
+    "uf": "RS",
+    "estacao": "G2-Invernada",
+    "acc24": 45.6,
+    "acc1": 1,
+    "acc3": 2.8,
+    "acc6": 4.4,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Angra Dos Reis",
+    "uf": "RJ",
+    "estacao": "Itanema",
+    "acc24": 45.1,
+    "acc1": 1.19,
+    "acc3": 5.13,
+    "acc6": 11.81,
+    "ultimo": "26/10/26 15:30",
+    "tipo": 1
+   },
+   {
+    "cidade": "Três Coroas",
+    "uf": "RS",
+    "estacao": "G2-Linha Café Baixa",
+    "acc24": 44.6,
+    "acc1": 1.6,
+    "acc3": 3.8,
+    "acc6": 8.2,
+    "ultimo": "26/10/26 15:20",
+    "tipo": 1
+   },
+   {
+    "cidade": "Petrópolis",
+    "uf": "RJ",
+    "estacao": "Independência2",
+    "acc24": 43.79,
+    "acc1": 8.86,
+    "acc3": 17.5,
+    "acc6": 29.68,
+    "ultimo": "26/10/26 16:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Angra Dos Reis",
+    "uf": "RJ",
+    "estacao": "Caputera",
+    "acc24": 43.29,
+    "acc1": 1.02,
+    "acc3": 7.12,
+    "acc6": 13.46,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Canela",
+    "uf": "RS",
+    "estacao": "G2-430440801A",
+    "acc24": 40.8,
+    "acc1": "-",
+    "acc3": 1.4,
+    "acc6": 3.8,
+    "ultimo": "26/10/26 15:10",
+    "tipo": 1
+   }
+  ],
+  "max_por_uf": {
+   "MG": 217.0,
+   "BA": 124.8,
+   "TO": 89.2,
+   "PI": 65.2,
+   "RJ": 63.6,
+   "PB": 62.6,
+   "SP": 56.0,
+   "RS": 49.8,
+   "SC": 38.4,
+   "GO": 35.0,
+   "AM": 31.6,
+   "ES": 29.92,
+   "MT": 24.6,
+   "SE": 18.4,
+   "MS": 17.8,
+   "PR": 14.77,
+   "DF": 7.0,
+   "RO": 5.4,
+   "PA": 5.0,
+   "MA": 4.6,
+   "RN": 2.2,
+   "AL": 1.83,
+   "AP": 1.8,
+   "AC": 0.6,
+   "PE": 0.6,
+   "CE": 0.2
+  },
+  "soma_mm_estacoes": 14879.1,
+  "soma_por_uf": {
+   "MG": {
+    "soma_mm": 4243.6,
+    "estacoes": 565,
+    "media_mm": 7.5
+   },
+   "SP": {
+    "soma_mm": 2895.3,
+    "estacoes": 392,
+    "media_mm": 7.4
+   },
+   "RS": {
+    "soma_mm": 2294.0,
+    "estacoes": 288,
+    "media_mm": 8.0
+   },
+   "RJ": {
+    "soma_mm": 1531.9,
+    "estacoes": 178,
+    "media_mm": 8.6
+   },
+   "BA": {
+    "soma_mm": 1049.4,
+    "estacoes": 130,
+    "media_mm": 8.1
+   },
+   "ES": {
+    "soma_mm": 758.1,
+    "estacoes": 80,
+    "media_mm": 9.5
+   },
+   "SC": {
+    "soma_mm": 706.3,
+    "estacoes": 152,
+    "media_mm": 4.6
+   },
+   "AM": {
+    "soma_mm": 270.9,
+    "estacoes": 35,
+    "media_mm": 7.7
+   },
+   "GO": {
+    "soma_mm": 242.4,
+    "estacoes": 44,
+    "media_mm": 5.5
+   },
+   "PR": {
+    "soma_mm": 226.6,
+    "estacoes": 69,
+    "media_mm": 3.3
+   },
+   "TO": {
+    "soma_mm": 216.8,
+    "estacoes": 9,
+    "media_mm": 24.1
+   },
+   "PI": {
+    "soma_mm": 214.2,
+    "estacoes": 18,
+    "media_mm": 11.9
+   },
+   "PB": {
+    "soma_mm": 62.6,
+    "estacoes": 1,
+    "media_mm": 62.6
+   },
+   "MS": {
+    "soma_mm": 48.8,
+    "estacoes": 12,
+    "media_mm": 4.1
+   },
+   "MT": {
+    "soma_mm": 45.6,
+    "estacoes": 7,
+    "media_mm": 6.5
+   },
+   "SE": {
+    "soma_mm": 18.4,
+    "estacoes": 1,
+    "media_mm": 18.4
+   },
+   "PA": {
+    "soma_mm": 13.2,
+    "estacoes": 8,
+    "media_mm": 1.6
+   },
+   "DF": {
+    "soma_mm": 12.4,
+    "estacoes": 3,
+    "media_mm": 4.1
+   },
+   "RO": {
+    "soma_mm": 11.2,
+    "estacoes": 7,
+    "media_mm": 1.6
+   },
+   "MA": {
+    "soma_mm": 9.4,
+    "estacoes": 3,
+    "media_mm": 3.1
+   },
+   "RN": {
+    "soma_mm": 2.4,
+    "estacoes": 2,
+    "media_mm": 1.2
+   },
+   "AL": {
+    "soma_mm": 1.8,
+    "estacoes": 1,
+    "media_mm": 1.8
+   },
+   "AP": {
+    "soma_mm": 1.8,
+    "estacoes": 1,
+    "media_mm": 1.8
+   },
+   "PE": {
+    "soma_mm": 1.0,
+    "estacoes": 3,
+    "media_mm": 0.3
+   },
+   "AC": {
+    "soma_mm": 0.6,
+    "estacoes": 1,
+    "media_mm": 0.6
+   },
+   "CE": {
+    "soma_mm": 0.2,
+    "estacoes": 1,
+    "media_mm": 0.2
+   }
+  },
+  "n_ge_50": 17,
+  "n_ge_100": 2
+ },
+ "inpe_focos": {
+  "ultimo_foco_gmt": "2026-10-26 14:40:00",
+  "todos_sat": 23101,
+  "sat_ref_AQUA_M-T": 1177,
+  "por_satelite": [
+   [
+    "GOES-19",
+    6246
+   ],
+   [
+    "NOAA-20",
+    4886
+   ],
+   [
+    "NOAA-21",
+    4609
+   ],
+   [
+    "NPP-375",
+    3466
+   ],
+   [
+    "AQUA_M-T",
+    1177
+   ],
+   [
+    "TERRA_M-M",
+    1009
+   ],
+   [
+    "NPP-375D",
+    967
+   ],
+   [
+    "METOP-C",
+    407
+   ],
+   [
+    "METOP-B",
+    236
+   ],
+   [
+    "TERRA_M-T",
+    70
+   ],
+   [
+    "AQUA_M-M",
+    16
+   ],
+   [
+    "MSG-03",
+    12
+   ]
+  ],
+  "por_estado_todos": [
+   [
+    "Pará",
+    13886
+   ],
+   [
+    "Amazonas",
+    1528
+   ],
+   [
+    "Amapá",
+    1333
+   ],
+   [
+    "Mato Grosso",
+    1324
+   ],
+   [
+    "Acre",
+    775
+   ],
+   [
+    "Roraima",
+    719
+   ],
+   [
+    "Maranhão",
+    712
+   ],
+   [
+    "Rondônia",
+    649
+   ],
+   [
+    "Bahia",
+    620
+   ],
+   [
+    "Piauí",
+    503
+   ],
+   [
+    "Tocantins",
+    371
+   ],
+   [
+    "Ceará",
+    244
+   ],
+   [
+    "Pernambuco",
+    112
+   ],
+   [
+    "Goiás",
+    79
+   ],
+   [
+    "Paraíba",
+    77
+   ]
+  ],
+  "por_bioma_todos": [
+   [
+    "Amazônia",
+    20286
+   ],
+   [
+    "Cerrado",
+    1504
+   ],
+   [
+    "Caatinga",
+    1049
+   ],
+   [
+    "Mata Atlântica",
+    252
+   ],
+   [
+    "Pantanal",
+    10
+   ]
+  ],
+  "por_estado_ref": [
+   [
+    "Pará",
+    908
+   ],
+   [
+    "Mato Grosso",
+    86
+   ],
+   [
+    "Amazonas",
+    81
+   ],
+   [
+    "Roraima",
+    41
+   ],
+   [
+    "Amapá",
+    31
+   ],
+   [
+    "Tocantins",
+    10
+   ],
+   [
+    "Ceará",
+    5
+   ],
+   [
+    "Goiás",
+    4
+   ],
+   [
+    "Paraíba",
+    3
+   ],
+   [
+    "Rondônia",
+    3
+   ],
+   [
+    "Rio Grande Do Norte",
+    2
+   ],
+   [
+    "Pernambuco",
+    2
+   ],
+   [
+    "Bahia",
+    1
+   ]
+  ],
+  "por_bioma_ref": [
+   [
+    "Amazônia",
+    1131
+   ],
+   [
+    "Cerrado",
+    31
+   ],
+   [
+    "Caatinga",
+    9
+   ],
+   [
+    "Mata Atlântica",
+    4
+   ],
+   [
+    "Pantanal",
+    2
+   ]
+  ],
+  "top_municipios_todos": [
+   [
+    "Uruará/Pará",
+    2216
+   ],
+   [
+    "Santarém/Pará",
+    1645
+   ],
+   [
+    "Mojuí Dos Campos/Pará",
+    1012
+   ],
+   [
+    "Oriximiná/Pará",
+    900
+   ],
+   [
+    "Almeirim/Pará",
+    796
+   ],
+   [
+    "Pacajá/Pará",
+    716
+   ],
+   [
+    "Placas/Pará",
+    714
+   ],
+   [
+    "Monte Alegre/Pará",
+    628
+   ],
+   [
+    "Prainha/Pará",
+    578
+   ],
+   [
+    "Aveiro/Pará",
+    568
+   ]
+  ]
+ },
+ "openmeteo_capitais": {
+  "modelo": "Open-Meteo best_match",
+  "linhas": [
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-26",
+    "tmax": 34.9,
+    "tmin": 25.3,
+    "chuva": 2.8,
+    "raj": 28.4,
+    "urmin": 47
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-27",
+    "tmax": 33.4,
+    "tmin": 24.0,
+    "chuva": 7.8,
+    "raj": 25.6,
+    "urmin": 56
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-28",
+    "tmax": 30.9,
+    "tmin": 24.6,
+    "chuva": 12.6,
+    "raj": 23.4,
+    "urmin": 75
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-29",
+    "tmax": 33.0,
+    "tmin": 24.8,
+    "chuva": 7.0,
+    "raj": 24.1,
+    "urmin": 56
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-30",
+    "tmax": 31.0,
+    "tmin": 24.9,
+    "chuva": 7.5,
+    "raj": 27.0,
+    "urmin": 67
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-10-31",
+    "tmax": 31.6,
+    "tmin": 25.1,
+    "chuva": 8.9,
+    "raj": 23.0,
+    "urmin": 67
+   },
+   {
+    "cap": "Porto Velho",
+    "uf": "RO",
+    "dia": "2026-11-01",
+    "tmax": 31.5,
+    "tmin": 24.9,
+    "chuva": 6.1,
+    "raj": 31.3,
+    "urmin": 86
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-26",
+    "tmax": 33.1,
+    "tmin": 24.7,
+    "chuva": 4.4,
+    "raj": 31.7,
+    "urmin": 54
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-27",
+    "tmax": 33.6,
+    "tmin": 23.4,
+    "chuva": 2.6,
+    "raj": 35.6,
+    "urmin": 52
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-28",
+    "tmax": 31.4,
+    "tmin": 23.4,
+    "chuva": 13.7,
+    "raj": 25.6,
+    "urmin": 65
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-29",
+    "tmax": 30.3,
+    "tmin": 22.7,
+    "chuva": 2.6,
+    "raj": 28.1,
+    "urmin": 67
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-30",
+    "tmax": 31.8,
+    "tmin": 23.1,
+    "chuva": 2.4,
+    "raj": 23.4,
+    "urmin": 59
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-10-31",
+    "tmax": 31.8,
+    "tmin": 23.8,
+    "chuva": 18.6,
+    "raj": 19.1,
+    "urmin": 68
+   },
+   {
+    "cap": "Rio Branco",
+    "uf": "AC",
+    "dia": "2026-11-01",
+    "tmax": 32.3,
+    "tmin": 23.6,
+    "chuva": 1.2,
+    "raj": 27.4,
+    "urmin": 60
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-26",
+    "tmax": 31.4,
+    "tmin": 25.3,
+    "chuva": 6.2,
+    "raj": 43.2,
+    "urmin": 64
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-27",
+    "tmax": 32.4,
+    "tmin": 26.2,
+    "chuva": 1.7,
+    "raj": 31.0,
+    "urmin": 60
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-28",
+    "tmax": 31.9,
+    "tmin": 25.4,
+    "chuva": 2.7,
+    "raj": 30.6,
+    "urmin": 61
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-29",
+    "tmax": 31.7,
+    "tmin": 26.6,
+    "chuva": 1.7,
+    "raj": 35.6,
+    "urmin": 65
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-30",
+    "tmax": 32.8,
+    "tmin": 25.7,
+    "chuva": 0.8,
+    "raj": 38.2,
+    "urmin": 60
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-10-31",
+    "tmax": 31.6,
+    "tmin": 24.9,
+    "chuva": 7.0,
+    "raj": 29.9,
+    "urmin": 61
+   },
+   {
+    "cap": "Manaus",
+    "uf": "AM",
+    "dia": "2026-11-01",
+    "tmax": 29.7,
+    "tmin": 26.5,
+    "chuva": 3.0,
+    "raj": 32.8,
+    "urmin": 76
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-26",
+    "tmax": 36.7,
+    "tmin": 25.9,
+    "chuva": 3.4,
+    "raj": 36.7,
+    "urmin": 37
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-27",
+    "tmax": 36.9,
+    "tmin": 26.8,
+    "chuva": 0.1,
+    "raj": 32.8,
+    "urmin": 35
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-28",
+    "tmax": 37.6,
+    "tmin": 28.3,
+    "chuva": 0.1,
+    "raj": 42.5,
+    "urmin": 34
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-29",
+    "tmax": 37.8,
+    "tmin": 27.7,
+    "chuva": 0.1,
+    "raj": 30.6,
+    "urmin": 34
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-30",
+    "tmax": 37.6,
+    "tmin": 27.9,
+    "chuva": 0.3,
+    "raj": 37.1,
+    "urmin": 32
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-10-31",
+    "tmax": 37.0,
+    "tmin": 26.8,
+    "chuva": 0.0,
+    "raj": 34.9,
+    "urmin": 33
+   },
+   {
+    "cap": "Boa Vista",
+    "uf": "RR",
+    "dia": "2026-11-01",
+    "tmax": 37.8,
+    "tmin": 28.5,
+    "chuva": 0.0,
+    "raj": 33.1,
+    "urmin": 34
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-26",
+    "tmax": 33.5,
+    "tmin": 24.9,
+    "chuva": 1.7,
+    "raj": 39.2,
+    "urmin": 46
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-27",
+    "tmax": 34.6,
+    "tmin": 24.6,
+    "chuva": 0.8,
+    "raj": 34.2,
+    "urmin": 45
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-28",
+    "tmax": 35.4,
+    "tmin": 24.7,
+    "chuva": 1.9,
+    "raj": 41.0,
+    "urmin": 40
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-29",
+    "tmax": 34.4,
+    "tmin": 24.2,
+    "chuva": 3.5,
+    "raj": 37.1,
+    "urmin": 45
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-30",
+    "tmax": 35.0,
+    "tmin": 23.9,
+    "chuva": 0.6,
+    "raj": 43.2,
+    "urmin": 44
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-10-31",
+    "tmax": 35.3,
+    "tmin": 23.9,
+    "chuva": 1.2,
+    "raj": 43.9,
+    "urmin": 43
+   },
+   {
+    "cap": "Belém",
+    "uf": "PA",
+    "dia": "2026-11-01",
+    "tmax": 34.8,
+    "tmin": 24.3,
+    "chuva": 0.6,
+    "raj": 42.5,
+    "urmin": 61
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-26",
+    "tmax": 33.3,
+    "tmin": 25.8,
+    "chuva": 0.1,
+    "raj": 45.4,
+    "urmin": 46
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-27",
+    "tmax": 33.5,
+    "tmin": 25.9,
+    "chuva": 0.0,
+    "raj": 40.7,
+    "urmin": 49
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-28",
+    "tmax": 34.4,
+    "tmin": 26.3,
+    "chuva": 0.0,
+    "raj": 46.8,
+    "urmin": 45
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-29",
+    "tmax": 33.9,
+    "tmin": 26.4,
+    "chuva": 0.0,
+    "raj": 50.8,
+    "urmin": 45
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-30",
+    "tmax": 33.5,
+    "tmin": 26.9,
+    "chuva": 0.0,
+    "raj": 46.1,
+    "urmin": 47
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-10-31",
+    "tmax": 34.0,
+    "tmin": 26.0,
+    "chuva": 0.3,
+    "raj": 44.3,
+    "urmin": 47
+   },
+   {
+    "cap": "Macapá",
+    "uf": "AP",
+    "dia": "2026-11-01",
+    "tmax": 33.9,
+    "tmin": 26.3,
+    "chuva": 0.6,
+    "raj": 44.6,
+    "urmin": 45
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-26",
+    "tmax": 30.2,
+    "tmin": 25.1,
+    "chuva": 3.8,
+    "raj": 38.2,
+    "urmin": 66
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-27",
+    "tmax": 28.2,
+    "tmin": 24.3,
+    "chuva": 4.3,
+    "raj": 23.8,
+    "urmin": 77
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-28",
+    "tmax": 30.2,
+    "tmin": 23.9,
+    "chuva": 37.5,
+    "raj": 28.1,
+    "urmin": 69
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-29",
+    "tmax": 31.7,
+    "tmin": 23.3,
+    "chuva": 4.6,
+    "raj": 30.2,
+    "urmin": 61
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-30",
+    "tmax": 31.5,
+    "tmin": 23.4,
+    "chuva": 1.2,
+    "raj": 29.2,
+    "urmin": 71
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-10-31",
+    "tmax": 30.2,
+    "tmin": 24.7,
+    "chuva": 2.1,
+    "raj": 28.8,
+    "urmin": 72
+   },
+   {
+    "cap": "Palmas",
+    "uf": "TO",
+    "dia": "2026-11-01",
+    "tmax": 30.3,
+    "tmin": 25.1,
+    "chuva": 4.2,
+    "raj": 23.8,
+    "urmin": 66
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-26",
+    "tmax": 32.2,
+    "tmin": 25.3,
+    "chuva": 0.0,
+    "raj": 38.5,
+    "urmin": 54
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-27",
+    "tmax": 32.5,
+    "tmin": 25.4,
+    "chuva": 2.7,
+    "raj": 38.2,
+    "urmin": 57
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-28",
+    "tmax": 33.0,
+    "tmin": 25.6,
+    "chuva": 0.7,
+    "raj": 40.0,
+    "urmin": 52
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-29",
+    "tmax": 32.5,
+    "tmin": 26.0,
+    "chuva": 2.3,
+    "raj": 43.9,
+    "urmin": 55
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-30",
+    "tmax": 33.1,
+    "tmin": 26.0,
+    "chuva": 0.3,
+    "raj": 47.5,
+    "urmin": 49
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-10-31",
+    "tmax": 34.0,
+    "tmin": 26.0,
+    "chuva": 0.0,
+    "raj": 44.3,
+    "urmin": 44
+   },
+   {
+    "cap": "São Luís",
+    "uf": "MA",
+    "dia": "2026-11-01",
+    "tmax": 34.1,
+    "tmin": 26.2,
+    "chuva": 0.0,
+    "raj": 50.0,
+    "urmin": 53
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-26",
+    "tmax": 39.0,
+    "tmin": 25.7,
+    "chuva": 0.0,
+    "raj": 42.8,
+    "urmin": 27
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-27",
+    "tmax": 38.7,
+    "tmin": 25.9,
+    "chuva": 0.2,
+    "raj": 38.5,
+    "urmin": 28
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-28",
+    "tmax": 39.3,
+    "tmin": 24.9,
+    "chuva": 0.0,
+    "raj": 31.3,
+    "urmin": 24
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-29",
+    "tmax": 38.8,
+    "tmin": 26.1,
+    "chuva": 0.3,
+    "raj": 34.6,
+    "urmin": 27
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-30",
+    "tmax": 39.3,
+    "tmin": 25.6,
+    "chuva": 0.3,
+    "raj": 35.6,
+    "urmin": 27
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-10-31",
+    "tmax": 39.3,
+    "tmin": 26.0,
+    "chuva": 0.0,
+    "raj": 42.1,
+    "urmin": 26
+   },
+   {
+    "cap": "Teresina",
+    "uf": "PI",
+    "dia": "2026-11-01",
+    "tmax": 39.6,
+    "tmin": 25.8,
+    "chuva": 0.0,
+    "raj": 39.2,
+    "urmin": 26
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-26",
+    "tmax": 31.5,
+    "tmin": 25.5,
+    "chuva": 0.0,
+    "raj": 40.7,
+    "urmin": 52
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-27",
+    "tmax": 31.7,
+    "tmin": 26.4,
+    "chuva": 0.0,
+    "raj": 43.6,
+    "urmin": 54
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-28",
+    "tmax": 31.9,
+    "tmin": 26.2,
+    "chuva": 0.1,
+    "raj": 51.1,
+    "urmin": 50
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-29",
+    "tmax": 31.7,
+    "tmin": 26.5,
+    "chuva": 0.9,
+    "raj": 51.1,
+    "urmin": 54
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-30",
+    "tmax": 31.1,
+    "tmin": 26.5,
+    "chuva": 1.8,
+    "raj": 50.0,
+    "urmin": 58
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-10-31",
+    "tmax": 31.3,
+    "tmin": 26.3,
+    "chuva": 1.2,
+    "raj": 49.0,
+    "urmin": 57
+   },
+   {
+    "cap": "Fortaleza",
+    "uf": "CE",
+    "dia": "2026-11-01",
+    "tmax": 31.6,
+    "tmin": 26.5,
+    "chuva": 0.6,
+    "raj": 47.2,
+    "urmin": 57
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-26",
+    "tmax": 31.2,
+    "tmin": 24.0,
+    "chuva": 0.0,
+    "raj": 37.1,
+    "urmin": 55
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-27",
+    "tmax": 31.0,
+    "tmin": 24.9,
+    "chuva": 0.0,
+    "raj": 37.1,
+    "urmin": 55
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-28",
+    "tmax": 31.0,
+    "tmin": 25.8,
+    "chuva": 1.8,
+    "raj": 50.4,
+    "urmin": 59
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-29",
+    "tmax": 30.5,
+    "tmin": 24.6,
+    "chuva": 1.3,
+    "raj": 48.2,
+    "urmin": 62
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-30",
+    "tmax": 30.8,
+    "tmin": 24.3,
+    "chuva": 1.2,
+    "raj": 44.3,
+    "urmin": 56
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-10-31",
+    "tmax": 31.0,
+    "tmin": 25.0,
+    "chuva": 0.3,
+    "raj": 42.8,
+    "urmin": 58
+   },
+   {
+    "cap": "Natal",
+    "uf": "RN",
+    "dia": "2026-11-01",
+    "tmax": 31.7,
+    "tmin": 25.8,
+    "chuva": 0.0,
+    "raj": 42.1,
+    "urmin": 52
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-26",
+    "tmax": 29.8,
+    "tmin": 25.6,
+    "chuva": 0.0,
+    "raj": 43.9,
+    "urmin": 60
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-27",
+    "tmax": 30.2,
+    "tmin": 25.8,
+    "chuva": 0.3,
+    "raj": 39.6,
+    "urmin": 58
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-28",
+    "tmax": 30.0,
+    "tmin": 25.6,
+    "chuva": 1.0,
+    "raj": 50.0,
+    "urmin": 63
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-29",
+    "tmax": 29.0,
+    "tmin": 25.0,
+    "chuva": 4.6,
+    "raj": 46.1,
+    "urmin": 69
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-30",
+    "tmax": 30.1,
+    "tmin": 25.3,
+    "chuva": 0.0,
+    "raj": 37.1,
+    "urmin": 57
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-10-31",
+    "tmax": 30.3,
+    "tmin": 26.2,
+    "chuva": 0.0,
+    "raj": 41.8,
+    "urmin": 59
+   },
+   {
+    "cap": "João Pessoa",
+    "uf": "PB",
+    "dia": "2026-11-01",
+    "tmax": 30.1,
+    "tmin": 25.9,
+    "chuva": 1.2,
+    "raj": 42.1,
+    "urmin": 62
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-26",
+    "tmax": 31.1,
+    "tmin": 23.9,
+    "chuva": 0.0,
+    "raj": 52.6,
+    "urmin": 54
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-27",
+    "tmax": 30.9,
+    "tmin": 25.0,
+    "chuva": 0.0,
+    "raj": 43.6,
+    "urmin": 55
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-28",
+    "tmax": 29.7,
+    "tmin": 25.4,
+    "chuva": 3.4,
+    "raj": 42.8,
+    "urmin": 65
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-29",
+    "tmax": 29.3,
+    "tmin": 24.1,
+    "chuva": 4.6,
+    "raj": 41.0,
+    "urmin": 66
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-30",
+    "tmax": 30.0,
+    "tmin": 25.2,
+    "chuva": 0.4,
+    "raj": 36.7,
+    "urmin": 60
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-10-31",
+    "tmax": 30.3,
+    "tmin": 25.8,
+    "chuva": 1.2,
+    "raj": 43.6,
+    "urmin": 62
+   },
+   {
+    "cap": "Recife",
+    "uf": "PE",
+    "dia": "2026-11-01",
+    "tmax": 30.6,
+    "tmin": 25.8,
+    "chuva": 2.0,
+    "raj": 42.5,
+    "urmin": 64
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-26",
+    "tmax": 32.4,
+    "tmin": 24.4,
+    "chuva": 0.0,
+    "raj": 58.7,
+    "urmin": 51
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-27",
+    "tmax": 31.3,
+    "tmin": 24.6,
+    "chuva": 0.0,
+    "raj": 59.4,
+    "urmin": 56
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-28",
+    "tmax": 28.5,
+    "tmin": 25.0,
+    "chuva": 1.3,
+    "raj": 41.4,
+    "urmin": 70
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-29",
+    "tmax": 28.7,
+    "tmin": 24.0,
+    "chuva": 3.6,
+    "raj": 41.0,
+    "urmin": 72
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-30",
+    "tmax": 28.6,
+    "tmin": 24.8,
+    "chuva": 1.5,
+    "raj": 41.0,
+    "urmin": 72
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-10-31",
+    "tmax": 29.7,
+    "tmin": 24.6,
+    "chuva": 0.6,
+    "raj": 48.2,
+    "urmin": 63
+   },
+   {
+    "cap": "Maceió",
+    "uf": "AL",
+    "dia": "2026-11-01",
+    "tmax": 30.1,
+    "tmin": 25.3,
+    "chuva": 0.0,
+    "raj": 50.0,
+    "urmin": 68
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-26",
+    "tmax": 31.6,
+    "tmin": 24.9,
+    "chuva": 0.0,
+    "raj": 58.0,
+    "urmin": 55
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-27",
+    "tmax": 30.6,
+    "tmin": 25.1,
+    "chuva": 0.0,
+    "raj": 59.0,
+    "urmin": 59
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-28",
+    "tmax": 29.3,
+    "tmin": 25.7,
+    "chuva": 1.1,
+    "raj": 41.8,
+    "urmin": 65
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-29",
+    "tmax": 29.3,
+    "tmin": 24.6,
+    "chuva": 0.9,
+    "raj": 49.0,
+    "urmin": 64
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-30",
+    "tmax": 29.0,
+    "tmin": 24.7,
+    "chuva": 0.3,
+    "raj": 44.6,
+    "urmin": 64
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-10-31",
+    "tmax": 30.0,
+    "tmin": 25.1,
+    "chuva": 0.6,
+    "raj": 50.4,
+    "urmin": 60
+   },
+   {
+    "cap": "Aracaju",
+    "uf": "SE",
+    "dia": "2026-11-01",
+    "tmax": 30.0,
+    "tmin": 25.8,
+    "chuva": 0.6,
+    "raj": 51.1,
+    "urmin": 67
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-26",
+    "tmax": 30.7,
+    "tmin": 25.2,
+    "chuva": 0.2,
+    "raj": 46.8,
+    "urmin": 62
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-27",
+    "tmax": 30.3,
+    "tmin": 24.2,
+    "chuva": 11.9,
+    "raj": 51.1,
+    "urmin": 67
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-28",
+    "tmax": 26.2,
+    "tmin": 24.0,
+    "chuva": 13.8,
+    "raj": 53.3,
+    "urmin": 81
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-29",
+    "tmax": 27.6,
+    "tmin": 23.3,
+    "chuva": 4.2,
+    "raj": 38.9,
+    "urmin": 74
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-30",
+    "tmax": 28.5,
+    "tmin": 23.6,
+    "chuva": 0.6,
+    "raj": 41.4,
+    "urmin": 70
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-10-31",
+    "tmax": 29.2,
+    "tmin": 24.0,
+    "chuva": 0.3,
+    "raj": 43.9,
+    "urmin": 68
+   },
+   {
+    "cap": "Salvador",
+    "uf": "BA",
+    "dia": "2026-11-01",
+    "tmax": 29.8,
+    "tmin": 24.5,
+    "chuva": 0.6,
+    "raj": 49.3,
+    "urmin": 65
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-26",
+    "tmax": 27.2,
+    "tmin": 16.3,
+    "chuva": 7.1,
+    "raj": 42.5,
+    "urmin": 63
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-27",
+    "tmax": 22.6,
+    "tmin": 15.6,
+    "chuva": 0.0,
+    "raj": 37.4,
+    "urmin": 66
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-28",
+    "tmax": 22.5,
+    "tmin": 16.2,
+    "chuva": 0.0,
+    "raj": 35.6,
+    "urmin": 65
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-29",
+    "tmax": 26.2,
+    "tmin": 16.8,
+    "chuva": 8.1,
+    "raj": 30.2,
+    "urmin": 58
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-30",
+    "tmax": 24.4,
+    "tmin": 18.1,
+    "chuva": 34.3,
+    "raj": 36.7,
+    "urmin": 84
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-10-31",
+    "tmax": 25.5,
+    "tmin": 18.7,
+    "chuva": 10.2,
+    "raj": 33.8,
+    "urmin": 71
+   },
+   {
+    "cap": "Belo Horizonte",
+    "uf": "MG",
+    "dia": "2026-11-01",
+    "tmax": 26.6,
+    "tmin": 17.7,
+    "chuva": 12.4,
+    "raj": 31.0,
+    "urmin": 78
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-26",
+    "tmax": 27.4,
+    "tmin": 20.8,
+    "chuva": 21.3,
+    "raj": 49.7,
+    "urmin": 75
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-27",
+    "tmax": 23.6,
+    "tmin": 20.3,
+    "chuva": 0.8,
+    "raj": 55.1,
+    "urmin": 61
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-28",
+    "tmax": 24.4,
+    "tmin": 20.3,
+    "chuva": 0.0,
+    "raj": 27.4,
+    "urmin": 56
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-29",
+    "tmax": 25.8,
+    "tmin": 19.9,
+    "chuva": 0.0,
+    "raj": 38.2,
+    "urmin": 62
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-30",
+    "tmax": 24.8,
+    "tmin": 21.7,
+    "chuva": 6.6,
+    "raj": 40.0,
+    "urmin": 79
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-10-31",
+    "tmax": 29.1,
+    "tmin": 22.8,
+    "chuva": 17.6,
+    "raj": 32.8,
+    "urmin": 75
+   },
+   {
+    "cap": "Vitória",
+    "uf": "ES",
+    "dia": "2026-11-01",
+    "tmax": 26.9,
+    "tmin": 22.3,
+    "chuva": 20.3,
+    "raj": 32.0,
+    "urmin": 79
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-26",
+    "tmax": 22.0,
+    "tmin": 20.1,
+    "chuva": 9.9,
+    "raj": 64.8,
+    "urmin": 76
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-27",
+    "tmax": 22.8,
+    "tmin": 18.3,
+    "chuva": 0.5,
+    "raj": 34.9,
+    "urmin": 59
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-28",
+    "tmax": 24.1,
+    "tmin": 18.6,
+    "chuva": 0.0,
+    "raj": 54.7,
+    "urmin": 62
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-29",
+    "tmax": 23.3,
+    "tmin": 19.7,
+    "chuva": 20.3,
+    "raj": 36.4,
+    "urmin": 70
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-30",
+    "tmax": 26.0,
+    "tmin": 20.5,
+    "chuva": 13.1,
+    "raj": 36.7,
+    "urmin": 74
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-10-31",
+    "tmax": 25.5,
+    "tmin": 21.1,
+    "chuva": 0.0,
+    "raj": 47.2,
+    "urmin": 78
+   },
+   {
+    "cap": "Rio de Janeiro",
+    "uf": "RJ",
+    "dia": "2026-11-01",
+    "tmax": 25.5,
+    "tmin": 20.7,
+    "chuva": 0.0,
+    "raj": 34.6,
+    "urmin": 75
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-26",
+    "tmax": 17.8,
+    "tmin": 12.3,
+    "chuva": 2.1,
+    "raj": 35.3,
+    "urmin": 71
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-27",
+    "tmax": 21.0,
+    "tmin": 11.8,
+    "chuva": 0.1,
+    "raj": 39.2,
+    "urmin": 48
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-28",
+    "tmax": 23.0,
+    "tmin": 13.6,
+    "chuva": 4.8,
+    "raj": 33.1,
+    "urmin": 58
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-29",
+    "tmax": 18.8,
+    "tmin": 15.9,
+    "chuva": 20.4,
+    "raj": 24.5,
+    "urmin": 90
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-30",
+    "tmax": 26.3,
+    "tmin": 15.8,
+    "chuva": 2.8,
+    "raj": 37.1,
+    "urmin": 54
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-10-31",
+    "tmax": 24.3,
+    "tmin": 16.7,
+    "chuva": 5.7,
+    "raj": 36.0,
+    "urmin": 71
+   },
+   {
+    "cap": "São Paulo",
+    "uf": "SP",
+    "dia": "2026-11-01",
+    "tmax": 25.0,
+    "tmin": 16.3,
+    "chuva": 1.8,
+    "raj": 32.8,
+    "urmin": 70
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-26",
+    "tmax": 19.2,
+    "tmin": 10.7,
+    "chuva": 4.5,
+    "raj": 42.5,
+    "urmin": 47
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-27",
+    "tmax": 17.7,
+    "tmin": 10.8,
+    "chuva": 0.6,
+    "raj": 33.8,
+    "urmin": 60
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-28",
+    "tmax": 22.4,
+    "tmin": 11.3,
+    "chuva": 0.0,
+    "raj": 40.0,
+    "urmin": 50
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-29",
+    "tmax": 18.3,
+    "tmin": 13.8,
+    "chuva": 2.6,
+    "raj": 25.2,
+    "urmin": 71
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-30",
+    "tmax": 23.3,
+    "tmin": 14.8,
+    "chuva": 3.6,
+    "raj": 27.7,
+    "urmin": 63
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-10-31",
+    "tmax": 22.1,
+    "tmin": 15.4,
+    "chuva": 3.9,
+    "raj": 29.5,
+    "urmin": 74
+   },
+   {
+    "cap": "Curitiba",
+    "uf": "PR",
+    "dia": "2026-11-01",
+    "tmax": 21.9,
+    "tmin": 15.3,
+    "chuva": 4.8,
+    "raj": 31.7,
+    "urmin": 71
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-26",
+    "tmax": 20.3,
+    "tmin": 14.4,
+    "chuva": 0.3,
+    "raj": 59.8,
+    "urmin": 58
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-27",
+    "tmax": 21.0,
+    "tmin": 11.8,
+    "chuva": 0.0,
+    "raj": 30.6,
+    "urmin": 57
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-28",
+    "tmax": 22.8,
+    "tmin": 15.4,
+    "chuva": 0.4,
+    "raj": 47.2,
+    "urmin": 60
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-29",
+    "tmax": 23.1,
+    "tmin": 15.7,
+    "chuva": 0.5,
+    "raj": 43.9,
+    "urmin": 68
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-30",
+    "tmax": 21.1,
+    "tmin": 18.2,
+    "chuva": 11.5,
+    "raj": 31.7,
+    "urmin": 81
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-10-31",
+    "tmax": 23.7,
+    "tmin": 18.1,
+    "chuva": 3.7,
+    "raj": 36.7,
+    "urmin": 73
+   },
+   {
+    "cap": "Florianópolis",
+    "uf": "SC",
+    "dia": "2026-11-01",
+    "tmax": 23.4,
+    "tmin": 18.3,
+    "chuva": 6.7,
+    "raj": 41.4,
+    "urmin": 79
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-26",
+    "tmax": 18.8,
+    "tmin": 12.6,
+    "chuva": 0.9,
+    "raj": 31.3,
+    "urmin": 58
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-27",
+    "tmax": 23.0,
+    "tmin": 11.2,
+    "chuva": 0.0,
+    "raj": 42.8,
+    "urmin": 47
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-28",
+    "tmax": 25.1,
+    "tmin": 13.9,
+    "chuva": 0.0,
+    "raj": 28.1,
+    "urmin": 54
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-29",
+    "tmax": 23.3,
+    "tmin": 17.2,
+    "chuva": 0.2,
+    "raj": 34.9,
+    "urmin": 64
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-30",
+    "tmax": 23.2,
+    "tmin": 17.0,
+    "chuva": 2.7,
+    "raj": 35.3,
+    "urmin": 70
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-10-31",
+    "tmax": 25.2,
+    "tmin": 16.1,
+    "chuva": 0.3,
+    "raj": 29.5,
+    "urmin": 54
+   },
+   {
+    "cap": "Porto Alegre",
+    "uf": "RS",
+    "dia": "2026-11-01",
+    "tmax": 27.4,
+    "tmin": 15.7,
+    "chuva": 3.6,
+    "raj": 28.8,
+    "urmin": 68
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-26",
+    "tmax": 22.7,
+    "tmin": 14.2,
+    "chuva": 0.0,
+    "raj": 39.6,
+    "urmin": 53
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-27",
+    "tmax": 23.6,
+    "tmin": 17.0,
+    "chuva": 4.3,
+    "raj": 32.0,
+    "urmin": 61
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-28",
+    "tmax": 28.1,
+    "tmin": 17.8,
+    "chuva": 2.9,
+    "raj": 33.5,
+    "urmin": 57
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-29",
+    "tmax": 23.4,
+    "tmin": 19.9,
+    "chuva": 24.8,
+    "raj": 26.6,
+    "urmin": 79
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-30",
+    "tmax": 27.4,
+    "tmin": 19.3,
+    "chuva": 1.8,
+    "raj": 31.0,
+    "urmin": 60
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-10-31",
+    "tmax": 28.3,
+    "tmin": 19.3,
+    "chuva": 1.2,
+    "raj": 28.8,
+    "urmin": 64
+   },
+   {
+    "cap": "Campo Grande",
+    "uf": "MS",
+    "dia": "2026-11-01",
+    "tmax": 27.9,
+    "tmin": 20.5,
+    "chuva": 9.0,
+    "raj": 31.0,
+    "urmin": 65
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-26",
+    "tmax": 28.8,
+    "tmin": 22.5,
+    "chuva": 0.0,
+    "raj": 39.2,
+    "urmin": 52
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-27",
+    "tmax": 35.2,
+    "tmin": 22.1,
+    "chuva": 0.0,
+    "raj": 29.9,
+    "urmin": 35
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-28",
+    "tmax": 28.7,
+    "tmin": 26.4,
+    "chuva": 2.9,
+    "raj": 29.5,
+    "urmin": 58
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-29",
+    "tmax": 30.0,
+    "tmin": 23.6,
+    "chuva": 3.6,
+    "raj": 24.5,
+    "urmin": 64
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-30",
+    "tmax": 30.8,
+    "tmin": 23.0,
+    "chuva": 8.1,
+    "raj": 25.9,
+    "urmin": 66
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-10-31",
+    "tmax": 30.8,
+    "tmin": 22.6,
+    "chuva": 6.9,
+    "raj": 24.8,
+    "urmin": 65
+   },
+   {
+    "cap": "Cuiabá",
+    "uf": "MT",
+    "dia": "2026-11-01",
+    "tmax": 31.7,
+    "tmin": 24.6,
+    "chuva": 3.6,
+    "raj": 24.8,
+    "urmin": 66
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-26",
+    "tmax": 31.7,
+    "tmin": 21.5,
+    "chuva": 0.4,
+    "raj": 33.5,
+    "urmin": 40
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-27",
+    "tmax": 33.6,
+    "tmin": 21.4,
+    "chuva": 6.4,
+    "raj": 38.2,
+    "urmin": 39
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-28",
+    "tmax": 27.4,
+    "tmin": 21.0,
+    "chuva": 7.3,
+    "raj": 27.0,
+    "urmin": 66
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-29",
+    "tmax": 27.6,
+    "tmin": 20.3,
+    "chuva": 12.7,
+    "raj": 33.5,
+    "urmin": 63
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-30",
+    "tmax": 28.4,
+    "tmin": 20.3,
+    "chuva": 16.5,
+    "raj": 38.9,
+    "urmin": 64
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-10-31",
+    "tmax": 28.1,
+    "tmin": 20.4,
+    "chuva": 17.7,
+    "raj": 31.0,
+    "urmin": 66
+   },
+   {
+    "cap": "Goiânia",
+    "uf": "GO",
+    "dia": "2026-11-01",
+    "tmax": 28.8,
+    "tmin": 20.1,
+    "chuva": 9.3,
+    "raj": 37.8,
+    "urmin": 77
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-26",
+    "tmax": 30.4,
+    "tmin": 20.0,
+    "chuva": 2.7,
+    "raj": 26.6,
+    "urmin": 44
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-27",
+    "tmax": 27.8,
+    "tmin": 19.8,
+    "chuva": 28.8,
+    "raj": 27.0,
+    "urmin": 61
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-28",
+    "tmax": 25.5,
+    "tmin": 19.2,
+    "chuva": 14.7,
+    "raj": 27.7,
+    "urmin": 71
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-29",
+    "tmax": 26.2,
+    "tmin": 19.6,
+    "chuva": 13.4,
+    "raj": 32.0,
+    "urmin": 65
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-30",
+    "tmax": 26.5,
+    "tmin": 19.3,
+    "chuva": 7.8,
+    "raj": 34.9,
+    "urmin": 67
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-10-31",
+    "tmax": 26.6,
+    "tmin": 20.2,
+    "chuva": 10.2,
+    "raj": 37.8,
+    "urmin": 66
+   },
+   {
+    "cap": "Brasília",
+    "uf": "DF",
+    "dia": "2026-11-01",
+    "tmax": 27.6,
+    "tmin": 19.6,
+    "chuva": 3.6,
+    "raj": 26.6,
+    "urmin": 66
+   }
+  ],
+  "extremos": [
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-26",
+    39.0
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-27",
+    38.7
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-28",
+    39.3
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-29",
+    38.8
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-30",
+    39.3
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-10-31",
+    39.3
+   ],
+   [
+    "tmax",
+    "Teresina",
+    "PI",
+    "2026-11-01",
+    39.6
+   ]
+  ],
+  "previsao7d": {
+   "dias": [
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "por_dia": [
+    {
+     "dia": "2026-10-26",
+     "soma_chuva_mm": 71.8,
+     "por_regiao_mm": {
+      "N": 22.4,
+      "NE": 0.2,
+      "CO": 3.1,
+      "SE": 40.4,
+      "S": 5.7
+     },
+     "capitais_ge_30mm": [],
+     "tmax_media": 29.2,
+     "tmax_pico": [
+      39.0,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-10-27",
+     "soma_chuva_mm": 73.9,
+     "por_regiao_mm": {
+      "N": 17.3,
+      "NE": 15.1,
+      "CO": 39.5,
+      "SE": 1.4,
+      "S": 0.6
+     },
+     "capitais_ge_30mm": [],
+     "tmax_media": 29.3,
+     "tmax_pico": [
+      38.7,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-10-28",
+     "soma_chuva_mm": 124.7,
+     "por_regiao_mm": {
+      "N": 68.5,
+      "NE": 23.2,
+      "CO": 27.8,
+      "SE": 4.8,
+      "S": 0.4
+     },
+     "capitais_ge_30mm": [
+      "Palmas"
+     ],
+     "tmax_media": 29.1,
+     "tmax_pico": [
+      39.3,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-10-29",
+     "soma_chuva_mm": 148.8,
+     "por_regiao_mm": {
+      "N": 19.5,
+      "NE": 22.7,
+      "CO": 54.5,
+      "SE": 48.8,
+      "S": 3.3
+     },
+     "capitais_ge_30mm": [],
+     "tmax_media": 28.7,
+     "tmax_pico": [
+      38.8,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-10-30",
+     "soma_chuva_mm": 128.0,
+     "por_regiao_mm": {
+      "N": 12.8,
+      "NE": 6.4,
+      "CO": 34.2,
+      "SE": 56.8,
+      "S": 17.8
+     },
+     "capitais_ge_30mm": [
+      "Belo Horizonte"
+     ],
+     "tmax_media": 29.5,
+     "tmax_pico": [
+      39.3,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-10-31",
+     "soma_chuva_mm": 119.7,
+     "por_regiao_mm": {
+      "N": 38.1,
+      "NE": 4.2,
+      "CO": 36.0,
+      "SE": 33.5,
+      "S": 7.9
+     },
+     "capitais_ge_30mm": [],
+     "tmax_media": 29.8,
+     "tmax_pico": [
+      39.3,
+      "Teresina"
+     ]
+    },
+    {
+     "dia": "2026-11-01",
+     "soma_chuva_mm": 95.8,
+     "por_regiao_mm": {
+      "N": 15.7,
+      "NE": 5.0,
+      "CO": 25.5,
+      "SE": 34.5,
+      "S": 15.1
+     },
+     "capitais_ge_30mm": [],
+     "tmax_media": 30.0,
+     "tmax_pico": [
+      39.6,
+      "Teresina"
+     ]
+    }
+   ],
+   "soma_7d_mm": 762.7,
+   "soma_7d_por_regiao_mm": {
+    "N": 194.3,
+    "NE": 76.8,
+    "CO": 220.6,
+    "SE": 220.2,
+    "S": 50.8
+   },
+   "acumulado_7d_top": [
+    [
+     "Brasília",
+     81.2
+    ],
+    [
+     "Belo Horizonte",
+     72.1
+    ],
+    [
+     "Goiânia",
+     70.3
+    ],
+    [
+     "Vitória",
+     66.6
+    ],
+    [
+     "Palmas",
+     57.7
+    ],
+    [
+     "Porto Velho",
+     52.7
+    ],
+    [
+     "Rio Branco",
+     45.5
+    ],
+    [
+     "Campo Grande",
+     44.0
+    ]
+   ],
+   "rotulo": "soma da chuva prevista nas 27 capitais (mm somados), Open-Meteo best_match; não é lâmina média do país"
+  }
+ }
+}
