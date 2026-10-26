@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Segunda, vinte e seis de outubro. Temporal deixou seiscentos e trinta e seis mil clientes sem luz em Minas, e o Paraná tem novecentos e oitenta desalojados.",
+  "legenda": "Segunda, 26 de outubro. Temporal deixou 636 mil clientes sem luz em Minas, e o Paraná tem 980 desalojados."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Belo Horizonte, a rajada chegou a oitenta e sete quilômetros por hora. Árvores caíram, e duzentos e vinte e um mil clientes ficaram sem luz.",
+  "legenda": "Em Belo Horizonte, a rajada chegou a 87 km/h. Árvores caíram, e 221 mil clientes ficaram sem luz."
+ },
+ {
+  "id": "f3",
+  "fala": "No Paraná, a chuva de sábado atingiu trinta e duas cidades, com cento e dezenove desabrigados. Pato Branco teve o maior volume já medido na estação.",
+  "legenda": "No Paraná, a chuva de sábado atingiu 32 cidades, com 119 desabrigados. Pato Branco teve o maior volume já medido na estação."
+ },
+ {
+  "id": "f4",
+  "fala": "Em São Paulo, a Marginal Tietê alagou, e Serra Negra marcou oitenta e seis milímetros.",
+  "legenda": "Em São Paulo, a Marginal Tietê alagou, e Serra Negra marcou 86 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No Pará, Itaituba chegou a quarenta graus, com fumaça, e o satélite contou novecentos e oito focos de fogo.",
+  "legenda": "No Pará, Itaituba chegou a 40 graus, com fumaça, e o satélite contou 908 focos de fogo."
+ },
+ {
+  "id": "f6",
+  "fala": "No Sul, frio de inverno: Santo Ângelo amanheceu com nove graus, e pode gear em pontos altos até terça.",
+  "legenda": "No Sul, frio de inverno: Santo Ângelo amanheceu com 9 graus, e pode gear em pontos altos até terça."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta amarelo de tempestade em duas mil oitocentas e dezoito cidades, e ar seco em trezentas e cinquenta e cinco cidades do Nordeste.",
+  "legenda": "E hoje? Alerta amarelo de tempestade em 2.818 cidades, e ar seco em 355 cidades do Nordeste."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: quarta e quinta devem ser os mais chuvosos, e o Sudeste deve acumular mais. Teresina deve chegar perto dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: quarta e quinta devem ser os mais chuvosos, e o Sudeste deve acumular mais. Teresina deve chegar perto dos 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de vinte e dois mil e quinhentos milímetros no Brasil, mais de oito mil só em Minas. Em sete dias, as capitais devem somar mais de setecentos e cinquenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 22.500 milímetros no Brasil, mais de 8.000 só em Minas. Em 7 dias, as capitais devem somar mais de 750 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

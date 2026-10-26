@@ -1,0 +1,8 @@
+Clima 24 h 26/10: 636 mil sem luz em Minas e 980 desalojados no Paraná
+Temporal de domingo (25/10) em Minas: cerca de 636 mil clientes sem energia no estado e 221 mil em Belo Horizonte (Cemig, via Estado de Minas); rajada de 87 km/h no aeroporto de Confins às 13h11 (METAR, NOAA); árvores e semáforos caídos e barracas da Feira Hippie derrubadas.
+Paraná, chuva de sábado (24/10): 32 cidades com danos, 980 desalojados e 119 desabrigados (Defesa Civil do PR); Pato Branco 204,4 mm e Curitiba 124,4 mm, os maiores volumes nas estações do Simepar desde 1997.
+São Paulo: Marginal Tietê alagada no domingo (Meteored); Serra Negra 86,8 mm em 24 h (CEMADEN). Pará: Itaituba 40 °C com fumaça (METAR) e 908 focos de fogo no estado em 25/10 (INPE, satélite de referência). Sul: Santo Ângelo (RS) com 9 °C às 4h e geada isolada prevista nas serras até terça (MetSul).
+Hoje (26/10): alerta amarelo de tempestade do INMET em 2.818 cidades (MG 853, SP 645) e de baixa umidade em 355 cidades do Nordeste.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): quarta (28) e quinta (29) devem ser os dias mais chuvosos, o Sudeste deve acumular mais (233,2 mm) e Teresina deve chegar a 39,6 °C; 757,5 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN juntaram mais de 22.500 mm no Brasil em 24 h e mais de 8.000 mm em Minas (soma dos pluviômetros, não chuva média; 2 sensores isolados descartados).
+Fontes: Cemig, Defesa Civil do PR, Simepar, INMET, CEMADEN, INPE, NOAA (METAR e GOES-19 via NASA GIBS), MetSul, Meteored, Open-Meteo.
