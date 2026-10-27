@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Previsão do dia, terça-feira, vinte e sete de outubro. Temporais devem voltar na quinta e na sexta, e o calor pode chegar a quarenta e quatro graus no domingo.", "legenda": "Previsão do dia, terça-feira, 27 de outubro. Temporais devem voltar na quinta e na sexta, e o calor pode chegar a 44 graus no domingo."},
+  {"id": "f2", "fala": "Hoje, uma alta pressão com ar seco ainda segura as nuvens de chuva sobre o Sul, mas vai perdendo força.", "legenda": "Hoje, uma alta pressão com ar seco ainda segura as nuvens de chuva sobre o Sul, mas vai perdendo força."},
+  {"id": "f3", "fala": "Deve ter garoa só no litoral do Paraná, de São Paulo, do Rio e do Espírito Santo. No resto, tempo firme.", "legenda": "Deve ter garoa só no litoral do Paraná, de São Paulo, do Rio e do Espírito Santo. No resto, tempo firme."},
+  {"id": "f4", "fala": "Em Mato Grosso do Sul, algumas pancadas. O oeste do Sul deve ser a área mais quente hoje e amanhã.", "legenda": "Em Mato Grosso do Sul, algumas pancadas. O oeste do Sul deve ser a área mais quente hoje e amanhã."},
+  {"id": "f5", "fala": "Na quarta, as nuvens aumentam. Voltam pancadas isoladas, principalmente no Sudeste e no Centro-Oeste, e no Sul.", "legenda": "Na quarta, as nuvens aumentam. Voltam pancadas isoladas, principalmente no Sudeste e no Centro-Oeste, e no Sul."},
+  {"id": "f6", "fala": "Na quinta e na sexta, uma baixa pressão traz nuvens carregadas e risco de temporais no Sudeste e no Centro-Oeste.", "legenda": "Na quinta e na sexta, uma baixa pressão traz nuvens carregadas e risco de temporais no Sudeste e no Centro-Oeste."},
+  {"id": "f7", "fala": "Para quinta, o aviso de tempestade já cobre duas mil setecentas e setenta e sete cidades.", "legenda": "Para quinta, o aviso de tempestade já cobre 2.777 cidades."},
+  {"id": "f8", "fala": "No Sul, podem cair de trinta a cinquenta milímetros. Com o solo encharcado, já pode haver alagamento pontual.", "legenda": "No Sul, podem cair de 30 a 50 milímetros. Com o solo encharcado, já pode haver alagamento pontual."},
+  {"id": "f9", "fala": "No fim de semana, o sol volta ao Sul. No domingo, Piauí, Ceará, Maranhão e Pará podem chegar a quarenta e quatro graus.", "legenda": "No fim de semana, o sol volta ao Sul. No domingo, Piauí, Ceará, Maranhão e Pará podem chegar a 44 graus."},
+  {"id": "f10", "fala": "E novembro deve começar mais instável, com frentes frias previstas por volta dos dias três, seis e oito. Ainda são projeções.", "legenda": "E novembro deve começar mais instável, com frentes frias previstas por volta dos dias 3, 6 e 8. Ainda são projeções."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
