@@ -1,0 +1,9 @@
+Clima 24 h 27/10: 231 mil ainda sem luz em Minas e 141 mm em Ibicuí (BA)
+Minas depois do temporal de domingo (25/10): cerca de 60 mil raios, 6 vezes o esperado; pico de 640 mil clientes sem luz e 231 mil ainda sem energia na segunda (Cemig, via O Tempo).
+Bahia: Ibicuí com 141,2 mm em 24 h, 138,6 mm só em 3 horas na madrugada de terça; Camacan com 68 mm em 1 hora (CEMADEN).
+Rio: Petrópolis com 67,2 mm (CEMADEN) e rajada de 59 km/h em Campos dos Goytacazes (METAR, NOAA). Teresina e Boa Vista com 38 °C (METAR); Maranhão liderou os focos de fogo em 26/10, 142 de 468 no satélite de referência (INPE).
+Sul: Santo Ângelo (RS) com 9 °C e Curitiba com 10 °C às 5h (METAR); geada fraca e isolada prevista nas serras gaúcha e catarinense (INMET).
+Hoje (27/10): alerta amarelo de tempestade do INMET em 1.058 cidades (BA 349, MG 308); na quinta (29), 2.777 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): sexta (30) deve ser o dia mais chuvoso, o Sudeste deve acumular mais (235,5 mm) e Teresina deve chegar a 39,5 °C; 775,8 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN juntaram mais de 8.700 mm no Brasil em 24 h e mais de 3.000 mm em Minas (soma dos pluviômetros, não chuva média; 2 sensores isolados descartados).
+Fontes: Cemig, INMET, CEMADEN, INPE, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
