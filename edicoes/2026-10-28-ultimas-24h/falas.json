@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quarta, vinte e oito de outubro. O Pará teve novecentos e dois focos de fogo num só dia, e a Bahia somou mais da metade da chuva dos pluviômetros.",
+  "legenda": "Quarta, 28 de outubro. O Pará teve 902 focos de fogo num só dia, e a Bahia somou mais da metade da chuva dos pluviômetros."
+ },
+ {
+  "id": "f2",
+  "fala": "No Pará, foram novecentos e dois dos mil trezentos e trinta e um focos. Em Santarém, o aeroporto amanheceu com fumaça e três quilômetros de visibilidade.",
+  "legenda": "No Pará, foram 902 dos 1.331 focos. Em Santarém, o aeroporto amanheceu com fumaça e 3 km de visibilidade."
+ },
+ {
+  "id": "f3",
+  "fala": "Na Bahia, quatro pluviômetros de Vitória da Conquista passaram de quarenta e cinco milímetros.",
+  "legenda": "Na Bahia, 4 pluviômetros de Vitória da Conquista passaram de 45 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Goiás, Formosa recebeu sessenta e nove milímetros em três horas. E São José dos Campos teve rajada de cinquenta e quatro quilômetros por hora.",
+  "legenda": "Em Goiás, Formosa recebeu 69 milímetros em 3 horas. E São José dos Campos teve rajada de 54 km/h."
+ },
+ {
+  "id": "f5",
+  "fala": "No calor, Teresina marcou trinta e nove graus, Boa Vista trinta e oito, e Santarém trinta e sete graus.",
+  "legenda": "No calor, Teresina marcou 39 graus, Boa Vista 38, e Santarém 37 graus."
+ },
+ {
+  "id": "f6",
+  "fala": "No Sul, Canoas, Santa Maria e Santo Ângelo amanheceram com nove graus.",
+  "legenda": "No Sul, Canoas, Santa Maria e Santo Ângelo amanheceram com 9 graus."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta amarelo de tempestade em mil oitocentas e sessenta e uma cidades. Na quinta, são duas mil setecentas e setenta e sete cidades.",
+  "legenda": "E hoje? Alerta amarelo de tempestade em 1.861 cidades. Na quinta, são 2.777 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: sexta deve ser o dia mais chuvoso, e o Centro-Oeste deve acumular mais. Boa Vista deve chegar a trinta e nove graus.",
+  "legenda": "Os próximos 7 dias: sexta deve ser o dia mais chuvoso, e o Centro-Oeste deve acumular mais. Boa Vista deve chegar a 39 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de seis mil e quinhentos milímetros, mais de três mil e quinhentos só na Bahia. Em sete dias, as capitais devem somar mais de seiscentos e oitenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 6.500 milímetros, mais de 3.500 só na Bahia. Em 7 dias, as capitais devem somar mais de 680 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

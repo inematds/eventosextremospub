@@ -1,0 +1,9 @@
+Clima 24 h 28/10: 902 focos de fogo no Pará e chuva forte na Bahia e em Goiás
+Fogo: o Pará teve 902 dos 1.331 focos do Brasil em 27/10 no satélite de referência (INPE); o aeroporto de Santarém amanheceu com fumaça e 3 km de visibilidade (METAR, NOAA).
+Bahia: 4 pluviômetros de Vitória da Conquista passaram de 45 mm em 24 h (até 54,4 mm) (CEMADEN).
+Goiás e São Paulo: Formosa (GO) com 69 mm em 3 horas (CEMADEN); rajada de 54 km/h em São José dos Campos (METAR).
+Calor e frio: Teresina com 39 °C, Boa Vista 38 °C e Santarém 37 °C; Canoas, Santa Maria e Santo Ângelo (RS) com 9 °C às 6h (METAR).
+Hoje (28/10): alerta amarelo de tempestade do INMET em 1.861 cidades (SP 409, GO 246); na quinta (29), 2.777 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): sexta (30) deve ser o dia mais chuvoso, o Centro-Oeste deve acumular mais (227,5 mm) e Boa Vista deve chegar a 39 °C; 686 mm somados nas capitais em 7 dias.
+Volumes somados: os pluviômetros do CEMADEN juntaram mais de 6.500 mm no Brasil em 24 h e mais de 3.500 mm na Bahia (soma dos pluviômetros, não chuva média; 4 sensores isolados descartados).
+Fontes: INPE, CEMADEN, INMET, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
