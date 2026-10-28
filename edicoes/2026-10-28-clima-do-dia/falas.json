@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Quarta-feira, vinte e oito de outubro. Amanhã, São Paulo não passa de vinte e um graus, e o Pará pode chegar a quarenta graus.", "legenda": "Quarta-feira, 28 de outubro. Amanhã, São Paulo não passa de 21 graus, e o Pará pode chegar a 40 graus."},
+  {"id": "f2", "fala": "Uma frente fria passa pelo sul da Bahia e pelo Espírito Santo, e deixa muita nuvem no centro-sul.", "legenda": "Uma frente fria passa pelo sul da Bahia e pelo Espírito Santo, e deixa muita nuvem no centro-sul."},
+  {"id": "f3", "fala": "Hoje, as pancadas ficam no Mato Grosso, em Goiás, no Tocantins, no Maranhão e na Bahia. No Sul, a chuva é isolada.", "legenda": "Hoje, as pancadas ficam no Mato Grosso, em Goiás, no Tocantins, no Maranhão e na Bahia. No Sul, a chuva é isolada."},
+  {"id": "f4", "fala": "Na quinta, a chuva aumenta. Pode chover forte no Triângulo Mineiro, no sul de Minas, em São Paulo e na cidade do Rio.", "legenda": "Na quinta, a chuva aumenta. Pode chover forte no Triângulo Mineiro, no sul de Minas, em São Paulo e na cidade do Rio."},
+  {"id": "f5", "fala": "O INMET tem alerta de chuvas intensas para amanhã em dois mil trezentos e trinta e oito municípios. No Sul, pode ter granizo.", "legenda": "O INMET tem alerta de chuvas intensas para amanhã em 2.338 municípios. No Sul, pode ter granizo."},
+  {"id": "f6", "fala": "Na sexta, a chuva forte fica entre Minas e o estado do Rio, e chove bem em Goiânia e Brasília.", "legenda": "Na sexta, a chuva forte fica entre Minas e o estado do Rio, e chove bem em Goiânia e Brasília."},
+  {"id": "f7", "fala": "No sábado, o frio volta: pode fazer quatro graus no topo da serra, no Sul, ao amanhecer.", "legenda": "No sábado, o frio volta: pode fazer 4 graus no topo da serra, no Sul, ao amanhecer."},
+  {"id": "f8", "fala": "Já o Norte e o Nordeste seguem quentes, de trinta e cinco a trinta e oito graus no Piauí, no Ceará e em Pernambuco.", "legenda": "Já o Norte e o Nordeste seguem quentes, de 35 a 38 graus no Piauí, no Ceará e em Pernambuco."},
+  {"id": "f9", "fala": "Em quinze dias, Minas deve somar até cento e oitenta milímetros de chuva, acima do normal.", "legenda": "Em 15 dias, Minas deve somar até 180 milímetros de chuva, acima do normal."},
+  {"id": "f10", "fala": "Na Amazônia e no Pará, a chuva fica abaixo do normal, e o Amapá é o que mais sofre.", "legenda": "Na Amazônia e no Pará, a chuva fica abaixo do normal, e o Amapá é o que mais sofre."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
