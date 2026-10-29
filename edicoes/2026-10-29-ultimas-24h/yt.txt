@@ -1,0 +1,9 @@
+Clima 24 h 29/10: alerta laranja em 918 cidades e Salvador com quase 60 mm
+Hoje (29/10): alerta laranja de chuvas intensas do INMET em 918 cidades (MG 352, SP 342, GO 160, RJ 43), com Goiânia e São Paulo: 50 a 100 mm no dia e vento de 60 a 100 km/h; amarelo em 2.338 cidades.
+Salvador: 3 pluviômetros passaram de 58 mm em 24 h (Matatu 58,9) (CEMADEN); o aeroporto teve chuva forte e 1 km de visibilidade às 9h de quarta (METAR, NOAA).
+Chuva forte: Colorado do Oeste (RO) com 68 a 81,6 mm nos 3 pluviômetros; Parnarama (MA) com 50 mm em 3 horas; Goiânia com 53,6 mm (CEMADEN).
+Fogo: o Pará teve 257 dos 502 focos do Brasil em 28/10 no satélite de referência (INPE); fumaça em Santarém (3 km de visibilidade) e Manaus (METAR).
+Calor e frio: Teresina, Santarém e Itaituba com 38 °C; Curitiba com 12 °C às 5h (METAR).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): sexta (30) deve ser o dia mais chuvoso, o Sudeste deve acumular mais (236,9 mm), Belo Horizonte deve passar de 100 mm e Teresina chegar perto de 40 °C; 750,7 mm somados nas capitais.
+Volumes somados: os pluviômetros do CEMADEN juntaram quase 6.000 mm no Brasil em 24 h e mais de 1.600 mm na Bahia (soma dos pluviômetros, não chuva média; 2 sensores isolados descartados).
+Fontes: INMET, CEMADEN, INPE, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.

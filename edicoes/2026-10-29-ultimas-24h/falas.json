@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quinta, vinte e nove de outubro. Alerta laranja de chuva forte em novecentas e dezoito cidades, e Salvador teve quase sessenta milímetros.",
+  "legenda": "Quinta, 29 de outubro. Alerta laranja de chuva forte em 918 cidades, e Salvador teve quase 60 milímetros."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Salvador, três pluviômetros passaram de cinquenta e oito milímetros. No aeroporto, a chuva forte deixou um quilômetro de visibilidade.",
+  "legenda": "Em Salvador, 3 pluviômetros passaram de 58 milímetros. No aeroporto, a chuva forte deixou 1 km de visibilidade."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Rondônia, os três pluviômetros de Colorado do Oeste marcaram de sessenta e oito a quase oitenta e dois milímetros.",
+  "legenda": "Em Rondônia, os 3 pluviômetros de Colorado do Oeste marcaram de 68 a quase 82 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No Maranhão, Parnarama teve cinquenta milímetros em três horas. Goiânia passou de cinquenta e três milímetros.",
+  "legenda": "No Maranhão, Parnarama teve 50 milímetros em 3 horas. Goiânia passou de 53 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No fogo, o Pará teve duzentos e cinquenta e sete dos quinhentos e dois focos. Santarém e Manaus amanheceram com fumaça.",
+  "legenda": "No fogo, o Pará teve 257 dos 502 focos. Santarém e Manaus amanheceram com fumaça."
+ },
+ {
+  "id": "f6",
+  "fala": "No calor, Teresina, Santarém e Itaituba marcaram trinta e oito graus. Curitiba amanheceu com doze graus.",
+  "legenda": "No calor, Teresina, Santarém e Itaituba marcaram 38 graus. Curitiba amanheceu com 12 graus."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta laranja em novecentas e dezoito cidades: até cem milímetros no dia e vento de até cem quilômetros por hora. O amarelo cobre duas mil trezentas e trinta e oito cidades.",
+  "legenda": "E hoje? Alerta laranja em 918 cidades: até 100 milímetros no dia e vento de até 100 km/h. O amarelo cobre 2.338 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: sexta deve ser o dia mais chuvoso, e o Sudeste deve acumular mais. Belo Horizonte deve passar de cem milímetros, e Teresina, chegar perto de quarenta graus.",
+  "legenda": "Os próximos 7 dias: sexta deve ser o dia mais chuvoso, e o Sudeste deve acumular mais. Belo Horizonte deve passar de 100 milímetros, e Teresina, chegar perto de 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram quase seis mil milímetros, mais de mil e seiscentos na Bahia. Em sete dias, as capitais devem somar mais de setecentos e cinquenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram quase 6.000 milímetros, mais de 1.600 na Bahia. Em 7 dias, as capitais devem somar mais de 750 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
