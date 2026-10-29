@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Previsão do dia, quinta-feira, vinte e nove de outubro. O aviso de chuvas intensas cobre duas mil oitocentas e quatro cidades.", "legenda": "Previsão do dia, quinta-feira, 29 de outubro. O aviso de chuvas intensas cobre 2.804 cidades."},
+  {"id": "f2", "fala": "Uma baixa pressão fraca sobre o Sul traz chuva e temporais isolados, com pouco volume.", "legenda": "Uma baixa pressão fraca sobre o Sul traz chuva e temporais isolados, com pouco volume."},
+  {"id": "f3", "fala": "No Sul, deve chover em Santa Catarina, Paraná e norte gaúcho, à tarde e à noite. O centro-sul gaúcho fica seco.", "legenda": "No Sul, deve chover em Santa Catarina, Paraná e norte gaúcho, à tarde e à noite. O centro-sul gaúcho fica seco."},
+  {"id": "f4", "fala": "No Centro-Oeste e no Sudeste, pode ter pancadas em Mato Grosso, Goiás, São Paulo, Minas e Rio de Janeiro.", "legenda": "No Centro-Oeste e no Sudeste, pode ter pancadas em Mato Grosso, Goiás, São Paulo, Minas e Rio de Janeiro."},
+  {"id": "f5", "fala": "O aviso laranja de tempestade pega trezentas e noventa e sete cidades, duzentas e setenta e três em Minas.", "legenda": "O aviso laranja de tempestade pega 397 cidades, 273 em Minas."},
+  {"id": "f6", "fala": "Chapecó e Campo Grande devem chegar a vinte e oito graus; o litoral paulista, vinte graus.", "legenda": "Chapecó e Campo Grande devem chegar a 28 graus; o litoral paulista, 20 graus."},
+  {"id": "f7", "fala": "Amanhã, a baixa segue ativa no Sul e o aviso de chuvas intensas sobe para três mil duzentas e vinte e seis cidades.", "legenda": "Amanhã, a baixa segue ativa no Sul e o aviso de chuvas intensas sobe para 3.226 cidades."},
+  {"id": "f8", "fala": "No fim de semana, calor e pancadas à tarde e à noite; o Rio Grande do Sul fica seco. Na segunda, chove mais no oeste do Paraná e de Santa Catarina.", "legenda": "No fim de semana, calor e pancadas à tarde e à noite; o Rio Grande do Sul fica seco. Na segunda, chove mais no oeste do Paraná e de Santa Catarina."},
+  {"id": "f9", "fala": "O ponto de atenção é três e quatro de novembro: uma frente fria organizada pode trazer tempestades e muita chuva ao Sul.", "legenda": "O ponto de atenção é 3 e 4 de novembro: uma frente fria organizada pode trazer tempestades e muita chuva ao Sul."},
+  {"id": "f10", "fala": "Em sete dias, a previsão soma sessenta e seis milímetros em Curitiba e setenta e seis em Belo Horizonte.", "legenda": "Em sete dias, a previsão soma 66 milímetros em Curitiba e 76 em Belo Horizonte."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
