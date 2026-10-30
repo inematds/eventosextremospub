@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Sexta-feira, trinta de outubro. Hoje pode chover forte em Minas e no Rio, e a chuva de um mês pode cair em menos de quinze dias.", "legenda": "Sexta-feira, 30 de outubro. Hoje pode chover forte em Minas e no Rio, e a chuva de um mês pode cair em menos de 15 dias."},
+  {"id": "f2", "fala": "O satélite mostra uma faixa de nuvens carregadas do sul do Pará até Minas e o Rio.", "legenda": "O satélite mostra uma faixa de nuvens carregadas do sul do Pará até Minas e o Rio."},
+  {"id": "f3", "fala": "Hoje a chuva forte pega Juiz de Fora, a serra do Rio, a Grande Rio e o sul do Espírito Santo.", "legenda": "Hoje a chuva forte pega Juiz de Fora, a serra do Rio, a Grande Rio e o sul do Espírito Santo."},
+  {"id": "f4", "fala": "Goiás tem pancadas em Goiânia e Brasília. São Paulo amanheceu com garoa, mínima de treze graus.", "legenda": "Goiás tem pancadas em Goiânia e Brasília. São Paulo amanheceu com garoa, mínima de 13 graus."},
+  {"id": "f5", "fala": "No Sul, Santa Catarina teve trovoada de madrugada, e pode ter caído granizo entre Xanxerê e Chapecó.", "legenda": "No Sul, Santa Catarina teve trovoada de madrugada, e pode ter caído granizo entre Xanxerê e Chapecó."},
+  {"id": "f6", "fala": "O INMET tem aviso de chuvas intensas hoje em setecentas e noventa e cinco cidades de Minas, e em duas mil cento e sessenta e seis cidades no Brasil.", "legenda": "O INMET tem aviso de chuvas intensas hoje em 795 cidades de Minas, e em 2.166 cidades no Brasil."},
+  {"id": "f7", "fala": "Já o Piauí tem calor forte: Teresina chega a trinta e sete graus hoje, e o interior pode bater quarenta graus.", "legenda": "Já o Piauí tem calor forte: Teresina chega a 37 graus hoje, e o interior pode bater 40 graus."},
+  {"id": "f8", "fala": "No sábado, o frio chega ao Sul, e a serra de Santa Catarina deve amanhecer com cinco a sete graus.", "legenda": "No sábado, o frio chega ao Sul, e a serra de Santa Catarina deve amanhecer com 5 a 7 graus."},
+  {"id": "f9", "fala": "Até treze de novembro, deve chover muito em Minas, Goiás, Rio, Espírito Santo e Paraná: a chuva do mês em menos de quinze dias.", "legenda": "Até 13 de novembro, deve chover muito em Minas, Goiás, Rio, Espírito Santo e Paraná: a chuva do mês em menos de 15 dias."},
+  {"id": "f10", "fala": "E de quatro a doze de novembro, a temperatura deve cair bruscamente no Sul e no Sudeste, com risco de geada na serra.", "legenda": "E de 4 a 12 de novembro, a temperatura deve cair bruscamente no Sul e no Sudeste, com risco de geada na serra."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
