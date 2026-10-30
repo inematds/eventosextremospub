@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sexta, trinta de outubro. O fogo mais que dobrou: mil e setenta e oito focos. E choveu forte de madrugada no Rio e em Minas.",
+  "legenda": "Sexta, 30 de outubro. O fogo mais que dobrou: 1.078 focos. E choveu forte de madrugada no Rio e em Minas."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Belford Roxo, no Rio, um pluviômetro marcou cinquenta e um milímetros, quarenta deles em seis horas. Niterói e Caxias passaram de quarenta e oito milímetros.",
+  "legenda": "Em Belford Roxo, no Rio, um pluviômetro marcou 51 milímetros, 40 deles em 6 horas. Niterói e Caxias passaram de 48 milímetros."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Minas, Cachoeira da Prata teve cinquenta e cinco milímetros, quase tudo em três horas. Araxá passou de cinquenta milímetros nos quatro pluviômetros.",
+  "legenda": "Em Minas, Cachoeira da Prata teve 55 milímetros, quase tudo em 3 horas. Araxá passou de 50 milímetros nos 4 pluviômetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No fogo, o satélite de referência viu mais que o dobro de quarta. O Maranhão lidera, com duzentos e setenta e oito focos.",
+  "legenda": "No fogo, o satélite de referência viu mais que o dobro de quarta. O Maranhão lidera, com 278 focos."
+ },
+ {
+  "id": "f5",
+  "fala": "Itaituba, no Pará, teve fumaça e chegou a trinta e nove graus. Pelotas marcou doze graus.",
+  "legenda": "Itaituba, no Pará, teve fumaça e chegou a 39 graus. Pelotas marcou 12 graus."
+ },
+ {
+  "id": "f6",
+  "fala": "E hoje? Alerta amarelo de chuvas intensas em três mil duzentas e vinte e seis cidades: até cinquenta milímetros no dia e vento de até sessenta quilômetros por hora. Domingo tem alerta de tempestade com granizo.",
+  "legenda": "E hoje? Alerta amarelo de chuvas intensas em 3.226 cidades: até 50 milímetros no dia e vento de até 60 km/h. Domingo tem alerta de tempestade com granizo."
+ },
+ {
+  "id": "f7",
+  "fala": "Os próximos sete dias: hoje deve ser o dia mais chuvoso, e o Centro-Oeste deve acumular mais. Belo Horizonte deve somar oitenta e três milímetros, e Teresina chegar a quarenta graus.",
+  "legenda": "Os próximos 7 dias: hoje deve ser o dia mais chuvoso, e o Centro-Oeste deve acumular mais. Belo Horizonte deve somar 83 milímetros, e Teresina chegar a 40 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de vinte e um mil milímetros, mais de sete mil em São Paulo. Em sete dias, as capitais devem somar mais de quinhentos e vinte milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 21 mil milímetros, mais de 7 mil em São Paulo. Em 7 dias, as capitais devem somar mais de 520 milímetros."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

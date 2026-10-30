@@ -1,0 +1,175 @@
+{
+ "dias": [
+  "2026-10-30",
+  "2026-10-31",
+  "2026-11-01",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05"
+ ],
+ "por_dia": [
+  {
+   "dia": "2026-10-30",
+   "soma_chuva_mm": 105.2,
+   "por_regiao_mm": {
+    "N": 13.5,
+    "NE": 3.2,
+    "CO": 33.1,
+    "SE": 51.1,
+    "S": 4.3
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 29.5,
+   "tmax_pico": [
+    37.8,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-10-31",
+   "soma_chuva_mm": 55.1,
+   "por_regiao_mm": {
+    "N": 13.5,
+    "NE": 1.4,
+    "CO": 16.3,
+    "SE": 18.4,
+    "S": 5.5
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 29.8,
+   "tmax_pico": [
+    38.3,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-11-01",
+   "soma_chuva_mm": 83.0,
+   "por_regiao_mm": {
+    "N": 23.2,
+    "NE": 3.5,
+    "CO": 34.9,
+    "SE": 17.6,
+    "S": 3.8
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 30.4,
+   "tmax_pico": [
+    39.1,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-11-02",
+   "soma_chuva_mm": 88.9,
+   "por_regiao_mm": {
+    "N": 11.2,
+    "NE": 11.8,
+    "CO": 26.6,
+    "SE": 31.7,
+    "S": 7.6
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 30.9,
+   "tmax_pico": [
+    39.3,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-11-03",
+   "soma_chuva_mm": 80.6,
+   "por_regiao_mm": {
+    "N": 17.0,
+    "NE": 11.4,
+    "CO": 22.3,
+    "SE": 16.8,
+    "S": 13.1
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 31.1,
+   "tmax_pico": [
+    39.4,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-11-04",
+   "soma_chuva_mm": 43.4,
+   "por_regiao_mm": {
+    "N": 5.5,
+    "NE": 7.9,
+    "CO": 13.8,
+    "SE": 10.5,
+    "S": 5.7
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 31.3,
+   "tmax_pico": [
+    39.3,
+    "Teresina"
+   ]
+  },
+  {
+   "dia": "2026-11-05",
+   "soma_chuva_mm": 67.6,
+   "por_regiao_mm": {
+    "N": 14.4,
+    "NE": 3.6,
+    "CO": 20.0,
+    "SE": 11.6,
+    "S": 18.0
+   },
+   "capitais_ge_30mm": [],
+   "tmax_media": 31.6,
+   "tmax_pico": [
+    40.2,
+    "Teresina"
+   ]
+  }
+ ],
+ "soma_7d_mm": 523.8,
+ "soma_7d_por_regiao_mm": {
+  "N": 98.3,
+  "NE": 42.8,
+  "CO": 167.0,
+  "SE": 157.7,
+  "S": 58.0
+ },
+ "acumulado_7d_top": [
+  [
+   "Belo Horizonte",
+   83.0
+  ],
+  [
+   "Brasília",
+   63.2
+  ],
+  [
+   "Goiânia",
+   53.8
+  ],
+  [
+   "São Paulo",
+   37.6
+  ],
+  [
+   "Campo Grande",
+   35.9
+  ],
+  [
+   "Curitiba",
+   31.6
+  ],
+  [
+   "Palmas",
+   30.2
+  ],
+  [
+   "Rio Branco",
+   19.4
+  ]
+ ],
+ "rotulo": "soma da chuva prevista nas 27 capitais (mm somados), Open-Meteo best_match; não é lâmina média do país"
+}
