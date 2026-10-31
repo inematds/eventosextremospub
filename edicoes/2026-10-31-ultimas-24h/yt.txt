@@ -1,0 +1,9 @@
+Clima 24 h 31/10: temporal em Manaus, 87 mm na serra do Rio e alerta laranja
+Manaus: na sexta (30/10), a trovoada baixou a visibilidade dos dois aeroportos para 500 m; 4 pluviômetros passaram de 50 mm, o maior com 66,8 (METAR NOAA; CEMADEN).
+Rio: Teresópolis marcou 87,6 mm em 24 h (Três Córregos), a maior marca entre os pluviômetros do país (CEMADEN).
+Minas: na Zona da Mata, Abre Campo e Caputira tiveram 67,4 mm; Cataguases 52,7, 32,6 deles em 6 h (CEMADEN).
+Fogo: o satélite de referência do INPE contou 919 focos na sexta (30/10); o Pará tem 674, sete em cada dez.
+Calor e ar seco: Teresina chegou a 38 °C; alerta de baixa umidade do INMET em 665 cidades do Nordeste.
+Hoje (31/10): alerta amarelo de chuvas intensas em 1.886 cidades. Segunda (2/11): alerta laranja de tempestade em 366 cidades, 337 no Paraná, com 50 a 100 mm no dia, vento de 60 a 100 km/h e granizo (INMET).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): quarta (4/11) deve ser o dia mais chuvoso, puxado pelo Sul; o Sudeste deve acumular mais (157,7 mm); Teresina deve chegar a 40 °C; 563,5 mm somados nas capitais. Volumes: os pluviômetros do CEMADEN juntaram mais de 12.800 mm em 24 h, mais de 6.700 em Minas (soma, não chuva média).
+Fontes: CEMADEN, INMET, INPE, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.

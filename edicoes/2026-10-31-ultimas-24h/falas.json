@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sábado, trinta e um de outubro. Temporal em Manaus, chuva forte no Rio e em Minas, e alerta laranja para segunda.",
+  "legenda": "Sábado, 31 de outubro. Temporal em Manaus, chuva forte no Rio e em Minas, e alerta laranja para segunda."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Manaus, a trovoada baixou a visibilidade nos aeroportos para quinhentos metros, e quatro pluviômetros passaram de cinquenta milímetros.",
+  "legenda": "Em Manaus, a trovoada baixou a visibilidade nos aeroportos para 500 metros, e 4 pluviômetros passaram de 50 milímetros."
+ },
+ {
+  "id": "f3",
+  "fala": "Na serra do Rio, Teresópolis marcou oitenta e sete milímetros, a maior chuva do país.",
+  "legenda": "Na serra do Rio, Teresópolis marcou 87 milímetros, a maior chuva do país."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Minas, Abre Campo e Caputira tiveram sessenta e sete milímetros, e Cataguases, trinta e dois em seis horas.",
+  "legenda": "Em Minas, Abre Campo e Caputira tiveram 67 milímetros, e Cataguases, 32 em 6 horas."
+ },
+ {
+  "id": "f5",
+  "fala": "No fogo, o satélite de referência viu novecentos e dezenove focos. O Pará tem seiscentos e setenta e quatro, sete em cada dez.",
+  "legenda": "No fogo, o satélite de referência viu 919 focos. O Pará tem 674, sete em cada dez."
+ },
+ {
+  "id": "f6",
+  "fala": "Teresina chegou a trinta e oito graus, e seiscentas e sessenta e cinco cidades do Nordeste têm alerta de ar seco.",
+  "legenda": "Teresina chegou a 38 graus, e 665 cidades do Nordeste têm alerta de ar seco."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta amarelo de chuvas intensas em mil oitocentas e oitenta e seis cidades. Segunda tem alerta laranja de tempestade, quase todo no Paraná: até cem milímetros, vento de até cem quilômetros por hora e granizo.",
+  "legenda": "E hoje? Alerta amarelo de chuvas intensas em 1.886 cidades. Segunda tem alerta laranja de tempestade, quase todo no Paraná: até 100 milímetros, vento de até 100 km/h e granizo."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: quarta deve ser o dia mais chuvoso, puxado pelo Sul. O Sudeste deve acumular mais, e Teresina deve chegar a quarenta graus.",
+  "legenda": "Os próximos 7 dias: quarta deve ser o dia mais chuvoso, puxado pelo Sul. O Sudeste deve acumular mais, e Teresina deve chegar a 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de doze mil e oitocentos milímetros, mais de seis mil e setecentos em Minas. Em sete dias, as capitais devem somar mais de quinhentos e sessenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 12.800 milímetros, mais de 6.700 em Minas. Em 7 dias, as capitais devem somar mais de 560 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
