@@ -1,0 +1,8 @@
+Clima 24 h 01/11: 107 mm em Minas, temporal em Goiânia e alerta laranja
+Minas: no Vale do Jequitinhonha, Padre Paraíso marcou 107,6 mm em 24 h, 52,6 deles em 6 h; 14 pluviômetros mineiros passaram de 50 mm; Jaíba teve 68,2 mm, todos em 6 h (CEMADEN).
+Centro-Oeste: no sábado (31/10), rajada de 61 km/h em Goiânia e em Cuiabá; em Brasília, a trovoada forte baixou a visibilidade do aeroporto para 1.000 m (METAR NOAA).
+Fogo: o satélite de referência do INPE contou 699 focos no sábado (31/10); o Ceará lidera, com 184.
+Calor e ar seco: Teresina chegou a 39 °C; alerta de baixa umidade do INMET em 665 cidades do Nordeste até hoje.
+Hoje (1/11): alerta amarelo de tempestade em 1.092 cidades. Segunda (2/11): alerta laranja de tempestade em 366 cidades, 337 no Paraná, com 50 a 100 mm no dia, vento de 60 a 100 km/h e granizo (INMET).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): quinta (5/11) deve ser o dia mais chuvoso (135,1 mm somados); o Sul deve acumular mais (202,4 mm); Teresina deve passar dos 40 °C; 652,4 mm somados nas capitais. Volumes: os pluviômetros do CEMADEN juntaram mais de 7.100 mm em 24 h, mais de 4.300 em Minas (soma, não chuva média).
+Fontes: CEMADEN, INMET, INPE, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.

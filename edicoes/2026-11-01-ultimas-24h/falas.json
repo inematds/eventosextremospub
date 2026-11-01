@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Domingo, primeiro de novembro. Chuva forte no norte de Minas, temporal em Goiânia e Brasília, e alerta laranja para segunda.",
+  "legenda": "Domingo, 1º de novembro. Chuva forte no norte de Minas, temporal em Goiânia e Brasília, e alerta laranja para segunda."
+ },
+ {
+  "id": "f2",
+  "fala": "No Vale do Jequitinhonha, Padre Paraíso marcou cento e sete milímetros, metade em seis horas.",
+  "legenda": "No Vale do Jequitinhonha, Padre Paraíso marcou 107 milímetros, metade em 6 horas."
+ },
+ {
+  "id": "f3",
+  "fala": "Catorze pluviômetros de Minas passaram de cinquenta milímetros. Jaíba teve sessenta e oito milímetros, todos em seis horas.",
+  "legenda": "14 pluviômetros de Minas passaram de 50 milímetros. Jaíba teve 68 milímetros, todos em 6 horas."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Goiânia, o temporal trouxe rajada de sessenta e um quilômetros por hora. Em Brasília, a trovoada baixou a visibilidade para mil metros.",
+  "legenda": "Em Goiânia, o temporal trouxe rajada de 61 km/h. Em Brasília, a trovoada baixou a visibilidade para 1.000 metros."
+ },
+ {
+  "id": "f5",
+  "fala": "No fogo, o satélite de referência viu seiscentos e noventa e nove focos. O Ceará lidera, com cento e oitenta e quatro focos.",
+  "legenda": "No fogo, o satélite de referência viu 699 focos. O Ceará lidera, com 184 focos."
+ },
+ {
+  "id": "f6",
+  "fala": "Teresina chegou a trinta e nove graus, e seiscentas e sessenta e cinco cidades do Nordeste têm alerta de ar seco.",
+  "legenda": "Teresina chegou a 39 graus, e 665 cidades do Nordeste têm alerta de ar seco."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta amarelo de tempestade em mil e noventa e duas cidades. Segunda tem alerta laranja, quase todo no Paraná: até cem milímetros, vento de até cem quilômetros por hora e granizo.",
+  "legenda": "E hoje? Alerta amarelo de tempestade em 1.092 cidades. Segunda tem alerta laranja, quase todo no Paraná: até 100 milímetros, vento de até 100 km/h e granizo."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: quinta deve ser o dia mais chuvoso, e o Sul deve acumular mais. Teresina deve passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: quinta deve ser o dia mais chuvoso, e o Sul deve acumular mais. Teresina deve passar dos 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de sete mil e cem milímetros, mais de quatro mil e trezentos em Minas. Em sete dias, as capitais devem somar mais de seiscentos e cinquenta milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 7.100 milímetros, mais de 4.300 em Minas. Em 7 dias, as capitais devem somar mais de 650 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
