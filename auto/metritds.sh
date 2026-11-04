@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Agenda o Short do clima no TikTok da marca "eventosextremos" (blogId 7800440) no Metricool da conta inematds
+# Agenda o Short do clima no Instagram eventos.extremos (Reel, até 180 s) e no TikTok da marca "eventosextremos" (blogId 7800440) no Metricool da conta inematds
 # (conector MCP "metricool-inematds", apelido "metritds"). Ligado em 04/11/2026 no inema.tds; no mesmo dia o Nei
 # mandou trocar: "o conteúdo do eventosextremos não deve ser no inematds e sim em outro canal chamado eventosextremos".
-# Nunca publica na marca inema.tds: se o TikTok não estiver conectado na marca eventosextremos, não agenda e avisa.
-# Só TikTok. Chamado pelo auto/rodar.sh depois do YouTube.
+# Nunca publica na marca inema.tds: se nenhuma conta do eventos.extremos estiver conectada na marca, não agenda e avisa.
+# Instagram só se a conta ligada for eventos.extremos (Nei, 04/11/2026: "este é o canal do evento extremo no instagram"). Chamado pelo auto/rodar.sh depois do YouTube.
 # uso: auto/metritds.sh <pasta-da-edição> [video.mp4]
 #   publica em agora + 10 min. RASCUNHO=1 agenda como rascunho · SEM_BOT=1 não avisa no v3 · FORCAR=1 refaz.
 # Vídeo público para o Metricool: anexo da release "social" do repo público inematds/eventosextremospub.
@@ -43,14 +43,20 @@ YTID=$(head -1 "$ED/youtube-lives10.txt" 2>/dev/null)
 } > "$ED/metritds-texto.txt"
 
 # 3. agenda pelo conector metricool-inematds (claude -p, assinatura)
+DURV=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V" 2>/dev/null | cut -d. -f1)
+IGOK=$([ "${DURV:-999}" -le 180 ] && echo sim || echo "não (vídeo de ${DURV}s; Reel aceita até 180 s)")
 PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
 1) getBrandSettings: pegue o blogId da marca de label exatamente \"eventosextremos\" (NUNCA use a marca inema.tds nem outra).
-   Se essa marca não existir ou não tiver tiktokData em networksData, NÃO agende nada e responda ok=false com erro \"tiktok não conectado na marca eventosextremos\".
-2) createScheduledPost UMA vez, só com a rede tiktok em providers (NÃO inclua instagram nem outra rede):
+   Redes válidas nessa marca (confira em networksData):
+   - instagram: só se instagramData for exatamente \"eventos.extremos\" e o Instagram estiver liberado ($IGOK).
+   - tiktok: só se tiktokData existir e NÃO for \"inema.tds\".
+   Se nenhuma rede for válida, NÃO agende nada e responda ok=false com erro \"nenhuma rede do eventos.extremos conectada na marca eventosextremos\".
+2) createScheduledPost UMA vez, só com as redes válidas em providers (nenhuma outra):
    date = ${QUANDO_UTC}Z ; publicationDate = {dateTime: \"${QUANDO_UTC}\", timezone: \"UTC\"}
    media = [\"$MEDIA\"] ; text = conteúdo exato do arquivo $ED/metritds-texto.txt (leia com a ferramenta Read)
    draft = $([ -n "${RASCUNHO:-}" ] && echo true || echo false) ; autoPublish = true
-   tiktokData = {privacyOption: \"PUBLIC_TO_EVERYONE\", title: primeira linha do texto (até 90 caracteres), isAigc: true}
+   tiktokData (só se tiktok for válido) = {privacyOption: \"PUBLIC_TO_EVERYONE\", title: primeira linha do texto (até 90 caracteres), isAigc: true}
+   instagramData (só se instagram for válido) = {type: \"REEL\", showReelOnFeed: true, isAiGenerated: true}
 3) Responda APENAS uma linha JSON, sem crase: {\"ok\":true|false,\"redes\":[...],\"planner\":[plannerUrl...],\"erro\":\"texto do erro ou vazio\"}"
 cd "$ED"
 OUT=$(printf '%s' "$PEDIDO" | timeout 600 env -u ANTHROPIC_API_KEY claude -p \
@@ -68,14 +74,15 @@ FAIXA="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦"
 if [ -n "$OK" ]; then
   [ -z "${RASCUNHO:-}" ] && printf '%s\n%s\n' "$QUANDO_BR" "$REDES" > "$ED/metritds.txt"
   MSG="$FAIXA
-🔵 PUBLICADO DIRETO · TikTok eventosextremos (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
+🔵 PUBLICADO DIRETO · eventos.extremos (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
 $FAIXA
 $TIT
 Quando: $QUANDO_BR · Redes: ${REDES:-?}
+Instagram: https://www.instagram.com/eventos.extremos/
 Metricool: ${PLAN:-https://app.metricool.com/planner}"
 else
   MSG="$FAIXA
-⚠ METRITDS: NÃO AGENDOU (TikTok eventosextremos)
+⚠ METRITDS: NÃO AGENDOU (eventos.extremos)
 $FAIXA
 $TIT
 Erro: ${ERRO:-$(printf '%s' "$OUT" | tail -c 300)}

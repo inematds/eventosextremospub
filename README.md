@@ -50,7 +50,7 @@ Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): C
 | 5 | Avatar | `auto/avatar.sh` (estúdio HeyGen, assinatura) → `video-avatar.mp4`; falhou → versão mapa | ⚙️ |
 | 6 | YouTube | `yt-pubx publicar --canal lives10` (Short, título do `yt.txt` + #Shorts) | ⚙️ |
 | 7 | Bot v3 | vídeo + link + pontos do `yt.txt` | ⚙️ |
-| 8 | TikTok | `auto/metritds.sh <edição> <vídeo>` → release `social` deste repo → `claude -p` agenda no TikTok da marca eventosextremos (metritds; nunca no inema.tds) em agora + 10 min → faixa azul no v3. `SEM_TIKTOK=1` pula | ⚙️🤖 |
+| 8 | TikTok | `auto/metritds.sh <edição> <vídeo>` → release `social` deste repo → `claude -p` agenda no Instagram eventos.extremos (Reel até 180 s) e no TikTok da marca eventosextremos (metritds; nunca no inema.tds) em agora + 10 min → faixa azul no v3. `SEM_TIKTOK=1` pula | ⚙️🤖 |
 | 9 | git | arquivos leves da edição, autor inematds, push | ⚙️ |
 
 ## Uso (uma edição)
