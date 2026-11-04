@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Agenda o Short do clima no Instagram eventos.extremos (Reel, até 180 s) e no TikTok da marca "eventosextremos" (blogId 7800440) no Metricool da conta inematds
+# Agenda o Short do clima no Instagram eventos.extremos (Reel, até 180 s) e no TikTok eventos.extremos, marca "eventosextremos" (blogId 7800440) no Metricool da conta inematds
 # (conector MCP "metricool-inematds", apelido "metritds"). Ligado em 04/11/2026 no inema.tds; no mesmo dia o Nei
 # mandou trocar: "o conteúdo do eventosextremos não deve ser no inematds e sim em outro canal chamado eventosextremos".
 # Nunca publica na marca inema.tds: se nenhuma conta do eventos.extremos estiver conectada na marca, não agenda e avisa.
@@ -49,7 +49,7 @@ PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
 1) getBrandSettings: pegue o blogId da marca de label exatamente \"eventosextremos\" (NUNCA use a marca inema.tds nem outra).
    Redes válidas nessa marca (confira em networksData):
    - instagram: só se instagramData for exatamente \"eventos.extremos\" e o Instagram estiver liberado ($IGOK).
-   - tiktok: só se tiktokData existir e NÃO for \"inema.tds\".
+   - tiktok: só se tiktokData for exatamente \"eventos.extremos\".
    Se nenhuma rede for válida, NÃO agende nada e responda ok=false com erro \"nenhuma rede do eventos.extremos conectada na marca eventosextremos\".
 2) createScheduledPost UMA vez, só com as redes válidas em providers (nenhuma outra):
    date = ${QUANDO_UTC}Z ; publicationDate = {dateTime: \"${QUANDO_UTC}\", timezone: \"UTC\"}
@@ -79,6 +79,7 @@ $FAIXA
 $TIT
 Quando: $QUANDO_BR · Redes: ${REDES:-?}
 Instagram: https://www.instagram.com/eventos.extremos/
+TikTok: https://www.tiktok.com/@eventos.extremos
 Metricool: ${PLAN:-https://app.metricool.com/planner}"
 else
   MSG="$FAIXA
