@@ -7,11 +7,29 @@ from pathlib import Path
 sys.path.insert(0, str(Path.home() / "projetos/cardshorts"))
 import cardshorts as cs
 
+
+def _tapa_buracos(wav, pal, tdir, buraco=8.0):
+    """O Whisper às vezes pula um trecho inteiro com fala (gitbombando 01/11/2026: 29 s sumidos).
+    Buraco > `buraco` s entre palavras: retranscreve do buraco até o fim e troca o resto."""
+    for _ in range(3):
+        i = next((k for k in range(len(pal) - 1) if pal[k + 1]["start"] - pal[k]["end"] > buraco), None)
+        if i is None:
+            return pal
+        ini = pal[i]["end"]
+        tr = Path(tdir) / f"trecho-{int(ini)}.wav"
+        Path(tdir).mkdir(parents=True, exist_ok=True)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(ini), "-i", wav, tr], check=True)
+        novo = cs.transcrever(tr, Path(tdir) / f"trecho-{int(ini)}", palavras=True)
+        if not novo:
+            return pal
+        pal = pal[:i + 1] + [{**p, "start": p["start"] + ini, "end": p["end"] + ini} for p in novo]
+    return pal
+
 AQUI = Path(__file__).resolve().parent
 falas = json.loads((AQUI.parent / "falas.json").read_text())
 wav = AQUI / "avatar.wav"
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", AQUI / "avatar.mp4", "-vn", "-ac", "1", "-ar", "48000", wav], check=True)
-pal = cs.transcrever(wav, AQUI / "t", palavras=True)
+pal = _tapa_buracos(wav, cs.transcrever(wav, AQUI / "t", palavras=True), AQUI / "t")
 
 # palavra normalizada → índice da palavra ouvida
 ouv = []
