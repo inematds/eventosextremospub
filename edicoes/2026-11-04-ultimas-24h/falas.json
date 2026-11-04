@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quarta-feira, quatro de novembro. Alerta vermelho no Sul, cento e sessenta e cinco milímetros no Rio Grande do Sul e granizo na Serra.",
+  "legenda": "Quarta-feira, 4 de novembro. Alerta vermelho no Sul, 165 milímetros no Rio Grande do Sul e granizo na Serra."
+ },
+ {
+  "id": "f2",
+  "fala": "Passo Fundo ficou debaixo d'água: cento e sessenta e três milímetros. A Defesa Civil conta mil e sessenta e oito pessoas afetadas.",
+  "legenda": "Passo Fundo ficou debaixo d'água: 163 milímetros. A Defesa Civil conta 1.068 pessoas afetadas."
+ },
+ {
+  "id": "f3",
+  "fala": "Tapera marcou cento e sessenta e cinco milímetros. Trinta e três pluviômetros gaúchos passaram de cem milímetros.",
+  "legenda": "Tapera marcou 165 milímetros. 33 pluviômetros gaúchos passaram de 100 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "Na Serra, o granizo danificou pelo menos duas mil casas em Nova Prata.",
+  "legenda": "Na Serra, o granizo danificou pelo menos 2 mil casas em Nova Prata."
+ },
+ {
+  "id": "f5",
+  "fala": "No Norte, Boa Vista teve rajada de cento e nove quilômetros por hora.",
+  "legenda": "No Norte, Boa Vista teve rajada de 109 km/h."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, o satélite de referência viu mil cento e trinta e seis focos na terça, trezentos e setenta e três no Maranhão.",
+  "legenda": "No fogo, o satélite de referência viu 1.136 focos na terça, 373 no Maranhão."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta vermelho de tempestade em setecentas e cinco cidades do Sul: mais de cem milímetros no dia e vento acima de cem quilômetros por hora. Amanhã, alerta laranja em quinhentas e duas cidades.",
+  "legenda": "E hoje? Alerta vermelho de tempestade em 705 cidades do Sul: mais de 100 milímetros no dia e vento acima de 100 km/h. Amanhã, alerta laranja em 502 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: domingo deve ser o dia mais chuvoso, e o Norte deve acumular mais. Teresina deve passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: domingo deve ser o dia mais chuvoso, e o Norte deve acumular mais. Teresina deve passar dos 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de vinte e um mil e novecentos milímetros, mais de treze mil e quinhentos no Rio Grande do Sul. Em sete dias, as capitais devem somar quase setecentos milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 21.900 milímetros, mais de 13.500 no Rio Grande do Sul. Em 7 dias, as capitais devem somar quase 700 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

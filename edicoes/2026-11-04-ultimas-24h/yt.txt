@@ -1,0 +1,8 @@
+Clima 24 h 04/11: Passo Fundo alagada, 165 mm no RS e alerta vermelho no Sul
+Rio Grande do Sul: Passo Fundo marcou 163 mm em 24 h, 126,4 em 6 h; a Defesa Civil conta 1.068 pessoas afetadas (MetSul). Tapera teve 165,4 mm, o maior volume do país; 33 pluviômetros gaúchos passaram de 100 mm (CEMADEN).
+Serra Gaúcha: o granizo da madrugada danificou pelo menos 2 mil casas em Nova Prata (MetSul, com a Prefeitura de Nova Prata).
+Norte: rajada de 109 km/h e visibilidade de 500 m em Boa Vista na terça (3/11); Porto Velho teve rajada de 78 km/h (METAR NOAA).
+Fogo: o satélite de referência do INPE contou 1.136 focos na terça (3/11); o Maranhão lidera, com 373.
+Hoje (4/11): alerta vermelho de tempestade do INMET em 705 cidades (RS 332, SC 295, PR 78): mais de 100 mm no dia, vento acima de 100 km/h e granizo. Amanhã (5/11): alerta laranja em 502 cidades (PR, SP, MS).
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): domingo (8/11) deve ser o dia mais chuvoso (146,9 mm somados); o Norte deve acumular mais (191,6 mm); Teresina deve passar dos 40 °C; 697 mm somados nas capitais. Volumes: os pluviômetros do CEMADEN juntaram mais de 21.900 mm em 24 h, mais de 13.500 no RS (soma, não chuva média).
+Fontes: CEMADEN, INMET, INPE, MetSul, NOAA (METAR e GOES-19 via NASA GIBS), Open-Meteo.
