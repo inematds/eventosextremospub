@@ -1,3 +1,6 @@
+| 2026-10-31 | Clima 24 h: o assert "maior chuva do país" pegou Muriaé (MG) 328,97 mm, pluviômetro parado desde 30/10 17h30 (o bruto do CEMADEN traz estação sem leitura recente) | filtrar estação viva (leitura nas últimas 6 h, como a coleta) antes de qualquer máximo no gerar_cena.py | prompt |
+| 2026-10-26 | Previsão do dia: gerar_cena.py herdado usa sat/web/mundo.jpg (fundo), mas a coleta da edição não baixa esse arquivo | copiar mundo.jpg de uma edição anterior para sat/web antes do render (ou baixar na coleta) | infra |
+| 2026-10-22 | Previsão do dia: bloco de legenda "marcaram 500 milímetros" passou da borda do vídeo | teto de 20 caracteres por bloco de legenda no gerar_cena.py da edição | prompt |
 | 2026-10-21 | Previsão do dia saiu sem avatar: o avatar veio do HeyGen, mas o render do mapa estourou page.goto 30 s (máquina cheia) e caiu na versão mapa | timeout do page.goto 180 s em motor/render.mjs | infra |
 | 2026-10-21 | fim-mundo-1960: render reprovou no hyperframes check (título longo sobre a legenda; % da barra sobre o rótulo "parte") | título de foto ≤ 4 palavras; barra sem "parte"; rodar `npx hyperframes check` em final/pt-b01 antes da cadeia | prompt |
 | 2026-10-21 | fim-mundo-1960: build --strict reprovou 17 trechos >2 s parados (capítulos abriam 3–4 s sem troca) | sub_at do capítulo em ~1 s + 1 cinética/ponto por trecho; rodar build --strict ANTES de soltar a cadeia | prompt |
@@ -6,6 +9,8 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 2026-11-04 | Clima do DIA e Clima no Mundo não saíram: `claude -p` com "OAuth session expired" (login renovou sozinho minutos depois) | rodar.sh espera 5 min e tenta o `claude -p` uma vez mais quando o log fala em login | infra |
+| 2026-10-25 | Clima no Mundo: selo do topo ("BBC · MET OFFICE · CWA · NOAA · 25/10") cortava a data na borda direita (o do modelo 24/10 também passava) | selo com no máximo 3 fontes + data ("BBC · CWA · NOAA · 25/10") | prompt |
 | 2026-10-20 | Previsão do Dia: `sat/web/mundo.jpg` (fundo Blue Marble que o gerar_cena do modelo usa) não vem na coleta; copiado à mão da edição de 19/10 | a coleta do satélite (ou o rodar.sh ao copiar o modelo) copiar `sat/web/mundo.jpg` da edição modelo quando faltar | infra |
 | 2026-10-19 | O reenvio `-b` do Draft (linha abaixo) brigaria com o Nei gerando o rascunho à mão (2 avatares) | Draft → alerta vermelho no v3 com o nome (heygen-studio.mjs + wifi/heygen-aviso/rascunho.py) e o avatar.sh espera o MESMO id sair do Draft (até 3 h) | infra |
 | 2026-10-19 | Clima 24h (refeito 12:20): card do estúdio HeyGen ficou Draft de novo e saiu só a versão mapa — a correção anotada em 17/10 nunca tinha entrado no avatar.sh | `auto/avatar.sh`: com "ficou Draft", reenvia 1× com título `<título>-b` | infra |

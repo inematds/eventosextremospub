@@ -7,6 +7,16 @@ Pasta da edição: {ED}
 Edição modelo (Short 9:16 do Brasil, layout canto): {PREV}
 Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do CLAUDE.md valem)
 
+## CHAMADA E TOM FORTES (Nei, 04/11/2026: "previsão é informação importante, tem de ter chamada forte, tom forte")
+A pessoa precisa saber o que vem para se preparar. O Nei fala como quem dá um ALERTA, não como boletim morno.
+- Gancho = UM fato, UM lugar, UM número e QUANDO (hoje, amanhã, até domingo). Medido no lives10:
+  fortes (15 a 38 mil views): "2.163 cidades em alerta de temporal e geada no Sul", "até 300 mm de chuva no Paraná até o fim do mês", "Paraná pode passar de 300 mm até domingo".
+  fracos (3 a 8 mil): "temporais na quinta e sexta e até 44 °C no domingo" (duas ideias, datas longe), "depois de até 248 mm no Paraná, dias secos no Sul" (tempo bom como gancho).
+- Não existe dia sem gancho: se o tempo está calmo, ache o número mais forte do Brasil na fonte e nos brutos (maior calor, maior chuva prevista, mais cidades em aviso do INMET, rajada, geada, onda de calor) e abra com ele. Tempo bom, "dias secos", "o tempo firma" nunca abrem o vídeo: vão para o meio.
+- Não repita o gancho das últimas 3 previsões (leia a linha 1 do yt.txt de `ls -d {RAIZ}/edicoes/*-previsao-do-dia | sort | tail -4`). Mesmo número e mesmo lugar → outro ângulo: outra região, outro risco, o dia exato do pico.
+- Frases curtas e verbos fortes ("chega", "despenca", "dispara", "atinge", "atenção"). Diga o que muda para quem mora lá ("se você está no oeste de Santa Catarina, ..."). Forte não é inventar: todo número vem da fonte, e previsão continua dita como previsão ("deve", "pode", "a previsão é").
+- O mesmo gancho vai no quadro 0 (imagem com o texto escrito), na f1 e no título.
+
 ## A FONTE DA VERDADE (Nei, 15/10/2026)
 - fonte/transcript.txt (e transcript.srt com tempos) = a transcrição do último vídeo de previsão do tempo de um meteorologista; fonte/video_info.txt tem a data de envio (aaaammdd) e o título. É a fonte da verdade do vídeo: a PREVISÃO para hoje e os próximos dias no Brasil.
 - Confie nela: NÃO precisa conferir os números em outra fonte. NUNCA cite o canal, o meteorologista, o YouTube ou "um vídeo": o Nei fala como quem conhece a previsão. Na tela, a fonte dos números da previsão é "Meteorologia · {DATA_BR}"; números que vierem dos brutos da coleta levam a fonte própria (INMET, Open-Meteo, NOAA/GOES).
@@ -20,7 +30,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
 ## Passos
 1. Leia a transcrição inteira. Grave pesquisa/boletim.md com os pontos da previsão: o sistema que manda no tempo (frente fria, ciclone, baixa pressão, bloqueio, umidade…), onde e quando chove forte (com volumes), onde esquenta ou esfria (temperaturas), riscos (temporal, granizo, vento, geada) com dia e região, a tendência dos próximos dias. Anote o tempo (mm:ss) de cada fato. Grave pesquisa/proposta.md com a pauta e a ordem.
 2. Roteiro em falas.json (mesmo formato do modelo): 10 a 12 falas, 190 a 230 palavras (uns 80 s na voz do avatar). É PREVISÃO: tudo dito como previsão ("deve", "a previsão é", "pode"), nunca como certeza.
-   - f1: "Previsão do dia", dia da semana e data por extenso + o fato mais forte da previsão (gancho com número ou lugar).
+   - f1: começa PELO gancho (o fato forte, com número, lugar e quando) e só depois a data curta. Ex.: "Até trezentos milímetros de chuva no Paraná até domingo. É a previsão desta terça, vinte de outubro." Nunca abrir com "Previsão do dia, terça-feira..." (gasta os primeiros segundos).
    - falas do meio: o porquê (o sistema) em frase simples; depois HOJE, região por região, com lugar e número; depois amanhã e os próximos dias (quando chega a chuva, quando muda a temperatura, onde está o risco).
    - penúltima (engajamento): "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui." (card: "DE ONDE VOCÊ É?" / "COMO ESTÁ AÍ?").
    - última, sempre (CTA): "No inema ponto club você pode aprender sobre inteligência artificial." com legenda "No inema.club você pode aprender sobre inteligência artificial." (card: "APRENDA IA" / "inema.club").
@@ -38,7 +48,7 @@ Raiz do projeto: {RAIZ} (leia CLAUDE.md e README.md antes de tudo; as Lessons do
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada região, cta) e OLHE as imagens (Read). Verifique: data grande na abertura, contadores no número certo, pino sem ficar atrás de painel, borda do satélite não aparecendo, legenda legível. Corrija e renderize de novo se precisar.
-5. yt.txt: linha 1 = título até 80 caracteres com "Previsão do Dia", o fato principal e a data dd/mm. Linhas seguintes: 4 a 8 linhas com os pontos do vídeo (sem citar canal, meteorologista nem vídeo).
+5. yt.txt: linha 1 = título até 80 caracteres que COMEÇA pelo gancho (número + lugar + quando) e termina com "· Previsão do Dia dd/mm". Ex.: "Até 300 mm de chuva no Paraná até domingo · Previsão do Dia 20/10". Uma ideia só no título. Linhas seguintes: 4 a 8 linhas com os pontos do vídeo (sem citar canal, meteorologista nem vídeo).
 6. Confira no fim: falas.json, gerar_cena.py, tempos.json, video.mp4 e yt.txt existem e batem entre si.
 
 Se algo impedir a edição, grave ERRO.txt com o motivo em 2 ou 3 linhas e pare.

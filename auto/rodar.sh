@@ -85,6 +85,13 @@ else
   PROMPT=$(sed -e "s|{ED}|$ED|g" -e "s|{PREV}|$PREV|g" -e "s|{RAIZ}|$RAIZ|g" -e "s|{DATA_BR}|$DATA_BR|g" -e "s|{DIA}|$DIA|g" "$RAIZ/auto/$PROMPT_MD")
   ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
       --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
+  # login do Claude vencido no meio da rodada (04/11/2026: "OAuth session expired" derrubou o Clima do dia e o Mundo):
+  # espera 5 min (outra sessão renova o login) e tenta uma vez mais
+  if [ ! -s "$ED/falas.json" ] && grep -q -i -E "authenticate|oauth|login" "$ED/claude.log"; then
+    echo "claude -p sem login; nova tentativa em 5 min"; sleep 300
+    ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
+        --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro (2ª tentativa)"
+  fi
   [ -f "$ED/ERRO.txt" ] && avisar "o roteiro não saiu: $(head -c 400 "$ED/ERRO.txt")"
 fi
 for f in falas.json yt.txt video.mp4 tempos.json; do
@@ -155,11 +162,16 @@ $ST
 $(tail -n +2 "$ED/yt.txt" | head -c 600)" || echo "falhou o envio ao bot"
 echo "$ST"
 
+# 4b. TikTok inema.tds pelo metritds (Nei, 04/11/2026: "liga no tiktok inema.tds"); SEM_TIKTOK=1 pula
+if [ "${SEM_TIKTOK:-}" != 1 ] && [ -z "$DRY" ]; then
+  bash "$RAIZ/auto/metritds.sh" "$ED" "$V" > /dev/null 2>&1 && echo "TikTok agendado (metritds)" || echo "⚠ TikTok não agendou (ver $ED/metritds.log)"
+fi
+
 # 5. git (autor inematds); arquivos pesados e gerados ficam fora pelo .gitignore
 if [ "${SEM_GIT:-}" != 1 ] && [ -z "$DRY" ]; then
   cd "$RAIZ"
   ARQ=()
-  for f in falas.json gerar_cena.py narrar.py tempos.json yt.txt youtube-lives10.txt avatar/fala.txt avatar/retempo.py avatar/tempos.json \
+  for f in falas.json gerar_cena.py narrar.py tempos.json yt.txt youtube-lives10.txt metritds.txt metritds-texto.txt avatar/fala.txt avatar/retempo.py avatar/tempos.json \
            avatar/video_id.txt avatar/APROVADO_HEYGEN fonte/video_id.txt fonte/video_info.txt pesquisa/noticias.md pesquisa/boletim.md pesquisa/dados.md pesquisa/proposta.md pesquisa/bruto/resumo.json pesquisa/bruto/previsao7d.json om/prev15_resumo.json; do
     p="edicoes/$DIA-$SUF/$f"; [ -f "$p" ] && ! git check-ignore -q "$p" && ARQ+=("$p")
   done

@@ -35,6 +35,24 @@ O projeto tem três partes:
 - Só números com fonte, e a fonte aparece na tela.
 - A fala é no tom do Nei: direta, tratando por "você", pergunta ao espectador ("pra onde você vai?"), preparação prática e o fecho só no inema.club (sem "segue o canal").
 
+## O processo, do início ao fim
+
+🧠 = sessão com o Nei · ⚙️ = script/timer · 🤖 = `claude -p` (assinatura)
+
+Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): Clima 24 h 05:30 · Previsão do Dia 10:00 · Clima do DIA 12:30 · Clima no Mundo 18:00 · Previsão da semana domingo 15:00.
+
+| # | Passo | Comando / o que acontece | Quem |
+|---|---|---|---|
+| 1 | Timer dispara | `systemctl --user list-timers` → `auto/rodar.sh <dia> <modo>` (uma rodada por vez, trava `auto/.rodando`; datas em `auto/pular.txt` são puladas) | ⚙️ |
+| 2 | Fonte | Previsão: `auto/fonte-previsao.sh` (último vídeo de previsão, legenda do YT → Groq → Whisper); Dia: `auto/boletim.sh`; demais: `coleta/ultimas24h.py` + satélite GIBS | ⚙️ |
+| 3 | Roteiro + cena + versão mapa | `claude -p` com `auto/roteiro-<modo>.md` → `falas.json`, `gerar_cena.py`, `video.mp4`, `yt.txt`. Previsão e semana seguem "CHAMADA E TOM FORTES" (gancho = 1 fato, 1 lugar, 1 número, quando). Login vencido → nova tentativa em 5 min | 🤖 |
+| 4 | Portões | tom "você", sem "tu"/alívio/"segue o canal", sem a palavra morte, < 3 min | ⚙️ |
+| 5 | Avatar | `auto/avatar.sh` (estúdio HeyGen, assinatura) → `video-avatar.mp4`; falhou → versão mapa | ⚙️ |
+| 6 | YouTube | `yt-pubx publicar --canal lives10` (Short, título do `yt.txt` + #Shorts) | ⚙️ |
+| 7 | Bot v3 | vídeo + link + pontos do `yt.txt` | ⚙️ |
+| 8 | TikTok | `auto/metritds.sh <edição> <vídeo>` → release `social` deste repo → `claude -p` agenda no TikTok inema.tds (metritds) em agora + 10 min → faixa azul no v3. `SEM_TIKTOK=1` pula | ⚙️🤖 |
+| 9 | git | arquivos leves da edição, autor inematds, push | ⚙️ |
+
 ## Uso (uma edição)
 
 ```bash

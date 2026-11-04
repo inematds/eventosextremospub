@@ -22,6 +22,14 @@ Não é o resumo das últimas 24 h. O que já aconteceu entra só se ajudar a en
 - pesquisa/bruto/: resumo.json de coleta/ultimas24h.py (avisos INMET vigentes, Open-Meteo 3 dias nas capitais, etc.).
 - sat/web/: geocolor.jpg e infravermelho das últimas 24 h (use só se servir de fundo).
 
+## CHAMADA E TOM FORTES (Nei, 04/11/2026: "previsão do dia e previsão da semana são informações importantes, têm de ter chamada forte, tom forte")
+A pessoa precisa saber o que vem para se preparar na semana. O Nei fala como quem dá um ALERTA, não como boletim morno.
+- Gancho = UM fato, UM lugar, UM número e QUANDO ("até quarta", "no fim de semana"). Os mornos rendem pouco: "até 125 mm em Mato Grosso e 40 °C no Piauí" (duas ideias) fez 4 mil views; na Previsão do Dia, "2.163 cidades em alerta de temporal e geada no Sul" fez 38 mil.
+- Não existe semana sem gancho: se estiver calma, ache o número mais forte do Brasil (maior calor, maior chuva prevista, frio fora de época, rajada, mais cidades em aviso) e abra com ele. Tempo bom nunca abre o vídeo.
+- Não repita o gancho do domingo anterior (linha 1 do yt.txt da edição modelo {PREV}).
+- Frases curtas e verbos fortes ("chega", "despenca", "dispara", "atinge", "atenção"). Diga o que muda para quem mora lá. Forte não é inventar: todo número tem fonte, e o que é previsão ou tendência é dito assim.
+- O mesmo gancho vai no quadro 0, na f1 e no título.
+
 ## QUADRO 0 (frame 0) — PROVOCANTE
 É o que faz a pessoa parar de rolar. O hero da abertura tem, grande, do t=0 até o fim da f1:
 - a data dd/mm/aaaa e "PREVISÃO DA SEMANA + 15 DIAS";
@@ -33,7 +41,7 @@ O quadro 0 não entra com fade (Lesson do CLAUDE.md). Confira o quadro 0 extraí
 ## Passos
 1. Pesquisa: leia om/prev15_resumo.json e os brutos; busque a previsão da semana e a tendência de 15 dias nas fontes confiáveis (frentes frias, ciclone, onda de calor, chuva volumosa, retorno da chuva, El Niño/La Niña). Grave pesquisa/noticias.md (fato, número, fonte, URL, data), pesquisa/dados.md (o que veio do Open-Meteo, com os números exatos) e pesquisa/proposta.md (pauta e por quê; qual o gancho do quadro 0).
 2. Roteiro em falas.json (mesmo formato do modelo): 10 a 12 falas, 190 a 240 palavras (uns 85 s na voz do avatar).
-   - f1: o gancho provocante, falando com quem assiste, com o número mais forte da semana e o lugar ("Domingo, onze de outubro: ...").
+   - f1: começa PELO gancho provocante (número mais forte da semana, lugar e quando), falando com quem assiste; a data curta vem depois ("Até cento e sessenta milímetros de chuva no sul de Santa Catarina até quarta. É a previsão da semana, domingo, onze de outubro.").
    - semana (dias 1–7): por região, o mais grave primeiro; chuva acumulada, calor, frio, vento; com os dias da semana ("na terça e na quarta").
    - uma fala de virada "E nos próximos 15 dias?": a tendência, dita como tendência.
    - uma fala com os alertas oficiais vigentes (INMET) se houver.
@@ -46,7 +54,7 @@ O quadro 0 não entra com fade (Lesson do CLAUDE.md). Confira o quadro 0 extraí
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), e extraia uns 8 quadros (o quadro 0, cada painel, a virada dos 15 dias, cta) com ffmpeg e OLHE as imagens (Read). Verifique: quadro 0 cheio e provocante, data grande, contadores terminando no número certo, pino sem ficar atrás de painel, legenda legível. Corrija e renderize de novo se precisar.
-5. yt.txt: linha 1 = título do YouTube em português, até 80 caracteres, sem #Shorts (o script põe), com "Previsão da semana" e o gancho (número + lugar) e a data dd/mm. Linhas seguintes: de 4 a 8 linhas com os números do vídeo e as fontes (vira contexto da descrição), dizendo que 8 a 15 dias é tendência.
+5. yt.txt: linha 1 = título do YouTube em português, até 80 caracteres, sem #Shorts (o script põe), que COMEÇA pelo gancho (número + lugar + quando, uma ideia só) e termina com "· Previsão da semana dd/mm". Linhas seguintes: de 4 a 8 linhas com os números do vídeo e as fontes (vira contexto da descrição), dizendo que 8 a 15 dias é tendência.
 6. Confira no fim: falas.json, gerar_cena.py, tempos.json, video.mp4 e yt.txt existem e batem entre si.
 
 Se algo impedir a edição (sem dados, render quebrado sem conserto), grave ERRO.txt com o motivo em 2 ou 3 linhas e pare.
