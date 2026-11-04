@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# Agenda o Short do clima no TikTok inema.tds pelo Metricool da conta inematds
-# (conector MCP "metricool-inematds", apelido "metritds"). Pedido do Nei em 04/11/2026: "liga no tiktok inema.tds".
-# Só TikTok (o Instagram inema.tds fica de fora). Chamado pelo auto/rodar.sh depois do YouTube.
+# Agenda o Short do clima no TikTok da marca "eventosextremos" (blogId 7800440) no Metricool da conta inematds
+# (conector MCP "metricool-inematds", apelido "metritds"). Ligado em 04/11/2026 no inema.tds; no mesmo dia o Nei
+# mandou trocar: "o conteúdo do eventosextremos não deve ser no inematds e sim em outro canal chamado eventosextremos".
+# Nunca publica na marca inema.tds: se o TikTok não estiver conectado na marca eventosextremos, não agenda e avisa.
+# Só TikTok. Chamado pelo auto/rodar.sh depois do YouTube.
 # uso: auto/metritds.sh <pasta-da-edição> [video.mp4]
 #   publica em agora + 10 min. RASCUNHO=1 agenda como rascunho · SEM_BOT=1 não avisa no v3 · FORCAR=1 refaz.
 # Vídeo público para o Metricool: anexo da release "social" do repo público inematds/eventosextremospub.
@@ -24,7 +26,7 @@ QUANDO_BR=$(TZ=America/Sao_Paulo date -d "@$ALVO" '+%d/%m %H:%M')
 NOME="clima-$(basename "$ED").mp4"
 gh release view social -R inematds/eventosextremospub >/dev/null 2>&1 || \
   gh release create social -R inematds/eventosextremospub --title "Vídeos para redes sociais" \
-     --notes "Cópias dos Shorts do clima usadas pelo Metricool (TikTok inema.tds)." >/dev/null
+     --notes "Cópias dos Shorts do clima usadas pelo Metricool (TikTok eventosextremos)." >/dev/null
 TMP="$(mktemp -d)"; cp "$V" "$TMP/$NOME"
 gh release upload social "$TMP/$NOME" -R inematds/eventosextremospub --clobber || { echo "Falhou: upload na release"; rm -rf "$TMP"; exit 1; }
 rm -rf "$TMP"
@@ -42,7 +44,8 @@ YTID=$(head -1 "$ED/youtube-lives10.txt" 2>/dev/null)
 
 # 3. agenda pelo conector metricool-inematds (claude -p, assinatura)
 PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
-1) getBrandSettings: pegue o blogId da marca de label inema.tds e confira em networksData se tiktok está conectado.
+1) getBrandSettings: pegue o blogId da marca de label exatamente \"eventosextremos\" (NUNCA use a marca inema.tds nem outra).
+   Se essa marca não existir ou não tiver tiktokData em networksData, NÃO agende nada e responda ok=false com erro \"tiktok não conectado na marca eventosextremos\".
 2) createScheduledPost UMA vez, só com a rede tiktok em providers (NÃO inclua instagram nem outra rede):
    date = ${QUANDO_UTC}Z ; publicationDate = {dateTime: \"${QUANDO_UTC}\", timezone: \"UTC\"}
    media = [\"$MEDIA\"] ; text = conteúdo exato do arquivo $ED/metritds-texto.txt (leia com a ferramenta Read)
@@ -65,15 +68,14 @@ FAIXA="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦"
 if [ -n "$OK" ]; then
   [ -z "${RASCUNHO:-}" ] && printf '%s\n%s\n' "$QUANDO_BR" "$REDES" > "$ED/metritds.txt"
   MSG="$FAIXA
-🔵 PUBLICADO DIRETO · TikTok inema.tds (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
+🔵 PUBLICADO DIRETO · TikTok eventosextremos (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
 $FAIXA
 $TIT
 Quando: $QUANDO_BR · Redes: ${REDES:-?}
-TikTok: https://www.tiktok.com/@inema.tds
 Metricool: ${PLAN:-https://app.metricool.com/planner}"
 else
   MSG="$FAIXA
-⚠ METRITDS: NÃO AGENDOU (TikTok inema.tds)
+⚠ METRITDS: NÃO AGENDOU (TikTok eventosextremos)
 $FAIXA
 $TIT
 Erro: ${ERRO:-$(printf '%s' "$OUT" | tail -c 300)}
