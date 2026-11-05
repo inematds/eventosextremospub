@@ -113,20 +113,56 @@ $(head -1 "$ED/yt.txt")" || echo "falhou o envio da prévia"
   else echo "prévia falhou: $(tail -2 "$ED/previa.log")"; fi
 fi
 
-# 3. avatar do Nei (estúdio HeyGen); se falhar, publica a versão mapa (voz do Nei pelo Chatterbox)
+# 3. avatar do Nei (estúdio HeyGen). SÓ PUBLICA COM AVATAR (Nei, 05/11/2026: "os vídeos eventosextremos têm de sair com
+#    avatar; se não sair por erro ou espera, tem de ser avisado no v3"). Sem avatar: aviso vermelho no v3 com o motivo e a
+#    versão mapa em anexo, e NÃO publica. Avatar demorando: aviso no v3 a cada hora de espera.
 V="$ED/video-avatar.mp4"; NOTA=""
 # solta a trava enquanto o HeyGen gera: a próxima rodada já começa; os renders fazem fila no .render.lock (Nei, 16/10/2026)
 [ "${SEM_TRAVA:-}" = 1 ] || flock -u 8
+cena_canto() {  # a fala do avatar é mais rápida que a narração: se o gerar_cena.py reprovar com os tempos do avatar,
+  # o mesmo Claude que escreveu a cena ajusta só os tempos e limites (uma vez), sem mudar fala nem números
+  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 && return 0
+  local erro; erro=$(grep -h -E "Error|ERRO" "$ED/avatar.log" | tail -1 | cut -c1-300)
+  echo "gerar_cena.py --canto reprovou ($erro); o claude -p ajusta os tempos" >> "$ED/avatar.log"
+  ( cd "$ED" && timeout 2400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED, 'python3 gerar_cena.py --canto' falhou com: $erro
+A fala do avatar (avatar/tempos.json) é mais rápida que a narração (tempos.json), então algum intervalo ficou curto. Ajuste SÓ tempos, durações e limites no gerar_cena.py (ex.: começar uma imagem uma palavra antes, encurtar um contador, afrouxar um assert de duração mínima para 0,8 s), sem mudar falas, números, fontes nem textos. Rode 'python3 gerar_cena.py' (sem --canto) e 'python3 gerar_cena.py --canto' até os dois passarem sem erro. Não renderize nem publique nada." \
+      --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-canto.log" 2>&1 ) || true
+  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1
+}
+VIGIA=""
+if [ "${SEM_AVATAR:-}" != 1 ] && [ -z "$DRY" ]; then
+  ( for h in 1 2 3 4; do sleep 3600; [ -s "$ED/avatar/avatar.mp4" ] && exit 0
+      echo "$ROT $DATA_BR: o avatar está na fila do HeyGen há ${h} h; o vídeo só sai com avatar e vai assim que ele chegar." > "$ED/aviso-espera.txt"
+      rm -f "$ED/aviso-espera.txt.envio-v3.json"; node "$BOT" "$ED/aviso-espera.txt" "⏳ $ROT · $DATA_BR · esperando o avatar há ${h} h" > /dev/null 2>&1
+    done ) & VIGIA=$!
+fi
 if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF" > "$ED/avatar.log" 2>&1 \
    && python3 "$RAIZ/motor/pausa_pergunta.py" "$ED" --avatar >> "$ED/avatar.log" 2>&1 \
-   && ( cd "$ED" && python3 gerar_cena.py --canto ) \
+   && cena_canto \
    && ( cd "$RAIZ" && GEO=geo-br.js LAYOUT=canto motor/compor_avatar.sh "$ED" "$V" > "$ED/build-avatar.log" 2>&1 ); then
+  [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
   echo "vídeo com avatar ok"
 else
+  [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
   V="$ED/video.mp4"
   if [ "${SEM_AVATAR:-}" = 1 ]; then NOTA="(teste sem avatar)"
-  else NOTA="(sem avatar: $(grep -h ERRO "$ED/avatar.log" 2>/dev/null | tail -1 | cut -c1-150); saiu a versão mapa)"; fi
+  else
+    MOTIVO=$(grep -h -E "ERRO|Error|falhou" "$ED/avatar.log" "$ED/build-avatar.log" 2>/dev/null | tail -1 | cut -c1-250)
+    NOTA="(sem avatar: ${MOTIVO:-motivo não registrado, ver avatar.log})"
+  fi
   echo "avatar falhou $NOTA"
+  if [ "${SEM_AVATAR:-}" != 1 ] && [ -z "$DRY" ]; then
+    rm -f "$ED/video.mp4.envio-v3.json"
+    node "$BOT" "$ED/video.mp4" "🔴 $ROT · $DATA_BR · SEM AVATAR — NÃO publiquei no lives10.
+Motivo: ${MOTIVO:-não registrado (ver $ED/avatar.log)}
+Em anexo a versão só com mapa. Para publicar assim ou refazer com o avatar, me peça no terminal." || echo "falhou o aviso de sem avatar"
+    if [ "${SEM_GIT:-}" != 1 ]; then
+      ( cd "$RAIZ" && git add -- "edicoes/$DIA-$SUF/falas.json" "edicoes/$DIA-$SUF/gerar_cena.py" "edicoes/$DIA-$SUF/yt.txt" 2>/dev/null \
+        && git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "$ROT $DATA_BR: sem avatar, não publicado ($MOTIVO)" \
+        && git pull -q --rebase --autostash && git push -q ) || echo "git falhou"
+    fi
+    echo "=== fim sem avatar $(date '+%F %T')"; exit 5
+  fi
   # o montar.sh deixa a versão mapa em ~-17 LUFS: sobe para -14 (padrão do YouTube) antes de publicar
   I0=$(ffmpeg -nostats -i "$ED/video.mp4" -af ebur128 -f null - 2>&1 | grep -A1 Integrated | grep -o -- '-[0-9.]*' | tail -1)
   [ -n "$I0" ] && ffmpeg -v error -y -i "$ED/video.mp4" -c:v copy -af "volume=$(python3 -c "print(round(-14-($I0),2))")dB,alimiter=limit=0.89" \
