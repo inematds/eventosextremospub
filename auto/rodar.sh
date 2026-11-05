@@ -198,9 +198,10 @@ $ST
 $(tail -n +2 "$ED/yt.txt" | head -c 600)" || echo "falhou o envio ao bot"
 echo "$ST"
 
-# 4b. TikTok da marca eventosextremos pelo metritds (Nei, 04/11/2026; nunca no inema.tds); SEM_TIKTOK=1 pula
-if [ "${SEM_TIKTOK:-}" != 1 ] && [ -z "$DRY" ]; then
-  bash "$RAIZ/auto/metritds.sh" "$ED" "$V" > /dev/null 2>&1 && echo "TikTok agendado (metritds)" || echo "⚠ TikTok não agendou (ver $ED/metritds.log)"
+# 4b. Instagram + TikTok eventos.extremos pelo metritds (Nei, 04/11 e 05/11/2026: sempre com avatar, publica sozinho;
+#     nunca no inema.tds); SEM_TIKTOK=1 pula
+if [ "${SEM_TIKTOK:-}" != 1 ] && [ -z "$DRY" ] && [ "$V" = "$ED/video-avatar.mp4" ]; then
+  bash "$RAIZ/auto/metritds.sh" "$ED" "$V" > /dev/null 2>&1 && echo "Instagram/TikTok agendados (metritds)" || echo "⚠ metritds não agendou (ver $ED/metritds.log)"
 fi
 
 # 5. git (autor inematds); arquivos pesados e gerados ficam fora pelo .gitignore

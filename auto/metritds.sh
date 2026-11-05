@@ -14,6 +14,9 @@ ED="$(cd "$1" && pwd)"; V="${2:-}"
 LOG="$ED/metritds.log"; exec > >(tee -a "$LOG") 2>&1
 echo "== $(date '+%F %T') metritds $ED ($V)"
 [ -s "$V" ] || { echo "sem vídeo"; exit 1; }
+# Só com avatar (Nei, 05/11/2026: "metritds ativo para a marca eventosextremos, sempre com avatar e pronto pode publicar
+# nos canais disponíveis", Instagram + TikTok eventos.extremos). Versão só com mapa (video.mp4) nunca vai.
+{ [ -s "$ED/avatar/avatar.mp4" ] && [ "$(basename "$V")" != video.mp4 ]; } || { echo "sem avatar: não agenda ($V)"; exit 6; }
 [ -s "$ED/yt.txt" ] || { echo "sem yt.txt"; exit 1; }
 [ -s "$ED/metritds.txt" ] && [ -z "${RASCUNHO:-}${FORCAR:-}" ] && { echo "já agendado ($(head -1 "$ED/metritds.txt")): nada a fazer"; exit 0; }
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
