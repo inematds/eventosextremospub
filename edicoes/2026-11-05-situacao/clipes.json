@@ -1,0 +1,16 @@
+[
+ {"nome": "c01-ceu-chapeco", "src": "okd61_o5xks", "ss": 98, "dur": 5, "crop": "iw:ih*0.87:0:0", "rotulo": "CHAPECÓ (SC) · 04/11 · 10H30"},
+ {"nome": "c02-camera-rua", "src": "SPgZ50YwQXk", "ss": 4, "dur": 5, "crop": "iw*0.85:ih:0:0", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c03-destrocos-ar", "src": "okd61_o5xks", "ss": 157, "dur": 5, "crop": "iw:ih*0.87:0:0", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c04-para-brisa", "src": "SPgZ50YwQXk", "ss": 36, "dur": 5, "crop": "terra", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c05-aeroporto", "src": "SPgZ50YwQXk", "ss": 104, "dur": 5, "crop": "terra", "rotulo": "AEROPORTO DE CHAPECÓ"},
+ {"nome": "c06-telhados", "src": "gcCoru4QoiE", "ss": 4, "dur": 5, "crop": "terra", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c07-casas-lona", "src": "gcCoru4QoiE", "ss": 24, "dur": 5, "crop": "terra", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c08-outdoor-casa", "src": "gcCoru4QoiE", "ss": 59, "dur": 5, "crop": "terra", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c09-rua-destrocos", "src": "gcCoru4QoiE", "ss": 76, "dur": 5, "crop": "terra", "rotulo": "CHAPECÓ (SC) · 04/11"},
+ {"nome": "c10-xanxere-aereo", "src": "FuKu51lEaPI", "ss": 26, "dur": 3.6, "delogo": "x=1005:y=38:w=210:h=105", "rotulo": "XANXERÊ (SC) · 04/11"},
+ {"nome": "c11-xanxere-galpao", "src": "FuKu51lEaPI", "ss": 90, "dur": 5, "delogo": "x=1005:y=38:w=210:h=105", "rotulo": "XANXERÊ (SC) · 04/11"},
+ {"nome": "c12-xanxere-carreta", "src": "FuKu51lEaPI", "ss": 52, "dur": 5, "delogo": "x=1005:y=38:w=210:h=105", "rotulo": "XANXERÊ (SC) · 04/11"},
+ {"nome": "c13-maringa-aereo", "src": "IQSfjj7zn-g", "ss": 115, "dur": 3.5, "crop": "iw:ih*0.80:0:0", "rotulo": "MARINGÁ (PR) · ESTA SEMANA"},
+ {"nome": "c14-maringa-galpao", "src": "R_7Hxn_QXCc", "ss": 104, "dur": 5, "crop": "iw*0.6135:ih*0.63:iw*0.3865:ih*0.1537", "rotulo": "MARINGÁ (PR) · ESTA SEMANA"}
+]
