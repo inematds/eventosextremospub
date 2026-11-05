@@ -8,13 +8,29 @@ sys.path.insert(0, str(Path.home() / "projetos/cardshorts"))
 import cardshorts as cs
 
 
-def _tapa_buracos(wav, pal, tdir, buraco=8.0):
-    """O Whisper às vezes pula um trecho inteiro com fala (gitbombando 01/11/2026: 29 s sumidos).
-    Buraco > `buraco` s entre palavras: retranscreve do buraco até o fim e troca o resto."""
-    for _ in range(3):
-        i = next((k for k in range(len(pal) - 1) if pal[k + 1]["start"] - pal[k]["end"] > buraco), None)
+def _tapa_buracos(wav, pal, tdir, buraco=3.0):
+    """O Whisper às vezes pula um trecho inteiro com fala (gitbombando 01/11/2026: 29 s; previsão 05/11/2026: 7 s com a
+    pergunta f11). Buraco > `buraco` s entre palavras (ou no fim): retranscreve SÓ o buraco e encaixa as palavras no lugar.
+    (Retranscrever do buraco até o fim não basta: na previsão 05/11 o Whisper pulou o mesmo trecho de novo.)"""
+    Path(tdir).mkdir(parents=True, exist_ok=True)
+    feitos = set()
+    for _ in range(10):
+        lim = [p["end"] for p in pal] + [cs.dur(wav)]
+        prox = [p["start"] for p in pal[1:]] + [cs.dur(wav)]
+        i = next((k for k in range(len(pal)) if prox[k] - lim[k] > buraco and k not in feitos), None)
         if i is None:
             return pal
+        feitos.add(i)
+        ini, fim = pal[i]["end"], prox[i]
+        tr = Path(tdir) / f"buraco-{ini:.1f}.wav"
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(ini), "-to", str(fim), "-i", wav, tr], check=True)
+        novo = [{**p, "start": p["start"] + ini, "end": p["end"] + ini}
+                for p in (cs.transcrever(tr, Path(tdir) / f"buraco-{ini:.1f}", palavras=True) or [])]
+        novo = [p for p in novo if p["start"] > ini + 0.05 and p["end"] <= fim + 0.2]  # sem a palavra cortada na borda
+        print(f"buraco {ini:.1f}→{fim:.1f} s: {len(novo)} palavras recuperadas")
+        pal = pal[:i + 1] + novo + pal[i + 1:]
+        feitos = {k if k <= i else k + len(novo) for k in feitos}
+    return pal
 
 AQUI = Path(__file__).resolve().parent
 falas = json.loads((AQUI.parent / "falas.json").read_text())
