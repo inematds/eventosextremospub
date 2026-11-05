@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Duas mil quinhentas e noventa e cinco cidades em alerta de tempestade no sábado. É a previsão desta quinta-feira, cinco de novembro.",
+  "legenda": "2.595 cidades em alerta de tempestade no sábado. É a previsão desta quinta-feira, 5 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Uma nova frente fria deve se formar no Sul no sábado, com chuva, trovoada, granizo e vendaval.",
+  "legenda": "Uma nova frente fria deve se formar no Sul no sábado, com chuva, trovoada, granizo e vendaval."
+ },
+ {
+  "id": "f3",
+  "fala": "Depois dos tornados em Chapecó, Guatambu e Xanxerê, o tempo firma hoje no oeste catarinense. Guatambu está sem energia.",
+  "legenda": "Depois dos tornados em Chapecó, Guatambu e Xanxerê, o tempo firma hoje no oeste catarinense. Guatambu está sem energia."
+ },
+ {
+  "id": "f4",
+  "fala": "No Paraná, ainda pode ter temporal localizado nesta manhã. Depois, a máxima deve chegar perto de trinta graus.",
+  "legenda": "No Paraná, ainda pode ter temporal localizado nesta manhã. Depois, a máxima deve chegar perto de 30 graus."
+ },
+ {
+  "id": "f5",
+  "fala": "Hoje, o aviso de tempestade do INMET pega duas mil trezentas e oito cidades, a maioria em Minas, São Paulo e Paraná.",
+  "legenda": "Hoje, o aviso de tempestade do INMET pega 2.308 cidades, a maioria em Minas, São Paulo e Paraná."
+ },
+ {
+  "id": "f6",
+  "fala": "Na sexta, o dia deve ser quente e abafado no Paraná. Em São Paulo, as pancadas chegam de manhã.",
+  "legenda": "Na sexta, o dia deve ser quente e abafado no Paraná. Em São Paulo, as pancadas chegam de manhã."
+ },
+ {
+  "id": "f7",
+  "fala": "À tarde e à noite, a chuva volta ao sudoeste do Paraná, ao oeste de Santa Catarina e ao noroeste gaúcho.",
+  "legenda": "À tarde e à noite, a chuva volta ao sudoeste do Paraná, ao oeste de Santa Catarina e ao noroeste gaúcho."
+ },
+ {
+  "id": "f8",
+  "fala": "No sábado, se você está no Vale do Itajaí, fique atento: a chuva pode vir mais volumosa onde já teve enchente.",
+  "legenda": "No sábado, se você está no Vale do Itajaí, fique atento: a chuva pode vir mais volumosa onde já teve enchente."
+ },
+ {
+  "id": "f9",
+  "fala": "As duzentas e noventa e cinco cidades de Santa Catarina estão no aviso de sábado. No domingo, a temperatura cai em duas mil e sessenta cidades.",
+  "legenda": "As 295 cidades de Santa Catarina estão no aviso de sábado. No domingo, a temperatura cai em 2.060 cidades."
+ },
+ {
+  "id": "f10",
+  "fala": "O domingo deve firmar, por pouco tempo. Terça e quarta voltam as pancadas, e no fim da semana chega nova instabilidade.",
+  "legenda": "O domingo deve firmar, por pouco tempo. Terça e quarta voltam as pancadas, e no fim da semana chega nova instabilidade."
+ },
+ {
+  "id": "f11",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
