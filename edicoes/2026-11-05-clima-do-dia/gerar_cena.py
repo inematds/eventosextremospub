@@ -268,7 +268,7 @@ paineis = [
      "contador": conta(-2, "f9", "2", "#96d2ff", "°C (PREVISÃO)", de=10),
      "l": "serra catarinense abaixo de zero", "borda": "rgba(150,210,255,.8)"},
     {"ini": SP9P, "fim": ini("f10"), "k": "SÃO PAULO · SEGUNDA 09/11",
-     "contador": conta(10, "f9", "10", "#96d2ff", "°C DE MANHÃ (PREVISÃO)", de=20),
+     "contador": conta(10, "f9", "10", "#96d2ff", "°C DE MANHÃ (PREVISÃO)", de=20, lead=min(LEAD, em("f9", "10") - SP9P)),  # avatar fala mais rápido: contador cabe no painel
      "l": "muito frio para novembro", "borda": "rgba(150,210,255,.8)"},
     {"ini": ini("f10"), "fim": ini("f11"), "k": "A PARTIR DE 10/11 · NORDESTE",
      "itens": [{"t": em("f10", "Maranhão"), "txt": "🌧️ Maranhão"},
