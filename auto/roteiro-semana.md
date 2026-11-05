@@ -32,7 +32,7 @@ A pessoa precisa saber o que vem para se preparar na semana. O Nei fala como que
 
 ## QUADRO 0 (frame 0) — PROVOCANTE
 É o que faz a pessoa parar de rolar. O hero da abertura tem, grande, do t=0 até o fim da f1:
-- a data dd/mm/aaaa e "PREVISÃO DA SEMANA + 15 DIAS";
+- a data dd/mm/aaaa e "ALERTA DA SEMANA + 15 DIAS" (Nei, 05/11/2026: no domingo sai o alerta da semana, às 14h);
 - o NÚMERO mais forte da semana (ex.: "166 MM EM 7 DIAS", "41 °C") com o lugar;
 - uma pergunta ou frase provocante que fala com quem assiste, curta, em letra enorme (ex.: "A SUA CIDADE ESTÁ NO CAMINHO?", "VAI FALTAR GUARDA-CHUVA NO SUL", "O CALOR NÃO VAI DAR TRÉGUA");
 - sem exagero falso: a provocação tem de ser verdadeira pelos números coletados.
@@ -54,7 +54,7 @@ O quadro 0 não entra com fade (Lesson do CLAUDE.md). Confira o quadro 0 extraí
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), e extraia uns 8 quadros (o quadro 0, cada painel, a virada dos 15 dias, cta) com ffmpeg e OLHE as imagens (Read). Verifique: quadro 0 cheio e provocante, data grande, contadores terminando no número certo, pino sem ficar atrás de painel, legenda legível. Corrija e renderize de novo se precisar.
-5. yt.txt: linha 1 = título do YouTube em português, até 80 caracteres, sem #Shorts (o script põe), que COMEÇA pelo gancho (número + lugar + quando, uma ideia só) e termina com "· Previsão da semana dd/mm". Linhas seguintes: de 4 a 8 linhas com os números do vídeo e as fontes (vira contexto da descrição), dizendo que 8 a 15 dias é tendência.
+5. yt.txt: linha 1 = título do YouTube em português, até 80 caracteres, sem #Shorts (o script põe), que COMEÇA pelo gancho (número + lugar + quando, uma ideia só) e termina com "· Alerta da semana dd/mm". Linhas seguintes: de 4 a 8 linhas com os números do vídeo e as fontes (vira contexto da descrição), dizendo que 8 a 15 dias é tendência.
 6. Confira no fim: falas.json, gerar_cena.py, tempos.json, video.mp4 e yt.txt existem e batem entre si.
 
 Se algo impedir a edição (sem dados, render quebrado sem conserto), grave ERRO.txt com o motivo em 2 ou 3 linhas e pare.

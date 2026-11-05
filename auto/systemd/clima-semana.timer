@@ -1,9 +1,9 @@
 [Unit]
-Description=eventosextremospub — clima da semana + 15 dias, domingo às 15:00
+Description=eventosextremospub — clima da semana + 15 dias, domingo às 14:00 (era 15:00; Nei, 05/11/2026)
 
 [Timer]
-OnCalendar=Sun *-*-* 15:00:00
-Persistent=false
+OnCalendar=Sun *-*-* 14:00:00
+Persistent=true
 
 [Install]
 WantedBy=timers.target

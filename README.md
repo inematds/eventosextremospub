@@ -39,7 +39,7 @@ O projeto tem três partes:
 
 🧠 = sessão com o Nei · ⚙️ = script/timer · 🤖 = `claude -p` (assinatura)
 
-Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): Clima 24 h 05:30 · Previsão do Dia 10:00 · Clima do DIA 12:30 · Clima no Mundo 18:00 · Previsão da semana domingo 15:00.
+Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): Clima 24 h 05:30 · Previsão do Dia 10:00 · Clima do DIA 12:30 · Alerta da semana (próximos 7 dias a partir de amanhã) seg–sáb 14:00 · Clima no Mundo 18:00 · Alerta da semana + 15 dias domingo 14:00. Todas publicam no lives10 + Instagram/TikTok eventos.extremos (metritds), só com avatar.
 
 | # | Passo | Comando / o que acontece | Quem |
 |---|---|---|---|
