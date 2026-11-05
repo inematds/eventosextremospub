@@ -79,7 +79,7 @@ SC = {"lon": -50.6, "lat": -27.3, "zoom": 5.7}       # f9: SC inteira no aviso d
 DOM = {"lon": -50.5, "lat": -25.5, "zoom": 4.5}      # f9: domingo, temperatura cai (SP, RS, PR, SC, MG)
 K = lambda t, r, pitch=0, bearing=0: {"t": t, **r, "pitch": pitch, "bearing": bearing}
 CAPA = 2.2  # quadro 0 = capa cheia do Codex até aqui
-GRAN = em("f2", "granizo")
+GRAN = em("f2", "trovoada")  # avatar 05/11 fala rápido: granizo→fim < 1 s
 DOMT = em("f9", "domingo")
 P9 = min(ini("f9"), em("f9", "295") - 1.0)   # "295" é a 2ª palavra da f9: o painel entra 1 s antes para o contador chegar no número
 camera = [
