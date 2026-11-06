@@ -195,10 +195,12 @@ fi
 if [ -n "$URL" ]; then ST="publicado no lives10: $URL"
 elif [ "${SEM_YT:-}" = 1 ] || [ -n "$DRY" ]; then ST="(sem YouTube nesta rodada)"
 else ST="⚠ NÃO publicou no lives10: $(grep -h -i 'erro\|error\|quota\|limit' "$ED/publicar.log" | tail -1 | cut -c1-200)"; fi
-rm -f "$V.envio-v3.json"
-node "$BOT" $DRY "$V" "$ROT · $DATA_BR · ${DUR}s $NOTA
+if [ -z "$URL" ]; then  # (Nei, 06/11/2026: aviso do YouTube no v3 só se der erro)
+  rm -f "$V.envio-v3.json"
+  node "$BOT" $DRY "$V" "$ROT · $DATA_BR · ${DUR}s $NOTA
 $ST
 $(tail -n +2 "$ED/yt.txt" | head -c 600)" || echo "falhou o envio ao bot"
+fi
 echo "$ST"
 
 # 4b. Instagram + TikTok eventos.extremos pelo metritds (Nei, 04/11 e 05/11/2026: sempre com avatar, publica sozinho;
