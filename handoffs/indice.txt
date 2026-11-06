@@ -1,1 +1,2 @@
+- `clima24h-2026-11-06` · handoffs/history/2026-11-06T100159Z-clima24h-2026-11-06.md · 06/11 07:01
 - `mundo-2026-11-05` · handoffs/history/2026-11-05T225511Z-mundo-2026-11-05.md · 05/11 19:55
