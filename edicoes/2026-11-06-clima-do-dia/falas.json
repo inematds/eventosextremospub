@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Sexta-feira, seis de novembro. Uma frente fria chega ao Sul, e o INMET já tem alerta vermelho de tempestade para sábado.", "legenda": "Sexta-feira, 6 de novembro. Uma frente fria chega ao Sul, e o INMET já tem alerta vermelho de tempestade para sábado."},
+  {"id": "f2", "fala": "São trezentas e vinte e cinco cidades no Sul, e aviso de tempestade em três mil cento e setenta cidades do Brasil.", "legenda": "São 325 cidades no Sul, e aviso de tempestade em 3.170 cidades do Brasil."},
+  {"id": "f3", "fala": "A frente fria se forma na Argentina. A chuva chega hoje ao Paraná e, à noite, a Santa Catarina.", "legenda": "A frente fria se forma na Argentina. A chuva chega hoje ao Paraná e, à noite, a Santa Catarina."},
+  {"id": "f4", "fala": "Em Rio do Sul, o rio Itajaí-Açu marca cinco metros e sessenta e quatro e desce devagar.", "legenda": "Em Rio do Sul, o rio Itajaí-Açu marca 5,64 metros e desce devagar."},
+  {"id": "f5", "fala": "No Nordeste, calor forte: Piauí, Pernambuco e o norte da Bahia podem chegar a quarenta e dois graus hoje.", "legenda": "No Nordeste, calor forte: Piauí, Pernambuco e o norte da Bahia podem chegar a 42 graus hoje."},
+  {"id": "f6", "fala": "No sábado, a chuva se concentra em Santa Catarina e no norte gaúcho: até oitenta e quatro milímetros previstos.", "legenda": "No sábado, a chuva se concentra em Santa Catarina e no norte gaúcho: até 84 milímetros previstos."},
+  {"id": "f7", "fala": "Na passagem da frente, o vento pode chegar a oitenta quilômetros por hora no litoral de São Paulo e do Rio.", "legenda": "Na passagem da frente, o vento pode chegar a 80 quilômetros por hora no litoral de São Paulo e do Rio."},
+  {"id": "f8", "fala": "E a temperatura despenca: São Paulo vai de trinta graus no sábado para dezoito no domingo.", "legenda": "E a temperatura despenca: São Paulo vai de 30 graus no sábado para 18 no domingo."},
+  {"id": "f9", "fala": "Domingo de manhã pode ter geada na campanha gaúcha. Na segunda, a serra catarinense deve ficar abaixo de zero.", "legenda": "Domingo de manhã pode ter geada na campanha gaúcha. Na segunda, a serra catarinense deve ficar abaixo de zero."},
+  {"id": "f10", "fala": "A semana que vem deve ser fria no Sul e no Sudeste. E entre dez e vinte de novembro, a chuva deve voltar ao Nordeste.", "legenda": "A semana que vem deve ser fria no Sul e no Sudeste. E entre 10 e 20 de novembro, a chuva deve voltar ao Nordeste."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
