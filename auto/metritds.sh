@@ -93,7 +93,7 @@ Erro: ${ERRO:-$(printf '%s' "$OUT" | tail -c 300)}
 Log: $LOG"
 fi
 echo "$MSG"
-if [ -z "${SEM_BOT:-}" ]; then
+if [ -z "${SEM_BOT:-}" ] && [ -z "$OK" ]; then   # v3 só se der erro (Nei, 06/11/2026: não mandar os links do Metricool quando dá certo)
   CAPA="$ED/metritds-capa.jpg"
   ffmpeg -v error -y -ss 3 -i "$V" -frames:v 1 -vf scale=540:-2 "$CAPA"
   rm -f "$CAPA.envio-v3.json"
