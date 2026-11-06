@@ -1,0 +1,15 @@
+# Notícias — Clima 24 h de 06/11/2026 (janela 05/11 05h30 → 06/11 05h30, hora de Brasília)
+
+| fato | número | fonte | URL | data/hora |
+|---|---|---|---|---|
+| Onda de tempestades de quarta (4/11) deixou 4 vítimas no Sul: 2 em SC (a 2ª, mulher de 46 anos eletrocutada, confirmada pela Defesa Civil de SC na quinta) e 2 no RS (Almir Negri, arrastado pela correnteza ao cruzar ponte de moto, Sarandi; mulher de 71 anos achada às margens do Rio Carazinho, Cacique Doble, relação com a chuva em apuração) | 4 (2 SC + 2 RS) | MetSul | https://metsul.com/chuva-vendavais-e-tornados-deixam-quatro-mortos-no-sul-do-brasil/ | 05/11 19h25 |
+| Balanço da Defesa Civil do RS (atualizado 8h13 de 5/11): 135 ocorrências em 123 municípios, 49.909 pessoas afetadas, 25 feridos, 235 desalojados, 93 desabrigados, 1 desaparecido; 6.496 residências atingidas (2.140 destelhadas, 10 destruídas) | 123; 49.909; 6.496 | MetSul, com a Defesa Civil do RS | https://metsul.com/tornado-e-confirmado-em-tres-cidades-do-norte-gaucho/ | 05/11 13h19 |
+| Tornado confirmado pela Defesa Civil do RS em áreas rurais de Erval Grande, Itatiba do Sul e Barra do Rio Azul (manhã de 4/11) | 3 cidades | MetSul | https://metsul.com/tornado-e-confirmado-em-tres-cidades-do-norte-gaucho/ | 05/11 13h19 |
+| Nova Prata: 15 feridos, 2,7 mil casas danificadas; Passo Fundo 1.035 casas e 30 escolas danificadas; Frederico Westphalen 630 casas destelhadas | — | MetSul / Defesa Civil RS | https://metsul.com/temporais-deixam-estragos-em-mais-de-120-cidades-gauchas/ | 05/11 12h35 |
+| Temporal em BH na tarde de 5/11: cerca de 26,9 mil imóveis sem luz (2,7% dos clientes da Cemig na capital); Noroeste, Pampulha e Leste mais atingidas | 26,9 mil | Aqui (Estado de Minas) / Cemig | https://aqui.uai.com.br/cidades/temporal-em-bh-deixa-milhares-sem-luz-e-mobiliza-forca-tarefa-da-cemig/ | 05/11 |
+| BH: 5 regionais passaram de 50 mm em 7 h (Nordeste 56 mm = 23,7% da média do mês), balanço da Defesa Civil às 19h | 56 mm | Rede 98 (Defesa Civil BH) | https://rede98.com.br/98/cinco-regionais-de-bh-registram-mais-de-50-mm-de-chuva-veja-as-mais-afetadas/ | 05/11 19h — NÃO usado no vídeo (fonte fora da lista; uso o METAR e o CEMADEN) |
+| Árvores caídas sobre veículos na RMBH, bombeiros mobilizados | — | O Tempo | https://www.otempo.com.br/cidades/2026/11/5/temporal-na-rmbh-arvores-caidas-sobre-veiculos-e-varanda-com-risco-de-queda-mobilizam-bombeiros | 05/11 |
+| Forte massa de ar frio: entra no RS no sábado (7), toma o Sul no domingo (8), chega a CO/SE domingo e segunda; geada isolada possível; mínimas abaixo de 5 °C em algumas cidades na seg (9) e ter (10) | — | MetSul | https://metsul.com/forte-massa-de-ar-frio-para-novembro-com-geada-tem-data-para-chegar/ | 05/11 11h34 |
+| Salvador: Codesal previa tempo firme na quinta (5/11), sem chuva registrada pela manhã | — | Aratu On (Codesal) | https://aratuon.com.br/tempo/salvador-tera-possibilidade-de-chuva-nesta-quinta-feira-veja-previsao/ | 05/11 — usado para DESCARTAR o 120,2 mm do pluviômetro Doron (ver dados.md) |
+
+Fora: a palavra das fontes ("mortos/mortes") vira "vítimas" no vídeo.

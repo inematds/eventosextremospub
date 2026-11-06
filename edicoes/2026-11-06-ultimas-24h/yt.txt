@@ -1,0 +1,8 @@
+Clima 24 h 06/11: temporais deixam 4 vítimas no Sul e vento de 81 km/h em MG
+Sul: a onda de tempestades de quarta (4/11) deixou 4 vítimas, 2 em Santa Catarina e 2 no Rio Grande do Sul (MetSul, com as Defesas Civis de SC e do RS).
+Rio Grande do Sul: 123 cidades com estragos, 49.909 pessoas afetadas e 6.496 casas atingidas (Defesa Civil do RS, balanço de 5/11); tornado confirmado em Erval Grande, Itatiba do Sul e Barra do Rio Azul.
+Belo Horizonte: o temporal de quinta (5/11) deixou cerca de 26,9 mil imóveis sem luz (Cemig); rajada de 81 km/h no aeroporto de Confins (METAR/NOAA).
+Chuva em 24 h (CEMADEN): Brumadinho (MG) 78,8 mm; Dourados (MS) 79,6 mm. Fogo: 580 focos em 5/11 no satélite de referência do INPE, 100 no Maranhão.
+Hoje (6/11): alerta laranja de baixa umidade do INMET em 341 cidades do Nordeste (umidade de 20% a 12%) e amarelo de tempestade em 1.568 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): quinta (12/11) deve ser o dia mais chuvoso; o Norte deve acumular mais; no domingo (8/11), aviso do INMET de queda de temperatura em 2.060 cidades. Volumes: os pluviômetros do CEMADEN somaram mais de 12.700 mm em 24 h (soma, não chuva média); as capitais devem somar 764,8 mm em 7 dias.
+Fontes: MetSul, Defesas Civis de SC e RS, Cemig, CEMADEN, INMET, INPE, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
