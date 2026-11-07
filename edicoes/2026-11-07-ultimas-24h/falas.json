@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sábado, sete de novembro. Alerta vermelho de tempestade em trezentas e vinte e cinco cidades do Sul, e mais de dois mil focos de fogo.",
+  "legenda": "Sábado, 7 de novembro. Alerta vermelho de tempestade em 325 cidades do Sul, e mais de 2 mil focos de fogo."
+ },
+ {
+  "id": "f2",
+  "fala": "De madrugada: quase cento e seis milímetros em Abdon Batista, Santa Catarina, e noventa e quatro em Paim Filho, Rio Grande do Sul.",
+  "legenda": "De madrugada: quase 106 milímetros em Abdon Batista, Santa Catarina, e 94 em Paim Filho, Rio Grande do Sul."
+ },
+ {
+  "id": "f3",
+  "fala": "No Oeste catarinense, os tornados da semana deixaram mais de quinhentas pessoas fora de casa e cinquenta e quatro cidades em emergência.",
+  "legenda": "No Oeste catarinense, os tornados da semana deixaram mais de 500 pessoas fora de casa e 54 cidades em emergência."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Tupanciretã, um homem de setenta e um anos foi achado no carro arrastado pela enxurrada. Pode ser a quinta vítima dos temporais.",
+  "legenda": "Em Tupanciretã, um homem de 71 anos foi achado no carro arrastado pela enxurrada. Pode ser a quinta vítima dos temporais."
+ },
+ {
+  "id": "f5",
+  "fala": "O granizo gerou sete mil novecentos e nove avisos de perda em lavouras.",
+  "legenda": "O granizo gerou 7.909 avisos de perda em lavouras."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, foram dois mil cento e trinta e nove focos na sexta, setecentos e vinte e nove no Maranhão.",
+  "legenda": "No fogo, foram 2.139 focos na sexta, 729 no Maranhão."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? O vermelho do INMET vale para o Rio Grande do Sul, Santa Catarina e Paraná, com vento acima de cem quilômetros por hora.",
+  "legenda": "E hoje? O vermelho do INMET vale para o Rio Grande do Sul, Santa Catarina e Paraná, com vento acima de 100 km/h."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: domingo, o frio deve derrubar a temperatura em duas mil e sessenta cidades. Quinta deve ser o dia mais chuvoso, e o Sudeste deve acumular mais.",
+  "legenda": "Os próximos 7 dias: domingo, o frio deve derrubar a temperatura em 2.060 cidades. Quinta deve ser o dia mais chuvoso, e o Sudeste deve acumular mais."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram quase oito mil milímetros, quase metade em Santa Catarina. Em sete dias, as capitais devem somar mais de oitocentos e noventa milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram quase 8 mil milímetros, quase metade em Santa Catarina. Em 7 dias, as capitais devem somar mais de 890 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

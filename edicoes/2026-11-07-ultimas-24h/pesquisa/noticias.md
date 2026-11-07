@@ -1,0 +1,14 @@
+# Notícias — Clima 24 h de 07/11/2026 (janela 06/11 05h30 → 07/11 05h30, hora de Brasília)
+
+| fato | número | fonte | URL | data/hora |
+|---|---|---|---|---|
+| Sábado de alerta vermelho: frente fria com forte massa de ar frio provoca nova rodada de temporais no Sul e em SP; risco de vendaval, granizo e mais de 100 mm em alguns municípios entre o norte do RS e o PR; INMET emitiu grande perigo de tempestade para Norte/Noroeste/Oeste gaúcho e Sudoeste do PR | >100 mm (previsão) | MetSul | https://metsul.com/sabado-de-alerta-vermelho-com-alto-risco-de-tempo-severo/ | 06/11 18h19 |
+| Defesa Civil de SC emitiu alerta vermelho (risco muito alto) de tempestades para o Oeste catarinense; pior entre a madrugada e a manhã de sábado (7); rajadas podem passar de 80 km/h; risco alto de deslizamentos no Oeste e Vale do Itajaí (solo encharcado) | 80 km/h | g1 SC, com a Defesa Civil de SC | https://g1.globo.com/sc/santa-catarina/noticia/2026/11/06/cidades-tornados-sc-entram-alerta-vermelho-novas-tempestades-defesa-civil.ghtml | 06/11 |
+| Mesmo texto: o Oeste de SC foi atingido nesta semana por dois tornados, que deixaram mais de 500 pessoas desalojadas; 54 municípios em situação de emergência (Chapecó, Lages, Abdon Batista, Anita Garibaldi…) | >500; 54 | g1 SC / Defesa Civil de SC | (mesma URL) | 06/11 |
+| Frio: domingo (8) mínimas de 10 a 15 °C na maior parte de SC, 6 a 10 °C na serra; segunda (9) condição de geada nos Planaltos e no Oeste, abaixo de 4 °C | <4 °C | g1 SC / Defesa Civil de SC | (mesma URL) | 06/11 |
+| Tupanciretã (RS): homem de 71 anos encontrado na quinta (5) no carro arrastado pela enxurrada para o Rio Lajado dos Nazários durante o temporal de quarta (4); Defesa Civil estadual apura se entra na estatística oficial de vítimas | 71 anos | g1 RS / RBS TV | https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/11/06/homem-morre-carro-enxurrada-correnteza-rs.ghtml | 06/11 11h03 |
+| Temporais de quarta (4) deixaram 4 vítimas no Sul | 4 | MetSul | https://metsul.com/sabado-de-alerta-vermelho-com-alto-risco-de-tempo-severo/ | 06/11 |
+| Granizo: entre 31/10 e a manhã de 5/11, 7.909 novos avisos de prejuízo em lavouras (36,1% da temporada) no RS, SC e PR (levantamento da Afubra); Passa Sete (RS) 508, Itaiópolis (SC) 459, São João do Triunfo (PR) 397 | 7.909 | MetSul | https://metsul.com/el-nino-faz-disparar-os-prejuizos-por-granizo-em-lavouras/ | 06/11 |
+| Grande frente fria avança sobre o Brasil de 7 a 9/11; domingo baixas temperaturas em todo o Sul, abaixo de 10 °C nas serras de RS e SC; Norte com calor de 35 a 40 °C no sábado | — | Climatempo | https://www.climatempo.com.br/noticia/frio/grande-e-forte-frente-fria-avanca-sobre-o-brasil-entre-7-e-9-de-novembro-de-2026 | 06/11 |
+
+Fora: as fontes falam em "mortos/morre"; no vídeo vira "vítimas". Desabamento de prédio em SP (g1, 07/11) não é evento de clima: fora.
