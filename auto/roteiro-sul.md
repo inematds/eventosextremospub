@@ -82,8 +82,18 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
      ou não use.
    - IMAGENS paradas (quadro bom que não vale como clipe): recorte com PIL o retângulo limpo, monte 1080x1920 do mesmo jeito
      (área na largura toda + fundo desfocado) em cenas/real-NN.jpg e use `{"src": ..., "zoom": .06}` em `C.telas`.
-   - Uma troca a cada 2 a 3 s, cada cena no momento da palavra que ela mostra (granizo quando fala granizo). Meta: pelo
-     menos 60% do tempo em micro clipe ou imagem real/de impacto.
+   - REGRA "ONDE = MAPA, O QUÊ = IMAGEM REAL" (Nei, 07/11/2026: "quando você fala em localização tem de aparecer o mapa"):
+     toda vez que a fala diz um LUGAR (cidade, região, estado: Alpestre, oeste catarinense, Curitiba), entra o mapa PARADO
+     nesse lugar (câmera fechada nele, pino com o nome, estado/municípios pintados) por pelo menos 3 s, começando na palavra
+     do lugar; quando a fala diz O QUE aconteceu (granizo, lavoura, temporal), entra a cena real. Isso vale mais que a
+     meta de tempo em cena real.
+   - DURAÇÃO (Nei: "no início os mapas nem paravam, é um piscar"): nenhuma cena com menos de 2,5 s; mapa no mínimo 3 s;
+     a câmera não viaja durante a fala do lugar (chega antes, com no máximo 0,8 s de movimento, e fica parada).
+   - SÓ IMAGEM QUE AGREGA (Nei: "imagem do céu limpo não agrega nada"): só entra cena que mostra o fenômeno ou o estrago
+     (granizo, lavoura destruída, nuvem de tempestade, radar com cores fortes, estrada/rio cheio, árvore caída). Céu limpo,
+     campo comum, paisagem sem evento: fora.
+   - Uma troca a cada 2 a 3 s, cada cena no momento da palavra que ela mostra (granizo quando fala granizo). Fora dos lugares,
+     o fundo é micro clipe ou imagem real/de impacto.
    - SATÉLITE: 1 ou 2 trechos (4 a 6 s) com o infravermelho do GOES-19 sobre o Sul (sat/web/ir*.jpg, timelapse das nuvens
      de tempestade, como no Clima 24 h), câmera fechada em RS/SC/PR, rótulo "satélite · infravermelho" e janela de horas.
    - MAPA: no máximo 1 trecho curto (4 a 6 s) para mostrar ONDE vem a chuva/tempestade (estados pintados pelos avisos do
