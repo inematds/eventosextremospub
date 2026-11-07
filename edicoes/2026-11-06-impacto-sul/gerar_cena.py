@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Monta cena.js do "Impacto Sul" de 06/11/2026 a partir de tempos.json (palavras da narração),
-da meteorologia do dia no Sul (pesquisa/boletim.md), do timelapse do GOES-19 (NASA GIBS), dos avisos do INMET
-e da chuva/rajada prevista de 07 a 08/11 na grade do Brasil (Open-Meteo, om/prev15_grade.json, lida em 06/11,
-copiada da edição 2026-11-06-clima-do-dia).
-Render: GEO=geo-br.js motor/montar.sh <esta pasta>
-Com avatar: gerar_cena.py --canto usa avatar/tempos.json; depois GEO=geo-br.js LAYOUT=canto motor/compor_avatar.sh <esta pasta>
-Visual: capa do Codex no quadro 0 (capa-dia/abertura.png descida 130 px, original em abertura-orig.png; "GRANIZO DESTRÓI LAVOURAS / 3 ESTADOS DO SUL / NESTA SEXTA · 06/11"),
-Alpestre (RS) com gelo no chão (foto do Codex, ilustração), oeste catarinense e Paraná com tabaco destruído (foto do Codex,
-ilustração), choque do ar frio com a umidade da Amazônia (câmera inclinada, IR do GOES-19), chuva forte no sábado de manhã,
-INMET tempestade no sábado em 1.107 cidades do Sul, colunas 3D da chuva prevista de 07 a 08/11 (84 mm), rajada de 72 km/h
-perto de Curitiba, sábado = maior risco, domingo com queda de temperatura em todo o Sul.
+"""Monta cena.js do "Impacto Sul" de 06/11/2026 (sexta), texto da v2 (falas.json desta pasta, avatar já gravado),
+com o visual novo (auto/roteiro-sul.md, 3c, Nei 07/11/2026):
+  - ONDE = MAPA, O QUÊ = IMAGEM REAL: todo lugar dito (Alpestre/norte gaúcho, oeste catarinense, Paraná, Amazônia,
+    norte gaúcho/oeste catarinense/Paraná do sábado, cidades do Sul, centro e leste de SC, Curitiba, todo o Sul)
+    → mapa PARADO nele, pino com o nome, estado pintado, >= 3 s desde a palavra do lugar
+    (a câmera viaja escondida atrás da cena anterior e chega antes);
+  - DURAÇÃO: nenhuma cena < 2,5 s; mapa >= 3 s;
+  - SÓ IMAGEM QUE AGREGA: granizo, lavoura destruída, radar forte, previsão com chuva forte; o céu limpo (clip-10) saiu,
+    clip-11 (= clip-03) e clip-01 (granizo quase invisível na neblina) não entram; vendaval (ilustração) saiu: a rajada de
+    Curitiba é dita com o mapa parado em Curitiba.
+Fontes: fonte do dia (granizo em Alpestre/RS, oeste de SC e PR), GOES-19 IR (NASA GIBS), avisos do INMET, Open-Meteo.
+Com avatar: gerar_cena.py --canto (avatar/tempos.json); depois GEO=geo-br.js LAYOUT=canto motor-sul/compor_avatar.sh <esta pasta>
 Teste do --canto sem avatar: TEMPOS=tempos.json python3 gerar_cena.py --canto"""
 import os
-import difflib, json, re, sys, unicodedata
+import difflib, json, re, subprocess, sys, unicodedata
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -63,41 +64,48 @@ def em(fid, palavra, k=1):
 ini = lambda fid: FALA[fid]["ini"]
 fim = lambda fid: FALA[fid]["fim"]
 DUR = round(fim(T[-1]["id"]) + 1.6, 2)
-LAR, AMA, VERM, AZUL, FRIO, GELO = [255, 140, 26], [250, 204, 21], [255, 42, 31], [60, 150, 255], [150, 210, 255], [235, 245, 255]
+FIM_VIDEO = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                 str(AQUI / "avatar/avatar.mp4")], capture_output=True, text=True).stdout or DUR) if AVATAR else DUR
+FIM_VIDEO = min(FIM_VIDEO, DUR)   # o compor_avatar corta no fim do avatar: a última cena vale até aqui
+LAR, AMA, VERM, AZUL, FRIO = [255, 140, 26], [250, 204, 21], [255, 42, 31], [60, 150, 255], [150, 210, 255]
+MIN_CENA, MIN_MAPA = 2.5, 3.0
 
-# ---------------------------------------------------------------- câmera (sempre fechada no Sul)
-SUL = {"lon": -51.4, "lat": -27.4, "zoom": 5.35}       # f1: RS, SC e PR
-ALP = {"lon": -53.03, "lat": -27.25, "zoom": 7.6}      # f2: Alpestre (RS)
-OESTE = {"lon": -52.9, "lat": -26.5, "zoom": 6.5}      # f3: oeste catarinense e sudoeste do Paraná
-AMZ = {"lon": -54.0, "lat": -21.0, "zoom": 4.6}       # f4: corredor de umidade da Amazônia até o Sul (câmera inclinada)
-NORTE = {"lon": -51.8, "lat": -26.8, "zoom": 5.7}      # f5: norte gaúcho, oeste catarinense e Paraná
-COL = {"lon": -51.4, "lat": -28.0, "zoom": 5.8}        # f7: colunas 3D da chuva prevista de 07 a 08/11
-CWB = {"lon": -49.4, "lat": -25.45, "zoom": 7.2}       # f8: Curitiba
-RISCO = {"lon": -52.6, "lat": -27.5, "zoom": 6.3}      # f9: oeste catarinense e norte gaúcho
-K = lambda t, r, pitch=0, bearing=0: {"t": t, **r, "pitch": pitch, "bearing": bearing}
-CAPA = 2.0  # quadro 0 = capa cheia do Codex até aqui
-camera = [
-    K(0, SUL), K(CAPA, SUL), K(fim("f1") - .2, {**SUL, "zoom": 5.5}, 0, 0),
-    K(ini("f2") + 1.0, ALP, 38, -8), K(fim("f2") - .2, {**ALP, "zoom": 7.8}, 44, 6),
-    K(ini("f3") + 1.0, OESTE, 20, 0), K(fim("f3") - .2, {**OESTE, "zoom": 6.65}, 24, 6),
-    K(ini("f4") + 1.2, AMZ, 0, 0), K(fim("f4") - .2, {**AMZ, "zoom": 4.7}, 0, 0),
-    K(ini("f5") + 1.0, NORTE, 0, 0), K(fim("f5") - .2, {**NORTE, "zoom": 5.8}, 4, 0),
-    K(ini("f6") + 1.0, SUL, 0, 0), K(fim("f6") - .2, {**SUL, "zoom": 5.45}, 0, 0),
-    K(ini("f7") + 1.2, COL, 55, -20), K(fim("f7") - .2, {**COL, "zoom": 5.9}, 56, 14),
-    K(ini("f8") + 1.0, CWB, 30, 0), K(fim("f8") - .2, {**CWB, "zoom": 7.35}, 34, 6),
-    K(ini("f9") + 1.0, RISCO, 0, 0), K(fim("f9") - .2, {**RISCO, "zoom": 6.4}, 4, 0),
-    K(ini("f10") + 1.0, SUL, 0, 0), K(fim("f10") - .2, {**SUL, "zoom": 5.45}, 0, 0),
-    K(ini("f11") + 1.4, {**SUL, "zoom": 5.2}, 0, 0), K(DUR, {**SUL, "zoom": 5.3}, 0, 2),
-]
-camera.sort(key=lambda k: k["t"])
+# ---------------------------------------------------------------- linha do tempo: cortes (cada um na palavra que ele mostra)
+CAPA = 2.5                                    # quadro 0 = granizo acumulado com o gancho e a data escritos (sem fade)
+A0 = max(em("f2", "Alpestre"), CAPA + MIN_CENA)   # mapa A: Alpestre, norte gaúcho
+A1 = em("f2", "norte") + MIN_MAPA             # → clipe: gelo acumulado ("propriedades rurais", "caiu granizo")
+B0 = em("f3", "oeste")                        # mapa B: extremo oeste catarinense + Paraná
+B1 = em("f4", "frio") - .3                    # → satélite IR (a causa): câmera vai do Sul à Amazônia
+S1 = em("f5", "abafado")                      # → clipe: radar com núcleos fortes ("novas tempestades")
+C0 = em("f6", "Norte")                        # mapa C: norte gaúcho, oeste catarinense, Paraná → INMET (1.079 cidades do Sul)
+R1 = C0 - MIN_CENA                            #   (antes dele: previsão de chuva forte do sábado, "deve chover forte")
+C1 = em("f8", "milímetros") - .4              # → clipe: previsão de chuva ("altos volumes")
+D0 = em("f9", "centro")                       # mapa D: centro e leste de SC + Curitiba (rajadas de 72 km/h)
+D1 = em("f10", "Curitiba") + MIN_MAPA         # → ilustração do frio ("temperatura despenca")
+F0 = max(em("f10", "Sul"), D1 + MIN_CENA)     # mapa F: todo o Sul (frio no domingo) e a pergunta "de que cidade do Sul"
+F1 = ini("f12")                               # → clipe: granizo no chão (CTA)
+
+# ---------------------------------------------------------------- câmera: só aparece nos trechos de mapa/satélite
+K = lambda t, r, pitch=0, bearing=0: {"t": round(t, 3), **r, "pitch": pitch, "bearing": bearing}
+ALP = {"lon": -52.6, "lat": -27.9, "zoom": 7.0}
+OESTE_PR = {"lon": -51.6, "lat": -26.3, "zoom": 6.1}
+AMZ_SUL = {"lon": -56.5, "lat": -17.5, "zoom": 4.25}
+PINOS3 = {"lon": -51.6, "lat": -26.7, "zoom": 6.0}   # norte RS / oeste SC / PR e os 3 estados do aviso do INMET
+SC_CWB = {"lon": -50.3, "lat": -26.6, "zoom": 6.5}   # centro e leste de SC + Curitiba
+SUL = {"lon": -51.4, "lat": -27.6, "zoom": 5.75}
+VIAGEM = .7                                   # a câmera chega antes do mapa aparecer e fica parada
+camera = [K(0, ALP)]
+for a, b, r in [(A0, A1, ALP), (B0, B1, OESTE_PR), (B1 + VIAGEM, S1, AMZ_SUL), (C0, C1, PINOS3), (D0, D1, SC_CWB), (F0, F1, SUL)]:
+    camera += [K(a - (VIAGEM if r is not AMZ_SUL else 0), r), K(b, r)]
+camera.append(K(DUR, SUL))
+camera = [c for i, c in enumerate(camera) if i == 0 or c["t"] > camera[i - 1]["t"]]
 assert all(x["t"] < y["t"] for x, y in zip(camera, camera[1:])), "câmera com tempos fora de ordem"
 
-# ---------------------------------------------------------------- satélite: 24 h do GOES-19 (infravermelho) no choque de massas (f4)
+# ---------------------------------------------------------------- satélite: GOES-19 infravermelho (a causa, f4)
 from PIL import Image, ImageStat
 TS = json.loads((AQUI / "sat/web/ir_tempos.json").read_text())
-# tira quadro vazio (a última hora ainda não existe no GIBS: sai preto) e quadro com pico de brilho (falha de varredura)
 luz = lambda i: ImageStat.Stat(Image.open(AQUI / f"sat/web/ir{i:02d}.jpg").convert("L")).mean[0]
-BONS = [i for i in range(len(TS)) if 90 < luz(i) < 130]
+BONS = [i for i in range(len(TS)) if 90 < luz(i) < 130 and TS[i] < "2026-11-07T03:00:00Z"]   # só a sexta 06/11 (horário de Brasília)
 DIAS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 
 
@@ -106,141 +114,167 @@ def brt(z):
     return f"{DIAS[d.weekday()]} {d:%Hh%M}"
 
 
-# IR com borda esmaecida (irfNN.png, alfa nas bordas, feito desta edição a partir de irNN.jpg) e o Blue Marble do mundo por baixo do geocolor (sem borda preta)
+IR0, IR1 = B1, S1 + .3
 SAT = {"fundo": {"src": "sat/web/mundo.jpg", "bbox": [-180, -60, 180, 75], "tint": [170, 170, 175]},
        "base": "sat/web/geocolor.jpg", "bbox": [-76, -35, -33, 7], "tint": [170, 170, 175],
-       "ir": {"frames": [f"sat/web/irf{i:02d}.png" for i in BONS], "tempos": [brt(TS[i]) for i in BONS],
-              "ini": ini("f4") - .3, "fim": ini("f5") + .3, "dur": ini("f5") - ini("f4") + .3, "alfa": .9, "rotulo": "GOES-19 · últimas 24 h"}}
+       "ir": {"frames": [f"sat/web/ir{i:02d}.jpg" for i in BONS], "tempos": [brt(TS[i]) for i in BONS],
+              "ini": IR0, "fim": IR1, "dur": IR1 - IR0, "alfa": .9, "rotulo": "satélite · infravermelho"}}
 IR_DE, IR_ATE = brt(TS[BONS[0]]), brt(TS[BONS[-1]])
-assert len(BONS) >= 36, f"poucos quadros bons de infravermelho: {len(BONS)}"
-imagens = []
+assert len(BONS) >= 20, f"poucos quadros bons de infravermelho: {len(BONS)}"
 
-# ---------------------------------------------------------------- colunas 3D: chuva PREVISTA de 07 a 08/11 (Open-Meteo, grade de 1,5°)
-G15 = json.loads((AQUI / "om/prev15_grade.json").read_text())
-CS = {"RS", "SC", "PR"}
-dias = G15["pts"][0]["dias"]
-ND = 2
-assert dias[0] == "2026-11-07" and dias[ND - 1] == "2026-11-08", (dias[0], dias[ND - 1])
-SUL_PTS = [p for p in G15["pts"] if p["uf"] in CS]
-SOMA = [(p, round(sum(x or 0 for x in p["chuva"][:ND]))) for p in SUL_PTS]
-col = [{"id": i, "p": p["p"], "v": v, "cor": [60, 150, 255] if v >= 50 else [120, 190, 255]} for i, (p, v) in enumerate(SOMA) if v >= 15]
-ordem = {c["id"]: (-c["p"][1] - 25) * .12 for c in col}   # sobe do RS para SC e o PR
-colunas = [{"id": "chuva3d", "ini": ini("f7") + .3, "fim": ini("f8") + .3, "dados": col, "raio": 60000, "escala": 4200, "ordem": ordem, "varredura": 1}]
-TOPO = max(SOMA, key=lambda x: x[1])
-assert TOPO[1] == 84 and TOPO[0]["uf"] == "RS" and len(col) >= 6, (TOPO[0]["uf"], TOPO[1], len(col))   # a fala f7 diz "84 milímetros"
-RAJ = max(SUL_PTS, key=lambda p: p["raj"][0])
-assert round(RAJ["raj"][0]) == 72 and RAJ["uf"] == "PR", (RAJ["uf"], RAJ["raj"][0])                      # a fala f8 diz "72 quilômetros por hora"
 
-# ---------------------------------------------------------------- fotos de tela cheia (Codex, pela assinatura): capa, gelo e tabaco
-GELO_T = em("f2", "gelo")
-TAB = em("f3", "tabaco")
-telas = [{"src": "capa-dia/abertura.png", "ini": 0, "fim": CAPA, "fade": .5, "zoom": .05},
-         {"src": "capa-dia/gelo.png", "ini": GELO_T - .1, "fim": em("f2", "tarde") - .1, "fade": .25, "selo": "ilustração"},
-         {"src": "capa-dia/tabaco.png", "ini": TAB - .1, "fim": fim("f3") - .1, "fade": .25, "selo": "ilustração"}]
+# ---------------------------------------------------------------- micro clipes reais (cenas/clip-NN, 30 fps, limpos do outro perfil)
+def clipe(nome, a, b, de=0, zoom=.03):
+    q = sorted(os.listdir(AQUI / "cenas" / nome))[de:]
+    assert q and (min(b, FIM_VIDEO) - a) <= len(q) / 30 + .15, (nome, round(b - a, 2), len(q) / 30)
+    return {"seq": [f"cenas/{nome}/{x}" for x in q], "fps": 30, "ini": a, "fim": b, "fade": .2, "zoom": zoom}
 
-# ---------------------------------------------------------------- avisos do INMET (sábado 07/11 e domingo 08/11) no Sul
+
+telas = [
+    {"src": "capa-dia/abertura.png", "ini": 0, "fim": CAPA, "fade": .25, "zoom": .05},   # granizo + gancho + data
+    clipe("clip-04", CAPA, A0),                        # "lavouras ... impacto no Sul": lavoura de tabaco destruída
+    # mapa A (Alpestre, norte gaúcho)
+    clipe("clip-05", A1, B0),                          # "o gelo cobriu o chão" / "caiu granizo": gelo acumulado
+    # mapa B (oeste catarinense, Paraná) → satélite IR (a causa, Amazônia)
+    clipe("clip-06", S1, R1),                          # "novas tempestades": radar com núcleo roxo/vermelho
+    clipe("clip-07", R1, C0),                          # "sábado de manhã, deve chover forte": previsão com chuva forte
+    # mapa C (norte gaúcho, oeste catarinense, Paraná → INMET nos 3 estados → norte gaúcho 84 mm)
+    clipe("clip-09", C1, D0),                          # "altos volumes": previsão de chuva sobre o RS
+    # mapa D (centro e leste de SC, Curitiba)
+    {"src": "capa-dia/frio.png", "ini": D1, "fim": F0, "fade": .25, "zoom": .06, "selo": "ilustração"},   # temperatura despenca
+    # mapa F (todo o Sul: frio no domingo, "de que cidade do Sul")
+    clipe("clip-02", F1, DUR),                         # CTA: chão de terra coberto de granizo (o vídeo acaba com o avatar)
+]
+assert telas[0]["ini"] == 0   # vis() não faz fade-in quando ini <= 0 (quadro 0 cheio); o .25 é só a saída
+
+# ---------------------------------------------------------------- portões das 3 regras (3c)
+mapas = [("A Alpestre", A0, A1, em("f2", "Alpestre")), ("B oeste SC/PR", B0, B1, em("f3", "oeste")),
+         ("IR Amazônia", B1, S1, em("f4", "Amazônia")), ("C norte RS/oeste SC/PR/INMET", C0, C1, em("f6", "Norte")),
+         ("D centro-leste SC/Curitiba", D0, D1, em("f9", "centro")), ("F todo o Sul", F0, F1, em("f10", "Sul"))]
+for m in telas:
+    assert min(m["fim"], FIM_VIDEO) - m["ini"] >= MIN_CENA - .01, ("cena curta", m.get("src") or m["seq"][0], round(min(m["fim"], FIM_VIDEO) - m["ini"], 2))
+for nome, a, b, palavra in mapas:
+    assert b - a >= MIN_MAPA - .01, ("mapa curto", nome, round(b - a, 2))
+    assert a <= palavra + .25, ("mapa entra depois da palavra do lugar", nome, round(a - palavra, 2))
+# lugares ditos e o mapa que os mostra (>= 3 s desde a palavra; os últimos da fala ficam até o corte seguinte)
+# (f1 "estados do Sul" / "impacto no Sul" ficam na capa: é o nome do programa e o gancho escrito)
+LUGARES = [("f2", "Alpestre", A1), ("f2", "norte", A1), ("f3", "oeste", B1), ("f3", "Paraná", B1), ("f4", "Amazônia", S1),
+           ("f6", "Norte", C1), ("f6", "Oeste", C1), ("f6", "Paraná", C1), ("f7", "Sul", C1), ("f8", "Norte", C1),
+           ("f9", "centro", D1), ("f9", "Santa", D1), ("f10", "Curitiba", D1), ("f10", "Sul", F1), ("f11", "Sul", F1)]
+for fid, w, ate in LUGARES:
+    assert ate - em(fid, w) >= MIN_MAPA - .5, ("lugar com mapa curto", fid, w, round(ate - em(fid, w), 2))
+    assert any(a - .01 <= em(fid, w) + .25 and em(fid, w) < b for _, a, b, _ in mapas), ("lugar fora de mapa", fid, w)
+cortes = sorted({0, *[x for m in telas for x in (m["ini"], m["fim"])], *[x for _, a, b, _ in mapas for x in (a, b)]})
+cortes = [c for c in cortes if c < FIM_VIDEO - .05]
+for a, b in zip(cortes, cortes[1:] + [FIM_VIDEO]):
+    assert b - a >= MIN_CENA - .01, ("trecho curto (pisca)", round(a, 2), round(b, 2))
+ocup = sorted([(m["ini"], m["fim"]) for m in telas] + [(a, b) for _, a, b, _ in mapas])
+for (a, b), (c, d) in zip(ocup, ocup[1:]):
+    assert abs(b - c) < .02, ("buraco/sobreposição na linha do tempo", round(b, 2), round(c, 2))
+assert abs(ocup[-1][1] - DUR) < .02
+
+# ---------------------------------------------------------------- avisos do INMET do Sul (sábado 07/11 e domingo 08/11)
 AV = json.loads((B / "inmet_avisos_ativos.json").read_text())
 aviso = {a["id"]: a for g in ("hoje", "futuro") for a in AV.get(g, [])}
-geo = lambda i: set(aviso[i]["geocodes"].split(","))
-UFCOD = {"41": "PR", "42": "SC", "43": "RS"}
+SULC = {"41": "PR", "42": "SC", "43": "RS"}
+geo = lambda i: {c for c in aviso[i]["geocodes"].split(",") if c[:2] in SULC}
+for i in (56310, 56318, 56322):
+    assert aviso[i]["descricao"] == "Tempestade" and aviso[i]["inicio"].startswith("2026-11-07"), i
+TEMP = geo(56310) | geo(56318) | geo(56322)
+assert len(TEMP) == 1079, len(TEMP)                       # a fala f7 diz "1.079 cidades do Sul"
 from collections import Counter
-sul = lambda i: Counter(UFCOD[c[:2]] for c in geo(i) if c[:2] in UFCOD)
-assert aviso[56308]["descricao"] == "Tempestade" and aviso[56308]["inicio"].startswith("2026-11-07"), aviso[56308]["descricao"]
-TEMP_SUL = sul(56308)                                  # tempestade no sábado (todas as severidades: 56308 contém 56309 e 56310)
-assert (TEMP_SUL["PR"], TEMP_SUL["SC"], TEMP_SUL["RS"]) == (399, 295, 413), TEMP_SUL
-assert sum(TEMP_SUL.values()) == 1107, TEMP_SUL       # a fala f6 diz "1.107 cidades do Sul"
-assert aviso[56281]["descricao"] == "Declínio de Temperatura" and aviso[56281]["inicio"].startswith("2026-11-08"), aviso[56281]["descricao"]
-FRIO_SUL = sul(56281)                                  # declínio de temperatura no domingo: todo o Sul
-assert (FRIO_SUL["PR"], FRIO_SUL["SC"], FRIO_SUL["RS"]) == (399, 295, 497), FRIO_SUL   # a fala f10 diz "todo o Sul"
-NFRIO = sum(FRIO_SUL.values())
+T_UF = Counter(SULC[c[:2]] for c in TEMP)
+assert (T_UF["PR"], T_UF["SC"], T_UF["RS"]) == (399, 295, 385), T_UF
+assert aviso[56281]["descricao"] == "Declínio de Temperatura" and aviso[56281]["inicio"].startswith("2026-11-08")
+FRIO8 = len(geo(56281))
+assert FRIO8 == 1191, FRIO8
 
-# ---------------------------------------------------------------- estados
+# ---------------------------------------------------------------- previsão Open-Meteo (sábado 07/11)
+G15 = json.loads((AQUI / "om/prev15_grade.json").read_text())
+PS = [p for p in G15["pts"] if p["uf"] in SULC.values()]
+assert PS[0]["dias"][0] == "2026-11-07", PS[0]["dias"][0]
+TOPO = max(PS, key=lambda p: p["chuva"][0] or 0)
+assert round(TOPO["chuva"][0]) == 84 and TOPO["uf"] == "RS", (TOPO["uf"], TOPO["chuva"][0])   # f8: 84 mm no norte gaúcho
+RAJ = max(PS, key=lambda p: max(p["raj"][:2]))
+assert round(max(RAJ["raj"][:2])) == 72 and RAJ["uf"] == "PR", RAJ                              # f10: 72 km/h perto de Curitiba
+
+# ---------------------------------------------------------------- mapa: estados pintados e pinos (só nos trechos de mapa)
+AVI = em("f7", "aviso")
 estados = [
-    {"id": "gr1", "ini": em("f1", "estados"), "fim": ini("f2") + .3, "ufs": ["RS", "SC", "PR"], "cor": GELO, "alfa": .32},
-    {"id": "rs2", "ini": ini("f2"), "fim": ini("f3") + .3, "ufs": ["RS"], "cor": GELO, "alfa": .28},
-    {"id": "sc3", "ini": em("f3", "catarinense"), "fim": ini("f4") + .3, "ufs": ["SC"], "cor": GELO, "alfa": .3},
-    {"id": "pr3", "ini": em("f3", "Paraná"), "fim": ini("f4") + .3, "ufs": ["PR"], "cor": GELO, "alfa": .3},
-    {"id": "chuva5", "ini": em("f5", "chover"), "fim": ini("f6") + .3, "ufs": ["RS", "SC", "PR"], "cor": AZUL, "alfa": .32},
-    {"id": "temp6", "ini": em("f6", "tempestade"), "fim": ini("f7") + .3, "ufs": ["RS", "SC", "PR"], "cor": LAR, "alfa": .42},
-    {"id": "chuva7", "ini": ini("f7"), "fim": ini("f8") + .3, "ufs": ["RS", "SC"], "cor": AZUL, "alfa": .3},
-    {"id": "pr8", "ini": ini("f8"), "fim": ini("f9") + .3, "ufs": ["PR"], "cor": FRIO, "alfa": .3},
-    {"id": "risco9", "ini": em("f9", "atenção"), "fim": ini("f10") + .3, "ufs": ["RS", "SC"], "cor": VERM, "alfa": .4},
-    {"id": "frio10", "ini": em("f10", "despenca"), "fim": ini("f11") + .3, "ufs": ["RS", "SC", "PR"], "cor": FRIO, "alfa": .4},
+    {"id": "a_rs", "ini": A0, "fim": A1, "ufs": ["RS"], "cor": VERM, "alfa": .3},
+    {"id": "b_sc", "ini": B0, "fim": B1, "ufs": ["SC"], "cor": VERM, "alfa": .3},
+    {"id": "b_pr", "ini": em("f3", "Paraná"), "fim": B1, "ufs": ["PR"], "cor": VERM, "alfa": .3},
+    {"id": "c_chuva", "ini": C0, "fim": AVI, "ufs": ["RS", "SC", "PR"], "cor": AZUL, "alfa": .3},
+    {"id": "c_temp", "ini": AVI, "fim": C1, "ufs": ["RS", "SC", "PR"], "cor": LAR, "alfa": .4},
+    {"id": "d_sc", "ini": D0, "fim": D1, "ufs": ["SC"], "cor": AZUL, "alfa": .35},
+    {"id": "d_pr", "ini": em("f10", "Curitiba"), "fim": D1, "ufs": ["PR"], "cor": FRIO, "alfa": .3},
+    {"id": "f_frio", "ini": F0, "fim": F1, "ufs": ["RS", "SC", "PR"], "cor": FRIO, "alfa": .4},
 ]
-
-H = em("f1", "impacto") - .1   # o hero (data grande) fica até "impacto"
+pino = lambda nome, sub, lon, lat, a, b, h=120: {"nome": nome, "sub": sub, "lon": lon, "lat": lat, "ini": a, "fim": b, "h": h}
 pinos = [
-    {"nome": "Rio Grande do Sul", "sub": "granizo hoje", "lon": -53.0, "lat": -28.9, "ini": H, "fim": ini("f2"), "h": 100},
-    {"nome": "Santa Catarina", "sub": "granizo hoje", "lon": -50.4, "lat": -27.2, "ini": H + .3, "fim": ini("f2"), "h": 230},
-    {"nome": "Paraná", "sub": "granizo hoje", "lon": -52.6, "lat": -24.8, "ini": H + .6, "fim": ini("f2"), "h": 140},
-    {"nome": "Alpestre (RS)", "sub": "gelo cobriu o chão", "lon": -53.03, "lat": -27.25, "ini": em("f2", "Alpestre"), "fim": GELO_T - .1, "h": 260},
-    {"nome": "Alpestre (RS)", "sub": "granizo na tarde de hoje", "lon": -53.03, "lat": -27.25, "ini": em("f2", "tarde") - .1, "fim": ini("f3"), "h": 260},
-    {"nome": "oeste catarinense", "sub": "granizo nas lavouras", "lon": -52.9, "lat": -26.95, "ini": em("f3", "catarinense"), "fim": TAB - .1, "h": 200},
-    {"nome": "Paraná", "sub": "granizo em áreas isoladas", "lon": -53.05, "lat": -26.0, "ini": em("f3", "Paraná"), "fim": TAB - .1, "h": 150},
-    {"nome": "Amazônia", "sub": "corredor de umidade", "lon": -58.0, "lat": -14.5, "ini": em("f4", "Amazônia"), "fim": ini("f5"), "h": 70},
-    {"nome": "Sul", "sub": "ar frio da manhã", "lon": -52.0, "lat": -28.5, "ini": em("f4", "frio"), "fim": ini("f5"), "h": 160},
-    {"nome": "norte gaúcho", "sub": "chuva forte sábado de manhã", "lon": -52.4, "lat": -28.3, "ini": em("f5", "gaúcho"), "fim": ini("f6"), "h": 160},
-    {"nome": "oeste catarinense", "sub": "chuva forte sábado", "lon": -52.6, "lat": -26.9, "ini": em("f5", "catarinense"), "fim": ini("f6"), "h": 260},
-    {"nome": "Paraná", "sub": "chuva forte sábado", "lon": -51.6, "lat": -25.0, "ini": em("f5", "Paraná"), "fim": ini("f6"), "h": 400},
-    {"nome": f"{TOPO[1]} mm até 08/11", "sub": "nordeste gaúcho · soma prevista · Open-Meteo", "lon": TOPO[0]["p"][0], "lat": TOPO[0]["p"][1],
-     "ini": em("f7", "84"), "fim": ini("f8"), "h": 220},
-    {"nome": "Curitiba", "sub": "rajadas de até 72 km/h no sábado", "lon": -49.27, "lat": -25.43, "ini": em("f8", "Curitiba"), "fim": ini("f9"), "h": 240},
-    {"nome": "oeste catarinense", "sub": "maior risco no sábado", "lon": -52.6, "lat": -26.9, "ini": em("f9", "catarinense"), "fim": ini("f10"), "h": 260},
-    {"nome": "norte gaúcho", "sub": "maior risco no sábado", "lon": -52.4, "lat": -28.3, "ini": em("f9", "gaúcho"), "fim": ini("f10"), "h": 160},
+    pino("Alpestre", "norte gaúcho · granizo", -53.03, -27.25, A0, A1),
+    pino("Extremo oeste catarinense", "granizo", -53.2, -26.7, B0, B1),
+    pino("Paraná", "granizo · tabaco destruído", -51.6, -24.9, em("f3", "Paraná"), B1),
+    pino("Amazônia", "corredor de umidade", -61.0, -8.0, em("f4", "Amazônia") - .1, S1),
+    pino("Norte gaúcho", "chuva forte no sábado", -52.6, -28.5, C0, AVI, 60),
+    pino("Oeste catarinense", "chuva forte no sábado", -52.62, -26.9, em("f6", "Oeste"), AVI, 60),
+    pino("Paraná", "chuva forte no sábado", -51.5, -24.7, em("f6", "Paraná"), AVI, 60),
+    pino("Rio Grande do Sul", f"{T_UF['RS']} cidades em aviso", -53.4, -29.4, AVI, em("f8", "Norte"), 60),
+    pino("Santa Catarina", f"{T_UF['SC']} cidades em aviso", -50.6, -27.3, AVI, em("f8", "Norte"), 60),
+    pino("Paraná", f"{T_UF['PR']} cidades em aviso", -51.6, -24.9, AVI, em("f8", "Norte"), 60),
+    pino("Norte gaúcho", f"até {round(TOPO['chuva'][0])} mm no sábado", TOPO["p"][0], TOPO["p"][1], em("f8", "Norte"), C1, 140),
+    pino("Centro e leste de SC", "altos volumes de chuva", -49.9, -27.2, D0, D1, 60),
+    pino("Curitiba", f"rajadas de até {round(max(RAJ['raj'][:2]))} km/h", -49.27, -25.43, em("f10", "Curitiba"), D1, 60),
+    pino("Sul", "temperatura despenca no domingo", -51.4, -27.6, F0, F1, 60),
 ]
+for p in pinos:   # pino que nasce até 0,3 s antes do mapa entra junto com o mapa
+    for _, a, b, _ in mapas:
+        if a - .3 <= p["ini"] < a and p["fim"] <= b + .01:
+            p["ini"] = a
+    assert any(a - .01 <= p["ini"] and p["fim"] <= b + .01 for _, a, b, _ in mapas), ("pino fora de trecho de mapa", p["nome"])
 
 # ---------------------------------------------------------------- textos
-# contador chega ao número QUANDO a palavra é dita: começa LEAD s antes e termina no início da palavra (em tempos.json e avatar/tempos.json)
 LEAD = 1.0
 def conta(ate, fid, palavra, cor, unid, dec=0, lead=LEAD, de=0, k=1):
-    lead = min(lead, em(fid, palavra, k) - ini(fid) - .05)   # número dito logo no começo da fala: o contador começa com a fala
+    lead = min(lead, em(fid, palavra, k) - ini(fid) - .05)
     return {"de": de, "ate": ate, "dec": dec, "ini": em(fid, palavra, k) - lead, "dur": lead, "cor": cor, "unid": unid}
-hero = [{"ini": CAPA - .2, "fim": H,
-         "html": f'<div style="font:400 132px/1 \'Archivo Black\';letter-spacing:-2px;margin-bottom:6px">{DATA}</div>'
-                 '<div class="dt" style="background:#ff2a1f;color:#fff">IMPACTO SUL</div>'
-                 '<div class="t1" style="font-size:104px">GRANIZO</div>'
-                 '<div class="t4" style="font-size:44px;line-height:1.35">lavouras destruídas em 3 estados</div>'}]
+
+
+hero = []   # a manchete e a data estão escritas na capa (quadro 0)
 paineis = [
-    {"ini": H, "fim": ini("f2"), "k": "GRANIZO · SEXTA 06/11",
-     "itens": [{"t": H, "txt": "🧊 RS · SC · PR"}],
-     "l": "lavouras atingidas", "borda": "rgba(235,245,255,.8)"},
-    {"ini": ini("f2"), "fim": ini("f3"), "k": "ALPESTRE (RS) · HOJE À TARDE",
-     "itens": [{"t": em("f2", "Alpestre"), "txt": "📍 norte gaúcho"},
-               {"t": GELO_T, "txt": "🧊 gelo cobriu o chão"}],
-     "borda": "rgba(235,245,255,.8)"},
-    {"ini": ini("f3"), "fim": ini("f4"), "k": "GRANIZO · HOJE À TARDE",
-     "itens": [{"t": em("f3", "catarinense"), "txt": "🧊 oeste catarinense"},
-               {"t": em("f3", "Paraná"), "txt": "🧊 áreas do Paraná"},
-               {"t": TAB, "txt": "🌿 tabaco destruído"}],
-     "borda": "rgba(235,245,255,.8)"},
-    {"ini": ini("f4"), "fim": ini("f5"), "k": "A CAUSA",
-     "itens": [{"t": em("f4", "frio"), "txt": "❄️ ar frio da manhã"},
-               {"t": em("f4", "umidade"), "txt": "💧 umidade da Amazônia"},
-               {"t": em("f4", "Niño"), "txt": "🌡️ ano de El Niño"}],
+    {"ini": CAPA, "fim": ini("f2"), "k": "SEXTA 06/11 · SUL",
+     "itens": [{"t": CAPA, "txt": "🧊 granizo no RS, em SC e no PR"}], "borda": "rgba(255,42,31,.8)"},
+    {"ini": ini("f2"), "fim": ini("f3"), "k": "ALPESTRE (RS) · TARDE DE HOJE",
+     "itens": [{"t": em("f2", "gelo"), "txt": "🧊 gelo acumulado"}, {"t": em("f2", "chão"), "txt": "🌾 cobriu o chão das propriedades"}],
      "borda": "rgba(150,210,255,.8)"},
-    {"ini": ini("f5"), "fim": ini("f6"), "k": "SÁBADO DE MANHÃ · PREVISÃO",
-     "itens": [{"t": em("f5", "gaúcho"), "txt": "🌧️ norte gaúcho"},
-               {"t": em("f5", "catarinense"), "txt": "🌧️ oeste catarinense"},
-               {"t": em("f5", "Paraná"), "txt": "🌧️ Paraná"}],
-     "borda": "rgba(60,150,255,.8)"},
-    {"ini": ini("f6"), "fim": ini("f7"), "k": "INMET · TEMPESTADE · SÁBADO 07/11",
-     "contador": conta(1107, "f6", "1.107", "#ff8c1a", "CIDADES NO SUL"),
-     "l": f"PR {TEMP_SUL['PR']} (todas), SC {TEMP_SUL['SC']} (todas), RS {TEMP_SUL['RS']}", "borda": "rgba(255,140,26,.8)"},
-    {"ini": ini("f7"), "fim": ini("f8"), "k": "SÁBADO E DOMINGO · CHUVA",
-     "contador": conta(84, "f7", "84", "#5ec8ff", "MM PREVISTOS"),
-     "l": "colunas: chuva prevista somada de 07 a 08/11 · Open-Meteo", "borda": "rgba(60,150,255,.8)"},
-    {"ini": ini("f8"), "fim": ini("f9"), "k": "CURITIBA · SÁBADO 07/11",
-     "contador": conta(72, "f8", "72", "#96d2ff", "KM/H EM RAJADAS"),
-     "l": "previsão · Open-Meteo", "borda": "rgba(150,210,255,.8)"},
-    {"ini": ini("f9"), "fim": ini("f10"), "k": "ATENÇÃO",
-     "itens": [{"t": em("f9", "catarinense"), "txt": "⚠️ oeste catarinense"},
-               {"t": em("f9", "gaúcho"), "txt": "⚠️ norte gaúcho"},
-               {"t": em("f9", "sábado"), "txt": "🔴 sábado: maior risco"}],
+    {"ini": ini("f3"), "fim": ini("f4"), "k": "GRANIZO · SC E PR",
+     "itens": [{"t": em("f3", "oeste"), "txt": "📍 extremo oeste de SC"}, {"t": em("f3", "Paraná"), "txt": "📍 áreas do Paraná"},
+               {"t": em("f3", "tabaco"), "txt": "🌾 tabaco destruído"}], "borda": "rgba(255,140,26,.8)"},
+    {"ini": ini("f4"), "fim": ini("f5"), "k": "A CAUSA",
+     "itens": [{"t": em("f4", "frio"), "txt": "❄️ ar frio da manhã"}, {"t": em("f4", "umidade"), "txt": "💧 umidade da Amazônia"},
+               {"t": em("f4", "Niño"), "txt": "🌡️ El Niño reforça"}], "borda": "rgba(150,210,255,.8)"},
+    {"ini": ini("f5"), "fim": ini("f6"), "k": "⚠️ ESTA NOITE · 06/11",
+     "itens": [{"t": em("f5", "abafado"), "txt": "🥵 ar abafado"}, {"t": em("f5", "tempestades"), "txt": "⛈️ novas tempestades"}],
      "borda": "rgba(255,42,31,.8)"},
-    {"ini": ini("f10"), "fim": ini("f11"), "k": "DOMINGO 08/11 · PREVISÃO",
-     "itens": [{"t": em("f10", "despenca"), "txt": "🥶 temperatura despenca"},
-               {"t": em("f10", "INMET"), "txt": f"⚠️ INMET: {NFRIO:,} cidades".replace(",", ".")}],
-     "l": "declínio de temperatura no RS, SC e PR", "borda": "rgba(150,210,255,.8)"},
+    {"ini": ini("f6"), "fim": ini("f7"), "k": "SÁBADO 07/11 · MANHÃ (PREVISÃO)",
+     "itens": [{"t": em("f6", "chover"), "txt": "🌧️ chuva forte"}, {"t": em("f6", "Norte"), "txt": "📍 norte gaúcho"},
+               {"t": em("f6", "Oeste"), "txt": "📍 oeste catarinense"}, {"t": em("f6", "Paraná"), "txt": "📍 Paraná"}],
+     "borda": "rgba(60,150,255,.8)"},
+    {"ini": ini("f7"), "fim": ini("f8"), "k": "INMET · TEMPESTADE · SÁBADO 07/11",
+     "contador": conta(1079, "f7", "1.079", "#ff8c1a", "CIDADES DO SUL"),
+     "l": f"PR {T_UF['PR']} · RS {T_UF['RS']} · SC {T_UF['SC']}", "borda": "rgba(255,140,26,.8)"},
+    {"ini": ini("f8"), "fim": ini("f9"), "k": "NORTE GAÚCHO · SÁBADO 07/11",
+     "contador": conta(84, "f8", "84", "#5ec8ff", "MM PREVISTOS"),
+     "l": "previsão · Open-Meteo", "borda": "rgba(60,150,255,.8)"},
+    {"ini": ini("f9"), "fim": ini("f10"), "k": "SÁBADO PARA DOMINGO (PREVISÃO)",
+     "itens": [{"t": em("f9", "volumes"), "txt": "🌊 altos volumes de chuva"}, {"t": em("f9", "centro"), "txt": "📍 centro e leste de SC"}],
+     "borda": "rgba(60,150,255,.8)"},
+    {"ini": ini("f10"), "fim": D1, "k": "PERTO DE CURITIBA (PREVISÃO)",
+     "contador": conta(72, "f10", "72", "#96d2ff", "KM/H EM RAJADAS"),
+     "l": "previsão · Open-Meteo", "borda": "rgba(150,210,255,.8)"},
+    {"ini": D1, "fim": ini("f11"), "k": "DOMINGO 08/11",
+     "itens": [{"t": em("f10", "despenca"), "txt": "🥶 temperatura despenca"}, {"t": em("f10", "todo"), "txt": "📍 em todo o Sul"}],
+     "l": f"INMET: declínio de temperatura em {FRIO8:,} cidades do Sul".replace(",", "."), "borda": "rgba(150,210,255,.8)"},
     {"ini": ini("f11"), "fim": ini("f12"), "k": "COMENTA AQUI 👇",
      "itens": [{"t": em("f11", "cidade"), "txt": "📍 DE ONDE VOCÊ É?"}, {"t": em("f11", "tempo"), "txt": "🌦️ COMO ESTÁ AÍ?"}],
      "borda": "rgba(250,204,21,.8)"},
@@ -256,30 +290,31 @@ cta = {"ini": ini("f12"), "fim": DUR, "a": "APRENDA IA", "b": "inema.club"}
 club = {"ini": em("f12", "inema"), "fim": DUR, "a": "inema.club", "b": "aprenda sobre inteligência artificial"}
 
 fontes = [
-    {"ini": CAPA, "fim": ini("f4"), "html": f"<b>{MET}</b> · fotos do granizo e do tabaco: ilustração"},
-    {"ini": ini("f4"), "fim": ini("f5"), "html": f"<b>{MET}</b> · satélite <b>GOES-19</b> (NOAA) via <b>NASA</b> GIBS, infravermelho de {IR_DE} a {IR_ATE}"},
-    {"ini": ini("f5"), "fim": ini("f6"), "html": f"<b>{MET}</b> · previsão"},
-    {"ini": ini("f6"), "fim": ini("f7"), "html": "<b>INMET</b>, aviso de tempestade de 07/11"},
-    {"ini": ini("f7"), "fim": ini("f9"), "html": "<b>Open-Meteo</b>, previsão lida em 06/11 · chuva somada de 07 a 08/11 e rajada de 07/11"},
+    {"ini": CAPA, "fim": B1, "html": f"<b>{MET}</b>"},
+    {"ini": B1, "fim": ini("f6"), "html": f"satélite <b>GOES-19</b> (NOAA) via <b>NASA</b> GIBS, infravermelho de {IR_DE} a {IR_ATE}"},
+    {"ini": ini("f6"), "fim": ini("f7"), "html": f"<b>{MET}</b> · previsão"},
+    {"ini": ini("f7"), "fim": ini("f8"), "html": "<b>INMET</b>, avisos de tempestade de 07/11"},
+    {"ini": ini("f8"), "fim": ini("f9"), "html": "<b>Open-Meteo</b>, chuva prevista para 07/11"},
     {"ini": ini("f9"), "fim": ini("f10"), "html": f"<b>{MET}</b> · previsão"},
-    {"ini": ini("f10"), "fim": DUR, "html": "<b>INMET</b>, aviso de declínio de temperatura de 08/11"},
+    {"ini": ini("f10"), "fim": D1, "html": "<b>Open-Meteo</b>, rajada prevista"},
+    {"ini": D1, "fim": ini("f11"), "html": "<b>INMET</b>, declínio de temperatura de 08/11 · frio: ilustração"},
 ]
 
 # ---------------------------------------------------------------- legenda (blocos de até 3 palavras)
 AM = "#FACC15"
-CORES = {"chuva": "#5ec8ff", "chover": "#5ec8ff", "milimetros": "#5ec8ff", "umidade": "#5ec8ff", "frio": "#96d2ff",
-         "despenca": "#96d2ff", "granizo": "#e6f3ff", "gelo": "#e6f3ff", "destroi": "#ff2a1f", "destruidas": "#ff2a1f",
-         "tempestade": "#ff8c1a", "aviso": "#ff8c1a", "atencao": "#ff2a1f", "risco": "#ff2a1f", "dispara": "#ff2a1f",
-         "rajadas": "#96d2ff", "quilometros": "#96d2ff", "abafada": "#ff8c1a", "comenta": AM, "inteligencia": AM, "artificial": AM}
-LUGAR = {"sul", "parana", "santa", "catarina", "catarinense", "gaucho", "alpestre", "amazonia", "curitiba", "oeste",
-         "inemaclub", "cidade"}
+CORES = {"chuva": "#5ec8ff", "chover": "#5ec8ff", "milimetros": "#5ec8ff", "volumes": "#5ec8ff", "frio": "#96d2ff",
+         "umidade": "#5ec8ff", "despenca": "#96d2ff", "temperatura": "#96d2ff", "granizo": "#ff2a1f", "gelo": "#96d2ff",
+         "destroi": "#ff2a1f", "destruidas": "#ff2a1f", "tempestade": "#ff8c1a", "tempestades": "#ff8c1a", "aviso": "#ff8c1a",
+         "atencao": "#ff8c1a", "rajadas": "#96d2ff", "quilometros": "#96d2ff", "abafado": "#ff8c1a",
+         "comenta": AM, "inteligencia": AM, "artificial": AM}
+LUGAR = {"sul", "alpestre", "gaucho", "catarinense", "parana", "santa", "catarina", "curitiba", "amazonia", "inemaclub", "cidade"}
 NUM = re.compile(r"\d")
 legenda = []
 for t in T:
     bloco = []
     for i, p in enumerate(t["palavras"]):
         w = p["w"]; k = n(w)
-        if bloco and len(" ".join(b["w"] for b in bloco) + " " + w) > 19:   # teto de 19 caracteres: bloco longo corta na borda do 9:16
+        if bloco and len(" ".join(b["w"] for b in bloco) + " " + w) > 19:
             legenda.append({"ini": bloco[0]["t"] - .05, "fim": t["palavras"][i - 1]["f"] + .12, "palavras": bloco})
             bloco = []
         cor = CORES.get(k) or (AM if k in LUGAR else None) or ("#ff2a1f" if NUM.search(k) else None)
@@ -292,9 +327,14 @@ for a, b in zip(legenda, legenda[1:]):
 
 C = {"layout": "canto" if CANTO else "avatar" if AVATAR else "cheio", "padding_baixo": 640 if CANTO else 820, "duracao": DUR,
      "marca": "INEMA · IMPACTO SUL", "selo": DATA[:5] + " · INMET · Open-Meteo · NOAA",
-     "camera": camera, "sat": SAT, "imagens": imagens, "colunas": colunas, "telas": telas, "estados": estados, "pinos": pinos, "hero": hero,
+     "camera": camera, "sat": SAT, "imagens": [], "colunas": [], "telas": telas, "estados": estados, "pinos": pinos, "hero": hero,
      "paineis": paineis, "cta": cta, "club": club, "fontes": fontes, "legenda": legenda}
 (AQUI / "cena.js").write_text("window.CENA=" + json.dumps(C, ensure_ascii=False) + ";")
-print(f"cena.js ok, duração {DUR} · {len(legenda)} blocos · IR {len(BONS)}/{len(TS)} quadros ({IR_DE} a {IR_ATE}) · "
-      f"INMET tempestade sábado no Sul {sum(TEMP_SUL.values())} · declínio domingo {NFRIO} · colunas {len(col)} "
-      f"(máx {TOPO[0]['uf']} {TOPO[1]} mm) · rajada {RAJ['uf']} {RAJ['raj'][0]} km/h")
+real = sum(m["fim"] - m["ini"] for m in telas)
+print(f"cena.js ok, duração {DUR} · {len(legenda)} blocos · IR {len(BONS)}/{len(TS)} ({IR_DE} a {IR_ATE}) · "
+      f"cena real/ilustração {real / DUR:.0%} · mapa {sum(b - a for _, a, b, _ in mapas) / DUR:.0%} · "
+      f"cortes {len(cortes)} · menor trecho {min(b - a for a, b in zip(cortes, cortes[1:] + [FIM_VIDEO])):.2f} s")
+for nome, a, b, _ in mapas:
+    print(f"  mapa {nome}: {a:.2f}–{b:.2f} ({b - a:.2f} s)")
+for m in telas:
+    print(f"  tela {(m.get('src') or m['seq'][0]).split('/')[1]}: {m['ini']:.2f}–{m['fim']:.2f}")
