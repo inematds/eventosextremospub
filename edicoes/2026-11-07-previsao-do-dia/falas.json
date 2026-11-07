@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Mais de cem milímetros de chuva num só dia: é o risco de hoje no Paraná. É a previsão deste sábado, sete de novembro.",
+  "legenda": "Mais de 100 milímetros de chuva num só dia: é o risco de hoje no Paraná. É a previsão deste sábado, 7 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Uma baixa pressão se forma e dá origem a uma frente fria. Os temporais podem vir com raios, granizo e vendaval.",
+  "legenda": "Uma baixa pressão se forma e dá origem a uma frente fria. Os temporais podem vir com raios, granizo e vendaval."
+ },
+ {
+  "id": "f3",
+  "fala": "O INMET pôs duzentas e trinta e três cidades em grande perigo até a meia-noite, quase todas no Paraná. O vento pode passar de cem quilômetros por hora.",
+  "legenda": "O INMET pôs 233 cidades em grande perigo até a meia-noite, quase todas no Paraná. O vento pode passar de 100 quilômetros por hora."
+ },
+ {
+  "id": "f4",
+  "fala": "E o solo já está encharcado. Essa chuva pode virar alagamento, enxurrada e deslizamento de terra.",
+  "legenda": "E o solo já está encharcado. Essa chuva pode virar alagamento, enxurrada e deslizamento de terra."
+ },
+ {
+  "id": "f5",
+  "fala": "Se você está no oeste ou no meio-oeste de Santa Catarina, no sudoeste do Paraná ou no noroeste gaúcho, atenção redobrada hoje.",
+  "legenda": "Se você está no oeste ou no meio-oeste de Santa Catarina, no sudoeste do Paraná ou no noroeste gaúcho, atenção redobrada hoje."
+ },
+ {
+  "id": "f6",
+  "fala": "No Vale do Itajaí, a região de Rio do Sul também fica em alerta. Os rios já dão sinais de cheia.",
+  "legenda": "No Vale do Itajaí, a região de Rio do Sul também fica em alerta. Os rios já dão sinais de cheia."
+ },
+ {
+  "id": "f7",
+  "fala": "Os temporais crescem ao longo do dia. O aviso de tempestade de hoje pega duas mil novecentas e oitenta cidades no país.",
+  "legenda": "Os temporais crescem ao longo do dia. O aviso de tempestade de hoje pega 2.980 cidades no país."
+ },
+ {
+  "id": "f8",
+  "fala": "No domingo, a chuva vai embora do oeste do Sul e fica só garoa no centro-leste. A temperatura deve cair em duas mil e sessenta cidades.",
+  "legenda": "No domingo, a chuva vai embora do oeste do Sul e fica só garoa no centro-leste. A temperatura deve cair em 2.060 cidades."
+ },
+ {
+  "id": "f9",
+  "fala": "Segunda e terça devem ter tempo seco e frio de manhã. A partir de quarta, as pancadas voltam.",
+  "legenda": "Segunda e terça devem ter tempo seco e frio de manhã. A partir de quarta, as pancadas voltam."
+ },
+ {
+  "id": "f10",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
