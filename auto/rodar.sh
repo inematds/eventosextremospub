@@ -24,6 +24,7 @@ case "$MODO" in
   sul)    SUF=impacto-sul; ROT="impacto sul"; PROMPT_MD=roteiro-sul.md ;;  # diário 21:00, vídeos do dia do TikTok @temponosul (Nei, 07/11/2026)
   *) echo "modo inválido: $MODO"; exit 2 ;;
 esac
+MOTOR=motor; [ "$MODO" = sul ] && MOTOR=motor-sul  # Impacto Sul tem motor próprio com micro clipes (Nei, 07/11/2026: "fazer a cópia e montar um motor novo")
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
 exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
@@ -150,7 +151,7 @@ fi
 if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF" > "$ED/avatar.log" 2>&1 \
    && python3 "$RAIZ/motor/pausa_pergunta.py" "$ED" --avatar >> "$ED/avatar.log" 2>&1 \
    && cena_canto \
-   && ( cd "$RAIZ" && GEO=geo-br.js LAYOUT=canto motor/compor_avatar.sh "$ED" "$V" > "$ED/build-avatar.log" 2>&1 ); then
+   && ( cd "$RAIZ" && GEO=geo-br.js LAYOUT=canto "$MOTOR/compor_avatar.sh" "$ED" "$V" > "$ED/build-avatar.log" 2>&1 ); then
   [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
   echo "vídeo com avatar ok"
 else

@@ -40,8 +40,9 @@ while IFS='|' read -r ID HORA URL <&3; do  # fd 3: ffmpeg/python lá dentro comi
   [ -s "$V/transcript.txt" ] || python3 "$AUTO/groq_transcrever.py" "$V/video.mp4" "$V" > "$V/groq.log" 2>&1 || true
   [ -s "$V/transcript.txt" ] || { echo "v$n ($ID): transcrição falhou"; continue; }
   TELAS=6 bash "$AUTO/telas_fonte.sh" "$V" > "$V/telas.log" 2>&1 || true
+  mkdir -p "$V/frames" && ffmpeg -v error -y -i "$V/video.mp4" -vf "fps=2/3,scale=720:-2" -q:v 3 "$V/frames/f-%03d.jpg"  # 1 quadro a cada 1,5 s: as cenas reais do vídeo (Nei, 07/11/2026: mais imagens reais, menos mapa)
   echo "$ID|$HORA|${DUR}s|$DESC" >> "$F/video_info.txt"
-  { echo "### Vídeo $n · publicado $HORA · ${DUR}s · telas em fonte/v$n/telas/"; [ -n "$DESC" ] && echo "Legenda do post: $DESC"; cat "$V/transcript.txt"; echo; } >> "$F/transcript.txt"
+  { echo "### Vídeo $n · publicado $HORA · ${DUR}s · quadros em fonte/v$n/frames/ (1 a cada 1,5 s)"; [ -n "$DESC" ] && echo "Legenda do post: $DESC"; cat "$V/transcript.txt"; echo; } >> "$F/transcript.txt"
   echo "v$n ($ID, $HORA): $(wc -w < "$V/transcript.txt") palavras"
 done 3<<< "$DOS"
 echo "$DOS" | head -1 | cut -d'|' -f1 > "$F/video_id.txt"

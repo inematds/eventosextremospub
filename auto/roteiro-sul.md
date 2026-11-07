@@ -19,9 +19,10 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
   brutos da coleta levam a fonte própria (INMET, Open-Meteo, NOAA/GOES).
 - Junte os vídeos do dia num vídeo só: o fato mais forte abre; o que já aconteceu fica separado do que é previsão; o vídeo
   mais novo vale mais para a previsão (se dois vídeos discordam, vale o mais recente).
-- fonte/vN/telas/tela-NN.jpg (6 telas por vídeo): OLHE as telas (Read) antes de planejar, para ver que mapa/área/sistema o
-  meteorologista destacou, e refaça parecido no nosso motor (mapa 3D, câmera no Sul, áreas, setas, pinos) ou busque imagem
-  de impacto do mesmo fenômeno. As telas são SÓ referência: nunca entram no vídeo, nem recortadas (marca d'água e rosto).
+- fonte/vN/frames/f-NNN.jpg (1 quadro a cada 1,5 s de cada vídeo) e fonte/vN/telas/ (6 telas): são o MATERIAL VISUAL
+  principal do vídeo (Nei, 07/11/2026: "mais frames das imagens reais", "menos mapa", "sem o formato dele", sem crédito).
+  Veja os quadros e separe as CENAS REAIS: filmagem de granizo, lavoura destruída, rio cheio, estrada alagada, árvore caída,
+  céu de tempestade, radar com cores fortes. Imagem dele que é só texto, cartaz ou aviso pronto não entra.
 - Transcrição vazia ou sem nada de tempo/clima → grave ERRO.txt e pare.
 
 ## CHAMADA E TOM FORTES (mesma regra da Previsão do Dia, medida no lives10)
@@ -59,25 +60,45 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
    - no campo "fala" números por extenso (ano também); no campo "legenda" com algarismos. Fala nunca termina em número solto
      (pôr a unidade depois). Escreva "mensagem de texto", nunca "SMS".
 3. gerar_cena.py: copiado do modelo. Adapte TUDO ao Impacto Sul de hoje: DATA, cabeçalho "INEMA · IMPACTO SUL" numa linha só,
-   câmeras por fala FECHADAS no Sul (RS/SC/PR) e indo às cidades/regiões citadas, municípios/estados pintados e pinos onde a
-   fonte aponta impacto ou risco, painéis e contadores com os números (previsão rotulada como previsão), IR do satélite
-   (rótulo e janela) mostrando as nuvens sobre o Sul, avisos do INMET do Sul (ids escolhidos em inmet_avisos_ativos.json,
-   asserts com a contagem nova), fontes de cada trecho (selo com no máximo 3 fontes + data), cta. Tire do modelo o que não
+   telas com os micro clipes e imagens reais (3c), câmera FECHADA no Sul (RS/SC/PR) só nos trechos de satélite/mapa, estados pintados e pinos
+   onde a fonte aponta risco, painéis e contadores com os números (previsão rotulada como previsão), avisos do INMET do Sul
+   (ids escolhidos em inmet_avisos_ativos.json, asserts com a contagem nova), selo do topo só com fontes oficiais usadas
+   (INMET, Open-Meteo, NOAA) + data, IR do satélite (3c), cta. Tire do modelo o que não
    estiver no Sul de hoje. Mantenha o comportamento de --canto (avatar/tempos.json, layout canto). Cada `em(fid, palavra)`
    precisa achar a palavra na legenda daquela fala.
-3c. VISUAL (mesmas regras do Clima do DIA):
-   - Quadro 0 = imagem CHEIA de impacto (1080x1920) com o gancho ESCRITO DENTRO, gerada pelo Codex pela assinatura
-     (`echo "<pedido>" | codex exec -s workspace-write --skip-git-repo-check -C {ED}/capa-dia -`, salvar em
-     capa-dia/abertura.png; sem logotipo nem marca; luz neutra; paisagem reconhecível do Sul). Confira o texto (Read). Sem
-     fade no quadro 0; sai em ~2 s para o mapa.
-   - Volume de chuva grande → colunas 3D (`C.colunas`, pitch 50–60, bearing girando), altura = mm, rotulado.
-   - Granizo, vendaval, enchente, geada → imagem realista de impacto do Codex (selo "ilustração") no momento da palavra;
-     nunca desenho SVG do fenômeno.
-   - Contador chega ao número QUANDO a palavra é dita (`ini = em(palavra) - 1.0`, `dur = 1.0`). Uma troca visual por fala.
+3c. VISUAL (Nei, 07/11/2026): o ESTILO é o do Clima 24 h / Clima do DIA (cabeçalho, painéis, contadores, legenda palavra a
+   palavra, avatar no canto), MAS o fundo da maior parte do vídeo são IMAGENS ou MICRO CLIPES REAIS dos vídeos do dia,
+   ocupando a tela toda, com os quadros de texto e o avatar por cima. Pouco mapa.
+   - Tudo LIMPO do outro perfil: nada da legenda queimada dele, da data ("06/11"), da sirene/ícone, do rosto dele (às vezes
+     aparece numa janelinha no topo), do nome do perfil ou de cartaz/aviso pronto. Sem crédito, sem selo de fonte.
+     Antes de recortar, olhe os quadros em fonte/vN/frames/ (Read) e anote para cada trecho bom: vídeo, segundos e o
+     retângulo limpo em px do vídeo original (ffprobe dá o tamanho; o quadro f-NNN.jpg está em 720 de largura, converta).
+   - MICRO CLIPES (preferido para filmagem real: granizo caindo, lavoura, rio, estrada, céu, radar animado), 2 a 3 s cada:
+     `{RAIZ}/motor-sul/clip_quadros.sh fonte/vN/video.mp4 <início s> <duração s> <w:h:x:y limpo> cenas/clip-NN`
+     (gera quadros 1080x1920: a área limpa na largura toda e a mesma cena desfocada atrás; CHEIO=1 só se o recorte já for
+     alto, perto de 9:16). Na cena: `{"seq": [f"cenas/clip-NN/{x}" for x in sorted(os.listdir(...))], "fps": 30,
+     "ini": ..., "fim": ..., "fade": .2, "zoom": .03}` em `C.telas` (o motor-sul toca os quadros; fim - ini ≤ duração do clipe).
+     Confira 2 quadros de cada clipe (Read): nenhum texto ou ícone do outro perfil pode sobrar; se sobrar, recorte de novo
+     ou não use.
+   - IMAGENS paradas (quadro bom que não vale como clipe): recorte com PIL o retângulo limpo, monte 1080x1920 do mesmo jeito
+     (área na largura toda + fundo desfocado) em cenas/real-NN.jpg e use `{"src": ..., "zoom": .06}` em `C.telas`.
+   - Uma troca a cada 2 a 3 s, cada cena no momento da palavra que ela mostra (granizo quando fala granizo). Meta: pelo
+     menos 60% do tempo em micro clipe ou imagem real/de impacto.
+   - SATÉLITE: 1 ou 2 trechos (4 a 6 s) com o infravermelho do GOES-19 sobre o Sul (sat/web/ir*.jpg, timelapse das nuvens
+     de tempestade, como no Clima 24 h), câmera fechada em RS/SC/PR, rótulo "satélite · infravermelho" e janela de horas.
+   - MAPA: no máximo 1 trecho curto (4 a 6 s) para mostrar ONDE vem a chuva/tempestade (estados pintados pelos avisos do
+     INMET, pinos nas cidades); pode ser o mesmo trecho do satélite. Nada de colunas 3D nem câmera passeando.
+   - Quadro 0 = a cena real mais forte do dia (imagem limpa) CHEIA, com o gancho ESCRITO DENTRO (PIL, fonte Sora/Inter
+     grossa, amarelo #FACC15 e branco sobre faixa preta) e a data dd/mm/aaaa; sem cena real forte, gere pelo Codex
+     (`echo "<pedido>" | codex exec -s workspace-write --skip-git-repo-check -C {ED}/capa-dia -`). Salve em
+     capa-dia/abertura.png e confira (Read). Sem fade no quadro 0.
+   - Falta cena real para algo que a fala diz (vendaval, enchente, geada) → imagem realista do Codex (selo "ilustração").
+   - Painéis e contadores por cima das cenas (faixa escura, número em amarelo), chegando ao número QUANDO a palavra é dita
+     (`ini = em(palavra) - 1.0`, `dur = 1.0`). Cuidado para o painel não cobrir o centro da cena real.
 4. Versão mapa, na pasta da edição:
    `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}`
    `python3 gerar_cena.py`
-   `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
+   `cd {RAIZ} && GEO=geo-br.js motor-sul/montar.sh {ED}` (motor PRÓPRIO do Impacto Sul; nunca mexa em {RAIZ}/motor/, que é dos outros vídeos diários) → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada estado, cta) e OLHE as imagens (Read): data na
    abertura, contadores no número certo, pino sem ficar atrás de painel, borda do satélite não aparecendo, legenda legível.
    Corrija e renderize de novo se precisar.

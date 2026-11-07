@@ -47,7 +47,10 @@ tenta(){ local log="$1" k; shift
     sleep 60
   fi
   [ -s "$A/avatar.mp4" ] || tenta "$A/baixar.log" timeout 18000 node "$ENG/heygen-estudio-baixar.mjs" --id "$(cat "$A/video_id.txt")" --saida "$A/avatar.mp4" \
-      --perfil "$PERFIL" --minutos 290 --intervalo 120 || { echo "ERRO ao baixar: $(tail -1 "$A/baixar.log")"; exit 4; }
+      --perfil "$PERFIL" --minutos 290 --intervalo 120 \
+    || { grep -q "^RESULT:" "$A/baixar.log" && ffprobe -v error -show_entries format=duration -of csv=p=0 "$A/avatar.mp4" | grep -q '[1-9]' \
+         && echo "baixador saiu com erro depois do RESULT, mas o avatar.mp4 está bom (Impacto Sul 06/11/2026)"; } \
+    || { echo "ERRO ao baixar: $(tail -1 "$A/baixar.log")"; exit 4; }
 )
 # a transcrição (Whisper) às vezes falha com a GPU disputada (10/10/2026): tenta 3 vezes
 for k in 1 2 3; do python3 "$A/retempo.py" && exit 0; echo "retempo falhou ($k/3)"; sleep 60; done

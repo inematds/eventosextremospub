@@ -18,9 +18,9 @@ if marca.exists() and marca.stat().st_mtime >= midia.stat().st_mtime and orig.ex
     sys.exit(print("pausa já aplicada"))
 n = lambda s: re.sub(r"[^a-z ]", "", unicodedata.normalize("NFD", s.lower()).encode("ascii", "ignore").decode())
 T = json.loads(tempos.read_text())
-k = next((i for i, t in enumerate(T) if i and n(t["fala"]).startswith("de que regiao")), None)
+k = next((i for i, t in enumerate(T) if i and n(t["fala"]).startswith(("de que regiao", "de que cidade", "de onde voce"))), None)
 if k is None:
-    sys.exit(print("sem pergunta 'De que região': nada a fazer"))
+    sys.exit(print("sem pergunta de comentário (De que região / De que cidade / De onde você): nada a fazer"))
 fim_ant = T[k - 1]["palavras"][-1]["f"] if T[k - 1]["palavras"] else T[k]["ini"]
 ini_perg = T[k]["palavras"][0]["t"] if T[k]["palavras"] else T[k]["ini"]
 S = round((fim_ant + max(ini_perg, fim_ant)) / 2, 3)
