@@ -7,6 +7,7 @@
 #   alerta = segunda a sábado às 14:00: alerta dos próximos 7 dias a partir de amanhã (Nei, 05/11/2026), roteiro em auto/roteiro-alerta.md
 #   semana = domingo à tarde: previsão da semana (dias 1–7) + tendência de 15 dias (Nei, 11/10/2026), roteiro em auto/roteiro-semana.md
 # Teste: SEM_AVATAR=1 pula o HeyGen (publica a versão mapa); SEM_YT=1 não publica; SEM_BOT=1 simula o bot; SEM_GIT=1 não commita.
+# AV_SUF=-v2 muda o título do avatar no HeyGen (refazer quando já existe um vídeo com o título EVX-<dia>-<modo>).
 # SEM_TRAVA=1 não espera a trava de outra rodada (piloto a pedido).
 # Teste isolado: ED=<pasta> (não mexe na edição do dia).
 # Pular um dia: linha "AAAA-MM-DD" em auto/pular.txt.
@@ -148,7 +149,7 @@ if [ "${SEM_AVATAR:-}" != 1 ] && [ -z "$DRY" ]; then
       rm -f "$ED/aviso-espera.txt.envio-v3.json"; node "$BOT" "$ED/aviso-espera.txt" "⏳ $ROT · $DATA_BR · esperando o avatar há ${h} h" > /dev/null 2>&1
     done ) & VIGIA=$!
 fi
-if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF" > "$ED/avatar.log" 2>&1 \
+if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SUF${AV_SUF:-}" > "$ED/avatar.log" 2>&1 \
    && python3 "$RAIZ/motor/pausa_pergunta.py" "$ED" --avatar >> "$ED/avatar.log" 2>&1 \
    && cena_canto \
    && ( cd "$RAIZ" && GEO=geo-br.js LAYOUT=canto "$MOTOR/compor_avatar.sh" "$ED" "$V" > "$ED/build-avatar.log" 2>&1 ); then
