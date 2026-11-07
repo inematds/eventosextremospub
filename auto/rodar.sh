@@ -3,7 +3,7 @@
 # Autorizado pelo Nei em 10/10/2026: "pode fazer pronto... não precisa minha aprovação, mas sim mandar para o bot v3" (avatar incluso).
 # coleta (APIs de clima gratuitas liberadas) → pesquisa + roteiro + cena + versão mapa (claude -p, assinatura)
 #   → avatar do Nei (estúdio HeyGen, assinatura) → vídeo com avatar → lives10 + bot v3 → git push.
-# uso: auto/rodar.sh [AAAA-MM-DD, padrão hoje] [24h|semana|ventos|mundo|dia|previsao|alerta]   (PREVIA=1 manda antes a versão com foto do avatar)
+# uso: auto/rodar.sh [AAAA-MM-DD, padrão hoje] [24h|semana|ventos|mundo|dia|previsao|alerta|sul]   (PREVIA=1 manda antes a versão com foto do avatar)
 #   alerta = segunda a sábado às 14:00: alerta dos próximos 7 dias a partir de amanhã (Nei, 05/11/2026), roteiro em auto/roteiro-alerta.md
 #   semana = domingo à tarde: previsão da semana (dias 1–7) + tendência de 15 dias (Nei, 11/10/2026), roteiro em auto/roteiro-semana.md
 # Teste: SEM_AVATAR=1 pula o HeyGen (publica a versão mapa); SEM_YT=1 não publica; SEM_BOT=1 simula o bot; SEM_GIT=1 não commita.
@@ -21,16 +21,17 @@ case "$MODO" in
   dia)    SUF=clima-do-dia; ROT="clima do dia"; PROMPT_MD=roteiro-dia.md ;;  # diário após o boletim do meio-dia, aprovado pelo Nei em 13/10/2026
   alerta) SUF=alerta-7d; ROT="alerta da semana"; PROMPT_MD=roteiro-alerta.md ;;  # seg–sáb 14:00, a partir de amanhã (Nei, 05/11/2026)
   previsao) SUF=previsao-do-dia; ROT="previsão do dia"; PROMPT_MD=roteiro-previsao.md ;;  # diário 10:00, último vídeo do canal de previsão (Nei, 15/10/2026)
+  sul)    SUF=impacto-sul; ROT="impacto sul"; PROMPT_MD=roteiro-sul.md ;;  # diário 21:00, vídeos do dia do TikTok @temponosul (Nei, 07/11/2026)
   *) echo "modo inválido: $MODO"; exit 2 ;;
 esac
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
-exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
+exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
   flock -w "$([ "$MODO" = previsao ] && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
 else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
 echo "=== $(date '+%F %T') $ROT $DIA"
-grep -qx "$DIA$(case "$MODO" in semana|alerta|mundo|dia|previsao) echo " $MODO";; esac)" "$RAIZ/auto/pular.txt" 2>/dev/null && { echo "pulado (auto/pular.txt)"; exit 0; }
+grep -qx "$DIA$(case "$MODO" in semana|alerta|mundo|dia|previsao|sul) echo " $MODO";; esac)" "$RAIZ/auto/pular.txt" 2>/dev/null && { echo "pulado (auto/pular.txt)"; exit 0; }
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
 DRY=""; [ "${SEM_BOT:-}" = 1 ] && DRY=--dry-run
 DATA_BR=$(date -d "$DIA" +%d/%m/%Y)
@@ -45,7 +46,7 @@ $1" || echo "falhou o envio do aviso"
 # 0. modelo = a edição mais recente do mesmo modo antes de hoje (a 1ª de domingo parte da última clima 24h)
 PREV=$(ls -d "$RAIZ"/edicoes/*-$SUF 2>/dev/null | grep -vx "$ED" | sort | tail -1)
 [ -z "$PREV" ] && [ "$MODO" = alerta ] && PREV=$(ls -d "$RAIZ"/edicoes/*-semana 2>/dev/null | grep -vx "$ED" | sort | tail -1)
-[ -z "$PREV" ] && [ "$MODO" = previsao ] && PREV=$(ls -d "$RAIZ"/edicoes/*-clima-do-dia 2>/dev/null | grep -vx "$ED" | sort | tail -1)
+[ -z "$PREV" ] && { [ "$MODO" = previsao ] || [ "$MODO" = sul ]; } && PREV=$(ls -d "$RAIZ"/edicoes/*-clima-do-dia 2>/dev/null | grep -vx "$ED" | sort | tail -1)
 [ -z "$PREV" ] && PREV=$(ls -d "$RAIZ"/edicoes/*-ultimas-24h 2>/dev/null | grep -vx "$ED" | sort | tail -1)
 [ -n "$PREV" ] && [ -f "$PREV/gerar_cena.py" ] || avisar "não achei a edição modelo (edicoes/*-ultimas-24h)"
 [ -f "$ED/gerar_cena.py" ] || cp "$PREV/gerar_cena.py" "$ED/"
@@ -64,6 +65,13 @@ if [ "$MODO" = previsao ]; then
   bash "$RAIZ/auto/fonte-previsao.sh" "$ED" "$DIA" > "$ED/pesquisa/fonte.log" 2>&1; RC=$?
   [ "$RC" = 3 ] && avisar "sem vídeo novo de previsão hoje até as 12h (nem de ontem); não saiu Previsão do Dia" 0
   [ "$RC" = 0 ] || avisar "falhou a fonte da previsão: $(tail -1 "$ED/pesquisa/fonte.log")"
+fi
+
+# 0d. Impacto Sul: a fonte da verdade são os vídeos do dia do TikTok @temponosul (o perfil nunca é citado; Nei, 07/11/2026)
+if [ "$MODO" = sul ]; then
+  bash "$RAIZ/auto/fonte-sul.sh" "$ED" "$DIA" > "$ED/pesquisa/fonte.log" 2>&1; RC=$?
+  [ "$RC" = 3 ] && avisar "nenhum vídeo de meteorologia do Sul publicado hoje; não saiu Impacto Sul" 0
+  [ "$RC" = 0 ] || avisar "falhou a fonte do Impacto Sul: $(tail -1 "$ED/pesquisa/fonte.log")"
 fi
 
 # 1. coleta (só APIs gratuitas de clima liberadas: INMET, INPE, NOAA, CEMADEN, Open-Meteo, NASA GIBS); o Clima no Mundo não usa a coleta do Brasil
@@ -184,6 +192,7 @@ CTX="Short diário 'Clima 24 h' do INEMA com Nei Maldaner: o clima no Brasil nas
 [ "$MODO" = semana ] && CTX="Short de domingo 'Previsão da semana + 15 dias' do INEMA com Nei Maldaner: o que vem no clima do Brasil de segunda a domingo e a tendência de 15 dias (tendência pode mudar), a partir de $DATA_BR. Dados com fonte na tela (Open-Meteo, INMET). Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
 [ "$MODO" = dia ] && CTX="Short diário 'Clima do DIA' do INEMA com Nei Maldaner: a situação do tempo hoje no Brasil e o que vem nos próximos dias, $DATA_BR. Não citar nenhum canal, apresentador ou vídeo de origem. Dados com fonte na tela. Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
 [ "$MODO" = previsao ] && CTX="Short diário 'Previsão do Dia' do INEMA com Nei Maldaner: a previsão do tempo para hoje e os próximos dias no Brasil, $DATA_BR. Não citar nenhum canal, meteorologista, apresentador ou vídeo de origem. Dados com fonte na tela. Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
+[ "$MODO" = sul ] && CTX="Short diário 'Impacto Sul' do INEMA com Nei Maldaner: o que de mais forte aconteceu hoje no tempo do Sul do Brasil (RS, SC, PR) e o que vem nas próximas horas e dias, $DATA_BR. Não citar nenhum canal, perfil, meteorologista ou vídeo de origem. Dados com fonte na tela. Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
 [ "$MODO" = mundo ] && CTX="Short diário 'Clima no Mundo' do INEMA com Nei Maldaner: os eventos de clima e desastres naturais mais graves do mundo nos últimos 7 dias, até $DATA_BR. Dados com fonte na tela. Curso gratuito em https://inema.club."
 URL=""
 if [ "${SEM_YT:-}" != 1 ] && [ -z "$DRY" ]; then

@@ -39,12 +39,12 @@ O projeto tem três partes:
 
 🧠 = sessão com o Nei · ⚙️ = script/timer · 🤖 = `claude -p` (assinatura)
 
-Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): Clima 24 h 05:30 · Previsão do Dia 10:00 · Clima do DIA 12:30 · Alerta da semana (próximos 7 dias a partir de amanhã) seg–sáb 14:00 · Clima no Mundo 18:00 · Alerta da semana + 15 dias domingo 14:00. Todas publicam no lives10 + Instagram/TikTok eventos.extremos (metritds), só com avatar.
+Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): Clima 24 h 05:30 · Previsão do Dia 10:00 · Clima do DIA 12:30 · Alerta da semana (próximos 7 dias a partir de amanhã) seg–sáb 14:00 · Clima no Mundo 18:00 · Impacto Sul 21:00 (vídeos do dia do TikTok @temponosul) · Alerta da semana + 15 dias domingo 14:00. Todas publicam no lives10 + Instagram/TikTok eventos.extremos (metritds), só com avatar.
 
 | # | Passo | Comando / o que acontece | Quem |
 |---|---|---|---|
 | 1 | Timer dispara | `systemctl --user list-timers` → `auto/rodar.sh <dia> <modo>` (uma rodada por vez, trava `auto/.rodando`; datas em `auto/pular.txt` são puladas) | ⚙️ |
-| 2 | Fonte | Previsão: `auto/fonte-previsao.sh` (último vídeo de previsão, legenda do YT → Groq → Whisper); Dia: `auto/boletim.sh`; demais: `coleta/ultimas24h.py` + satélite GIBS | ⚙️ |
+| 2 | Fonte | Impacto Sul: `auto/fonte-sul.sh` (vídeos do dia do TikTok @temponosul listados por `auto/tiktok_lista.mjs`, inemavox baixa e transcreve); Previsão: `auto/fonte-previsao.sh` (último vídeo de previsão, legenda do YT → Groq → Whisper); Dia: `auto/boletim.sh`; demais: `coleta/ultimas24h.py` + satélite GIBS | ⚙️ |
 | 3 | Roteiro + cena + versão mapa | `claude -p` com `auto/roteiro-<modo>.md` → `falas.json`, `gerar_cena.py`, `video.mp4`, `yt.txt`. Previsão e semana seguem "CHAMADA E TOM FORTES" (gancho = 1 fato, 1 lugar, 1 número, quando). Login vencido → nova tentativa em 5 min | 🤖 |
 | 4 | Portões | tom "você", sem "tu"/alívio/"segue o canal", sem a palavra morte, < 3 min | ⚙️ |
 | 5 | Avatar | `auto/avatar.sh` (estúdio HeyGen, assinatura) → `video-avatar.mp4`; falhou → versão mapa | ⚙️ |

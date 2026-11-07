@@ -31,3 +31,4 @@ edicoes/*/fonte/ativos*.json
 .render.lock
 edicoes/*/pesquisa/bruto/*.zip
 edicoes/*/pesquisa/bruto/*.csv
+edicoes/*/fonte/**/*.mp4
