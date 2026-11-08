@@ -214,12 +214,12 @@ if [ "${SEM_YT:-}" != 1 ] && [ -z "$DRY" ]; then
   ID=$(grep -o 'watch?v=[A-Za-z0-9_-]*' "$ED/publicar.log" | tail -1 | cut -d= -f2)
   [ -n "$ID" ] && { URL="https://www.youtube.com/shorts/$ID"; echo "$ID" > "$ED/youtube-lives10.txt"; }
 fi
-if [ -n "$URL" ]; then ST="publicado no lives10: $URL"
+if [ -n "$URL" ]; then ST="✅ JÁ PUBLICADO no lives10: $URL (Instagram/TikTok pelo metritds em seguida)"
 elif [ "${SEM_YT:-}" = 1 ] || [ -n "$DRY" ]; then ST="(sem YouTube nesta rodada)"
 else ST="⚠ NÃO publicou no lives10: $(grep -h -i 'erro\|error\|quota\|limit' "$ED/publicar.log" | tail -1 | cut -c1-200)"; fi
 if :; then  # todo vídeo de clima vai ao v3, publicado ou não (Nei, 08/11/2026: "me manda sempre os do clima para o v3"; antes, 06/11: só se der erro)
   rm -f "$V.envio-v3.json"
-  node "$BOT" $DRY "$V" "$ROT · $DATA_BR · ${DUR}s $NOTA
+  node "$BOT" $DRY "$V" "$([ -n "$URL" ] && echo "✅ JÁ PUBLICADO · ")$ROT · $DATA_BR · ${DUR}s $NOTA
 $ST
 $(tail -n +2 "$ED/yt.txt" | head -c 600)" || echo "falhou o envio ao bot"
 fi
