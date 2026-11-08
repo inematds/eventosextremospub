@@ -1,0 +1,8 @@
+Clima 24 h 08/11: 2 tornados no RS, vento de 126 km/h e 478 mil sem luz no PR
+Tornados na madrugada de sábado (7/11) em Santo Augusto e Palmeira das Missões, no Noroeste do RS, com casas destelhadas (MetSul); são 7 tornados no Sul de 2 a 7/11 (Climatempo).
+Paraná: os temporais de sábado deixaram 478,5 mil unidades consumidoras sem luz no pico, às 17h, a maior contingência de 2026 na rede da Copel (MetSul).
+Ventania de sábado à tarde: 126 km/h em Cachoeira Paulista (SP), 102 em Juiz de Fora (MG) (estações do INMET, via Climatempo) e 96 km/h no aeroporto de Brasília (METAR da NOAA). Em Interlagos, o temporal parou a classificação da F1 por quase 1h30.
+Chuva (CEMADEN): Abdon Batista (SC) 100,8 mm em 24 h e 307,2 mm em 4 dias. Fogo: 1.034 focos em 7/11 no satélite de referência do INPE, 729 no Pará.
+Hoje (8/11): alerta laranja do INMET de tempestade em 480 cidades (MG 352, GO 76, ES 33, SP 17, MS 2), com 50 a 100 mm no dia, vento de 60 a 100 km/h e granizo; queda de 3 a 5 °C em 2.060 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): segunda (9/11) deve ser o dia mais chuvoso; o Norte deve acumular mais; Teresina com 39,6 °C previstos na segunda. Volumes: os pluviômetros do CEMADEN somaram mais de 36 mil mm em 24 h (soma, não chuva média), mais de 10 mil em MG; as capitais devem somar 937 mm em 7 dias.
+Fontes: INMET, CEMADEN, INPE, MetSul, Copel, Climatempo, NOAA (GOES-19 via NASA GIBS), Open-Meteo.

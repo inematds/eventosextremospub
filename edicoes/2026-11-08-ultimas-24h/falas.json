@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Domingo, oito de novembro. Dois tornados no Sul, vento de cento e vinte e seis quilômetros por hora em São Paulo e quatrocentos e setenta e oito mil imóveis sem luz no Paraná.",
+  "legenda": "Domingo, 8 de novembro. 2 tornados no Sul, vento de 126 km/h em São Paulo e 478 mil imóveis sem luz no Paraná."
+ },
+ {
+  "id": "f2",
+  "fala": "Na madrugada de sábado, os tornados atingiram Santo Augusto e Palmeira das Missões, no Rio Grande do Sul. Já são sete tornados na semana.",
+  "legenda": "Na madrugada de sábado, os tornados atingiram Santo Augusto e Palmeira das Missões, no Rio Grande do Sul. Já são 7 tornados na semana."
+ },
+ {
+  "id": "f3",
+  "fala": "No Paraná, quatrocentos e setenta e oito mil e quinhentos imóveis ficaram sem luz, o pior número do ano.",
+  "legenda": "No Paraná, 478.500 imóveis ficaram sem luz, o pior número do ano."
+ },
+ {
+  "id": "f4",
+  "fala": "A ventania chegou a cento e vinte e seis quilômetros por hora em Cachoeira Paulista e noventa e seis em Brasília.",
+  "legenda": "A ventania chegou a 126 km/h em Cachoeira Paulista e 96 em Brasília."
+ },
+ {
+  "id": "f5",
+  "fala": "Abdon Batista, em Santa Catarina, teve mais de cem milímetros em vinte e quatro horas, e passa de trezentos em quatro dias.",
+  "legenda": "Abdon Batista, em Santa Catarina, teve mais de 100 milímetros em 24 horas, e passa de 300 em 4 dias."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, mil e trinta e quatro focos no sábado, setecentos e vinte e nove no Pará.",
+  "legenda": "No fogo, 1.034 focos no sábado, 729 no Pará."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta laranja do INMET de tempestade em quatrocentas e oitenta cidades, a maioria em Minas Gerais.",
+  "legenda": "E hoje? Alerta laranja do INMET de tempestade em 480 cidades, a maioria em Minas Gerais."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: hoje o frio deve derrubar a temperatura em duas mil e sessenta cidades. Segunda deve ser o dia mais chuvoso, e o Norte deve acumular mais.",
+  "legenda": "Os próximos 7 dias: hoje o frio deve derrubar a temperatura em 2.060 cidades. Segunda deve ser o dia mais chuvoso, e o Norte deve acumular mais."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de trinta e seis mil milímetros. Em sete dias, as capitais devem somar novecentos e trinta e sete milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 36 mil milímetros. Em 7 dias, as capitais devem somar 937 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
