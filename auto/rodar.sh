@@ -28,7 +28,9 @@ esac
 MOTOR=motor; [ "$MODO" = sul ] && MOTOR=motor-sul  # Impacto Sul tem motor próprio com micro clipes (Nei, 07/11/2026: "fazer a cópia e montar um motor novo")
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
-exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
+exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"
+elif [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then :  # esperam a fonte fora da fila; pegam a trava no passo 0e (08/11/2026)
+elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
   flock -w "$({ [ "$MODO" = previsao ] || [ "$MODO" = alerta ] || [ "$MODO" = semana ]; } && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
 else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
@@ -75,6 +77,14 @@ if [ "$MODO" = sul ]; then
   bash "$RAIZ/auto/fonte-sul.sh" "$ED" "$DIA" > "$ED/pesquisa/fonte.log" 2>&1; RC=$?
   [ "$RC" = 3 ] && avisar "nenhum vídeo de meteorologia do Sul publicado hoje; não saiu Impacto Sul" 0
   [ "$RC" = 0 ] || avisar "falhou a fonte do Impacto Sul: $(tail -1 "$ED/pesquisa/fonte.log")"
+fi
+
+# 0e. Clima do DIA, Previsão e Impacto Sul esperam a fonte (boletim até 17h, vídeo de previsão até 12h) FORA da fila e só
+#     agora entram nela. Antes seguravam a vez horas esperando e travavam as outras rodadas (Nei, 08/11/2026)
+if [ "${SEM_TRAVA:-}" != 1 ] && { [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; }; then
+  echo "$(date +%T) fonte pronta; entrando na fila"
+  flock -w 21600 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }
+  echo "$(date +%T) vez pega"
 fi
 
 # 1. coleta (só APIs gratuitas de clima liberadas: INMET, INPE, NOAA, CEMADEN, Open-Meteo, NASA GIBS); o Clima no Mundo não usa a coleta do Brasil
