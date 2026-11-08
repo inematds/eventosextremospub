@@ -29,7 +29,7 @@ MOTOR=motor; [ "$MODO" = sul ] && MOTOR=motor-sul  # Impacto Sul tem motor próp
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
 exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"; elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
-  flock -w "$([ "$MODO" = previsao ] && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
+  flock -w "$({ [ "$MODO" = previsao ] || [ "$MODO" = alerta ]; } && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
 else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
 echo "=== $(date '+%F %T') $ROT $DIA"
@@ -46,10 +46,11 @@ $1" || echo "falhou o envio do aviso"
 }
 
 # 0. modelo = a edição mais recente do mesmo modo antes de hoje (a 1ª de domingo parte da última clima 24h)
-PREV=$(ls -d "$RAIZ"/edicoes/*-$SUF 2>/dev/null | grep -vx "$ED" | sort | tail -1)
-[ -z "$PREV" ] && [ "$MODO" = alerta ] && PREV=$(ls -d "$RAIZ"/edicoes/*-semana 2>/dev/null | grep -vx "$ED" | sort | tail -1)
-[ -z "$PREV" ] && { [ "$MODO" = previsao ] || [ "$MODO" = sul ]; } && PREV=$(ls -d "$RAIZ"/edicoes/*-clima-do-dia 2>/dev/null | grep -vx "$ED" | sort | tail -1)
-[ -z "$PREV" ] && PREV=$(ls -d "$RAIZ"/edicoes/*-ultimas-24h 2>/dev/null | grep -vx "$ED" | sort | tail -1)
+modelo() { ls -d "$RAIZ"/edicoes/*-"$1" 2>/dev/null | grep -vx "$ED" | sort | while read -r p; do [ -f "$p/gerar_cena.py" ] && echo "$p"; done | tail -1; }  # pula edição que falhou cedo (pasta sem gerar_cena.py; alerta/semana 08/11)
+PREV=$(modelo "$SUF")
+[ -z "$PREV" ] && { [ "$MODO" = alerta ] || [ "$MODO" = semana ]; } && PREV=$(modelo semana)
+[ -z "$PREV" ] && { [ "$MODO" = previsao ] || [ "$MODO" = sul ]; } && PREV=$(modelo clima-do-dia)
+[ -z "$PREV" ] && PREV=$(modelo ultimas-24h)
 [ -n "$PREV" ] && [ -f "$PREV/gerar_cena.py" ] || avisar "não achei a edição modelo (edicoes/*-ultimas-24h)"
 [ -f "$ED/gerar_cena.py" ] || cp "$PREV/gerar_cena.py" "$ED/"
 cp --update=none "$PREV/narrar.py" "$ED/"; cp --update=none "$PREV/avatar/retempo.py" "$ED/avatar/"
