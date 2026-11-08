@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Seiscentas e trinta e três cidades em perigo de tempestade hoje, quatrocentas e vinte e uma só em Minas Gerais. É a previsão deste domingo, oito de novembro.",
+  "legenda": "633 cidades em perigo de tempestade hoje, 421 só em Minas Gerais. É a previsão deste domingo, 8 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "No Sul, uma alta pressão empurra a chuva. Mas as pancadas seguem fortes no Sudeste e no Centro-Oeste.",
+  "legenda": "No Sul, uma alta pressão empurra a chuva. Mas as pancadas seguem fortes no Sudeste e no Centro-Oeste."
+ },
+ {
+  "id": "f3",
+  "fala": "O alerta do INMET: até cem milímetros no dia, vento de até cem quilômetros por hora e granizo.",
+  "legenda": "O alerta do INMET: até 100 milímetros no dia, vento de até 100 quilômetros por hora e granizo."
+ },
+ {
+  "id": "f4",
+  "fala": "Minas, Goiás, São Paulo e Espírito Santo estão na faixa laranja. O aviso de tempestade de hoje pega mil oitocentas e noventa e quatro cidades.",
+  "legenda": "Minas, Goiás, São Paulo e Espírito Santo estão na faixa laranja. O aviso de tempestade de hoje pega 1.894 cidades."
+ },
+ {
+  "id": "f5",
+  "fala": "Se você está em Belo Horizonte, atenção: a previsão é de cinquenta e oito milímetros só na segunda-feira.",
+  "legenda": "Se você está em Belo Horizonte, atenção: a previsão é de 58 milímetros só na segunda-feira."
+ },
+ {
+  "id": "f6",
+  "fala": "Em sete dias, a chuva prevista soma cento e quinze milímetros em Belo Horizonte e passa de noventa em Brasília.",
+  "legenda": "Em 7 dias, a chuva prevista soma 115 milímetros em Belo Horizonte e passa de 90 em Brasília."
+ },
+ {
+  "id": "f7",
+  "fala": "E a temperatura despenca. Em Belo Horizonte, a máxima pode cair de vinte e sete para dezenove graus na segunda.",
+  "legenda": "E a temperatura despenca. Em Belo Horizonte, a máxima pode cair de 27 para 19 graus na segunda."
+ },
+ {
+  "id": "f8",
+  "fala": "Amanhã, o aviso de tempestade continua para mil cento e setenta e seis cidades, de Minas até a Bahia.",
+  "legenda": "Amanhã, o aviso de tempestade continua para 1.176 cidades, de Minas até a Bahia."
+ },
+ {
+  "id": "f9",
+  "fala": "No Sul, a chuva vai embora hoje. Só o centro-leste e a Serra Gaúcha ainda têm garoa. No Vale do Itajaí, fique de olho nos rios.",
+  "legenda": "No Sul, a chuva vai embora hoje. Só o centro-leste e a Serra Gaúcha ainda têm garoa. No Vale do Itajaí, fique de olho nos rios."
+ },
+ {
+  "id": "f10",
+  "fala": "Segunda e terça começam frias no Sul. Na quinta e na sexta, as pancadas podem voltar.",
+  "legenda": "Segunda e terça começam frias no Sul. Na quinta e na sexta, as pancadas podem voltar."
+ },
+ {
+  "id": "f11",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
