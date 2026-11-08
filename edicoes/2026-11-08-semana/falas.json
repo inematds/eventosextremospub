@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Cem milímetros de chuva em Belo Horizonte nesta semana. Cinquenta e oito só na segunda. Atenção, é o alerta da semana, domingo, oito de novembro.",
+  "legenda": "100 milímetros de chuva em Belo Horizonte nesta semana. 58 só na segunda. Atenção, é o alerta da semana, domingo, 8 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Belo Horizonte, a chuva chega forte já na segunda, e a máxima despenca para dezenove graus. Na quinta, mais dezenove milímetros.",
+  "legenda": "Em Belo Horizonte, a chuva chega forte já na segunda, e a máxima despenca para 19 graus. Na quinta, mais 19 milímetros."
+ },
+ {
+  "id": "f3",
+  "fala": "No sul de Goiás, até cento e doze milímetros. Setenta e três só na quarta. Brasília, oitenta e dois milímetros.",
+  "legenda": "No sul de Goiás, até 112 milímetros. 73 só na quarta. Brasília, 82 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No sul da Bahia, até cento e sete milímetros. O INMET já avisa: chuva acumulada em setenta e uma cidades baianas, de terça a quinta.",
+  "legenda": "No sul da Bahia, até 107 milímetros. O INMET já avisa: chuva acumulada em 71 cidades baianas, de terça a quinta."
+ },
+ {
+  "id": "f5",
+  "fala": "Frio fora de época: na segunda, a serra gaúcha pode ter seis graus de mínima. Em São Paulo, a máxima fica em quinze graus.",
+  "legenda": "Frio fora de época: na segunda, a serra gaúcha pode ter 6 graus de mínima. Em São Paulo, a máxima fica em 15 graus."
+ },
+ {
+  "id": "f6",
+  "fala": "No Nordeste, é o contrário. Quase sem chuva, o interior do Piauí pode atingir quarenta graus na quinta.",
+  "legenda": "No Nordeste, é o contrário. Quase sem chuva, o interior do Piauí pode atingir 40 graus na quinta."
+ },
+ {
+  "id": "f7",
+  "fala": "Nesta segunda, o INMET tem alerta de tempestade em mil cento e setenta e seis cidades. Quinhentas e catorze em Minas.",
+  "legenda": "Nesta segunda, o INMET tem alerta de tempestade em 1.176 cidades. 514 em Minas."
+ },
+ {
+  "id": "f8",
+  "fala": "E nos próximos quinze dias? A tendência é a chuva disparar no Centro-Oeste e voltar a São Paulo e ao Paraná.",
+  "legenda": "E nos próximos 15 dias? A tendência é a chuva disparar no Centro-Oeste e voltar a São Paulo e ao Paraná."
+ },
+ {
+  "id": "f9",
+  "fala": "No norte de Mato Grosso do Sul, pode passar de duzentos milímetros. Cuiabá, cento e doze milímetros. Mas é tendência: pode mudar.",
+  "legenda": "No norte de Mato Grosso do Sul, pode passar de 200 milímetros. Cuiabá, 112 milímetros. Mas é tendência: pode mudar."
+ },
+ {
+  "id": "f10",
+  "fala": "E o calor não dá trégua no Piauí: a tendência é de quarenta e dois graus.",
+  "legenda": "E o calor não dá trégua no Piauí: a tendência é de 42 graus."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
