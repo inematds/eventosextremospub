@@ -1,6 +1,6 @@
 // [GEO=geo-nne.js] node render.mjs <pasta-com-cena.js> <saida.mp4|--quadros t1,t2,...> [--fps 30] [--dur N]
 import { chromium } from 'playwright';
-import { spawn } from 'node:child_process';
+import { spawn, execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,6 +9,17 @@ const aqui = path.dirname(fileURLToPath(import.meta.url));
 const [, , pasta, saida, ...resto] = process.argv;
 const opt = k => { const i = resto.indexOf(k); return i >= 0 ? resto[i + 1] : null; };
 const fps = Number(opt('--fps') || 30);
+
+// vigia: sem avançar por RENDER_PARADO s (padrão 600) = mata o Chrome e sai com erro, para não segurar a fila
+// (08/11/2026: o render do clima 24h ficou 8 h parado no window.pronto e travou todos os vídeos do dia)
+let ultimo = Date.now(); const viva = () => { ultimo = Date.now(); };
+const PARADO = Number(process.env.RENDER_PARADO || 600) * 1000;
+setInterval(() => {
+  if (Date.now() - ultimo < PARADO) return;
+  console.error(`\nERRO render parado há ${PARADO / 1000} s, saindo`);
+  try { execSync(`pkill -KILL -P ${process.pid}`); } catch {}
+  process.exit(3);
+}, 15000).unref();
 
 // página = mapa.html do motor, com cena.js da pasta
 const html = fs.readFileSync(path.join(aqui, 'mapa.html'), 'utf8')
@@ -24,7 +35,7 @@ const page = await browser.newPage({ viewport: largo ? { width: 1920, height: 10
 page.on('pageerror', e => console.error('pageerror', e.message));
 await page.goto('file://' + tmp, { timeout: 180000 });  // 30 s padrão estourou com a máquina cheia (21/10/2026)
 await page.waitForFunction(() => window.pronto && window.render, null, { timeout: 60000 });
-await page.evaluate(() => window.pronto);
+await page.evaluate(() => window.pronto); viva();
 const dur = Number(opt('--dur') || await page.evaluate(() => window.CENA.duracao));
 
 if (saida === '--quadros') {
@@ -32,7 +43,7 @@ if (saida === '--quadros') {
   for (const t of ts) {
     await page.evaluate(t => window.render(t), t);
     const f = path.resolve(pasta, `q_${String(t).replace('.', '_')}.jpg`);
-    await page.screenshot({ path: f, type: 'jpeg', quality: 85 });
+    await page.screenshot({ path: f, type: 'jpeg', quality: 85 }); viva();
     console.log(f);
   }
 } else {
@@ -43,6 +54,7 @@ if (saida === '--quadros') {
     await page.evaluate(t => window.render(t), i / fps);
     const buf = await page.screenshot({ type: 'jpeg', quality: 92 });
     if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
+    viva();
     if (i % 60 === 0) process.stderr.write(`\r${i}/${n} ${((Date.now() - t0) / 1000 / (i + 1)).toFixed(2)}s/quadro `);
   }
   ff.stdin.end(); await new Promise(r => ff.on('close', r));
