@@ -3,8 +3,8 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `sul-2026-11-08` · handoffs/history/2026-11-09T010923Z-sul-2026-11-08.md · 08/11 22:09
 - `clima24h-2026-11-06` · handoffs/history/2026-11-06T100159Z-clima24h-2026-11-06.md · 06/11 07:01
-- `mundo-2026-11-05` · handoffs/history/2026-11-05T225511Z-mundo-2026-11-05.md · 05/11 19:55
 <!-- handoff-indice:fim -->
 
 ## Parados (sem handoff há mais de 3 dias)
@@ -12,6 +12,7 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta o assunto para os abertos; `--fechado` tira daqui. Snapshots continuam em handoffs/history/.
 
 <!-- handoff-parados:inicio -->
+- `mundo-2026-11-05` · handoffs/history/2026-11-05T225511Z-mundo-2026-11-05.md · 05/11 19:55
 - `mundo-2026-10-30` · handoffs/history/2026-10-30T221448Z-mundo-2026-10-30.md · 30/10 19:14
 - `clima24h-2026-10-29` · handoffs/history/2026-10-29T094627Z-clima24h-2026-10-29.md · 29/10 06:46
 - `clima24h-2026-10-27` · handoffs/history/2026-10-27T094004Z-clima24h-2026-10-27.md · 27/10 06:40
@@ -32,6 +33,6 @@ Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta 
 
 ---
 
-Mais recente: `handoffs/history/2026-11-06T100159Z-clima24h-2026-11-06.md` — Clima 24 h 06/11/2026 (rodada automática, parte do claude -p)
+Mais recente: `handoffs/history/2026-11-09T010923Z-sul-2026-11-08.md` — Impacto Sul 08/11/2026 (rodada automática, parte do claude -p)
 
 O conteúdo de cada trabalho fica no snapshot citado: abra o do assunto que for continuar (o /prime faz isso).
