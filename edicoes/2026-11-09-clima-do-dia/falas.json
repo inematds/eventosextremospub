@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Segunda-feira, nove de novembro. Frio de inverno: zero vírgula oito grau no Morro da Igreja, na serra catarinense.", "legenda": "Segunda-feira, 9 de novembro. Frio de inverno: 0,8 grau no Morro da Igreja, na serra catarinense."},
+  {"id": "f2", "fala": "Teve geada, e São Joaquim marcou um vírgula oito grau. Florianópolis amanheceu com dez graus.", "legenda": "Teve geada, e São Joaquim marcou 1,8 grau. Florianópolis amanheceu com 10 graus."},
+  {"id": "f3", "fala": "É o ar frio atrás de uma frente fria. Ela está no litoral e organiza a chuva no centro e no norte.", "legenda": "É o ar frio atrás de uma frente fria. Ela está no litoral e organiza a chuva no centro e no norte."},
+  {"id": "f4", "fala": "Máximas de inverno: dezoito graus em São Paulo, vinte e dois no Rio e vinte e três em Belo Horizonte.", "legenda": "Máximas de inverno: 18 graus em São Paulo, 22 no Rio e 23 em Belo Horizonte."},
+  {"id": "f5", "fala": "No Norte, pancadas fortes. E o INMET tem aviso de tempestade em mil duzentas e setenta e três cidades hoje.", "legenda": "No Norte, pancadas fortes. E o INMET tem aviso de tempestade em 1.273 cidades hoje."},
+  {"id": "f6", "fala": "No Nordeste, o sertão de Pernambuco e o norte da Bahia podem chegar a quarenta graus.", "legenda": "No Nordeste, o sertão de Pernambuco e o norte da Bahia podem chegar a 40 graus."},
+  {"id": "f7", "fala": "Amanhã, a serra catarinense deve ficar abaixo de zero, com geada no sul do Paraná e na campanha gaúcha.", "legenda": "Amanhã, a serra catarinense deve ficar abaixo de zero, com geada no sul do Paraná e na campanha gaúcha."},
+  {"id": "f8", "fala": "Preocupa o Vale do Itajaí: em Rio do Sul, o rio marcou sete metros e trinta, e a barragem de Ituporanga está com cento e nove por cento, vertendo.", "legenda": "Preocupa o Vale do Itajaí: em Rio do Sul, o rio marcou 7,30 metros, e a barragem de Ituporanga está com 109%, vertendo."},
+  {"id": "f9", "fala": "A chuva volta ao Sul na quinta e sexta, e aumenta no Vale do Itajaí no fim de semana.", "legenda": "A chuva volta ao Sul na quinta e sexta, e aumenta no Vale do Itajaí no fim de semana."},
+  {"id": "f10", "fala": "No centro, a previsão soma até cento e trinta e seis milímetros até segunda. E entre dez e vinte de novembro, a chuva deve ficar acima da média.", "legenda": "No centro, a previsão soma até 136 milímetros até segunda. E entre 10 e 20 de novembro, a chuva deve ficar acima da média."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
