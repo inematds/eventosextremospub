@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Atenção: amanhã, seiscentas e cinquenta e quatro cidades estão em alerta de tempestade. É o alerta da semana, segunda, nove de novembro.",
+  "legenda": "Atenção: amanhã, 654 cidades estão em alerta de tempestade. É o alerta da semana, segunda, 9 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "O Tocantins tem cento e trinta e nove delas. E no sul do estado, a chuva pode somar cento e trinta e cinco milímetros em sete dias.",
+  "legenda": "O Tocantins tem 139 delas. E no sul do estado, a chuva pode somar 135 milímetros em 7 dias."
+ },
+ {
+  "id": "f3",
+  "fala": "A pior chuva chega na sexta: quarenta e cinco milímetros num dia só. Palmas pode somar oitenta e dois milímetros na semana.",
+  "legenda": "A pior chuva chega na sexta: 45 milímetros num dia só. Palmas pode somar 82 milímetros na semana."
+ },
+ {
+  "id": "f4",
+  "fala": "Goiás tem cento e setenta e uma cidades em alerta amanhã e cento e setenta e oito na quarta. Goiânia pode somar quase oitenta milímetros.",
+  "legenda": "Goiás tem 171 cidades em alerta amanhã e 178 na quarta. Goiânia pode somar quase 80 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No sul da Bahia, até cento e cinco milímetros. O INMET avisa: chuva acumulada em setenta e uma cidades baianas, de amanhã até sexta.",
+  "legenda": "No sul da Bahia, até 105 milímetros. O INMET avisa: chuva acumulada em 71 cidades baianas, de amanhã até sexta."
+ },
+ {
+  "id": "f6",
+  "fala": "No Piauí, o calor dispara. Teresina pode atingir quase quarenta graus na sexta, quase sem chuva.",
+  "legenda": "No Piauí, o calor dispara. Teresina pode atingir quase 40 graus na sexta, quase sem chuva."
+ },
+ {
+  "id": "f7",
+  "fala": "No Sul, amanhã ainda faz frio: oito graus de mínima no planalto catarinense, dez em Curitiba. E na próxima segunda, rajadas de quase setenta quilômetros por hora em Florianópolis.",
+  "legenda": "No Sul, amanhã ainda faz frio: 8 graus de mínima no planalto catarinense, 10 em Curitiba. E na próxima segunda, rajadas de quase 70 quilômetros por hora em Florianópolis."
+ },
+ {
+  "id": "f8",
+  "fala": "Se prepare: tire o carro de rua que alaga, evite estrada durante a tempestade e, no calor, beba muita água.",
+  "legenda": "Se prepare: tire o carro de rua que alaga, evite estrada durante a tempestade e, no calor, beba muita água."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
