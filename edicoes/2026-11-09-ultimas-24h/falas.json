@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Segunda-feira, nove de novembro. Duas jovens desaparecidas no temporal do Rio, cento e dez milímetros de chuva em Minas e frio de dez graus em Curitiba.",
+  "legenda": "Segunda-feira, 9 de novembro. 2 jovens desaparecidas no temporal do Rio, 110 milímetros de chuva em Minas e frio de 10 graus em Curitiba."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Nova Iguaçu, o temporal deixou oitenta e cinco mil imóveis sem luz. Duas jovens que estavam no Maciço do Mendanha seguem desaparecidas.",
+  "legenda": "Em Nova Iguaçu, o temporal deixou 85 mil imóveis sem luz. 2 jovens que estavam no Maciço do Mendanha seguem desaparecidas."
+ },
+ {
+  "id": "f3",
+  "fala": "Na serra, Petrópolis teve mais de noventa milímetros em vinte e quatro horas.",
+  "legenda": "Na serra, Petrópolis teve mais de 90 milímetros em 24 horas."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Minas, Governador Valadares recebeu cento e dez milímetros, e Tumiritinga, cento e seis milímetros.",
+  "legenda": "Em Minas, Governador Valadares recebeu 110 milímetros, e Tumiritinga, 106 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "O ar polar derrubou a temperatura: dez graus em Curitiba nesta madrugada. No sertão, trinta e nove graus em Petrolina e Paulo Afonso.",
+  "legenda": "O ar polar derrubou a temperatura: 10 graus em Curitiba nesta madrugada. No sertão, 39 graus em Petrolina e Paulo Afonso."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, seiscentos e cinquenta e dois focos no domingo, duzentos e sessenta e oito no Maranhão.",
+  "legenda": "No fogo, 652 focos no domingo, 268 no Maranhão."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta amarelo do INMET de tempestade em mil cento e setenta e seis cidades, de Minas à Bahia, e queda de temperatura em mil e onze cidades.",
+  "legenda": "E hoje? Alerta amarelo do INMET de tempestade em 1.176 cidades, de Minas à Bahia, e queda de temperatura em 1.011 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: quarta deve ser o dia mais chuvoso, o Norte deve acumular mais, e Teresina deve chegar a trinta e nove graus na sexta.",
+  "legenda": "Os próximos 7 dias: quarta deve ser o dia mais chuvoso, o Norte deve acumular mais, e Teresina deve chegar a 39 graus na sexta."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de onze mil milímetros. Em sete dias, as capitais devem somar setecentos e setenta e dois milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 11 mil milímetros. Em 7 dias, as capitais devem somar 772 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
