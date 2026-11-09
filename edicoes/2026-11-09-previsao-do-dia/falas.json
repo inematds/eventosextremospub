@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Mil duzentas e setenta e três cidades em alerta de tempestade hoje, da Bahia a Goiás. É a previsão desta segunda, nove de novembro.",
+  "legenda": "1.273 cidades em alerta de tempestade hoje, da Bahia a Goiás. É a previsão desta segunda, 9 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Ar seco segura o tempo no Sul e em São Paulo. Mas no Centro-Oeste e no Sudeste, o calor arma pancadas com trovoada.",
+  "legenda": "Ar seco segura o tempo no Sul e em São Paulo. Mas no Centro-Oeste e no Sudeste, o calor arma pancadas com trovoada."
+ },
+ {
+  "id": "f3",
+  "fala": "O alerta do INMET: até cinquenta milímetros no dia, vento de até sessenta quilômetros por hora e granizo.",
+  "legenda": "O alerta do INMET: até 50 milímetros no dia, vento de até 60 quilômetros por hora e granizo."
+ },
+ {
+  "id": "f4",
+  "fala": "A Bahia lidera, com duzentas e noventa e nove cidades. Minas tem duzentas e oitenta e uma, e Goiás, duzentas e quarenta e quatro cidades.",
+  "legenda": "A Bahia lidera, com 299 cidades. Minas tem 281, e Goiás, 244 cidades."
+ },
+ {
+  "id": "f5",
+  "fala": "Em sete dias, a previsão soma noventa e dois milímetros em Palmas e passa de setenta em Goiânia e Brasília.",
+  "legenda": "Em 7 dias, a previsão soma 92 milímetros em Palmas e passa de 70 em Goiânia e Brasília."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã, o alerta de tempestade segue para seiscentas e cinquenta e quatro cidades, de Goiás ao Piauí.",
+  "legenda": "Amanhã, o alerta de tempestade segue para 654 cidades, de Goiás ao Piauí."
+ },
+ {
+  "id": "f7",
+  "fala": "No Sul, depois dos tornados, a semana começa firme, só com garoa no leste do Paraná e pancadas à tarde no oeste catarinense.",
+  "legenda": "No Sul, depois dos tornados, a semana começa firme, só com garoa no leste do Paraná e pancadas à tarde no oeste catarinense."
+ },
+ {
+  "id": "f8",
+  "fala": "Na quarta e na quinta, as pancadas voltam ao Sul. E o calor dispara: em Curitiba, a máxima pode subir de dezessete para vinte e oito graus no domingo.",
+  "legenda": "Na quarta e na quinta, as pancadas voltam ao Sul. E o calor dispara: em Curitiba, a máxima pode subir de 17 para 28 graus no domingo."
+ },
+ {
+  "id": "f9",
+  "fala": "Atenção depois do dia dezenove: a chuva pode voltar ao Sul com cem a cento e cinquenta milímetros, sobre solo encharcado e rios cheios.",
+  "legenda": "Atenção depois do dia 19: a chuva pode voltar ao Sul com 100 a 150 milímetros, sobre solo encharcado e rios cheios."
+ },
+ {
+  "id": "f10",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
