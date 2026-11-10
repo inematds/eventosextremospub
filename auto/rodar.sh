@@ -59,7 +59,7 @@ $1" || echo "falhou o envio do aviso"
   echo "AVISO: $1"; exit "${2:-1}"
 }
 # máquina ocupada (a vaga não abriu a tempo, saída 75): avisa e sai limpo; refazer depois reaproveita o que já está na edição
-ocupado() { avisar "máquina ocupada: $1 não pegou vaga a tempo (fila-vaga saiu 75); refazer com auto/rodar.sh $DIA $MODO" 0 ocupado; }
+ocupado() { avisar "máquina ocupada: $1 não pegou vaga a tempo (fila-vaga saiu 75); refazer com ${2:-auto/rodar.sh $DIA $MODO}" 0 ocupado; }
 
 # 0. modelo = a edição mais recente do mesmo modo antes de hoje (a 1ª de domingo parte da última clima 24h)
 modelo() { ls -d "$RAIZ"/edicoes/*-"$1" 2>/dev/null | grep -vx "$ED" | sort | while read -r p; do [ -f "$p/gerar_cena.py" ] && echo "$p"; done | tail -1; }  # pula edição que falhou cedo (pasta sem gerar_cena.py; alerta/semana 08/11)
@@ -188,7 +188,7 @@ if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SU
 else
   RC_AV=$?  # 75 = retempo (avatar.sh) ou render (compor_avatar.sh) sem vaga a tempo: máquina ocupada, não "sem avatar"
   [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
-  [ "$RC_AV" = 75 ] && ocupado "o retempo/render do vídeo com avatar (o avatar baixado fica na edição)"
+  [ "$RC_AV" = 75 ] && ocupado "o retempo/render do vídeo com avatar" "REUSAR_ROTEIRO=1 auto/rodar.sh $DIA $MODO (mesmo roteiro; o avatar já baixado é reaproveitado)"
   V="$ED/video.mp4"
   if [ "${SEM_AVATAR:-}" = 1 ]; then NOTA="(teste sem avatar)"
   else

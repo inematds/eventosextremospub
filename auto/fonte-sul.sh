@@ -36,7 +36,7 @@ while IFS='|' read -r ID HORA URL <&3; do  # fd 3: ffmpeg/python lá dentro comi
   for k in 1 2; do
     # Whisper local na vaga gpu da máquina (motor/vaga.sh → wifi/scripts/fila-vaga, 09/11/2026); 75 = máquina ocupada → sai 75
     ( cd "$HOME/projetos/inemavox" && GPU_ESPERA_MIN="${GPU_ESPERA_MIN:-60}" bash "$AUTO/../motor/vaga.sh" gpu eventosextremospub-whisper timeout 2400 python3 transcrever_v1.py --in "$V/video.mp4" --outdir "$V" --whisper-model large-v3 --src pt ) > "$V/transcrever.log" 2>&1; rc=$?
-    [ "$rc" = 75 ] && { echo "máquina ocupada: a vaga gpu não abriu a tempo para o Whisper (v$n)"; exit 75; }
+    [ "$rc" = 75 ] && { rm -f "$F/transcript.txt"; echo "máquina ocupada: a vaga gpu não abriu a tempo para o Whisper (v$n)"; exit 75; }  # sem fonte parcial: a próxima rodada refaz
     [ "$rc" = 0 ] && [ -s "$V/transcript.txt" ] && break; sleep 60
   done
   [ -s "$V/transcript.txt" ] || python3 "$AUTO/groq_transcrever.py" "$V/video.mp4" "$V" > "$V/groq.log" 2>&1 || true
