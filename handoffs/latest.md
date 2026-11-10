@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `mundo-2026-11-10` · handoffs/history/2026-11-10T224620Z-mundo-2026-11-10.md · 10/11 19:46
 - `clima24h-2026-11-10` · handoffs/history/2026-11-10T095002Z-clima24h-2026-11-10.md · 10/11 06:50
 - `mundo-2026-11-09` · handoffs/history/2026-11-09T220745Z-mundo-2026-11-09.md · 09/11 19:07
 - `clima24h-2026-11-09` · handoffs/history/2026-11-09T095343Z-clima24h-2026-11-09.md · 09/11 06:53
@@ -36,6 +37,6 @@ Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta 
 
 ---
 
-Mais recente: `handoffs/history/2026-11-10T095002Z-clima24h-2026-11-10.md` — Clima 24 h 10/11/2026 (edicoes/2026-11-10-ultimas-24h)
+Mais recente: `handoffs/history/2026-11-10T224620Z-mundo-2026-11-10.md` — Clima no Mundo 10/11/2026 (claude -p da rodada automática)
 
 O conteúdo de cada trabalho fica no snapshot citado: abra o do assunto que for continuar (o /prime faz isso).
