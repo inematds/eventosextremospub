@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Duas mil quinhentas e setenta e quatro cidades em alerta de tempestade na quinta, seiscentas e quarenta e cinco em São Paulo. É a previsão desta terça, dez de novembro.",
+  "legenda": "2.574 cidades em alerta de tempestade na quinta, 645 em São Paulo. É a previsão desta terça, 10 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Hoje, o ar seco garante sol e calor em quase todo o Sul. Só o litoral, de Florianópolis a São Paulo, tem nuvens e chuvisco.",
+  "legenda": "Hoje, o ar seco garante sol e calor em quase todo o Sul. Só o litoral, de Florianópolis a São Paulo, tem nuvens e chuvisco."
+ },
+ {
+  "id": "f3",
+  "fala": "No Centro-Oeste e no Norte, o calor arma pancadas. O INMET alerta para chuva intensa em seiscentas e cinquenta e cinco cidades hoje.",
+  "legenda": "No Centro-Oeste e no Norte, o calor arma pancadas. O INMET alerta para chuva intensa em 655 cidades hoje."
+ },
+ {
+  "id": "f4",
+  "fala": "Amanhã, uma baixa pressão traz pancadas de verão ao Sul. Duzentas e vinte e quatro cidades gaúchas e catarinenses ficam em alerta.",
+  "legenda": "Amanhã, uma baixa pressão traz pancadas de verão ao Sul. 224 cidades gaúchas e catarinenses ficam em alerta."
+ },
+ {
+  "id": "f5",
+  "fala": "Atenção, Mato Grosso do Sul, Mato Grosso e Goiás: setenta e oito cidades estão no nível de perigo amanhã, com vento de até cem quilômetros por hora.",
+  "legenda": "Atenção, Mato Grosso do Sul, Mato Grosso e Goiás: 78 cidades estão no nível de perigo amanhã, com vento de até 100 quilômetros por hora."
+ },
+ {
+  "id": "f6",
+  "fala": "Na quinta, o alerta dispara. Em São Paulo, Minas e Rio, pancadas a qualquer hora, com granizo. Minas tem quatrocentas e noventa e quatro cidades.",
+  "legenda": "Na quinta, o alerta dispara. Em São Paulo, Minas e Rio, pancadas a qualquer hora, com granizo. Minas tem 494 cidades."
+ },
+ {
+  "id": "f7",
+  "fala": "Em sete dias, a chuva prevista soma oitenta e três milímetros em Cuiabá.",
+  "legenda": "Em 7 dias, a chuva prevista soma 83 milímetros em Cuiabá."
+ },
+ {
+  "id": "f8",
+  "fala": "No fim de semana, ar quente do Paraguai faz o calor disparar. Porto Alegre pode chegar a trinta e um graus no sábado.",
+  "legenda": "No fim de semana, ar quente do Paraguai faz o calor disparar. Porto Alegre pode chegar a 31 graus no sábado."
+ },
+ {
+  "id": "f9",
+  "fala": "E atenção nos dias quinze e dezesseis: uma frente fria pode formar um ciclone extratropical no Sul.",
+  "legenda": "E atenção nos dias 15 e 16: uma frente fria pode formar um ciclone extratropical no Sul."
+ },
+ {
+  "id": "f10",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

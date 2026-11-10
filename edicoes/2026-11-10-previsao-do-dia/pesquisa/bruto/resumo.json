@@ -1,0 +1,1286 @@
+{
+ "janela_utc": [
+  "2026-11-09T13:03:02.834220+00:00",
+  "2026-11-10T13:03:02.834220+00:00"
+ ],
+ "coletado_utc": "2026-11-10T13:03:02.834231+00:00",
+ "falhas": [
+  {
+   "fonte": "inmet_estacoes",
+   "erro": "RuntimeError(\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\")",
+   "trace": "Traceback (most recent call last):\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 42, in deco\n    R[nome] = f()\n              ^^^\n  File \"/home/nmaldaner/projetos/eventosextremospub/coleta/ultimas24h.py\", line 85, in _\n    raise RuntimeError(f\"apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: {len(tent)} pedidos, todos sem dados \"\nRuntimeError: apitempo.inmet.gov.br/estacao/dados/<dia>/<HH00>: 25 pedidos, todos sem dados (status [('204', 25)]); sem token não sai dado de estação\n"
+  },
+  {
+   "fonte": "openmeteo_capitais",
+   "erro": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))",
+   "trace": "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 1392, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/urllib/request.py\", line 1347, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>\n"
+  }
+ ],
+ "inmet_avisos": {
+  "hoje": {
+   "n": 4,
+   "por_tipo_sev": [
+    [
+     "Chuvas Intensas",
+     "Perigo Potencial",
+     2
+    ],
+    [
+     "Acumulado de Chuva",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Ventos Costeiros",
+     "Perigo Potencial",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AM",
+     "BA",
+     "GO",
+     "MA",
+     "MT",
+     "PA",
+     "PI",
+     "RR",
+     "RS",
+     "SC",
+     "TO"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56356,
+     "desc": "Acumulado de Chuva",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 00:01",
+     "fim": "2026-11-13 23:59",
+     "municipios": 71,
+     "ufs": {
+      "BA": 71
+     }
+    },
+    {
+     "id": 56360,
+     "desc": "Chuvas Intensas",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 00:00",
+     "fim": "2026-11-10 23:59",
+     "municipios": 29,
+     "ufs": {
+      "AM": 24,
+      "RR": 5
+     }
+    },
+    {
+     "id": 56363,
+     "desc": "Chuvas Intensas",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 09:15",
+     "fim": "2026-11-10 23:59",
+     "municipios": 655,
+     "ufs": {
+      "GO": 181,
+      "PA": 68,
+      "TO": 139,
+      "MA": 110,
+      "PI": 97,
+      "MT": 51,
+      "BA": 9
+     }
+    },
+    {
+     "id": 56365,
+     "desc": "Ventos Costeiros",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 09:30",
+     "fim": "2026-11-11 09:00",
+     "municipios": 83,
+     "ufs": {
+      "RS": 43,
+      "SC": 40
+     }
+    }
+   ]
+  },
+  "futuro": {
+   "n": 6,
+   "por_tipo_sev": [
+    [
+     "Tempestade",
+     "Perigo Potencial",
+     3
+    ],
+    [
+     "Acumulado de Chuva",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Ventos Costeiros",
+     "Perigo Potencial",
+     1
+    ],
+    [
+     "Tempestade",
+     "Perigo",
+     1
+    ]
+   ],
+   "ufs_por_sev": {
+    "Perigo Potencial": [
+     "AM",
+     "BA",
+     "DF",
+     "GO",
+     "MG",
+     "MS",
+     "MT",
+     "PA",
+     "PR",
+     "RJ",
+     "RO",
+     "RS",
+     "SC",
+     "SP",
+     "TO"
+    ],
+    "Perigo": [
+     "GO",
+     "MS",
+     "MT"
+    ]
+   },
+   "avisos": [
+    {
+     "id": 56356,
+     "desc": "Acumulado de Chuva",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 00:01",
+     "fim": "2026-11-13 23:59",
+     "municipios": 71,
+     "ufs": {
+      "BA": 71
+     }
+    },
+    {
+     "id": 56370,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-12 00:00",
+     "fim": "2026-11-12 23:59",
+     "municipios": 2574,
+     "ufs": {
+      "GO": 229,
+      "MG": 494,
+      "PR": 322,
+      "SC": 271,
+      "MT": 141,
+      "SP": 645,
+      "MS": 62,
+      "RS": 263,
+      "RO": 52,
+      "PA": 9,
+      "TO": 18,
+      "RJ": 58,
+      "AM": 9,
+      "DF": 1
+     }
+    },
+    {
+     "id": 56365,
+     "desc": "Ventos Costeiros",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-10 09:30",
+     "fim": "2026-11-11 09:00",
+     "municipios": 83,
+     "ufs": {
+      "RS": 43,
+      "SC": 40
+     }
+    },
+    {
+     "id": 56366,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-11 00:00",
+     "fim": "2026-11-11 23:59",
+     "municipios": 224,
+     "ufs": {
+      "RS": 184,
+      "SC": 40
+     }
+    },
+    {
+     "id": 56367,
+     "desc": "Tempestade",
+     "sev": "Perigo Potencial",
+     "inicio": "2026-11-11 00:00",
+     "fim": "2026-11-11 23:59",
+     "municipios": 618,
+     "ufs": {
+      "GO": 182,
+      "MT": 141,
+      "SP": 119,
+      "MS": 79,
+      "PR": 56,
+      "TO": 11,
+      "MG": 18,
+      "RO": 12
+     }
+    },
+    {
+     "id": 56369,
+     "desc": "Tempestade",
+     "sev": "Perigo",
+     "inicio": "2026-11-11 00:00",
+     "fim": "2026-11-11 23:59",
+     "municipios": 78,
+     "ufs": {
+      "MS": 42,
+      "MT": 19,
+      "GO": 17
+     }
+    }
+   ]
+  }
+ },
+ "cemaden": {
+  "estacoes_total": 5722,
+  "estacoes_recentes": 1798,
+  "erros_uf": {},
+  "top": [
+   {
+    "cidade": "Aquidabã",
+    "uf": "SE",
+    "estacao": "AQUIDABA",
+    "acc24": 954.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 0.8,
+    "ultimo": "10/11/26 12:00",
+    "tipo": 5
+   },
+   {
+    "cidade": "Bom Jesus Da Lapa",
+    "uf": "BA",
+    "estacao": "G2-290390401A",
+    "acc24": 120.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 6.4,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Bom Jesus Da Lapa",
+    "uf": "BA",
+    "estacao": "G2-290390403A",
+    "acc24": 108.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 5,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Simolândia",
+    "uf": "GO",
+    "estacao": "G2-522068601A",
+    "acc24": 107.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Pedro Da Água Branca",
+    "uf": "MA",
+    "estacao": "Monte Sinai",
+    "acc24": 102.59,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 13.41,
+    "ultimo": "10/11/26 09:00",
+    "tipo": 1
+   },
+   {
+    "cidade": "Simolândia",
+    "uf": "GO",
+    "estacao": "G2-522068602A",
+    "acc24": 96.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Cristino Castro",
+    "uf": "PI",
+    "estacao": "G2-220310702A",
+    "acc24": 94.6,
+    "acc1": "-",
+    "acc3": 0.8,
+    "acc6": 0.8,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Açailândia",
+    "uf": "MA",
+    "estacao": "G2-210005502A",
+    "acc24": 85.4,
+    "acc1": 2,
+    "acc3": 9.8,
+    "acc6": 23.4,
+    "ultimo": "10/11/26 12:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Itaituba",
+    "uf": "PA",
+    "estacao": "Floresta",
+    "acc24": 84.4,
+    "acc1": "-",
+    "acc3": 8.2,
+    "acc6": 15,
+    "ultimo": "10/11/26 11:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Brejo Santo",
+    "uf": "CE",
+    "estacao": "G2-230250303A",
+    "acc24": 83.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Brejo Santo",
+    "uf": "CE",
+    "estacao": "G2-230250302A",
+    "acc24": 82.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Maragogi",
+    "uf": "AL",
+    "estacao": "Centro",
+    "acc24": 82.52,
+    "acc1": 1.85,
+    "acc3": 3.53,
+    "acc6": 3.53,
+    "ultimo": "10/11/26 13:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Francisco",
+    "uf": "MG",
+    "estacao": "Jardim Graziela",
+    "acc24": 79.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:50",
+    "tipo": 1
+   },
+   {
+    "cidade": "Muquém De São Francisco",
+    "uf": "BA",
+    "estacao": "G2-292225002A",
+    "acc24": 74.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 14.6,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Paratinga",
+    "uf": "BA",
+    "estacao": "G2-292370401A",
+    "acc24": 74.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 2.2,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Bom Jesus",
+    "uf": "PI",
+    "estacao": "G2-220190302A",
+    "acc24": 74.4,
+    "acc1": 0.2,
+    "acc3": 1,
+    "acc6": 1,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Brasília De Minas",
+    "uf": "MG",
+    "estacao": "G2-310860202A",
+    "acc24": 73.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Alvorada Do Norte",
+    "uf": "GO",
+    "estacao": "G2-520080301A",
+    "acc24": 72.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Brejo Santo",
+    "uf": "CE",
+    "estacao": "G2-230250301A",
+    "acc24": 72.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Açailândia",
+    "uf": "MA",
+    "estacao": "G2-210005503A",
+    "acc24": 71.2,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 10.4,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Augustinópolis",
+    "uf": "TO",
+    "estacao": "G2-170255402A",
+    "acc24": 70.8,
+    "acc1": 0.4,
+    "acc3": 4.6,
+    "acc6": 49.2,
+    "ultimo": "10/11/26 12:40",
+    "tipo": 1
+   },
+   {
+    "cidade": "Paratinga",
+    "uf": "BA",
+    "estacao": "G2-292370402A",
+    "acc24": 69.8,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": 2.4,
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "São Francisco",
+    "uf": "MG",
+    "estacao": "Zona Rural",
+    "acc24": 65.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   },
+   {
+    "cidade": "Rio De Janeiro",
+    "uf": "RJ",
+    "estacao": "Usina",
+    "acc24": 65.6,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:20",
+    "tipo": 1
+   },
+   {
+    "cidade": "Brasília De Minas",
+    "uf": "MG",
+    "estacao": "G2-310860201A",
+    "acc24": 64.4,
+    "acc1": "-",
+    "acc3": "-",
+    "acc6": "-",
+    "ultimo": "10/11/26 12:10",
+    "tipo": 1
+   }
+  ],
+  "max_por_uf": {
+   "SE": 954.6,
+   "BA": 120.8,
+   "GO": 107.6,
+   "MA": 102.59,
+   "PI": 94.6,
+   "PA": 84.4,
+   "CE": 83.8,
+   "AL": 82.52,
+   "MG": 79.8,
+   "TO": 70.8,
+   "RJ": 65.6,
+   "SC": 63.69,
+   "SP": 58.3,
+   "PE": 41.04,
+   "AM": 38.3,
+   "RO": 35.8,
+   "ES": 34.4,
+   "RS": 28.0,
+   "PR": 26.8,
+   "DF": 12.4,
+   "AP": 10.2,
+   "RR": 8.6,
+   "AC": 3.8,
+   "PB": 3.2,
+   "RN": 2.36,
+   "MT": 0.8,
+   "MS": 0.2
+  },
+  "soma_mm_estacoes": 16264.2,
+  "soma_por_uf": {
+   "MG": {
+    "soma_mm": 5534.2,
+    "estacoes": 516,
+    "media_mm": 10.7
+   },
+   "BA": {
+    "soma_mm": 2158.4,
+    "estacoes": 231,
+    "media_mm": 9.3
+   },
+   "MA": {
+    "soma_mm": 1049.9,
+    "estacoes": 67,
+    "media_mm": 15.7
+   },
+   "SE": {
+    "soma_mm": 987.2,
+    "estacoes": 16,
+    "media_mm": 61.7
+   },
+   "TO": {
+    "soma_mm": 921.9,
+    "estacoes": 29,
+    "media_mm": 31.8
+   },
+   "ES": {
+    "soma_mm": 856.6,
+    "estacoes": 73,
+    "media_mm": 11.7
+   },
+   "GO": {
+    "soma_mm": 629.0,
+    "estacoes": 38,
+    "media_mm": 16.6
+   },
+   "PI": {
+    "soma_mm": 608.4,
+    "estacoes": 43,
+    "media_mm": 14.1
+   },
+   "CE": {
+    "soma_mm": 572.0,
+    "estacoes": 23,
+    "media_mm": 24.9
+   },
+   "RJ": {
+    "soma_mm": 565.9,
+    "estacoes": 153,
+    "media_mm": 3.7
+   },
+   "PE": {
+    "soma_mm": 480.8,
+    "estacoes": 83,
+    "media_mm": 5.8
+   },
+   "SP": {
+    "soma_mm": 470.7,
+    "estacoes": 201,
+    "media_mm": 2.3
+   },
+   "PA": {
+    "soma_mm": 470.6,
+    "estacoes": 27,
+    "media_mm": 17.4
+   },
+   "SC": {
+    "soma_mm": 336.2,
+    "estacoes": 124,
+    "media_mm": 2.7
+   },
+   "AM": {
+    "soma_mm": 244.7,
+    "estacoes": 30,
+    "media_mm": 8.2
+   },
+   "AL": {
+    "soma_mm": 104.0,
+    "estacoes": 24,
+    "media_mm": 4.3
+   },
+   "RO": {
+    "soma_mm": 79.0,
+    "estacoes": 10,
+    "media_mm": 7.9
+   },
+   "RS": {
+    "soma_mm": 61.2,
+    "estacoes": 35,
+    "media_mm": 1.7
+   },
+   "PR": {
+    "soma_mm": 45.5,
+    "estacoes": 21,
+    "media_mm": 2.2
+   },
+   "AP": {
+    "soma_mm": 21.8,
+    "estacoes": 8,
+    "media_mm": 2.7
+   },
+   "RR": {
+    "soma_mm": 21.5,
+    "estacoes": 4,
+    "media_mm": 5.4
+   },
+   "PB": {
+    "soma_mm": 18.2,
+    "estacoes": 23,
+    "media_mm": 0.8
+   },
+   "DF": {
+    "soma_mm": 13.2,
+    "estacoes": 2,
+    "media_mm": 6.6
+   },
+   "AC": {
+    "soma_mm": 8.2,
+    "estacoes": 8,
+    "media_mm": 1.0
+   },
+   "MT": {
+    "soma_mm": 2.4,
+    "estacoes": 6,
+    "media_mm": 0.4
+   },
+   "RN": {
+    "soma_mm": 2.4,
+    "estacoes": 1,
+    "media_mm": 2.4
+   },
+   "MS": {
+    "soma_mm": 0.4,
+    "estacoes": 2,
+    "media_mm": 0.2
+   }
+  },
+  "n_ge_50": 40,
+  "n_ge_100": 5
+ },
+ "inpe_focos": {
+  "ultimo_foco_gmt": "2026-11-10 08:30:00",
+  "todos_sat": 10343,
+  "sat_ref_AQUA_M-T": 1219,
+  "por_satelite": [
+   [
+    "NOAA-20",
+    3630
+   ],
+   [
+    "GOES-19",
+    2378
+   ],
+   [
+    "NOAA-21",
+    2044
+   ],
+   [
+    "AQUA_M-T",
+    1219
+   ],
+   [
+    "TERRA_M-M",
+    525
+   ],
+   [
+    "METOP-C",
+    293
+   ],
+   [
+    "METOP-B",
+    139
+   ],
+   [
+    "AQUA_M-M",
+    79
+   ],
+   [
+    "MSG-03",
+    27
+   ],
+   [
+    "TERRA_M-T",
+    9
+   ]
+  ],
+  "por_estado_todos": [
+   [
+    "Pará",
+    6410
+   ],
+   [
+    "Amapá",
+    1023
+   ],
+   [
+    "Maranhão",
+    918
+   ],
+   [
+    "Roraima",
+    588
+   ],
+   [
+    "Amazonas",
+    259
+   ],
+   [
+    "Bahia",
+    221
+   ],
+   [
+    "Tocantins",
+    165
+   ],
+   [
+    "Piauí",
+    124
+   ],
+   [
+    "Pernambuco",
+    103
+   ],
+   [
+    "Ceará",
+    97
+   ],
+   [
+    "Mato Grosso",
+    94
+   ],
+   [
+    "Paraíba",
+    61
+   ],
+   [
+    "Alagoas",
+    48
+   ],
+   [
+    "Goiás",
+    42
+   ],
+   [
+    "Sergipe",
+    28
+   ]
+  ],
+  "por_bioma_todos": [
+   [
+    "Amazônia",
+    8941
+   ],
+   [
+    "Cerrado",
+    704
+   ],
+   [
+    "Caatinga",
+    428
+   ],
+   [
+    "Mata Atlântica",
+    223
+   ],
+   [
+    "Pantanal",
+    28
+   ],
+   [
+    "Pampa",
+    19
+   ]
+  ],
+  "por_estado_ref": [
+   [
+    "Pará",
+    829
+   ],
+   [
+    "Amapá",
+    203
+   ],
+   [
+    "Maranhão",
+    86
+   ],
+   [
+    "Tocantins",
+    50
+   ],
+   [
+    "Goiás",
+    15
+   ],
+   [
+    "Piauí",
+    8
+   ],
+   [
+    "Santa Catarina",
+    5
+   ],
+   [
+    "Minas Gerais",
+    4
+   ],
+   [
+    "Bahia",
+    4
+   ],
+   [
+    "Rio Grande Do Norte",
+    3
+   ],
+   [
+    "Roraima",
+    3
+   ],
+   [
+    "Amazonas",
+    3
+   ],
+   [
+    "Rio Grande Do Sul",
+    2
+   ],
+   [
+    "Paraná",
+    1
+   ],
+   [
+    "São Paulo",
+    1
+   ]
+  ],
+  "por_bioma_ref": [
+   [
+    "Amazônia",
+    1105
+   ],
+   [
+    "Cerrado",
+    96
+   ],
+   [
+    "Mata Atlântica",
+    10
+   ],
+   [
+    "Caatinga",
+    6
+   ],
+   [
+    "Pampa",
+    2
+   ]
+  ],
+  "top_municipios_todos": [
+   [
+    "Almeirim/Pará",
+    1403
+   ],
+   [
+    "Prainha/Pará",
+    640
+   ],
+   [
+    "Uruará/Pará",
+    450
+   ],
+   [
+    "Portel/Pará",
+    392
+   ],
+   [
+    "Monte Alegre/Pará",
+    284
+   ],
+   [
+    "Alenquer/Pará",
+    278
+   ],
+   [
+    "Porto De Moz/Pará",
+    210
+   ],
+   [
+    "Gurupá/Pará",
+    194
+   ],
+   [
+    "Santarém/Pará",
+    194
+   ],
+   [
+    "Óbidos/Pará",
+    191
+   ]
+  ]
+ },
+ "noaa_metar": {
+  "aeroportos": 108,
+  "obs": 2088,
+  "tmax_top": [
+   [
+    41,
+    "SBUF",
+    "Paulo Afonso Arpt, BA, BR",
+    "09/11 18:00Z"
+   ],
+   [
+    39,
+    "SBTE",
+    "Teresina Arpt, PI, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    38,
+    "SBPL",
+    "Petrolina Arpt, PE, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    37,
+    "SBJU",
+    "Juazeiro do Norte/Menezes Arpt, CE, BR",
+    "09/11 20:00Z"
+   ],
+   [
+    37,
+    "SBIH",
+    "Itaituba Arpt, PA, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    37,
+    "SBBV",
+    "Boa Vista Arpt, RR, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    36,
+    "SBSN",
+    "Santarem Intl, PA, BR",
+    "09/11 17:00Z"
+   ],
+   [
+    36,
+    "SBHT",
+    "Altamira Arpt, PA, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    35,
+    "SBMS",
+    "Mossoró Arpt, RN, BR",
+    "09/11 16:00Z"
+   ],
+   [
+    35,
+    "SBMQ",
+    "Macapá Intl, AP, BR",
+    "09/11 19:00Z"
+   ],
+   [
+    35,
+    "SBMO",
+    "Maceió/Palmares Arpt, AL, BR",
+    "09/11 15:00Z"
+   ],
+   [
+    35,
+    "SBIZ",
+    "Imperatriz Arpt, TO, BR",
+    "09/11 19:00Z"
+   ]
+  ],
+  "tmin_top": [
+   [
+    9,
+    "SBCT",
+    "Curitiba/Pena Intl, PR, BR",
+    "10/11 03:00Z"
+   ],
+   [
+    11,
+    "SBBI",
+    "Curitiba/Bacacheri Arpt, PR, BR",
+    "10/11 10:00Z"
+   ],
+   [
+    13,
+    "SBBQ",
+    "Barbacena Arpt, MG, BR",
+    "10/11 12:00Z"
+   ],
+   [
+    13,
+    "SBCH",
+    "Chapecó Arpt, SC, BR",
+    "10/11 09:00Z"
+   ],
+   [
+    13,
+    "SBCO",
+    "Porto Alegre/Canoas, RS, BR",
+    "10/11 09:00Z"
+   ],
+   [
+    13,
+    "SBGR",
+    "Sao Paulo Intl, PR, BR",
+    "10/11 07:00Z"
+   ],
+   [
+    13,
+    "SBLO",
+    "Londrina Arpt, PR, BR",
+    "10/11 09:00Z"
+   ],
+   [
+    13,
+    "SBMG",
+    "Maringa Rgnl, PR, BR",
+    "10/11 09:00Z"
+   ],
+   [
+    13,
+    "SBMT",
+    "Campo de Marte Arpt, SP, BR",
+    "10/11 09:00Z"
+   ],
+   [
+    13,
+    "SBPF",
+    "Passo Fundo/Kurtz Arpt, RS, BR",
+    "10/11 10:00Z"
+   ]
+  ],
+  "rajada_kmh_top": [
+   [
+    63,
+    "SBMG",
+    "Maringa Rgnl, PR, BR",
+    "10/11 03:00Z",
+    "METAR SBMG 100300Z 09023G34KT CAVOK 18/11 Q1022"
+   ],
+   [
+    57,
+    "SBKP",
+    "Campinas/Viracopos Arpt, SP, BR",
+    "09/11 17:00Z",
+    "METAR SBKP 091700Z 13019G31KT 9999 SCT035 22/13 Q1024"
+   ],
+   [
+    56,
+    "SBVH",
+    "Vilhena Arpt, RO, BR",
+    "09/11 19:00Z",
+    "METAR SBVH 091900Z 28020G30KT 5000 2000SE -TSRA BR SCT008 SCT035 FEW040CB BKN100 21/21 Q1019"
+   ],
+   [
+    52,
+    "SBCA",
+    "Cascavel Arpt, PR, BR",
+    "10/11 11:00Z",
+    "METAR SBCA 101100Z 07018G28KT CAVOK 17/10 Q1024"
+   ],
+   [
+    50,
+    "SBUF",
+    "Paulo Afonso Arpt, BA, BR",
+    "09/11 21:00Z",
+    "METAR SBUF 092100Z AUTO 13017G27KT CAVOK 36/20 Q1013"
+   ],
+   [
+    50,
+    "SBPJ",
+    "Palmas/Rodrigues Arpt, TP, BR",
+    "09/11 21:40Z",
+    "SPECI SBPJ 092140Z 07017G27KT 3000 +TSRA SCT010 SCT020 SCT027CB BKN028 24/22 Q1016 RERA"
+   ],
+   [
+    46,
+    "SBCG",
+    "Campo Grande Intl, MS, BR",
+    "10/11 09:00Z",
+    "METAR SBCG 100900Z 08014G25KT CAVOK 19/15 Q1019"
+   ],
+   [
+    44,
+    "SBSG",
+    "Natal/Alves Intl, RN, BR",
+    "10/11 13:00Z",
+    "METAR SBSG 101300Z 10014G24KT 070V160 9999 BKN033 31/23 Q1018"
+   ],
+   [
+    43,
+    "SBIL",
+    "Ilheus/Amado Arpt, BA, BR",
+    "09/11 15:00Z",
+    "METAR SBIL 091500Z 19012G23KT 9999 FEW023TCU BKN050 27/23 Q1019"
+   ],
+   [
+    37,
+    "SBPS",
+    "Porto Seguro Arpt, BA, BR",
+    "09/11 17:00Z",
+    "METAR SBPS 091700Z 17010G20KT 120V210 9999 SCT020 BKN050 25/20 Q1019"
+   ],
+   [
+    30,
+    "SBGO",
+    "Goiania/Genoveva Arpt, GO, BR",
+    "09/11 17:08Z",
+    "SPECI SBGO 091708Z 33006G16KT 9999 FEW030 BKN100 25/22 Q1020"
+   ]
+  ],
+  "ur_min_top": [
+   [
+    16,
+    "SBUF",
+    "Paulo Afonso Arpt, BA, BR",
+    "09/11 19:00Z",
+    40
+   ],
+   [
+    27,
+    "SBPL",
+    "Petrolina Arpt, PE, BR",
+    "09/11 19:00Z",
+    38
+   ],
+   [
+    28,
+    "SBTE",
+    "Teresina Arpt, PI, BR",
+    "09/11 19:00Z",
+    39
+   ],
+   [
+    31,
+    "SBJU",
+    "Juazeiro do Norte/Menezes Arpt, CE, BR",
+    "09/11 21:00Z",
+    36
+   ],
+   [
+    36,
+    "SBBG",
+    "Bage/Kraemer Arpt, RS, BR",
+    "09/11 19:00Z",
+    25
+   ],
+   [
+    37,
+    "SBBV",
+    "Boa Vista Arpt, RR, BR",
+    "09/11 19:00Z",
+    37
+   ],
+   [
+    38,
+    "SBCO",
+    "Porto Alegre/Canoas, RS, BR",
+    "09/11 17:00Z",
+    24
+   ],
+   [
+    38,
+    "SBPF",
+    "Passo Fundo/Kurtz Arpt, RS, BR",
+    "09/11 21:00Z",
+    23
+   ],
+   [
+    38,
+    "SBSM",
+    "Santa Maria Arpt, RS, BR",
+    "09/11 18:00Z",
+    24
+   ],
+   [
+    39,
+    "SBKG",
+    "Campina Grande Arpt, PB, BR",
+    "09/11 18:00Z",
+    34
+   ],
+   [
+    39,
+    "SBPA",
+    "Porto Alegre/Filho Intl, RS, BR",
+    "09/11 17:00Z",
+    25
+   ],
+   [
+    44,
+    "SBHT",
+    "Altamira Arpt, PA, BR",
+    "09/11 19:00Z",
+    36
+   ]
+  ],
+  "trovoada": [
+   "SBAN Anapolis, GO, BR",
+   "SBBR Brasília Intl, DF, BR",
+   "SBCC Cachimbo Arpt, PA, BR",
+   "SBEG Manaus/Gomes Intl, AM, BR",
+   "SBGO Goiania/Genoveva Arpt, GO, BR",
+   "SBIH Itaituba Arpt, PA, BR",
+   "SBIZ Imperatriz Arpt, TO, BR",
+   "SBJU Juazeiro do Norte/Menezes Arpt, CE, BR",
+   "SBMA Marabá Arpt, PA, BR",
+   "SBMN Manaus/Ponta Peleda, AM, BR",
+   "SBMQ Macapá Intl, AP, BR",
+   "SBPJ Palmas/Rodrigues Arpt, TP, BR",
+   "SBTE Teresina Arpt, PI, BR",
+   "SBTF Tefé Arpt, AM, BR",
+   "SBUL Uberlandia Arpt, MG, BR",
+   "SBVH Vilhena Arpt, RO, BR"
+  ]
+ }
+}
