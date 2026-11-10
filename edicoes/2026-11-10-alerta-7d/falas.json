@@ -1,0 +1,52 @@
+[
+ {
+  "id": "f1",
+  "fala": "Atenção: na quinta, duas mil quinhentas e setenta e quatro cidades estão em alerta de tempestade. É o alerta da semana, terça, dez de novembro.",
+  "legenda": "Atenção: na quinta, 2.574 cidades estão em alerta de tempestade. É o alerta da semana, terça, 10 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "São Paulo tem seiscentas e quarenta e cinco delas. Minas, quatrocentas e noventa e quatro. O Paraná, trezentas e vinte e duas cidades.",
+  "legenda": "São Paulo tem 645 delas. Minas, 494. O Paraná, 322 cidades."
+ },
+ {
+  "id": "f3",
+  "fala": "O INMET avisa: até cinquenta milímetros num dia, vento de até sessenta quilômetros por hora e granizo.",
+  "legenda": "O INMET avisa: até 50 milímetros num dia, vento de até 60 quilômetros por hora e granizo."
+ },
+ {
+  "id": "f4",
+  "fala": "E a tempestade já começa amanhã: oitocentas e quarenta e duas cidades em alerta. Em setenta e oito, no Centro-Oeste, o alerta é de perigo, com vento de até cem quilômetros por hora.",
+  "legenda": "E a tempestade já começa amanhã: 842 cidades em alerta. Em 78, no Centro-Oeste, o alerta é de perigo, com vento de até 100 quilômetros por hora."
+ },
+ {
+  "id": "f5",
+  "fala": "No Mato Grosso do Sul, a chuva pode somar cento e vinte e um milímetros em sete dias, setenta e quatro milímetros só na segunda. Campo Grande pode passar de noventa milímetros.",
+  "legenda": "No Mato Grosso do Sul, a chuva pode somar 121 milímetros em 7 dias, 74 milímetros só na segunda. Campo Grande pode passar de 90 milímetros."
+ },
+ {
+  "id": "f6",
+  "fala": "No sul gaúcho, a terça que vem pode trazer cento e catorze milímetros num dia só, com rajadas de setenta e cinco quilômetros por hora.",
+  "legenda": "No sul gaúcho, a terça que vem pode trazer 114 milímetros num dia só, com rajadas de 75 quilômetros por hora."
+ },
+ {
+  "id": "f7",
+  "fala": "No Piauí, o calor dispara: Teresina pode atingir quase quarenta graus na sexta.",
+  "legenda": "No Piauí, o calor dispara: Teresina pode atingir quase 40 graus na sexta."
+ },
+ {
+  "id": "f8",
+  "fala": "Se prepare: não fique debaixo de árvore, tire o carro de perto de placas e, na emergência, ligue cento e noventa e nove, da Defesa Civil.",
+  "legenda": "Se prepare: não fique debaixo de árvore, tire o carro de perto de placas e, na emergência, ligue 199, da Defesa Civil."
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
