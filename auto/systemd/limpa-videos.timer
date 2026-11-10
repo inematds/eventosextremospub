@@ -1,0 +1,9 @@
+[Unit]
+Description=eventosextremospub — limpeza de vídeos com mais de 10 dias, todo dia às 04:40
+
+[Timer]
+OnCalendar=*-*-* 04:40:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

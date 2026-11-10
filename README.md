@@ -52,6 +52,7 @@ Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): C
 | 7 | Bot v3 | vídeo + link + pontos do `yt.txt` | ⚙️ |
 | 8 | Instagram + TikTok | só o vídeo COM avatar (Nei, 05/11/2026), `auto/metritds.sh <edição> <vídeo>` → release `social` deste repo → `claude -p` agenda no Instagram eventos.extremos (Reel até 180 s) e no TikTok eventos.extremos, marca eventosextremos (metritds; nunca no inema.tds) em agora + 10 min → faixa azul no v3. `SEM_TIKTOK=1` pula | ⚙️🤖 |
 | 9 | git | arquivos leves da edição, autor inematds, push | ⚙️ |
+| 10 | Limpeza | `auto/limpa-videos.sh --aplicar` todo dia às 04:40 (timer `limpa-videos`): apaga os `.mp4` das edições com mais de 10 dias (Nei, 09/11/2026); roteiro, dados e o que o git rastreia ficam. Sem `--aplicar` só mostra | ⚙️ |
 
 ## Uso (uma edição)
 

@@ -1,0 +1,7 @@
+[Unit]
+Description=eventosextremospub — apaga vídeos das edições com mais de 10 dias
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projetos/eventosextremospub
+ExecStart=%h/projetos/eventosextremospub/auto/limpa-videos.sh --aplicar
