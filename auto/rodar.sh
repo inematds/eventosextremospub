@@ -28,24 +28,38 @@ esac
 MOTOR=motor; [ "$MODO" = sul ] && MOTOR=motor-sul  # Impacto Sul tem motor próprio com micro clipes (Nei, 07/11/2026: "fazer a cópia e montar um motor novo")
 ED="${ED:-$RAIZ/edicoes/$DIA-$SUF}"; mkdir -p "$ED/pesquisa/bruto" "$ED/avatar"
 LOG="$ED/rodada.log"; exec >>"$LOG" 2>&1
+# placar da máquina (~/projetos/wifi/scripts/rodada, 09/11/2026): início e fim de TODA rodada (publicado | sem_pauta | falhou | ocupado | ok),
+# com a unidade do timer que chamou. Sem o comando (VPS6) não faz nada. RODADA_UNIDADE=teste-... nos ensaios. O trap grava "falhou"
+# se a saída não passou por fim(); publicado só com URL do YouTube de verdade.
+case "$MODO" in 24h) UNIDADE=clima24h-diario ;; previsao) UNIDADE=previsao-dia ;; *) UNIDADE="clima-$MODO" ;; esac
+RODADA="$HOME/projetos/wifi/scripts/rodada"; UNIDADE="${RODADA_UNIDADE:-$UNIDADE}"; EDN="$(basename "$ED")"; FIM_GRAVADO=""
+placar() { if [ -x "$RODADA" ]; then "$RODADA" "$@" || true; fi; }
+fim() { FIM_GRAVADO=1; placar fim "$UNIDADE" "$1" --edicao "$EDN" "${@:2}"; }
+trap 'rc=$?; [ -z "$FIM_GRAVADO" ] && placar fim "$UNIDADE" falhou --edicao "$EDN" --motivo "saída inesperada (código $rc)"' EXIT
+placar inicio "$UNIDADE" "$EDN"
+VAGA="$RAIZ/motor/vaga.sh"  # passos pesados na vaga da máquina (motor/vaga.sh → wifi/scripts/fila-vaga); 75 = máquina ocupada
 exec 8>"$RAIZ/auto/.rodando"; if [ "${SEM_TRAVA:-}" = 1 ]; then echo "SEM_TRAVA=1: roda junto com outra rodada (piloto)"
 elif [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then :  # esperam a fonte fora da fila; pegam a trava no passo 0e (08/11/2026)
 elif [ "$MODO" = semana ] || [ "$MODO" = alerta ] || [ "$MODO" = mundo ] || [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; then  # a de domingo espera (até 3 h) a outra rodada em vez de sumir calada
-  flock -w "$({ [ "$MODO" = previsao ] || [ "$MODO" = alerta ] || [ "$MODO" = semana ]; } && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
-else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
+  flock -w "$({ [ "$MODO" = previsao ] || [ "$MODO" = alerta ] || [ "$MODO" = semana ]; } && echo 21600 || echo 10800)" 8 || { echo "outra rodada segurou a trava por horas"; fim ocupado --motivo "outra rodada do clima segurou a trava por horas"; exit 1; }  # a previsão (10:00) pega o clima 24h ainda no avatar: espera até 6 h
+else flock -w 10800 8 || { echo "outra rodada segurou a trava por horas"; fim ocupado --motivo "outra rodada do clima segurou a trava por horas"; exit 1; }; fi  # uma por vez: espera a outra (Nei, 16/10/2026)
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH" DISPLAY="${DISPLAY:-:99}"
 echo "=== $(date '+%F %T') $ROT $DIA"
-grep -qx "$DIA$(case "$MODO" in semana|alerta|mundo|dia|previsao|sul) echo " $MODO";; esac)" "$RAIZ/auto/pular.txt" 2>/dev/null && { echo "pulado (auto/pular.txt)"; exit 0; }
+grep -qx "$DIA$(case "$MODO" in semana|alerta|mundo|dia|previsao|sul) echo " $MODO";; esac)" "$RAIZ/auto/pular.txt" 2>/dev/null && { echo "pulado (auto/pular.txt)"; fim sem_pauta --motivo "pulado (auto/pular.txt)"; exit 0; }
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
 DRY=""; [ "${SEM_BOT:-}" = 1 ] && DRY=--dry-run
 DATA_BR=$(date -d "$DIA" +%d/%m/%Y)
 
-avisar() {  # manda texto ao bot e sai
+avisar() {  # manda texto ao bot e sai; placar: código 0 = sem_pauta, senão falhou (ou o 3º argumento)
   echo "$1" > "$ED/aviso.txt"; rm -f "$ED/aviso.txt.envio-v3.json"
   node "$BOT" $DRY "$ED/aviso.txt" "$ROT · $DATA_BR
 $1" || echo "falhou o envio do aviso"
+  local r="${3:-}"; [ -n "$r" ] || { [ "${2:-1}" = 0 ] && r=sem_pauta || r=falhou; }
+  fim "$r" --motivo "$(printf %s "$1" | tr '\n' ' ' | cut -c1-200)"
   echo "AVISO: $1"; exit "${2:-1}"
 }
+# máquina ocupada (a vaga não abriu a tempo, saída 75): avisa e sai limpo; refazer depois reaproveita o que já está na edição
+ocupado() { avisar "máquina ocupada: $1 não pegou vaga a tempo (fila-vaga saiu 75); refazer com auto/rodar.sh $DIA $MODO" 0 ocupado; }
 
 # 0. modelo = a edição mais recente do mesmo modo antes de hoje (a 1ª de domingo parte da última clima 24h)
 modelo() { ls -d "$RAIZ"/edicoes/*-"$1" 2>/dev/null | grep -vx "$ED" | sort | while read -r p; do [ -f "$p/gerar_cena.py" ] && echo "$p"; done | tail -1; }  # pula edição que falhou cedo (pasta sem gerar_cena.py; alerta/semana 08/11)
@@ -62,6 +76,7 @@ echo "modelo: $PREV"
 if [ "$MODO" = dia ]; then
   bash "$RAIZ/auto/boletim.sh" "$ED" "$DIA" > "$ED/pesquisa/boletim.log" 2>&1; RC=$?
   [ "$RC" = 3 ] && avisar "sem boletim de meteorologia hoje até as 17h; não saiu Clima do DIA" 0
+  [ "$RC" = 75 ] && ocupado "o Whisper do boletim"
   [ "$RC" = 0 ] || avisar "falhou o boletim do dia: $(tail -1 "$ED/pesquisa/boletim.log")"
 fi
 
@@ -69,6 +84,7 @@ fi
 if [ "$MODO" = previsao ]; then
   bash "$RAIZ/auto/fonte-previsao.sh" "$ED" "$DIA" > "$ED/pesquisa/fonte.log" 2>&1; RC=$?
   [ "$RC" = 3 ] && avisar "sem vídeo novo de previsão hoje até as 12h (nem de ontem); não saiu Previsão do Dia" 0
+  [ "$RC" = 75 ] && ocupado "o Whisper da fonte da previsão"
   [ "$RC" = 0 ] || avisar "falhou a fonte da previsão: $(tail -1 "$ED/pesquisa/fonte.log")"
 fi
 
@@ -76,6 +92,7 @@ fi
 if [ "$MODO" = sul ]; then
   bash "$RAIZ/auto/fonte-sul.sh" "$ED" "$DIA" > "$ED/pesquisa/fonte.log" 2>&1; RC=$?
   [ "$RC" = 3 ] && avisar "nenhum vídeo de meteorologia do Sul publicado hoje; não saiu Impacto Sul" 0
+  [ "$RC" = 75 ] && ocupado "o Whisper das fontes do Impacto Sul"
   [ "$RC" = 0 ] || avisar "falhou a fonte do Impacto Sul: $(tail -1 "$ED/pesquisa/fonte.log")"
 fi
 
@@ -83,7 +100,7 @@ fi
 #     agora entram nela. Antes seguravam a vez horas esperando e travavam as outras rodadas (Nei, 08/11/2026)
 if [ "${SEM_TRAVA:-}" != 1 ] && { [ "$MODO" = dia ] || [ "$MODO" = previsao ] || [ "$MODO" = sul ]; }; then
   echo "$(date +%T) fonte pronta; entrando na fila"
-  flock -w 21600 8 || { echo "outra rodada segurou a trava por horas"; exit 1; }
+  flock -w 21600 8 || { echo "outra rodada segurou a trava por horas"; fim ocupado --motivo "outra rodada do clima segurou a trava por horas"; exit 1; }
   echo "$(date +%T) vez pega"
 fi
 
@@ -105,7 +122,7 @@ fi
 if [ "${REUSAR_ROTEIRO:-}" = 1 ] && [ -s "$ED/falas.json" ] && [ -s "$ED/video.mp4" ]; then
   echo "reusando falas.json e video.mp4 da edição"
 else
-  rm -f "$ED/ERRO.txt" "$ED/falas.json" "$ED/yt.txt" "$ED/video.mp4"
+  rm -f "$ED/ERRO.txt" "$ED/OCUPADO.txt" "$ED/falas.json" "$ED/yt.txt" "$ED/video.mp4"
   PROMPT=$(sed -e "s|{ED}|$ED|g" -e "s|{PREV}|$PREV|g" -e "s|{RAIZ}|$RAIZ|g" -e "s|{DATA_BR}|$DATA_BR|g" -e "s|{DIA}|$DIA|g" "$RAIZ/auto/$PROMPT_MD")
   ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
       --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
@@ -116,6 +133,8 @@ else
     ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
         --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro (2ª tentativa)"
   fi
+  # o narrar.py (voz local) e o montar.sh (render) do claude -p passam pela vaga da máquina; sem vaga a tempo ele grava OCUPADO.txt e para
+  [ -f "$ED/OCUPADO.txt" ] && ocupado "a voz/render da versão mapa (claude -p: $(head -c 150 "$ED/OCUPADO.txt" | tr '\n' ' '))"
   [ -f "$ED/ERRO.txt" ] && avisar "o roteiro não saiu: $(head -c 400 "$ED/ERRO.txt")"
 fi
 for f in falas.json yt.txt video.mp4 tempos.json; do
@@ -130,7 +149,7 @@ MORTE=$(grep -o -i -w -E "mort[eoa]s?|morreu|morreram|morrem|morrer|óbitos?|fal
 
 # 2b. PREVIA=1: manda ao bot a versão com FOTO do avatar enquanto o estúdio gera o avatar de verdade (Nei, 13/10/2026)
 if [ "${PREVIA:-}" = 1 ]; then
-  if bash "$RAIZ/auto/previa.sh" "$ED" > "$ED/previa.log" 2>&1; then
+  if RENDER_ESPERA_MIN="${RENDER_ESPERA_MIN:-30}" bash "$VAGA" render eventosextremospub-previa bash "$RAIZ/auto/previa.sh" "$ED" > "$ED/previa.log" 2>&1; then  # na vaga render (encode + compor_avatar)
     rm -f "$ED/video-previa.mp4.envio-v3.json"
     node "$BOT" $DRY "$ED/video-previa.mp4" "$ROT · $DATA_BR · PRÉVIA com foto do avatar (o avatar de verdade está sendo feito no estúdio; a versão final chega depois)
 $(head -1 "$ED/yt.txt")" || echo "falhou o envio da prévia"
@@ -167,7 +186,9 @@ if [ "${SEM_AVATAR:-}" != 1 ] && bash "$RAIZ/auto/avatar.sh" "$ED" "EVX-$DIA-$SU
   [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
   echo "vídeo com avatar ok"
 else
+  RC_AV=$?  # 75 = retempo (avatar.sh) ou render (compor_avatar.sh) sem vaga a tempo: máquina ocupada, não "sem avatar"
   [ -n "$VIGIA" ] && kill "$VIGIA" 2>/dev/null
+  [ "$RC_AV" = 75 ] && ocupado "o retempo/render do vídeo com avatar (o avatar baixado fica na edição)"
   V="$ED/video.mp4"
   if [ "${SEM_AVATAR:-}" = 1 ]; then NOTA="(teste sem avatar)"
   else
@@ -185,6 +206,7 @@ Em anexo a versão só com mapa. Para publicar assim ou refazer com o avatar, me
         && git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "$ROT $DATA_BR: sem avatar, não publicado ($MOTIVO)" \
         && git pull -q --rebase --autostash && git push -q ) || echo "git falhou"
     fi
+    fim falhou --motivo "sem avatar, não publicado: $(printf %s "${MOTIVO:-não registrado}" | cut -c1-180)"
     echo "=== fim sem avatar $(date '+%F %T')"; exit 5
   fi
   # o montar.sh deixa a versão mapa em ~-17 LUFS: sobe para -14 (padrão do YouTube) antes de publicar
@@ -242,4 +264,8 @@ if [ "${SEM_GIT:-}" != 1 ] && [ -z "$DRY" ]; then
   git add -- "${ARQ[@]}" && git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "$ROT $DATA_BR (rodada automática): $ST" \
     && { git pull -q --rebase --autostash && git push -q && echo "push ok"; } || echo "git falhou"
 fi
+# placar: publicado só com URL do YouTube de verdade (código 0 ≠ publicou)
+if [ -n "$URL" ]; then fim publicado --url "$URL"
+elif [ "${SEM_YT:-}" = 1 ] || [ -n "$DRY" ]; then fim ok --motivo "ensaio sem YouTube (SEM_YT/SEM_BOT) $NOTA"
+else fim falhou --motivo "não publicou no lives10: $(grep -h -i 'erro\|error\|quota\|limit' "$ED/publicar.log" 2>/dev/null | tail -1 | cut -c1-150)"; fi
 echo "=== fim $(date '+%F %T')"

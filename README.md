@@ -54,6 +54,8 @@ Rodadas automáticas (`auto/rodar.sh <dia> <modo>`, timers em `auto/systemd`): C
 | 9 | git | arquivos leves da edição, autor inematds, push | ⚙️ |
 | 10 | Limpeza | `auto/limpa-videos.sh --aplicar` todo dia às 04:40 (timer `limpa-videos`): apaga os `.mp4` das edições com mais de 10 dias (Nei, 09/11/2026); roteiro, dados e o que o git rastreia ficam. Sem `--aplicar` só mostra | ⚙️ |
 
+Desde 09/11/2026 os passos pesados (Whisper local das fontes, voz local, retempo, render do mapa e do avatar, prévia) passam pela vaga da máquina (`motor/vaga.sh` → `~/projetos/wifi/scripts/fila-vaga`, no lugar do `.render.lock` quando a fila existe; saída 75 = máquina ocupada, avisa e sai) e cada rodada grava início e fim no placar (`~/projetos/wifi/scripts/rodada hoje`).
+
 ## Uso (uma edição)
 
 ```bash

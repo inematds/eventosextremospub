@@ -8,9 +8,17 @@ E="$(cd "$1" && pwd)"; SAIDA="${2:-$E/video-avatar.mp4}"
 MUSICA="${MUSICA:-$HOME/projetos/cardshorts/musicas/tensa.mp3}"
 A="$E/avatar/avatar.mp4"
 LAYOUT="${LAYOUT:-faixa}"   # faixa = 1080x608 em y=1110 (explicavideos) · canto = rosto 400x453 embaixo à direita · largo = 16:9, avatar 640x1080 à direita (cena com layout "largo")
+# Render na vaga render da MÁQUINA (motor/vaga.sh → ~/projetos/wifi/scripts/fila-vaga, 09/11/2026): o script inteiro (chromium + ffmpeg)
+# entra na vaga; já dentro dela (RENDER_FILA_DONO, ex.: prévia) roda direto. Espera RENDER_ESPERA_MIN (45 min); estourou → sai 75 =
+# máquina ocupada. Sem a fila instalada (VPS6) vale o .render.lock de antes.
+VAGA="$AQUI/../motor/vaga.sh"
+if [ -z "${RENDER_FILA_DONO:-}" ] && [ -x "${VAGA_CMD:-$HOME/projetos/wifi/scripts/fila-vaga}" ]; then
+  RENDER_ESPERA_MIN="${RENDER_ESPERA_MIN:-45}" exec bash "$VAGA" render "eventosextremospub-$(basename "$AQUI")-avatar" bash "$0" "$@"
+fi
+rlock() { if [ -n "${RENDER_FILA_DONO:-}" ]; then "$@"; else flock "$AQUI/../.render.lock" "$@"; fi; }
 mkdir -p "$E/build"
 # PULA_RENDER=1 reaproveita build/mapa-avatar.mp4 já renderizado (retomada depois de falha na montagem, 15/10/2026)
-[ "${PULA_RENDER:-}" = 1 ] && [ -s "$E/build/mapa-avatar.mp4" ] || { flock "$AQUI/../.render.lock" node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4" || { echo "render falhou (rc $?); tentando de novo" >&2; flock "$AQUI/../.render.lock" node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4"; }; }  # 2ª tentativa (08/11/2026)
+[ "${PULA_RENDER:-}" = 1 ] && [ -s "$E/build/mapa-avatar.mp4" ] || { rlock node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4" || { echo "render falhou (rc $?); tentando de novo" >&2; rlock node "$AQUI/render.mjs" "$E" "$E/build/mapa-avatar.mp4"; }; }  # 2ª tentativa (08/11/2026)
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$A")
 # fade só na música: o HeyGen termina logo após a última palavra e o fade na mistura engolia o CTA
 FADE=$(python3 -c "print(max(0, $D - 1.4))")

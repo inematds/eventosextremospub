@@ -7,6 +7,7 @@
 # O script do estúdio recusa oferta de troca de plano (o Nei NUNCA troca de plano).
 set -euo pipefail
 E="$(cd "$1" && pwd)"; TITULO="$2"
+VAGA="$(cd "$(dirname "$0")/.." && pwd)/motor/vaga.sh"  # passo pesado (retempo) na vaga da máquina; ED pode estar fora do repo
 A="$E/avatar"; mkdir -p "$A"
 PERFIL="$HOME/.cache/inemaccbot/perfil-heygen"
 ENG="$HOME/projetos/explicavideos/engine"
@@ -53,5 +54,9 @@ tenta(){ local log="$1" k; shift
     || { echo "ERRO ao baixar: $(tail -1 "$A/baixar.log")"; exit 4; }
 )
 # a transcrição (Whisper) às vezes falha com a GPU disputada (10/10/2026): tenta 3 vezes
-for k in 1 2 3; do python3 "$A/retempo.py" && exit 0; echo "retempo falhou ($k/3)"; sleep 60; done
+# retempo na vaga gpu da máquina (motor/vaga.sh → wifi/scripts/fila-vaga, 09/11/2026), depois do download; 75 = máquina ocupada (sai 75)
+for k in 1 2 3; do
+  GPU_ESPERA_MIN="${GPU_ESPERA_MIN:-60}" bash "$VAGA" gpu eventosextremospub-retempo python3 "$A/retempo.py" && exit 0
+  rc=$?; [ "$rc" = 75 ] && { echo "ERRO: máquina ocupada (vaga gpu) no retempo"; exit 75; }
+  echo "retempo falhou ($k/3)"; sleep 60; done
 echo "ERRO: retempo falhou 3 vezes"; exit 6

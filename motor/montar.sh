@@ -4,8 +4,16 @@ set -euo pipefail
 AQUI="$(cd "$(dirname "$0")" && pwd)"
 E="$(cd "$1" && pwd)"; SAIDA="${2:-$E/video.mp4}"
 MUSICA="${MUSICA:-$HOME/projetos/cardshorts/musicas/tensa.mp3}"
+# Render na vaga render da MÁQUINA (motor/vaga.sh → ~/projetos/wifi/scripts/fila-vaga, 09/11/2026): o script inteiro (chromium + ffmpeg)
+# entra na vaga; já dentro dela (RENDER_FILA_DONO) roda direto. Espera RENDER_ESPERA_MIN (20 min: o claude -p roda o montar com
+# timeout de 50 min); estourou → sai 75 = máquina ocupada. Sem a fila instalada (VPS6) vale o .render.lock de antes.
+VAGA="$AQUI/../motor/vaga.sh"
+if [ -z "${RENDER_FILA_DONO:-}" ] && [ -x "${VAGA_CMD:-$HOME/projetos/wifi/scripts/fila-vaga}" ]; then
+  RENDER_ESPERA_MIN="${RENDER_ESPERA_MIN:-20}" exec bash "$VAGA" render "eventosextremospub-$(basename "$AQUI")-mapa" bash "$0" "$@"
+fi
+rlock() { if [ -n "${RENDER_FILA_DONO:-}" ]; then "$@"; else flock "$AQUI/../.render.lock" "$@"; fi; }
 mkdir -p "$E/build"
-flock "$AQUI/../.render.lock" node "$AQUI/render.mjs" "$E" "$E/build/mapa.mp4"
+rlock node "$AQUI/render.mjs" "$E" "$E/build/mapa.mp4"
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$E/narracao.wav")
 FADE=$(python3 -c "print(max(0, $D - 1.4))")
 ffmpeg -v error -y -i "$E/build/mapa.mp4" -i "$E/narracao.wav" -stream_loop -1 -i "$MUSICA" -filter_complex \

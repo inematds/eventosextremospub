@@ -106,7 +106,7 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
    - Painéis e contadores por cima das cenas (faixa escura, número em amarelo), chegando ao número QUANDO a palavra é dita
      (`ini = em(palavra) - 1.0`, `dur = 1.0`). Cuidado para o painel não cobrir o centro da cena real.
 4. Versão mapa, na pasta da edição:
-   `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}`
+   `bash {RAIZ}/motor/vaga.sh gpu eventosextremospub-tts python3 narrar.py` → tempos.json e narração (voz do Nei, local; entra na vaga gpu da máquina e pode esperar a vez até 30 min: rode com timeout longo ou em segundo plano e espere terminar. Se ele ou o montar.sh saírem com código 75 ou com "ocupada além do tempo de espera", a máquina está ocupada: grave OCUPADO.txt com essa linha e PARE, sem tentar de novo nem rodar fora da vaga); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}`
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor-sul/montar.sh {ED}` (motor PRÓPRIO do Impacto Sul; nunca mexa em {RAIZ}/motor/, que é dos outros vídeos diários) → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada estado, cta) e OLHE as imagens (Read): data na

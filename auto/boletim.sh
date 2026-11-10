@@ -35,8 +35,10 @@ mv "$M" "$F/video.mp4"; rm -rf "$F/dl"
 python3 "$AUTO/groq_transcrever.py" "$F/video.mp4" "$F" > "$F/groq.log" 2>&1 && { echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (Groq)"; exit 0; }
 echo "Groq: $(tail -1 "$F/groq.log")"
 for k in 1 2 3; do  # GPU disputada por outras narrações: tenta de novo
-  timeout 5400 python3 transcrever_v1.py --in "$F/video.mp4" --outdir "$F" --whisper-model large-v3 --src pt > "$F/transcrever.log" 2>&1 \
-    && [ -s "$F/transcript.txt" ] && break; sleep 120
+  # Whisper local na vaga gpu da máquina (motor/vaga.sh → wifi/scripts/fila-vaga, 09/11/2026); 75 = máquina ocupada → sai 75
+  GPU_ESPERA_MIN="${GPU_ESPERA_MIN:-60}" bash "$AUTO/../motor/vaga.sh" gpu eventosextremospub-whisper timeout 5400 python3 transcrever_v1.py --in "$F/video.mp4" --outdir "$F" --whisper-model large-v3 --src pt > "$F/transcrever.log" 2>&1; rc=$?
+  [ "$rc" = 75 ] && { echo "máquina ocupada: a vaga gpu não abriu a tempo para o Whisper"; exit 75; }
+  [ "$rc" = 0 ] && [ -s "$F/transcript.txt" ] && break; sleep 120
 done
 [ -s "$F/transcript.txt" ] || { echo "transcrição falhou: $(tail -1 "$F/transcrever.log")"; exit 1; }
 echo "transcrito: $(wc -w < "$F/transcript.txt") palavras"

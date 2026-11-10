@@ -44,7 +44,7 @@ A pessoa precisa saber o que vem para se preparar. O Nei fala como quem dá um A
    - Granizo, vendaval, enchente → imagem realista de impacto do Codex (selo "ilustração") no momento da palavra; nunca desenho SVG do fenômeno.
    - Contador chega ao número QUANDO a palavra é dita (`ini = em(palavra) - 1.0`, `dur = 1.0`; confira em tempos.json e avatar/tempos.json). Uma troca visual por fala.
 4. Versão mapa, na pasta da edição:
-   `python3 narrar.py` → tempos.json e narração (voz do Nei, local); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}` (1 s de pausa antes de "De que região...": Nei, 15/10/2026, a pergunta saía colada no assunto)
+   `bash {RAIZ}/motor/vaga.sh gpu eventosextremospub-tts python3 narrar.py` → tempos.json e narração (voz do Nei, local; entra na vaga gpu da máquina e pode esperar a vez até 30 min: rode com timeout longo ou em segundo plano e espere terminar. Se ele ou o montar.sh saírem com código 75 ou com "ocupada além do tempo de espera", a máquina está ocupada: grave OCUPADO.txt com essa linha e PARE, sem tentar de novo nem rodar fora da vaga); logo depois `python3 {RAIZ}/motor/pausa_pergunta.py {ED}` (1 s de pausa antes de "De que região...": Nei, 15/10/2026, a pergunta saía colada no assunto)
    `python3 gerar_cena.py`
    `cd {RAIZ} && GEO=geo-br.js motor/montar.sh {ED}` → video.mp4
    Confira: ffprobe (1080x1920), extraia uns 8 quadros (abertura, cada região, cta) e OLHE as imagens (Read). Verifique: data grande na abertura, contadores no número certo, pino sem ficar atrás de painel, borda do satélite não aparecendo, legenda legível. Corrija e renderize de novo se precisar.
