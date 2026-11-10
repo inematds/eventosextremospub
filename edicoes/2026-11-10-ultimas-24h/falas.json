@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Terça-feira, dez de novembro. Temporal alaga Goiânia, cento e dezenove milímetros na Bahia e menos de um grau em Santa Catarina.",
+  "legenda": "Terça-feira, 10 de novembro. Temporal alaga Goiânia, 119 milímetros na Bahia e menos de 1 grau em Santa Catarina."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Goiânia, quase setenta milímetros em duas horas. Parte da Marginal Botafogo cedeu e carros ficaram submersos.",
+  "legenda": "Em Goiânia, quase 70 milímetros em 2 horas. Parte da Marginal Botafogo cedeu e carros ficaram submersos."
+ },
+ {
+  "id": "f3",
+  "fala": "Bom Jesus da Lapa, na Bahia, recebeu cento e dezenove milímetros em vinte e quatro horas. Simolândia, em Goiás, cento e sete milímetros.",
+  "legenda": "Bom Jesus da Lapa, na Bahia, recebeu 119 milímetros em 24 horas. Simolândia, em Goiás, 107 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No Sul, o ar polar levou Bom Jardim da Serra a zero vírgula nove grau, com geada na serra catarinense.",
+  "legenda": "No Sul, o ar polar levou Bom Jardim da Serra a 0,9 grau, com geada na serra catarinense."
+ },
+ {
+  "id": "f5",
+  "fala": "No Nordeste, o oposto: quarenta e um graus em Paulo Afonso e trinta e nove graus em Teresina.",
+  "legenda": "No Nordeste, o oposto: 41 graus em Paulo Afonso e 39 graus em Teresina."
+ },
+ {
+  "id": "f6",
+  "fala": "Em Sergipe, a seca atinge oitenta e duas mil pessoas, com catorze cidades em emergência.",
+  "legenda": "Em Sergipe, a seca atinge 82 mil pessoas, com 14 cidades em emergência."
+ },
+ {
+  "id": "f7",
+  "fala": "No fogo, mil duzentos e dezenove focos na segunda, oitocentos e vinte e nove no Pará.",
+  "legenda": "No fogo, 1.219 focos na segunda, 829 no Pará."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Alerta amarelo do INMET de tempestade em seiscentas e cinquenta e quatro cidades, de Goiás ao Piauí, e de chuva acumulada no litoral da Bahia.",
+  "legenda": "E hoje? Alerta amarelo do INMET de tempestade em 654 cidades, de Goiás ao Piauí, e de chuva acumulada no litoral da Bahia."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: o Centro-Oeste deve acumular mais, a próxima segunda deve ser o dia mais chuvoso, e Teresina deve passar de trinta e nove graus na sexta.",
+  "legenda": "Os próximos 7 dias: o Centro-Oeste deve acumular mais, a próxima segunda deve ser o dia mais chuvoso, e Teresina deve passar de 39 graus na sexta."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de quinze mil milímetros. Em sete dias, as capitais devem somar oitocentos e setenta e três milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 15 mil milímetros. Em 7 dias, as capitais devem somar 873 milímetros."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
