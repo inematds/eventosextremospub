@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quarta-feira, onze de novembro. Ventania destelha casas na Grande Belém, setenta e um milímetros no Tocantins e alerta laranja de tempestade no Centro-Oeste.",
+  "legenda": "Quarta-feira, 11 de novembro. Ventania destelha casas na Grande Belém, 71 milímetros no Tocantins e alerta laranja de tempestade no Centro-Oeste."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Belém, rajada de sessenta e nove quilômetros por hora, e parte de uma passarela do BRT caiu sobre um ônibus. Em Ananindeua, casas e a igreja matriz perderam o telhado.",
+  "legenda": "Em Belém, rajada de 69 quilômetros por hora, e parte de uma passarela do BRT caiu sobre um ônibus. Em Ananindeua, casas e a igreja matriz perderam o telhado."
+ },
+ {
+  "id": "f3",
+  "fala": "No Tocantins, Araguaína recebeu setenta e um milímetros. Em Goiás, Uruana teve setenta e um milímetros e Aparecida de Goiânia, cinquenta e oito milímetros.",
+  "legenda": "No Tocantins, Araguaína recebeu 71 milímetros. Em Goiás, Uruana teve 71 milímetros e Aparecida de Goiânia, 58 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No Sul, o ar frio segurou Curitiba em dez graus na madrugada de terça.",
+  "legenda": "No Sul, o ar frio segurou Curitiba em 10 graus na madrugada de terça."
+ },
+ {
+  "id": "f5",
+  "fala": "No calor, trinta e sete graus em Paulo Afonso, na Bahia, e em Boa Vista, Roraima.",
+  "legenda": "No calor, 37 graus em Paulo Afonso, na Bahia, e em Boa Vista, Roraima."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, trezentos e trinta e três focos na terça, sessenta e quatro no Ceará.",
+  "legenda": "No fogo, 333 focos na terça, 64 no Ceará."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Alerta laranja de tempestade em setenta e oito cidades de Mato Grosso do Sul, Mato Grosso e Goiás, com vento de até cem quilômetros por hora. Ao todo, oitocentas e quarenta e duas cidades têm aviso de tempestade.",
+  "legenda": "E hoje? Alerta laranja de tempestade em 78 cidades de Mato Grosso do Sul, Mato Grosso e Goiás, com vento de até 100 quilômetros por hora. Ao todo, 842 cidades têm aviso de tempestade."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: o Norte deve acumular mais, a próxima terça deve ser o dia mais chuvoso, e Teresina deve passar de quarenta graus no sábado.",
+  "legenda": "Os próximos 7 dias: o Norte deve acumular mais, a próxima terça deve ser o dia mais chuvoso, e Teresina deve passar de 40 graus no sábado."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram quase oito mil milímetros. Em sete dias, as capitais devem somar quase novecentos milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram quase 8 mil milímetros. Em 7 dias, as capitais devem somar quase 900 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
