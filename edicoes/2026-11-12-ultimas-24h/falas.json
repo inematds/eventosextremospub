@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quinta-feira, doze de novembro. Mais de cem milímetros de chuva no sul da Bahia, e o fogo mais que triplicou no Brasil em um dia.",
+  "legenda": "Quinta-feira, 12 de novembro. Mais de 100 milímetros de chuva no sul da Bahia, e o fogo mais que triplicou no Brasil em um dia."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Santa Cruz Cabrália, cento e vinte e quatro milímetros em vinte e quatro horas. Em Porto Seguro, cento e dezessete milímetros. O Inema mantém alerta de alagamento e deslizamento.",
+  "legenda": "Em Santa Cruz Cabrália, 124 milímetros em 24 horas. Em Porto Seguro, 117 milímetros. O Inema mantém alerta de alagamento e deslizamento."
+ },
+ {
+  "id": "f3",
+  "fala": "No fogo, mil e trinta e oito focos na quarta, contra trezentos e trinta e três na terça. Só o Maranhão teve quatrocentos e vinte e um focos.",
+  "legenda": "No fogo, 1.038 focos na quarta, contra 333 na terça. Só o Maranhão teve 421 focos."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Rondônia, Colorado do Oeste recebeu cinquenta e sete milímetros.",
+  "legenda": "Em Rondônia, Colorado do Oeste recebeu 57 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No calor, trinta e sete graus em Teresina, no Piauí, e em Paulo Afonso, na Bahia.",
+  "legenda": "No calor, 37 graus em Teresina, no Piauí, e em Paulo Afonso, na Bahia."
+ },
+ {
+  "id": "f6",
+  "fala": "Em Campo Grande, rajada de quarenta e oito quilômetros por hora, e trovoada em vinte aeroportos.",
+  "legenda": "Em Campo Grande, rajada de 48 quilômetros por hora, e trovoada em 20 aeroportos."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Aviso amarelo de tempestade em duas mil quatrocentas e sessenta e quatro cidades, com granizo e vento de até sessenta quilômetros por hora. No litoral da Bahia, aviso de chuva acumulada em setenta e uma cidades.",
+  "legenda": "E hoje? Aviso amarelo de tempestade em 2.464 cidades, com granizo e vento de até 60 quilômetros por hora. No litoral da Bahia, aviso de chuva acumulada em 71 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: o Centro-Oeste deve acumular mais, a próxima segunda deve ser o dia mais chuvoso, e Teresina deve chegar perto de quarenta graus no sábado.",
+  "legenda": "Os próximos 7 dias: o Centro-Oeste deve acumular mais, a próxima segunda deve ser o dia mais chuvoso, e Teresina deve chegar perto de 40 graus no sábado."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de cinco mil milímetros. Em sete dias, as capitais devem somar mais de novecentos milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 5 mil milímetros. Em 7 dias, as capitais devem somar mais de 900 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

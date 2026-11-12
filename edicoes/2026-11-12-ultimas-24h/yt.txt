@@ -1,0 +1,8 @@
+Clima 24 h 12/11: 124 mm no sul da Bahia e fogo triplica no Brasil
+Extremo sul da Bahia (CEMADEN, 24 h até 12/11 05h30): Santa Cruz Cabrália 124 mm, Porto Seguro 117 mm, Prado 53 mm, Alcobaça 41 mm; o Inema mantém alerta de alagamento, enxurrada e deslizamento (Correio, 11/11).
+Fogo: 1.038 focos em 11/11 no satélite de referência do INPE, contra 333 na véspera; Maranhão 421, Pará 276.
+Rondônia: Colorado do Oeste com 57 mm (CEMADEN). Calor de 37 °C em Teresina (PI) e Paulo Afonso (BA); rajada de 48 km/h em Campo Grande e trovoada em 20 aeroportos (METAR da NOAA).
+Hoje (12/11): aviso amarelo do INMET de tempestade em 2.464 cidades (até 50 mm, vento de 40 a 60 km/h e granizo), nenhum laranja; chuva acumulada em 71 cidades do litoral da Bahia até 13/11. Amanhã (13/11): amarelo em 2.047 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o Centro-Oeste deve acumular mais (276,1 mm); segunda (16/11) deve ser o dia mais chuvoso (211,7 mm somados); Teresina com 39,3 °C previstos no sábado (14/11).
+Volumes: os pluviômetros do CEMADEN somaram mais de 5 mil mm em 24 h (soma, não chuva média); as capitais devem somar 934,4 mm em 7 dias.
+Fontes: CEMADEN, INPE, INMET, Inema, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
