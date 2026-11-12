@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Amanhã, setecentas e noventa e quatro cidades de Minas Gerais em alerta de tempestade. É a previsão desta quinta, doze de novembro.",
+  "legenda": "Amanhã, 794 cidades de Minas Gerais em alerta de tempestade. É a previsão desta quinta, 12 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Hoje não tem ciclone: uma baixa pressão fraca deixa o Sul quente e abafado, acima dos trinta graus.",
+  "legenda": "Hoje não tem ciclone: uma baixa pressão fraca deixa o Sul quente e abafado, acima dos 30 graus."
+ },
+ {
+  "id": "f3",
+  "fala": "À tarde, pancadas mal distribuídas. Em Santa Catarina, no norte gaúcho e no Paraná, um temporal isolado pode se formar.",
+  "legenda": "À tarde, pancadas mal distribuídas. Em Santa Catarina, no norte gaúcho e no Paraná, um temporal isolado pode se formar."
+ },
+ {
+  "id": "f4",
+  "fala": "No país, duas mil setecentas e quarenta e seis cidades em alerta de tempestade hoje, seiscentas e quarenta e cinco em São Paulo, com risco de granizo.",
+  "legenda": "No país, 2.746 cidades em alerta de tempestade hoje, 645 em São Paulo, com risco de granizo."
+ },
+ {
+  "id": "f5",
+  "fala": "Em São Paulo e Minas, pancadas à tarde e à noite. Em Mato Grosso, Goiás e no sudeste da Bahia, já pela manhã.",
+  "legenda": "Em São Paulo e Minas, pancadas à tarde e à noite. Em Mato Grosso, Goiás e no sudeste da Bahia, já pela manhã."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã, o alerta atinge duas mil trezentas e quarenta e três cidades. Setecentas e noventa e quatro só em Minas.",
+  "legenda": "Amanhã, o alerta atinge 2.343 cidades. 794 só em Minas."
+ },
+ {
+  "id": "f7",
+  "fala": "No Piauí, o calor dispara: Teresina pode chegar a quarenta graus no sábado.",
+  "legenda": "No Piauí, o calor dispara: Teresina pode chegar a 40 graus no sábado."
+ },
+ {
+  "id": "f8",
+  "fala": "No fim de semana, o sol predomina no Sul, em São Paulo e Mato Grosso do Sul, com calorão acima dos trinta graus.",
+  "legenda": "No fim de semana, o sol predomina no Sul, em São Paulo e Mato Grosso do Sul, com calorão acima dos 30 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Atenção para domingo, dia quinze: é o dia de maior risco de temporal. À tarde e à noite, pancadas voltam ao Sul.",
+  "legenda": "Atenção para domingo, dia 15: é o dia de maior risco de temporal. À tarde e à noite, pancadas voltam ao Sul."
+ },
+ {
+  "id": "f10",
+  "fala": "Semana que vem, a chuva fica mais frequente. Em sete dias, Cuiabá pode somar cento e dezenove milímetros.",
+  "legenda": "Semana que vem, a chuva fica mais frequente. Em 7 dias, Cuiabá pode somar 119 milímetros."
+ },
+ {
+  "id": "f11",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
