@@ -22,6 +22,11 @@ echo "== $(date '+%F %T') metritds $ED ($V)"
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
 
 ALVO=$(( $(date +%s) + 600 ))
+# trava de 1 h entre posts da mesma marca (Nei, 12/11/2026); INTERVALO_LIVRE=1 = o Nei autorizou juntar
+INT_ERRO=""
+if [ -z "${RASCUNHO:-}" ]; then
+  NOVO=$(python3 "$HOME/projetos/metricool-inematds/intervalo.py" --conector metricool-inematds --marca "eventosextremos" --alvo "$ALVO") && ALVO="$NOVO" || INT_ERRO=1
+fi
 QUANDO_UTC=$(date -u -d "@$ALVO" +%Y-%m-%dT%H:%M:00)   # UTC: o Metricool deslocou 1 h o horário local perto da meia-noite
 QUANDO_BR=$(TZ=America/Sao_Paulo date -d "@$ALVO" '+%d/%m %H:%M')
 
@@ -62,8 +67,10 @@ PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
    instagramData (só se instagram for válido) = {type: \"REEL\", showReelOnFeed: true, isAiGenerated: true}
 3) Responda APENAS uma linha JSON, sem crase: {\"ok\":true|false,\"redes\":[...],\"planner\":[plannerUrl...],\"erro\":\"texto do erro ou vazio\"}"
 cd "$ED"
+if [ -n "$INT_ERRO" ]; then OUT='{"ok":false,"erro":"trava de 1 h: não consegui ler a agenda da marca, não agendei"}'; else
 OUT=$(printf '%s' "$PEDIDO" | timeout 600 env -u ANTHROPIC_API_KEY claude -p \
       --allowedTools "mcp__metricool-inematds__getBrandSettings mcp__metricool-inematds__createScheduledPost Read" 2>&1)
+fi
 echo "claude: $OUT"
 J=$(printf '%s' "$OUT" | grep -o '{.*"ok".*}' | tail -1)
 campo() { printf '%s' "$J" | python3 -c "import sys,json
@@ -76,6 +83,7 @@ REDES=$(campo redes); PLAN=$(campo planner); ERRO=$(campo erro)
 FAIXA="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦"
 if [ -n "$OK" ]; then
   [ -z "${RASCUNHO:-}" ] && printf '%s\n%s\n' "$QUANDO_BR" "$REDES" > "$ED/metritds.txt"
+  [ -z "${RASCUNHO:-}" ] && python3 "$HOME/projetos/metricool-inematds/intervalo.py" --registrar --marca "eventosextremos" --alvo "$ALVO"
   MSG="$FAIXA
 🔵 PUBLICADO DIRETO · eventos.extremos (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
 $FAIXA
