@@ -3,12 +3,10 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `mundo-2026-11-12` · handoffs/history/2026-11-12T221318Z-mundo-2026-11-12.md · 12/11 19:13
 - `mundo-2026-11-11` · handoffs/history/2026-11-11T221457Z-mundo-2026-11-11.md · 11/11 19:14
 - `mundo-2026-11-10` · handoffs/history/2026-11-10T224620Z-mundo-2026-11-10.md · 10/11 19:46
 - `clima24h-2026-11-10` · handoffs/history/2026-11-10T095002Z-clima24h-2026-11-10.md · 10/11 06:50
-- `mundo-2026-11-09` · handoffs/history/2026-11-09T220745Z-mundo-2026-11-09.md · 09/11 19:07
-- `clima24h-2026-11-09` · handoffs/history/2026-11-09T095343Z-clima24h-2026-11-09.md · 09/11 06:53
-- `sul-2026-11-08` · handoffs/history/2026-11-09T010923Z-sul-2026-11-08.md · 08/11 22:09
 <!-- handoff-indice:fim -->
 
 ## Parados (sem handoff há mais de 3 dias)
@@ -16,6 +14,9 @@ Cada linha é um assunto em andamento: leia o snapshot do assunto que for contin
 Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta o assunto para os abertos; `--fechado` tira daqui. Snapshots continuam em handoffs/history/.
 
 <!-- handoff-parados:inicio -->
+- `mundo-2026-11-09` · handoffs/history/2026-11-09T220745Z-mundo-2026-11-09.md · 09/11 19:07
+- `clima24h-2026-11-09` · handoffs/history/2026-11-09T095343Z-clima24h-2026-11-09.md · 09/11 06:53
+- `sul-2026-11-08` · handoffs/history/2026-11-09T010923Z-sul-2026-11-08.md · 08/11 22:09
 - `clima24h-2026-11-06` · handoffs/history/2026-11-06T100159Z-clima24h-2026-11-06.md · 06/11 07:01
 - `mundo-2026-11-05` · handoffs/history/2026-11-05T225511Z-mundo-2026-11-05.md · 05/11 19:55
 - `mundo-2026-10-30` · handoffs/history/2026-10-30T221448Z-mundo-2026-10-30.md · 30/10 19:14
@@ -38,6 +39,6 @@ Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta 
 
 ---
 
-Mais recente: `handoffs/history/2026-11-11T221457Z-mundo-2026-11-11.md` — Clima no Mundo 11/11/2026 (claude -p da rodada automática)
+Mais recente: `handoffs/history/2026-11-12T221318Z-mundo-2026-11-12.md` — Clima no Mundo 12/11/2026 (claude -p da rodada automática)
 
 O conteúdo de cada trabalho fica no snapshot citado: abra o do assunto que for continuar (o /prime faz isso).
