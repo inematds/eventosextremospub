@@ -78,6 +78,8 @@ MIN_CENA, MIN_MAPA = 2.5, 3.0
 # clip-08 ventania nas árvores, Prudentópolis (v4)                 clip-09 lavoura tombada, Prudentópolis (v4)
 # clip-10 nuvem de tempestade com chuva, RS (v2)                   clip-11 radar com núcleos fortes, noroeste do RS (v2)
 # clip-12 estrada sob chuva forte, RS (v2)                         clip-13 granizo caindo no campo, Itapejara do Oeste (v3)
+# clip-14 raio (v1) · clip-15 rio de enxurrada (v1) · clip-16 rua alagada, portão (v2) · clip-17 rua alagada com casas (v3)
+# clip-18 granizo grande na mão (v4) · clip-19 granizo na mão (v1) · clip-20 caminhão no temporal (v3)   [refeito 13/11/2026]
 # real-01 granizo na mão · real-02 água dentro de casa · real-03 lavoura tombada · real-04 radar · real-05 nuvem com chuva
 def nq(nome):
     return len(os.listdir(AQUI / "cenas" / nome))
@@ -128,15 +130,12 @@ MAO, CASA, LAVOURA, RADAR, NUVEM = R(1), R(2), R(3), R(4), R(5)
 # ---------------------------------------------------------------- linha do tempo (cada corte na palavra que ele mostra)
 CAPA = 2.5                                                         # quadro 0: enxurrada real + gancho + data
 IR0 = em("f2", "noroeste") - .15                                   # satélite IR + mapa: noroeste do RS, Palmeira, Rodeio Bonito
-IR1 = max(IR0 + 4.0, em("f2", "Rodeio") + 2.6)
+IR1 = IR0 + MIN_MAPA                                               # Nei 13/11: imagem real vence o mapa; lugar 1x por estado, 3 s
 P0 = em("f4", "Paraná") - .15                                      # mapa P: Paraná (Pato Branco, Itapejara, Prudentópolis)
-P1 = max(P0 + MIN_MAPA, em("f4", "Prudentópolis") + 2.6)
+P1 = P0 + MIN_MAPA
 C0 = em("f7", "612") - .3                                          # mapa C: 612 cidades do PR e SC em aviso
-C1 = max(C0 + MIN_MAPA, em("f7", "Santa") + 2.6)
-A0 = ini("f9") - .1                                                # mapa A: Porto Alegre perto de 30 °C no sábado
-A1 = max(A0 + MIN_MAPA, em("f9", "Porto") + 2.6, em("f9", "sábado") + .5)
-J0 = A1                                                            # engajamento: emenda no mapa de Porto Alegre
-K0 = max(ini("f11"), J0 + MIN_CENA)                                # CTA
+C1 = C0 + MIN_MAPA
+K0 = ini("f11")                                # CTA
 
 # ---------------------------------------------------------------- câmera: só aparece nos trechos de mapa/satélite
 K = lambda t, r, pitch=0, bearing=0: {"t": round(t, 3), **r, "pitch": pitch, "bearing": bearing}
@@ -146,7 +145,7 @@ PRSC = {"lon": -51.0, "lat": -26.2, "zoom": 5.8}
 POA = {"lon": -51.23, "lat": -30.03, "zoom": 7.2}
 SUL = {"lon": -51.4, "lat": -27.4, "zoom": 5.7}
 VIAGEM = .7                                             # a câmera chega antes do mapa aparecer e fica parada
-trechos = [(IR0, IR1, NOROESTE), (P0, P1, PARANA), (C0, C1, PRSC), (A0, A1, POA)]
+trechos = [(IR0, IR1, NOROESTE), (P0, P1, PARANA), (C0, C1, PRSC)]
 camera = [K(0, NOROESTE)]
 for a, b, r in trechos:
     camera += [K(a - VIAGEM, r) if camera[-1]["lon"] != r["lon"] else K(a, r), K(b, r)]
@@ -176,22 +175,20 @@ assert len(BONS) >= 20, f"poucos quadros bons de infravermelho: {len(BONS)}"
 
 # ---------------------------------------------------------------- telas (clipes e quadros reais do dia)
 telas = [foto("capa-dia/abertura.png", 0, CAPA, zoom=.05)]                       # enxurrada + gancho + data
-telas += encher(CAPA, IR0, ["clip-01", "clip-02", RADAR])                               # "100 milímetros em pouco mais de 1 hora"
-# satélite IR (extremo noroeste, Palmeira das Missões, Rodeio Bonito)
-telas += encher(IR1, P0, ["clip-03", "clip-04", "clip-05", CASA])                 # "água invadiu casas... árvores... tornado"
-# mapa P (Paraná)
-telas += encher(P1, ini("f6"), ["clip-13", "clip-06", "clip-07", MAO])           # "granizo assustou motoristas... encher a mão"
-telas += encher(ini("f6"), C0, ["clip-10", "clip-08", NUVEM])         # "calor e umidade, nuvens de tempestade"
-# mapa C (PR + SC, 612)
-telas += encher(C1, A0, ["clip-11", "clip-12", RADAR])                            # "novas pancadas à noite e na sexta"
-# mapa A (Porto Alegre)
-telas += encher(J0, K0, ["clip-09", LAVOURA, MAO])                                    # pergunta
-telas += encher(K0, DUR, ["clip-02", CASA])                                     # CTA (o vídeo acaba com o avatar)
+telas += encher(CAPA, IR0, ["clip-15", CASA])                                         # "100 milímetros em pouco mais de 1 hora"
+# satélite IR (extremo noroeste) 3 s
+telas += encher(IR1, P0, ["clip-03", "clip-17", "clip-04", "clip-16", CASA])        # "água invadiu casas... árvores... tornado"
+# mapa P (Paraná) 3 s
+telas += encher(P1, ini("f6"), ["clip-18", "clip-19", "clip-06", "clip-13", MAO])    # "granizo assustou motoristas... encher a mão"
+telas += encher(ini("f6"), C0, ["clip-14", "clip-10", "clip-08", NUVEM])         # "calor e umidade, nuvens de tempestade"
+# mapa C (PR + SC, 612) 3 s
+telas += encher(C1, K0, ["clip-20", "clip-05", "clip-16", "clip-07", "clip-09", "clip-12", "clip-17", LAVOURA])   # pancadas, Porto Alegre, pergunta
+telas += encher(K0, DUR, ["clip-15", CASA])                                     # CTA (o vídeo acaba com o avatar)
 assert telas[0]["ini"] == 0   # vis() não faz fade-in quando ini <= 0 (quadro 0 cheio)
 
 # ---------------------------------------------------------------- portões das 3 regras (3c)
 mapas = [("IR noroeste do RS", IR0, IR1, em("f2", "noroeste")), ("P Paraná", P0, P1, em("f4", "Paraná")),
-         ("C PR+SC", C0, C1, em("f7", "612")), ("A Porto Alegre", A0, A1, em("f9", "Porto"))]
+         ("C PR+SC", C0, C1, em("f7", "612"))]
 for m in telas:
     assert min(m["fim"], FIM_VIDEO) - m["ini"] >= MIN_CENA - .01, ("cena curta", m.get("src") or m["seq"][0], round(min(m["fim"], FIM_VIDEO) - m["ini"], 2))
 for nome, a, b, palavra in mapas:
@@ -199,8 +196,7 @@ for nome, a, b, palavra in mapas:
     assert a <= palavra + .25, ("mapa entra depois da palavra do lugar", nome, round(a - palavra, 2))
 # lugares ditos (f1 "noroeste gaúcho"/"Sul" ficam na capa: é o gancho escrito; f10 "cidade do Sul" não é lugar do fato)
 fim_mapa = lambda t: max(b for _, a, b, _ in mapas if a - .01 <= t + .25 and t < b)
-LUGARES = [("f2", "noroeste"), ("f2", "Rio"), ("f2", "Palmeira"), ("f2", "Rodeio"), ("f4", "Paraná"), ("f4", "Pato"),
-           ("f4", "Itapejara"), ("f4", "Prudentópolis"), ("f7", "Paraná"), ("f7", "Santa"), ("f9", "Porto")]
+LUGARES = [("f2", "noroeste"), ("f4", "Paraná")]   # Nei 13/11: mapa só na 1ª vez de cada estado; o resto vai no painel por cima da cena real
 for fid, w in LUGARES:
     assert any(a - .01 <= em(fid, w) + .25 and em(fid, w) < b for _, a, b, _ in mapas), ("lugar fora de mapa", fid, w)
     assert fim_mapa(em(fid, w)) - em(fid, w) >= MIN_MAPA - .51, ("lugar com mapa curto", fid, w, round(fim_mapa(em(fid, w)) - em(fid, w), 2))
@@ -239,19 +235,15 @@ estados = [
     {"id": "p_pr", "ini": P0, "fim": P1, "ufs": ["PR"], "cor": VERM, "alfa": .26},
     {"id": "c_pr", "ini": C0, "fim": C1, "ufs": ["PR"], "cor": VERM, "alfa": .32},
     {"id": "c_sc", "ini": C0, "fim": C1, "ufs": ["SC"], "cor": LAR, "alfa": .3},
-    {"id": "t_rs", "ini": A0, "fim": A1, "ufs": ["RS"], "cor": LAR, "alfa": .26},
 ]
 pino = lambda nome, sub, lon, lat, a, b, h=120: {"nome": nome, "sub": sub, "lon": lon, "lat": lat, "ini": a, "fim": b, "h": h}
 pinos = [
     pino("Extremo noroeste", "+100 mm em pouco mais de 1 h", -54.24, -27.77, IR0, IR1, 110),
-    pino("Palmeira das Missões", "água dentro de casas", -53.31, -27.90, em("f2", "Palmeira") - .3, IR1, 60),
-    pino("Rodeio Bonito", "suspeita de tornado", -53.17, -27.47, em("f2", "Rodeio") - .3, IR1, 150),
-    pino("Itapejara do Oeste", "granizo na rodovia", -52.81, -25.96, em("f4", "Itapejara") - .3, P1, 130),
-    pino("Pato Branco", "", -52.67, -26.23, em("f4", "Pato") - .3, P1, 50),
-    pino("Prudentópolis", "granizo grande e ventania", -50.98, -25.21, em("f4", "Prudentópolis") - .3, P1, 110),
+    pino("Itapejara do Oeste", "granizo na rodovia", -52.81, -25.96, P0 + .2, P1, 130),
+    pino("Pato Branco", "", -52.67, -26.23, P0 + .2, P1, 50),
+    pino("Prudentópolis", "granizo grande e ventania", -50.98, -25.21, P0 + .2, P1, 110),
     pino("Paraná", f"{THOJE_UF['PR']} cidades em aviso", -51.6, -24.9, C0, C1, 80),
     pino("Santa Catarina", f"{THOJE_UF['SC']} cidades em aviso", -50.6, -27.3, C0, C1, 80),
-    pino("Porto Alegre", f"{TPOA:.1f}".replace(".", ",") + " °C no sábado (previsão)", -51.23, -30.03, A0, A1, 110),
 ]
 for p in pinos:   # pino que nasce até 0,3 s antes do mapa entra junto com o mapa
     for _, a, b, _ in mapas:

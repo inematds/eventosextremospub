@@ -357,7 +357,10 @@ function html(t){
     if(m.seq){ const cv=document.createElement('canvas'); cv.width=innerWidth; cv.height=innerHeight; cv.style.cssText='width:100%;height:100%;transform-origin:50% 40%'; d.appendChild(cv); }
     else { const im=IMG[m.src].im; d.appendChild(im.parentNode?im.cloneNode():im); }
     if(m.selo){const s=document.createElement('div'); s.className='sl'; s.textContent=m.selo; d.appendChild(s);} TL.appendChild(d); });
-  (C.telas||[]).forEach((m,i)=>{ const d=TL.children[i], o=vis(t,m.ini,m.fim,m.fade??.3); d.style.opacity=o; if(!o) return;
+  // corte entre duas telas coladas: a de baixo fica inteira até a próxima terminar de entrar (antes as duas sumiam juntas e o
+  // mapa piscava ~0,3 s em cada troca; Nei, 13/11/2026: "a imagem vale mais do que qualquer coisa")
+  (C.telas||[]).forEach((m,i)=>{ const nx=(C.telas||[]).find(n=>n!==m&&Math.abs(n.ini-m.fim)<.05), fim=nx?m.fim+(nx.fade??.3):m.fim;
+    const d=TL.children[i], o=nx?(t<m.ini||t>fim?0:Math.min(m.ini<=0?1:clamp((t-m.ini)/(m.fade??.3)),1)):vis(t,m.ini,m.fim,m.fade??.3); d.style.opacity=o; if(!o) return;
     d.firstChild.style.transform=`scale(${1+(m.zoom??.06)*clamp((t-m.ini)/Math.max(.1,m.fim-m.ini))})`;
     if(m.seq){ const im=IMG[quadroSeq(m,t)]?.im; if(im&&im.naturalWidth){ const cv=d.firstChild, g=cv.getContext('2d'), k=Math.max(cv.width/im.naturalWidth,cv.height/im.naturalHeight);
       const w=im.naturalWidth*k, h=im.naturalHeight*k; g.drawImage(im,(cv.width-w)/2,(cv.height-h)/2,w,h); } } });
@@ -391,7 +394,8 @@ const renderMapa = t => new Promise(res=>{
 window.render = async t => {
   const vis_=(C.telas||[]).filter(m=>m.seq&&t>=m.ini-.5&&t<=m.fim+.5);
   await Promise.all(vis_.map(m=>carregar(quadroSeq(m,t))));
-  for(const m of C.telas||[]) if(m.seq&&t>m.fim+1) for(const q of m.seq) if(IMG[q]&&q!==m.seq[0]) delete IMG[q];
+  const usa=new Set(vis_.flatMap(m=>m.seq));   // clipe reaproveitado em outro trecho: não soltar quadro que ainda está em uso (07/11/2026)
+  for(const m of C.telas||[]) if(m.seq&&t>m.fim+1) for(const q of m.seq) if(IMG[q]&&q!==m.seq[0]&&!usa.has(q)) delete IMG[q];
   return renderMapa(t);
 };
 window.pronto = new Promise(r=>{ const iv=setInterval(()=>{ if(mapa.isInitialized){clearInterval(iv); Promise.all([document.fonts.ready,...preload]).then(()=>r(true));} },50); });

@@ -1,0 +1,178 @@
+[
+ {
+  "video": "v1",
+  "ini": 0.2,
+  "fim": 3.6,
+  "o_que": "raio caindo sobre a cidade",
+  "nota": 5,
+  "usado": "cenas/clip-14"
+ },
+ {
+  "video": "v1",
+  "ini": 22.6,
+  "fim": 27.0,
+  "o_que": "rio de enxurrada marrom",
+  "nota": 5,
+  "usado": "cenas/clip-15"
+ },
+ {
+  "video": "v1",
+  "ini": 44.0,
+  "fim": 55.0,
+  "o_que": "granizo na mão",
+  "nota": 4,
+  "usado": "cenas/clip-19"
+ },
+ {
+  "video": "v1",
+  "ini": 8.0,
+  "fim": 20.0,
+  "o_que": "céu azul, árvores (sem evento)",
+  "nota": 1,
+  "usado": ""
+ },
+ {
+  "video": "v1",
+  "ini": 56.0,
+  "fim": 70.0,
+  "o_que": "mapa de temperatura do outro perfil",
+  "nota": 1,
+  "usado": ""
+ },
+ {
+  "video": "v2",
+  "ini": 0.0,
+  "fim": 5.0,
+  "o_que": "água dentro de casa",
+  "nota": 5,
+  "usado": "cenas/clip-03"
+ },
+ {
+  "video": "v2",
+  "ini": 6.0,
+  "fim": 15.0,
+  "o_que": "rua alagada vista do portão",
+  "nota": 5,
+  "usado": "cenas/clip-16"
+ },
+ {
+  "video": "v2",
+  "ini": 26.0,
+  "fim": 37.0,
+  "o_que": "nuvem de tempestade com chuva caindo",
+  "nota": 4,
+  "usado": "cenas/clip-10"
+ },
+ {
+  "video": "v2",
+  "ini": 38.0,
+  "fim": 45.0,
+  "o_que": "estrada sob chuva forte (mesma estrada do caminhão, clip-20 é mais forte)",
+  "nota": 3,
+  "usado": "cenas/clip-12"
+ },
+ {
+  "video": "v2",
+  "ini": 46.0,
+  "fim": 66.0,
+  "o_que": "radar do outro perfil",
+  "nota": 2,
+  "usado": ""
+ },
+ {
+  "video": "v3",
+  "ini": 4.0,
+  "fim": 18.0,
+  "o_que": "granizo caindo no campo (desfocado)",
+  "nota": 3,
+  "usado": "cenas/clip-13"
+ },
+ {
+  "video": "v3",
+  "ini": 18.0,
+  "fim": 25.0,
+  "o_que": "granizo no posto, carros",
+  "nota": 4,
+  "usado": "cenas/clip-06"
+ },
+ {
+  "video": "v3",
+  "ini": 31.8,
+  "fim": 35.0,
+  "o_que": "rua alagada com casas",
+  "nota": 5,
+  "usado": "cenas/clip-17"
+ },
+ {
+  "video": "v3",
+  "ini": 36.5,
+  "fim": 43.0,
+  "o_que": "caminhão no meio do temporal",
+  "nota": 4,
+  "usado": "cenas/clip-20"
+ },
+ {
+  "video": "v3",
+  "ini": 44.0,
+  "fim": 48.0,
+  "o_que": "destroços, suspeita de tornado",
+  "nota": 4,
+  "usado": "cenas/clip-04"
+ },
+ {
+  "video": "v3",
+  "ini": 48.0,
+  "fim": 52.0,
+  "o_que": "árvores caídas",
+  "nota": 4,
+  "usado": "cenas/clip-05"
+ },
+ {
+  "video": "v4",
+  "ini": 6.0,
+  "fim": 21.0,
+  "o_que": "ventania dobrando eucaliptos",
+  "nota": 4,
+  "usado": "cenas/clip-08"
+ },
+ {
+  "video": "v4",
+  "ini": 22.0,
+  "fim": 29.0,
+  "o_que": "lavoura tombada",
+  "nota": 4,
+  "usado": "cenas/clip-09"
+ },
+ {
+  "video": "v4",
+  "ini": 30.0,
+  "fim": 33.0,
+  "o_que": "granizo na mão sobre a grama",
+  "nota": 4,
+  "usado": "cenas/clip-07"
+ },
+ {
+  "video": "v4",
+  "ini": 34.3,
+  "fim": 39.0,
+  "o_que": "granizo grande na mão",
+  "nota": 5,
+  "usado": "cenas/clip-18"
+ },
+ {
+  "video": "v4",
+  "ini": 40.0,
+  "fim": 51.0,
+  "o_que": "enxurrada na estrada pelo para-brisa (quadro 0 com o gancho)",
+  "nota": 5,
+  "usado": "capa-dia/abertura.png"
+ },
+ {
+  "video": "v4",
+  "ini": 52.0,
+  "fim": 72.0,
+  "o_que": "céu cinza sobre a cidade",
+  "nota": 2,
+  "usado": ""
+ }
+]
