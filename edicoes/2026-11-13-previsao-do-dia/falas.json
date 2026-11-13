@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Domingo, quatro mil duzentas e noventa e nove cidades em alerta de tempestade no país. É a previsão desta sexta, treze de novembro.",
+  "legenda": "Domingo, 4.299 cidades em alerta de tempestade no país. É a previsão desta sexta, 13 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "O que manda é o calor com a umidade alta: abafamento acima dos trinta graus em todo o país.",
+  "legenda": "O que manda é o calor com a umidade alta: abafamento acima dos 30 graus em todo o país."
+ },
+ {
+  "id": "f3",
+  "fala": "Hoje, duas mil seiscentas e cinquenta e três cidades estão em alerta de tempestade, oitocentas e cinquenta e três em Minas, com risco de granizo.",
+  "legenda": "Hoje, 2.653 cidades estão em alerta de tempestade, 853 em Minas, com risco de granizo."
+ },
+ {
+  "id": "f4",
+  "fala": "No Norte e no Sudeste, as pancadas se organizam à tarde e podem virar temporal.",
+  "legenda": "No Norte e no Sudeste, as pancadas se organizam à tarde e podem virar temporal."
+ },
+ {
+  "id": "f5",
+  "fala": "No Nordeste, o calor dispara: até quarenta e quatro graus. Teresina pode chegar a quarenta graus hoje.",
+  "legenda": "No Nordeste, o calor dispara: até 44 graus. Teresina pode chegar a 40 graus hoje."
+ },
+ {
+  "id": "f6",
+  "fala": "No Paraguai e no norte da Argentina, pode passar de quarenta e cinco graus.",
+  "legenda": "No Paraguai e no norte da Argentina, pode passar de 45 graus."
+ },
+ {
+  "id": "f7",
+  "fala": "Sábado, no Sul, novecentas e sessenta e quatro cidades em alerta de tempestade, quatrocentas e noventa e sete no Rio Grande do Sul.",
+  "legenda": "Sábado, no Sul, 964 cidades em alerta de tempestade, 497 no Rio Grande do Sul."
+ },
+ {
+  "id": "f8",
+  "fala": "Atenção para domingo: no Rio Grande do Sul, as pancadas começam já de manhã. À tarde, temporais no oeste do Sul.",
+  "legenda": "Atenção para domingo: no Rio Grande do Sul, as pancadas começam já de manhã. À tarde, temporais no oeste do Sul."
+ },
+ {
+  "id": "f9",
+  "fala": "Na semana que vem, os temporais se concentram em Goiás, Minas, Bahia e Mato Grosso. Em sete dias, Cuiabá pode somar cento e nove milímetros.",
+  "legenda": "Na semana que vem, os temporais se concentram em Goiás, Minas, Bahia e Mato Grosso. Em 7 dias, Cuiabá pode somar 109 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "O ciclone bomba na costa, que circula nas redes, não está na previsão. Os ciclones do dia vinte e do dia vinte e cinco devem ficar no oceano.",
+  "legenda": "O ciclone bomba na costa, que circula nas redes, não está na previsão. Os ciclones do dia 20 e do dia 25 devem ficar no oceano."
+ },
+ {
+  "id": "f11",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]
