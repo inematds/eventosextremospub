@@ -82,11 +82,21 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
      ou não use.
    - IMAGENS paradas (quadro bom que não vale como clipe): recorte com PIL o retângulo limpo, monte 1080x1920 do mesmo jeito
      (área na largura toda + fundo desfocado) em cenas/real-NN.jpg e use `{"src": ..., "zoom": .06}` em `C.telas`.
-   - REGRA "ONDE = MAPA, O QUÊ = IMAGEM REAL" (Nei, 07/11/2026: "quando você fala em localização tem de aparecer o mapa"):
-     toda vez que a fala diz um LUGAR (cidade, região, estado: Alpestre, oeste catarinense, Curitiba), entra o mapa PARADO
-     nesse lugar (câmera fechada nele, pino com o nome, estado/municípios pintados) por pelo menos 3 s, começando na palavra
-     do lugar; quando a fala diz O QUE aconteceu (granizo, lavoura, temporal), entra a cena real. Isso vale mais que a
-     meta de tempo em cena real.
+   - INVENTÁRIO OBRIGATÓRIO (Nei, 13/11/2026: "o original tinha vídeos melhores que você não colocou", "neste vídeo a
+     imagem vale mais do que qualquer coisa", "tem de verificar"): ANTES do roteiro visual, olhe os quadros de TODOS os
+     fonte/vN/frames (todos os vídeos, do começo ao fim) e grave cenas/inventario.json, uma entrada por cena distinta:
+     `{"video": "v1", "ini": 12.0, "fim": 16.5, "o_que": "raio caindo sobre a cidade", "nota": 5, "usado": "cenas/clip-03"}`.
+     Nota 5 = imagem de parar o dedo (raio, granizo grande na mão, água dentro de casa, rua/rio cheio de enxurrada, árvore
+     ou telhado no chão, caminhão no temporal); 4 = forte; 3 ou menos = céu cinza, campo comum, paisagem. TODA cena com nota
+     >= 4 vira micro clipe e entra no vídeo (no campo "usado" o caminho do clipe/foto); a nota 5 mais forte é o quadro 0.
+     Se uma cena forte não casa com nenhuma fala, ela entra mesmo assim no trecho mais próximo do assunto (gancho, pergunta,
+     CTA). Radar e mapa do outro perfil não contam como cena forte.
+   - LUGAR (Nei, 07/11/2026: "quando você fala em localização tem de aparecer o mapa"): o lugar aparece no pino/painel por
+     cima da cena real daquele lugar; mapa em tela cheia só na PRIMEIRA vez que o estado aparece, parado, 3 s, e nunca mais
+     de 6 s seguidos de mapa/satélite. A imagem real vence o mapa (Nei, 13/11/2026).
+   - PORTÃO (rodar.sh reprova e não publica): `python3 {RAIZ}/motor-sul/conferir_visual.py {ED}` depois do gerar_cena.py
+     tem de aprovar: >= 75% do vídeo com imagem real, todas as cenas nota >= 4 usadas, todos os vN inventariados, nenhum
+     trecho de mapa/satélite cheio acima de 6 s. Rode e corrija até aprovar antes de renderizar.
    - DURAÇÃO (Nei: "no início os mapas nem paravam, é um piscar"): nenhuma cena com menos de 2,5 s; mapa no mínimo 3 s;
      a câmera não viaja durante a fala do lugar (chega antes, com no máximo 0,8 s de movimento, e fica parada).
    - SÓ IMAGEM QUE AGREGA (Nei: "imagem do céu limpo não agrega nada"): só entra cena que mostra o fenômeno ou o estrago
@@ -94,10 +104,10 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
      campo comum, paisagem sem evento: fora.
    - Uma troca a cada 2 a 3 s, cada cena no momento da palavra que ela mostra (granizo quando fala granizo). Fora dos lugares,
      o fundo é micro clipe ou imagem real/de impacto.
-   - SATÉLITE: 1 ou 2 trechos (4 a 6 s) com o infravermelho do GOES-19 sobre o Sul (sat/web/ir*.jpg, timelapse das nuvens
+   - SATÉLITE: no máximo 1 trecho (4 a 6 s), e só se sobrar fala sem cena real: o infravermelho do GOES-19 sobre o Sul (sat/web/ir*.jpg, timelapse das nuvens
      de tempestade, como no Clima 24 h), câmera fechada em RS/SC/PR, rótulo "satélite · infravermelho" e janela de horas.
-   - MAPA: no máximo 1 trecho curto (4 a 6 s) para mostrar ONDE vem a chuva/tempestade (estados pintados pelos avisos do
-     INMET, pinos nas cidades); pode ser o mesmo trecho do satélite. Nada de colunas 3D nem câmera passeando.
+   - MAPA: no máximo 1 trecho curto (até 6 s) para mostrar ONDE vem a chuva/tempestade (estados pintados pelos avisos do
+     INMET, pinos nas cidades); pode ser o mesmo trecho do satélite. Somando mapa + satélite: no máximo 25% do vídeo. Nada de colunas 3D nem câmera passeando.
    - Quadro 0 = a cena real mais forte do dia (imagem limpa) CHEIA, com o gancho ESCRITO DENTRO (PIL, fonte Sora/Inter
      grossa, amarelo #FACC15 e branco sobre faixa preta) e a data dd/mm/aaaa; sem cena real forte, gere pelo Codex
      (`echo "<pedido>" | codex exec -s workspace-write --skip-git-repo-check -C {ED}/capa-dia -`). Salve em

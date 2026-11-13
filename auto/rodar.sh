@@ -146,6 +146,20 @@ TOM=$(grep -o -i -w -E "tu|teu|tua|teus|tuas|ti|contigo|segue o canal|se inscrev
 # portão da palavra morte (Nei, 15/10/2026: "não pode usar palavra morte", os vídeos que falaram tiveram pouca entrega): usar "vítimas"
 MORTE=$(grep -o -i -w -E "mort[eoa]s?|morreu|morreram|morrem|morrer|óbitos?|falecid[oa]s?|faleceu|faleceram" "$ED/falas.json" "$ED/gerar_cena.py" "$ED/yt.txt" 2>/dev/null | sort -u | head -5 | tr '\n' ' ')
 [ -n "$MORTE" ] && avisar "roteiro reprovado: palavra proibida (morte/morto/morreu; usar 'vítimas'): $MORTE"
+# portão visual do Impacto Sul (Nei, 13/11/2026: "o original tinha vídeos melhores que você não colocou", "a imagem vale mais
+# do que qualquer coisa", "tem de verificar"): >= 75% de imagem real, toda cena forte do inventário usada, mapa cheio <= 6 s.
+# Reprovou: uma rodada de correção pelo claude -p; reprovou de novo: aviso no v3 e não publica.
+if [ "$MODO" = sul ]; then
+  if ! GATE=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1); then
+    echo "portão visual reprovou: $GATE"
+    ( cd "$ED" && timeout 5400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED (Impacto Sul), o portão visual reprovou:
+$GATE
+Siga o item 3c de $RAIZ/auto/roteiro-sul.md: olhe os quadros de TODOS os fonte/vN/frames (Read), complete cenas/inventario.json, recorte em micro clipe toda cena com nota >= 4 que faltou, troque trechos de mapa/satélite em tela cheia por essas cenas (o lugar vai no painel/pino por cima ou num mapa de no máximo 3 s) e rode python3 gerar_cena.py, depois 'cd $RAIZ && GEO=geo-br.js motor-sul/montar.sh $ED' e python3 $RAIZ/motor-sul/conferir_visual.py $ED até aprovar. Não mude falas, números nem yt.txt. Não publique nada." \
+        --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-visual.log" 2>&1 ) || echo "claude -p (visual) saiu com erro"
+    GATE=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1) || avisar "Impacto Sul reprovado no portão visual (imagem real), não publicado: $(echo "$GATE" | tail -4 | tr '\n' ' ')"
+  fi
+  echo "portão visual: $(echo "$GATE" | head -1)"
+fi
 
 # 2b. PREVIA=1: manda ao bot a versão com FOTO do avatar enquanto o estúdio gera o avatar de verdade (Nei, 13/10/2026)
 if [ "${PREVIA:-}" = 1 ]; then
