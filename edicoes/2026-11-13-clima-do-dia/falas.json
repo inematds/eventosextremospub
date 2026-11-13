@@ -1,0 +1,14 @@
+[
+  {"id": "f1", "fala": "Sexta-feira, treze de novembro. Hoje há alerta de tempestade em duas mil seiscentas e cinquenta e três cidades do Brasil.", "legenda": "Sexta-feira, 13 de novembro. Hoje há alerta de tempestade em 2653 cidades do Brasil."},
+  {"id": "f2", "fala": "O calor e a umidade formam pancadas isoladas: num canto cai um toró forte, e no outro não chove nada.", "legenda": "O calor e a umidade formam pancadas isoladas: num canto cai um toró forte, e no outro não chove nada."},
+  {"id": "f3", "fala": "Minas tem oitocentas e cinquenta e três cidades em alerta, e São Paulo seiscentas e quarenta e cinco cidades.", "legenda": "Minas tem 853 cidades em alerta, e São Paulo 645 cidades."},
+  {"id": "f4", "fala": "No Nordeste, o Piauí chega perto de quarenta graus, e a umidade baixa deixa trezentas e oitenta e uma cidades em alerta.", "legenda": "No Nordeste, o Piauí chega perto de 40 graus, e a umidade baixa deixa 381 cidades em alerta."},
+  {"id": "f5", "fala": "No sábado, o amanhecer é frio no Sul: cinco a sete graus na serra, e catorze graus em Curitiba e Porto Alegre.", "legenda": "No sábado, o amanhecer é frio no Sul: 5 a 7 graus na serra, e 14 graus em Curitiba e Porto Alegre."},
+  {"id": "f6", "fala": "À tarde, o oeste paulista pode chegar a trinta e cinco graus, e no Sul as pancadas podem trazer granizo e vento.", "legenda": "À tarde, o oeste paulista pode chegar a 35 graus, e no Sul as pancadas podem trazer granizo e vento."},
+  {"id": "f7", "fala": "No domingo, o alerta de tempestade sobe para quatro mil duzentas e noventa e nove cidades, com pancadão no Rio e em São Paulo.", "legenda": "No domingo, o alerta de tempestade sobe para 4299 cidades, com pancadão no Rio e em São Paulo."},
+  {"id": "f8", "fala": "E a chuva deve voltar ao sertão do Nordeste: Maranhão, Piauí, Pernambuco, Paraíba e norte da Bahia.", "legenda": "E a chuva deve voltar ao sertão do Nordeste: Maranhão, Piauí, Pernambuco, Paraíba e norte da Bahia."},
+  {"id": "f9", "fala": "Nos próximos quinze dias, a previsão é de chuva acima da média em quase todo o país. Só a Amazônia fica abaixo.", "legenda": "Nos próximos 15 dias, a previsão é de chuva acima da média em quase todo o país. Só a Amazônia fica abaixo."},
+  {"id": "f10", "fala": "E depois do dia vinte, o ar frio deve voltar ao Sul e a São Paulo.", "legenda": "E depois do dia 20, o ar frio deve voltar ao Sul e a São Paulo."},
+  {"id": "f11", "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.", "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."},
+  {"id": "f12", "fala": "No inema ponto club você pode aprender sobre inteligência artificial.", "legenda": "No inema.club você pode aprender sobre inteligência artificial."}
+]
