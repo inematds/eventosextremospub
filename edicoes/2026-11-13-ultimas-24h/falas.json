@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sexta-feira, treze de novembro. Temporal na Grande São Paulo, com setenta e cinco milímetros em Mogi das Cruzes, e ventania com trovoada em Porto Velho.",
+  "legenda": "Sexta-feira, 13 de novembro. Temporal na Grande São Paulo, com 75 milímetros em Mogi das Cruzes, e ventania com trovoada em Porto Velho."
+ },
+ {
+  "id": "f2",
+  "fala": "Na zona leste da capital, sessenta e nove milímetros em Cidade Tiradentes, e Mauá teve sessenta e três milímetros. A Defesa Civil mandou alerta aos celulares, com queda de árvores.",
+  "legenda": "Na zona leste da capital, 69 milímetros em Cidade Tiradentes, e Mauá teve 63 milímetros. A Defesa Civil mandou alerta aos celulares, com queda de árvores."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Porto Velho, rajada de setenta e quatro quilômetros por hora, com trovoada e chuva forte no aeroporto.",
+  "legenda": "Em Porto Velho, rajada de 74 quilômetros por hora, com trovoada e chuva forte no aeroporto."
+ },
+ {
+  "id": "f4",
+  "fala": "No norte do Espírito Santo, Pedro Canário recebeu sessenta e um milímetros.",
+  "legenda": "No norte do Espírito Santo, Pedro Canário recebeu 61 milímetros."
+ },
+ {
+  "id": "f5",
+  "fala": "No fogo, seiscentos e catorze focos na quinta. Só o Pará teve quatrocentos e oito focos, dois em cada três.",
+  "legenda": "No fogo, 614 focos na quinta. Só o Pará teve 408 focos, dois em cada três."
+ },
+ {
+  "id": "f6",
+  "fala": "No calor, trinta e oito graus em Teresina, e umidade de vinte e seis por cento.",
+  "legenda": "No calor, 38 graus em Teresina, e umidade de 26 por cento."
+ },
+ {
+  "id": "f7",
+  "fala": "E hoje? Aviso amarelo de tempestade em duas mil trezentas e quarenta e três cidades, com granizo e vento até sessenta quilômetros por hora. Amanhã, segue em mil oitocentas e três cidades.",
+  "legenda": "E hoje? Aviso amarelo de tempestade em 2.343 cidades, com granizo e vento até 60 quilômetros por hora. Amanhã, segue em 1.803 cidades."
+ },
+ {
+  "id": "f8",
+  "fala": "Os próximos sete dias: o Centro-Oeste deve acumular mais, domingo e segunda devem ser os dias mais chuvosos, e Teresina deve chegar perto de quarenta graus.",
+  "legenda": "Os próximos 7 dias: o Centro-Oeste deve acumular mais, domingo e segunda devem ser os dias mais chuvosos, e Teresina deve chegar perto de 40 graus."
+ },
+ {
+  "id": "f9",
+  "fala": "Volumes somados: os pluviômetros juntaram mais de doze mil milímetros, quase um terço em São Paulo. Em sete dias, as capitais devem somar mais de setecentos e noventa milímetros.",
+  "legenda": "Volumes somados: os pluviômetros juntaram mais de 12 mil milímetros, quase um terço em São Paulo. Em 7 dias, as capitais devem somar mais de 790 milímetros."
+ },
+ {
+  "id": "f10",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender sobre inteligência artificial.",
+  "legenda": "No inema.club você pode aprender sobre inteligência artificial."
+ }
+]

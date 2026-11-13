@@ -1,0 +1,8 @@
+Clima 24 h 13/11: temporal na Grande SP e rajada de 74 km/h em Porto Velho
+Grande SP (CEMADEN, 24 h até 13/11 05h30): Mogi das Cruzes 75 mm, Cidade Tiradentes (zona leste) 69 mm, Mauá 63 mm, Suzano 57 mm; a Defesa Civil de SP mandou alerta severo aos celulares e os Bombeiros atenderam quedas de árvores (Metrópoles, 12/11).
+Porto Velho (RO): rajada de 74 km/h com trovoada e chuva forte no aeroporto; trovoada em 33 aeroportos (METAR da NOAA). Norte do ES: Pedro Canário 61 mm, Conceição da Barra 60 mm (CEMADEN).
+Fogo: 614 focos em 12/11 no satélite de referência do INPE; Pará 408, dois em cada três. Calor: 38 °C em Teresina (PI) com umidade de 26% (METAR).
+Hoje (13/11): aviso amarelo do INMET de tempestade em 2.343 cidades (até 50 mm, vento de 40 a 60 km/h e granizo), nenhum laranja. Amanhã (14/11): amarelo em 1.803 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o Centro-Oeste deve acumular mais (270,9 mm); domingo (15/11) e segunda (16/11) devem ser os dias mais chuvosos (153,6 e 153,5 mm somados); Teresina com 39,5 °C previstos.
+Volumes: os pluviômetros do CEMADEN somaram mais de 12 mil mm em 24 h (soma, não chuva média), quase um terço em SP; as capitais devem somar 793,6 mm em 7 dias.
+Fontes: CEMADEN, INPE, INMET, Defesa Civil de SP, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
