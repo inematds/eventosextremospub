@@ -1,4 +1,4 @@
+- `mundo-2026-11-13` · handoffs/history/2026-11-13T220445Z-mundo-2026-11-13.md · 13/11 19:04
 - `mundo-2026-11-12` · handoffs/history/2026-11-12T221318Z-mundo-2026-11-12.md · 12/11 19:13
 - `mundo-2026-11-11` · handoffs/history/2026-11-11T221457Z-mundo-2026-11-11.md · 11/11 19:14
 - `mundo-2026-11-10` · handoffs/history/2026-11-10T224620Z-mundo-2026-11-10.md · 10/11 19:46
-- `clima24h-2026-11-10` · handoffs/history/2026-11-10T095002Z-clima24h-2026-11-10.md · 10/11 06:50
