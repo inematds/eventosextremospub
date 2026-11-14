@@ -204,6 +204,10 @@ def _():
             if e.code != 429:
                 raise
             time.sleep(20 * (t + 1))
+        except (urllib.error.URLError, OSError):  # SSL EOF/rede: tenta de novo (falhou em 10/11/2026 e sumiu o previsao7d)
+            if t == 4:
+                raise
+            time.sleep(10 * (t + 1))
     (dst / "openmeteo_capitais_3d.json").write_bytes(b)
     res, ext = [], []
     for n, r in zip(nomes, json.loads(b)):
