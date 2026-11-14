@@ -60,6 +60,9 @@ $1" || echo "falhou o envio do aviso"
 }
 # máquina ocupada (a vaga não abriu a tempo, saída 75): avisa e sai limpo; refazer depois reaproveita o que já está na edição
 ocupado() { avisar "máquina ocupada: $1 não pegou vaga a tempo (fila-vaga saiu 75); refazer com ${2:-auto/rodar.sh $DIA $MODO}" 0 ocupado; }
+# a vaga gpu da máquina tem lugar e ninguém na fila? (sem fila-vaga instalada, sempre "livre")
+gpu_livre() { local F="${VAGA_CMD:-$HOME/projetos/wifi/scripts/fila-vaga}"; [ -x "$F" ] || return 0
+  "$F" --status --json 2>/dev/null | python3 -c 'import json,sys;g=json.load(sys.stdin)["classes"]["gpu"];sys.exit(0 if g["ocupadas"]<g["vagas"] and not g["esperando"] else 1)'; }
 
 # 0. modelo = a edição mais recente do mesmo modo antes de hoje (a 1ª de domingo parte da última clima 24h)
 modelo() { ls -d "$RAIZ"/edicoes/*-"$1" 2>/dev/null | grep -vx "$ED" | sort | while read -r p; do [ -f "$p/gerar_cena.py" ] && echo "$p"; done | tail -1; }  # pula edição que falhou cedo (pasta sem gerar_cena.py; alerta/semana 08/11)
@@ -133,7 +136,20 @@ else
     ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
         --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro (2ª tentativa)"
   fi
-  # o narrar.py (voz local) e o montar.sh (render) do claude -p passam pela vaga da máquina; sem vaga a tempo ele grava OCUPADO.txt e para
+  # o narrar.py (voz local) e o montar.sh (render) do claude -p passam pela vaga da máquina; sem vaga a tempo ele grava OCUPADO.txt e para.
+  # GPU ocupada não é fim de rodada (14/11/2026: a captura do curso agentes-do-zero segurou a vaga das 04:45 às 06:16 e a voz do
+  # 24h desistiu às 06:10): roteiro e cena já estão prontos, então espera a vaga liberar (até 40 min) e retoma só da versão mapa, 2× no máximo
+  for TENT in 2 3; do
+    [ -f "$ED/OCUPADO.txt" ] && [ -s "$ED/falas.json" ] && [ -s "$ED/gerar_cena.py" ] || break
+    echo "$(date +%T) GPU ocupada ($(head -c 150 "$ED/OCUPADO.txt" | tr '\n' ' ')); tentativa $TENT/3 quando a vaga liberar"
+    for _ in $(seq 80); do gpu_livre && break; sleep 30; done
+    mv "$ED/OCUPADO.txt" "$ED/OCUPADO-$((TENT-1)).txt"
+    RETOMA="RETOMADA (tentativa $TENT de 3): a pesquisa, o falas.json e o gerar_cena.py desta edição já estão prontos; a tentativa anterior parou só porque a vaga gpu da máquina estava ocupada (ver OCUPADO-$((TENT-1)).txt). NÃO refaça a pesquisa nem o roteiro: confira rápido que falas.json e gerar_cena.py estão completos e faça do passo da versão mapa (narrar.py na vaga) em diante, até o fim, seguindo o pedido original abaixo. As regras de OCUPADO.txt e ERRO.txt continuam valendo.
+
+$PROMPT"
+    ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$RETOMA" --permission-mode bypassPermissions \
+        --add-dir "$RAIZ" > "$ED/claude-retoma$TENT.log" 2>&1 ) || echo "claude -p (retomada $TENT) saiu com erro"
+  done
   [ -f "$ED/OCUPADO.txt" ] && ocupado "a voz/render da versão mapa (claude -p: $(head -c 150 "$ED/OCUPADO.txt" | tr '\n' ' '))"
   [ -f "$ED/ERRO.txt" ] && avisar "o roteiro não saiu: $(head -c 400 "$ED/ERRO.txt")"
 fi
