@@ -1,0 +1,8 @@
+Clima 24 h 14/11: 112 mm em Colniza (MT) e temporal em Minas Gerais
+Colniza (MT) (CEMADEN, 24 h até 14/11 18h): três pluviômetros com 112,4, 94,6 e 78 mm.
+Minas Gerais (CEMADEN): Sabará 67,6 mm e Santa Luzia 67,4 mm na Grande BH, com rajada de 56 km/h e trovoada em Lagoa Santa (METAR da NOAA); na Zona da Mata, Viçosa 70,4 mm e Guarani 61,8 mm. Sooretama (ES) 72 mm; Londrina (PR) com rajada de 50 km/h e trovoada (METAR).
+Fogo: 767 focos em 13/11 no satélite de referência do INPE; três em cada quatro no Maranhão, Ceará e Piauí. Calor: 38 °C em Teresina (PI) com umidade de 29% (METAR).
+Hoje (14/11): aviso amarelo do INMET de tempestade em 1.330 cidades (até 50 mm, vento de 40 a 60 km/h e granizo), nenhum laranja. Amanhã (15/11): amarelo em 2.633 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): Norte (223,9 mm) e Centro-Oeste (216,3 mm) devem acumular mais; segunda (16/11) deve ser o dia mais chuvoso (165,7 mm somados); Teresina com 39,6 °C previstos.
+Volumes: os pluviômetros do CEMADEN somaram mais de 11 mil mm em 24 h (soma, não chuva média), mais da metade em MG; as capitais devem somar 827,6 mm em 7 dias.
+Fontes: CEMADEN, INPE, INMET, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
