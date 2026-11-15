@@ -53,8 +53,8 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
      estado por estado (RS, SC, PR), com lugar e número; o dia do pico do risco.
    - penúltima (engajamento): "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
      (card: "DE ONDE VOCÊ É?" / "COMO ESTÁ AÍ?").
-   - última, sempre (CTA): "No inema ponto club você pode aprender sobre inteligência artificial." com legenda
-     "No inema.club você pode aprender sobre inteligência artificial." (card: "APRENDA IA" / "inema.club").
+   - última, sempre (CTA): "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet." com legenda
+     "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet." (card: "APRENDA IA" / "inema.club").
    - CTA só o inema.club. Tratar por "você", nunca "tu/teu/tua/ti". Nunca termo de alívio ("por sorte", "felizmente",
      "ainda bem", "melhor", "boa notícia").
    - no campo "fala" números por extenso (ano também); no campo "legenda" com algarismos. Fala nunca termina em número solto

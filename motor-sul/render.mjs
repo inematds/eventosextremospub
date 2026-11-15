@@ -24,7 +24,8 @@ setInterval(() => {
 // página = mapa.html do motor, com cena.js da pasta
 const html = fs.readFileSync(path.join(aqui, 'mapa.html'), 'utf8')
   .replace('src="geo.js"', `src="file://${path.resolve(aqui, process.env.GEO || 'geo.js')}"`)
-  .replace('src="cena.js"', `src="file://${path.resolve(pasta, 'cena.js')}"`);
+  .replace('src="cena.js"', `src="file://${path.resolve(pasta, 'cena.js')}"`)
+  .replace('src="cta-inema.webp"', `src="file://${path.resolve(aqui, 'cta-inema.webp')}"`);
 const tmp = path.resolve(pasta, '.mapa.html');
 fs.writeFileSync(tmp, html);
 

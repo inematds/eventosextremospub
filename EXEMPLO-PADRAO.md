@@ -12,7 +12,7 @@ Caso real completo: `~/projetos/output/explica-fim-mundo-1960/` (21/10/2026; `ES
 - Roteiro em `<OUT>/roteiro/pt.json` (cenas `{chapter,title,kind,labels,takeaway,source,svg:null,speech}`), números por extenso,
   "você", emoção primeiro e número/fonte na tela. **Um bloco só, ≤ 520 palavras** (o 9:16 tem teto de 160 s; o mesmo avatar
   serve os dois formatos). Nunca "morte/mortos/morreu/mortalidade" (use "vítimas", "sobreviver"). Fala não termina em número.
-- Fecho: "No inema.club você pode aprender sobre inteligência artificial" + pergunta de comentário positiva.
+- Fecho: "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet." (banner `motor/cta-inema.webp` na tela) + pergunta de comentário positiva.
 
 ## 2. Motor = explicavideos v2 perfil viral (não o `LAYOUT=largo`)
 - Três configs: `<id>.json` (v1, HeyGen), `<id>-v2.json` (16:9, `profile_visual: viral`, `marca: INEMA · EVENTOS EXTREMOS`)

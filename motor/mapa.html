@@ -59,6 +59,11 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 .pino .cx small{display:block;font:700 20px Inter;color:#ffb3ad}
 .pino .haste{width:4px;height:var(--h,90px);background:linear-gradient(#fff,rgba(255,255,255,0));margin:0 auto}
 .pino .pt{width:22px;height:22px;border-radius:50%;background:#fff;border:6px solid var(--red);margin:-4px auto 0;box-shadow:0 0 22px var(--red)}
+/* imagem do CTA (Nei, 15/11/2026): banner INEMA.CLUB 16:9 no lugar do card vermelho "APRENDA IA" */
+#ctaimg{position:absolute;left:40px;right:40px;top:170px;aspect-ratio:1672/941;border-radius:22px;overflow:hidden;opacity:0;box-shadow:0 10px 40px rgba(0,0,0,.7)}
+#ctaimg img{width:100%;height:100%;object-fit:cover;transform-origin:50% 50%}
+body.lg #ctaimg{top:110px;left:48px;right:auto;width:1000px}
+body.lg.cd #ctaimg{left:auto;right:36px;width:568px}
 #cta{position:absolute;left:56px;right:56px;top:170px;background:var(--red);border-radius:22px;padding:30px 36px;opacity:0}
 #cta .a{font:400 64px/1.05 'Archivo Black'}
 #cta .b{font:700 30px/1.3 Inter;margin-top:12px}
@@ -154,6 +159,7 @@ body.limpo .pino .pt{width:30px;height:30px}
 <div id="hero"></div>
 <div id="painel" class="painel"></div>
 <div id="cta"></div>
+<div id="ctaimg"><img src="cta-inema.webp" alt=""></div>
 <div id="club"></div>
 <div id="relogio"></div>
 <div id="fonte"></div>
@@ -184,6 +190,7 @@ function carregar(src){ if(IMG[src]) return IMG[src].p; const im=new Image(); im
 const preload=[]; if(C.sat){ if(C.sat.base) preload.push(carregar(C.sat.base)); if(C.sat.fundo) preload.push(carregar(C.sat.fundo.src)); (C.sat.ir?.frames||[]).forEach(f=>preload.push(carregar(f))); }
 (C.imagens||[]).forEach(m=>preload.push(carregar(m.src)));  // imagens extras, cada uma com bbox e janela de tempo
 (C.telas||[]).forEach(m=>preload.push(carregar(m.src)));    // fotos de tela cheia (sem isso o quadro 0 sai preto)
+if(C.cta&&C.cta.img!==false) preload.push(document.querySelector('#ctaimg img').decode().catch(()=>{}));  // banner do CTA
 // ---- partículas de vento (estado sequencial; reconstruído se o tempo voltar)
 let PART=null, tPart=-1;
 function campo(x,y,h){ const V=C.vento; const g=V.grade; const i=(x-g.x0)/g.dx, j=(y-g.y0)/g.dy;
@@ -347,7 +354,10 @@ function html(t){
     P.classList.toggle('g',!!(p.grafico||p.ranking)); P.style.opacity=vis(t,p.ini,p.fim,.3); P.style.borderColor=p.borda||'rgba(255,255,255,.12)';
   } else P.style.opacity=0;
   const CT=document.getElementById('cta'); const c=C.cta;
-  if(c){CT.innerHTML=`<div class="a">${c.a}</div><div class="b">${c.b}</div>`;CT.style.opacity=vis(t,c.ini,c.fim,.3);}
+  const CI=document.getElementById('ctaimg'); const ciOk=c&&c.img!==false&&CI.firstChild.naturalWidth>0;
+  if(c){CT.innerHTML=`<div class="a">${c.a}</div><div class="b">${c.b}</div>`; const o=vis(t,c.ini,c.fim,.3);
+    CT.style.opacity=ciOk?0:o; CI.style.opacity=ciOk?o:0;
+    if(ciOk) CI.firstChild.style.transform=`scale(${1+.05*clamp((t-c.ini)/Math.max(.1,c.fim-c.ini))})`;} else CI.style.opacity=0;
   const CL=document.getElementById('club'); const cl=C.club;
   if(cl){CL.innerHTML=`<div class="ic">▶</div><div class="tx">${cl.a}<small>${cl.b}</small></div>`;CL.style.opacity=vis(t,cl.ini,cl.fim,.3);}
   // telas: foto cheia com zoom lento; selo pequeno (ex.: "ilustração"). Os <img> são criados uma vez (sem piscar)
