@@ -1,0 +1,8 @@
+Clima 24 h 15/11: rajada de 70 km/h em Maringá e o fogo mais que dobrou
+Maringá (PR): rajada de 70 km/h com trovoada às 19h de 14/11, e a temperatura caiu de 29 °C para 21 °C em uma hora (METAR da NOAA). Londrina com rajada de 50 km/h.
+Sertão: Nova Olinda (PB) com 69,8, 67,6 e 66 mm em menos de 6 horas nos três pluviômetros; Brejo Santo (CE) com 40,4 mm em uma hora, de madrugada (CEMADEN). Bahia: Mundo Novo 68 mm.
+Fogo: 1.577 focos em 14/11 no satélite de referência do INPE, mais que o dobro de 13/11 (767); quase metade no Pará (749). Calor: 38 °C em Teresina (PI) com umidade de 29% (METAR).
+Hoje (15/11): aviso amarelo do INMET de tempestade em 2.633 cidades (até 50 mm, vento de 40 a 60 km/h e granizo), nenhum laranja. Amanhã (16/11): amarelo em 2.819 cidades.
+Próximos 7 dias (previsão Open-Meteo, 27 capitais): o Centro-Oeste (264,3 mm) deve acumular mais; segunda (16/11) deve ser o dia mais chuvoso (218,1 mm somados); Teresina com 39,7 °C previstos.
+Volumes: os pluviômetros do CEMADEN somaram mais de 7 mil mm em 24 h (soma, não chuva média), quase um terço na Bahia; as capitais devem somar 880,2 mm em 7 dias.
+Fontes: CEMADEN, INPE, INMET, NOAA (GOES-19 via NASA GIBS), Open-Meteo.
