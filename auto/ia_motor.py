@@ -26,6 +26,8 @@ import yaml
 RAIZ = Path(__file__).resolve().parent.parent
 CONFIG = Path(__file__).resolve().parent / 'ia.yaml'
 ETAPAS = tuple(yaml.safe_load(CONFIG.read_text())['etapas'])
+CONFIG_ENV = 'INEMA_IA_CONFIG_' + re.sub(r'[^A-Z0-9]', '_', RAIZ.name.upper() + '_' + Path(__file__).resolve().parent.name.upper())
+
 ESFORCOS = {'claude': {'low', 'medium', 'high', 'xhigh', 'max'},
             'codex': {'low', 'medium', 'high', 'xhigh'},
             'anthropic': {'low', 'medium', 'high', 'xhigh', 'max'},
@@ -34,7 +36,7 @@ ESFORCOS = {'claude': {'low', 'medium', 'high', 'xhigh', 'max'},
 
 
 def carregar(arquivo=None):
-    p = Path(arquivo or os.environ.get('INEMA_IA_CONFIG', CONFIG)).expanduser().resolve()
+    p = Path(arquivo or os.environ.get(CONFIG_ENV, CONFIG)).expanduser().resolve()
     d = yaml.safe_load(p.read_text())
     validar(d)
     return d
@@ -79,7 +81,7 @@ def ambiente(c=None):
     env = dict(os.environ)
     for k in list(env):
         if (k.startswith(('ANTHROPIC_', 'OPENAI_', 'CLAUDE_CODE_USE_', 'CLAUDE_CODE_EFFORT'))
-                or k in {'CLAUDECODE', 'CLAUDE_MODEL', 'CLAUDE_EFFORT', 'CLAUDE_CODE_SUBAGENT_MODEL'}):
+                or k in {'CODEX_API_KEY', 'OPENROUTER_API_KEY', 'CLAUDECODE', 'CLAUDE_MODEL', 'CLAUDE_EFFORT', 'CLAUDE_CODE_SUBAGENT_MODEL'}):
             env.pop(k, None)
     if c and c.get('motor') == 'codex' and c.get('codex_home'):
         env['CODEX_HOME'] = str(Path(c['codex_home']).expanduser().resolve())
@@ -326,6 +328,7 @@ def executar(etapa, pedido, pasta, *, arquivos=(), imagens=(), ferramentas='', a
 
 
 def mostrar(d):
+    print('Configuração:', os.environ.get(CONFIG_ENV, CONFIG))
     print(f'{"ETAPA":24} {"TIPO":12} {"MOTOR":11} {"MODELO":23} ESFORÇO')
     for n, c in d['etapas'].items():
         print(f'{n:24} {c["tipo"]:12} {c["motor"]:11} {c["modelo"]:23} {c["esforco"]}')
@@ -381,7 +384,7 @@ def main():
     rp.add_argument('--agente', action='store_true')
     a = ap.parse_args()
     if a.cmd == 'configurar':
-        p = Path(os.environ.get('INEMA_IA_CONFIG', CONFIG)).expanduser().resolve()
+        p = Path(os.environ.get(CONFIG_ENV, CONFIG)).expanduser().resolve()
         with p.with_suffix('.lock').open('w') as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
             original = p.read_text()

@@ -22,7 +22,7 @@ echo "== $(date '+%F %T') metritds $ED ($V)"
 [ -s "$ED/metritds.txt" ] && [ -z "${RASCUNHO:-}${FORCAR:-}" ] && { echo "já agendado ($(head -1 "$ED/metritds.txt")): nada a fazer"; exit 0; }
 # Trava engloba leitura da agenda, criação e recibo; mesma chave da família Metricool.
 mkdir -p "$HOME/.local/share/metricool-intervalo"
-exec 9>"$HOME/.local/share/metricool-intervalo/eventosextremos.publicacao.lock"
+exec 9>"$HOME/.local/share/metricool-intervalo/inematds_eventosextremos.publicacao.lock"
 flock -w 3600 9 || { echo "outra publicação segurou a trava"; exit 1; }
 [ -s "$ED/metritds.txt" ] && [ -z "${RASCUNHO:-}${FORCAR:-}" ] && exit 0
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
@@ -37,14 +37,19 @@ QUANDO_UTC=$(date -u -d "@$ALVO" +%Y-%m-%dT%H:%M:00)   # UTC: o Metricool desloc
 QUANDO_BR=$(TZ=America/Sao_Paulo date -d "@$ALVO" '+%d/%m %H:%M')
 
 # 1. link público do vídeo
-NOME="clima-$(basename "$ED").mp4"
+NOME="clima-$(basename "$ED")-social.mp4"
 gh release view social -R inematds/eventosextremospub >/dev/null 2>&1 || \
   gh release create social -R inematds/eventosextremospub --title "Vídeos para redes sociais" \
      --notes "Cópias dos Shorts do clima usadas pelo Metricool (TikTok eventosextremos)." >/dev/null
-TMP="$(mktemp -d)"; cp "$V" "$TMP/$NOME"
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+# Preservar o master; cópia leve para a ingestão do Metricool.
+"$HOME/projetos/wifi/scripts/fila-vaga" render clima-social -- ffmpeg -v error -y -i "$V" \
+  -vf "scale='min(720,iw)':-2" -c:v libx264 -preset veryfast -crf 26 -maxrate 1200k -bufsize 2400k \
+  -pix_fmt yuv420p -c:a aac -b:a 96k -movflags +faststart "$TMP/$NOME" || exit 1
 gh release upload social "$TMP/$NOME" -R inematds/eventosextremospub --clobber || { echo "Falhou: upload na release"; rm -rf "$TMP"; exit 1; }
 rm -rf "$TMP"
-MEDIA="https://github.com/inematds/eventosextremospub/releases/download/social/$NOME"
+MEDIA=$(python3 "$RAIZ/auto/resolver_midia.py" "https://github.com/inematds/eventosextremospub/releases/download/social/$NOME") || exit 1
 
 # 2. legenda: yt.txt (título + pontos) + YouTube + hashtags
 TIT=$(head -1 "$ED/yt.txt")

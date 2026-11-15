@@ -16,3 +16,5 @@ Operação: Codex assinatura em todos os roteiros/correções e Metricool. Image
 Metricool usa o perfil ~/.codex-2 e o conector metricool-inematds, conta inematds@gmail.com, exclusivamente marca eventosextremos (Instagram/TikTok eventos.extremos). A escolha das redes e o avatar obrigatório continuam no publicador. Trava por marca cobre consulta, agendamento e recibo; intervalo de uma hora mantido por cópia local do validador, com o mesmo registro compartilhado. A consulta sem sucesso impede o agendamento. Nunca usar marca inema.tds para o clima.
 
 Validação 15/11/2026: cinco testes locais passaram; teste real Codex criou e releu arquivo isolado; teste real MCP confirmou conta e marca eventosextremos/7800440, somente leitura. Evidências em `~/projetos/output/crons-multiprovedor-2026-11-15/clima-agente/` e `clima-metricool/`. Não foi feita uma nova produção completa de clima nem publicação neste teste.
+
+A ingestão de vídeo recebe uma cópia social 720p compactada na fila de render, preservando o master. A URL pública GitHub é resolvida antes de chamar o MCP; links assinados não entram nos recibos/documentação.
