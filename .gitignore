@@ -32,3 +32,7 @@ edicoes/*/fonte/ativos*.json
 edicoes/*/pesquisa/bruto/*.zip
 edicoes/*/pesquisa/bruto/*.csv
 edicoes/*/fonte/**/*.mp4
+
+# Telemetria e trava do executor local
+**/ia-execucoes.jsonl
+auto/ia.lock

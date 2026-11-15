@@ -1,0 +1,153 @@
+# Escolha tipo, motor, modelo e esforco em CADA etapa. Não é necessário editar código.
+# Assinatura Claude: tipo: assinatura / motor: claude / modelo: claude-opus-5-5 / esforco: medium
+# Assinatura Codex:  tipo: assinatura / motor: codex / modelo: gpt-6.1-sol / esforco: medium
+# API Claude: tipo: api / motor: anthropic / modelo: claude-opus-5-5 / esforco: medium
+# API OpenAI: tipo: api / motor: openai / modelo: gpt-6.1-sol / esforco: medium
+# API OpenRouter: tipo: api / motor: openrouter / modelo: anthropic/claude-opus-5.5 / esforco: medium
+# APIs ficam DESATIVADAS até autorização explícita do Nei para ESTE projeto/serviço/etapas.
+# Nome da chave pode ser alterado em chave_nome; nunca colocar o valor aqui.
+# Esforço depende do modelo: Codex low|medium|high|xhigh; Claude low|medium|high|xhigh|max.
+# Texto e visão aceitam os 5 adaptadores. Agente/MCP exigem assinatura e ferramentas.
+# Imagens geradas continuam sempre Codex/assinatura; revisão exige modelo com visão.
+# Sem fallback automático de assinatura para API. Configurar preserva estes comentários.
+versao: 1
+api:
+  autorizada: false  # Anthropic: mudar apenas após autorização expressa para este sistema.
+  autorizacao: ''
+  etapas_autorizadas: []
+  arquivo_chaves: /home/nmaldaner/projetos/wifi/.env
+  chave_nome: inemapro-api-key
+  openai:
+    autorizada: false
+    autorizacao: ''
+    etapas_autorizadas: []
+    chave_nome: OPENAI_API_KEY
+  openrouter:
+    autorizada: false
+    autorizacao: ''
+    etapas_autorizadas: []
+    chave_nome: OPENROUTER_API_KEY
+etapas:
+  # roteiro_24h: capacidade agente; timeout em segundos.
+  roteiro_24h:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_semana: capacidade agente; timeout em segundos.
+  roteiro_semana:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_ventos: capacidade agente; timeout em segundos.
+  roteiro_ventos:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_mundo: capacidade agente; timeout em segundos.
+  roteiro_mundo:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_dia: capacidade agente; timeout em segundos.
+  roteiro_dia:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_alerta: capacidade agente; timeout em segundos.
+  roteiro_alerta:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_previsao: capacidade agente; timeout em segundos.
+  roteiro_previsao:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # roteiro_sul: capacidade agente; timeout em segundos.
+  roteiro_sul:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # ajuste_visual: capacidade agente; timeout em segundos.
+  ajuste_visual:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # ajuste_tempos_avatar: capacidade agente; timeout em segundos.
+  ajuste_tempos_avatar:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # ajuste_visual_avatar: capacidade agente; timeout em segundos.
+  ajuste_visual_avatar:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: agente
+    timeout: 10800
+    max_tokens: 12000
+  # metricool_agenda: capacidade mcp; timeout em segundos.
+  metricool_agenda:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: mcp
+    timeout: 900
+    max_tokens: 12000
+    codex_home: /home/nmaldaner/.codex-2
+    mcp_servidor: metricool-inematds
+    conta: inematds@gmail.com
+  # metricool_publicacao: capacidade mcp; timeout em segundos.
+  metricool_publicacao:
+    tipo: assinatura
+    motor: codex
+    modelo: gpt-6.1-sol
+    esforco: medium
+    capacidade: mcp
+    timeout: 900
+    max_tokens: 12000
+    codex_home: /home/nmaldaner/.codex-2
+    mcp_servidor: metricool-inematds
+    conta: inematds@gmail.com

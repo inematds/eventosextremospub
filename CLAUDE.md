@@ -46,3 +46,7 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 - Pausa de 1 s antes da pergunta "De que região/cidade você é?" (a pergunta saía colada no assunto): `motor/pausa_pergunta.py` roda no rodar.sh depois do avatar (`--avatar`) e nos roteiros depois do narrar.py. Vídeo montado à mão também passa por ele. (Nei, 15/10/2026)
 - Selo do topo (`"selo"` no gerar_cena.py) com no máximo 3 fontes + data, senão a data é cortada na borda direita (Clima no Mundo 25/10/2026).
 - Clima no Mundo (Nei, 14/11/2026): zoom de mapa acima de ~3,2 fica borrado (Blue Marble/GIBS) e só mapa girando cansa: um evento = uma imagem (Codex, selo ilustração) e evento de número baixo (poucas vítimas) não entra; piso e teto estão em `auto/roteiro-mundo.md`.
+
+## IA por etapa (15/11/2026)
+
+Roteiros por modo, correções e Metricool usam `auto/ia.yaml`; editar tipo/motor/modelo/esforço sem código. Detalhes: `auto/IA.md`. Atual Codex assinatura em todas as etapas; todas as APIs de modelos desativadas. Agentes exigem ferramentas, não aceitam API de texto. Imagens continuam Codex e YouTube yt-pubx lives10.

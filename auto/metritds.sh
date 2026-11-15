@@ -8,6 +8,7 @@
 #   publica em agora + 10 min. RASCUNHO=1 agenda como rascunho · SEM_BOT=1 não avisa no v3 · FORCAR=1 refaz.
 # Vídeo público para o Metricool: anexo da release "social" do repo público inematds/eventosextremospub.
 set -uo pipefail
+RAIZ="$(cd "$(dirname "$0")/.." && pwd)"
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"
 ED="$(cd "$1" && pwd)"; V="${2:-}"
 [ -z "$V" ] && for c in video-avatar.mp4 video-14.mp4 video.mp4; do [ -s "$ED/$c" ] && { V="$ED/$c"; break; }; done
@@ -19,13 +20,18 @@ echo "== $(date '+%F %T') metritds $ED ($V)"
 { [ -s "$ED/avatar/avatar.mp4" ] && [ "$(basename "$V")" != video.mp4 ]; } || { echo "sem avatar: não agenda ($V)"; exit 6; }
 [ -s "$ED/yt.txt" ] || { echo "sem yt.txt"; exit 1; }
 [ -s "$ED/metritds.txt" ] && [ -z "${RASCUNHO:-}${FORCAR:-}" ] && { echo "já agendado ($(head -1 "$ED/metritds.txt")): nada a fazer"; exit 0; }
+# Trava engloba leitura da agenda, criação e recibo; mesma chave da família Metricool.
+mkdir -p "$HOME/.local/share/metricool-intervalo"
+exec 9>"$HOME/.local/share/metricool-intervalo/eventosextremos.publicacao.lock"
+flock -w 3600 9 || { echo "outra publicação segurou a trava"; exit 1; }
+[ -s "$ED/metritds.txt" ] && [ -z "${RASCUNHO:-}${FORCAR:-}" ] && exit 0
 BOT="$HOME/projetos/refazvideo/ferramentas/enviar_bot_v3.mjs"
 
 ALVO=$(( $(date +%s) + 600 ))
 # trava de 1 h entre posts da mesma marca (Nei, 12/11/2026); INTERVALO_LIVRE=1 = o Nei autorizou juntar
 INT_ERRO=""
 if [ -z "${RASCUNHO:-}" ]; then
-  NOVO=$(python3 "$HOME/projetos/metricool-inematds/intervalo.py" --conector metricool-inematds --marca "eventosextremos" --alvo "$ALVO") && ALVO="$NOVO" || INT_ERRO=1
+  NOVO=$(python3 "$RAIZ/auto/intervalo.py" --conector metricool-inematds --marca "eventosextremos" --alvo "$ALVO") && ALVO="$NOVO" || INT_ERRO=1
 fi
 QUANDO_UTC=$(date -u -d "@$ALVO" +%Y-%m-%dT%H:%M:00)   # UTC: o Metricool deslocou 1 h o horário local perto da meia-noite
 QUANDO_BR=$(TZ=America/Sao_Paulo date -d "@$ALVO" '+%d/%m %H:%M')
@@ -59,7 +65,8 @@ PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
    - instagram: só se instagramData for exatamente \"eventos.extremos\" e o Instagram estiver liberado ($IGOK).
    - tiktok: só se tiktokData for exatamente \"eventos.extremos\".
    Se nenhuma rede for válida, NÃO agende nada e responda ok=false com erro \"nenhuma rede do eventos.extremos conectada na marca eventosextremos\".
-2) createScheduledPost UMA vez, só com as redes válidas em providers (nenhuma outra):
+2) Antes de criar, consulte getScheduledPosts desta marca no dia da publicação. Se já existir um post com o mesmo link de mídia e texto, devolva o recibo dele, sem criar outro.
+   Se não existir, createScheduledPost UMA vez, só com as redes válidas em providers (nenhuma outra):
    date = ${QUANDO_UTC}Z ; publicationDate = {dateTime: \"${QUANDO_UTC}\", timezone: \"UTC\"}
    media = [\"$MEDIA\"] ; text = conteúdo exato do arquivo $ED/metritds-texto.txt (leia com a ferramenta Read)
    draft = $([ -n "${RASCUNHO:-}" ] && echo true || echo false) ; autoPublish = true
@@ -68,8 +75,9 @@ PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
 3) Responda APENAS uma linha JSON, sem crase: {\"ok\":true|false,\"redes\":[...],\"planner\":[plannerUrl...],\"erro\":\"texto do erro ou vazio\"}"
 cd "$ED"
 if [ -n "$INT_ERRO" ]; then OUT='{"ok":false,"erro":"trava de 1 h: não consegui ler a agenda da marca, não agendei"}'; else
-OUT=$(printf '%s' "$PEDIDO" | timeout 600 env -u ANTHROPIC_API_KEY claude -p \
-      --allowedTools "mcp__metricool-inematds__getBrandSettings mcp__metricool-inematds__createScheduledPost Read" 2>&1)
+OUT=$(printf '%s' "$PEDIDO" | timeout 900 python3 "$RAIZ/auto/ia_motor.py" executar metricool_publicacao --pasta "$ED" --agente \
+      --arquivo "$ED/metritds-texto.txt" \
+      --ferramentas "mcp__metricool-inematds__getBrandSettings mcp__metricool-inematds__getScheduledPosts mcp__metricool-inematds__createScheduledPost Read" 2>&1)
 fi
 echo "claude: $OUT"
 J=$(printf '%s' "$OUT" | grep -o '{.*"ok".*}' | tail -1)
@@ -83,7 +91,7 @@ REDES=$(campo redes); PLAN=$(campo planner); ERRO=$(campo erro)
 FAIXA="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦"
 if [ -n "$OK" ]; then
   [ -z "${RASCUNHO:-}" ] && printf '%s\n%s\n' "$QUANDO_BR" "$REDES" > "$ED/metritds.txt"
-  [ -z "${RASCUNHO:-}" ] && python3 "$HOME/projetos/metricool-inematds/intervalo.py" --registrar --marca "eventosextremos" --alvo "$ALVO"
+  [ -z "${RASCUNHO:-}" ] && python3 "$RAIZ/auto/intervalo.py" --registrar --marca "eventosextremos" --alvo "$ALVO"
   MSG="$FAIXA
 🔵 PUBLICADO DIRETO · eventos.extremos (metritds) $([ -n "${RASCUNHO:-}" ] && echo '(RASCUNHO DE TESTE)')
 $FAIXA

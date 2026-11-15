@@ -6,7 +6,7 @@
 # uso: auto/rodar.sh [AAAA-MM-DD, padrão hoje] [24h|semana|ventos|mundo|dia|previsao|alerta|sul]   (PREVIA=1 manda antes a versão com foto do avatar)
 #   alerta = segunda a sábado às 14:00: alerta dos próximos 7 dias a partir de amanhã (Nei, 05/11/2026), roteiro em auto/roteiro-alerta.md
 #   semana = domingo à tarde: previsão da semana (dias 1–7) + tendência de 15 dias (Nei, 11/10/2026), roteiro em auto/roteiro-semana.md
-# Teste: SEM_AVATAR=1 pula o HeyGen (publica a versão mapa); SEM_YT=1 não publica; SEM_BOT=1 simula o bot; SEM_GIT=1 não commita.
+# Teste: SEM_AVATAR=1 pula o HeyGen (ensaio; não publica sem avatar); SEM_YT=1 não publica; SEM_BOT=1 simula o bot; SEM_GIT=1 não commita.
 # AV_SUF=-v2 muda o título do avatar no HeyGen (refazer quando já existe um vídeo com o título EVX-<dia>-<modo>).
 # SEM_TRAVA=1 não espera a trava de outra rodada (piloto a pedido).
 # Teste isolado: ED=<pasta> (não mexe na edição do dia).
@@ -127,13 +127,13 @@ if [ "${REUSAR_ROTEIRO:-}" = 1 ] && [ -s "$ED/falas.json" ] && [ -s "$ED/video.m
 else
   rm -f "$ED/ERRO.txt" "$ED/OCUPADO.txt" "$ED/falas.json" "$ED/yt.txt" "$ED/video.mp4"
   PROMPT=$(sed -e "s|{ED}|$ED|g" -e "s|{PREV}|$PREV|g" -e "s|{RAIZ}|$RAIZ|g" -e "s|{DATA_BR}|$DATA_BR|g" -e "s|{DIA}|$DIA|g" "$RAIZ/auto/$PROMPT_MD")
-  ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
+  ( cd "$ED" && timeout 10800 python3 "$RAIZ/auto/ia-agente.py" "roteiro_$MODO" "$PROMPT" --permission-mode bypassPermissions \
       --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro"
   # login do Claude vencido no meio da rodada (04/11/2026: "OAuth session expired" derrubou o Clima do dia e o Mundo):
   # espera 5 min (outra sessão renova o login) e tenta uma vez mais
   if [ ! -s "$ED/falas.json" ] && grep -q -i -E "authenticate|oauth|login" "$ED/claude.log"; then
     echo "claude -p sem login; nova tentativa em 5 min"; sleep 300
-    ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$PROMPT" --permission-mode bypassPermissions \
+    ( cd "$ED" && timeout 10800 python3 "$RAIZ/auto/ia-agente.py" "roteiro_$MODO" "$PROMPT" --permission-mode bypassPermissions \
         --add-dir "$RAIZ" > "$ED/claude.log" 2>&1 ) || echo "claude -p saiu com erro (2ª tentativa)"
   fi
   # o narrar.py (voz local) e o montar.sh (render) do claude -p passam pela vaga da máquina; sem vaga a tempo ele grava OCUPADO.txt e para.
@@ -147,7 +147,7 @@ else
     RETOMA="RETOMADA (tentativa $TENT de 3): a pesquisa, o falas.json e o gerar_cena.py desta edição já estão prontos; a tentativa anterior parou só porque a vaga gpu da máquina estava ocupada (ver OCUPADO-$((TENT-1)).txt). NÃO refaça a pesquisa nem o roteiro: confira rápido que falas.json e gerar_cena.py estão completos e faça do passo da versão mapa (narrar.py na vaga) em diante, até o fim, seguindo o pedido original abaixo. As regras de OCUPADO.txt e ERRO.txt continuam valendo.
 
 $PROMPT"
-    ( cd "$ED" && timeout 10800 env -u ANTHROPIC_API_KEY claude -p "$RETOMA" --permission-mode bypassPermissions \
+    ( cd "$ED" && timeout 10800 python3 "$RAIZ/auto/ia-agente.py" "roteiro_$MODO" "$RETOMA" --permission-mode bypassPermissions \
         --add-dir "$RAIZ" > "$ED/claude-retoma$TENT.log" 2>&1 ) || echo "claude -p (retomada $TENT) saiu com erro"
   done
   [ -f "$ED/OCUPADO.txt" ] && ocupado "a voz/render da versão mapa (claude -p: $(head -c 150 "$ED/OCUPADO.txt" | tr '\n' ' '))"
@@ -168,7 +168,7 @@ MORTE=$(grep -o -i -w -E "mort[eoa]s?|morreu|morreram|morrem|morrer|óbitos?|fal
 if [ "$MODO" = sul ]; then
   if ! GATE=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1); then
     echo "portão visual reprovou: $GATE"
-    ( cd "$ED" && timeout 5400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED (Impacto Sul), o portão visual reprovou:
+    ( cd "$ED" && timeout 5400 python3 "$RAIZ/auto/ia-agente.py" ajuste_visual "Na pasta $ED (Impacto Sul), o portão visual reprovou:
 $GATE
 Siga o item 3c de $RAIZ/auto/roteiro-sul.md: olhe os quadros de TODOS os fonte/vN/frames (Read), complete cenas/inventario.json, recorte em micro clipe toda cena com nota >= 4 que faltou, troque trechos de mapa/satélite em tela cheia por essas cenas (o lugar vai no painel/pino por cima ou num mapa de no máximo 3 s) e rode python3 gerar_cena.py, depois 'cd $RAIZ && GEO=geo-br.js motor-sul/montar.sh $ED' e python3 $RAIZ/motor-sul/conferir_visual.py $ED até aprovar. Não mude falas, números nem yt.txt. Não publique nada." \
         --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-visual.log" 2>&1 ) || echo "claude -p (visual) saiu com erro"
@@ -197,7 +197,7 @@ cena_canto() {  # a fala do avatar é mais rápida que a narração: se o gerar_
   ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 && { visual_canto; return $?; }
   local erro; erro=$(grep -h -E "Error|ERRO" "$ED/avatar.log" | tail -1 | cut -c1-300)
   echo "gerar_cena.py --canto reprovou ($erro); o claude -p ajusta os tempos" >> "$ED/avatar.log"
-  ( cd "$ED" && timeout 2400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED, 'python3 gerar_cena.py --canto' falhou com: $erro
+  ( cd "$ED" && timeout 2400 python3 "$RAIZ/auto/ia-agente.py" ajuste_tempos_avatar "Na pasta $ED, 'python3 gerar_cena.py --canto' falhou com: $erro
 A fala do avatar (avatar/tempos.json) é mais rápida que a narração (tempos.json), então algum intervalo ficou curto. Ajuste SÓ tempos, durações e limites no gerar_cena.py (ex.: começar uma imagem uma palavra antes, encurtar um contador, afrouxar um assert de duração mínima para 0,8 s), sem mudar falas, números, fontes nem textos. Rode 'python3 gerar_cena.py' (sem --canto) e 'python3 gerar_cena.py --canto' até os dois passarem sem erro. NUNCA tire do vídeo um clipe/cena com nota >= 4 de cenas/inventario.json (Nei, 15/11/2026: em 14/11 o ajuste tirou o granizo na mão): se não cabe, encurte cada cena para 2,5 s, corte ilustração/mapa/satélite ou leve a cena para a fala vizinha (pergunta ou CTA). Se existir $RAIZ/motor-sul/conferir_visual.py e esta for Impacto Sul, rode 'python3 $RAIZ/motor-sul/conferir_visual.py $ED' depois do --canto até aprovar. Não renderize nem publique nada." \
       --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-canto.log" 2>&1 ) || true
   ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 || return 1
@@ -209,7 +209,7 @@ visual_canto() {  # Impacto Sul: o portão visual roda de novo na versão COM AV
   [ "$MODO" = sul ] || return 0
   local g; g=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1) && { echo "portão visual (avatar): $(echo "$g" | head -1)" >> "$ED/avatar.log"; return 0; }
   echo "portão visual (avatar) reprovou: $g" >> "$ED/avatar.log"
-  ( cd "$ED" && timeout 2400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED (Impacto Sul, versão com avatar, layout canto), o portão visual reprovou:
+  ( cd "$ED" && timeout 2400 python3 "$RAIZ/auto/ia-agente.py" ajuste_visual_avatar "Na pasta $ED (Impacto Sul, versão com avatar, layout canto), o portão visual reprovou:
 $g
 O avatar fala mais rápido que a narração e cenas fortes saíram do vídeo. Edite o gerar_cena.py para que TODA cena com nota >= 4 de cenas/inventario.json entre na versão --canto (cada uma com pelo menos 2,5 s; para caber, encurte ou tire ilustração, mapa e satélite, ou ponha a cena na fala vizinha, inclusive na pergunta e no CTA). Não mude falas, números, fontes nem yt.txt. Rode 'python3 gerar_cena.py --canto' e 'python3 $RAIZ/motor-sul/conferir_visual.py $ED' até aprovar. Não renderize nem publique nada." \
       --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-visual-canto.log" 2>&1 ) || true
