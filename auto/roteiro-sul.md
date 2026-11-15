@@ -97,6 +97,9 @@ nas próximas horas e dias. Nome na tela: "INEMA · IMPACTO SUL". Tom de ALERTA 
    - PORTÃO (rodar.sh reprova e não publica): `python3 {RAIZ}/motor-sul/conferir_visual.py {ED}` depois do gerar_cena.py
      tem de aprovar: >= 75% do vídeo com imagem real, todas as cenas nota >= 4 usadas, todos os vN inventariados, nenhum
      trecho de mapa/satélite cheio acima de 6 s. Rode e corrija até aprovar antes de renderizar.
+     O portão roda DE NOVO na versão com avatar (--canto), que é a publicada: o avatar fala mais rápido, então deixe folga
+     (cenas fortes em janelas de 2,5 a 3 s, ilustração/mapa como o que sai primeiro). Cena nota >= 4 nunca sai para caber
+     (Nei, 15/11/2026: em 14/11 o granizo na mão sumiu da versão publicada).
    - DURAÇÃO (Nei: "no início os mapas nem paravam, é um piscar"): nenhuma cena com menos de 2,5 s; mapa no mínimo 3 s;
      a câmera não viaja durante a fala do lugar (chega antes, com no máximo 0,8 s de movimento, e fica parada).
    - SÓ IMAGEM QUE AGREGA (Nei: "imagem do céu limpo não agrega nada"): só entra cena que mostra o fenômeno ou o estrago

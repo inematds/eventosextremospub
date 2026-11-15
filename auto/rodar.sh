@@ -194,13 +194,28 @@ V="$ED/video-avatar.mp4"; NOTA=""
 [ "${SEM_TRAVA:-}" = 1 ] || flock -u 8
 cena_canto() {  # a fala do avatar é mais rápida que a narração: se o gerar_cena.py reprovar com os tempos do avatar,
   # o mesmo Claude que escreveu a cena ajusta só os tempos e limites (uma vez), sem mudar fala nem números
-  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 && return 0
+  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 && { visual_canto; return $?; }
   local erro; erro=$(grep -h -E "Error|ERRO" "$ED/avatar.log" | tail -1 | cut -c1-300)
   echo "gerar_cena.py --canto reprovou ($erro); o claude -p ajusta os tempos" >> "$ED/avatar.log"
   ( cd "$ED" && timeout 2400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED, 'python3 gerar_cena.py --canto' falhou com: $erro
-A fala do avatar (avatar/tempos.json) é mais rápida que a narração (tempos.json), então algum intervalo ficou curto. Ajuste SÓ tempos, durações e limites no gerar_cena.py (ex.: começar uma imagem uma palavra antes, encurtar um contador, afrouxar um assert de duração mínima para 0,8 s), sem mudar falas, números, fontes nem textos. Rode 'python3 gerar_cena.py' (sem --canto) e 'python3 gerar_cena.py --canto' até os dois passarem sem erro. Não renderize nem publique nada." \
+A fala do avatar (avatar/tempos.json) é mais rápida que a narração (tempos.json), então algum intervalo ficou curto. Ajuste SÓ tempos, durações e limites no gerar_cena.py (ex.: começar uma imagem uma palavra antes, encurtar um contador, afrouxar um assert de duração mínima para 0,8 s), sem mudar falas, números, fontes nem textos. Rode 'python3 gerar_cena.py' (sem --canto) e 'python3 gerar_cena.py --canto' até os dois passarem sem erro. NUNCA tire do vídeo um clipe/cena com nota >= 4 de cenas/inventario.json (Nei, 15/11/2026: em 14/11 o ajuste tirou o granizo na mão): se não cabe, encurte cada cena para 2,5 s, corte ilustração/mapa/satélite ou leve a cena para a fala vizinha (pergunta ou CTA). Se existir $RAIZ/motor-sul/conferir_visual.py e esta for Impacto Sul, rode 'python3 $RAIZ/motor-sul/conferir_visual.py $ED' depois do --canto até aprovar. Não renderize nem publique nada." \
       --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-canto.log" 2>&1 ) || true
-  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1
+  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 || return 1
+  visual_canto
+}
+visual_canto() {  # Impacto Sul: o portão visual roda de novo na versão COM AVATAR (a publicada). Em 14/11 o ajuste do --canto
+  # tirou o granizo na mão e a chuva forte depois do portão ter aprovado a versão mapa (Nei, 15/11/2026: "a seleção das
+  # imagens está falhando, temos que ter as impactantes"). Reprovou: uma correção pelo claude -p; de novo: aviso e não publica.
+  [ "$MODO" = sul ] || return 0
+  local g; g=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1) && { echo "portão visual (avatar): $(echo "$g" | head -1)" >> "$ED/avatar.log"; return 0; }
+  echo "portão visual (avatar) reprovou: $g" >> "$ED/avatar.log"
+  ( cd "$ED" && timeout 2400 env -u ANTHROPIC_API_KEY claude -p "Na pasta $ED (Impacto Sul, versão com avatar, layout canto), o portão visual reprovou:
+$g
+O avatar fala mais rápido que a narração e cenas fortes saíram do vídeo. Edite o gerar_cena.py para que TODA cena com nota >= 4 de cenas/inventario.json entre na versão --canto (cada uma com pelo menos 2,5 s; para caber, encurte ou tire ilustração, mapa e satélite, ou ponha a cena na fala vizinha, inclusive na pergunta e no CTA). Não mude falas, números, fontes nem yt.txt. Rode 'python3 gerar_cena.py --canto' e 'python3 $RAIZ/motor-sul/conferir_visual.py $ED' até aprovar. Não renderize nem publique nada." \
+      --permission-mode bypassPermissions --add-dir "$RAIZ" > "$ED/claude-visual-canto.log" 2>&1 ) || true
+  ( cd "$ED" && python3 gerar_cena.py --canto ) >> "$ED/avatar.log" 2>&1 \
+    && g=$(python3 "$RAIZ/motor-sul/conferir_visual.py" "$ED" 2>&1) && return 0
+  avisar "Impacto Sul reprovado no portão visual da versão COM AVATAR (cena forte fora), não publicado: $(echo "$g" | tail -4 | tr '\n' ' ')"
 }
 VIGIA=""
 if [ "${SEM_AVATAR:-}" != 1 ] && [ -z "$DRY" ]; then
