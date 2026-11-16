@@ -1,0 +1,962 @@
+[
+ {
+  "id": "f1",
+  "fala": "Dezesseis de novembro de dois mil e vinte e seis. Balanço da semana: seca atinge oitenta e quatro vírgula seis milhões nos Estados Unidos. Gaza tem estimativa de duzentas e vinte e seis mil possivelmente atingidos.",
+  "ini": 0.0,
+  "fim": 11.73,
+  "palavras": [
+   {
+    "w": "16",
+    "t": 0.0,
+    "f": 0.38
+   },
+   {
+    "w": "de",
+    "t": 0.38,
+    "f": 0.72
+   },
+   {
+    "w": "novembro",
+    "t": 0.72,
+    "f": 1.14
+   },
+   {
+    "w": "de",
+    "t": 1.14,
+    "f": 1.24
+   },
+   {
+    "w": "2026",
+    "t": 1.24,
+    "f": 2.28
+   },
+   {
+    "w": "Balanço",
+    "t": 2.28,
+    "f": 3.38
+   },
+   {
+    "w": "da",
+    "t": 3.38,
+    "f": 3.46
+   },
+   {
+    "w": "semana",
+    "t": 3.46,
+    "f": 3.72
+   },
+   {
+    "w": "Seca",
+    "t": 3.72,
+    "f": 4.26
+   },
+   {
+    "w": "atinge",
+    "t": 4.26,
+    "f": 4.72
+   },
+   {
+    "w": "84",
+    "t": 4.72,
+    "f": 5.32
+   },
+   {
+    "w": ",6",
+    "t": 5.32,
+    "f": 6.36
+   },
+   {
+    "w": "milhões",
+    "t": 6.36,
+    "f": 6.64
+   },
+   {
+    "w": "nos",
+    "t": 6.64,
+    "f": 6.94
+   },
+   {
+    "w": "Estados",
+    "t": 6.94,
+    "f": 7.14
+   },
+   {
+    "w": "Unidos",
+    "t": 7.14,
+    "f": 7.48
+   },
+   {
+    "w": "Gaza",
+    "t": 7.48,
+    "f": 8.26
+   },
+   {
+    "w": "tem",
+    "t": 8.26,
+    "f": 8.5
+   },
+   {
+    "w": "estimativa",
+    "t": 8.5,
+    "f": 9.0
+   },
+   {
+    "w": "de",
+    "t": 9.0,
+    "f": 9.14
+   },
+   {
+    "w": "226",
+    "t": 9.14,
+    "f": 9.96
+   },
+   {
+    "w": "mil,",
+    "t": 9.96,
+    "f": 10.34
+   },
+   {
+    "w": "possivelmente",
+    "t": 10.44,
+    "f": 11.18
+   },
+   {
+    "w": "atingidos",
+    "t": 11.18,
+    "f": 11.68
+   }
+  ]
+ },
+ {
+  "id": "f2",
+  "fala": "Nos Estados Unidos, a seca cobre quarenta e um vírgula sete por cento da área dos estados contíguos, segundo balanço de quinta.",
+  "ini": 11.73,
+  "fim": 18.77,
+  "palavras": [
+   {
+    "w": "Nos",
+    "t": 11.68,
+    "f": 12.22
+   },
+   {
+    "w": "Estados",
+    "t": 12.22,
+    "f": 12.48
+   },
+   {
+    "w": "Unidos,",
+    "t": 12.48,
+    "f": 12.82
+   },
+   {
+    "w": "a",
+    "t": 13.0,
+    "f": 13.2
+   },
+   {
+    "w": "seca",
+    "t": 13.2,
+    "f": 13.5
+   },
+   {
+    "w": "cobre",
+    "t": 13.5,
+    "f": 13.76
+   },
+   {
+    "w": "41",
+    "t": 13.76,
+    "f": 14.1
+   },
+   {
+    "w": ",7",
+    "t": 14.1,
+    "f": 14.96
+   },
+   {
+    "w": "%",
+    "t": 14.96,
+    "f": 15.36
+   },
+   {
+    "w": "da",
+    "t": 15.36,
+    "f": 16.0
+   },
+   {
+    "w": "área",
+    "t": 16.0,
+    "f": 16.22
+   },
+   {
+    "w": "dos",
+    "t": 16.22,
+    "f": 16.34
+   },
+   {
+    "w": "estados",
+    "t": 16.34,
+    "f": 16.76
+   },
+   {
+    "w": "contíguos,",
+    "t": 16.76,
+    "f": 17.42
+   },
+   {
+    "w": "segundo",
+    "t": 17.44,
+    "f": 17.92
+   },
+   {
+    "w": "o",
+    "t": 17.92,
+    "f": 18.08
+   },
+   {
+    "w": "balanço",
+    "t": 18.08,
+    "f": 18.3
+   },
+   {
+    "w": "de",
+    "t": 18.3,
+    "f": 18.38
+   },
+   {
+    "w": "quinta",
+    "t": 18.38,
+    "f": 18.72
+   }
+  ]
+ },
+ {
+  "id": "f3",
+  "fala": "Gaza: duzentas e vinte e seis mil pessoas possivelmente atingidas. Estimativa da ONU, divulgada sexta, para chuvas desde seis de novembro.",
+  "ini": 18.77,
+  "fim": 26.95,
+  "palavras": [
+   {
+    "w": "Gaza,",
+    "t": 18.72,
+    "f": 19.58
+   },
+   {
+    "w": "226",
+    "t": 19.74,
+    "f": 20.68
+   },
+   {
+    "w": "mil",
+    "t": 20.68,
+    "f": 21.02
+   },
+   {
+    "w": "pessoas,",
+    "t": 21.02,
+    "f": 21.3
+   },
+   {
+    "w": "possivelmente",
+    "t": 21.54,
+    "f": 22.28
+   },
+   {
+    "w": "atingidas",
+    "t": 22.28,
+    "f": 22.74
+   },
+   {
+    "w": "Estimativa",
+    "t": 22.74,
+    "f": 23.6
+   },
+   {
+    "w": "da",
+    "t": 23.6,
+    "f": 23.78
+   },
+   {
+    "w": "ONU,",
+    "t": 23.78,
+    "f": 24.04
+   },
+   {
+    "w": "divulgada",
+    "t": 24.1,
+    "f": 24.64
+   },
+   {
+    "w": "sexta,",
+    "t": 24.64,
+    "f": 25.14
+   },
+   {
+    "w": "para",
+    "t": 25.14,
+    "f": 25.5
+   },
+   {
+    "w": "chuvas",
+    "t": 25.5,
+    "f": 25.86
+   },
+   {
+    "w": "desde",
+    "t": 25.86,
+    "f": 26.04
+   },
+   {
+    "w": "6",
+    "t": 26.04,
+    "f": 26.34
+   },
+   {
+    "w": "de",
+    "t": 26.34,
+    "f": 26.5
+   },
+   {
+    "w": "novembro",
+    "t": 26.5,
+    "f": 26.9
+   }
+  ]
+ },
+ {
+  "id": "f4",
+  "fala": "Na Somália, balanço de quinta aponta quase cento e setenta mil atingidos em outubro. Alagamentos continuam em Jowhar.",
+  "ini": 26.95,
+  "fim": 34.11,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 26.9,
+    "f": 27.36
+   },
+   {
+    "w": "Somália,",
+    "t": 27.36,
+    "f": 27.88
+   },
+   {
+    "w": "balanço",
+    "t": 27.92,
+    "f": 28.56
+   },
+   {
+    "w": "de",
+    "t": 28.56,
+    "f": 28.66
+   },
+   {
+    "w": "quinta",
+    "t": 28.66,
+    "f": 28.96
+   },
+   {
+    "w": "aponta",
+    "t": 28.96,
+    "f": 29.48
+   },
+   {
+    "w": "quase",
+    "t": 29.48,
+    "f": 29.64
+   },
+   {
+    "w": "170",
+    "t": 29.64,
+    "f": 30.3
+   },
+   {
+    "w": "mil",
+    "t": 30.3,
+    "f": 30.68
+   },
+   {
+    "w": "atingidos",
+    "t": 30.68,
+    "f": 31.44
+   },
+   {
+    "w": "em",
+    "t": 31.44,
+    "f": 31.68
+   },
+   {
+    "w": "outubro.",
+    "t": 31.68,
+    "f": 32.08
+   },
+   {
+    "w": "Alagamentos",
+    "t": 32.16,
+    "f": 32.9
+   },
+   {
+    "w": "continuam",
+    "t": 32.9,
+    "f": 33.48
+   },
+   {
+    "w": "em",
+    "t": 33.48,
+    "f": 33.72
+   },
+   {
+    "w": "Johar.",
+    "t": 33.72,
+    "f": 34.06
+   }
+  ]
+ },
+ {
+  "id": "f5",
+  "fala": "Na Madeira, quarta registrou quinhentos e dois vírgula sete milímetros diários: recorde nacional. Antes, quatrocentos e noventa e sete vírgula cinco milímetros, em dois mil e vinte e três, no mesmo posto.",
+  "ini": 34.11,
+  "fim": 45.67,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 34.2,
+    "f": 34.52
+   },
+   {
+    "w": "Madeira,",
+    "t": 34.52,
+    "f": 34.94
+   },
+   {
+    "w": "quarta",
+    "t": 35.0,
+    "f": 35.56
+   },
+   {
+    "w": "registrou",
+    "t": 35.56,
+    "f": 36.06
+   },
+   {
+    "w": "502",
+    "t": 36.06,
+    "f": 36.86
+   },
+   {
+    "w": ",7",
+    "t": 36.86,
+    "f": 37.56
+   },
+   {
+    "w": "milímetros",
+    "t": 37.56,
+    "f": 38.02
+   },
+   {
+    "w": "diários,",
+    "t": 38.02,
+    "f": 38.52
+   },
+   {
+    "w": "recorde",
+    "t": 38.7,
+    "f": 39.26
+   },
+   {
+    "w": "nacional.",
+    "t": 39.26,
+    "f": 39.46
+   },
+   {
+    "w": "Antes,",
+    "t": 39.74,
+    "f": 40.34
+   },
+   {
+    "w": "497",
+    "t": 40.38,
+    "f": 41.64
+   },
+   {
+    "w": ",5",
+    "t": 41.64,
+    "f": 42.28
+   },
+   {
+    "w": "milímetros,",
+    "t": 42.28,
+    "f": 42.76
+   },
+   {
+    "w": "em",
+    "t": 42.84,
+    "f": 43.24
+   },
+   {
+    "w": "2023",
+    "t": 43.24,
+    "f": 43.72
+   },
+   {
+    "w": "no",
+    "t": 43.72,
+    "f": 44.28
+   },
+   {
+    "w": "mesmo",
+    "t": 44.28,
+    "f": 44.48
+   },
+   {
+    "w": "posto.",
+    "t": 44.48,
+    "f": 44.88
+   },
+   {
+    "w": "Waipa,",
+    "t": 45.02,
+    "f": 45.62
+   }
+  ]
+ },
+ {
+  "id": "f6",
+  "fala": "Weipa, Austrália: trinta e nove vírgula nove graus na terça. Recorde de novembro no aeroporto; antes, trinta e nove vírgula seis graus, em dois mil e vinte e quatro, naquele aeroporto.",
+  "ini": 45.67,
+  "fim": 55.21,
+  "palavras": [
+   {
+    "w": "Austrália,",
+    "t": 45.76,
+    "f": 46.42
+   },
+   {
+    "w": "39",
+    "t": 46.44,
+    "f": 46.94
+   },
+   {
+    "w": ",9",
+    "t": 46.94,
+    "f": 47.72
+   },
+   {
+    "w": "graus",
+    "t": 47.72,
+    "f": 47.98
+   },
+   {
+    "w": "na",
+    "t": 47.98,
+    "f": 48.08
+   },
+   {
+    "w": "terça,",
+    "t": 48.08,
+    "f": 48.44
+   },
+   {
+    "w": "recorde",
+    "t": 48.5,
+    "f": 49.18
+   },
+   {
+    "w": "de",
+    "t": 49.18,
+    "f": 49.26
+   },
+   {
+    "w": "novembro",
+    "t": 49.26,
+    "f": 49.64
+   },
+   {
+    "w": "no",
+    "t": 49.64,
+    "f": 49.76
+   },
+   {
+    "w": "aeroporto.",
+    "t": 49.76,
+    "f": 50.32
+   },
+   {
+    "w": "Antes,",
+    "t": 50.32,
+    "f": 50.92
+   },
+   {
+    "w": "39",
+    "t": 50.96,
+    "f": 51.4
+   },
+   {
+    "w": ",6",
+    "t": 51.4,
+    "f": 52.2
+   },
+   {
+    "w": "graus,",
+    "t": 52.2,
+    "f": 52.6
+   },
+   {
+    "w": "em",
+    "t": 52.6,
+    "f": 53.0
+   },
+   {
+    "w": "2024",
+    "t": 53.0,
+    "f": 53.66
+   },
+   {
+    "w": "naquele",
+    "t": 53.66,
+    "f": 54.54
+   },
+   {
+    "w": "aeroporto.",
+    "t": 54.54,
+    "f": 55.16
+   }
+  ]
+ },
+ {
+  "id": "f7",
+  "fala": "São períodos diferentes. Esses totais não representam impactos apenas de hoje.",
+  "ini": 55.21,
+  "fim": 59.21,
+  "palavras": [
+   {
+    "w": "São",
+    "t": 55.16,
+    "f": 55.54
+   },
+   {
+    "w": "períodos",
+    "t": 55.54,
+    "f": 55.94
+   },
+   {
+    "w": "diferentes.",
+    "t": 55.94,
+    "f": 56.22
+   },
+   {
+    "w": "Esses",
+    "t": 56.9,
+    "f": 57.12
+   },
+   {
+    "w": "totais",
+    "t": 57.12,
+    "f": 57.44
+   },
+   {
+    "w": "não",
+    "t": 57.44,
+    "f": 57.52
+   },
+   {
+    "w": "representam",
+    "t": 57.52,
+    "f": 58.02
+   },
+   {
+    "w": "impactos",
+    "t": 58.02,
+    "f": 58.48
+   },
+   {
+    "w": "apenas",
+    "t": 58.48,
+    "f": 58.68
+   },
+   {
+    "w": "de",
+    "t": 58.68,
+    "f": 58.96
+   },
+   {
+    "w": "hoje.",
+    "t": 58.96,
+    "f": 59.16
+   }
+  ]
+ },
+ {
+  "id": "f8",
+  "fala": "E agora? A previsão americana indica chuva abaixo da média no Nordeste do país entre quarta e sábado.",
+  "ini": 59.21,
+  "fim": 65.93,
+  "palavras": [
+   {
+    "w": "E",
+    "t": 59.3,
+    "f": 59.76
+   },
+   {
+    "w": "agora?",
+    "t": 59.76,
+    "f": 59.96
+   },
+   {
+    "w": "A",
+    "t": 60.24,
+    "f": 60.6
+   },
+   {
+    "w": "previsão",
+    "t": 60.6,
+    "f": 60.98
+   },
+   {
+    "w": "americana",
+    "t": 60.98,
+    "f": 61.4
+   },
+   {
+    "w": "indica",
+    "t": 61.4,
+    "f": 61.9
+   },
+   {
+    "w": "chuva",
+    "t": 61.9,
+    "f": 62.16
+   },
+   {
+    "w": "abaixo",
+    "t": 62.16,
+    "f": 62.46
+   },
+   {
+    "w": "da",
+    "t": 62.46,
+    "f": 62.56
+   },
+   {
+    "w": "média",
+    "t": 62.56,
+    "f": 62.8
+   },
+   {
+    "w": "no",
+    "t": 62.8,
+    "f": 62.98
+   },
+   {
+    "w": "nordeste",
+    "t": 62.98,
+    "f": 63.44
+   },
+   {
+    "w": "do",
+    "t": 63.44,
+    "f": 63.56
+   },
+   {
+    "w": "país",
+    "t": 63.56,
+    "f": 63.8
+   },
+   {
+    "w": "entre",
+    "t": 63.8,
+    "f": 64.04
+   },
+   {
+    "w": "quarta",
+    "t": 64.04,
+    "f": 64.4
+   },
+   {
+    "w": "e",
+    "t": 64.4,
+    "f": 64.48
+   },
+   {
+    "w": "sábado.",
+    "t": 64.48,
+    "f": 64.88
+   }
+  ]
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "ini": 65.93,
+  "fim": 68.69,
+  "palavras": [
+   {
+    "w": "De",
+    "t": 65.94,
+    "f": 66.26
+   },
+   {
+    "w": "que",
+    "t": 66.26,
+    "f": 66.34
+   },
+   {
+    "w": "região",
+    "t": 66.34,
+    "f": 66.74
+   },
+   {
+    "w": "e",
+    "t": 66.74,
+    "f": 67.02
+   },
+   {
+    "w": "de",
+    "t": 67.02,
+    "f": 67.14
+   },
+   {
+    "w": "que",
+    "t": 67.14,
+    "f": 67.24
+   },
+   {
+    "w": "cidade",
+    "t": 67.24,
+    "f": 67.48
+   },
+   {
+    "w": "você",
+    "t": 67.48,
+    "f": 67.74
+   },
+   {
+    "w": "é?",
+    "t": 67.74,
+    "f": 67.96
+   },
+   {
+    "w": "Comenta",
+    "t": 68.04,
+    "f": 68.52
+   },
+   {
+    "w": "aqui.",
+    "t": 68.52,
+    "f": 68.64
+   }
+  ]
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "ini": 68.69,
+  "fim": 75.773,
+  "palavras": [
+   {
+    "w": "No",
+    "t": 68.92,
+    "f": 69.16
+   },
+   {
+    "w": "Inema",
+    "t": 69.16,
+    "f": 69.36
+   },
+   {
+    "w": ".club,",
+    "t": 69.36,
+    "f": 69.84
+   },
+   {
+    "w": "você",
+    "t": 70.0,
+    "f": 70.36
+   },
+   {
+    "w": "pode",
+    "t": 70.36,
+    "f": 70.54
+   },
+   {
+    "w": "aprender",
+    "t": 70.54,
+    "f": 70.8
+   },
+   {
+    "w": "de",
+    "t": 70.8,
+    "f": 71.04
+   },
+   {
+    "w": "graça",
+    "t": 71.04,
+    "f": 71.38
+   },
+   {
+    "w": "sobre",
+    "t": 71.38,
+    "f": 71.58
+   },
+   {
+    "w": "inteligência",
+    "t": 71.58,
+    "f": 72.14
+   },
+   {
+    "w": "artificial",
+    "t": 72.14,
+    "f": 72.4
+   },
+   {
+    "w": "e",
+    "t": 72.4,
+    "f": 72.96
+   },
+   {
+    "w": "se",
+    "t": 72.96,
+    "f": 73.14
+   },
+   {
+    "w": "preparar",
+    "t": 73.14,
+    "f": 73.58
+   },
+   {
+    "w": "para",
+    "t": 73.58,
+    "f": 73.7
+   },
+   {
+    "w": "o",
+    "t": 73.7,
+    "f": 73.8
+   },
+   {
+    "w": "futuro.",
+    "t": 73.8,
+    "f": 74.06
+   },
+   {
+    "w": "É",
+    "t": 74.26,
+    "f": 74.56
+   },
+   {
+    "w": "direto",
+    "t": 74.56,
+    "f": 74.92
+   },
+   {
+    "w": "na",
+    "t": 74.92,
+    "f": 75.0
+   },
+   {
+    "w": "internet.",
+    "t": 75.0,
+    "f": 75.14
+   }
+  ]
+ }
+]
