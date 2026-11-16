@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção: seiscentas e cinquenta e oito cidades do Sul em alerta de tempestade na quarta. Você precisa se preparar. Alerta da semana, segunda, dezesseis de novembro.",
+    "legenda": "Atenção: 658 cidades do Sul em alerta de tempestade na quarta. Você precisa se preparar. Alerta da semana, segunda, 16 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "O aviso laranja do INMET abrange partes do Rio Grande do Sul, Santa Catarina e Paraná. Na quarta, há risco de granizo e alagamentos.",
+    "legenda": "O aviso laranja do INMET abrange partes do Rio Grande do Sul, Santa Catarina e Paraná. Na quarta, há risco de granizo e alagamentos."
+  },
+  {
+    "id": "f3",
+    "fala": "No norte de Minas, o Open Meteo prevê até cento e quarenta e dois vírgula três milímetros até segunda. Chove durante toda a semana.",
+    "legenda": "No norte de Minas, o Open-Meteo prevê até 142,3 milímetros até segunda. Chove durante toda a semana."
+  },
+  {
+    "id": "f4",
+    "fala": "No norte de Goiás, amanhã, terça, podem cair cinquenta e quatro vírgula quatro milímetros. Evite ruas baixas na chuva forte.",
+    "legenda": "No norte de Goiás, amanhã, terça, podem cair 54,4 milímetros. Evite ruas baixas na chuva forte."
+  },
+  {
+    "id": "f5",
+    "fala": "No noroeste gaúcho, a sexta concentra noventa vírgula um milímetros previstos. A MetSul alerta para temporais desde terça, com novos episódios até sexta.",
+    "legenda": "No noroeste gaúcho, a sexta concentra 90,1 milímetros previstos. A MetSul alerta para temporais desde terça, com novos episódios até sexta."
+  },
+  {
+    "id": "f6",
+    "fala": "No oeste catarinense, sexta, rajadas previstas de sessenta e sete vírgula três quilômetros por hora. Recolha objetos soltos antes.",
+    "legenda": "No oeste catarinense, sexta, rajadas previstas de 67,3 quilômetros por hora. Recolha objetos soltos antes."
+  },
+  {
+    "id": "f7",
+    "fala": "No norte do Piauí, o calor pode chegar a quarenta vírgula sete graus na próxima segunda. No oeste do Pará, quarta, até trinta e oito vírgula oito graus.",
+    "legenda": "No norte do Piauí, o calor pode chegar a 40,7 graus na próxima segunda. No oeste do Pará, quarta, até 38,8 graus."
+  },
+  {
+    "id": "f8",
+    "fala": "Beba água. Nunca atravesse rua alagada. Durante temporais, fique longe de árvores e acompanhe os avisos da Defesa Civil.",
+    "legenda": "Beba água. Nunca atravesse rua alagada. Durante temporais, fique longe de árvores e acompanhe os avisos da Defesa Civil."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
