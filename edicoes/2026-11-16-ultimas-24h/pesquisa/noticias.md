@@ -1,0 +1,26 @@
+# Pesquisa de notícias — Clima 24 h — 16/11/2026
+
+Corte editorial: 15/11 05h30 a 16/11 05h30 BRT (08h30 UTC). Busca feita nesta execução com o leitor web; resultados de busca são pistas, não confirmação independente. Matérias sem leitura integral ou sem fonte confiável não sustentam números no vídeo. Brutos locais sustentam os números selecionados.
+
+| Fato / situação | Número / local | Fonte e URL | Data/hora da publicação ou vigência | Decisão |
+|---|---|---|---|---|
+| Alerta de chuva forte para domingo em SP; corredor de umidade e cavado | Risco de vento, raios e granizo; sem quantificar impacto observado | Agência Brasil https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/fortes-chuvas-devem-atingir-estado-de-sao-paulo-neste-domingo | 15/11/2026 10h34 | Contexto; é previsão publicada ontem, não dano confirmado |
+| Chuva e granizo na Grande BH; alagamentos e danos | Belo Horizonte / região metropolitana; sem balanço confirmado | g1 https://g1.globo.com/mg/minas-gerais/noticia/2026/11/15/chuva-provoca-estragos-na-grande-bh.ghtml | 15/11; hora da matéria principal não confirmada | Leitura bloqueada. Há pistas em republicações, mas ficam fora da fala |
+| Chuva alaga vias e córrego transborda na Zona Leste | São Paulo; sem balanço quantificado | g1 https://g1.globo.com/sp/sao-paulo/noticia/2026/11/15/chuva-alaga-ruas-de-sp-e-provoca-transbordamento-de-corrego-na-zona-leste-videos-mostram-estragos.ghtml | 15/11; hora não confirmada | Leitura bloqueada; não usar números das cópias |
+| Episódio de alagamento em Guaraí | Notícia local cita volume sem bruto identificável | https://jornalaraguaina.com.br/tocantins/2026/11/chuva-de-mais-de-150-mm-alaga-guarai-invade-hospital-e-deixa-prejuizos-em-varios-pontos-da-cidade/ | 15/11 22h56 | Fonte fora da lista autorizada e chuva horária sem confirmação; descartada |
+| Panorama de pancadas intensas no país no domingo e semana seguinte | TO/GO/MG/SP; não usar tabela com data inconsistente | Climatempo https://www.climatempo.com.br/noticia/temporal/semana-tera-fortes-pancadas-de-chuva-em-muitas-areas-do-brasil | Indexada como 16/11; hora não informada | Busca apresenta tabela com ano 2036; leitura integral falhou. Não usar números |
+| Hoje e amanhã em Santa Catarina | 16/11: chuva fraca isolada no leste; 17/11: instabilidade se espalha e temporais isolados no oeste/sul | Governo SC / Epagri-Ciram https://ciram.epagri.sc.gov.br/index.php/2026/11/15/previsao-5-dias/ | Publicado 15/11, sem hora; previsão 16 e 17/11 | Leitura integral confirmou; contexto do avanço da instabilidade amanhã |
+| Instabilidade prevista na Bahia | Pancadas no interior e chuva no litoral em 16/11 | INEMA / Governo BA https://www.ba.gov.br/inema/iniciativas/previsao-do-tempo | Boletim 13–15/11 com tendência 16/11 | Contexto, não observação de domingo |
+| Previsão de tempestades em Minas nesta segunda | Risco em Norte/Jequitinhonha/Mucuri | Governo MG / SIMGE https://simge.mg.gov.br/previsoes-do-tempo | 16/11, hora não confirmada | Busca disponível; leitura 403; contexto sem número no vídeo |
+| Aviso de chuva no Pará, vigente ontem | 15/11 00h–23h59; não é aviso de hoje | Defesa Civil PA https://multirriscos.defesacivilpa.com.br/pages/alertas/pdf.php?download=1&id=1268 | Emitido 14/11 | Fora da pauta de avisos atuais |
+| Previsão geo-hidrológica de ontem | Cenário anterior ao episódio | CEMADEN https://www.gov.br/cemaden/pt-br/assuntos/riscos-geo-hidrologicos/15-11-2026-previsao-de-riscos-geo-hidrologicos/ | 14/11 16h07; válido 15/11 | Não confundir com avaliação atual |
+
+Buscas cobriram temporal, chuva, granizo, enchente, seca, fumaça, calor e alertas em fontes nacionais, regionais e órgãos oficiais. Não surgiu balanço de vítimas ou desabrigados confirmado para a janela. Nenhum balanço foi inventado. Resultados velhos, agregadores e redes não oficiais foram excluídos. Consultas amplas e por data/domínio estão parcialmente preservadas em busca-web-registro.json. Falhas de leitura e ausência de estações INMET anotadas no hub LIMITES.md.
+
+## Base observada que entra no vídeo
+
+CEMADEN: https://resources.cemaden.gov.br/graficos/interativo/getJson2.php?uf=TO (trocar UF para BA, MG, PR, GO); captura completa em bruto/cemaden_getJson2_todas_ufs.json, individualizada em dados.md. INMET: https://avisos.inmet.gov.br/ e bruto/inmet_avisos_ativos.json. INPE: bruto/inpe_focos_diario_br_20261115.csv, AQUA de referência em dia UTC fechado. Previsão 16–22/11: bruto/previsao7d.json, Open-Meteo.
+
+## Segunda passagem
+
+Busca adicional por seca, fumaça, calor, frio e desalojados na data, preservada como índice em busca-web-segunda-passagem.json. Climatempo, em matéria publicada em 13/11, contextualiza fumaça no centro-norte paraense e instabilidade no início da semana (https://www.climatempo.com.br/noticia/energia/calor-e-temporais-no-sul-e-sudeste-pedem-atencao-a-disponibilidade-de-energia). Não usar como medição de domingo. A home indexada da MetSul lista previsão de calor e temporais para a semana; não foi necessário consultar a rota api.metsul.com. Ocorrências antigas retornadas pela busca, inclusive tornados de semanas anteriores, não pertencem à janela desta edição. A seleção permanece nos pluviômetros e focos oficiais disponíveis.

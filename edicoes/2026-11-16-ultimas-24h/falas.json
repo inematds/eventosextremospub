@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Segunda-feira, dezesseis de novembro. Quase duzentos milímetros no Tocantins, chuva forte em Minas e na Bahia.",
+  "legenda": "Segunda-feira, 16 de novembro. Quase 200 milímetros no Tocantins, chuva forte em Minas e na Bahia."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Paranã, no Tocantins, um pluviômetro marcou cento e noventa e sete vírgula seis milímetros em vinte e quatro horas. Outro confirmou cento e noventa e dois milímetros.",
+  "legenda": "Em Paranã, no Tocantins, um pluviômetro marcou 197,6 milímetros em 24 horas. Outro confirmou 192 milímetros."
+ },
+ {
+  "id": "f3",
+  "fala": "Na Bahia, Candiba registrou cento e trinta e três milímetros em seis horas, durante a madrugada.",
+  "legenda": "Na Bahia, Candiba registrou 133 milímetros em 6 horas, durante a madrugada."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Minas, Matias Cardoso teve cento e vinte e dois milímetros em seis horas.",
+  "legenda": "Em Minas, Matias Cardoso teve 122 milímetros em 6 horas."
+ },
+ {
+  "id": "f5",
+  "fala": "No Sul, Mallet, no Paraná, acumulou cento e um milímetros em vinte e quatro horas.",
+  "legenda": "No Sul, Mallet, no Paraná, acumulou 101 milímetros em 24 horas."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, foram duzentos e sessenta e um focos no domingo. Cento e noventa e seis no Pará.",
+  "legenda": "No fogo, foram 261 focos no domingo. 196 no Pará."
+ },
+ {
+  "id": "f7",
+  "fala": "No Centro-Oeste, Niquelândia, em Goiás, marcou sessenta e oito milímetros em doze horas.",
+  "legenda": "No Centro-Oeste, Niquelândia, em Goiás, marcou 68 milímetros em 12 horas."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Aviso amarelo de tempestade em duas mil novecentas e trinta e oito cidades. Amanhã, novos avisos incluem o Sul.",
+  "legenda": "E hoje? Aviso amarelo de tempestade em 2.938 cidades. Amanhã, novos avisos incluem o Sul."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: hoje deve concentrar mais chuva nas capitais. O Centro-Oeste deve liderar a soma, e Teresina pode passar dos quarenta graus.",
+  "legenda": "Os próximos 7 dias: hoje deve concentrar mais chuva nas capitais. O Centro-Oeste deve liderar a soma, e Teresina pode passar dos 40 graus."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: mais de trinta mil milímetros nos pluviômetros, com Minas na frente. Nas capitais, oitocentos e cinquenta e sete previstos em sete dias.",
+  "legenda": "Volumes somados: mais de 30 mil milímetros nos pluviômetros, com Minas na frente. Nas capitais, 857 previstos em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
