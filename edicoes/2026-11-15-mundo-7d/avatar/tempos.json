@@ -1,0 +1,992 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quinze de novembro de dois mil e vinte e seis. No balanço da semana: Gaza, estimativa de duzentas e vinte e seis mil pessoas possivelmente atingidas. Tailândia: oitenta e oito vítimas nas enchentes prolongadas.",
+  "ini": 0.0,
+  "fim": 10.77,
+  "palavras": [
+   {
+    "w": "15",
+    "t": 0.0,
+    "f": 0.28
+   },
+   {
+    "w": "de",
+    "t": 0.28,
+    "f": 0.52
+   },
+   {
+    "w": "novembro",
+    "t": 0.52,
+    "f": 0.92
+   },
+   {
+    "w": "de",
+    "t": 0.92,
+    "f": 1.04
+   },
+   {
+    "w": "2026",
+    "t": 1.04,
+    "f": 1.72
+   },
+   {
+    "w": "No",
+    "t": 1.72,
+    "f": 2.48
+   },
+   {
+    "w": "balanço",
+    "t": 2.48,
+    "f": 2.84
+   },
+   {
+    "w": "da",
+    "t": 2.84,
+    "f": 2.92
+   },
+   {
+    "w": "semana,",
+    "t": 2.92,
+    "f": 3.2
+   },
+   {
+    "w": "Gaza,",
+    "t": 3.36,
+    "f": 3.82
+   },
+   {
+    "w": "estimativa",
+    "t": 4.06,
+    "f": 4.62
+   },
+   {
+    "w": "de",
+    "t": 4.62,
+    "f": 4.76
+   },
+   {
+    "w": "226",
+    "t": 4.76,
+    "f": 5.72
+   },
+   {
+    "w": "mil",
+    "t": 5.72,
+    "f": 5.88
+   },
+   {
+    "w": "pessoas",
+    "t": 5.88,
+    "f": 6.18
+   },
+   {
+    "w": "possivelmente",
+    "t": 6.18,
+    "f": 6.82
+   },
+   {
+    "w": "atingidas",
+    "t": 6.82,
+    "f": 7.26
+   },
+   {
+    "w": "Tailândia,",
+    "t": 7.26,
+    "f": 8.24
+   },
+   {
+    "w": "88",
+    "t": 8.26,
+    "f": 8.8
+   },
+   {
+    "w": "vítimas",
+    "t": 8.8,
+    "f": 9.54
+   },
+   {
+    "w": "nas",
+    "t": 9.54,
+    "f": 9.74
+   },
+   {
+    "w": "enchentes",
+    "t": 9.74,
+    "f": 10.1
+   },
+   {
+    "w": "prolongadas",
+    "t": 10.1,
+    "f": 10.72
+   }
+  ]
+ },
+ {
+  "id": "f2",
+  "fala": "Em Gaza, a ONU reportou na sexta quarenta e seis mil famílias possivelmente atingidas pelas chuvas desde seis de novembro, com dados até segunda.",
+  "ini": 10.77,
+  "fim": 19.79,
+  "palavras": [
+   {
+    "w": "Em",
+    "t": 10.72,
+    "f": 11.2
+   },
+   {
+    "w": "Gaza,",
+    "t": 11.2,
+    "f": 11.44
+   },
+   {
+    "w": "a",
+    "t": 11.64,
+    "f": 11.9
+   },
+   {
+    "w": "ONU",
+    "t": 11.9,
+    "f": 12.12
+   },
+   {
+    "w": "reportou",
+    "t": 12.12,
+    "f": 12.64
+   },
+   {
+    "w": "na",
+    "t": 12.64,
+    "f": 12.74
+   },
+   {
+    "w": "sexta",
+    "t": 12.74,
+    "f": 13.2
+   },
+   {
+    "w": "46",
+    "t": 13.2,
+    "f": 13.6
+   },
+   {
+    "w": "mil",
+    "t": 13.6,
+    "f": 14.14
+   },
+   {
+    "w": "famílias",
+    "t": 14.14,
+    "f": 14.66
+   },
+   {
+    "w": "possivelmente",
+    "t": 14.66,
+    "f": 15.42
+   },
+   {
+    "w": "atingidas",
+    "t": 15.42,
+    "f": 15.8
+   },
+   {
+    "w": "pelas",
+    "t": 15.8,
+    "f": 16.1
+   },
+   {
+    "w": "chuvas",
+    "t": 16.1,
+    "f": 16.42
+   },
+   {
+    "w": "desde",
+    "t": 16.42,
+    "f": 16.92
+   },
+   {
+    "w": "6",
+    "t": 16.92,
+    "f": 17.26
+   },
+   {
+    "w": "de",
+    "t": 17.26,
+    "f": 17.62
+   },
+   {
+    "w": "novembro",
+    "t": 17.62,
+    "f": 18.1
+   },
+   {
+    "w": "Com",
+    "t": 18.1,
+    "f": 18.6
+   },
+   {
+    "w": "dados",
+    "t": 18.6,
+    "f": 18.9
+   },
+   {
+    "w": "até",
+    "t": 18.9,
+    "f": 19.4
+   },
+   {
+    "w": "segunda",
+    "t": 19.4,
+    "f": 19.74
+   }
+  ]
+ },
+ {
+  "id": "f3",
+  "fala": "Na Tailândia, boletim de segunda aponta cento e sessenta e duas mil e oitocentas pessoas ainda atingidas. As oitenta e oito vítimas são desde setembro.",
+  "ini": 19.79,
+  "fim": 28.33,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 19.74,
+    "f": 20.5
+   },
+   {
+    "w": "Tailândia,",
+    "t": 20.5,
+    "f": 20.98
+   },
+   {
+    "w": "boletim",
+    "t": 20.98,
+    "f": 21.3
+   },
+   {
+    "w": "de",
+    "t": 21.3,
+    "f": 21.36
+   },
+   {
+    "w": "segunda",
+    "t": 21.36,
+    "f": 21.62
+   },
+   {
+    "w": "aponta",
+    "t": 21.62,
+    "f": 22.08
+   },
+   {
+    "w": "162",
+    "t": 22.08,
+    "f": 23.6
+   },
+   {
+    "w": ".800",
+    "t": 23.6,
+    "f": 24.32
+   },
+   {
+    "w": "pessoas",
+    "t": 24.32,
+    "f": 24.84
+   },
+   {
+    "w": "ainda",
+    "t": 24.84,
+    "f": 25.14
+   },
+   {
+    "w": "atingidas",
+    "t": 25.14,
+    "f": 25.68
+   },
+   {
+    "w": "As",
+    "t": 25.68,
+    "f": 26.28
+   },
+   {
+    "w": "88",
+    "t": 26.28,
+    "f": 26.58
+   },
+   {
+    "w": "vítimas",
+    "t": 26.58,
+    "f": 27.12
+   },
+   {
+    "w": "são",
+    "t": 27.12,
+    "f": 27.56
+   },
+   {
+    "w": "desde",
+    "t": 27.56,
+    "f": 27.72
+   },
+   {
+    "w": "setembro",
+    "t": 27.72,
+    "f": 28.28
+   }
+  ]
+ },
+ {
+  "id": "f4",
+  "fala": "Na Somália, a ONU informou quinta quase cento e setenta mil atingidos em outubro. Nesta semana, alagamentos continuam em Jowhar, segundo a FAO.",
+  "ini": 28.33,
+  "fim": 37.09,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 28.28,
+    "f": 28.7
+   },
+   {
+    "w": "Somália,",
+    "t": 28.7,
+    "f": 29.24
+   },
+   {
+    "w": "a",
+    "t": 29.26,
+    "f": 29.52
+   },
+   {
+    "w": "ONU",
+    "t": 29.52,
+    "f": 29.82
+   },
+   {
+    "w": "informou",
+    "t": 29.82,
+    "f": 30.3
+   },
+   {
+    "w": "quinta",
+    "t": 30.3,
+    "f": 30.62
+   },
+   {
+    "w": "quase",
+    "t": 30.62,
+    "f": 30.84
+   },
+   {
+    "w": "170",
+    "t": 30.84,
+    "f": 31.5
+   },
+   {
+    "w": "mil",
+    "t": 31.5,
+    "f": 31.82
+   },
+   {
+    "w": "atingidos",
+    "t": 31.82,
+    "f": 32.26
+   },
+   {
+    "w": "em",
+    "t": 32.26,
+    "f": 32.4
+   },
+   {
+    "w": "outubro.",
+    "t": 32.4,
+    "f": 32.8
+   },
+   {
+    "w": "Nesta",
+    "t": 33.1,
+    "f": 33.74
+   },
+   {
+    "w": "semana,",
+    "t": 33.74,
+    "f": 34.1
+   },
+   {
+    "w": "alagamentos",
+    "t": 34.3,
+    "f": 35.02
+   },
+   {
+    "w": "continuam",
+    "t": 35.02,
+    "f": 35.66
+   },
+   {
+    "w": "em",
+    "t": 35.66,
+    "f": 35.88
+   },
+   {
+    "w": "Jowar,",
+    "t": 35.88,
+    "f": 36.24
+   },
+   {
+    "w": "segundo",
+    "t": 36.36,
+    "f": 36.64
+   },
+   {
+    "w": "a",
+    "t": 36.64,
+    "f": 36.8
+   },
+   {
+    "w": "FAO.",
+    "t": 36.8,
+    "f": 37.04
+   }
+  ]
+ },
+ {
+  "id": "f5",
+  "fala": "Na Madeira, Portugal, foram quinhentos e dois vírgula sete milímetros em um dia, na quarta. Superou os quatrocentos e noventa e sete vírgula cinco milímetros de dois mil e vinte e três, na mesma estação.",
+  "ini": 37.09,
+  "fim": 47.73,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 37.18,
+    "f": 37.68
+   },
+   {
+    "w": "Madeira,",
+    "t": 37.68,
+    "f": 38.06
+   },
+   {
+    "w": "Portugal,",
+    "t": 38.08,
+    "f": 38.28
+   },
+   {
+    "w": "foram",
+    "t": 38.58,
+    "f": 39.02
+   },
+   {
+    "w": "502",
+    "t": 39.02,
+    "f": 39.66
+   },
+   {
+    "w": ",7",
+    "t": 39.66,
+    "f": 40.44
+   },
+   {
+    "w": "milímetros",
+    "t": 40.44,
+    "f": 40.92
+   },
+   {
+    "w": "em",
+    "t": 40.92,
+    "f": 41.1
+   },
+   {
+    "w": "um",
+    "t": 41.1,
+    "f": 41.2
+   },
+   {
+    "w": "dia,",
+    "t": 41.2,
+    "f": 41.48
+   },
+   {
+    "w": "na",
+    "t": 41.54,
+    "f": 41.74
+   },
+   {
+    "w": "quarta.",
+    "t": 41.74,
+    "f": 42.06
+   },
+   {
+    "w": "Superou",
+    "t": 42.56,
+    "f": 43.2
+   },
+   {
+    "w": "os",
+    "t": 43.2,
+    "f": 43.32
+   },
+   {
+    "w": "497",
+    "t": 43.32,
+    "f": 44.42
+   },
+   {
+    "w": ",5",
+    "t": 44.42,
+    "f": 45.08
+   },
+   {
+    "w": "milímetros",
+    "t": 45.08,
+    "f": 45.52
+   },
+   {
+    "w": "de",
+    "t": 45.52,
+    "f": 45.68
+   },
+   {
+    "w": "2023,",
+    "t": 45.68,
+    "f": 46.06
+   },
+   {
+    "w": "na",
+    "t": 46.66,
+    "f": 47.06
+   },
+   {
+    "w": "mesma",
+    "t": 47.06,
+    "f": 47.24
+   },
+   {
+    "w": "estação.",
+    "t": 47.24,
+    "f": 47.68
+   }
+  ]
+ },
+ {
+  "id": "f6",
+  "fala": "Em Weipa, Austrália, terça registrou trinta e nove vírgula nove graus. Recorde de novembro no aeroporto, contra trinta e nove vírgula seis graus em dois mil e vinte e quatro, naquele aeroporto.",
+  "ini": 47.73,
+  "fim": 58.35,
+  "palavras": [
+   {
+    "w": "Em",
+    "t": 47.78,
+    "f": 48.24
+   },
+   {
+    "w": "Weipa,",
+    "t": 48.24,
+    "f": 48.58
+   },
+   {
+    "w": "Austrália,",
+    "t": 48.7,
+    "f": 49.26
+   },
+   {
+    "w": "terça",
+    "t": 49.3,
+    "f": 49.74
+   },
+   {
+    "w": "registrou",
+    "t": 49.74,
+    "f": 50.16
+   },
+   {
+    "w": "39",
+    "t": 50.16,
+    "f": 50.48
+   },
+   {
+    "w": ",9",
+    "t": 50.48,
+    "f": 51.3
+   },
+   {
+    "w": "graus.",
+    "t": 51.3,
+    "f": 51.7
+   },
+   {
+    "w": "Record",
+    "t": 51.7,
+    "f": 52.38
+   },
+   {
+    "w": "de",
+    "t": 52.38,
+    "f": 52.6
+   },
+   {
+    "w": "novembro",
+    "t": 52.6,
+    "f": 53.02
+   },
+   {
+    "w": "no",
+    "t": 53.02,
+    "f": 53.12
+   },
+   {
+    "w": "aeroporto",
+    "t": 53.12,
+    "f": 53.7
+   },
+   {
+    "w": "Contra",
+    "t": 53.7,
+    "f": 54.38
+   },
+   {
+    "w": "39",
+    "t": 54.38,
+    "f": 54.66
+   },
+   {
+    "w": ",6",
+    "t": 54.66,
+    "f": 55.44
+   },
+   {
+    "w": "graus",
+    "t": 55.44,
+    "f": 55.82
+   },
+   {
+    "w": "em",
+    "t": 55.82,
+    "f": 56.2
+   },
+   {
+    "w": "2024",
+    "t": 56.2,
+    "f": 56.68
+   },
+   {
+    "w": "naquele",
+    "t": 56.68,
+    "f": 57.72
+   },
+   {
+    "w": "aeroporto",
+    "t": 57.72,
+    "f": 58.3
+   }
+  ]
+ },
+ {
+  "id": "f7",
+  "fala": "São balanços acumulados, não apenas desta semana.",
+  "ini": 58.35,
+  "fim": 61.05,
+  "palavras": [
+   {
+    "w": "São",
+    "t": 58.3,
+    "f": 58.8
+   },
+   {
+    "w": "balanços",
+    "t": 58.8,
+    "f": 59.18
+   },
+   {
+    "w": "acumulados,",
+    "t": 59.18,
+    "f": 59.76
+   },
+   {
+    "w": "não",
+    "t": 59.82,
+    "f": 60.16
+   },
+   {
+    "w": "apenas",
+    "t": 60.16,
+    "f": 60.34
+   },
+   {
+    "w": "desta",
+    "t": 60.34,
+    "f": 60.64
+   },
+   {
+    "w": "semana",
+    "t": 60.64,
+    "f": 61.0
+   }
+  ]
+ },
+ {
+  "id": "f8",
+  "fala": "E agora? A meteorologia indiana prevê uma tempestade ciclônica no golfo de Bengala na segunda. É previsão.",
+  "ini": 61.05,
+  "fim": 68.27,
+  "palavras": [
+   {
+    "w": "E",
+    "t": 61.0,
+    "f": 61.66
+   },
+   {
+    "w": "agora?",
+    "t": 61.66,
+    "f": 61.84
+   },
+   {
+    "w": "A",
+    "t": 62.35,
+    "f": 62.64
+   },
+   {
+    "w": "meteorologia",
+    "t": 62.64,
+    "f": 63.2
+   },
+   {
+    "w": "indiana",
+    "t": 63.2,
+    "f": 63.52
+   },
+   {
+    "w": "prevê",
+    "t": 63.52,
+    "f": 63.88
+   },
+   {
+    "w": "uma",
+    "t": 63.88,
+    "f": 63.96
+   },
+   {
+    "w": "tempestade",
+    "t": 63.96,
+    "f": 64.48
+   },
+   {
+    "w": "ciclônica",
+    "t": 64.48,
+    "f": 65.0
+   },
+   {
+    "w": "no",
+    "t": 65.0,
+    "f": 65.16
+   },
+   {
+    "w": "Golfo",
+    "t": 65.16,
+    "f": 65.44
+   },
+   {
+    "w": "de",
+    "t": 65.44,
+    "f": 65.46
+   },
+   {
+    "w": "Bengala",
+    "t": 65.46,
+    "f": 65.78
+   },
+   {
+    "w": "na",
+    "t": 65.78,
+    "f": 65.94
+   },
+   {
+    "w": "segunda",
+    "t": 65.94,
+    "f": 66.14
+   },
+   {
+    "w": "É",
+    "t": 66.14,
+    "f": 66.76
+   },
+   {
+    "w": "previsão",
+    "t": 66.76,
+    "f": 67.22
+   }
+  ]
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "ini": 68.27,
+  "fim": 71.03,
+  "palavras": [
+   {
+    "w": "De",
+    "t": 68.22,
+    "f": 68.76
+   },
+   {
+    "w": "que",
+    "t": 68.76,
+    "f": 68.88
+   },
+   {
+    "w": "região",
+    "t": 68.88,
+    "f": 69.2
+   },
+   {
+    "w": "e",
+    "t": 69.2,
+    "f": 69.4
+   },
+   {
+    "w": "de",
+    "t": 69.4,
+    "f": 69.48
+   },
+   {
+    "w": "que",
+    "t": 69.48,
+    "f": 69.64
+   },
+   {
+    "w": "cidade",
+    "t": 69.64,
+    "f": 69.9
+   },
+   {
+    "w": "você",
+    "t": 69.9,
+    "f": 70.18
+   },
+   {
+    "w": "é?",
+    "t": 70.18,
+    "f": 70.4
+   },
+   {
+    "w": "Comenta",
+    "t": 70.46,
+    "f": 70.84
+   },
+   {
+    "w": "aqui",
+    "t": 70.84,
+    "f": 70.98
+   }
+  ]
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "ini": 71.03,
+  "fim": 77.245,
+  "palavras": [
+   {
+    "w": "No",
+    "t": 70.98,
+    "f": 71.42
+   },
+   {
+    "w": "Inema",
+    "t": 71.42,
+    "f": 71.64
+   },
+   {
+    "w": ".club",
+    "t": 71.64,
+    "f": 72.08
+   },
+   {
+    "w": "você",
+    "t": 72.08,
+    "f": 72.3
+   },
+   {
+    "w": "pode",
+    "t": 72.3,
+    "f": 72.54
+   },
+   {
+    "w": "aprender",
+    "t": 72.54,
+    "f": 72.8
+   },
+   {
+    "w": "de",
+    "t": 72.8,
+    "f": 73.02
+   },
+   {
+    "w": "graça",
+    "t": 73.02,
+    "f": 73.32
+   },
+   {
+    "w": "sobre",
+    "t": 73.32,
+    "f": 73.52
+   },
+   {
+    "w": "inteligência",
+    "t": 73.52,
+    "f": 74.18
+   },
+   {
+    "w": "artificial",
+    "t": 74.18,
+    "f": 74.38
+   },
+   {
+    "w": "e",
+    "t": 74.38,
+    "f": 74.66
+   },
+   {
+    "w": "se",
+    "t": 74.66,
+    "f": 74.74
+   },
+   {
+    "w": "preparar",
+    "t": 74.74,
+    "f": 75.1
+   },
+   {
+    "w": "para",
+    "t": 75.1,
+    "f": 75.2
+   },
+   {
+    "w": "o",
+    "t": 75.2,
+    "f": 75.28
+   },
+   {
+    "w": "futuro",
+    "t": 75.28,
+    "f": 75.54
+   },
+   {
+    "w": "É",
+    "t": 75.54,
+    "f": 76.0
+   },
+   {
+    "w": "direto",
+    "t": 76.0,
+    "f": 76.36
+   },
+   {
+    "w": "na",
+    "t": 76.36,
+    "f": 76.44
+   },
+   {
+    "w": "internet",
+    "t": 76.44,
+    "f": 76.6
+   }
+  ]
+ }
+]
