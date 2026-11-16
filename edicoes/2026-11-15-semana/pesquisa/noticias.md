@@ -1,0 +1,10 @@
+# Pesquisa — 15/11/2026, edição da semana
+
+Leitura em 15/11/2026. Semana: 16–22/11. Tendência de maior incerteza: 23–30/11. Notícias contextualizam os mecanismos; números ao ar vêm dos arquivos locais identificados em dados.md.
+
+- INMET, 13/11/2026, 14h07, atualizado 16h25: baixa pressão na costa do Sudeste pode organizar canal de umidade na segunda, com instabilidade no Norte, Centro-Oeste, Sudeste e Nordeste. Sul tem chuva mais localizada no início da semana. Não afirmar ciclone formado. https://portal.inmet.gov.br/noticias/previs%C3%A3o-para-s%C3%A1bado-14-domingo-15-e-segunda-feira-16
+- MetSul, 15/11/2026, 11h11, Luiz Nachtigall: ar tropical quente e úmido favorece temporais localizados no Sul; instabilidade aumenta na terça (17), com novos episódios na quinta e sexta. Fonte de contexto, sem transportar os números do modelo UKMET para o Open-Meteo. https://metsul.com/semana-de-risco-tera-chuva-frequente-e-muitos-temporais/
+- MetSul, 12/11/2026, 11h, Estael Sias: tendência de dez dias concentra chuva no Centro-Oeste e Sudeste; frente pode ampliar a chuva no Sul entre 18 e 22. Publicação cobre janela diferente da edição; não usar os acumulados como se fossem 16–22. https://metsul.com/previsao-do-tempo-tendencia-de-chuva-para-dez-dias-no-brasil-11/
+- INMET, coleta local 15/11: aviso 56415, Tempestade / Perigo Potencial, válido de 16/11 00h00 a 23h59; 2.938 geocódigos únicos. Também vigentes na coleta: avisos 56412 e 56413 até 15/11 23h59; avisos futuros distintos para terça e ventos costeiros. Não somar avisos sobrepostos. Fonte bruta: bruto/inmet_avisos_ativos.json. Consulta oficial: https://alertas2.inmet.gov.br/ e https://apiprevmet3.inmet.gov.br/avisos/ativos
+
+Dias 8–15: interpretação exclusiva da janela 23–30/11 do Open-Meteo local. Não foi localizada uma notícia com essa mesma janela validada; não atribuir essa tendência à MetSul ou ao INMET. El Niño não entra no roteiro: leitura da página específica do INMET expirou, registrada em LIMITES.md; fenômeno não explica cada temporal isolado.

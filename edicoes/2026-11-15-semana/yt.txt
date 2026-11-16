@@ -1,0 +1,8 @@
+2.938 cidades do Brasil em alerta de temporal segunda · Alerta da semana 15/11
+INMET: aviso 56415 de tempestade, perigo potencial, em 2.938 cidades; válido segunda, 16/11/2026, 00h–23h59. https://alertas2.inmet.gov.br/
+Semana 16–22/11, previsto pelo Open-Meteo: oeste do PR 156,5 mm (77,7 mm quarta); norte de MG 154,2 mm; norte de GO 62,2 mm terça e 149,5 mm na semana; ponto de MT 141,1 mm.
+Interior do PI: máxima prevista 40,5 °C quinta; sudeste do TO: 138,8 mm na semana. Interior de SP: rajada prevista 65,2 km/h sexta; serra gaúcha: mínima prevista 12,8 °C domingo.
+Dias 8 a 15, 23–30/11: TENDÊNCIA, pode mudar. Vitória pode somar 254,1 mm; modelo aponta mais chuva na Amazônia e calor persistente no Piauí.
+Fonte numérica: Open-Meteo best_match, lido em 15/11/2026, grade de 1,5° e capitais. Valores pontuais, sem representar toda a UF. https://api.open-meteo.com/v1/forecast
+Contexto: MetSul, 15/11/2026, temporais localizados no Sul. https://metsul.com/semana-de-risco-tera-chuva-frequente-e-muitos-temporais/
+No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.

@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Duas mil novecentas e trinta e oito cidades do Brasil em alerta de tempestade nesta segunda. A sua está no caminho? Domingo, quinze de novembro.",
+  "legenda": "2.938 cidades do Brasil em alerta de tempestade nesta segunda. A sua está no caminho? Domingo, 15 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "O oeste do Paraná pode somar cento e cinquenta e seis vírgula cinco milímetros na semana. Quarta concentra a chuva.",
+  "legenda": "O oeste do Paraná pode somar 156,5 milímetros na semana. Quarta concentra a chuva."
+ },
+ {
+  "id": "f3",
+  "fala": "No norte de Minas, previsão de cento e cinquenta e quatro vírgula dois milímetros. Atenção na terça.",
+  "legenda": "No norte de Minas, previsão de 154,2 milímetros. Atenção na terça."
+ },
+ {
+  "id": "f4",
+  "fala": "No Centro-Oeste, norte de Goiás pode receber sessenta e dois vírgula dois milímetros só na terça. Chuva volumosa também em Mato Grosso.",
+  "legenda": "No Centro-Oeste, norte de Goiás pode receber 62,2 milímetros só na terça. Chuva volumosa também em Mato Grosso."
+ },
+ {
+  "id": "f5",
+  "fala": "No Nordeste, interior do Piauí pode atingir quarenta vírgula cinco graus na quinta. Beba água e evite esforço no sol.",
+  "legenda": "No Nordeste, interior do Piauí pode atingir 40,5 graus na quinta. Beba água e evite esforço no sol."
+ },
+ {
+  "id": "f6",
+  "fala": "No Norte, sudeste do Tocantins pode acumular cento e trinta e oito vírgula oito milímetros na semana. Atenção aos alagamentos.",
+  "legenda": "No Norte, sudeste do Tocantins pode acumular 138,8 milímetros na semana. Atenção aos alagamentos."
+ },
+ {
+  "id": "f7",
+  "fala": "No interior paulista, sexta pode ter rajadas de sessenta e cinco vírgula dois quilômetros por hora. Na serra gaúcha, domingo pode ter doze vírgula oito graus.",
+  "legenda": "No interior paulista, sexta pode ter rajadas de 65,2 quilômetros por hora. Na serra gaúcha, domingo pode ter 12,8 graus."
+ },
+ {
+  "id": "f8",
+  "fala": "O aviso do INMET é de perigo potencial. Acompanhe a Defesa Civil. Não atravesse rua alagada.",
+  "legenda": "O aviso do INMET é de perigo potencial. Acompanhe a Defesa Civil. Não atravesse rua alagada."
+ },
+ {
+  "id": "f9",
+  "fala": "E nos próximos quinze dias? De vinte e três a trinta, tendência: Vitória pode somar duzentos e cinquenta e quatro vírgula um milímetros. Pode mudar.",
+  "legenda": "E nos próximos 15 dias? De 23 a 30, tendência: Vitória pode somar 254,1 milímetros. Pode mudar."
+ },
+ {
+  "id": "f10",
+  "fala": "Tendência: chuva na Amazônia e calor no Piauí. Confira as atualizações.",
+  "legenda": "Tendência: chuva na Amazônia e calor no Piauí. Confira as atualizações."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui como está o tempo aí.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui como está o tempo aí."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
