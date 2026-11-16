@@ -56,7 +56,7 @@ tenta(){ local log="$1" k; shift
 # a transcrição (Whisper) às vezes falha com a GPU disputada (10/10/2026): tenta 3 vezes
 # retempo na vaga gpu da máquina (motor/vaga.sh → wifi/scripts/fila-vaga, 09/11/2026), depois do download; 75 = máquina ocupada (sai 75)
 for k in 1 2 3; do
-  GPU_ESPERA_MIN="${GPU_ESPERA_MIN:-60}" bash "$VAGA" gpu eventosextremospub-retempo python3 "$A/retempo.py" && exit 0
+  GPU_ESPERA_MIN="${GPU_ESPERA_MIN:-60}" bash "$VAGA" gpu eventosextremospub-retempo python3 "$(dirname "$VAGA")/retempo_avatar.py" "$E" && exit 0
   rc=$?; [ "$rc" = 75 ] && { echo "ERRO: máquina ocupada (vaga gpu) no retempo"; exit 75; }
   echo "retempo falhou ($k/3)"; sleep 60; done
 echo "ERRO: retempo falhou 3 vezes"; exit 6

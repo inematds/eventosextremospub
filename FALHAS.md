@@ -30,6 +30,7 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 16/11/2026 | Alerta 7d sem vídeo final: Whisper pulou 14 s e o retempo não encontrou f9 mesmo com 3 repetições | retranscrever a lacuna com 15 s de contexto anterior; recuperou f8/f9/f10, 97% de semelhança, sem reenviar avatar | infra |
 | 2026-11-04 | Clima do DIA e Clima no Mundo não saíram: `claude -p` com "OAuth session expired" (login renovou sozinho minutos depois) | rodar.sh espera 5 min e tenta o `claude -p` uma vez mais quando o log fala em login | infra |
 | 2026-10-25 | Clima no Mundo: selo do topo ("BBC · MET OFFICE · CWA · NOAA · 25/10") cortava a data na borda direita (o do modelo 24/10 também passava) | selo com no máximo 3 fontes + data ("BBC · CWA · NOAA · 25/10") | prompt |
 | 2026-10-20 | Previsão do Dia: `sat/web/mundo.jpg` (fundo Blue Marble que o gerar_cena do modelo usa) não vem na coleta; copiado à mão da edição de 19/10 | a coleta do satélite (ou o rodar.sh ao copiar o modelo) copiar `sat/web/mundo.jpg` da edição modelo quando faltar | infra |
