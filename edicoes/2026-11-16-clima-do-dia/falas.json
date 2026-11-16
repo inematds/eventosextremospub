@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Segunda-feira, dezesseis de novembro de dois mil e vinte e seis. São Paulo e Rio de Janeiro têm instabilidade hoje.",
+    "legenda": "Segunda-feira, 16 de novembro de 2026. São Paulo e Rio de Janeiro têm instabilidade hoje."
+  },
+  {
+    "id": "f2",
+    "fala": "A chuva é mal distribuída: pode cair numa cidade e faltar perto. No litoral sul, a circulação marítima favorece pancadas.",
+    "legenda": "A chuva é mal distribuída: pode cair numa cidade e faltar perto. No litoral sul, a circulação marítima favorece pancadas."
+  },
+  {
+    "id": "f3",
+    "fala": "No Sudeste, também chove em Minas e no Espírito Santo. Hoje, grande parte do Brasil deve registrar máximas de vinte e oito a trinta e três graus.",
+    "legenda": "No Sudeste, também chove em Minas e no Espírito Santo. Hoje, grande parte do Brasil deve registrar máximas de 28 a 33 graus."
+  },
+  {
+    "id": "f4",
+    "fala": "No Sul, hoje as pancadas são isoladas. Amanhã, aumentam à tarde e à noite, com risco pontual de granizo e vento.",
+    "legenda": "No Sul, hoje as pancadas são isoladas. Amanhã, aumentam à tarde e à noite, com risco pontual de granizo e vento."
+  },
+  {
+    "id": "f5",
+    "fala": "Na terça-feira, a chuva deve alcançar Goiás, Tocantins, norte de Minas e o Nordeste, incluindo Maranhão, Piauí e Bahia.",
+    "legenda": "Na terça-feira, a chuva deve alcançar Goiás, Tocantins, norte de Minas e o Nordeste, incluindo Maranhão, Piauí e Bahia."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, a chuva segue irregular. Roraima, Amapá e centro-norte do Pará devem ter pouca chuva amanhã.",
+    "legenda": "No Norte, a chuva segue irregular. Roraima, Amapá e centro-norte do Pará devem ter pouca chuva amanhã."
+  },
+  {
+    "id": "f7",
+    "fala": "Na quarta-feira, as pancadas devem aumentar em São Paulo e Mato Grosso do Sul. Rio e Espírito Santo têm redução.",
+    "legenda": "Na quarta-feira, as pancadas devem aumentar em São Paulo e Mato Grosso do Sul. Rio e Espírito Santo têm redução."
+  },
+  {
+    "id": "f8",
+    "fala": "Amanhã, as áreas mais frias do sul de Minas e das serras do Sul devem amanhecer entre dez e quinze graus.",
+    "legenda": "Amanhã, as áreas mais frias do sul de Minas e das serras do Sul devem amanhecer entre 10 e 15 graus."
+  },
+  {
+    "id": "f9",
+    "fala": "No sábado, o Piauí pode passar dos quarenta graus. O calor se concentra onde chove menos.",
+    "legenda": "No sábado, o Piauí pode passar dos 40 graus. O calor se concentra onde chove menos."
+  },
+  {
+    "id": "f10",
+    "fala": "Na próxima semana, a tendência é de queda da temperatura no Sul.",
+    "legenda": "Na próxima semana, a tendência é de queda da temperatura no Sul."
+  },
+  {
+    "id": "f11",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
