@@ -13,10 +13,14 @@ D1=$(date -d "$DIA" +%d/%m/%Y); D2=$(date -d "$DIA" +%m/%d/%Y)   # o yt-dlp às 
 ID=""
 while :; do
   # boletim aberto do dia: título "Brasil | ... (dd/mm/aaaa)"; vídeo de membros fica de fora
-  ID=$(timeout 120 yt-dlp --flat-playlist --playlist-end 10 --extractor-args "youtube:lang=pt" --print "%(id)s|%(title)s" "$CANAL" 2>/dev/null \
-       | grep -E "^[^|]+\|(Brasil|Brazil) \|" | grep -v -i -E "membros|members" | grep -F -e "($D1)" -e "($D2)" | head -1 | cut -d'|' -f1)
+  L=$(python3 "$AUTO/fontes_youtube.py" dia "$F/diagnostico"); RC_YT=$?
+  printf "%s\n%s\n" "$(date -Is) YouTube rc=$RC_YT" "$L" >> "$F/consultas.log"
+  ID=$(echo "$L" | grep -F -e "|$D1|" -e "|$D2|" | head -1 | cut -d'|' -f1)
   [ -n "$ID" ] && break
-  [ "$(date +%s)" -ge "$FIM" ] && { echo "nenhum boletim de $D1 até ${LIMITE:-17:00}"; exit 3; }
+  [ "$(date +%s)" -ge "$FIM" ] && {
+    [ "$RC_YT" = 0 ] || { echo "consulta do boletim inconclusiva; ver fonte/diagnostico/youtube-erros.log"; exit 4; }
+    echo "nenhum boletim de $D1 até ${LIMITE:-17:00} (canal consultado com sucesso)"; exit 3;
+  }
   echo "$(date +%T) boletim de $D1 ainda não saiu"; sleep 600
 done
 echo "boletim: $ID"; echo "$ID" > "$F/video_id.txt"

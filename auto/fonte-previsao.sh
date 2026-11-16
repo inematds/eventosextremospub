@@ -16,24 +16,26 @@ HOJE=$(date -d "$DIA" +%Y%m%d); ONTEM=$(date -d "$DIA -1 day" +%Y%m%d)
 [ -s "$F/transcript.txt" ] && { echo "fonte já transcrita"; exit 0; }
 
 # últimos vídeos abertos (sem membros), com a data de envio: "id|aaaammdd|título"
-lista(){ timeout 120 yt-dlp --flat-playlist --playlist-end 4 --print "%(id)s" "$CANAL" 2>/dev/null | while read -r i; do
-    timeout 90 yt-dlp --skip-download --print "%(id)s|%(upload_date)s|%(availability)s|%(title)s" -- "$i" 2>/dev/null
-  done | grep -v -E "\|(subscriber_only|premium_only|needs_auth)\|" | awk -F'|' '{print $1"|"$2"|"$4}'; }
+lista(){ python3 "$AUTO/fontes_youtube.py" previsao "$F/diagnostico"; }
 novo(){ grep -vxFf <(cut -d' ' -f1 "$USADOS") <(cut -d'|' -f1); }   # ids que ainda não foram usados
 
 ID="${FONTE_ID:-}"
 while [ -z "$ID" ]; do
-  L=$(lista)
+  L=$(lista); RC_YT=$?
+  printf "%s\n%s\n" "$(date -Is) YouTube rc=$RC_YT" "$L" >> "$F/consultas.log"
   ID=$(echo "$L" | grep -F "|$HOJE|" | novo | head -1)
   [ -n "$ID" ] && break
-  LF=$(timeout 600 python3 "$AUTO/fb_reels.py" 4 2>/dev/null); L="$L
+  LF=$(timeout 600 python3 "$AUTO/fb_reels.py" 8 2>> "$F/facebook-erros.log"); RC_FB=$?
+  printf "%s\n%s\n" "$(date -Is) Facebook rc=$RC_FB" "$LF" >> "$F/consultas.log"
+  L="$L
 $LF"
   ID=$(echo "$LF" | grep -F "|$HOJE|" | novo | head -1)
   [ -n "$ID" ] && { echo "sem vídeo de hoje no YouTube: uso o reel de hoje do Facebook"; break; }
   if [ "$(date +%s)" -ge "$FIM" ]; then
     ID=$(echo "$L" | grep -F "|$ONTEM|" | novo | head -1)
     [ -n "$ID" ] && { echo "sem vídeo de hoje até ${ESPERA:-12:00}: uso o de ontem"; break; }
-    echo "nenhum vídeo novo de hoje nem de ontem"; exit 3
+    if [ "$RC_YT" != 0 ] || [ "$RC_FB" != 0 ]; then echo "consulta inconclusiva (YouTube rc=$RC_YT, Facebook rc=$RC_FB); ver fonte/diagnostico e facebook-erros.log"; exit 4; fi
+    echo "nenhum vídeo novo de hoje nem de ontem (fontes consultadas com sucesso)"; exit 3
   fi
   echo "$(date +%T) vídeo de hoje ainda não saiu"; sleep 600
 done

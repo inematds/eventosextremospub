@@ -13,6 +13,10 @@ op.addheaders = [("User-Agent", "Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko
                  ("Accept", "text/html"), ("Accept-Language", "pt-BR,pt;q=0.9"), ("Sec-Fetch-Mode", "navigate")]
 h = op.open(PAGINA, timeout=60).read().decode("utf8", "ignore")
 ids = list(dict.fromkeys(re.findall(r'(?:reel\\?/|"video_id":")(\d{12,})', h)))[:N]
+if not ids:
+    sys.exit("Facebook não retornou IDs de reels; consulta inconclusiva, conferir cookies/página")
+validos = 0
+falhas = 0
 for i in ids:
     r = subprocess.run(["timeout", "90", "yt-dlp", "--skip-download", "--print", "%(upload_date)s|%(title)s",
                         f"https://www.facebook.com/reel/{i}"], capture_output=True, text=True)
@@ -20,3 +24,11 @@ for i in ids:
     if linha:
         d, t = linha[0].split("|", 1)
         print(f"fb:{i}|{d}|{t.replace(chr(10), ' ')[:150]}")
+        validos += 1
+    else:
+        falhas += 1
+        print(f"reel {i}: consulta rc={r.returncode}: {r.stderr[-500:]}", file=sys.stderr)
+if not validos:
+    sys.exit("Facebook não retornou datas válidas de reels; consulta inconclusiva")
+if falhas:
+    sys.exit("Facebook retornou lista parcial; há reels sem data confirmada")

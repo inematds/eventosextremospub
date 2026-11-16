@@ -50,3 +50,9 @@ When I correct you, or you catch yourself making a mistake: before continuing, a
 ## IA por etapa (15/11/2026)
 
 Roteiros por modo, correções e Metricool usam `auto/ia.yaml`; editar tipo/motor/modelo/esforço sem código. Detalhes: `auto/IA.md`. Atual Codex assinatura em todas as etapas; todas as APIs de modelos desativadas. Agentes exigem ferramentas, não aceitam API de texto. Imagens continuam Codex e YouTube yt-pubx lives10.
+
+## Busca das fontes e do Mundo (15/11/2026)
+
+- `auto/fontes_youtube.py`: lista ampliada (30 uploads no boletim, 8 na previsão), preserva JSON e stderr em `fonte/diagnostico/`. Os coletores registram as listas com horário em `fonte/consultas.log`; código 4 é consulta inconclusiva, distinto de 3 (fonte ausente após consulta válida). Facebook também preserva falhas de extração.
+- Mundo segue `auto/pesquisa-mundo.md`: seis regiões, órgãos locais, fontes públicas nacionais verificadas, segunda passagem nas pendências e cobertura registrada antes de desistir. Mantidos os pisos de impacto e a confirmação dos números.
+- Diagnóstico de 15/11: reel da previsão publicado no Facebook só às 20h27 (após busca até 12h); canal do boletim Brasil sem edição pública de 15/11 na consulta noturna.
