@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, oeste de Santa Catarina: até duzentos e trinta e nove milímetros previstos de amanhã até terça. Se prepare. Alerta da semana, terça, dezessete de novembro.",
+    "legenda": "Atenção, oeste de Santa Catarina: até 239 milímetros previstos de amanhã até terça. Se prepare. Alerta da semana, terça, 17 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "A chuva se repete. Nesse ponto, o Open Meteo prevê sessenta e sete milímetros só no domingo. Acompanhe áreas de alagamento.",
+    "legenda": "A chuva se repete. Nesse ponto, o Open-Meteo prevê 67 milímetros só no domingo. Acompanhe áreas de alagamento."
+  },
+  {
+    "id": "f3",
+    "fala": "Amanhã, quarta, o INMET mantém aviso laranja de tempestade no Sul. Há risco de granizo e interrupção de energia.",
+    "legenda": "Amanhã, quarta, o INMET mantém aviso laranja de tempestade no Sul. Há risco de granizo e interrupção de energia."
+  },
+  {
+    "id": "f4",
+    "fala": "No oeste paranaense, podem acumular cento e setenta e um vírgula cinco milímetros até terça. No centro-sul, rajadas previstas de sessenta e um vírgula dois quilômetros por hora na quinta.",
+    "legenda": "No oeste paranaense, podem acumular 171,5 milímetros até terça. No centro-sul, rajadas previstas de 61,2 quilômetros por hora na quinta."
+  },
+  {
+    "id": "f5",
+    "fala": "No norte mineiro, cento e cinquenta e sete vírgula um milímetros previstos até terça. Goiás, Tocantins e Bahia também exigem atenção com temporais nesta quarta.",
+    "legenda": "No norte mineiro, 157,1 milímetros previstos até terça. Goiás, Tocantins e Bahia também exigem atenção com temporais nesta quarta."
+  },
+  {
+    "id": "f6",
+    "fala": "O calor dispara no norte do Piauí: pode chegar a quarenta e um graus na próxima terça. Beba água e evite o sol forte.",
+    "legenda": "O calor dispara no norte do Piauí: pode chegar a 41 graus na próxima terça. Beba água e evite o sol forte."
+  },
+  {
+    "id": "f7",
+    "fala": "No oeste do Pará, até trinta e nove vírgula oito graus previstos na quinta. Atenção se você trabalha ao ar livre.",
+    "legenda": "No oeste do Pará, até 39,8 graus previstos na quinta. Atenção se você trabalha ao ar livre."
+  },
+  {
+    "id": "f8",
+    "fala": "Antes do temporal, tire o carro de perto de árvores. Não atravesse rua alagada. Acompanhe os avisos da Defesa Civil.",
+    "legenda": "Antes do temporal, tire o carro de perto de árvores. Não atravesse rua alagada. Acompanhe os avisos da Defesa Civil."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
