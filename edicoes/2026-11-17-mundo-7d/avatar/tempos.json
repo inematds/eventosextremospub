@@ -1,0 +1,947 @@
+[
+ {
+  "id": "f1",
+  "fala": "Dezessete de novembro de dois mil e vinte e seis. Tailândia: cento e vinte e um vírgula quatro mil ainda atingidos e oitenta e nove vítimas desde setembro. Gaza estima duzentas e vinte e seis mil possivelmente atingidos.",
+  "ini": 0.0,
+  "fim": 11.69,
+  "palavras": [
+   {
+    "w": "17",
+    "t": 0.0,
+    "f": 0.36
+   },
+   {
+    "w": "de",
+    "t": 0.36,
+    "f": 0.66
+   },
+   {
+    "w": "novembro",
+    "t": 0.66,
+    "f": 1.0
+   },
+   {
+    "w": "de",
+    "t": 1.0,
+    "f": 1.12
+   },
+   {
+    "w": "2026",
+    "t": 1.12,
+    "f": 2.18
+   },
+   {
+    "w": "Tailândia,",
+    "t": 2.18,
+    "f": 3.3
+   },
+   {
+    "w": "121",
+    "t": 3.3,
+    "f": 3.94
+   },
+   {
+    "w": ",4",
+    "t": 3.94,
+    "f": 4.62
+   },
+   {
+    "w": "mil",
+    "t": 4.62,
+    "f": 4.86
+   },
+   {
+    "w": "ainda",
+    "t": 4.86,
+    "f": 5.08
+   },
+   {
+    "w": "atingidos",
+    "t": 5.08,
+    "f": 5.62
+   },
+   {
+    "w": "e",
+    "t": 5.62,
+    "f": 5.94
+   },
+   {
+    "w": "89",
+    "t": 5.94,
+    "f": 6.4
+   },
+   {
+    "w": "vítimas",
+    "t": 6.4,
+    "f": 7.04
+   },
+   {
+    "w": "desde",
+    "t": 7.04,
+    "f": 7.3
+   },
+   {
+    "w": "setembro",
+    "t": 7.3,
+    "f": 7.96
+   },
+   {
+    "w": "Gaza",
+    "t": 7.96,
+    "f": 8.52
+   },
+   {
+    "w": "estima",
+    "t": 8.52,
+    "f": 9.26
+   },
+   {
+    "w": "226",
+    "t": 9.26,
+    "f": 10.08
+   },
+   {
+    "w": "mil",
+    "t": 10.08,
+    "f": 10.42
+   },
+   {
+    "w": "possivelmente",
+    "t": 10.42,
+    "f": 11.2
+   },
+   {
+    "w": "atingidos",
+    "t": 11.2,
+    "f": 11.64
+   }
+  ]
+ },
+ {
+  "id": "f2",
+  "fala": "Na Tailândia, o balanço de domingo mantém cinco províncias inundadas, incluindo Ayutthaya. São enchentes que começaram em setembro.",
+  "ini": 11.69,
+  "fim": 19.09,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 11.64,
+    "f": 12.36
+   },
+   {
+    "w": "Tailândia,",
+    "t": 12.36,
+    "f": 12.92
+   },
+   {
+    "w": "o",
+    "t": 12.92,
+    "f": 13.18
+   },
+   {
+    "w": "balanço",
+    "t": 13.18,
+    "f": 13.52
+   },
+   {
+    "w": "de",
+    "t": 13.52,
+    "f": 13.62
+   },
+   {
+    "w": "domingo",
+    "t": 13.62,
+    "f": 13.98
+   },
+   {
+    "w": "mantém",
+    "t": 13.98,
+    "f": 14.24
+   },
+   {
+    "w": "cinco",
+    "t": 14.24,
+    "f": 14.5
+   },
+   {
+    "w": "províncias",
+    "t": 14.5,
+    "f": 15.0
+   },
+   {
+    "w": "inundadas",
+    "t": 15.0,
+    "f": 15.52
+   },
+   {
+    "w": "incluindo",
+    "t": 15.52,
+    "f": 16.42
+   },
+   {
+    "w": "Ayutthaya",
+    "t": 16.42,
+    "f": 16.88
+   },
+   {
+    "w": "São",
+    "t": 16.88,
+    "f": 17.4
+   },
+   {
+    "w": "enchentes",
+    "t": 17.4,
+    "f": 17.84
+   },
+   {
+    "w": "que",
+    "t": 17.84,
+    "f": 18.02
+   },
+   {
+    "w": "começaram",
+    "t": 18.02,
+    "f": 18.44
+   },
+   {
+    "w": "em",
+    "t": 18.44,
+    "f": 18.58
+   },
+   {
+    "w": "setembro",
+    "t": 18.58,
+    "f": 19.04
+   }
+  ]
+ },
+ {
+  "id": "f3",
+  "fala": "Nos Estados Unidos, balanço de quinta aponta oitenta e quatro vírgula seis milhões de pessoas nas áreas em seca. Não significa pessoas desabrigadas.",
+  "ini": 19.09,
+  "fim": 27.61,
+  "palavras": [
+   {
+    "w": "Nos",
+    "t": 19.04,
+    "f": 19.64
+   },
+   {
+    "w": "Estados",
+    "t": 19.64,
+    "f": 19.88
+   },
+   {
+    "w": "Unidos,",
+    "t": 19.88,
+    "f": 20.18
+   },
+   {
+    "w": "balanço",
+    "t": 20.38,
+    "f": 21.06
+   },
+   {
+    "w": "de",
+    "t": 21.06,
+    "f": 21.14
+   },
+   {
+    "w": "quinta",
+    "t": 21.14,
+    "f": 21.46
+   },
+   {
+    "w": "aponta",
+    "t": 21.46,
+    "f": 21.92
+   },
+   {
+    "w": "84",
+    "t": 21.92,
+    "f": 22.38
+   },
+   {
+    "w": ",6",
+    "t": 22.38,
+    "f": 23.72
+   },
+   {
+    "w": "milhões",
+    "t": 23.72,
+    "f": 23.98
+   },
+   {
+    "w": "de",
+    "t": 23.98,
+    "f": 24.16
+   },
+   {
+    "w": "pessoas",
+    "t": 24.16,
+    "f": 24.4
+   },
+   {
+    "w": "nas",
+    "t": 24.4,
+    "f": 24.66
+   },
+   {
+    "w": "áreas",
+    "t": 24.66,
+    "f": 24.9
+   },
+   {
+    "w": "em",
+    "t": 24.9,
+    "f": 25.06
+   },
+   {
+    "w": "seca",
+    "t": 25.06,
+    "f": 25.38
+   },
+   {
+    "w": "Não",
+    "t": 25.38,
+    "f": 25.96
+   },
+   {
+    "w": "significa",
+    "t": 25.96,
+    "f": 26.34
+   },
+   {
+    "w": "pessoas",
+    "t": 26.34,
+    "f": 26.7
+   },
+   {
+    "w": "desabrigadas",
+    "t": 26.7,
+    "f": 27.56
+   }
+  ]
+ },
+ {
+  "id": "f4",
+  "fala": "Em Gaza, a estimativa divulgada sexta reúne alertas das chuvas desde seis de novembro. Abrigos e serviços foram atingidos.",
+  "ini": 27.61,
+  "fim": 34.93,
+  "palavras": [
+   {
+    "w": "Em",
+    "t": 27.56,
+    "f": 28.24
+   },
+   {
+    "w": "Gaza,",
+    "t": 28.24,
+    "f": 28.52
+   },
+   {
+    "w": "a",
+    "t": 28.72,
+    "f": 28.98
+   },
+   {
+    "w": "estimativa",
+    "t": 28.98,
+    "f": 29.46
+   },
+   {
+    "w": "divulgada",
+    "t": 29.46,
+    "f": 29.86
+   },
+   {
+    "w": "sexta",
+    "t": 29.86,
+    "f": 30.32
+   },
+   {
+    "w": "reúne",
+    "t": 30.32,
+    "f": 30.82
+   },
+   {
+    "w": "alertas",
+    "t": 30.82,
+    "f": 31.24
+   },
+   {
+    "w": "das",
+    "t": 31.24,
+    "f": 31.34
+   },
+   {
+    "w": "chuvas",
+    "t": 31.34,
+    "f": 31.68
+   },
+   {
+    "w": "desde",
+    "t": 31.68,
+    "f": 31.98
+   },
+   {
+    "w": "6",
+    "t": 31.98,
+    "f": 32.28
+   },
+   {
+    "w": "de",
+    "t": 32.28,
+    "f": 32.42
+   },
+   {
+    "w": "novembro.",
+    "t": 32.42,
+    "f": 32.88
+   },
+   {
+    "w": "Abrigos",
+    "t": 32.94,
+    "f": 33.5
+   },
+   {
+    "w": "e",
+    "t": 33.5,
+    "f": 33.7
+   },
+   {
+    "w": "serviços",
+    "t": 33.7,
+    "f": 34.18
+   },
+   {
+    "w": "foram",
+    "t": 34.18,
+    "f": 34.38
+   },
+   {
+    "w": "atingidos.",
+    "t": 34.38,
+    "f": 34.88
+   }
+  ]
+ },
+ {
+  "id": "f5",
+  "fala": "Na Somália, balanço de quinta aponta quase cento e setenta mil atingidos em outubro. Jowhar continua com alagamentos.",
+  "ini": 34.93,
+  "fim": 41.63,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 35.28,
+    "f": 35.66
+   },
+   {
+    "w": "Somália,",
+    "t": 35.66,
+    "f": 36.12
+   },
+   {
+    "w": "balanço",
+    "t": 36.18,
+    "f": 36.86
+   },
+   {
+    "w": "de",
+    "t": 36.86,
+    "f": 36.92
+   },
+   {
+    "w": "quinta",
+    "t": 36.92,
+    "f": 37.3
+   },
+   {
+    "w": "aponta",
+    "t": 37.3,
+    "f": 37.86
+   },
+   {
+    "w": "quase",
+    "t": 37.86,
+    "f": 38.0
+   },
+   {
+    "w": "170",
+    "t": 38.0,
+    "f": 38.56
+   },
+   {
+    "w": "mil",
+    "t": 38.56,
+    "f": 38.92
+   },
+   {
+    "w": "atingidos",
+    "t": 38.92,
+    "f": 39.32
+   },
+   {
+    "w": "em",
+    "t": 39.32,
+    "f": 39.5
+   },
+   {
+    "w": "outubro.",
+    "t": 39.5,
+    "f": 39.88
+   },
+   {
+    "w": "Djoar",
+    "t": 40.36,
+    "f": 40.64
+   },
+   {
+    "w": "continua",
+    "t": 40.64,
+    "f": 40.86
+   },
+   {
+    "w": "com",
+    "t": 40.86,
+    "f": 41.16
+   },
+   {
+    "w": "alagamentos.",
+    "t": 41.16,
+    "f": 41.58
+   }
+  ]
+ },
+ {
+  "id": "f6",
+  "fala": "Na Madeira, quarta registrou quinhentos e dois vírgula sete milímetros diários: recorde nacional. Anterior: quatrocentos e noventa e sete vírgula cinco milímetros, em dois mil e vinte e três, no mesmo posto.",
+  "ini": 41.63,
+  "fim": 53.95,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 41.96,
+    "f": 42.22
+   },
+   {
+    "w": "Madeira,",
+    "t": 42.22,
+    "f": 42.68
+   },
+   {
+    "w": "quarta",
+    "t": 42.74,
+    "f": 43.16
+   },
+   {
+    "w": "registrou",
+    "t": 43.16,
+    "f": 43.68
+   },
+   {
+    "w": "502",
+    "t": 43.68,
+    "f": 44.64
+   },
+   {
+    "w": ",7",
+    "t": 44.64,
+    "f": 45.36
+   },
+   {
+    "w": "milímetros",
+    "t": 45.36,
+    "f": 45.8
+   },
+   {
+    "w": "diários.",
+    "t": 45.8,
+    "f": 46.28
+   },
+   {
+    "w": "Recorde",
+    "t": 46.56,
+    "f": 47.14
+   },
+   {
+    "w": "nacional.",
+    "t": 47.14,
+    "f": 47.36
+   },
+   {
+    "w": "Anterior,",
+    "t": 47.76,
+    "f": 48.52
+   },
+   {
+    "w": "497",
+    "t": 48.68,
+    "f": 50.1
+   },
+   {
+    "w": ",5",
+    "t": 50.1,
+    "f": 50.86
+   },
+   {
+    "w": "milímetros.",
+    "t": 50.86,
+    "f": 51.34
+   },
+   {
+    "w": "Em",
+    "t": 51.5,
+    "f": 51.92
+   },
+   {
+    "w": "2023,",
+    "t": 51.92,
+    "f": 52.46
+   },
+   {
+    "w": "no",
+    "t": 52.96,
+    "f": 53.22
+   },
+   {
+    "w": "mesmo",
+    "t": 53.22,
+    "f": 53.44
+   },
+   {
+    "w": "posto.",
+    "t": 53.44,
+    "f": 53.9
+   }
+  ]
+ },
+ {
+  "id": "f7",
+  "fala": "São balanços de períodos diferentes, sem somar desastres.",
+  "ini": 53.95,
+  "fim": 57.47,
+  "palavras": [
+   {
+    "w": "São",
+    "t": 54.0,
+    "f": 54.76
+   },
+   {
+    "w": "balanços",
+    "t": 54.76,
+    "f": 55.2
+   },
+   {
+    "w": "de",
+    "t": 55.2,
+    "f": 55.3
+   },
+   {
+    "w": "períodos",
+    "t": 55.3,
+    "f": 55.66
+   },
+   {
+    "w": "diferentes,",
+    "t": 55.66,
+    "f": 55.94
+   },
+   {
+    "w": "sem",
+    "t": 56.12,
+    "f": 56.54
+   },
+   {
+    "w": "somar",
+    "t": 56.54,
+    "f": 56.9
+   },
+   {
+    "w": "desastres.",
+    "t": 56.9,
+    "f": 57.42
+   }
+  ]
+ },
+ {
+  "id": "f8",
+  "fala": "E agora? A meteorologia tailandesa prevê chuva intensa no sul entre quarta e domingo, com risco de novas enchentes.",
+  "ini": 57.47,
+  "fim": 65.11,
+  "palavras": [
+   {
+    "w": "E",
+    "t": 57.56,
+    "f": 57.92
+   },
+   {
+    "w": "agora?",
+    "t": 57.92,
+    "f": 58.14
+   },
+   {
+    "w": "A",
+    "t": 58.38,
+    "f": 58.82
+   },
+   {
+    "w": "meteorologia",
+    "t": 58.82,
+    "f": 59.4
+   },
+   {
+    "w": "tailandesa",
+    "t": 59.4,
+    "f": 59.9
+   },
+   {
+    "w": "prevê",
+    "t": 59.9,
+    "f": 60.22
+   },
+   {
+    "w": "chuva",
+    "t": 60.22,
+    "f": 60.48
+   },
+   {
+    "w": "intensa",
+    "t": 60.48,
+    "f": 60.86
+   },
+   {
+    "w": "no",
+    "t": 60.86,
+    "f": 60.94
+   },
+   {
+    "w": "sul,",
+    "t": 60.94,
+    "f": 61.18
+   },
+   {
+    "w": "entre",
+    "t": 61.24,
+    "f": 61.54
+   },
+   {
+    "w": "quarta",
+    "t": 61.54,
+    "f": 61.9
+   },
+   {
+    "w": "e",
+    "t": 61.9,
+    "f": 61.98
+   },
+   {
+    "w": "domingo,",
+    "t": 61.98,
+    "f": 62.4
+   },
+   {
+    "w": "com",
+    "t": 62.42,
+    "f": 62.84
+   },
+   {
+    "w": "risco",
+    "t": 62.84,
+    "f": 63.26
+   },
+   {
+    "w": "de",
+    "t": 63.26,
+    "f": 63.34
+   },
+   {
+    "w": "novas",
+    "t": 63.34,
+    "f": 63.58
+   },
+   {
+    "w": "enchentes.",
+    "t": 63.58,
+    "f": 64.06
+   }
+  ]
+ },
+ {
+  "id": "f9",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "ini": 65.11,
+  "fim": 68.13,
+  "palavras": [
+   {
+    "w": "De",
+    "t": 65.3,
+    "f": 65.78
+   },
+   {
+    "w": "que",
+    "t": 65.78,
+    "f": 65.88
+   },
+   {
+    "w": "região",
+    "t": 65.88,
+    "f": 66.3
+   },
+   {
+    "w": "e",
+    "t": 66.3,
+    "f": 66.54
+   },
+   {
+    "w": "de",
+    "t": 66.54,
+    "f": 66.6
+   },
+   {
+    "w": "que",
+    "t": 66.6,
+    "f": 66.74
+   },
+   {
+    "w": "cidade",
+    "t": 66.74,
+    "f": 66.98
+   },
+   {
+    "w": "você",
+    "t": 66.98,
+    "f": 67.2
+   },
+   {
+    "w": "é?",
+    "t": 67.2,
+    "f": 67.42
+   },
+   {
+    "w": "Comenta",
+    "t": 67.48,
+    "f": 67.96
+   },
+   {
+    "w": "aqui.",
+    "t": 67.96,
+    "f": 68.08
+   }
+  ]
+ },
+ {
+  "id": "f10",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "ini": 68.13,
+  "fim": 74.92,
+  "palavras": [
+   {
+    "w": "No",
+    "t": 68.28,
+    "f": 68.6
+   },
+   {
+    "w": "Inema",
+    "t": 68.6,
+    "f": 68.82
+   },
+   {
+    "w": ".club",
+    "t": 68.82,
+    "f": 69.24
+   },
+   {
+    "w": "você",
+    "t": 69.24,
+    "f": 69.46
+   },
+   {
+    "w": "pode",
+    "t": 69.46,
+    "f": 69.72
+   },
+   {
+    "w": "aprender",
+    "t": 69.72,
+    "f": 69.98
+   },
+   {
+    "w": "de",
+    "t": 69.98,
+    "f": 70.22
+   },
+   {
+    "w": "graça",
+    "t": 70.22,
+    "f": 70.54
+   },
+   {
+    "w": "sobre",
+    "t": 70.54,
+    "f": 70.76
+   },
+   {
+    "w": "inteligência",
+    "t": 70.76,
+    "f": 71.44
+   },
+   {
+    "w": "artificial",
+    "t": 71.44,
+    "f": 71.66
+   },
+   {
+    "w": "e",
+    "t": 71.66,
+    "f": 72.18
+   },
+   {
+    "w": "se",
+    "t": 72.18,
+    "f": 72.42
+   },
+   {
+    "w": "preparar",
+    "t": 72.42,
+    "f": 72.86
+   },
+   {
+    "w": "para",
+    "t": 72.86,
+    "f": 72.98
+   },
+   {
+    "w": "o",
+    "t": 72.98,
+    "f": 73.08
+   },
+   {
+    "w": "futuro.",
+    "t": 73.08,
+    "f": 73.32
+   },
+   {
+    "w": "É",
+    "t": 73.46,
+    "f": 73.7
+   },
+   {
+    "w": "direto",
+    "t": 73.7,
+    "f": 74.1
+   },
+   {
+    "w": "na",
+    "t": 74.1,
+    "f": 74.18
+   },
+   {
+    "w": "internet.",
+    "t": 74.18,
+    "f": 74.44
+   }
+  ]
+ }
+]
