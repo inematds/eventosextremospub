@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Terça-feira, dezessete de novembro. Chuva forte na Bahia, temporais em Minas e fogo no Pará.",
+  "legenda": "Terça-feira, 17 de novembro. Chuva forte na Bahia, temporais em Minas e fogo no Pará."
+ },
+ {
+  "id": "f2",
+  "fala": "Candiba, na Bahia, marcou cento e trinta e quatro vírgula quatro milímetros em vinte e quatro horas.",
+  "legenda": "Candiba, na Bahia, marcou 134,4 milímetros em 24 horas."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Cristália, Minas Gerais, foram cento e vinte e sete vírgula dois milímetros. Outro sensor marcou cento e vinte e sete milímetros.",
+  "legenda": "Em Cristália, Minas Gerais, foram 127,2 milímetros. Outro sensor marcou 127 milímetros."
+ },
+ {
+  "id": "f4",
+  "fala": "No Norte, Rio Maria, no Pará, acumulou cento e vinte e seis vírgula dois milímetros no período.",
+  "legenda": "No Norte, Rio Maria, no Pará, acumulou 126,2 milímetros no período."
+ },
+ {
+  "id": "f5",
+  "fala": "No Sul, Medianeira, Paraná, registrou cinquenta e seis vírgula quatro milímetros em vinte e quatro horas.",
+  "legenda": "No Sul, Medianeira, Paraná, registrou 56,4 milímetros em 24 horas."
+ },
+ {
+  "id": "f6",
+  "fala": "No fogo, o INPE registrou trezentos e dezessete focos ontem no Brasil. Cento e cinquenta e oito no Pará.",
+  "legenda": "No fogo, o INPE registrou 317 focos ontem no Brasil. 158 no Pará."
+ },
+ {
+  "id": "f7",
+  "fala": "No Centro-Oeste, Niquelândia, Goiás, teve trinta e nove milímetros em vinte e quatro horas.",
+  "legenda": "No Centro-Oeste, Niquelândia, Goiás, teve 39 milímetros em 24 horas."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Quinhentas e sessenta e nove cidades em laranja para tempestade. Amanhã, o aviso laranja inclui seiscentas e cinquenta e oito cidades do Sul.",
+  "legenda": "E hoje? 569 cidades em laranja para tempestade. Amanhã, o aviso laranja inclui 658 cidades do Sul."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: hoje deve concentrar mais chuva nas capitais. O Norte deve liderar a soma. Teresina pode passar dos quarenta graus na sexta.",
+  "legenda": "Os próximos 7 dias: hoje deve concentrar mais chuva nas capitais. O Norte deve liderar a soma. Teresina pode passar dos 40 graus na sexta."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: mais de vinte e oito mil milímetros nos pluviômetros. Nas capitais, estão previstos setecentos e trinta e quatro vírgula seis milímetros em sete dias.",
+  "legenda": "Volumes somados: mais de 28 mil milímetros nos pluviômetros. Nas capitais, estão previstos 734,6 milímetros em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]

@@ -1,0 +1,8 @@
+Clima 24 h: chuva na Bahia, Minas e Pará; alerta laranja | 17/11
+Candiba (BA): 134,4 mm; Cristália (MG): 127,2 mm; Rio Maria (PA): 126,2 mm em 24 h — CEMADEN.
+Medianeira (PR): 56,4 mm; Niquelândia (GO): 39 mm em 24 h — CEMADEN, captura de 17/11 05h30.
+INPE: 317 focos AQUA em 16/11 UTC; 158 no Pará. CSV diário em pesquisa/bruto/.
+INMET: aviso 56430, 569 municípios em laranja hoje; aviso 56433, 658 municípios do Sul amanhã. https://avisos.inmet.gov.br/
+Open-Meteo: 734,6 mm somados nas 27 capitais de 17 a 23/11; Norte lidera; Teresina pode chegar a 40,2 °C na sexta.
+CEMADEN: 28.620,34 mm·estação, soma de 2.123 pluviômetros com leituras válidas até 05h30; não é lâmina de área. Critérios em pesquisa/dados.md.
+Aprenda de graça sobre inteligência artificial no inema.club.
