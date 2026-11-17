@@ -1,0 +1,6 @@
+# Pauta e ordem
+12 falas, Short vertical no motor existente. Gancho datado: Guanambi até 200 mm REGISTRADOS no fim de semana; sem apresentar como chuva de hoje. Abertura Codex cheia por 2 s, texto dentro e luz neutra. Depois câmera BA com coluna 3D de 200 mm observados, nunca rotulada previsão. Panorama Brasil e canal de umidade PREVISTO, viagens CO/SE → Sul → Nordeste → Norte → tendência térmica → risco Sul com avisos INMET de hoje → ressalva de antecedência → pergunta → CTA.
+
+Sem menção oceânica no roteiro, sem mapa oceânico necessário. Sem granizo, vendaval, enchente ou fogo afirmados. O grande volume é passado: coluna rotulada REGISTRO, não previsão. Não há mm futuros regionais delimitados no boletim para fabricar colunas previstas. Cada fala troca o enquadramento e o painel. IR somente no panorama atual, explicitamente observado em 24 h; previsão em camada separada. Fonte principal Meteorologia · 17/11/2026. Avisos INMET são risco, não confirmação de evento. --canto preservado para etapa automática posterior.
+
+Verificação: gerar_cena.py com tempos locais e tempos acelerados simulados do avatar; assert de avisos, palavras/contadores; ffprobe e oito ou mais quadros lidos após render. Sem etapas externas de distribuição.
