@@ -1,0 +1,4 @@
+# Pauta e ordem
+Gancho: 30 °C ou mais podem atingir o Sul hoje. Capa, f1 e título usam o mesmo fato. Últimas três chamadas: calor de 45 °C em MS; mais de 300 mm no oeste do Sul até fim do mês; cidades em aviso hoje. Região, valor e prazo do gancho térmico desta edição são diferentes.
+11 falas; 190–230 palavras. Ordem: calor hoje → baixa pressão/IR observado → pancadas e granizo (ilustração) → contrastes catarinenses → Centro-Oeste/MG → quarta e quinta/gráfico complementar → risco severo sexta/fim de semana → acumulados até 24/11/colunas 3D → enchente condicional/ilustração → pergunta → CTA.
+Quadro zero cheio sem fade por 2,2 s, data grande, número escrito. Pinos seguem regiões; estados pintados apenas com avisos INMET identificados. Fontes por trecho. --canto usa tempos do avatar sem produzir avatar nesta etapa.

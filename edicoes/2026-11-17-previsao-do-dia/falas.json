@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Trinta graus ou mais podem atingir o Sul hoje. É a previsão desta terça, dezessete de novembro.",
+  "legenda": "30 graus ou mais podem atingir o Sul hoje. É a previsão desta terça, 17 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "Uma baixa pressão entre Rio Grande do Sul, Paraguai e Argentina deve favorecer pancadas irregulares e temporais no Sul.",
+  "legenda": "Uma baixa pressão entre Rio Grande do Sul, Paraguai e Argentina deve favorecer pancadas irregulares e temporais no Sul."
+ },
+ {
+  "id": "f3",
+  "fala": "Hoje, Rio Grande do Sul, oeste catarinense e oeste paranaense podem ter trovoadas, granizo e ventania. A chuva deve variar bastante.",
+  "legenda": "Hoje, Rio Grande do Sul, oeste catarinense e oeste paranaense podem ter trovoadas, granizo e ventania. A chuva deve variar bastante."
+ },
+ {
+  "id": "f4",
+  "fala": "Em Santa Catarina, Chapecó e São Miguel do Oeste devem ter maior chance de chuva. Lages deve ter chance pequena hoje.",
+  "legenda": "Em Santa Catarina, Chapecó e São Miguel do Oeste devem ter maior chance de chuva. Lages deve ter chance pequena hoje."
+ },
+ {
+  "id": "f5",
+  "fala": "Mato Grosso do Sul pode ter temporais à tarde e à noite. Goiás, Mato Grosso e Minas também podem receber pancadas.",
+  "legenda": "Mato Grosso do Sul pode ter temporais à tarde e à noite. Goiás, Mato Grosso e Minas também podem receber pancadas."
+ },
+ {
+  "id": "f6",
+  "fala": "Amanhã e quinta, o oeste do Sul pode voltar a ter temporais. O calor deve manter o abafamento nesses dias.",
+  "legenda": "Amanhã e quinta, o oeste do Sul pode voltar a ter temporais. O calor deve manter o abafamento nesses dias."
+ },
+ {
+  "id": "f7",
+  "fala": "Na sexta e no fim de semana, tempestades mais severas podem atingir oeste catarinense, noroeste gaúcho e sudoeste paranaense, inclusive com risco de tornados.",
+  "legenda": "Na sexta e no fim de semana, tempestades mais severas podem atingir oeste catarinense, noroeste gaúcho e sudoeste paranaense, inclusive com risco de tornados."
+ },
+ {
+  "id": "f8",
+  "fala": "Até dia vinte e quatro, projeções indicam duzentos a trezentos milímetros ou mais nessas áreas. São acumulados previstos, sujeitos a revisão.",
+  "legenda": "Até dia 24, projeções indicam 200 a 300 milímetros ou mais nessas áreas. São acumulados previstos, sujeitos a revisão."
+ },
+ {
+  "id": "f9",
+  "fala": "Com o solo encharcado, esse volume pode provocar enchentes. Se você mora nessas áreas, acompanhe os avisos da Defesa Civil.",
+  "legenda": "Com o solo encharcado, esse volume pode provocar enchentes. Se você mora nessas áreas, acompanhe os avisos da Defesa Civil."
+ },
+ {
+  "id": "f10",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
