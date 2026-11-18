@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quarta-feira, dezoito de novembro de dois mil e vinte e seis. Chuva forte no Sul, com risco pontual de granizo e vento.",
+    "legenda": "Quarta-feira, 18 de novembro de 2026. Chuva forte no Sul, com risco pontual de granizo e vento."
+  },
+  {
+    "id": "f2",
+    "fala": "Instabilidades avançam da Argentina, favorecendo pancadas no norte gaúcho, Santa Catarina e Paraná, principalmente à tarde e noite.",
+    "legenda": "Instabilidades avançam da Argentina, favorecendo pancadas no norte gaúcho, Santa Catarina e Paraná, principalmente à tarde e noite."
+  },
+  {
+    "id": "f3",
+    "fala": "No Centro-Oeste, Mato Grosso e Mato Grosso do Sul têm chuva e trovoadas, com pancadas fortes localizadas.",
+    "legenda": "No Centro-Oeste, Mato Grosso e Mato Grosso do Sul têm chuva e trovoadas, com pancadas fortes localizadas."
+  },
+  {
+    "id": "f4",
+    "fala": "No Sudeste, pancadas em Minas, Espírito Santo, Rio e São Paulo, que pode passar dos trinta graus.",
+    "legenda": "No Sudeste, pancadas em Minas, Espírito Santo, Rio e São Paulo, que pode passar dos 30 graus."
+  },
+  {
+    "id": "f5",
+    "fala": "Na Bahia, atenção à chuva forte na Grande Salvador. Também chove no sul maranhense e em partes do Piauí.",
+    "legenda": "Na Bahia, atenção à chuva forte na Grande Salvador. Também chove no sul maranhense e em partes do Piauí."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, pancadas no Amazonas, Acre e Rondônia. Pouca chuva em Roraima, Amapá e norte do Pará.",
+    "legenda": "No Norte, pancadas no Amazonas, Acre e Rondônia. Pouca chuva em Roraima, Amapá e norte do Pará."
+  },
+  {
+    "id": "f7",
+    "fala": "No norte do Piauí e Maranhão, máximas de trinta e cinco a quarenta graus. No Brasil, predominam vinte e oito a trinta e três graus.",
+    "legenda": "No norte do Piauí e Maranhão, máximas de 35 a 40 graus. No Brasil, predominam 28 a 33 graus."
+  },
+  {
+    "id": "f8",
+    "fala": "Sexta e domingo, a chuva deve aumentar no Sul. Atenção até quarta-feira, dia vinte e cinco de novembro.",
+    "legenda": "Sexta e domingo, a chuva deve aumentar no Sul. Atenção até quarta-feira, dia 25 de novembro."
+  },
+  {
+    "id": "f9",
+    "fala": "Na próxima semana, a temperatura deve cair no Centro-Sul, com risco de geada nas áreas altas do Sul.",
+    "legenda": "Na próxima semana, a temperatura deve cair no Centro-Sul, com risco de geada nas áreas altas do Sul."
+  },
+  {
+    "id": "f10",
+    "fala": "Volumes podem superar as projeções. Acompanhe os avisos locais.",
+    "legenda": "Volumes podem superar as projeções. Acompanhe os avisos locais."
+  },
+  {
+    "id": "f11",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
