@@ -1,0 +1,1010 @@
+[
+ {
+  "id": "f1",
+  "fala": "Tempestade ameaça duzentas e noventa e quatro cidades do Paraná amanhã. Impacto Sul, terça, dezessete de novembro.",
+  "ini": 0.0,
+  "fim": 6.39,
+  "palavras": [
+   {
+    "w": "Tempestade",
+    "t": 0.0,
+    "f": 0.54
+   },
+   {
+    "w": "ameaça",
+    "t": 0.54,
+    "f": 0.94
+   },
+   {
+    "w": "294",
+    "t": 0.94,
+    "f": 1.92
+   },
+   {
+    "w": "cidades",
+    "t": 1.92,
+    "f": 2.58
+   },
+   {
+    "w": "do",
+    "t": 2.58,
+    "f": 2.72
+   },
+   {
+    "w": "Paraná",
+    "t": 2.72,
+    "f": 3.06
+   },
+   {
+    "w": "amanhã.",
+    "t": 3.06,
+    "f": 3.58
+   },
+   {
+    "w": "Impacto",
+    "t": 3.78,
+    "f": 4.46
+   },
+   {
+    "w": "Sul,",
+    "t": 4.46,
+    "f": 4.6
+   },
+   {
+    "w": "terça,",
+    "t": 4.72,
+    "f": 5.22
+   },
+   {
+    "w": "17",
+    "t": 5.24,
+    "f": 5.58
+   },
+   {
+    "w": "de",
+    "t": 5.58,
+    "f": 5.96
+   },
+   {
+    "w": "novembro.",
+    "t": 5.96,
+    "f": 6.34
+   }
+  ]
+ },
+ {
+  "id": "f2",
+  "fala": "Hoje, Mercedes e Marechal Cândido Rondon tiveram telhados danificados, postes caídos e árvores sobre veículos. O temporal atingiu o oeste paranaense.",
+  "ini": 6.39,
+  "fim": 14.91,
+  "palavras": [
+   {
+    "w": "Hoje,",
+    "t": 6.42,
+    "f": 6.96
+   },
+   {
+    "w": "Mercedes",
+    "t": 7.06,
+    "f": 7.28
+   },
+   {
+    "w": "e",
+    "t": 7.28,
+    "f": 7.62
+   },
+   {
+    "w": "Marechal",
+    "t": 7.62,
+    "f": 7.98
+   },
+   {
+    "w": "Cândido",
+    "t": 7.98,
+    "f": 8.32
+   },
+   {
+    "w": "Rondon",
+    "t": 8.32,
+    "f": 8.64
+   },
+   {
+    "w": "tiveram",
+    "t": 8.64,
+    "f": 9.02
+   },
+   {
+    "w": "telhados",
+    "t": 9.02,
+    "f": 9.36
+   },
+   {
+    "w": "danificados,",
+    "t": 9.36,
+    "f": 10.04
+   },
+   {
+    "w": "postes",
+    "t": 10.28,
+    "f": 10.76
+   },
+   {
+    "w": "caídos",
+    "t": 10.76,
+    "f": 11.22
+   },
+   {
+    "w": "e",
+    "t": 11.22,
+    "f": 11.32
+   },
+   {
+    "w": "árvores",
+    "t": 11.32,
+    "f": 11.68
+   },
+   {
+    "w": "sobre",
+    "t": 11.68,
+    "f": 11.9
+   },
+   {
+    "w": "veículos.",
+    "t": 11.9,
+    "f": 12.26
+   },
+   {
+    "w": "O",
+    "t": 12.48,
+    "f": 12.94
+   },
+   {
+    "w": "temporal",
+    "t": 12.94,
+    "f": 13.22
+   },
+   {
+    "w": "atingiu",
+    "t": 13.22,
+    "f": 13.86
+   },
+   {
+    "w": "o",
+    "t": 13.86,
+    "f": 14.04
+   },
+   {
+    "w": "oeste",
+    "t": 14.04,
+    "f": 14.36
+   },
+   {
+    "w": "paranaense.",
+    "t": 14.36,
+    "f": 14.86
+   }
+  ]
+ },
+ {
+  "id": "f3",
+  "fala": "Pela manhã, nuvens prateleira escureceram as Missões gaúchas. Houve chuva forte e rajadas entre Santo Ângelo, Santa Rosa e Santo Augusto.",
+  "ini": 14.91,
+  "fim": 23.69,
+  "palavras": [
+   {
+    "w": "Pela",
+    "t": 15.06,
+    "f": 15.36
+   },
+   {
+    "w": "manhã,",
+    "t": 15.36,
+    "f": 15.72
+   },
+   {
+    "w": "nuvens",
+    "t": 15.8,
+    "f": 16.32
+   },
+   {
+    "w": "prateleira",
+    "t": 16.32,
+    "f": 16.82
+   },
+   {
+    "w": "escureceram",
+    "t": 16.82,
+    "f": 17.52
+   },
+   {
+    "w": "as",
+    "t": 17.52,
+    "f": 17.6
+   },
+   {
+    "w": "missões",
+    "t": 17.6,
+    "f": 17.92
+   },
+   {
+    "w": "gaúchas.",
+    "t": 17.92,
+    "f": 18.32
+   },
+   {
+    "w": "Houve",
+    "t": 18.58,
+    "f": 19.14
+   },
+   {
+    "w": "chuva",
+    "t": 19.14,
+    "f": 19.46
+   },
+   {
+    "w": "forte",
+    "t": 19.46,
+    "f": 19.78
+   },
+   {
+    "w": "e",
+    "t": 19.78,
+    "f": 20.22
+   },
+   {
+    "w": "rajadas",
+    "t": 20.22,
+    "f": 20.74
+   },
+   {
+    "w": "entre",
+    "t": 20.74,
+    "f": 21.0
+   },
+   {
+    "w": "Santo",
+    "t": 21.0,
+    "f": 21.28
+   },
+   {
+    "w": "Ângelo,",
+    "t": 21.28,
+    "f": 21.66
+   },
+   {
+    "w": "Santa",
+    "t": 21.78,
+    "f": 22.1
+   },
+   {
+    "w": "Rosa",
+    "t": 22.1,
+    "f": 22.46
+   },
+   {
+    "w": "e",
+    "t": 22.46,
+    "f": 22.8
+   },
+   {
+    "w": "Santo",
+    "t": 22.8,
+    "f": 23.14
+   },
+   {
+    "w": "Augusto.",
+    "t": 23.14,
+    "f": 23.64
+   }
+  ]
+ },
+ {
+  "id": "f4",
+  "fala": "Na Argentina, o sistema já trouxe granizo gigante. Ao avançar, encontrou ar quente e ganhou força com instabilidades vindas do Paraguai.",
+  "ini": 23.69,
+  "fim": 31.65,
+  "palavras": [
+   {
+    "w": "Na",
+    "t": 23.74,
+    "f": 24.06
+   },
+   {
+    "w": "Argentina,",
+    "t": 24.06,
+    "f": 24.46
+   },
+   {
+    "w": "o",
+    "t": 24.72,
+    "f": 24.96
+   },
+   {
+    "w": "sistema",
+    "t": 24.96,
+    "f": 25.22
+   },
+   {
+    "w": "já",
+    "t": 25.22,
+    "f": 25.46
+   },
+   {
+    "w": "trouxe",
+    "t": 25.46,
+    "f": 25.76
+   },
+   {
+    "w": "granizo",
+    "t": 25.76,
+    "f": 26.18
+   },
+   {
+    "w": "gigante.",
+    "t": 26.18,
+    "f": 26.7
+   },
+   {
+    "w": "Ao",
+    "t": 26.7,
+    "f": 27.22
+   },
+   {
+    "w": "avançar,",
+    "t": 27.22,
+    "f": 27.7
+   },
+   {
+    "w": "encontrou",
+    "t": 27.72,
+    "f": 28.36
+   },
+   {
+    "w": "ar",
+    "t": 28.36,
+    "f": 28.48
+   },
+   {
+    "w": "quente",
+    "t": 28.48,
+    "f": 28.8
+   },
+   {
+    "w": "e",
+    "t": 28.8,
+    "f": 29.04
+   },
+   {
+    "w": "ganhou",
+    "t": 29.04,
+    "f": 29.38
+   },
+   {
+    "w": "força",
+    "t": 29.38,
+    "f": 29.68
+   },
+   {
+    "w": "com",
+    "t": 29.68,
+    "f": 29.88
+   },
+   {
+    "w": "instabilidades",
+    "t": 29.88,
+    "f": 30.48
+   },
+   {
+    "w": "vindas",
+    "t": 30.48,
+    "f": 31.16
+   },
+   {
+    "w": "do",
+    "t": 31.16,
+    "f": 31.24
+   },
+   {
+    "w": "Paraguai.",
+    "t": 31.24,
+    "f": 31.6
+   }
+  ]
+ },
+ {
+  "id": "f5",
+  "fala": "Nesta noite, a instabilidade deve cruzar o Paraná. Amanhã, duzentas e noventa e quatro cidades ficam sob aviso laranja por risco de granizo.",
+  "ini": 31.65,
+  "fim": 40.87,
+  "palavras": [
+   {
+    "w": "Nesta",
+    "t": 31.82,
+    "f": 32.48
+   },
+   {
+    "w": "noite,",
+    "t": 32.48,
+    "f": 32.76
+   },
+   {
+    "w": "a",
+    "t": 32.92,
+    "f": 33.22
+   },
+   {
+    "w": "instabilidade",
+    "t": 33.22,
+    "f": 33.82
+   },
+   {
+    "w": "deve",
+    "t": 33.82,
+    "f": 34.08
+   },
+   {
+    "w": "cruzar",
+    "t": 34.08,
+    "f": 34.44
+   },
+   {
+    "w": "o",
+    "t": 34.44,
+    "f": 34.58
+   },
+   {
+    "w": "Paraná.",
+    "t": 34.58,
+    "f": 34.9
+   },
+   {
+    "w": "Amanhã,",
+    "t": 35.22,
+    "f": 35.88
+   },
+   {
+    "w": "294",
+    "t": 35.94,
+    "f": 37.32
+   },
+   {
+    "w": "cidades",
+    "t": 37.32,
+    "f": 37.96
+   },
+   {
+    "w": "ficam",
+    "t": 37.96,
+    "f": 38.62
+   },
+   {
+    "w": "sob",
+    "t": 38.62,
+    "f": 38.78
+   },
+   {
+    "w": "aviso",
+    "t": 38.78,
+    "f": 39.18
+   },
+   {
+    "w": "laranja",
+    "t": 39.18,
+    "f": 39.6
+   },
+   {
+    "w": "por",
+    "t": 39.6,
+    "f": 39.98
+   },
+   {
+    "w": "risco",
+    "t": 39.98,
+    "f": 40.34
+   },
+   {
+    "w": "de",
+    "t": 40.34,
+    "f": 40.44
+   },
+   {
+    "w": "granizo.",
+    "t": 40.44,
+    "f": 40.82
+   }
+  ]
+ },
+ {
+  "id": "f6",
+  "fala": "No Rio Grande do Sul, quatrocentas e sessenta e oito cidades têm aviso laranja amanhã. A chuva pode atingir cem milímetros no dia.",
+  "ini": 40.87,
+  "fim": 48.53,
+  "palavras": [
+   {
+    "w": "No",
+    "t": 41.0,
+    "f": 41.5
+   },
+   {
+    "w": "Rio",
+    "t": 41.5,
+    "f": 41.68
+   },
+   {
+    "w": "Grande",
+    "t": 41.68,
+    "f": 41.88
+   },
+   {
+    "w": "do",
+    "t": 41.88,
+    "f": 42.04
+   },
+   {
+    "w": "Sul,",
+    "t": 42.04,
+    "f": 42.24
+   },
+   {
+    "w": "468",
+    "t": 42.46,
+    "f": 43.68
+   },
+   {
+    "w": "cidades",
+    "t": 43.68,
+    "f": 44.36
+   },
+   {
+    "w": "têm",
+    "t": 44.36,
+    "f": 44.78
+   },
+   {
+    "w": "aviso",
+    "t": 44.78,
+    "f": 45.06
+   },
+   {
+    "w": "laranja",
+    "t": 45.06,
+    "f": 45.48
+   },
+   {
+    "w": "amanhã.",
+    "t": 45.48,
+    "f": 46.08
+   },
+   {
+    "w": "A",
+    "t": 46.16,
+    "f": 46.62
+   },
+   {
+    "w": "chuva",
+    "t": 46.62,
+    "f": 46.92
+   },
+   {
+    "w": "pode",
+    "t": 46.92,
+    "f": 47.08
+   },
+   {
+    "w": "atingir",
+    "t": 47.08,
+    "f": 47.52
+   },
+   {
+    "w": "100",
+    "t": 47.52,
+    "f": 47.68
+   },
+   {
+    "w": "milímetros",
+    "t": 47.68,
+    "f": 48.14
+   },
+   {
+    "w": "no",
+    "t": 48.14,
+    "f": 48.3
+   },
+   {
+    "w": "dia.",
+    "t": 48.3,
+    "f": 48.48
+   }
+  ]
+ },
+ {
+  "id": "f7",
+  "fala": "Em Santa Catarina, duzentas e setenta e sete cidades estão nesse aviso. O oeste recebeu instabilidade hoje; novas chuvas podem voltar amanhã.",
+  "ini": 48.53,
+  "fim": 55.45,
+  "palavras": [
+   {
+    "w": "Em",
+    "t": 48.62,
+    "f": 48.98
+   },
+   {
+    "w": "Santa",
+    "t": 48.98,
+    "f": 49.16
+   },
+   {
+    "w": "Catarina,",
+    "t": 49.16,
+    "f": 49.6
+   },
+   {
+    "w": "277",
+    "t": 49.82,
+    "f": 50.9
+   },
+   {
+    "w": "cidades",
+    "t": 50.9,
+    "f": 51.62
+   },
+   {
+    "w": "estão",
+    "t": 51.62,
+    "f": 52.14
+   },
+   {
+    "w": "nesse",
+    "t": 52.14,
+    "f": 52.32
+   },
+   {
+    "w": "aviso.",
+    "t": 52.32,
+    "f": 52.72
+   },
+   {
+    "w": "O",
+    "t": 52.8,
+    "f": 53.28
+   },
+   {
+    "w": "Oeste",
+    "t": 53.28,
+    "f": 53.66
+   },
+   {
+    "w": "recebeu",
+    "t": 53.66,
+    "f": 54.38
+   },
+   {
+    "w": "instabilidade",
+    "t": 54.38,
+    "f": 55.12
+   },
+   {
+    "w": "hoje.",
+    "t": 55.12,
+    "f": 55.4
+   }
+  ]
+ },
+ {
+  "id": "f8",
+  "fala": "Quarta concentra o risco: mil e trinta e nove cidades do Sul em laranja. A previsão inclui vento de até cem quilômetros por hora.",
+  "ini": 55.45,
+  "fim": 65.29,
+  "palavras": [
+   {
+    "w": "A",
+    "t": 61.48,
+    "f": 61.96
+   },
+   {
+    "w": "previsão",
+    "t": 61.96,
+    "f": 62.44
+   },
+   {
+    "w": "inclui",
+    "t": 62.44,
+    "f": 62.84
+   },
+   {
+    "w": "vento",
+    "t": 62.84,
+    "f": 63.62
+   },
+   {
+    "w": "de",
+    "t": 63.62,
+    "f": 63.66
+   },
+   {
+    "w": "até",
+    "t": 63.66,
+    "f": 63.86
+   },
+   {
+    "w": "100",
+    "t": 63.86,
+    "f": 64.18
+   },
+   {
+    "w": "km",
+    "t": 64.18,
+    "f": 64.58
+   },
+   {
+    "w": "por",
+    "t": 64.58,
+    "f": 65.0
+   },
+   {
+    "w": "hora,",
+    "t": 65.0,
+    "f": 65.24
+   }
+  ]
+ },
+ {
+  "id": "f9",
+  "fala": "Evite árvores e fios caídos. Não atravesse ruas alagadas.",
+  "ini": 65.29,
+  "fim": 69.97,
+  "palavras": [
+   {
+    "w": "evite",
+    "t": 65.32,
+    "f": 65.92
+   },
+   {
+    "w": "árvores",
+    "t": 65.92,
+    "f": 66.34
+   },
+   {
+    "w": "e",
+    "t": 66.34,
+    "f": 66.44
+   },
+   {
+    "w": "fios",
+    "t": 66.44,
+    "f": 66.68
+   },
+   {
+    "w": "caídos,",
+    "t": 66.68,
+    "f": 67.18
+   },
+   {
+    "w": "não",
+    "t": 67.18,
+    "f": 67.6
+   },
+   {
+    "w": "atravesse",
+    "t": 67.6,
+    "f": 68.1
+   },
+   {
+    "w": "ruas",
+    "t": 68.1,
+    "f": 68.42
+   },
+   {
+    "w": "alagadas.",
+    "t": 68.42,
+    "f": 68.92
+   }
+  ]
+ },
+ {
+  "id": "f10",
+  "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "ini": 69.97,
+  "fim": 74.29,
+  "palavras": [
+   {
+    "w": "De",
+    "t": 70.12,
+    "f": 70.46
+   },
+   {
+    "w": "que",
+    "t": 70.46,
+    "f": 70.54
+   },
+   {
+    "w": "cidade",
+    "t": 70.54,
+    "f": 70.8
+   },
+   {
+    "w": "do",
+    "t": 70.8,
+    "f": 71.0
+   },
+   {
+    "w": "Sul",
+    "t": 71.0,
+    "f": 71.16
+   },
+   {
+    "w": "você",
+    "t": 71.16,
+    "f": 71.32
+   },
+   {
+    "w": "está",
+    "t": 71.32,
+    "f": 71.52
+   },
+   {
+    "w": "assistindo",
+    "t": 71.52,
+    "f": 72.0
+   },
+   {
+    "w": "e",
+    "t": 72.0,
+    "f": 72.16
+   },
+   {
+    "w": "como",
+    "t": 72.16,
+    "f": 72.38
+   },
+   {
+    "w": "está",
+    "t": 72.38,
+    "f": 72.52
+   },
+   {
+    "w": "o",
+    "t": 72.52,
+    "f": 72.66
+   },
+   {
+    "w": "tempo",
+    "t": 72.66,
+    "f": 72.88
+   },
+   {
+    "w": "aí",
+    "t": 72.88,
+    "f": 73.02
+   },
+   {
+    "w": "agora?",
+    "t": 73.02,
+    "f": 73.22
+   },
+   {
+    "w": "Comenta",
+    "t": 73.62,
+    "f": 74.1
+   },
+   {
+    "w": "aqui.",
+    "t": 74.1,
+    "f": 74.24
+   }
+  ]
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "ini": 74.29,
+  "fim": 81.917,
+  "palavras": [
+   {
+    "w": "No",
+    "t": 74.44,
+    "f": 74.92
+   },
+   {
+    "w": "Inema",
+    "t": 74.92,
+    "f": 75.16
+   },
+   {
+    "w": ".club",
+    "t": 75.16,
+    "f": 75.68
+   },
+   {
+    "w": "você",
+    "t": 75.68,
+    "f": 75.92
+   },
+   {
+    "w": "pode",
+    "t": 75.92,
+    "f": 76.18
+   },
+   {
+    "w": "aprender",
+    "t": 76.18,
+    "f": 76.44
+   },
+   {
+    "w": "de",
+    "t": 76.44,
+    "f": 76.68
+   },
+   {
+    "w": "graça",
+    "t": 76.68,
+    "f": 76.96
+   },
+   {
+    "w": "sobre",
+    "t": 76.96,
+    "f": 77.16
+   },
+   {
+    "w": "inteligência",
+    "t": 77.16,
+    "f": 77.7
+   },
+   {
+    "w": "artificial",
+    "t": 77.7,
+    "f": 77.92
+   },
+   {
+    "w": "e",
+    "t": 77.92,
+    "f": 78.54
+   },
+   {
+    "w": "se",
+    "t": 78.54,
+    "f": 78.72
+   },
+   {
+    "w": "preparar",
+    "t": 78.72,
+    "f": 79.18
+   },
+   {
+    "w": "para",
+    "t": 79.18,
+    "f": 79.28
+   },
+   {
+    "w": "o",
+    "t": 79.28,
+    "f": 79.38
+   },
+   {
+    "w": "futuro.",
+    "t": 79.38,
+    "f": 79.64
+   },
+   {
+    "w": "É",
+    "t": 79.86,
+    "f": 80.32
+   },
+   {
+    "w": "direto",
+    "t": 80.32,
+    "f": 80.82
+   },
+   {
+    "w": "na",
+    "t": 80.82,
+    "f": 81.08
+   },
+   {
+    "w": "internet.",
+    "t": 81.08,
+    "f": 81.3
+   }
+  ]
+ }
+]

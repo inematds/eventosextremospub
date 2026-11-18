@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Tempestade ameaça duzentas e noventa e quatro cidades do Paraná amanhã. Impacto Sul, terça, dezessete de novembro.",
+    "legenda": "Tempestade ameaça 294 cidades do Paraná amanhã. Impacto Sul, terça, 17 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Hoje, Mercedes e Marechal Cândido Rondon tiveram telhados danificados, postes caídos e árvores sobre veículos. O temporal atingiu o oeste paranaense.",
+    "legenda": "Hoje, Mercedes e Marechal Cândido Rondon tiveram telhados danificados, postes caídos e árvores sobre veículos. O temporal atingiu o oeste paranaense."
+  },
+  {
+    "id": "f3",
+    "fala": "Pela manhã, nuvens prateleira escureceram as Missões gaúchas. Houve chuva forte e rajadas entre Santo Ângelo, Santa Rosa e Santo Augusto.",
+    "legenda": "Pela manhã, nuvens prateleira escureceram as Missões gaúchas. Houve chuva forte e rajadas entre Santo Ângelo, Santa Rosa e Santo Augusto."
+  },
+  {
+    "id": "f4",
+    "fala": "Na Argentina, o sistema já trouxe granizo gigante. Ao avançar, encontrou ar quente e ganhou força com instabilidades vindas do Paraguai.",
+    "legenda": "Na Argentina, o sistema já trouxe granizo gigante. Ao avançar, encontrou ar quente e ganhou força com instabilidades vindas do Paraguai."
+  },
+  {
+    "id": "f5",
+    "fala": "Nesta noite, a instabilidade deve cruzar o Paraná. Amanhã, duzentas e noventa e quatro cidades ficam sob aviso laranja por risco de granizo.",
+    "legenda": "Nesta noite, a instabilidade deve cruzar o Paraná. Amanhã, 294 cidades ficam sob aviso laranja por risco de granizo."
+  },
+  {
+    "id": "f6",
+    "fala": "No Rio Grande do Sul, quatrocentas e sessenta e oito cidades têm aviso laranja amanhã. A chuva pode atingir cem milímetros no dia.",
+    "legenda": "No Rio Grande do Sul, 468 cidades têm aviso laranja amanhã. A chuva pode atingir 100 milímetros no dia."
+  },
+  {
+    "id": "f7",
+    "fala": "Em Santa Catarina, duzentas e setenta e sete cidades estão nesse aviso. O oeste recebeu instabilidade hoje; novas chuvas podem voltar amanhã.",
+    "legenda": "Em Santa Catarina, 277 cidades estão nesse aviso. O oeste recebeu instabilidade hoje; novas chuvas podem voltar amanhã."
+  },
+  {
+    "id": "f8",
+    "fala": "Quarta concentra o risco: mil e trinta e nove cidades do Sul em laranja. A previsão inclui vento de até cem quilômetros por hora.",
+    "legenda": "Quarta concentra o risco: 1.039 cidades do Sul em laranja. A previsão inclui vento de até 100 quilômetros por hora."
+  },
+  {
+    "id": "f9",
+    "fala": "Evite árvores e fios caídos. Não atravesse ruas alagadas.",
+    "legenda": "Evite árvores e fios caídos. Não atravesse ruas alagadas."
+  },
+  {
+    "id": "f10",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
