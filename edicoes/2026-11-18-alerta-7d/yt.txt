@@ -1,0 +1,8 @@
+Até 84,6 km/h previstos em Florianópolis quarta 25 · Alerta da semana 18/11
+19 a 25/11: Florianópolis pode ter rajadas de até 84,6 km/h na quarta 25. Open-Meteo, leitura 18/11/2026.
+Oeste de SC: 283,6 mm previstos em 7 dias, incluindo 59,2 mm sexta 20; norte de MG: 139,1 mm na semana, chuva desde quinta 19. Valores locais da grade 1,5°, não totais estaduais.
+INMET: avisos amarelos de tempestade quinta 19 e sexta 20, incluindo áreas do Sul: https://avisos.inmet.gov.br/56446 e https://avisos.inmet.gov.br/56447
+PI: até 42,2 °C previstos quarta 25; oeste do PA: 39,8 °C sexta 20; serra gaúcha: mínima de 8,1 °C quarta 25. Valores locais.
+Modelo e dados: https://open-meteo.com/en/docs ; séries diárias preservadas em om/ e pesquisa/dados.md. A previsão pode mudar.
+Contexto de temporais: MetSul, 18/11 https://metsul.com/2026-11-18-tempo-alerta-chuva-temporais/
+Aprenda de graça sobre inteligência artificial: https://inema.club
