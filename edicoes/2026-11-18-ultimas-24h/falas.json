@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quarta-feira, dezoito de novembro. Chuva forte na Bahia, rajadas no Paraná e mais de mil focos no Pará.",
+  "legenda": "Quarta-feira, 18 de novembro. Chuva forte na Bahia, rajadas no Paraná e mais de 1.000 focos no Pará."
+ },
+ {
+  "id": "f2",
+  "fala": "Riachão do Jacuípe, na Bahia, acumulou cento e dezesseis vírgula oito milímetros em vinte e quatro horas.",
+  "legenda": "Riachão do Jacuípe, na Bahia, acumulou 116,8 milímetros em 24 horas."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Antônio Dias, Minas Gerais, um pluviômetro marcou oitenta e sete vírgula seis milímetros no período.",
+  "legenda": "Em Antônio Dias, Minas Gerais, um pluviômetro marcou 87,6 milímetros no período."
+ },
+ {
+  "id": "f4",
+  "fala": "No Sul, o aeroporto de Cascavel, Paraná, registrou rajada de setenta e cinco vírgula nove quilômetros por hora, com granizo.",
+  "legenda": "No Sul, o aeroporto de Cascavel, Paraná, registrou rajada de 75,9 quilômetros por hora, com granizo."
+ },
+ {
+  "id": "f5",
+  "fala": "No Centro-Oeste, Rio Verde, Goiás, teve cinquenta e um vírgula quatro milímetros em vinte e quatro horas.",
+  "legenda": "No Centro-Oeste, Rio Verde, Goiás, teve 51,4 milímetros em 24 horas."
+ },
+ {
+  "id": "f6",
+  "fala": "O INPE contou mil duzentos e quarenta e cinco focos ontem no Brasil. Mil e cinquenta e quatro no Pará.",
+  "legenda": "O INPE contou 1.245 focos ontem no Brasil. 1.054 no Pará."
+ },
+ {
+  "id": "f7",
+  "fala": "No Acre, o aeroporto de Rio Branco chegou a trinta e oito graus ontem à tarde.",
+  "legenda": "No Acre, o aeroporto de Rio Branco chegou a 38 graus ontem à tarde."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Mil quatrocentas e cinquenta e três cidades em laranja para tempestade. Amanhã, três mil oitocentas e trinta em amarelo.",
+  "legenda": "E hoje? 1.453 cidades em laranja para tempestade. Amanhã, 3.830 em amarelo."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: domingo deve ser o mais chuvoso nas capitais. O Sul deve liderar. Teresina pode passar dos quarenta graus na terça.",
+  "legenda": "Os próximos 7 dias: domingo deve ser o mais chuvoso nas capitais. O Sul deve liderar. Teresina pode passar dos 40 graus na terça."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: dezesseis mil seiscentos e cinquenta e seis vírgula nove milímetros nos pluviômetros. Nas capitais, seiscentos e oitenta e cinco vírgula dois milímetros previstos em sete dias.",
+  "legenda": "Volumes somados: 16.656,9 milímetros nos pluviômetros. Nas capitais, 685,2 milímetros previstos em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]

@@ -1,0 +1,12 @@
+Clima 24 h: chuva na Bahia, rajadas no Paraná e fogo no Pará | 18/11
+Riachão do Jacuípe (BA): 116,8 mm; Antônio Dias (MG): 87,6 mm; Rio Verde (GO): 51,4 mm em 24 h. Fonte: pluviômetros CEMADEN, leituras até 18/11 05h30 BRT.
+Cascavel (PR): rajada de 75,9 km/h e granizo no aeroporto; Rio Branco (AC): 38 °C no aeroporto ontem. Fonte: NOAA/METAR SBCA e SBRB de 17/11.
+INPE/AQUA: 1.245 focos no Brasil em 17/11 UTC completo, sendo 1.054 no Pará. Fonte: pesquisa/bruto/inpe_focos_diario_br_20261117.csv.
+Hoje: 1.453 cidades em laranja para tempestade; amanhã: 3.830 em amarelo. Fonte: INMET, avisos 56432, 56442 e 56440 — https://avisos.inmet.gov.br/
+Previsão 18–24/11: domingo deve ter a maior soma de chuva nas capitais; Sul deve liderar a soma regional. Teresina pode alcançar 40,5 °C na terça. Fonte: Open-Meteo, previsao7d.json.
+Volumes somados: CEMADEN 16.656,90 mm·estação em 24 h após controle de qualidade; Open-Meteo 685,2 mm previstos em 7 dias nas 27 capitais. Somas de pontos, sem representar lâmina média de área. Fontes e critérios em pesquisa/dados.md.
+Aprenda de graça sobre inteligência artificial no https://inema.club — direto na internet.
+
+No YouTube: https://www.youtube.com/shorts/yejkafkvIIk
+Aprenda inteligência artificial em inema.club
+#clima #previsaodotempo #tempo #chuva #alerta #inemaclub
