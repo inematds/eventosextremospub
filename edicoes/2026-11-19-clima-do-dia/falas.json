@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quinta-feira, dezenove de novembro de dois mil e vinte e seis. Chuva no Sul hoje e feriadão com risco de temporais.",
+    "legenda": "Quinta-feira, 19 de novembro de 2026. Chuva no Sul hoje e feriadão com risco de temporais."
+  },
+  {
+    "id": "f2",
+    "fala": "Áreas de instabilidade avançam do Paraguai e Mato Grosso do Sul para o Paraná e Santa Catarina.",
+    "legenda": "Áreas de instabilidade avançam do Paraguai e Mato Grosso do Sul para o Paraná e Santa Catarina."
+  },
+  {
+    "id": "f3",
+    "fala": "Hoje, pancadas no centro-norte gaúcho, Santa Catarina e Paraná, com risco pontual de granizo e vento.",
+    "legenda": "Hoje, pancadas no centro-norte gaúcho, Santa Catarina e Paraná, com risco pontual de granizo e vento."
+  },
+  {
+    "id": "f4",
+    "fala": "No Centro-Oeste, chuva irregular. Pancadas fortes podem superar os volumes indicados pelos modelos, mesmo localmente.",
+    "legenda": "No Centro-Oeste, chuva irregular. Pancadas fortes podem superar os volumes indicados pelos modelos, mesmo localmente."
+  },
+  {
+    "id": "f5",
+    "fala": "No Sudeste, atenção ao Rio, Minas e Espírito Santo. Interior paulista com trinta e dois a trinta e seis graus.",
+    "legenda": "No Sudeste, atenção ao Rio, Minas e Espírito Santo. Interior paulista com 32 a 36 graus."
+  },
+  {
+    "id": "f6",
+    "fala": "Na Bahia, chuva forte localizada. No Norte, pancadas no Amazonas; pouca chuva em Roraima e Amapá.",
+    "legenda": "Na Bahia, chuva forte localizada. No Norte, pancadas no Amazonas; pouca chuva em Roraima e Amapá."
+  },
+  {
+    "id": "f7",
+    "fala": "Sexta e domingo, a chuva deve ganhar força no norte gaúcho, Santa Catarina e Paraná.",
+    "legenda": "Sexta e domingo, a chuva deve ganhar força no norte gaúcho, Santa Catarina e Paraná."
+  },
+  {
+    "id": "f8",
+    "fala": "No Nordeste, sexta pode ter quarenta graus. Na quarta, o centro-norte piauiense pode alcançar quarenta e três graus.",
+    "legenda": "No Nordeste, sexta pode ter 40 graus. Na quarta, o centro-norte piauiense pode alcançar 43 graus."
+  },
+  {
+    "id": "f9",
+    "fala": "Em quinze dias, tendência de pontos acima de duzentos e cinquenta milímetros em Minas; chuva desigual pelo Brasil.",
+    "legenda": "Em 15 dias, tendência de pontos acima de 250 milímetros em Minas; chuva desigual pelo Brasil."
+  },
+  {
+    "id": "f10",
+    "fala": "Na próxima semana, a temperatura deve cair no Centro-Sul, com possível geada no alto da serra catarinense.",
+    "legenda": "Na próxima semana, a temperatura deve cair no Centro-Sul, com possível geada no alto da serra catarinense."
+  },
+  {
+    "id": "f11",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
