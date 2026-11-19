@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, oeste do Paraná: até duzentos e oitenta e nove vírgula quatro milímetros previstos de amanhã até quinta. Se prepare. Alerta da semana, dezenove de novembro.",
+    "legenda": "Atenção, oeste do Paraná: até 289,4 milímetros previstos de amanhã até quinta. Se prepare. Alerta da semana, 19 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "No oeste catarinense, o Open Meteo prevê cento e dois vírgula nove milímetros já nesta sexta. Evite estrada durante chuva forte.",
+    "legenda": "No oeste catarinense, o Open-Meteo prevê 102,9 milímetros já nesta sexta. Evite estrada durante chuva forte."
+  },
+  {
+    "id": "f3",
+    "fala": "O INMET emitiu aviso laranja de tempestade para sexta, incluindo o Sul. Há risco de granizo, queda de árvores e alagamentos.",
+    "legenda": "O INMET emitiu aviso laranja de tempestade para sexta, incluindo o Sul. Há risco de granizo, queda de árvores e alagamentos."
+  },
+  {
+    "id": "f4",
+    "fala": "No Centro Oeste e Sudeste, atenção aos temporais no feriado. Belo Horizonte pode acumular oitenta e sete vírgula quatro milímetros até quinta.",
+    "legenda": "No Centro-Oeste e Sudeste, atenção aos temporais no feriado. Belo Horizonte pode acumular 87,4 milímetros até quinta."
+  },
+  {
+    "id": "f5",
+    "fala": "No Piauí, o calor dispara: até quarenta e um vírgula oito graus previstos na segunda. Beba água e evite esforço ao sol.",
+    "legenda": "No Piauí, o calor dispara: até 41,8 graus previstos na segunda. Beba água e evite esforço ao sol."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, Manaus pode receber sessenta e quatro vírgula dois milímetros na quinta, dia vinte e seis. Atenção aos alagamentos.",
+    "legenda": "No Norte, Manaus pode receber 64,2 milímetros na quinta, dia 26. Atenção aos alagamentos."
+  },
+  {
+    "id": "f7",
+    "fala": "No interior paulista, rajadas previstas de setenta vírgula seis quilômetros por hora na quinta. Afaste o carro das árvores.",
+    "legenda": "No interior paulista, rajadas previstas de 70,6 quilômetros por hora na quinta. Afaste o carro das árvores."
+  },
+  {
+    "id": "f8",
+    "fala": "Na serra gaúcha, mínima prevista de nove vírgula oito graus na quinta. Separe roupa de frio.",
+    "legenda": "Na serra gaúcha, mínima prevista de 9,8 graus na quinta. Separe roupa de frio."
+  },
+  {
+    "id": "f9",
+    "fala": "Não atravesse rua alagada. Acompanhe a Defesa Civil: a previsão pode mudar.",
+    "legenda": "Não atravesse rua alagada. Acompanhe a Defesa Civil: a previsão pode mudar."
+  },
+  {
+    "id": "f10",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
