@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Tempestade ameaça duzentas e noventa e cinco cidades de Santa Catarina esta noite. Impacto Sul, quarta, dezoito de novembro.",
+    "legenda": "Tempestade ameaça 295 cidades de Santa Catarina esta noite. Impacto Sul, quarta, 18 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Hoje, São Miguel do Oeste recebeu chuva muito forte e rajadas. O temporal castigou o extremo oeste catarinense no final da tarde.",
+    "legenda": "Hoje, São Miguel do Oeste recebeu chuva muito forte e rajadas. O temporal castigou o extremo oeste catarinense no final da tarde."
+  },
+  {
+    "id": "f3",
+    "fala": "No Paraná, a avaliação dos estragos de ontem continua. Árvores atingiram veículos e telhados ficaram danificados. São registros anteriores, não desta noite.",
+    "legenda": "No Paraná, a avaliação dos estragos de ontem continua. Árvores atingiram veículos e telhados ficaram danificados. São registros anteriores, não desta noite."
+  },
+  {
+    "id": "f4",
+    "fala": "Áreas de instabilidade vindas da Argentina alimentam a sequência de chuva. A semana segue com repetição de temporais.",
+    "legenda": "Áreas de instabilidade vindas da Argentina alimentam a sequência de chuva. A semana segue com repetição de temporais."
+  },
+  {
+    "id": "f5",
+    "fala": "Em Santa Catarina, a chuva deve persistir nas próximas horas no oeste. O aviso prevê rajadas de até sessenta quilômetros por hora.",
+    "legenda": "Em Santa Catarina, a chuva deve persistir nas próximas horas no oeste. O aviso prevê rajadas de até 60 quilômetros por hora."
+  },
+  {
+    "id": "f6",
+    "fala": "No Paraná, a instabilidade deve avançar pelo sudoeste nesta noite. Amanhã, trezentas e noventa e nove cidades têm aviso de tempestade.",
+    "legenda": "No Paraná, a instabilidade deve avançar pelo sudoeste nesta noite. Amanhã, 399 cidades têm aviso de tempestade."
+  },
+  {
+    "id": "f7",
+    "fala": "No Rio Grande do Sul, a chuva no extremo noroeste deve diminuir na madrugada e voltar quinta. O aviso abrange oitenta e três cidades amanhã.",
+    "legenda": "No Rio Grande do Sul, a chuva no extremo noroeste deve diminuir na madrugada e voltar quinta. O aviso abrange 83 cidades amanhã."
+  },
+  {
+    "id": "f8",
+    "fala": "Sexta-feira deve concentrar o maior risco de tempestades no Sul. Nas áreas avisadas, pode chover até cinquenta milímetros no dia. Evite ruas alagadas.",
+    "legenda": "Sexta-feira deve concentrar o maior risco de tempestades no Sul. Nas áreas avisadas, pode chover até 50 milímetros no dia. Evite ruas alagadas."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
