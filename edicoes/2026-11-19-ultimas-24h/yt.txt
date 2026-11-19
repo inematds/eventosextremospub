@@ -1,0 +1,8 @@
+Clima 24 h: 217,4 mm em Timbó, vento em Cuiabá e alertas | 19/11
+CEMADEN: Timbó (SC), 217,42 mm no sensor Tiroleses; Chapada do Norte (MG), 106,8 mm; Dueré (TO), 65,4 mm em 24 h.
+NOAA/METAR: rajada de 32 nós (59,264 km/h; tela 59,2) em SBCY, 18/11 11h25 UTC; SBTE registrou 37 °C, 18/11 17h UTC.
+INPE: 441 focos AQUA de referência em 18/11 UTC, com 111 no Ceará. Mapa com pontos VIIRS; não são incêndios individuais.
+INMET: 3.437 municípios no aviso amarelo 56446 hoje; 3.372 no 56447 amanhã. Aviso laranja 56449: 140 municípios até 07h20 de hoje. https://avisos.inmet.gov.br/
+CEMADEN: soma validada de 15.448,67 mm·estação em 1.665 sensores, corte 19/11 05h30 BRT; inteiro truncado na fala. Não representa lâmina de chuva do país. Brutos: pesquisa/bruto/cemaden_getJson2_todas_ufs.json.
+Open-Meteo: previsão 19–25/11 soma 886,1 mm nas 27 capitais; Sudeste, 230,3 mm; quarta, 178 mm; Teresina até 40,8 °C na terça. Soma de pontos, não média de área. https://open-meteo.com/
+Fontes e recortes: pesquisa/noticias.md, pesquisa/dados.md e pesquisa/bruto/. Aprenda IA de graça em inema.club.

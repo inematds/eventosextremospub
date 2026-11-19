@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Quinta-feira, dezenove de novembro. Chuva acima de duzentos milímetros em Timbó, temporal em Minas e vento em Cuiabá.",
+  "legenda": "Quinta-feira, 19 de novembro. Chuva acima de 200 milímetros em Timbó, temporal em Minas e vento em Cuiabá."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Timbó, Santa Catarina, um pluviômetro marcou duzentos e dezessete vírgula quatro milímetros em vinte e quatro horas.",
+  "legenda": "Em Timbó, Santa Catarina, um pluviômetro marcou 217,4 milímetros em 24 horas."
+ },
+ {
+  "id": "f3",
+  "fala": "Em Chapada do Norte, Minas Gerais, foram cento e seis vírgula oito milímetros no período.",
+  "legenda": "Em Chapada do Norte, Minas Gerais, foram 106,8 milímetros no período."
+ },
+ {
+  "id": "f4",
+  "fala": "No Centro-Oeste, o aeroporto de Cuiabá registrou rajada de cinquenta e nove vírgula dois quilômetros por hora.",
+  "legenda": "No Centro-Oeste, o aeroporto de Cuiabá registrou rajada de 59,2 quilômetros por hora."
+ },
+ {
+  "id": "f5",
+  "fala": "Em Tocantins, a estação de Dueré marcou sessenta e cinco vírgula quatro milímetros em vinte e quatro horas.",
+  "legenda": "Em Tocantins, a estação de Dueré marcou 65,4 milímetros em 24 horas."
+ },
+ {
+  "id": "f6",
+  "fala": "O INPE contou quatrocentos e quarenta e um focos ontem no Brasil. Cento e onze no Ceará.",
+  "legenda": "O INPE contou 441 focos ontem no Brasil. 111 no Ceará."
+ },
+ {
+  "id": "f7",
+  "fala": "No Nordeste, o aeroporto de Teresina chegou a trinta e sete graus ontem à tarde.",
+  "legenda": "No Nordeste, o aeroporto de Teresina chegou a 37 graus ontem à tarde."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Três mil quatrocentas e trinta e sete cidades em amarelo para tempestade. Amanhã, três mil trezentas e setenta e duas cidades.",
+  "legenda": "E hoje? 3.437 cidades em amarelo para tempestade. Amanhã, 3.372 cidades."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: quarta deve ser a mais chuvosa nas capitais. O Sudeste deve liderar. Teresina pode passar dos quarenta graus na terça.",
+  "legenda": "Os próximos 7 dias: quarta deve ser a mais chuvosa nas capitais. O Sudeste deve liderar. Teresina pode passar dos 40 graus na terça."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: quinze mil quatrocentos e quarenta e oito milímetros nos pluviômetros. Nas capitais, oitocentos e oitenta e seis vírgula um milímetros previstos em sete dias.",
+  "legenda": "Volumes somados: 15.448 milímetros nos pluviômetros. Nas capitais, 886,1 milímetros previstos em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
