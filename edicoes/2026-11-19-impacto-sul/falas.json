@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Granizo atinge duas cidades do litoral gaúcho hoje: Imbé e Tramandaí. É o Impacto Sul desta quinta, dezenove de novembro.",
+    "legenda": "Granizo atinge 2 cidades do litoral gaúcho hoje: Imbé e Tramandaí. É o Impacto Sul desta quinta, 19 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "A chuva alagou ruas em Tramandaí. Calhas transbordaram, e a água entrou em residências e empresas. O granizo também surpreendeu motoristas.",
+    "legenda": "A chuva alagou ruas em Tramandaí. Calhas transbordaram, e a água entrou em residências e empresas. O granizo também surpreendeu motoristas."
+  },
+  {
+    "id": "f3",
+    "fala": "Na serra gaúcha, Caxias do Sul teve granizo, rajadas e danos em telhados nesta tarde. A instabilidade alcançou Serra e Vale.",
+    "legenda": "Na serra gaúcha, Caxias do Sul teve granizo, rajadas e danos em telhados nesta tarde. A instabilidade alcançou Serra e Vale."
+  },
+  {
+    "id": "f4",
+    "fala": "Na divisa catarinense, os temporais provocaram destelhamentos, queda de árvores e falta de energia em pontos isolados.",
+    "legenda": "Na divisa catarinense, os temporais provocaram destelhamentos, queda de árvores e falta de energia em pontos isolados."
+  },
+  {
+    "id": "f5",
+    "fala": "Calor e umidade alimentam essas tempestades. Nesta noite, atenção às áreas entre Serra, Vale e litoral gaúcho.",
+    "legenda": "Calor e umidade alimentam essas tempestades. Nesta noite, atenção às áreas entre Serra, Vale e litoral gaúcho."
+  },
+  {
+    "id": "f6",
+    "fala": "Amanhã, sexta-feira, a metade norte do Rio Grande do Sul pode receber chuva volumosa. Nas áreas em aviso laranja, podem ocorrer cem milímetros no dia.",
+    "legenda": "Amanhã, sexta-feira, a metade norte do Rio Grande do Sul pode receber chuva volumosa. Nas áreas em aviso laranja, podem ocorrer 100 milímetros no dia."
+  },
+  {
+    "id": "f7",
+    "fala": "Em Santa Catarina, atenção ao oeste amanhã. O INMET prevê rajadas de até cem quilômetros por hora nas áreas em aviso laranja.",
+    "legenda": "Em Santa Catarina, atenção ao oeste amanhã. O INMET prevê rajadas de até 100 quilômetros por hora nas áreas em aviso laranja."
+  },
+  {
+    "id": "f8",
+    "fala": "No Paraná, o sudoeste também pode receber chuva volumosa. Sexta e domingo concentram a atenção. Evite atravessar ruas alagadas e procure abrigo seguro.",
+    "legenda": "No Paraná, o sudoeste também pode receber chuva volumosa. Sexta e domingo concentram a atenção. Evite atravessar ruas alagadas e procure abrigo seguro."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
