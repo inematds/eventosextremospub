@@ -1,0 +1,8 @@
+Clima 24 h: 138,8 mm na Bahia e 1.681 focos no Brasil | 20/11
+Caetanos (BA): 138,8 mm em 24 h; Volta Redonda (RJ): 87,6 mm. Fonte: CEMADEN, captura 20/11 05h30 BRT.
+Planaltina (GO): 33,8 mm; Fontoura Xavier (RS): 47,2 mm em 24 h. Fonte: CEMADEN.
+Brasil: 1.681 focos em 19/11 UTC pelo AQUA de referência; Pará: 855. Fonte: INPE Queimadas.
+Teresina: 38 °C no aeroporto em 19/11 17h BRT. Fonte: NOAA/METAR SBTE.
+INMET: 1.700 cidades em laranja para hoje a partir de 09h10/09h16; amanhã, 3.332 em amarelo. Avisos 56456, 56457 e 56458: https://avisos.inmet.gov.br/
+Open-Meteo, previsão 20–26/11: 961 mm somados nas 27 capitais; quinta deve ter a maior soma diária, SE deve liderar; Teresina pode superar 40 °C. Não é lâmina média nacional.
+CEMADEN: soma dos pluviômetros de 11.128,69 mm·estação (1.431 sensores); 11.128 na tela, truncado. Brutos e fontes em pesquisa/. Aprenda IA de graça: inema.club

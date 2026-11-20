@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Sexta-feira, vinte de novembro. Chuva acima de cento e trinta milímetros na Bahia e mais de mil focos no Brasil.",
+  "legenda": "Sexta-feira, 20 de novembro. Chuva acima de 130 milímetros na Bahia e mais de 1.000 focos no Brasil."
+ },
+ {
+  "id": "f2",
+  "fala": "Em Caetanos, na Bahia, a estação marcou cento e trinta e oito vírgula oito milímetros em vinte e quatro horas.",
+  "legenda": "Em Caetanos, na Bahia, a estação marcou 138,8 milímetros em 24 horas."
+ },
+ {
+  "id": "f3",
+  "fala": "No Sudeste, Volta Redonda, no Rio de Janeiro, registrou oitenta e sete vírgula seis milímetros no pluviômetro do Retiro.",
+  "legenda": "No Sudeste, Volta Redonda, no Rio de Janeiro, registrou 87,6 milímetros no pluviômetro do Retiro."
+ },
+ {
+  "id": "f4",
+  "fala": "No Centro-Oeste, Planaltina, em Goiás, teve trinta e três vírgula oito milímetros em vinte e quatro horas.",
+  "legenda": "No Centro-Oeste, Planaltina, em Goiás, teve 33,8 milímetros em 24 horas."
+ },
+ {
+  "id": "f5",
+  "fala": "No Sul, Fontoura Xavier, no Rio Grande do Sul, registrou quarenta e sete vírgula dois milímetros.",
+  "legenda": "No Sul, Fontoura Xavier, no Rio Grande do Sul, registrou 47,2 milímetros."
+ },
+ {
+  "id": "f6",
+  "fala": "O INPE contou mil seiscentos e oitenta e um focos ontem no Brasil. O Pará concentrou oitocentos e cinquenta e cinco focos.",
+  "legenda": "O INPE contou 1.681 focos ontem no Brasil. O Pará concentrou 855 focos."
+ },
+ {
+  "id": "f7",
+  "fala": "Em Teresina, o aeroporto registrou trinta e oito graus ontem à tarde.",
+  "legenda": "Em Teresina, o aeroporto registrou 38 graus ontem à tarde."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Mil e setecentas cidades têm aviso laranja para tempestade a partir da manhã. Amanhã, três mil trezentas e trinta e duas em amarelo.",
+  "legenda": "E hoje? 1.700 cidades têm aviso laranja para tempestade a partir da manhã. Amanhã, 3.332 em amarelo."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: quinta deve ser a mais chuvosa nas capitais. O Sudeste deve liderar. Teresina pode superar quarenta graus.",
+  "legenda": "Os próximos 7 dias: quinta deve ser a mais chuvosa nas capitais. O Sudeste deve liderar. Teresina pode superar 40 graus."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: onze mil cento e vinte e oito milímetros nos pluviômetros. Nas capitais, novecentos e sessenta e um milímetros previstos em sete dias.",
+  "legenda": "Volumes somados: 11.128 milímetros nos pluviômetros. Nas capitais, 961 milímetros previstos em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
