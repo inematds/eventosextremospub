@@ -274,14 +274,17 @@ CTX="Short diário 'Clima 24 h' do INEMA com Nei Maldaner: o clima no Brasil nas
 [ "$MODO" = previsao ] && CTX="Short diário 'Previsão do Dia' do INEMA com Nei Maldaner: a previsão do tempo para hoje e os próximos dias no Brasil, $DATA_BR. Não citar nenhum canal, meteorologista, apresentador ou vídeo de origem. Dados com fonte na tela. Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
 [ "$MODO" = sul ] && CTX="Short diário 'Impacto Sul' do INEMA com Nei Maldaner: o que de mais forte aconteceu hoje no tempo do Sul do Brasil (RS, SC, PR) e o que vem nas próximas horas e dias, $DATA_BR. Não citar nenhum canal, perfil, meteorologista ou vídeo de origem. Dados com fonte na tela. Escreva 'mensagem de texto', nunca 'SMS'. Curso gratuito em https://inema.club."
 [ "$MODO" = mundo ] && CTX="Short diário 'Clima no Mundo' do INEMA com Nei Maldaner: os eventos de clima e desastres naturais mais graves do mundo nos últimos 7 dias, até $DATA_BR. Dados com fonte na tela. Curso gratuito em https://inema.club."
-URL=""
+URL=""; ITEM_X3=""
 if [ "${SEM_YT:-}" != 1 ] && [ -z "$DRY" ]; then
-  timeout 2400 "$HOME/projetos/yt-pubx/yt-pubx" publicar "$V" --canal lives10 --title "$TIT" --contexto "$CTX" \
-      --contexto-arquivo "$ED/yt.txt" > "$ED/publicar.log" 2>&1
+  # Entrega à fila; espera curta só para consultar o estado, nunca para declarar falha por atraso.
+  timeout 2600 "$HOME/projetos/yt-pub-x3/yt-pub-x3" enviar-arquivo "$V" --canal lives10 --titulo "$TIT" --contexto "$CTX" \
+      --contexto-arquivo "$ED/yt.txt" --quando fila --origem "clima/$DIA-$SUF" --esperar 0 > "$ED/publicar.log" 2>&1
+  ITEM_X3=$(sed -nE 's/.*na fila: item ([0-9]+).*/\1/p' "$ED/publicar.log" | head -1)
   ID=$(grep -o 'watch?v=[A-Za-z0-9_-]*' "$ED/publicar.log" | tail -1 | cut -d= -f2)
   [ -n "$ID" ] && { URL="https://www.youtube.com/shorts/$ID"; echo "$ID" > "$ED/youtube-lives10.txt"; }
 fi
-if [ -n "$URL" ]; then ST="✅ JÁ PUBLICADO no lives10: $URL (Instagram/TikTok pelo metritds em seguida)"
+if [ -n "$URL" ]; then ST="✅ JÁ PUBLICADO no lives10: $URL (Instagram/TikTok pela fila do x3)"
+elif [ -n "$ITEM_X3" ]; then ST="Na fila do x3: item $ITEM_X3 (aguardando publicação)"
 elif [ "${SEM_YT:-}" = 1 ] || [ -n "$DRY" ]; then ST="(sem YouTube nesta rodada)"
 else ST="⚠ NÃO publicou no lives10: $(grep -h -i 'erro\|error\|quota\|limit' "$ED/publicar.log" | tail -1 | cut -c1-200)"; fi
 if :; then  # todo vídeo de clima vai ao v3, publicado ou não (Nei, 08/11/2026: "me manda sempre os do clima para o v3"; antes, 06/11: só se der erro)
@@ -294,7 +297,8 @@ echo "$ST"
 
 # 4b. Instagram + TikTok eventos.extremos pelo metritds (Nei, 04/11 e 05/11/2026: sempre com avatar, publica sozinho;
 #     nunca no inema.tds); SEM_TIKTOK=1 pula
-if [ "${SEM_TIKTOK:-}" != 1 ] && [ -z "$DRY" ] && [ "$V" = "$ED/video-avatar.mp4" ]; then
+#     Com YouTube, as redes saem da fila do x3; metritds só numa rodada manual com SEM_YT=1
+if [ "${SEM_YT:-}" = 1 ] && [ "${SEM_TIKTOK:-}" != 1 ] && [ -z "$DRY" ] && [ "$V" = "$ED/video-avatar.mp4" ]; then
   bash "$RAIZ/auto/metritds.sh" "$ED" "$V" > /dev/null 2>&1 && echo "Instagram/TikTok agendados (metritds)" || echo "⚠ metritds não agendou (ver $ED/metritds.log)"
 fi
 
@@ -311,6 +315,7 @@ if [ "${SEM_GIT:-}" != 1 ] && [ -z "$DRY" ]; then
 fi
 # placar: publicado só com URL do YouTube de verdade (código 0 ≠ publicou)
 if [ -n "$URL" ]; then fim publicado --url "$URL"
+elif [ -n "$ITEM_X3" ]; then fim ok --motivo "x3 pendente: item $ITEM_X3"
 elif [ "${SEM_YT:-}" = 1 ] || [ -n "$DRY" ]; then fim ok --motivo "ensaio sem YouTube (SEM_YT/SEM_BOT) $NOTA"
 else fim falhou --motivo "não publicou no lives10: $(grep -h -i 'erro\|error\|quota\|limit' "$ED/publicar.log" 2>/dev/null | tail -1 | cut -c1-150)"; fi
 echo "=== fim $(date '+%F %T')"

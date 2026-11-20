@@ -1,0 +1,8 @@
+[Unit]
+Description=Confere resultados finais da fila de clima no placar
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/projetos/eventosextremospub/auto/conferir-publicacoes.py --aplicar
+TimeoutStartSec=20
+MemoryMax=128M

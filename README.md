@@ -84,3 +84,7 @@ A voz usa o motor do [cardshorts](https://github.com/inematds/cardshorts) (Chatt
 | 09/10/2026 | `edicoes/2026-10-09-el-nino` (explicativo para leigos; `GEO=geo-br.js`, só estados; mar quente da NASA) | El Niño "não é piada": 83% de chance de ser o mais forte desde 1950 (NOAA), mar perto do Peru +5,3 °C, seca no Norte/Nordeste e chuva no Sul (Painel El Niño nº 4), pico até dezembro, o que fazer (CEP por mensagem para 40199) | NOAA/CPC, NASA GIBS (GHRSST MUR), Painel El Niño (INMET, INPE, ANA, Cemaden, SGB, Sedec, Censipam) |
 
 Licença MIT. Dados de terceiros seguem as licenças das fontes (INMET, NASA/NOAA, Open-Meteo, IBGE, Natural Earth).
+
+### Resultado da fila e alertas
+
+A entrega ao x3 fica pendente no placar, sem alerta de erro. `clima-publicacoes.timer` roda a cada minuto: consulta somente o banco local, confirma a URL quando publicado e registra falha apenas em `erro`, `conferir` ou `ignorado`. Espera, envio, pausa e tentativas automáticas continuam pendentes. Não reenvia arquivos nem chama APIs. Instalação: copiar `auto/systemd/clima-publicacoes.*` para `~/.config/systemd/user/`, executar `systemctl --user daemon-reload` e `systemctl --user enable --now clima-publicacoes.timer`. O painel v3 3.37.18 ou superior aceita as retificações sem duplicar rodadas.
