@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, Piauí: até quarenta e dois graus previstos na quarta. Se prepare. Alerta da semana, vinte de novembro.",
+    "legenda": "Atenção, Piauí: até 42 graus previstos na quarta. Se prepare. Alerta da semana, 20 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "No Sul, atenção: o oeste catarinense pode receber noventa e três vírgula cinco milímetros na terça. Evite estrada durante chuva forte.",
+    "legenda": "No Sul, atenção: o oeste catarinense pode receber 93,5 milímetros na terça. Evite estrada durante chuva forte."
+  },
+  {
+    "id": "f3",
+    "fala": "No oeste do Paraná, podem acumular cento e sessenta e dois vírgula oito milímetros de sábado até sexta, com pico no domingo.",
+    "legenda": "No oeste do Paraná, podem acumular 162,8 milímetros de sábado até sexta, com pico no domingo."
+  },
+  {
+    "id": "f4",
+    "fala": "No Sudeste, Vitória pode receber sessenta e cinco vírgula seis milímetros na sexta. Atenção aos alagamentos.",
+    "legenda": "No Sudeste, Vitória pode receber 65,6 milímetros na sexta. Atenção aos alagamentos."
+  },
+  {
+    "id": "f5",
+    "fala": "Em Florianópolis, rajadas previstas de setenta e nove vírgula nove quilômetros por hora na quinta. Afaste o carro das árvores.",
+    "legenda": "Em Florianópolis, rajadas previstas de 79,9 quilômetros por hora na quinta. Afaste o carro das árvores."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte e Centro Oeste, sábado tem pancadas com trovoadas. Atenção em Tocantins, Amazonas, Mato Grosso e Goiás.",
+    "legenda": "No Norte e Centro-Oeste, sábado tem pancadas com trovoadas. Atenção em Tocantins, Amazonas, Mato Grosso e Goiás."
+  },
+  {
+    "id": "f7",
+    "fala": "Na serra gaúcha, mínima prevista de nove vírgula cinco graus na quinta e sexta. Separe roupa de frio.",
+    "legenda": "Na serra gaúcha, mínima prevista de 9,5 graus na quinta e sexta. Separe roupa de frio."
+  },
+  {
+    "id": "f8",
+    "fala": "O INMET já emitiu avisos amarelos de tempestade para sábado até segunda, em áreas de várias regiões. Há risco de granizo.",
+    "legenda": "O INMET já emitiu avisos amarelos de tempestade para sábado até segunda, em áreas de várias regiões. Há risco de granizo."
+  },
+  {
+    "id": "f9",
+    "fala": "Beba água no calor. Não atravesse rua alagada. Acompanhe a Defesa Civil: a previsão pode mudar.",
+    "legenda": "Beba água no calor. Não atravesse rua alagada. Acompanhe a Defesa Civil: a previsão pode mudar."
+  },
+  {
+    "id": "f10",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
