@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Sexta-feira, vinte de novembro de dois mil e vinte e seis. Chuva forte no Sul hoje, com risco de temporais.",
+    "legenda": "Sexta-feira, 20 de novembro de 2026. Chuva forte no Sul hoje, com risco de temporais."
+  },
+  {
+    "id": "f2",
+    "fala": "Áreas de instabilidade avançam pelo Sul. O calor favorece pancadas intensas, com vento forte localizado.",
+    "legenda": "Áreas de instabilidade avançam pelo Sul. O calor favorece pancadas intensas, com vento forte localizado."
+  },
+  {
+    "id": "f3",
+    "fala": "No norte gaúcho, Santa Catarina e Paraná, atenção à chuva forte e ao risco pontual de granizo.",
+    "legenda": "No norte gaúcho, Santa Catarina e Paraná, atenção à chuva forte e ao risco pontual de granizo."
+  },
+  {
+    "id": "f4",
+    "fala": "No Sudeste, pancadas fortes podem atingir São Paulo, centro-norte de Minas e Espírito Santo. No Rio, até trinta e cinco graus.",
+    "legenda": "No Sudeste, pancadas fortes podem atingir São Paulo, centro-norte de Minas e Espírito Santo. No Rio, até 35 graus."
+  },
+  {
+    "id": "f5",
+    "fala": "No Centro-Oeste, pancadas em Goiás, Brasília e nos dois estados de Mato Grosso. A chuva é irregular.",
+    "legenda": "No Centro-Oeste, pancadas em Goiás, Brasília e nos dois estados de Mato Grosso. A chuva é irregular."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, pancadas no Amazonas, centro-sul do Pará e Tocantins. Algumas áreas podem ter trovoadas.",
+    "legenda": "No Norte, pancadas no Amazonas, centro-sul do Pará e Tocantins. Algumas áreas podem ter trovoadas."
+  },
+  {
+    "id": "f7",
+    "fala": "Na Bahia, sul do Piauí e do Maranhão, pode chover forte pontualmente. Os modelos podem subestimar essas pancadas.",
+    "legenda": "Na Bahia, sul do Piauí e do Maranhão, pode chover forte pontualmente. Os modelos podem subestimar essas pancadas."
+  },
+  {
+    "id": "f8",
+    "fala": "Sábado deve ter pancadas à tarde no Sul. Domingo, a chuva forte deve retornar ao norte gaúcho, Santa Catarina e Paraná.",
+    "legenda": "Sábado deve ter pancadas à tarde no Sul. Domingo, a chuva forte deve retornar ao norte gaúcho, Santa Catarina e Paraná."
+  },
+  {
+    "id": "f9",
+    "fala": "Segunda, o Piauí pode passar de quarenta graus. Na próxima semana, o Centro-Sul deve esfriar, com possível geada na serra catarinense.",
+    "legenda": "Segunda, o Piauí pode passar de 40 graus. Na próxima semana, o Centro-Sul deve esfriar, com possível geada na serra catarinense."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
