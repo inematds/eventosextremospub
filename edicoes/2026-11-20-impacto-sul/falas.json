@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Destruição em Tupanciretã entre três e quatro horas de hoje. É o Impacto Sul desta sexta, vinte de novembro.",
+    "legenda": "Destruição em Tupanciretã entre 3 e 4 horas de hoje. É o Impacto Sul desta sexta, 20 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Telhados cederam, árvores foram arrancadas e caminhões tombaram. Há relatos de vítimas, sem total confirmado.",
+    "legenda": "Telhados cederam, árvores foram arrancadas e caminhões tombaram. Há relatos de vítimas, sem total confirmado."
+  },
+  {
+    "id": "f3",
+    "fala": "Uma supercélula, tempestade organizada com rotação, atravessou a região central gaúcha. A hipótese de tornado ainda depende de avaliação técnica.",
+    "legenda": "Uma supercélula, tempestade organizada com rotação, atravessou a região central gaúcha. A hipótese de tornado ainda depende de avaliação técnica."
+  },
+  {
+    "id": "f4",
+    "fala": "No Paraná, Foz do Iguaçu registrou uma nuvem em funil nesta tarde. Isso não confirma um tornado tocando o solo.",
+    "legenda": "No Paraná, Foz do Iguaçu registrou uma nuvem em funil nesta tarde. Isso não confirma um tornado tocando o solo."
+  },
+  {
+    "id": "f5",
+    "fala": "Em Laranjeiras do Sul, chuva forte provocou alagamentos. Houve vento e queda de árvores em pontos da cidade.",
+    "legenda": "Em Laranjeiras do Sul, chuva forte provocou alagamentos. Houve vento e queda de árvores em pontos da cidade."
+  },
+  {
+    "id": "f6",
+    "fala": "Esta noite exige atenção em Santa Catarina e no Paraná. Nas áreas em aviso laranja, o INMET prevê rajadas de até cem quilômetros por hora.",
+    "legenda": "Esta noite exige atenção em Santa Catarina e no Paraná. Nas áreas em aviso laranja, o INMET prevê rajadas de até 100 quilômetros por hora."
+  },
+  {
+    "id": "f7",
+    "fala": "Amanhã, no Rio Grande do Sul, áreas de quatrocentos e cinquenta e dois municípios entram em aviso amarelo. Pode haver granizo.",
+    "legenda": "Amanhã, no Rio Grande do Sul, áreas de 452 municípios entram em aviso amarelo. Pode haver granizo."
+  },
+  {
+    "id": "f8",
+    "fala": "Em Santa Catarina e no Paraná, amanhã pode chover até cinquenta milímetros no dia nas áreas avisadas. A instabilidade deve diminuir.",
+    "legenda": "Em Santa Catarina e no Paraná, amanhã pode chover até 50 milímetros no dia nas áreas avisadas. A instabilidade deve diminuir."
+  },
+  {
+    "id": "f9",
+    "fala": "Hoje concentra o risco mais intenso. Domingo e segunda seguem instáveis. Se você mora nessas áreas, evite ruas alagadas e estruturas danificadas.",
+    "legenda": "Hoje concentra o risco mais intenso. Domingo e segunda seguem instáveis. Se você mora nessas áreas, evite ruas alagadas e estruturas danificadas."
+  },
+  {
+    "id": "f10",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
