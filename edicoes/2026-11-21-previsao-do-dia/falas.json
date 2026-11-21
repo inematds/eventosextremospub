@@ -1,0 +1,57 @@
+[
+ {
+  "id": "f1",
+  "fala": "Trezentas e sessenta cidades no Paraná em alerta de tempestade hoje. É a previsão deste sábado, vinte e um de novembro.",
+  "legenda": "360 cidades no Paraná em alerta de tempestade hoje. É a previsão deste sábado, 21 de novembro."
+ },
+ {
+  "id": "f2",
+  "fala": "O aviso laranja do INMET prevê chuva forte e ventos de até cem quilômetros por hora. Atenção: são riscos previstos, com abrangência parcial.",
+  "legenda": "O aviso laranja do INMET prevê chuva forte e ventos de até 100 quilômetros por hora. Atenção: são riscos previstos, com abrangência parcial."
+ },
+ {
+  "id": "f3",
+  "fala": "No Brasil, três mil setecentos e dezessete municípios estão no aviso amarelo de tempestade. O alerta exige atenção também fora do Sul.",
+  "legenda": "No Brasil, 3.717 municípios estão no aviso amarelo de tempestade. O alerta exige atenção também fora do Sul."
+ },
+ {
+  "id": "f4",
+  "fala": "No Sul, as instabilidades devem dar origem a uma frente fria amanhã. Esse sistema pode organizar tempestades mais fortes no domingo.",
+  "legenda": "No Sul, as instabilidades devem dar origem a uma frente fria amanhã. Esse sistema pode organizar tempestades mais fortes no domingo."
+ },
+ {
+  "id": "f5",
+  "fala": "Hoje, Paraná e Santa Catarina podem passar dos trinta graus. O calor e o abafamento podem favorecer pancadas com trovoadas.",
+  "legenda": "Hoje, Paraná e Santa Catarina podem passar dos 30 graus. O calor e o abafamento podem favorecer pancadas com trovoadas."
+ },
+ {
+  "id": "f6",
+  "fala": "No Paraná, a chance de chuva deve ser alta. Em Santa Catarina, as pancadas devem ser irregulares. No território gaúcho, quase não deve chover.",
+  "legenda": "No Paraná, a chance de chuva deve ser alta. Em Santa Catarina, as pancadas devem ser irregulares. No território gaúcho, quase não deve chover."
+ },
+ {
+  "id": "f7",
+  "fala": "Amanhã, atenção no oeste e meio-oeste catarinense, noroeste gaúcho e oeste e sudoeste paranaense. Pode ter chuva intensa, granizo e vendavais.",
+  "legenda": "Amanhã, atenção no oeste e meio-oeste catarinense, noroeste gaúcho e oeste e sudoeste paranaense. Pode ter chuva intensa, granizo e vendavais."
+ },
+ {
+  "id": "f8",
+  "fala": "Se você está nessas áreas, acompanhe os avisos locais. Na segunda, o calor pode persistir, com pancadas no Paraná e em Santa Catarina.",
+  "legenda": "Se você está nessas áreas, acompanhe os avisos locais. Na segunda, o calor pode persistir, com pancadas no Paraná e em Santa Catarina."
+ },
+ {
+  "id": "f9",
+  "fala": "Na terça, uma nova frente pode provocar temporais. Os volumes devem ficar elevados principalmente no oeste do Sul.",
+  "legenda": "Na terça, uma nova frente pode provocar temporais. Os volumes devem ficar elevados principalmente no oeste do Sul."
+ },
+ {
+  "id": "f10",
+  "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+  "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+ },
+ {
+  "id": "f11",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]
