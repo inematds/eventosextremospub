@@ -1,0 +1,8 @@
+246,3 mm previstos no oeste de SC nesta semana · Alerta da semana 22/11
+Previsão 23–29/11: ponto do oeste catarinense pode acumular 246,3 mm; 110,1 mm na quarta e 98,7 mm na quinta. Modelo Open-Meteo best_match, lido em 22/11/2026.
+Pontos do interior do RJ: 212 mm na semana; Zona da Mata mineira: 100 mm previstos quinta. Sul de Goiás: 126,4 mm na semana; Amazonas: 136 mm, com maior volume sábado.
+Interior do PI: máxima prevista 42,3 °C quinta; interior de SP: rajada prevista 65,2 km/h quinta; serra catarinense: mínima prevista 9 °C sábado. Valores pontuais da grade de 1,5°, não médias estaduais.
+INMET: aviso 56477 de tempestade, perigo, válido neste domingo 22/11 até 23h59. https://alertas2.inmet.gov.br/
+Dias 8 a 15, 30/11–07/12: TENDÊNCIA, pode mudar; ponto do interior paulista com projeção de 190,6 mm. Fonte numérica e brutos: om/prev15_grade.json e om/prev15_resumo.json. https://api.open-meteo.com/v1/forecast
+Contexto de temporais em SC: Epagri/Ciram, 21/11. https://ciram.epagri.sc.gov.br/index.php/2026/11/21/previsao-5-dias/ Contexto em SP: IPMet, 22/11. https://www.ipmetradar.com.br/home/webadm/2tempo.php
+No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.
