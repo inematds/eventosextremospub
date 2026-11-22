@@ -1,0 +1,8 @@
+Clima 24 h: calamidade no RS, 232,16 mm em SP e calor | 22/11
+Tupanciretã: calamidade reconhecida em 21/11; cerca de 8 mil casas destelhadas ou derrubadas no temporal de 20/11, segundo prefeitura via Secom: https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2026/11/governo-federal-reconhece-estado-de-calamidade-em-tupancireta-rs-e-inicia-planos-de-trabalho-para-resposta-a-tempestade
+CEMADEN, 24 h: Massaguaçu/Caraguatatuba 232,16 mm; Aparecida de Goiânia 86,6 mm; Goiatins 93,8 mm. Leituras até 22/11 05h30 BRT, brutos em pesquisa/bruto/cemaden_getJson2_todas_ufs.json.
+INPE, 21/11 UTC completo: 1.425 focos AQUA referência no Brasil, 684 no Maranhão; bruto inpe_focos_diario_br_20261121.csv. NOAA METAR: 39 °C no aeroporto de Teresina em 21/11 16h BRT.
+INMET: hoje 3.717 municípios em amarelo para tempestade; amanhã 3.059. Avisos https://avisos.inmet.gov.br/56475 e https://avisos.inmet.gov.br/56476 . Vento previsto: 40–60 km/h.
+Previsão Open-Meteo de 22 a 28/11: quinta tem maior soma nas capitais, 169,5 mm; Sudeste 330,6 mm na semana; Teresina até 40,9 °C previstos. https://open-meteo.com/
+Volumes: 6.742,15 mm·estação em 1.202 pluviômetros CEMADEN; 930,6 mm previstos somados nas 27 capitais em 7 dias. Voz usa inteiros truncados: 6.742 e 930. Somas de pontos, não lâmina territorial.
+Aprenda de graça sobre inteligência artificial no inema.club. É direto na internet.
