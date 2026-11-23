@@ -1,0 +1,4 @@
+# Pauta e ordem
+Gancho: mais de 200 mm previstos no oeste do Sul até domingo 29. Diferente dos ganchos disponíveis de 21/11 (360 cidades PR) e 22/11 (rajadas SC); edição 20/11 sem yt.txt.
+f1 abertura cheia com gancho e data, seguida de mapa/coluna regional; f2 sistema + IR observado com janela; f3 hoje Sul; f4 hoje Sudeste/Centro-Oeste; f5 amanhã norte RS/oeste SC; f6 preparação e alcance; f7 intensificação quarta; f8 100–150 mm até quinta em colunas 3D; f9 sexta/fim de semana; f10 pergunta após pausa; f11 CTA inema.club.
+Fontes na tela: Meteorologia · 23/11/2026; pintura INMET com abrangência parcial e validade própria; GOES rotulado observado. Não usar previsão numérica das capitais para substituir o acumulado regional da fonte. Câmera muda por fala; capa sem fade sai aos 2,2 s. Manter --canto e tempos do avatar.
