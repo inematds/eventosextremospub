@@ -1,0 +1,8 @@
+Clima 24 h: 19.854 desalojados no RS, chuva em Ubatuba e fogo no Pará | 23/11
+RS: 19.854 desalojados e 46 municípios; balanço desde 20/11 atualizado em 22/11 às 18h31. Defesa Civil via Agência Brasil: https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/temporais-atingem-46-municipios-e-mais-de-25-mil-pessoas-no-rs
+CEMADEN, 24 h: Ubatuba/SP 144,45 mm; Água Boa/MT 91,6 mm; Eldorado dos Carajás/PA 84 mm. https://resources.cemaden.gov.br/
+INPE: 1.487 focos no domingo 22/11 UTC, sendo 1.018 no Pará, satélite de referência AQUA_M-T. https://terrabrasilis.dpi.inpe.br/queimadas/portal/
+NOAA: 39 °C no aeroporto de Teresina em 22/11 16h BRT. https://aviationweather.gov/ ; INMET: 3.059 cidades hoje e 3.206 amanhã sob aviso amarelo de tempestade. https://avisos.inmet.gov.br/56476 ; https://avisos.inmet.gov.br/56480
+Previsão Open-Meteo 23–29/11 nas 27 capitais: sexta com maior soma; SE lidera; Teresina pode chegar a 40,7 °C. https://open-meteo.com/
+Soma dos pluviômetros: 21.688,25 mm·estação em 1.697 sensores recentes; previsão somada nas capitais: 1.076,9 mm em 7 dias. Inteiros na voz truncados; não são lâminas médias do território nem grandezas equivalentes.
+Aprenda de graça sobre inteligência artificial no inema.club. É direto na internet. Satélite GOES-19: NASA GIBS/NOAA.
