@@ -1,0 +1,8 @@
+287 cidades do Paraná em vermelho amanhã · Alerta da semana 23/11
+INMET: 287 municípios do PR em alerta vermelho terça 24/11, de 00h a 23h59. O aviso abrange também áreas de SC, RS e MS; risco de granizo e ventos superiores a 100 km/h: https://avisos.inmet.gov.br/56492
+24 a 30/11: ponto do litoral paulista pode acumular 198,3 mm; quinta 26 concentra 93,5 mm. Valores locais de grade 1,5°, não de todo o estado.
+Rio de Janeiro: rajada prevista de 68,8 km/h quinta 26. Oeste de SC: 48,6 mm previstos terça 24; oeste do PR tem pico de chuva quarta 25.
+Manaus: pico de chuva previsto domingo 29; Cuiabá: sábado 28. Piauí: até 41,2 °C previstos quinta 26; serra gaúcha: mínima prevista de 11,1 °C sexta 27.
+Open-Meteo best_match, leitura 23/11/2026: https://open-meteo.com/en/docs — brutos em om/; valores por dia em pesquisa/dados.md. A previsão pode mudar.
+INMET: baixa umidade no Nordeste até quarta 25: https://avisos.inmet.gov.br/56481 . Busque abrigo no temporal, evite árvores e ruas alagadas.
+Aprenda de graça sobre inteligência artificial: https://inema.club

@@ -1,0 +1,10 @@
+# Pesquisa de previsão — consultada em 23/11/2026 após 14h (Brasília)
+
+- INMET, avisos coletados às 14h: vermelho 56492 para terça 24/11, 00h–23h59. Lista oficial contém 642 códigos municipais únicos, 287 no PR, 139 em SC, 214 no RS e 2 no MS. Riscos: granizo, vento superior a 100 km/h e chuva superior a 60 mm/h ou 100 mm/dia. Fonte: pesquisa/bruto/inmet_avisos_ativos.json e pesquisa/bruto/resumo.json. https://avisos.inmet.gov.br/56492 . Gancho e f2 usam o aviso, não uma certeza de ocorrência em cada município.
+- INMET 56481: baixa umidade de 23/11 10h até 26/11 00h; portanto inclui terça e quarta. Nordeste; faixa oficial 20%–30%. https://avisos.inmet.gov.br/56481 . Mesmo bruto acima.
+- MetSul, 23/11/2026 11h29: frente fria prevista entre terça 24 e quarta 25 reforça temporais no Sul, com riscos localizados de granizo e vendavais. https://metsul.com/2026-11-23-tempo-alerta-tempestades-chuva/ . Contexto de pauta; volumes desse modelo não são misturados aos números Open-Meteo no vídeo.
+- Epagri/Ciram, 23/11/2026, Gilsânia Cruz e Marcelo Martins: antecipa chuva volumosa e temporais em SC na terça e quarta (24 e 25), com risco de alagamentos e enxurradas. https://ciram.epagri.sc.gov.br/index.php/2026/11/23/segunda-feira-com-temporais-isolados-em-sc/ . Sem volume numérico nessa nota; reforça preparação para amanhã.
+- MetSul, 23/11/2026 06h29: maiores acumulados semanais entre Sul, Centro-Oeste e Sudeste; no Norte, foco de chuva em AM/AC/RO e pouca chuva em grande parte do Nordeste. https://metsul.com/27132026-11-23-tempo-chuva-brasil-semana/ . Contexto regional, sem substituir a grade local.
+- Open-Meteo best_match, lido em 23/11/2026: janela 24–30/11. Os números que entram no ar são os da coleta local, discriminados por dia em dados.md. https://open-meteo.com/en/docs . Arquivos om/prev15_grade.json, om/prev15_capitais.json e bloco semana de om/prev15_resumo.json.
+
+Os resultados de busca com outras datas foram descartados. Não foram usados retrospectiva, dados observados de ontem nem dias posteriores a 30/11. Notícias foram pesquisadas pela ferramenta de busca web; não foi usada API de busca externa com chave.

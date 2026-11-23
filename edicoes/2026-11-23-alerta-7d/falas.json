@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção: duzentas e oitenta e sete cidades do Paraná em alerta vermelho amanhã, terça. Se prepare. Alerta da semana, vinte e três de novembro.",
+    "legenda": "Atenção: 287 cidades do Paraná em alerta vermelho amanhã, terça. Se prepare. Alerta da semana, 23 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "O INMET inclui áreas catarinenses, gaúchas e sul-mato-grossenses, com risco de granizo e ventos superiores a cem quilômetros por hora.",
+    "legenda": "O INMET inclui áreas catarinenses, gaúchas e sul-mato-grossenses, com risco de granizo e ventos superiores a 100 quilômetros por hora."
+  },
+  {
+    "id": "f3",
+    "fala": "No litoral paulista, o modelo prevê cento e noventa e oito vírgula três milímetros até segunda. Quinta concentra a chuva. Atenção às encostas.",
+    "legenda": "No litoral paulista, o modelo prevê 198,3 milímetros até segunda. Quinta concentra a chuva. Atenção às encostas."
+  },
+  {
+    "id": "f4",
+    "fala": "No Rio de Janeiro, quinta pode ter rajadas de sessenta e oito vírgula oito quilômetros por hora.",
+    "legenda": "No Rio de Janeiro, quinta pode ter rajadas de 68,8 quilômetros por hora."
+  },
+  {
+    "id": "f5",
+    "fala": "No oeste catarinense, amanhã pode chover quarenta e oito vírgula seis milímetros. No oeste paranaense, o pico vem quarta.",
+    "legenda": "No oeste catarinense, amanhã pode chover 48,6 milímetros. No oeste paranaense, o pico vem quarta."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, Manaus tem pico de chuva domingo. No Centro-Oeste, Cuiabá tem pico sábado.",
+    "legenda": "No Norte, Manaus tem pico de chuva domingo. No Centro-Oeste, Cuiabá tem pico sábado."
+  },
+  {
+    "id": "f7",
+    "fala": "No Piauí, quinta pode atingir quarenta e um vírgula dois graus. O INMET alerta para ar seco no Nordeste até quarta.",
+    "legenda": "No Piauí, quinta pode atingir 41,2 graus. O INMET alerta para ar seco no Nordeste até quarta."
+  },
+  {
+    "id": "f8",
+    "fala": "Na serra gaúcha, sexta tem mínima prevista de onze vírgula um graus.",
+    "legenda": "Na serra gaúcha, sexta tem mínima prevista de 11,1 graus."
+  },
+  {
+    "id": "f9",
+    "fala": "Busque abrigo durante o temporal. Deixe o carro longe de árvores. Nunca atravesse rua alagada.",
+    "legenda": "Busque abrigo durante o temporal. Deixe o carro longe de árvores. Nunca atravesse rua alagada."
+  },
+  {
+    "id": "f10",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
