@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f1",
+  "fala": "Terça-feira, vinte e quatro de novembro de dois mil e vinte e seis. Alerta vermelho de tempestade, alagamentos em São Paulo e calor no Nordeste.",
+  "legenda": "Terça-feira, 24 de novembro de 2026. Alerta vermelho de tempestade, alagamentos em São Paulo e calor no Nordeste."
+ },
+ {
+  "id": "f2",
+  "fala": "Ontem, a chuva fechou o túnel do Anhangabaú. Em Suzano, oitenta e nove vírgula dois milímetros no Jardim Amazonas.",
+  "legenda": "Ontem, a chuva fechou o túnel do Anhangabaú. Em Suzano, 89,2 milímetros no Jardim Amazonas."
+ },
+ {
+  "id": "f3",
+  "fala": "Cana Verde, Minas Gerais: oitenta e quatro vírgula seis milímetros em vinte e quatro horas.",
+  "legenda": "Cana Verde, Minas Gerais: 84,6 milímetros em 24 horas."
+ },
+ {
+  "id": "f4",
+  "fala": "No Centro-Oeste, Israelândia, Goiás: cinquenta e oito vírgula oito milímetros no pluviômetro.",
+  "legenda": "No Centro-Oeste, Israelândia, Goiás: 58,8 milímetros no pluviômetro."
+ },
+ {
+  "id": "f5",
+  "fala": "No Norte, Rolim de Moura, Rondônia: sessenta e nove milímetros em vinte e quatro horas.",
+  "legenda": "No Norte, Rolim de Moura, Rondônia: 69 milímetros em 24 horas."
+ },
+ {
+  "id": "f6",
+  "fala": "Ontem, seiscentos e vinte focos no Brasil. Duzentos e trinta e três no Pará, segundo o INPE.",
+  "legenda": "Ontem, 620 focos no Brasil. 233 no Pará, segundo o INPE."
+ },
+ {
+  "id": "f7",
+  "fala": "Teresina registrou quarenta graus no aeroporto ontem.",
+  "legenda": "Teresina registrou 40 graus no aeroporto ontem."
+ },
+ {
+  "id": "f8",
+  "fala": "E hoje? Seiscentas e quarenta e duas cidades sob aviso vermelho de tempestade. Amanhã, duas mil novecentas e setenta e oito em amarelo.",
+  "legenda": "E hoje? 642 cidades sob aviso vermelho de tempestade. Amanhã, 2.978 em amarelo."
+ },
+ {
+  "id": "f9",
+  "fala": "Os próximos sete dias: quinta deve concentrar chuva nas capitais. Sudeste deve liderar. Teresina pode superar quarenta graus.",
+  "legenda": "Os próximos 7 dias: quinta deve concentrar chuva nas capitais. Sudeste deve liderar. Teresina pode superar 40 graus."
+ },
+ {
+  "id": "f10",
+  "fala": "Volumes somados: quatorze mil oitocentos e vinte e três milímetros nos pluviômetros. Nas capitais, mil cento e oitenta e seis milímetros previstos em sete dias.",
+  "legenda": "Volumes somados: 14.823 milímetros nos pluviômetros. Nas capitais, 1.186 milímetros previstos em 7 dias."
+ },
+ {
+  "id": "f11",
+  "fala": "De que região e de que cidade você é? Comenta aqui.",
+  "legenda": "De que região e de que cidade você é? Comenta aqui."
+ },
+ {
+  "id": "f12",
+  "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+  "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+ }
+]

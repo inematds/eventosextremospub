@@ -1,0 +1,8 @@
+Clima 24 h: 642 cidades em vermelho, alagamentos em SP e calor | 24/11
+INMET: 642 municípios sob aviso vermelho de tempestade hoje (56492); amanhã, 2.978 em amarelo (56496). https://avisos.inmet.gov.br/
+Ontem, fechamento preventivo do túnel do Anhangabaú; UOL, 23/11: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/11/23/chuvas-em-sp-alerta.ghtm
+CEMADEN: Suzano 89,2 mm; Cana Verde 84,6 mm; Israelândia 58,8 mm; Rolim de Moura 69 mm, por sensor em 24 h. Bruto: pesquisa/bruto/cemaden_getJson2_todas_ufs.json.
+INPE: 620 focos AQUA de referência em 23/11 UTC, 233 no Pará. Bruto: pesquisa/bruto/inpe_focos_diario_br_20261123.csv. NOAA: aeroporto de Teresina, 40 °C em 23/11 20h UTC, bruto noaa_metar_brasil_24h.json.
+Open-Meteo, previsão 24–30/11: quinta deve concentrar a chuva somada das capitais (404,7 mm); SE 519,1 mm em 7 dias; Teresina pode chegar a 40,7 °C. Bruto: pesquisa/bruto/previsao7d.json.
+Soma dos pluviômetros válidos: 14.823,77 mm·estação (1.447 sensores); previsão nas 27 capitais: 1.186,8 mm somados em 7 dias. Voz usa inteiros truncados; nenhuma soma é lâmina média do país.
+Aprenda de graça sobre inteligência artificial no inema.club. É direto na internet.
