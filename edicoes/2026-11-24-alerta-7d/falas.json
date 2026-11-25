@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, Rio de Janeiro: até cento e doze vírgula oito milímetros de chuva em um só dia, nesta quinta. Se prepare. Alerta da semana, terça, vinte e quatro de novembro.",
+    "legenda": "Atenção, Rio de Janeiro: até 112,8 milímetros de chuva em um só dia, nesta quinta. Se prepare. Alerta da semana, terça, 24 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "O INMET emitiu alerta laranja de chuvas intensas para quinta: mil duzentas e setenta e oito cidades, incluindo as noventa e duas do Rio.",
+    "legenda": "O INMET emitiu alerta laranja de chuvas intensas para quinta: 1.278 cidades, incluindo as 92 do Rio."
+  },
+  {
+    "id": "f3",
+    "fala": "Na capital, a quarta pode atingir trinta e seis vírgula três graus. Na quinta, a máxima despenca para vinte e cinco vírgula sete graus, com sessenta e nove vírgula nove milímetros de chuva.",
+    "legenda": "Na capital, a quarta pode atingir 36,3 graus. Na quinta, a máxima despenca para 25,7 graus, com 69,9 milímetros de chuva."
+  },
+  {
+    "id": "f4",
+    "fala": "Já amanhã, quarta, mil trezentas e cinquenta e uma cidades estão em perigo de tempestade, do Paraná ao Rio.",
+    "legenda": "Já amanhã, quarta, 1.351 cidades estão em perigo de tempestade, do Paraná ao Rio."
+  },
+  {
+    "id": "f5",
+    "fala": "Na semana, Belo Horizonte pode somar cento e dezesseis vírgula um milímetros, e o oeste catarinense, cento e trinta e três vírgula um milímetros.",
+    "legenda": "Na semana, Belo Horizonte pode somar 116,1 milímetros, e o oeste catarinense, 133,1 milímetros."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, o oeste do Amazonas pode acumular cento e quarenta e sete vírgula cinco milímetros, com pico na segunda.",
+    "legenda": "No Norte, o oeste do Amazonas pode acumular 147,5 milímetros, com pico na segunda."
+  },
+  {
+    "id": "f7",
+    "fala": "No Piauí, o calor dispara: Teresina pode atingir quarenta vírgula cinco graus amanhã. O INMET alerta para ar seco no Nordeste.",
+    "legenda": "No Piauí, o calor dispara: Teresina pode atingir 40,5 graus amanhã. O INMET alerta para ar seco no Nordeste."
+  },
+  {
+    "id": "f8",
+    "fala": "Se prepare: carro longe de árvores, distância das encostas e nunca atravesse rua alagada.",
+    "legenda": "Se prepare: carro longe de árvores, distância das encostas e nunca atravesse rua alagada."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
