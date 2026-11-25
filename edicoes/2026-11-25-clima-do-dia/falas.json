@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quarta-feira, vinte e cinco de novembro de dois mil e vinte e seis. No Piauí, a temperatura pode passar de quarenta graus.",
+    "legenda": "Quarta-feira, 25 de novembro de 2026. No Piauí, a temperatura pode passar de 40 graus."
+  },
+  {
+    "id": "f2",
+    "fala": "No mapa do Brasil, uma faixa de instabilidade concentra as pancadas do Centro-Oeste ao Paraná e ao Sudeste.",
+    "legenda": "No mapa do Brasil, uma faixa de instabilidade concentra as pancadas do Centro-Oeste ao Paraná e ao Sudeste."
+  },
+  {
+    "id": "f3",
+    "fala": "No oeste do Paraná, a chuva pode ser forte e passar de vinte milímetros. Santa Catarina tem pancadas isoladas.",
+    "legenda": "No oeste do Paraná, a chuva pode ser forte e passar de 20 milímetros. Santa Catarina tem pancadas isoladas."
+  },
+  {
+    "id": "f4",
+    "fala": "Mato Grosso do Sul recebe chuva, assim como São Paulo, o centro-sul de Minas e o Rio de Janeiro.",
+    "legenda": "Mato Grosso do Sul recebe chuva, assim como São Paulo, o centro-sul de Minas e o Rio de Janeiro."
+  },
+  {
+    "id": "f5",
+    "fala": "No Norte, tem pancadas no Amazonas, no Acre e em Rondônia. Em Porto Velho, pode chover forte.",
+    "legenda": "No Norte, tem pancadas no Amazonas, no Acre e em Rondônia. Em Porto Velho, pode chover forte."
+  },
+  {
+    "id": "f6",
+    "fala": "Na quinta-feira, São Paulo deve ficar em até vinte e dois graus. No Rio, a máxima fica abaixo de trinta graus.",
+    "legenda": "Na quinta-feira, São Paulo deve ficar em até 22 graus. No Rio, a máxima fica abaixo de 30 graus."
+  },
+  {
+    "id": "f7",
+    "fala": "Na sexta, São Joaquim pode amanhecer com geada e temperaturas entre dois e cinco graus.",
+    "legenda": "Na sexta, São Joaquim pode amanhecer com geada e temperaturas entre 2 e 5 graus."
+  },
+  {
+    "id": "f8",
+    "fala": "Até domingo, áreas do oeste da Amazônia podem somar de quarenta e cinco a cem milímetros.",
+    "legenda": "Até domingo, áreas do oeste da Amazônia podem somar de 45 a 100 milímetros."
+  },
+  {
+    "id": "f9",
+    "fala": "A chuva também deve ganhar força entre Paraná e Santa Catarina. Grande parte do Nordeste segue com pouca chuva.",
+    "legenda": "A chuva também deve ganhar força entre Paraná e Santa Catarina. Grande parte do Nordeste segue com pouca chuva."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
