@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Perto de cento e cinquenta milímetros de chuva no Paraná até sábado. Pode ocorrer em pontos isolados. Previsão desta quarta, vinte e cinco de novembro.",
+    "legenda": "Perto de 150 milímetros de chuva no Paraná até sábado. Pode ocorrer em pontos isolados. Previsão desta quarta, 25 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "A baixa pressão, alimentada pela umidade da Amazônia, deve organizar nuvens carregadas e reforçar a chuva.",
+    "legenda": "A baixa pressão, alimentada pela umidade da Amazônia, deve organizar nuvens carregadas e reforçar a chuva."
+  },
+  {
+    "id": "f3",
+    "fala": "Hoje, o oeste do Paraná pode voltar a ter temporais. Se você mora numa área sujeita a enxurrada, evite atravessar trechos alagados.",
+    "legenda": "Hoje, o oeste do Paraná pode voltar a ter temporais. Se você mora numa área sujeita a enxurrada, evite atravessar trechos alagados."
+  },
+  {
+    "id": "f4",
+    "fala": "Mato Grosso do Sul e São Paulo podem ter chuva desde cedo. Minas Gerais, Rio de Janeiro e Goiás também podem ter temporais.",
+    "legenda": "Mato Grosso do Sul e São Paulo podem ter chuva desde cedo. Minas Gerais, Rio de Janeiro e Goiás também podem ter temporais."
+  },
+  {
+    "id": "f5",
+    "fala": "No Rio Grande do Sul, o centro e o extremo sul devem receber menos chuva. No Paraná, a chuva deve se concentrar até sábado.",
+    "legenda": "No Rio Grande do Sul, o centro e o extremo sul devem receber menos chuva. No Paraná, a chuva deve se concentrar até sábado."
+  },
+  {
+    "id": "f6",
+    "fala": "Na quinta e na sexta, o risco de temporais continua no Sul, no Sudeste e no Centro-Oeste. No oeste do Sul, pode cair granizo e ventar forte.",
+    "legenda": "Na quinta e na sexta, o risco de temporais continua no Sul, no Sudeste e no Centro-Oeste. No oeste do Sul, pode cair granizo e ventar forte."
+  },
+  {
+    "id": "f7",
+    "fala": "Até sábado, as áreas mais chuvosas do Paraná podem receber de cinquenta a oitenta milímetros, com pontos de cem milímetros.",
+    "legenda": "Até sábado, as áreas mais chuvosas do Paraná podem receber de 50 a 80 milímetros, com pontos de 100 milímetros."
+  },
+  {
+    "id": "f8",
+    "fala": "Atenção na divisa de Minas com Rio de Janeiro e Espírito Santo. Pode haver tempo severo.",
+    "legenda": "Atenção na divisa de Minas com Rio de Janeiro e Espírito Santo. Pode haver tempo severo."
+  },
+  {
+    "id": "f9",
+    "fala": "Sábado ainda pode ter temporais. No domingo, a chuva deve perder força, e as pancadas podem voltar na segunda.",
+    "legenda": "Sábado ainda pode ter temporais. No domingo, a chuva deve perder força, e as pancadas podem voltar na segunda."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
