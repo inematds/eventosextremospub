@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, Cuiabá: o Open-Meteo prevê cento e quarenta e seis vírgula cinco milímetros até quarta que vem. É o alerta da semana desta quarta, vinte e cinco de novembro.",
+    "legenda": "Atenção, Cuiabá: o Open-Meteo prevê 146,5 milímetros até quarta que vem. É o alerta da semana desta quarta, 25 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Domingo é o dia mais chuvoso da previsão para Cuiabá: quarenta e cinco vírgula três milímetros.",
+    "legenda": "Domingo é o dia mais chuvoso da previsão para Cuiabá: 45,3 milímetros."
+  },
+  {
+    "id": "f3",
+    "fala": "Amanhã, o INMET tem aviso laranja de chuvas intensas para mil duzentos e setenta e oito municípios. Na Serra do Rio, o Cemaden chama atenção para deslizamentos.",
+    "legenda": "Amanhã, o INMET tem aviso laranja de chuvas intensas para 1.278 municípios. Na Serra do Rio, o Cemaden chama atenção para deslizamentos."
+  },
+  {
+    "id": "f4",
+    "fala": "No oeste do Amazonas, a previsão chega a cento e cinquenta e seis vírgula sete milímetros até quarta. Segunda concentra o maior volume.",
+    "legenda": "No oeste do Amazonas, a previsão chega a 156,7 milímetros até quarta. Segunda concentra o maior volume."
+  },
+  {
+    "id": "f5",
+    "fala": "No centro-oeste do Paraná, sábado pode ter sessenta vírgula sete milímetros. Em Curitiba, a mínima prevista para sexta é treze vírgula sete graus.",
+    "legenda": "No centro-oeste do Paraná, sábado pode ter 60,7 milímetros. Em Curitiba, a mínima prevista para sexta é 13,7 graus."
+  },
+  {
+    "id": "f6",
+    "fala": "Já Teresina pode chegar a quarenta vírgula três graus na segunda. Leve água se precisar sair no calor.",
+    "legenda": "Já Teresina pode chegar a 40,3 graus na segunda. Leve água se precisar sair no calor."
+  },
+  {
+    "id": "f7",
+    "fala": "No norte da Bahia, terça pode ter rajadas de sessenta e sete quilômetros por hora.",
+    "legenda": "No norte da Bahia, terça pode ter rajadas de 67 quilômetros por hora."
+  },
+  {
+    "id": "f8",
+    "fala": "Se chover forte, estacione longe de árvores e nunca atravesse rua alagada, mesmo de carro.",
+    "legenda": "Se chover forte, estacione longe de árvores e nunca atravesse rua alagada, mesmo de carro."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
