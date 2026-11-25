@@ -32,8 +32,8 @@ etapas:
   roteiro_24h:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -41,8 +41,8 @@ etapas:
   roteiro_semana:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -50,8 +50,8 @@ etapas:
   roteiro_ventos:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -59,8 +59,8 @@ etapas:
   roteiro_mundo:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -68,8 +68,8 @@ etapas:
   roteiro_dia:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -77,8 +77,8 @@ etapas:
   roteiro_alerta:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -86,8 +86,8 @@ etapas:
   roteiro_previsao:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -95,8 +95,8 @@ etapas:
   roteiro_sul:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -104,8 +104,8 @@ etapas:
   ajuste_visual:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -113,8 +113,8 @@ etapas:
   ajuste_tempos_avatar:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -122,8 +122,8 @@ etapas:
   ajuste_visual_avatar:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: agente
     timeout: 10800
     max_tokens: 12000
@@ -131,8 +131,8 @@ etapas:
   metricool_agenda:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: mcp
     timeout: 900
     max_tokens: 12000
@@ -143,8 +143,8 @@ etapas:
   metricool_publicacao:
     tipo: assinatura
     motor: codex
-    modelo: gpt-6.1-sol
-    esforco: medium
+    modelo: EXECUTOR
+    esforco: EXECUTOR
     capacidade: mcp
     timeout: 900
     max_tokens: 12000
