@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quatro vítimas confirmadas na enxurrada no sudoeste do Paraná nesta quarta. Impacto Sul de vinte e cinco de novembro.",
+    "legenda": "4 vítimas confirmadas na enxurrada no sudoeste do Paraná nesta quarta. Impacto Sul de 25 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "A água arrastou casas e veículos na terça. Hoje começa a limpeza e os rios ainda invadem propriedades rurais.",
+    "legenda": "A água arrastou casas e veículos na terça. Hoje começa a limpeza e os rios ainda invadem propriedades rurais."
+  },
+  {
+    "id": "f3",
+    "fala": "Em Santa Izabel do Oeste, um motociclista quase foi arrastado ao tentar cruzar uma ponte submersa.",
+    "legenda": "Em Santa Izabel do Oeste, um motociclista quase foi arrastado ao tentar cruzar uma ponte submersa."
+  },
+  {
+    "id": "f4",
+    "fala": "Em Santo Antônio do Sudoeste, socorristas e moradores tiraram um recém-nascido da enchente numa banheira.",
+    "legenda": "Em Santo Antônio do Sudoeste, socorristas e moradores tiraram um recém-nascido da enchente numa banheira."
+  },
+  {
+    "id": "f5",
+    "fala": "Em Ampére, o barco que levava uma família virou na rua alagada. Todos foram resgatados.",
+    "legenda": "Em Ampére, o barco que levava uma família virou na rua alagada. Todos foram resgatados."
+  },
+  {
+    "id": "f6",
+    "fala": "Áreas de chuva avançam do Paraguai. O aviso mais severo desta rodada vale até o fim da noite.",
+    "legenda": "Áreas de chuva avançam do Paraguai. O aviso mais severo desta rodada vale até o fim da noite."
+  },
+  {
+    "id": "f7",
+    "fala": "No Paraná, o aviso de hoje prevê até cem milímetros no dia. Amanhã, até cinquenta milímetros.",
+    "legenda": "No Paraná, o aviso de hoje prevê até 100 mm no dia. Amanhã, até 50 mm."
+  },
+  {
+    "id": "f8",
+    "fala": "Em Santa Catarina, parte do estado pode chegar a cem milímetros hoje. Amanhã, até cinquenta nas áreas em aviso.",
+    "legenda": "Em Santa Catarina, parte do estado pode chegar a 100 mm hoje. Amanhã, até 50 mm nas áreas em aviso."
+  },
+  {
+    "id": "f9",
+    "fala": "No Rio Grande do Sul, o aviso desta noite prevê até cinquenta milímetros no dia. O alerta volta na sexta.",
+    "legenda": "No Rio Grande do Sul, o aviso desta noite prevê até 50 mm no dia. O alerta volta na sexta."
+  },
+  {
+    "id": "f10",
+    "fala": "A chuva forte pode voltar no oeste e sudoeste paranaense nos próximos dias. Se você encontrar uma travessia alagada, volte.",
+    "legenda": "A chuva forte pode voltar no oeste e sudoeste paranaense nos próximos dias. Se você encontrar uma travessia alagada, volte."
+  },
+  {
+    "id": "f11",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
