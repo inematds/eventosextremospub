@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, Sul do Brasil: amanhã, duzentos e trinta e três municípios ficam sob aviso laranja de chuvas intensas do INMET. É o alerta da semana desta quinta, vinte e seis de novembro.",
+    "legenda": "Atenção, Sul do Brasil: amanhã, 233 municípios ficam sob aviso laranja de chuvas intensas do INMET. É o alerta da semana desta quinta, 26 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "No sudoeste do Amazonas, o Open-Meteo prevê até cento e cinquenta e cinco vírgula sete milímetros até quinta que vem. Quarta tem o maior volume previsto.",
+    "legenda": "No sudoeste do Amazonas, o Open-Meteo prevê até 155,7 milímetros até quinta que vem. Quarta tem o maior volume previsto."
+  },
+  {
+    "id": "f3",
+    "fala": "No norte paulista, sábado pode ter quarenta e seis vírgula dois milímetros em um ponto. Nesta sexta, o Cemaden prevê pancadas fortes no sul e leste de Minas e no centro-sul capixaba.",
+    "legenda": "No norte paulista, sábado pode ter 46,2 milímetros em um ponto. Nesta sexta, o Cemaden prevê pancadas fortes no sul e leste de Minas e no centro-sul capixaba."
+  },
+  {
+    "id": "f4",
+    "fala": "No Centro-Oeste, Cuiabá tem chuva prevista para todos os dias, com o maior volume amanhã.",
+    "legenda": "No Centro-Oeste, Cuiabá tem chuva prevista para todos os dias, com o maior volume amanhã."
+  },
+  {
+    "id": "f5",
+    "fala": "Em Teresina, o calor pode chegar a quarenta vírgula dois graus na segunda. Leve água se sair.",
+    "legenda": "Em Teresina, o calor pode chegar a 40,2 graus na segunda. Leve água se sair."
+  },
+  {
+    "id": "f6",
+    "fala": "Em Curitiba, separe um agasalho para amanhã. A mínima prevista é de doze vírgula oito graus.",
+    "legenda": "Em Curitiba, separe um agasalho para amanhã. A mínima prevista é de 12,8 graus."
+  },
+  {
+    "id": "f7",
+    "fala": "No sul paulista, quinta pode ter rajadas de sessenta e sete vírgula três quilômetros por hora.",
+    "legenda": "No sul paulista, quinta pode ter rajadas de 67,3 quilômetros por hora."
+  },
+  {
+    "id": "f8",
+    "fala": "Se chover forte, estacione longe de árvores e nunca atravesse rua alagada, mesmo de carro.",
+    "legenda": "Se chover forte, estacione longe de árvores e nunca atravesse rua alagada, mesmo de carro."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
