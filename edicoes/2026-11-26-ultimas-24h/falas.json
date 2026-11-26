@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quinta-feira, vinte e seis de novembro. O Rio suspendeu aulas, Angra passou de cento e sessenta e oito milímetros e o alerta de chuva se estende por seis estados.",
+    "legenda": "Quinta-feira, 26 de novembro. O Rio suspendeu aulas, Angra passou de 168 milímetros e o alerta de chuva se estende por 6 estados."
+  },
+  {
+    "id": "f2",
+    "fala": "Em Angra dos Reis, a estação Vila Histórica mediu essa chuva em vinte e quatro horas. A rede estadual suspendeu as aulas desde o fim da tarde de ontem.",
+    "legenda": "Em Angra dos Reis, a estação Vila Histórica mediu essa chuva em 24 horas. A rede estadual suspendeu as aulas desde o fim da tarde de ontem."
+  },
+  {
+    "id": "f3",
+    "fala": "Em Aparecida, São Paulo, o pluviômetro São Francisco registrou noventa e seis vírgula dois milímetros.",
+    "legenda": "Em Aparecida, São Paulo, o pluviômetro São Francisco registrou 96,2 milímetros."
+  },
+  {
+    "id": "f4",
+    "fala": "No Centro-Oeste, Corumbá registrou noventa e três vírgula quatro milímetros no sensor Cravo Vermelho.",
+    "legenda": "No Centro-Oeste, Corumbá registrou 93,4 milímetros no sensor Cravo Vermelho."
+  },
+  {
+    "id": "f5",
+    "fala": "No Sul, Timbó, em Santa Catarina, passou de vinte e oito milímetros.",
+    "legenda": "No Sul, Timbó, em Santa Catarina, passou de 28 milímetros."
+  },
+  {
+    "id": "f6",
+    "fala": "No Norte, o Pará teve mil quatrocentos e oitenta e oito focos detectados pelo satélite de referência ontem.",
+    "legenda": "No Norte, o Pará teve 1.488 focos detectados pelo satélite de referência ontem."
+  },
+  {
+    "id": "f7",
+    "fala": "No Nordeste, o aeroporto de Teresina marcou quarenta graus ontem.",
+    "legenda": "No Nordeste, o aeroporto de Teresina marcou 40 graus ontem."
+  },
+  {
+    "id": "f8",
+    "fala": "E hoje? O INMET tem alerta laranja de chuva intensa. Amanhã, o aviso amarelo se estende pelo Sul.",
+    "legenda": "E hoje? O INMET tem alerta laranja de chuva intensa. Amanhã, o aviso amarelo se estende pelo Sul."
+  },
+  {
+    "id": "f9",
+    "fala": "Nos próximos sete dias, sábado deve ter a maior soma de chuva nas capitais. O Sudeste lidera, e Teresina pode passar dos quarenta graus.",
+    "legenda": "Nos próximos 7 dias, sábado deve ter a maior soma de chuva nas capitais. O Sudeste lidera, e Teresina pode passar dos 40 graus."
+  },
+  {
+    "id": "f10",
+    "fala": "Volumes somados: dezessete mil cento e vinte milímetros nos pluviômetros em vinte e quatro horas. Para sete dias, mil e trinta milímetros previstos nas capitais.",
+    "legenda": "Volumes somados: 17.120 milímetros nos pluviômetros em 24 horas. Para 7 dias, 1.030 milímetros previstos nas capitais."
+  },
+  {
+    "id": "f11",
+    "fala": "De que região e de que cidade você é? Comenta aqui.",
+    "legenda": "De que região e de que cidade você é? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
