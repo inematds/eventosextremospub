@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Quinta-feira, vinte e seis de novembro de dois mil e vinte e seis. Pode chover forte no Rio e no sul capixaba.",
+    "legenda": "Quinta-feira, 26 de novembro de 2026. Pode chover forte no Rio e no sul capixaba."
+  },
+  {
+    "id": "f2",
+    "fala": "Uma faixa de instabilidade concentra as pancadas do Centro-Oeste ao Sudeste. Veja a nebulosidade nas imagens de satélite.",
+    "legenda": "Uma faixa de instabilidade concentra as pancadas do Centro-Oeste ao Sudeste. Veja a nebulosidade nas imagens de satélite."
+  },
+  {
+    "id": "f3",
+    "fala": "Hoje, a Região Serrana do Rio exige atenção. Há pancadas também no centro-sul de Minas e no litoral paulista.",
+    "legenda": "Hoje, a Região Serrana do Rio exige atenção. Há pancadas também no centro-sul de Minas e no litoral paulista."
+  },
+  {
+    "id": "f4",
+    "fala": "Na Amazônia, tem trovoada do oeste do Amazonas a Rondônia. Em Mato Grosso, já choveu mais de cinquenta milímetros em algumas áreas nesta manhã.",
+    "legenda": "Na Amazônia, tem trovoada do oeste do Amazonas a Rondônia. Em Mato Grosso, já choveu mais de 50 milímetros em algumas áreas nesta manhã."
+  },
+  {
+    "id": "f5",
+    "fala": "No Nordeste, quase não chove hoje. No Piauí, a temperatura pode passar dos quarenta graus.",
+    "legenda": "No Nordeste, quase não chove hoje. No Piauí, a temperatura pode passar dos 40 graus."
+  },
+  {
+    "id": "f6",
+    "fala": "Pinheiro Machado, no Rio Grande do Sul, registrou quatro graus. Na sexta, pode gear no topo da serra.",
+    "legenda": "Pinheiro Machado, no Rio Grande do Sul, registrou 4 graus. Na sexta, pode gear no topo da serra."
+  },
+  {
+    "id": "f7",
+    "fala": "No sábado, a chuva deve ganhar força em São Paulo. Em Santa Catarina, pode ter granizo e vento localizado.",
+    "legenda": "No sábado, a chuva deve ganhar força em São Paulo. Em Santa Catarina, pode ter granizo e vento localizado."
+  },
+  {
+    "id": "f8",
+    "fala": "Até domingo, a previsão do modelo aponta setenta e quatro milímetros em Vitória. No domingo, a chuva pode voltar forte no Grande Rio.",
+    "legenda": "Até domingo, a previsão do modelo aponta 74 milímetros em Vitória. No domingo, a chuva pode voltar forte no Grande Rio."
+  },
+  {
+    "id": "f9",
+    "fala": "Nas próximas duas semanas, a tendência é de muita chuva em Minas e na serra fluminense.",
+    "legenda": "Nas próximas 2 semanas, a tendência é de muita chuva em Minas e na serra fluminense."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
