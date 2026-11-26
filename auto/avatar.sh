@@ -39,7 +39,7 @@ tenta(){ local log="$1" k; shift
     if [ "$DRAFT" = 1 ]; then
       echo "card $TITULO ficou Draft (alerta no v3); esperando o Nei gerar no estúdio (até 3 h)"
       for k in $(seq 1 36); do
-        ST=$(cd "$ENG" && python3 -c "import heygen_read as h,sys; print((h.get('/v1/video_status.get?video_id='+sys.argv[1]).get('data') or {}).get('status','?'))" "$ID" 2>/dev/null || echo '?')
+        ST=$(cd "$ENG" && python3 -c "import heygen_read as h,sys; print((h.get('/v3/videos/'+sys.argv[1]).get('data') or {}).get('status','?'))" "$ID" 2>/dev/null || echo '?')
         [ "$ST" != draft ] && [ "$ST" != '?' ] && { echo "rascunho saiu do Draft: $ST"; break; }
         [ "$k" = 36 ] && { echo "ERRO no estúdio: card $TITULO ficou Draft e ninguém gerou em 3 h"; exit 3; }
         sleep 300
