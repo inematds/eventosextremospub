@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Sexta-feira, vinte e sete de novembro de dois mil e vinte e seis. O Sul tem risco de granizo e vento forte hoje.",
+    "legenda": "Sexta-feira, 27 de novembro de 2026. O Sul tem risco de granizo e vento forte hoje."
+  },
+  {
+    "id": "f2",
+    "fala": "Áreas de instabilidade já provocam trovoadas no oeste gaúcho. Com o avanço da chuva, há risco pontual de granizo entre Rio Grande do Sul, Santa Catarina e Paraná.",
+    "legenda": "Áreas de instabilidade já provocam trovoadas no oeste gaúcho. Com o avanço da chuva, há risco pontual de granizo entre Rio Grande do Sul, Santa Catarina e Paraná."
+  },
+  {
+    "id": "f3",
+    "fala": "Na Serra Catarinense, o dia começou com três a quatro graus. No litoral e no Vale do Itajaí, a chuva é mais provável à noite.",
+    "legenda": "Na Serra Catarinense, o dia começou com 3 a 4 graus. No litoral e no Vale do Itajaí, a chuva é mais provável à noite."
+  },
+  {
+    "id": "f4",
+    "fala": "O Piauí pode chegar perto de quarenta graus. Na maior parte do Nordeste, chove pouco hoje.",
+    "legenda": "O Piauí pode chegar perto de 40 graus. Na maior parte do Nordeste, chove pouco hoje."
+  },
+  {
+    "id": "f5",
+    "fala": "No Norte, as pancadas mais intensas ficam entre o oeste do Amazonas, o Acre e Rondônia.",
+    "legenda": "No Norte, as pancadas mais intensas ficam entre o oeste do Amazonas, o Acre e Rondônia."
+  },
+  {
+    "id": "f6",
+    "fala": "Em Brasília, já há pancadas. Entre Goiás e o Triângulo Mineiro, também pode chover hoje.",
+    "legenda": "Em Brasília, já há pancadas. Entre Goiás e o Triângulo Mineiro, também pode chover hoje."
+  },
+  {
+    "id": "f7",
+    "fala": "No sábado, a chuva deve ganhar força do interior à capital de São Paulo e do norte gaúcho ao Paraná.",
+    "legenda": "No sábado, a chuva deve ganhar força do interior à capital de São Paulo e do norte gaúcho ao Paraná."
+  },
+  {
+    "id": "f8",
+    "fala": "No domingo, pode chover forte na capital fluminense e na Região Serrana.",
+    "legenda": "No domingo, pode chover forte na capital fluminense e na Região Serrana."
+  },
+  {
+    "id": "f9",
+    "fala": "Em dezembro, Minas segue com tendência de muita chuva, e as pancadas devem avançar pelo Nordeste.",
+    "legenda": "Em dezembro, Minas segue com tendência de muita chuva, e as pancadas devem avançar pelo Nordeste."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
