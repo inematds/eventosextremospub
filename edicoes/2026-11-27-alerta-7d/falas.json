@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Atenção, Vale do Paraíba paulista: até duzentos e dezenove vírgula sete milímetros de chuva previstos até sexta que vem. Alerta da semana desta sexta, vinte e sete de novembro.",
+    "legenda": "Atenção, Vale do Paraíba paulista: até 219,7 milímetros de chuva previstos até sexta que vem. Alerta da semana desta sexta, 27 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Nesse ponto, o Open-Meteo prevê sessenta e um vírgula sete milímetros já no sábado. A sexta seguinte tem o maior volume do período.",
+    "legenda": "Nesse ponto, o Open-Meteo prevê 61,7 milímetros já no sábado. A sexta seguinte tem o maior volume do período."
+  },
+  {
+    "id": "f3",
+    "fala": "O INMET emitiu aviso amarelo de chuvas intensas para sábado e domingo em áreas do Norte, Centro-Oeste e Sudeste.",
+    "legenda": "O INMET emitiu aviso amarelo de chuvas intensas para sábado e domingo em áreas do Norte, Centro-Oeste e Sudeste."
+  },
+  {
+    "id": "f4",
+    "fala": "Em Rio Branco, o acumulado previsto é de cento e cinquenta e um vírgula quatro milímetros até sexta. A chuva ganha força na segunda.",
+    "legenda": "Em Rio Branco, o acumulado previsto é de 151,4 milímetros até sexta. A chuva ganha força na segunda."
+  },
+  {
+    "id": "f5",
+    "fala": "Na segunda, o calor pode chegar a quarenta e um vírgula três graus no interior do Piauí. Leve água se sair.",
+    "legenda": "Na segunda, o calor pode chegar a 41,3 graus no interior do Piauí. Leve água se sair."
+  },
+  {
+    "id": "f6",
+    "fala": "No sul paulista, quinta pode ter rajadas de sessenta e três vírgula sete quilômetros por hora.",
+    "legenda": "No sul paulista, quinta pode ter rajadas de 63,7 quilômetros por hora."
+  },
+  {
+    "id": "f7",
+    "fala": "Em Curitiba, sexta que vem pode começar com treze vírgula cinco graus. Separe um agasalho.",
+    "legenda": "Em Curitiba, sexta que vem pode começar com 13,5 graus. Separe um agasalho."
+  },
+  {
+    "id": "f8",
+    "fala": "Se chover forte, procure abrigo seguro. Nunca atravesse uma rua alagada, mesmo de carro.",
+    "legenda": "Se chover forte, procure abrigo seguro. Nunca atravesse uma rua alagada, mesmo de carro."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade você é? Comenta aqui como está o tempo aí.",
+    "legenda": "De que cidade você é? Comenta aqui como está o tempo aí."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
