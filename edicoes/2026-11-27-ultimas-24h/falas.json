@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Sexta-feira, vinte e sete de novembro. Iconha passou de cento e trinta milímetros, Angra dos Reis teve alagamentos e o Sul tem alerta laranja hoje.",
+    "legenda": "Sexta-feira, 27 de novembro. Iconha passou de 130 milímetros, Angra dos Reis teve alagamentos e o Sul tem alerta laranja hoje."
+  },
+  {
+    "id": "f2",
+    "fala": "Em Iconha, no Espírito Santo, um pluviômetro mediu cento e trinta e um vírgula quatro milímetros em vinte e quatro horas.",
+    "legenda": "Em Iconha, no Espírito Santo, um pluviômetro mediu 131,4 milímetros em 24 horas."
+  },
+  {
+    "id": "f3",
+    "fala": "No Rio, Angra teve alagamentos pontuais. Em Petrópolis, o sensor do Morin passou de cento e vinte milímetros.",
+    "legenda": "No Rio, Angra teve alagamentos pontuais. Em Petrópolis, o sensor do Morin passou de 120 milímetros."
+  },
+  {
+    "id": "f4",
+    "fala": "No Norte, Rolim de Moura, em Rondônia, registrou oitenta e sete vírgula quatro milímetros de chuva.",
+    "legenda": "No Norte, Rolim de Moura, em Rondônia, registrou 87,4 milímetros de chuva."
+  },
+  {
+    "id": "f5",
+    "fala": "No Centro-Oeste, Coxim, em Mato Grosso do Sul, teve quarenta e três vírgula oito milímetros.",
+    "legenda": "No Centro-Oeste, Coxim, em Mato Grosso do Sul, teve 43,8 milímetros."
+  },
+  {
+    "id": "f6",
+    "fala": "No Sul, Ituporanga, em Santa Catarina, passou de cinquenta e quatro milímetros.",
+    "legenda": "No Sul, Ituporanga, em Santa Catarina, passou de 54 milímetros."
+  },
+  {
+    "id": "f7",
+    "fala": "No Nordeste, o Maranhão teve quatrocentos e vinte e cinco focos de calor detectados por satélite.",
+    "legenda": "No Nordeste, o Maranhão teve 425 focos de calor detectados por satélite."
+  },
+  {
+    "id": "f8",
+    "fala": "E hoje? O INMET prevê chuva intensa em áreas dos três estados do Sul. Amanhã, Florianópolis pode passar de trinta milímetros.",
+    "legenda": "E hoje? O INMET prevê chuva intensa em áreas dos 3 estados do Sul. Amanhã, Florianópolis pode passar de 30 milímetros."
+  },
+  {
+    "id": "f9",
+    "fala": "Nos próximos sete dias, quinta-feira deve somar mais chuva nas capitais. O Norte lidera no acumulado, e Teresina pode chegar perto dos quarenta graus.",
+    "legenda": "Nos próximos 7 dias, quinta-feira deve somar mais chuva nas capitais. O Norte lidera no acumulado, e Teresina pode chegar perto dos 40 graus."
+  },
+  {
+    "id": "f10",
+    "fala": "Volumes somados. Onze mil setecentos e quarenta e dois milímetros nos pluviômetros em vinte e quatro horas. Em sete dias, novecentos e trinta e sete milímetros previstos nas capitais.",
+    "legenda": "Volumes somados. 11.742 milímetros nos pluviômetros em 24 horas. Em 7 dias, 937 milímetros previstos nas capitais."
+  },
+  {
+    "id": "f11",
+    "fala": "De que região e de que cidade você é? Comenta aqui.",
+    "legenda": "De que região e de que cidade você é? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
