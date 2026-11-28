@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f1",
+    "fala": "Até cem milímetros de chuva podem cair no oeste do Sul até este sábado. Previsão de vinte e oito de novembro.",
+    "legenda": "Até 100 milímetros de chuva podem cair no oeste do Sul até este sábado. Previsão de 28 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Uma área de baixa pressão favorece nuvens carregadas. Nesta rodada, a chuva deve se concentrar na faixa oeste dos estados do Sul.",
+    "legenda": "Uma área de baixa pressão favorece nuvens carregadas. Nesta rodada, a chuva deve se concentrar na faixa oeste dos estados do Sul."
+  },
+  {
+    "id": "f3",
+    "fala": "O acumulado previsto até hoje fica entre cinquenta e oitenta milímetros em áreas do oeste. Simulações apontam até cem milímetros em pontos isolados.",
+    "legenda": "O acumulado previsto até hoje fica entre 50 e 80 milímetros em áreas do oeste. Simulações apontam até 100 milímetros em pontos isolados."
+  },
+  {
+    "id": "f4",
+    "fala": "Atenção no oeste catarinense e no sudoeste do Paraná. O sábado pode ter chuva forte e temporais localizados, com intervalos à tarde.",
+    "legenda": "Atenção no oeste catarinense e no sudoeste do Paraná. O sábado pode ter chuva forte e temporais localizados, com intervalos à tarde."
+  },
+  {
+    "id": "f5",
+    "fala": "No noroeste gaúcho, a chuva também pode pesar sobre solo já encharcado. Há risco de alagamentos, enxurradas e deslizamentos.",
+    "legenda": "No noroeste gaúcho, a chuva também pode pesar sobre solo já encharcado. Há risco de alagamentos, enxurradas e deslizamentos."
+  },
+  {
+    "id": "f6",
+    "fala": "No Planalto Norte catarinense e no litoral do Paraná, a projeção indica entre cinquenta e oitenta milímetros, com transtornos pontuais.",
+    "legenda": "No Planalto Norte catarinense e no litoral do Paraná, a projeção indica entre 50 e 80 milímetros, com transtornos pontuais."
+  },
+  {
+    "id": "f7",
+    "fala": "No Sudeste e no Centro-Oeste, a previsão segue com pancadas diárias. Em pontos do Sudeste, pode haver temporais.",
+    "legenda": "No Sudeste e no Centro-Oeste, a previsão segue com pancadas diárias. Em pontos do Sudeste, pode haver temporais."
+  },
+  {
+    "id": "f8",
+    "fala": "Domingo e segunda, o oeste do Sul deve ter calor e pancadas isoladas. No leste, a chuva pode persistir.",
+    "legenda": "Domingo e segunda, o oeste do Sul deve ter calor e pancadas isoladas. No leste, a chuva pode persistir."
+  },
+  {
+    "id": "f9",
+    "fala": "De terça para quarta, uma nova baixa pressão e uma frente fria podem trazer outra rodada de chuva e temporais ao Sul.",
+    "legenda": "De terça para quarta, uma nova baixa pressão e uma frente fria podem trazer outra rodada de chuva e temporais ao Sul."
+  },
+  {
+    "id": "f10",
+    "fala": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De onde você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f11",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
