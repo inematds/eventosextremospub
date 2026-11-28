@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `filme-blender-claude` · handoffs/history/2026-11-28T090159Z-filme-blender-claude.md · 28/11 06:01
 - `placar-ia-2027` · handoffs/history/2026-11-28T085955Z-placar-ia-2027.md · 28/11 05:59
 - `rede-inema-parceiros` · handoffs/history/2026-11-28T082425Z-rede-inema-parceiros.md · 28/11 05:24
 - `rtex-google-agentes` · handoffs/history/2026-11-28T074022Z-rtex-google-agentes.md · 28/11 04:40
@@ -43,6 +44,6 @@ Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta 
 
 ---
 
-Mais recente: `handoffs/history/2026-11-28T085955Z-placar-ia-2027.md` — placar-ia-2027 (refazvideo -ART9tJ4GMY), 28/11/2026
+Mais recente: `handoffs/history/2026-11-28T090159Z-filme-blender-claude.md` — filme-blender-claude (refazvideo m787D6i0hbU), 28/11/2026
 
 O conteúdo de cada trabalho fica no snapshot citado: abra o do assunto que for continuar (o /prime faz isso).
