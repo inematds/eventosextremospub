@@ -3,6 +3,7 @@
 Cada linha é um assunto em andamento: leia o snapshot do assunto que for continuar. Gravado por handoff-grava.py.
 
 <!-- handoff-indice:inicio -->
+- `rede-inema-parceiros` · handoffs/history/2026-11-28T082425Z-rede-inema-parceiros.md · 28/11 05:24
 - `rtex-google-agentes` · handoffs/history/2026-11-28T074022Z-rtex-google-agentes.md · 28/11 04:40
 <!-- handoff-indice:fim -->
 
@@ -41,6 +42,6 @@ Fora dos abertos: o /prime não lista. Gravar um handoff com o mesmo slug volta 
 
 ---
 
-Mais recente: `handoffs/history/2026-11-28T074022Z-rtex-google-agentes.md` — 3 rtex "Google bloqueia agentes" (lives1, lives4, lives7) + INEMA.GOOGLE
+Mais recente: `handoffs/history/2026-11-28T082425Z-rede-inema-parceiros.md` — Rede INEMA /parceiros (portal + agente + divulgação) · 28/11/2026
 
 O conteúdo de cada trabalho fica no snapshot citado: abra o do assunto que for continuar (o /prime faz isso).
