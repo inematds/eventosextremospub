@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f1",
+    "fala": "Sábado, vinte e oito de novembro. Chuva acima de noventa milímetros em Porto Vera Cruz, de oitenta em Ipuã, e previsão de pancadas fortes na capital paulista.",
+    "legenda": "Sábado, 28 de novembro. Chuva acima de 90 milímetros em Porto Vera Cruz, de 80 em Ipuã, e previsão de pancadas fortes na capital paulista."
+  },
+  {
+    "id": "f2",
+    "fala": "Porto Vera Cruz, no Rio Grande do Sul, registrou noventa e seis vírgula dois milímetros em vinte e quatro horas.",
+    "legenda": "Porto Vera Cruz, no Rio Grande do Sul, registrou 96,2 milímetros em 24 horas."
+  },
+  {
+    "id": "f3",
+    "fala": "Ipuã, em São Paulo, teve oitenta e dois vírgula oito milímetros em vinte e quatro horas.",
+    "legenda": "Ipuã, em São Paulo, teve 82,8 milímetros em 24 horas."
+  },
+  {
+    "id": "f4",
+    "fala": "Manoel Urbano, no Acre: sessenta e seis vírgula quatro milímetros.",
+    "legenda": "Manoel Urbano, no Acre: 66,4 milímetros."
+  },
+  {
+    "id": "f5",
+    "fala": "Aparecida de Goiânia: quarenta e sete vírgula oito milímetros.",
+    "legenda": "Aparecida de Goiânia: 47,8 milímetros."
+  },
+  {
+    "id": "f6",
+    "fala": "O INPE detectou, no Maranhão, seiscentos e três focos de calor na sexta-feira.",
+    "legenda": "O INPE detectou, no Maranhão, 603 focos de calor na sexta-feira."
+  },
+  {
+    "id": "f7",
+    "fala": "No Pará foram setecentos e setenta e cinco focos. No Brasil, mil novecentos e oito detecções.",
+    "legenda": "No Pará foram 775 focos. No Brasil, 1.908 detecções."
+  },
+  {
+    "id": "f8",
+    "fala": "E hoje? O INMET tem aviso de chuva intensa. São Paulo deve ter quarenta e três vírgula sete milímetros. Amanhã, o Rio pode ter vinte e três vírgula seis milímetros.",
+    "legenda": "E hoje? O INMET tem aviso de chuva intensa. São Paulo deve ter 43,7 milímetros. Amanhã, o Rio pode ter 23,6 milímetros."
+  },
+  {
+    "id": "f9",
+    "fala": "Nos próximos sete dias, sexta deve liderar em chuva. O Norte deve acumular mais. Teresina pode chegar aos quarenta graus.",
+    "legenda": "Nos próximos 7 dias, sexta deve liderar em chuva. O Norte deve acumular mais. Teresina pode chegar aos 40 graus."
+  },
+  {
+    "id": "f10",
+    "fala": "Volumes somados. Em vinte e quatro horas, os pluviômetros somaram sete mil setecentos e vinte e sete milímetros. Previsão em sete dias: novecentos e oitenta e três milímetros nas capitais.",
+    "legenda": "Volumes somados. Em 24 horas, os pluviômetros somaram 7.727 milímetros. Previsão em 7 dias: 983 milímetros nas capitais."
+  },
+  {
+    "id": "f11",
+    "fala": "De que região e de que cidade você é? Comenta aqui.",
+    "legenda": "De que região e de que cidade você é? Comenta aqui."
+  },
+  {
+    "id": "f12",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
