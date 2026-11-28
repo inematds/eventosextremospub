@@ -49,11 +49,39 @@ timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$URL" 
 if [ "${ID#fb:}" = "$ID" ] && python3 "$AUTO/legenda_yt.py" "$ID" "$F"; then echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (legenda do YouTube)"; exit 0; fi
 echo "sem legenda do YouTube: Whisper"
 cd "$HOME/projetos/inemavox" || exit 1
-for k in 1 2 3; do
-  rm -rf "$F/dl"; timeout 1800 python3 baixar_v1.py --url "$URL" --outdir "$F/dl" --quality 720p > "$F/baixar.log" 2>&1
-  M=$(ls -S "$F"/dl/*.mp4 2>/dev/null | head -1); [ -n "$M" ] && break; sleep 120
-done
-[ -n "${M:-}" ] || { echo "download falhou: $(tail -1 "$F/baixar.log")"; exit 1; }
+# Bloqueio de robô do YouTube ("Sign in to confirm you're not a bot") é passageiro: os mesmos cookies baixaram 2 h depois (27/11/2026).
+# Com bloqueio, tenta de 10 em 10 min até ESPERA; depois cai no reel de HOJE do Facebook (plano B que já existe).
+robo(){ grep -q "not a bot" "$F/baixar.log" 2>/dev/null; }
+baixa(){  # $1 = URL → M = mp4 baixado (vazio se falhou); outras falhas: 3 tentativas de 2 em 2 min
+  local k=0; M=""
+  while :; do
+    k=$((k+1)); rm -rf "$F/dl"; timeout 1800 python3 baixar_v1.py --url "$1" --outdir "$F/dl" --quality 720p > "$F/baixar.log" 2>&1
+    cp "$F/baixar.log" "$F/baixar-$k.log"
+    M=$(ls -S "$F"/dl/*.mp4 2>/dev/null | head -1); [ -n "$M" ] && return 0
+    if robo; then
+      [ "$(date +%s)" -ge "$FIM" ] && return 1
+      echo "$(date +%T) YouTube bloqueou como robô (tentativa $k): nova tentativa em 10 min"; sleep 600
+    else
+      [ "$k" -ge 3 ] && return 1; sleep 120
+    fi
+  done
+}
+baixa "$URL"
+if [ -z "${M:-}" ] && [ "${ID#fb:}" = "$ID" ] && robo; then
+  echo "YouTube seguiu bloqueando como robô até ${ESPERA:-12:00}: procuro o reel de hoje do Facebook"
+  LF=$(timeout 600 python3 "$AUTO/fb_reels.py" 8 2>> "$F/facebook-erros.log"); RC_FB=$?
+  printf "%s\n%s\n" "$(date -Is) Facebook (plano B do bloqueio) rc=$RC_FB" "$LF" >> "$F/consultas.log"
+  FB=$(echo "$LF" | grep -F "|$HOJE|" | novo | head -1)
+  if [ -n "$FB" ]; then
+    echo "fonte: $FB · $(echo "$LF" | grep -F -- "$FB|" | cut -d'|' -f2-)"
+    ID="$FB"; echo "$ID" > "$F/video_id.txt"; URL="https://www.facebook.com/reel/${ID#fb:}"
+    timeout 90 yt-dlp --skip-download --print "%(upload_date)s|%(title)s" -- "$URL" > "$F/video_info.txt" 2>/dev/null
+    baixa "$URL"
+  else
+    echo "download falhou: YouTube bloqueou como robô até ${ESPERA:-12:00} e não há reel de hoje no Facebook (os cookies estão bons; é bloqueio passageiro do YouTube)"; exit 1
+  fi
+fi
+[ -n "${M:-}" ] || { if robo; then echo "download falhou: YouTube bloqueou como robô até ${ESPERA:-12:00} (os cookies estão bons; é bloqueio passageiro do YouTube)"; else echo "download falhou: $(tail -1 "$F/baixar.log")"; fi; exit 1; }
 mv "$M" "$F/video.mp4"; rm -rf "$F/dl"
 # máquina cheia → Groq (Nei, 15/10/2026: "o groq entra se temos muita coisa ao mesmo tempo"); livre ou falha → Whisper local
 python3 "$AUTO/groq_transcrever.py" "$F/video.mp4" "$F" > "$F/groq.log" 2>&1 && { echo "$ID $DIA" >> "$USADOS"; echo "transcrito: $(wc -w < "$F/transcript.txt") palavras (Groq)"; exit 0; }
