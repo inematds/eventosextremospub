@@ -1,4 +1,4 @@
-- `filme-blender-claude` · handoffs/history/2026-11-28T090159Z-filme-blender-claude.md · 28/11 06:01
+- `filme-blender-claude` · handoffs/history/2026-11-28T090231Z-filme-blender-claude.md · 28/11 06:02
 - `placar-ia-2027` · handoffs/history/2026-11-28T085955Z-placar-ia-2027.md · 28/11 05:59
 - `rede-inema-parceiros` · handoffs/history/2026-11-28T082425Z-rede-inema-parceiros.md · 28/11 05:24
 - `rtex-google-agentes` · handoffs/history/2026-11-28T074022Z-rtex-google-agentes.md · 28/11 04:40
