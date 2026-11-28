@@ -1,0 +1,52 @@
+[
+  {
+    "id": "f1",
+    "fala": "Até cem milímetros de chuva no noroeste gaúcho hoje. É o Impacto Sul desta sexta, vinte e sete de novembro.",
+    "legenda": "Até 100 mm de chuva no noroeste gaúcho hoje. É o Impacto Sul desta sexta, 27 de novembro."
+  },
+  {
+    "id": "f2",
+    "fala": "Na região de Tuparendi e Santo Cristo, a chuva foi forte e a água barrenta cobriu trechos de estrada.",
+    "legenda": "Na região de Tuparendi e Santo Cristo, a chuva foi forte e a água barrenta cobriu trechos de estrada."
+  },
+  {
+    "id": "f3",
+    "fala": "A instabilidade veio da Argentina. Já chovia cedo na região de Santa Rosa, e a chuva ganhou força ao longo do dia.",
+    "legenda": "A instabilidade veio da Argentina. Já chovia cedo na região de Santa Rosa, e a chuva ganhou força ao longo do dia."
+  },
+  {
+    "id": "f4",
+    "fala": "Atenção no norte gaúcho nesta noite. A chuva pode continuar, e o aviso laranja indica até cem milímetros no dia nas áreas em alerta.",
+    "legenda": "Atenção no norte gaúcho nesta noite. A chuva pode continuar, e o aviso laranja indica até 100 mm no dia nas áreas em alerta."
+  },
+  {
+    "id": "f5",
+    "fala": "No oeste de Santa Catarina, Chapecó segue em aviso laranja até as vinte e três horas e cinquenta e nove minutos.",
+    "legenda": "No oeste de Santa Catarina, Chapecó segue em aviso laranja até as 23h59."
+  },
+  {
+    "id": "f6",
+    "fala": "No Paraná, Cascavel também está no aviso. Nessas áreas, o INMET prevê ventos de até cem quilômetros por hora nesta sexta.",
+    "legenda": "No Paraná, Cascavel também está no aviso. Nessas áreas, o INMET prevê ventos de até 100 km/h nesta sexta."
+  },
+  {
+    "id": "f7",
+    "fala": "A chuva ainda deve atingir parte do Sul no sábado de manhã. No oeste catarinense, o aviso amarelo prevê até cinquenta milímetros no dia.",
+    "legenda": "A chuva ainda deve atingir parte do Sul no sábado de manhã. No oeste catarinense, o aviso amarelo prevê até 50 mm no dia."
+  },
+  {
+    "id": "f8",
+    "fala": "A chuva deve diminuir entre sábado e domingo. Na próxima semana, a previsão aponta novos episódios em grande parte do Sul.",
+    "legenda": "A chuva deve diminuir entre sábado e domingo. Na próxima semana, a previsão aponta novos episódios em grande parte do Sul."
+  },
+  {
+    "id": "f9",
+    "fala": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui.",
+    "legenda": "De que cidade do Sul você está assistindo? E como está o tempo aí agora? Comenta aqui."
+  },
+  {
+    "id": "f10",
+    "fala": "No inema ponto club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet.",
+    "legenda": "No inema.club você pode aprender de graça sobre inteligência artificial e se preparar para o futuro. É direto na internet."
+  }
+]
